@@ -1,0 +1,127 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        
+            <script src="lib/bindings/utils.js"></script>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/dist/vis-network.min.css" integrity="sha512-WgxfT5LWjfszlPHXRmBWHkV2eceiWTOBvrKCNbdgDYTHrT2AeLCGbF4sZlZw3UMN3WtL0tGUoIAKsu8mllg/XA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/vis-network.min.js" integrity="sha512-LnvoEWDFrqGHlHmDD2101OrLcbsfkrzoSpvtSQtxK3RMnRV0eOkhhBN2dXHKRrUU8p2DGRTk35n4O8nWSVe1mQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+            
+        
+<center>
+<h1></h1>
+</center>
+
+<!-- <link rel="stylesheet" href="../node_modules/vis/dist/vis.min.css" type="text/css" />
+<script type="text/javascript" src="../node_modules/vis/dist/vis.js"> </script>-->
+        <link
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+          crossorigin="anonymous"
+        />
+        <script
+          src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+          crossorigin="anonymous"
+        ></script>
+
+
+        <center>
+          <h1></h1>
+        </center>
+        <style type="text/css">
+
+             #mynetwork {
+                 width: 100%;
+                 height: 1200px;
+                 background-color: #222222;
+                 border: 1px solid lightgray;
+                 position: relative;
+                 float: left;
+             }
+
+             
+
+             
+
+             
+        </style>
+    </head>
+
+
+    <body>
+        <div class="card" style="width: 100%">
+            
+            
+            <div id="mynetwork" class="card-body"></div>
+        </div>
+
+        
+        
+
+        <script type="text/javascript">
+
+              // initialize global variables.
+              var edges;
+              var nodes;
+              var allNodes;
+              var allEdges;
+              var nodeColors;
+              var originalNodes;
+              var network;
+              var container;
+              var options, data;
+              var filter = {
+                  item : '',
+                  property : '',
+                  value : []
+              };
+
+              
+
+              
+
+              // This method is responsible for drawing the graph, returns the drawn network
+              function drawGraph() {
+                  var container = document.getElementById('mynetwork');
+
+                  
+
+                  // parsing and collecting nodes and edges from the python
+                  nodes = new vis.DataSet([{"font": {"color": "white"}, "group": "Product", "id": "Model X", "label": "Model X", "shape": "dot", "title": "Product"}, {"font": {"color": "white"}, "group": "Product", "id": "Ai5 Chips", "label": "Ai5 Chips", "shape": "dot", "title": "Product"}, {"font": {"color": "white"}, "group": "Place", "id": "Pretoria, South Africa", "label": "Pretoria, South Africa", "shape": "dot", "title": "Place"}, {"font": {"color": "white"}, "group": "Product", "id": "Robotaxi", "label": "Robotaxi", "shape": "dot", "title": "Product"}, {"font": {"color": "white"}, "group": "Product", "id": "Full Self-Driving", "label": "Full Self-Driving", "shape": "dot", "title": "Product"}, {"font": {"color": "white"}, "group": "Product", "id": "Cybertruck", "label": "Cybertruck", "shape": "dot", "title": "Product"}, {"font": {"color": "white"}, "group": "Concept", "id": "Autonomous Driving", "label": "Autonomous Driving", "shape": "dot", "title": "Concept"}, {"font": {"color": "white"}, "group": "Product", "id": "Model Y", "label": "Model Y", "shape": "dot", "title": "Product"}, {"font": {"color": "white"}, "group": "Product", "id": "Model 3", "label": "Model 3", "shape": "dot", "title": "Product"}, {"font": {"color": "white"}, "group": "Organization", "id": "Spacex", "label": "Spacex", "shape": "dot", "title": "Organization"}, {"font": {"color": "white"}, "group": "Product", "id": "Solar Panels", "label": "Solar Panels", "shape": "dot", "title": "Product"}, {"font": {"color": "white"}, "group": "Organization", "id": "Stanford University", "label": "Stanford University", "shape": "dot", "title": "Organization"}, {"font": {"color": "white"}, "group": "Award", "id": "Time Magazine\u0027S 100 Most Influential People Of 2025", "label": "Time Magazine\u0027S 100 Most Influential People Of 2025", "shape": "dot", "title": "Award"}, {"font": {"color": "white"}, "group": "Organization", "id": "X", "label": "X", "shape": "dot", "title": "Organization"}, {"font": {"color": "white"}, "group": "Organization", "id": "Neuralink", "label": "Neuralink", "shape": "dot", "title": "Organization"}, {"font": {"color": "white"}, "group": "Product", "id": "Solar Roof Tiles", "label": "Solar Roof Tiles", "shape": "dot", "title": "Product"}, {"font": {"color": "white"}, "group": "Person", "id": "Donald Trump", "label": "Donald Trump", "shape": "dot", "title": "Person"}, {"font": {"color": "white"}, "group": "Person", "id": "Errol Musk", "label": "Errol Musk", "shape": "dot", "title": "Person"}, {"font": {"color": "white"}, "group": "Organization", "id": "Openai", "label": "Openai", "shape": "dot", "title": "Organization"}, {"font": {"color": "white"}, "group": "Product", "id": "Starship", "label": "Starship", "shape": "dot", "title": "Product"}, {"font": {"color": "white"}, "group": "Organization", "id": "Starlink", "label": "Starlink", "shape": "dot", "title": "Organization"}, {"font": {"color": "white"}, "group": "Concept", "id": "Space Exploration", "label": "Space Exploration", "shape": "dot", "title": "Concept"}, {"font": {"color": "white"}, "group": "Organization", "id": "Queen\u0027S University", "label": "Queen\u0027S University", "shape": "dot", "title": "Organization"}, {"font": {"color": "white"}, "group": "Product", "id": "Model S", "label": "Model S", "shape": "dot", "title": "Product"}, {"font": {"color": "white"}, "group": "Product", "id": "Ai4 Chips", "label": "Ai4 Chips", "shape": "dot", "title": "Product"}, {"font": {"color": "white"}, "group": "Organization", "id": "University Of Pennsylvania", "label": "University Of Pennsylvania", "shape": "dot", "title": "Organization"}, {"font": {"color": "white"}, "group": "Person", "id": "Maye Musk", "label": "Maye Musk", "shape": "dot", "title": "Person"}, {"font": {"color": "white"}, "group": "Concept", "id": "Mars Colonization", "label": "Mars Colonization", "shape": "dot", "title": "Concept"}, {"font": {"color": "white"}, "group": "Organization", "id": "Tesla Inc.", "label": "Tesla Inc.", "shape": "dot", "title": "Organization"}, {"font": {"color": "white"}, "group": "Product", "id": "Powerpack", "label": "Powerpack", "shape": "dot", "title": "Product"}, {"font": {"color": "white"}, "group": "Product", "id": "Falcon 9", "label": "Falcon 9", "shape": "dot", "title": "Product"}, {"font": {"color": "white"}, "group": "Concept", "id": "Artificial Intelligence", "label": "Artificial Intelligence", "shape": "dot", "title": "Concept"}, {"font": {"color": "white"}, "group": "Organization", "id": "Xai", "label": "Xai", "shape": "dot", "title": "Organization"}, {"font": {"color": "white"}, "group": "Concept", "id": "Electric Vehicles", "label": "Electric Vehicles", "shape": "dot", "title": "Concept"}, {"font": {"color": "white"}, "group": "Organization", "id": "The Boring Company", "label": "The Boring Company", "shape": "dot", "title": "Organization"}, {"font": {"color": "white"}, "group": "Award", "id": "2025 Wash100 Award", "label": "2025 Wash100 Award", "shape": "dot", "title": "Award"}, {"font": {"color": "white"}, "group": "Product", "id": "Falcon Heavy", "label": "Falcon Heavy", "shape": "dot", "title": "Product"}, {"font": {"color": "white"}, "group": "Concept", "id": "Tunnel Systems", "label": "Tunnel Systems", "shape": "dot", "title": "Concept"}, {"font": {"color": "white"}, "group": "Organization", "id": "Department Of Government Efficiency", "label": "Department Of Government Efficiency", "shape": "dot", "title": "Organization"}, {"font": {"color": "white"}, "group": "Date", "id": "June 28, 1971", "label": "June 28, 1971", "shape": "dot", "title": "Date"}, {"font": {"color": "white"}, "group": "Person", "id": "Elon Reeve Musk", "label": "Elon Reeve Musk", "shape": "dot", "title": "Person"}, {"font": {"color": "white"}, "group": "Concept", "id": "Sustainable Energy", "label": "Sustainable Energy", "shape": "dot", "title": "Concept"}, {"font": {"color": "white"}, "group": "Organization", "id": "United States Space Force", "label": "United States Space Force", "shape": "dot", "title": "Organization"}, {"font": {"color": "white"}, "group": "Product", "id": "Powerwall", "label": "Powerwall", "shape": "dot", "title": "Product"}]);
+                  edges = new vis.DataSet([{"arrows": "to", "from": "Elon Reeve Musk", "label": "child_of", "to": "Maye Musk"}, {"arrows": "to", "from": "Elon Reeve Musk", "label": "child_of", "to": "Errol Musk"}, {"arrows": "to", "from": "Elon Reeve Musk", "label": "born_in", "to": "Pretoria, South Africa"}, {"arrows": "to", "from": "Elon Reeve Musk", "label": "birth_date", "to": "June 28, 1971"}, {"arrows": "to", "from": "Elon Reeve Musk", "label": "attended", "to": "Queen\u0027S University"}, {"arrows": "to", "from": "Elon Reeve Musk", "label": "graduated_from", "to": "University Of Pennsylvania"}, {"arrows": "to", "from": "Elon Reeve Musk", "label": "attended", "to": "Stanford University"}, {"arrows": "to", "from": "Elon Reeve Musk", "label": "ceo", "to": "Tesla Inc."}, {"arrows": "to", "from": "Elon Reeve Musk", "label": "founder", "to": "Spacex"}, {"arrows": "to", "from": "Elon Reeve Musk", "label": "owner", "to": "X"}, {"arrows": "to", "from": "Elon Reeve Musk", "label": "founder", "to": "Neuralink"}, {"arrows": "to", "from": "Elon Reeve Musk", "label": "founder", "to": "The Boring Company"}, {"arrows": "to", "from": "Elon Reeve Musk", "label": "founder", "to": "Xai"}, {"arrows": "to", "from": "Elon Reeve Musk", "label": "co-founder", "to": "Openai"}, {"arrows": "to", "from": "Tesla Inc.", "label": "produces", "to": "Model S"}, {"arrows": "to", "from": "Tesla Inc.", "label": "produces", "to": "Model 3"}, {"arrows": "to", "from": "Tesla Inc.", "label": "produces", "to": "Model X"}, {"arrows": "to", "from": "Tesla Inc.", "label": "produces", "to": "Model Y"}, {"arrows": "to", "from": "Tesla Inc.", "label": "produces", "to": "Cybertruck"}, {"arrows": "to", "from": "Tesla Inc.", "label": "produces", "to": "Powerwall"}, {"arrows": "to", "from": "Tesla Inc.", "label": "produces", "to": "Powerpack"}, {"arrows": "to", "from": "Tesla Inc.", "label": "produces", "to": "Solar Panels"}, {"arrows": "to", "from": "Tesla Inc.", "label": "produces", "to": "Solar Roof Tiles"}, {"arrows": "to", "from": "Tesla Inc.", "label": "develops", "to": "Full Self-Driving"}, {"arrows": "to", "from": "Tesla Inc.", "label": "develops", "to": "Ai5 Chips"}, {"arrows": "to", "from": "Tesla Inc.", "label": "develops", "to": "Ai4 Chips"}, {"arrows": "to", "from": "Tesla Inc.", "label": "develops", "to": "Robotaxi"}, {"arrows": "to", "from": "Spacex", "label": "develops", "to": "Falcon 9"}, {"arrows": "to", "from": "Spacex", "label": "develops", "to": "Falcon Heavy"}, {"arrows": "to", "from": "Spacex", "label": "develops", "to": "Starship"}, {"arrows": "to", "from": "Spacex", "label": "operates", "to": "Starlink"}, {"arrows": "to", "from": "Spacex", "label": "purpose", "to": "Mars Colonization"}, {"arrows": "to", "from": "Starlink", "label": "subsidiary_of", "to": "Spacex"}, {"arrows": "to", "from": "Falcon Heavy", "label": "used_by", "to": "United States Space Force"}, {"arrows": "to", "from": "Elon Reeve Musk", "label": "adviser_to", "to": "Donald Trump"}, {"arrows": "to", "from": "Elon Reeve Musk", "label": "advised", "to": "Department Of Government Efficiency"}, {"arrows": "to", "from": "Elon Reeve Musk", "label": "received", "to": "Time Magazine\u0027S 100 Most Influential People Of 2025"}, {"arrows": "to", "from": "Elon Reeve Musk", "label": "received", "to": "2025 Wash100 Award"}, {"arrows": "to", "from": "Elon Reeve Musk", "label": "advocates", "to": "Sustainable Energy"}, {"arrows": "to", "from": "Elon Reeve Musk", "label": "advocates", "to": "Artificial Intelligence"}, {"arrows": "to", "from": "Elon Reeve Musk", "label": "advocates", "to": "Autonomous Driving"}, {"arrows": "to", "from": "Elon Reeve Musk", "label": "advocates", "to": "Tunnel Systems"}, {"arrows": "to", "from": "Elon Reeve Musk", "label": "advocates", "to": "Electric Vehicles"}, {"arrows": "to", "from": "Elon Reeve Musk", "label": "advocates", "to": "Space Exploration"}]);
+
+                  nodeColors = {};
+                  allNodes = nodes.get({ returnType: "Object" });
+                  for (nodeId in allNodes) {
+                    nodeColors[nodeId] = allNodes[nodeId].color;
+                  }
+                  allEdges = edges.get({ returnType: "Object" });
+                  // adding nodes and edges to the graph
+                  data = {nodes: nodes, edges: edges};
+
+                  var options = {"physics": {"forceAtlas2Based": {"gravitationalConstant": -100, "centralGravity": 0.01, "springLength": 200, "springConstant": 0.08}, "minVelocity": 0.75, "solver": "forceAtlas2Based"}};
+
+                  
+
+
+                  
+
+                  network = new vis.Network(container, data, options);
+
+                  
+
+                  
+
+                  
+
+
+                  
+
+                  return network;
+
+              }
+              drawGraph();
+        </script>
+    </body>
+</html>
