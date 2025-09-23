@@ -2,6 +2,10 @@
 
 A powerful Python application that leverages LangChain, OpenAI's GPT models, and PyVis to extract structured knowledge graphs from unstructured text and create interactive visualizations.
 
+![Knowledge Graph Visualization](https://raw.githubusercontent.com/mcikalmerdeka/NLP-Learning/refs/heads/main/Knowledge%20Graph%20Visualizer/output/knowledge_graph.png)
+
+*Interactive knowledge graph visualization showing entities and relationships extracted from text data*
+
 ## 🚀 Features
 
 - **AI-Powered Graph Extraction**: Uses advanced LLM transformers to automatically identify entities, relationships, and concepts from text
