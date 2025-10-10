@@ -50,56 +50,122 @@ The app will open in your browser at `http://localhost:8501`
 
 > **Note**: First run will download the embedding model (~80-400MB depending on model choice)
 
-## ☁️ Deploy to Streamlit Cloud
+## 🐳 Deploy with Docker
 
 ### Prerequisites
-- GitHub repository with your code
-- [Streamlit Cloud account](https://share.streamlit.io) (free)
+- Docker installed ([Get Docker](https://docs.docker.com/get-docker/))
+- Docker Compose (included with Docker Desktop)
 
-### Deployment Steps
+### Quick Start with Docker
 
-1. **Prepare your repository**
+1. **Build and run with Docker Compose** (Recommended)
 ```bash
-git add .
-git commit -m "Ready for deployment"
-git push origin main
+docker-compose up -d
 ```
 
-2. **Deploy to Streamlit Cloud**
-   - Go to [share.streamlit.io](https://share.streamlit.io)
-   - Click "New app"
-   - Fill in:
-     - **Repository**: `yourusername/rag-embedding-visualizer`
-     - **Branch**: `main`
-     - **Main file path**: `app.py`
-   - Click "Deploy"!
+The app will be available at `http://localhost:8501`
 
-3. **Wait for deployment** (5-10 minutes for first deployment)
-   - Streamlit will install dependencies from `requirements.txt`
-   - Models will be cached on first use
-   - Your app will be live at `https://your-app-name.streamlit.app`
+2. **Or build and run manually**
+```bash
+# Build the image
+docker build -t rag-visualizer .
 
-### Important Notes
-- **Memory**: Default resources (800MB RAM) work fine for the MiniLM model
-- **Cold starts**: First user may experience longer load time as models download
-- **Persistence**: Data resets on each session (by design for this demo tool)
-- **Custom domain**: Available on paid plans
+# Run the container
+docker run -p 8501:8501 rag-visualizer
+```
 
-## 🤗 Deploy to Hugging Face Spaces
+### Docker Commands
 
-1. **Create a Space**
-   - Go to [huggingface.co/spaces](https://huggingface.co/spaces)
-   - Click "Create new Space"
-   - Select "Streamlit" as the SDK
-   - Choose CPU (basic) - Free tier works great
+```bash
+# Start the application
+docker-compose up -d
 
-2. **Add your files**
-   - Upload entire `src/` folder, `app.py`, `requirements.txt`, and `.streamlit/` folder
-   - Or connect your GitHub repository (easier)
+# View logs
+docker-compose logs -f
 
-3. **Your Space will be live** at `https://huggingface.co/spaces/your-username/your-space`
+# Stop the application
+docker-compose down
 
-> **Note**: Make sure to upload the entire folder structure, not just `app.py`
+# Rebuild after changes
+docker-compose up -d --build
+
+# Remove everything (including volumes)
+docker-compose down -v
+```
+
+### Deploy to Cloud Platforms
+
+#### Deploy to Google Cloud Run
+```bash
+# Build and push to Google Container Registry
+gcloud builds submit --tag gcr.io/YOUR_PROJECT_ID/rag-visualizer
+
+# Deploy to Cloud Run
+gcloud run deploy rag-visualizer \
+  --image gcr.io/YOUR_PROJECT_ID/rag-visualizer \
+  --platform managed \
+  --region us-central1 \
+  --allow-unauthenticated \
+  --memory 2Gi \
+  --port 8501
+```
+
+#### Deploy to AWS ECS/Fargate
+```bash
+# Build and push to Amazon ECR
+aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin YOUR_ACCOUNT_ID.dkr.ecr.us-east-1.amazonaws.com
+docker tag rag-visualizer:latest YOUR_ACCOUNT_ID.dkr.ecr.us-east-1.amazonaws.com/rag-visualizer:latest
+docker push YOUR_ACCOUNT_ID.dkr.ecr.us-east-1.amazonaws.com/rag-visualizer:latest
+
+# Create task definition and service via AWS Console or CLI
+```
+
+#### Deploy to Azure Container Instances
+```bash
+# Build and push to Azure Container Registry
+az acr build --registry YOUR_REGISTRY --image rag-visualizer:latest .
+
+# Deploy to ACI
+az container create \
+  --resource-group YOUR_RESOURCE_GROUP \
+  --name rag-visualizer \
+  --image YOUR_REGISTRY.azurecr.io/rag-visualizer:latest \
+  --dns-name-label rag-visualizer \
+  --ports 8501
+```
+
+### Docker Image Details
+- **Base Image**: Python 3.11-slim
+- **Package Manager**: uv (fast Python package installer)
+- **Size**: ~2GB (includes PyTorch and ML models)
+- **Port**: 8501
+- **Health Check**: Built-in via Streamlit health endpoint
+
+## 🌐 Alternative Deployment Options
+
+### Hugging Face Spaces
+Good for quick demos and ML community sharing.
+
+1. Create a Space at [huggingface.co/spaces](https://huggingface.co/spaces)
+2. Select "Streamlit" SDK
+3. Connect your GitHub repo or upload files
+4. Add `Dockerfile` (optional) or let it use `requirements.txt`
+
+### Streamlit Cloud
+Simple but has memory limitations with large models.
+
+1. Push to GitHub
+2. Go to [share.streamlit.io](https://share.streamlit.io)
+3. Connect repository and deploy
+4. **Note**: Works better with MiniLM model (384D) than larger models
+
+### Render
+Great for free tier deployments.
+
+1. Connect GitHub repo at [render.com](https://render.com)
+2. Select "Web Service"
+3. Use Docker deployment
+4. Set port to 8501
 
 ## 📖 How to Use
 
