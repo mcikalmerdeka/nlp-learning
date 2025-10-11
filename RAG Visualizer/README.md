@@ -1,14 +1,15 @@
 # 🔍 RAG Pipeline Visualizer
 
-Visualize the complete RAG (Retrieval-Augmented Generation) pipeline with three interactive sections: **Retrieval → Augmentation → Generation**. Built with Streamlit, ChromaDB, Sentence Transformers, and OpenAI.
+An interactive tool to visualize the complete **naive RAG process** from start to finish. This project breaks down the entire RAG (Retrieval-Augmented Generation) pipeline into three transparent sections: **Retrieval → Augmentation → Generation**. Built with Streamlit, ChromaDB, Sentence Transformers, and OpenAI.
 
-![Python](https://img.shields.io/badge/python-3.8+-blue.svg)
-![Streamlit](https://img.shields.io/badge/streamlit-1.28+-red.svg)
-![License](https://img.shields.io/badge/license-MIT-green.svg)
+<div align="center">
+  <img src="https://raw.githubusercontent.com/mcikalmerdeka/nlp-learning/refs/heads/main/RAG%20Visualizer/assets/Clearest%20RAG%20Diagram.jpg" alt="RAG Pipeline Diagram" width="500"/>
+</div>
 
 ## 🌟 Features
 
 ### 🔎 Section 1: Retrieval
+
 - **Text Processing**: Upload files or paste content directly
 - **Smart Chunking**: Configurable chunk size and overlap
 - **Multiple Models**: Choose from various sentence transformer models
@@ -17,6 +18,7 @@ Visualize the complete RAG (Retrieval-Augmented Generation) pipeline with three 
 - **Semantic Search**: Query and see similar chunks highlighted
 
 ### 🔧 Section 2: Augmentation
+
 - **System Prompt Management**: View and customize prompts
 - **Context Display**: See retrieved chunks formatted for LLM
 - **Prompt Preview**: View complete augmented message
@@ -24,6 +26,7 @@ Visualize the complete RAG (Retrieval-Augmented Generation) pipeline with three 
 - **LangSmith-style UI**: Professional observability interface
 
 ### ✨ Section 3: Generation
+
 - **OpenAI Integration**: GPT-4o-mini response generation
 - **Token Usage**: Detailed breakdown of prompt/completion tokens
 - **Cost Tracking**: Real-time cost estimation
@@ -33,26 +36,33 @@ Visualize the complete RAG (Retrieval-Augmented Generation) pipeline with three 
 ## 🚀 Quick Start
 
 ### 1. Install Dependencies
+
 ```bash
 pip install -r requirements.txt
 ```
 
 ### 2. Configure OpenAI API Key
+
 Create a `.env` file in the project root:
+
 ```env
 OPENAI_API_KEY=your_openai_api_key_here
 ```
+
 Get your API key from [OpenAI Platform](https://platform.openai.com/api-keys).
 
 ### 3. Run the App
+
 ```bash
 streamlit run app.py
 ```
+
 The app opens at `http://localhost:8501`
 
 > **Note**: First run downloads the embedding model (~80-400MB)
 
 ### 4. Try It Out
+
 1. Click "Load Sample" in sidebar → Choose "AI & Machine Learning"
 2. Click "Generate Embeddings" (wait ~10 seconds)
 3. Enter query: "What is deep learning?"
@@ -114,19 +124,22 @@ The app opens at `http://localhost:8501`
 ## 🧪 Supported Models
 
 ### Embedding Models
-| Model | Speed | Accuracy | Dimensions | Best For |
-|-------|-------|----------|------------|----------|
-| all-MiniLM-L6-v2 | ⚡⚡⚡ | ⭐⭐⭐ | 384 | General use, fast |
-| all-mpnet-base-v2 | ⚡⚡ | ⭐⭐⭐⭐⭐ | 768 | High accuracy |
-| paraphrase-multilingual | ⚡⚡ | ⭐⭐⭐⭐ | 384 | Multiple languages |
+
+| Model                   | Speed  | Accuracy   | Dimensions | Best For           |
+| ----------------------- | ------ | ---------- | ---------- | ------------------ |
+| all-MiniLM-L6-v2        | ⚡⚡⚡ | ⭐⭐⭐     | 384        | General use, fast  |
+| all-mpnet-base-v2       | ⚡⚡   | ⭐⭐⭐⭐⭐ | 768        | High accuracy      |
+| paraphrase-multilingual | ⚡⚡   | ⭐⭐⭐⭐   | 384        | Multiple languages |
 
 ### LLM Model
+
 - **GPT-4o-mini**: Fast, affordable, high-quality responses
 - **Pricing**: ~$0.0001-0.0015 per query (very affordable!)
 
 ## 📊 Observability Features
 
 Similar to LangSmith, you can see:
+
 - ✅ **Prompt Construction**: Exact system prompt and user message
 - ✅ **Context Injection**: How retrieved chunks are formatted
 - ✅ **Token Usage**: Detailed breakdown of input/output tokens
@@ -167,21 +180,25 @@ RAG Visualizer/
 ## 💰 Cost Considerations
 
 **GPT-4o-mini Pricing:**
+
 - Input: $0.150 per 1M tokens
 - Output: $0.600 per 1M tokens
 
 **Typical Query Cost:**
+
 - Small (3 contexts, 500 tokens): ~$0.0001-0.0003
 - Medium (5 contexts, 1500 tokens): ~$0.0003-0.0008
 - Large (10 contexts, 3000 tokens): ~$0.0006-0.0015
 
 **Local Operations (Free):**
+
 - Retrieval: Local embeddings (sentence-transformers)
 - Augmentation: Client-side prompt construction
 
 ## 🐳 Docker Deployment
 
 Quick start with Docker Compose:
+
 ```bash
 # Build and run
 docker-compose up -d
@@ -194,6 +211,7 @@ docker-compose down
 ```
 
 Or build manually:
+
 ```bash
 docker build -t rag-visualizer .
 docker run -p 8501:8501 --env-file .env rag-visualizer
@@ -204,19 +222,23 @@ See [DEPLOYMENT_GUIDE.md](DEPLOYMENT_GUIDE.md) for cloud deployment options (Goo
 ## 💡 Tips for Best Results
 
 **Chunk Size:**
+
 - Smaller (50-100) = more granular, specific queries
 - Larger (200-500) = more context, conceptual queries
 
 **System Prompt:**
+
 - Customize for your use case (technical docs, customer support, research)
 - Include instructions for citation and fallback behavior
 
 **Token Management:**
+
 - Reduce retrieved chunks (n_results) to lower costs
 - Use smaller chunk sizes for efficiency
 - Monitor token usage in the Generation section
 
 **Model Selection:**
+
 - MiniLM for speed and general use
 - mpnet for research and accuracy
 - multilingual for non-English text
@@ -224,22 +246,26 @@ See [DEPLOYMENT_GUIDE.md](DEPLOYMENT_GUIDE.md) for cloud deployment options (Goo
 ## 🔧 Troubleshooting
 
 **"OPENAI_API_KEY not found"**
+
 - Ensure `.env` file exists in project root
 - Verify format: `OPENAI_API_KEY=sk-...`
 - Restart Streamlit after creating `.env`
 
 **High token usage**
+
 - Reduce number of retrieved chunks (n_results slider)
 - Use smaller chunk sizes
 - Shorten the system prompt
 
 **Model download fails**
+
 ```bash
 export TRANSFORMERS_CACHE="./models"
 streamlit run app.py
 ```
 
 **Port already in use**
+
 ```bash
 streamlit run app.py --server.port 8502
 ```
@@ -258,6 +284,7 @@ streamlit run app.py --server.port 8502
 ## 🤝 Contributing
 
 Contributions welcome! Please:
+
 1. Fork the repository
 2. Create feature branch (`git checkout -b feature/AmazingFeature`)
 3. Commit changes (`git commit -m 'Add AmazingFeature'`)
