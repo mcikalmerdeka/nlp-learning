@@ -47,8 +47,11 @@ def render_generation_section():
         try:
             get_openai_client()
         except ValueError as e:
-            st.error("❌ OPENAI_API_KEY not found in environment variables. Please add it to your .env file.")
+            st.error("❌ OPENAI_API_KEY not found. Please configure it:")
+            st.markdown("**For local development:** Add to `.env` file:")
             st.code("OPENAI_API_KEY=your_key_here", language="bash")
+            st.markdown("**For Streamlit Cloud:** Add to Secrets (⚙️ Settings → Secrets):")
+            st.code('OPENAI_API_KEY = "your_key_here"', language="toml")
             return
         
         st.session_state.generating = True

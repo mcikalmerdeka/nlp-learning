@@ -1,19 +1,29 @@
 """LLM integration for RAG generation"""
 
 import os
+import streamlit as st
 from openai import OpenAI
 from typing import List, Dict
 from dotenv import load_dotenv
 
-# Load environment variables
+# Load environment variables (for local development)
 load_dotenv()
 
 
 def get_openai_client():
-    """Get OpenAI client instance"""
-    api_key = os.getenv("OPENAI_API_KEY")
+    """Get OpenAI client instance
+    
+    Supports both local .env files and Streamlit Cloud secrets
+    """
+    # Try Streamlit secrets first (for cloud deployment)
+    try:
+        api_key = st.secrets["OPENAI_API_KEY"]
+    except (KeyError, FileNotFoundError):
+        # Fall back to environment variable (for local .env)
+        api_key = os.getenv("OPENAI_API_KEY")
+    
     if not api_key:
-        raise ValueError("OPENAI_API_KEY not found in environment variables")
+        raise ValueError("OPENAI_API_KEY not found in environment variables or Streamlit secrets")
     return OpenAI(api_key=api_key)
 
 
