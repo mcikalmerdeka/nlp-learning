@@ -42,10 +42,11 @@ def render_sidebar():
         
         # Sample texts
         st.subheader("📚 Sample Texts")
+        sample_choice = st.selectbox("Choose sample:", list(SAMPLE_TEXTS.keys()))
         
         if st.button("Load Sample", use_container_width=True):
-            sample_choice = st.selectbox("Choose sample:", list(SAMPLE_TEXTS.keys()))
             st.session_state.sample_text = SAMPLE_TEXTS[sample_choice]
+            st.rerun()
     
     return model_name, chunk_size, overlap, reduction_method, collection_name
 
