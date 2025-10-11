@@ -27,7 +27,10 @@ def render_visualization_section(reduction_method: str, model_name: str):
         selected_indices = None
         query_point = None
         
-        if hasattr(st.session_state, 'query_results') and hasattr(st.session_state, 'query_embedding'):
+        if (hasattr(st.session_state, 'query_results') and 
+            hasattr(st.session_state, 'query_embedding') and
+            st.session_state.query_results is not None and
+            st.session_state.query_embedding is not None):
             # Get indices of retrieved chunks
             result_ids = st.session_state.query_results['ids'][0]
             selected_indices = [int(id.split('_')[1]) for id in result_ids]
