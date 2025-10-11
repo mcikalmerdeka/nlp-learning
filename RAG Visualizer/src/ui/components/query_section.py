@@ -39,8 +39,9 @@ def render_query_section(model_name: str):
                 
                 st.session_state.query_results = results
                 st.session_state.query_embedding = query_embedding
+                st.session_state.last_query = query_text
                 
-            st.success(f"Found {len(results['documents'][0])} similar chunks!")
+            st.success(f"✅ Found {len(results['documents'][0])} similar chunks! Proceed to Augmentation section below.")
             
             # Display results
             for i, (doc, distance, chunk_id) in enumerate(zip(

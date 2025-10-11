@@ -1,7 +1,7 @@
 """RAG Embedding Visualizer - Main Application
 
-A Streamlit application to visualize text embeddings and understand 
-how Retrieval-Augmented Generation (RAG) systems work.
+A Streamlit application to visualize the complete RAG pipeline:
+Retrieval, Augmentation, and Generation.
 """
 
 import streamlit as st
@@ -13,13 +13,15 @@ from src.ui.components import (
     render_query_section,
     render_stats_section,
     render_visualization_section,
-    render_chunk_explorer
+    render_chunk_explorer,
+    render_augmentation_section,
+    render_generation_section
 )
 
 
 # Page config
 st.set_page_config(
-    page_title="RAG Embedding Visualizer",
+    page_title="RAG Pipeline Visualizer",
     page_icon="🔍",
     layout="wide",
     initial_sidebar_state="expanded"
@@ -36,16 +38,22 @@ def main():
     """Main application entry point"""
     # Header
     st.markdown(
-        '<h1 class="main-header">🔍 RAG Embedding Visualizer</h1>', 
+        '<h1 class="main-header">🔍 RAG Pipeline Visualizer</h1>', 
         unsafe_allow_html=True
     )
     st.markdown(
-        '<p class="sub-header">Visualize text embeddings and vector similarity in 3D space with ChromaDB</p>', 
+        '<p class="sub-header">Visualize the complete RAG pipeline: Retrieval → Augmentation → Generation</p>', 
         unsafe_allow_html=True
     )
     
     # Sidebar configuration
     model_name, chunk_size, overlap, reduction_method, collection_name = render_sidebar()
+    
+    st.divider()
+    
+    # ========== SECTION 1: RETRIEVAL ==========
+    st.header("🔎 1. Retrieval")
+    st.markdown("Generate embeddings, store in vector database, and search for similar chunks")
     
     # Main content area
     col1, col2 = st.columns([1, 1])
@@ -64,6 +72,18 @@ def main():
         render_visualization_section(reduction_method, model_name)
         st.divider()
         render_chunk_explorer()
+    
+    st.divider()
+    st.divider()
+    
+    # ========== SECTION 2: AUGMENTATION ==========
+    render_augmentation_section()
+    
+    st.divider()
+    st.divider()
+    
+    # ========== SECTION 3: GENERATION ==========
+    render_generation_section()
 
 
 if __name__ == "__main__":

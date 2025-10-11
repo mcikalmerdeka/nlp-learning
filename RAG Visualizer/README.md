@@ -1,6 +1,6 @@
-# 🔍 RAG Embedding Visualizer
+# 🔍 RAG Pipeline Visualizer
 
-An interactive tool to visualize text embeddings and understand how Retrieval-Augmented Generation (RAG) systems work under the hood. Built with Streamlit, ChromaDB, and Sentence Transformers.
+Visualize the complete RAG (Retrieval-Augmented Generation) pipeline with three interactive sections: **Retrieval → Augmentation → Generation**. Built with Streamlit, ChromaDB, Sentence Transformers, and OpenAI.
 
 ![Python](https://img.shields.io/badge/python-3.8+-blue.svg)
 ![Streamlit](https://img.shields.io/badge/streamlit-1.28+-red.svg)
@@ -8,313 +8,274 @@ An interactive tool to visualize text embeddings and understand how Retrieval-Au
 
 ## 🌟 Features
 
-- **📝 Text Processing**: Upload text files or paste content directly
-- **🧩 Smart Chunking**: Configurable chunk size and overlap for optimal processing
-- **🤖 Multiple Models**: Choose from various sentence transformer models
-- **💾 ChromaDB Integration**: Real vector database storage and retrieval
-- **🎨 3D Visualization**: Interactive 3D plots of embedding space using Plotly
-- **🔎 Semantic Search**: Query your documents and see similar chunks highlighted
-- **📊 Dimensionality Reduction**: PCA and UMAP support for visualization
-- **📈 Real-time Stats**: View embedding dimensions, chunk counts, and similarity scores
+### 🔎 Section 1: Retrieval
+- **Text Processing**: Upload files or paste content directly
+- **Smart Chunking**: Configurable chunk size and overlap
+- **Multiple Models**: Choose from various sentence transformer models
+- **ChromaDB Integration**: Real vector database storage
+- **3D Visualization**: Interactive plots with PCA/UMAP
+- **Semantic Search**: Query and see similar chunks highlighted
+
+### 🔧 Section 2: Augmentation
+- **System Prompt Management**: View and customize prompts
+- **Context Display**: See retrieved chunks formatted for LLM
+- **Prompt Preview**: View complete augmented message
+- **Token Estimation**: Calculate costs before generation
+- **LangSmith-style UI**: Professional observability interface
+
+### ✨ Section 3: Generation
+- **OpenAI Integration**: GPT-4o-mini response generation
+- **Token Usage**: Detailed breakdown of prompt/completion tokens
+- **Cost Tracking**: Real-time cost estimation
+- **API Inspection**: Full request/response visibility
+- **Regenerate**: Easy response regeneration
 
 ## 🚀 Quick Start
 
-### Local Installation
-
-1. **Clone the repository**
+### 1. Install Dependencies
 ```bash
-git clone https://github.com/yourusername/rag-embedding-visualizer.git
-cd rag-embedding-visualizer
-```
-
-2. **Install dependencies**
-
-Using uv (recommended):
-```bash
-uv add streamlit>=1.28.0 sentence-transformers>=2.2.2 chromadb>=0.4.15 plotly>=5.17.0 numpy>=1.24.0 pandas>=2.0.0 scikit-learn>=1.3.0 umap-learn>=0.5.4 torch>=2.0.0
-```
-
-Or using pip:
-```bash
-python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
 pip install -r requirements.txt
 ```
 
-3. **Run the app**
+### 2. Configure OpenAI API Key
+Create a `.env` file in the project root:
+```env
+OPENAI_API_KEY=your_openai_api_key_here
+```
+Get your API key from [OpenAI Platform](https://platform.openai.com/api-keys).
+
+### 3. Run the App
 ```bash
 streamlit run app.py
 ```
+The app opens at `http://localhost:8501`
 
-The app will open in your browser at `http://localhost:8501`
+> **Note**: First run downloads the embedding model (~80-400MB)
 
-> **Note**: First run will download the embedding model (~80-400MB depending on model choice)
+### 4. Try It Out
+1. Click "Load Sample" in sidebar → Choose "AI & Machine Learning"
+2. Click "Generate Embeddings" (wait ~10 seconds)
+3. Enter query: "What is deep learning?"
+4. Click "Search Similar Chunks"
+5. Scroll to **Augmentation** section → Review prompt
+6. Click "Proceed to Generation"
+7. Scroll to **Generation** section → Click "Generate Response"
 
-## 🐳 Deploy with Docker
+## 📖 Complete RAG Workflow
 
-### Prerequisites
-- Docker installed ([Get Docker](https://docs.docker.com/get-docker/))
-- Docker Compose (included with Docker Desktop)
-
-### Quick Start with Docker
-
-1. **Build and run with Docker Compose** (Recommended)
-```bash
-docker-compose up -d
+```
+┌─────────────────┐
+│  1. RETRIEVAL   │
+│  • Chunk text   │
+│  • Generate     │
+│    embeddings   │
+│  • Store in     │
+│    ChromaDB     │
+│  • Search       │
+└────────┬────────┘
+         ↓
+┌─────────────────┐
+│ 2. AUGMENTATION │
+│  • System       │
+│    prompt       │
+│  • Retrieved    │
+│    context      │
+│  • User query   │
+└────────┬────────┘
+         ↓
+┌─────────────────┐
+│ 3. GENERATION   │
+│  • Call OpenAI  │
+│  • Get response │
+│  • Track tokens │
+│  • View cost    │
+└─────────────────┘
 ```
 
-The app will be available at `http://localhost:8501`
+## 🎯 Use Cases
 
-2. **Or build and run manually**
-```bash
-# Build the image
-docker build -t rag-visualizer .
-
-# Run the container
-docker run -p 8501:8501 rag-visualizer
-```
-
-### Docker Commands
-
-```bash
-# Start the application
-docker-compose up -d
-
-# View logs
-docker-compose logs -f
-
-# Stop the application
-docker-compose down
-
-# Rebuild after changes
-docker-compose up -d --build
-
-# Remove everything (including volumes)
-docker-compose down -v
-```
-
-### Deploy to Cloud Platforms
-
-#### Deploy to Google Cloud Run
-```bash
-# Build and push to Google Container Registry
-gcloud builds submit --tag gcr.io/YOUR_PROJECT_ID/rag-visualizer
-
-# Deploy to Cloud Run
-gcloud run deploy rag-visualizer \
-  --image gcr.io/YOUR_PROJECT_ID/rag-visualizer \
-  --platform managed \
-  --region us-central1 \
-  --allow-unauthenticated \
-  --memory 2Gi \
-  --port 8501
-```
-
-#### Deploy to AWS ECS/Fargate
-```bash
-# Build and push to Amazon ECR
-aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin YOUR_ACCOUNT_ID.dkr.ecr.us-east-1.amazonaws.com
-docker tag rag-visualizer:latest YOUR_ACCOUNT_ID.dkr.ecr.us-east-1.amazonaws.com/rag-visualizer:latest
-docker push YOUR_ACCOUNT_ID.dkr.ecr.us-east-1.amazonaws.com/rag-visualizer:latest
-
-# Create task definition and service via AWS Console or CLI
-```
-
-#### Deploy to Azure Container Instances
-```bash
-# Build and push to Azure Container Registry
-az acr build --registry YOUR_REGISTRY --image rag-visualizer:latest .
-
-# Deploy to ACI
-az container create \
-  --resource-group YOUR_RESOURCE_GROUP \
-  --name rag-visualizer \
-  --image YOUR_REGISTRY.azurecr.io/rag-visualizer:latest \
-  --dns-name-label rag-visualizer \
-  --ports 8501
-```
-
-### Docker Image Details
-- **Base Image**: Python 3.11-slim
-- **Package Manager**: uv (fast Python package installer)
-- **Size**: ~2GB (includes PyTorch and ML models)
-- **Port**: 8501
-- **Health Check**: Built-in via Streamlit health endpoint
-
-## 🌐 Alternative Deployment Options
-
-### Hugging Face Spaces
-Good for quick demos and ML community sharing.
-
-1. Create a Space at [huggingface.co/spaces](https://huggingface.co/spaces)
-2. Select "Streamlit" SDK
-3. Connect your GitHub repo or upload files
-4. Add `Dockerfile` (optional) or let it use `requirements.txt`
-
-### Streamlit Cloud
-Simple but has memory limitations with large models.
-
-1. Push to GitHub
-2. Go to [share.streamlit.io](https://share.streamlit.io)
-3. Connect repository and deploy
-4. **Note**: Works better with MiniLM model (384D) than larger models
-
-### Render
-Great for free tier deployments.
-
-1. Connect GitHub repo at [render.com](https://render.com)
-2. Select "Web Service"
-3. Use Docker deployment
-4. Set port to 8501
-
-## 📖 How to Use
-
-### 1. Input Text
-- **Type or paste** text directly into the text area
-- **Upload** a `.txt` file
-- **Load sample** - Try pre-loaded texts on AI, Climate, or Space topics
-
-### 2. Configure Settings (Sidebar)
-- **Embedding Model**: 
-  - `all-MiniLM-L6-v2` - Fast, 384 dimensions (recommended for most use)
-  - `all-mpnet-base-v2` - More accurate, 768 dimensions
-  - `paraphrase-multilingual` - For non-English text
-- **Chunk Size**: Words per chunk (50-500, default: 100)
-- **Overlap**: Overlapping words between chunks (0-100, default: 20)
-- **Reduction Method**: 
-  - `PCA` - Linear, faster, preserves global structure
-  - `UMAP` - Non-linear, better clustering
-
-### 3. Generate Embeddings
-- Click **"🚀 Generate Embeddings"**
-- Wait 10-20 seconds for processing
-- View stats: total chunks, embedding dimensions, reduction method
-
-### 4. Query & Search
-- Enter a **semantic query** (e.g., "machine learning algorithms")
-- Adjust **number of results** (1-10)
-- Click **"Search Similar Chunks"**
-- View results with chunk numbers and similarity scores
-
-### 5. Explore the Visualization
-- **3D Plot**: Rotate (drag), zoom (scroll), pan (right-click drag)
-- **Color Coding**: 
-  - 🔵 Blue = all document chunks
-  - 🔴 Red = retrieved/similar chunks from your query
-  - 💎 Yellow diamond = your query point
-- **Hover**: See chunk preview and 3D coordinates
-- **Understanding**: Points closer together = more semantically similar
-
-### 6. Chunk Explorer
-- Select individual chunks to view full content
-- See embedding vector preview (first 10 of 384/768 dimensions)
-- Understand that visualization uses ALL dimensions (reduced to 3D)
+- **Learning RAG**: Understand the complete pipeline visually
+- **Prompt Engineering**: See exact prompts sent to LLM
+- **Cost Analysis**: Track token usage and costs
+- **Model Comparison**: Compare embedding models
+- **Document Analysis**: Explore semantic relationships
+- **Education**: Teach vector databases and RAG systems
+- **Debugging**: Inspect full API calls and responses
 
 ## 🛠️ Technical Stack
 
 - **Streamlit**: Web interface and interactivity
-- **Sentence Transformers**: State-of-the-art text embeddings
+- **Sentence Transformers**: State-of-the-art embeddings
 - **ChromaDB**: Vector database for semantic search
+- **OpenAI**: GPT-4o-mini for generation
 - **Plotly**: Interactive 3D visualizations
-- **scikit-learn**: PCA dimensionality reduction
-- **UMAP**: Advanced dimensionality reduction
+- **scikit-learn & UMAP**: Dimensionality reduction
 
-## 🧪 Supported Embedding Models
+## 🧪 Supported Models
 
+### Embedding Models
 | Model | Speed | Accuracy | Dimensions | Best For |
 |-------|-------|----------|------------|----------|
 | all-MiniLM-L6-v2 | ⚡⚡⚡ | ⭐⭐⭐ | 384 | General use, fast |
 | all-mpnet-base-v2 | ⚡⚡ | ⭐⭐⭐⭐⭐ | 768 | High accuracy |
 | paraphrase-multilingual | ⚡⚡ | ⭐⭐⭐⭐ | 384 | Multiple languages |
 
+### LLM Model
+- **GPT-4o-mini**: Fast, affordable, high-quality responses
+- **Pricing**: ~$0.0001-0.0015 per query (very affordable!)
+
+## 📊 Observability Features
+
+Similar to LangSmith, you can see:
+- ✅ **Prompt Construction**: Exact system prompt and user message
+- ✅ **Context Injection**: How retrieved chunks are formatted
+- ✅ **Token Usage**: Detailed breakdown of input/output tokens
+- ✅ **Cost Tracking**: Estimated costs per generation
+- ✅ **Full Conversation**: Complete API request/response
+- ✅ **Similarity Scores**: Which chunks were most relevant
+- ✅ **3D Visualization**: Embedding space visualization
+
 ## 📁 Project Structure
 
 ```
 RAG Visualizer/
-├── app.py                          # Main Streamlit application
-├── requirements.txt                # Python dependencies
-├── .streamlit/
-│   └── config.toml                # Streamlit configuration
-├── src/                           # Source code
-│   ├── config/                    # Configuration & settings
-│   │   ├── __init__.py
-│   │   └── settings.py           # Model options, sample texts
-│   ├── core/                      # Core functionality
-│   │   ├── __init__.py
-│   │   ├── models.py             # Model loading & caching
-│   │   ├── text_processing.py   # Text chunking utilities
-│   │   ├── vector_store.py       # ChromaDB operations
-│   │   ├── visualization.py      # 3D plotting & dimensionality reduction
-│   │   └── session_state.py      # Session state management
-│   └── ui/                        # User interface
-│       ├── __init__.py
-│       ├── styles.py             # CSS styling
-│       └── components/            # UI components
-│           ├── __init__.py
-│           ├── sidebar.py
+├── app.py                              # Main application
+├── requirements.txt                    # Dependencies
+├── .env                               # API keys (create this)
+├── src/
+│   ├── config/
+│   │   └── settings.py               # Model options, samples
+│   ├── core/
+│   │   ├── models.py                 # Embedding models
+│   │   ├── text_processing.py       # Text chunking
+│   │   ├── vector_store.py           # ChromaDB operations
+│   │   ├── visualization.py          # 3D plotting
+│   │   ├── llm.py                    # OpenAI integration
+│   │   └── session_state.py          # State management
+│   └── ui/
+│       ├── styles.py                 # CSS styling
+│       └── components/               # UI components
 │           ├── input_section.py
 │           ├── query_section.py
-│           ├── stats_section.py
 │           ├── visualization_section.py
-│           └── chunk_explorer.py
-├── README.md
-├── QUICKSTART.md
-├── DEPLOYMENT_GUIDE.md
-└── LICENSE
+│           ├── augmentation_section.py
+│           └── generation_section.py
+├── README.md                          # This file
+└── DEPLOYMENT_GUIDE.md               # Cloud deployment
 ```
 
-## 🎯 Use Cases
+## 💰 Cost Considerations
 
-- **Learning RAG**: Visualize how retrieval-augmented generation systems work
-- **Understanding Embeddings**: See how text gets converted to vectors in semantic space
-- **Model Comparison**: Compare different embedding models' clustering behavior
-- **Document Analysis**: Explore semantic relationships and topic clusters in your documents
-- **Query Engineering**: Test how different query phrasings retrieve different chunks
-- **Education**: Teach vector databases, embeddings, and dimensionality reduction
-- **Research**: Analyze how chunking strategies affect retrieval quality
+**GPT-4o-mini Pricing:**
+- Input: $0.150 per 1M tokens
+- Output: $0.600 per 1M tokens
 
-## 🔮 Future Enhancements
+**Typical Query Cost:**
+- Small (3 contexts, 500 tokens): ~$0.0001-0.0003
+- Medium (5 contexts, 1500 tokens): ~$0.0003-0.0008
+- Large (10 contexts, 3000 tokens): ~$0.0006-0.0015
 
-- [ ] Support for PDF and DOCX files
-- [ ] Multiple document comparison
-- [ ] Reranking visualization
-- [ ] Attention score heatmaps
-- [ ] LLM generation integration
-- [ ] Custom model upload
-- [ ] Batch processing
-- [ ] Export embeddings
+**Local Operations (Free):**
+- Retrieval: Local embeddings (sentence-transformers)
+- Augmentation: Client-side prompt construction
 
-## 🤝 Contributing
+## 🐳 Docker Deployment
 
-Contributions are welcome! Please feel free to submit a Pull Request.
+Quick start with Docker Compose:
+```bash
+# Build and run
+docker-compose up -d
 
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
+# View logs
+docker-compose logs -f
+
+# Stop
+docker-compose down
+```
+
+Or build manually:
+```bash
+docker build -t rag-visualizer .
+docker run -p 8501:8501 --env-file .env rag-visualizer
+```
+
+See [DEPLOYMENT_GUIDE.md](DEPLOYMENT_GUIDE.md) for cloud deployment options (Google Cloud Run, AWS, Azure).
 
 ## 💡 Tips for Best Results
 
-- **Chunk Size**: 
-  - Smaller (50-100) = more granular, better for specific queries
-  - Larger (200-500) = more context, better for conceptual queries
-- **Sample Texts**: Use provided samples for quick demo with proper chunk count
-- **Model Choice**: Start with MiniLM for speed, switch to mpnet for accuracy
-- **Queries**: Use natural language questions or topic keywords
-- **Visualization**: Try both PCA and UMAP to see different perspectives
+**Chunk Size:**
+- Smaller (50-100) = more granular, specific queries
+- Larger (200-500) = more context, conceptual queries
+
+**System Prompt:**
+- Customize for your use case (technical docs, customer support, research)
+- Include instructions for citation and fallback behavior
+
+**Token Management:**
+- Reduce retrieved chunks (n_results) to lower costs
+- Use smaller chunk sizes for efficiency
+- Monitor token usage in the Generation section
+
+**Model Selection:**
+- MiniLM for speed and general use
+- mpnet for research and accuracy
+- multilingual for non-English text
+
+## 🔧 Troubleshooting
+
+**"OPENAI_API_KEY not found"**
+- Ensure `.env` file exists in project root
+- Verify format: `OPENAI_API_KEY=sk-...`
+- Restart Streamlit after creating `.env`
+
+**High token usage**
+- Reduce number of retrieved chunks (n_results slider)
+- Use smaller chunk sizes
+- Shorten the system prompt
+
+**Model download fails**
+```bash
+export TRANSFORMERS_CACHE="./models"
+streamlit run app.py
+```
+
+**Port already in use**
+```bash
+streamlit run app.py --server.port 8502
+```
+
+## 🔮 Future Enhancements
+
+- [ ] Support for other LLM providers (Anthropic, local models)
+- [ ] Conversation history
+- [ ] RAG evaluation metrics (faithfulness, relevance)
+- [ ] PDF and DOCX support
+- [ ] Streaming responses
+- [ ] Prompt template library
+- [ ] Advanced RAG techniques (HyDE, multi-query)
+- [ ] Export/import functionality
+
+## 🤝 Contributing
+
+Contributions welcome! Please:
+1. Fork the repository
+2. Create feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit changes (`git commit -m 'Add AmazingFeature'`)
+4. Push to branch (`git push origin feature/AmazingFeature`)
+5. Open Pull Request
 
 ## 📝 License
 
-This project is licensed under the MIT License - see the [LICENCE](LICENCE) file for details.
+MIT License - see [LICENCE](LICENCE) file for details.
 
 ## 🙏 Acknowledgments
 
-- [Sentence Transformers](https://www.sbert.net/) for state-of-the-art embedding models
-- [ChromaDB](https://www.trychroma.com/) for the elegant vector database
-- [Streamlit](https://streamlit.io/) for the amazing web framework
-- [Plotly](https://plotly.com/) for stunning interactive visualizations
-- [scikit-learn](https://scikit-learn.org/) & [UMAP](https://umap-learn.readthedocs.io/) for dimensionality reduction
+- [Sentence Transformers](https://www.sbert.net/) - Embedding models
+- [ChromaDB](https://www.trychroma.com/) - Vector database
+- [OpenAI](https://openai.com/) - LLM API
+- [Streamlit](https://streamlit.io/) - Web framework
+- [Plotly](https://plotly.com/) - Interactive visualizations
+- [scikit-learn](https://scikit-learn.org/) & [UMAP](https://umap-learn.readthedocs.io/) - Dimensionality reduction
 
 ---
 

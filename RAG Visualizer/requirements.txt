@@ -7,3 +7,5 @@ pandas>=2.0.0
 scikit-learn>=1.3.0
 umap-learn>=0.5.4
 torch>=2.0.0
+openai>=1.0.0
+python-dotenv>=1.0.0
