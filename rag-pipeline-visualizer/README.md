@@ -3,7 +3,7 @@
 An interactive tool to visualize the complete **naive RAG process** from start to finish. This project breaks down the entire RAG (Retrieval-Augmented Generation) pipeline into three transparent sections: **Retrieval → Augmentation → Generation**. Built with Streamlit, ChromaDB, Sentence Transformers, and OpenAI.
 
 <div align="center">
-  <img src="https://raw.githubusercontent.com/mcikalmerdeka/nlp-learning/refs/heads/main/RAG%20Visualizer/assets/Clearest%20RAG%20Diagram.jpg" alt="RAG Pipeline Diagram" width="500"/>
+  <img src="https://raw.githubusercontent.com/mcikalmerdeka/nlp-learning/refs/heads/main/rag-pipeline-visualizer/assets/Clearest%20RAG%20Diagram.jpg" alt="RAG Pipeline Diagram" width="500"/>
 </div>
 
 ## 🌟 Features
