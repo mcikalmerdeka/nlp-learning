@@ -4,7 +4,7 @@ from .models import load_model
 from .text_processing import chunk_text
 from .vector_store import create_chromadb_collection
 from .visualization import reduce_dimensions, create_3d_plot
-from .session_state import initialize_session_state
+from .session_state import initialize_session_state, reset_embeddings_state
 from .llm import generate_response, construct_rag_prompt, get_openai_client
 
 __all__ = [
@@ -14,6 +14,7 @@ __all__ = [
     'reduce_dimensions',
     'create_3d_plot',
     'initialize_session_state',
+    'reset_embeddings_state',
     'generate_response',
     'construct_rag_prompt',
     'get_openai_client'

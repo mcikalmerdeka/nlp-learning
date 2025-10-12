@@ -2,6 +2,7 @@
 
 import streamlit as st
 from src.config import MODEL_OPTIONS, SAMPLE_TEXTS
+from src.core.session_state import reset_embeddings_state
 
 
 def render_sidebar():
@@ -21,6 +22,14 @@ def render_sidebar():
         )
         
         model_name = MODEL_OPTIONS[selected_model]
+        
+        # Reset embeddings if model changed
+        if st.session_state.current_model is not None and st.session_state.current_model != model_name:
+            reset_embeddings_state()
+            st.session_state.current_model = model_name
+            st.rerun()
+        
+        st.session_state.current_model = model_name
         
         # Chunking parameters
         st.subheader("📝 Chunking Settings")
