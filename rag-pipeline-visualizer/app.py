@@ -15,7 +15,8 @@ from src.ui.components import (
     render_visualization_section,
     render_chunk_explorer,
     render_augmentation_section,
-    render_generation_section
+    render_generation_section,
+    render_rag_explanation
 )
 
 
@@ -46,6 +47,9 @@ def main():
         unsafe_allow_html=True
     )
     
+    # RAG Explanation Section
+    render_rag_explanation()
+    
     # Sidebar configuration
     model_name, chunk_size, overlap, reduction_method, collection_name = render_sidebar()
     
@@ -74,12 +78,10 @@ def main():
         render_chunk_explorer()
     
     st.divider()
-    st.divider()
     
     # ========== SECTION 2: AUGMENTATION ==========
     render_augmentation_section()
     
-    st.divider()
     st.divider()
     
     # ========== SECTION 3: GENERATION ==========
