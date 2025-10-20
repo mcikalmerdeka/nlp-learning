@@ -44,3 +44,6 @@ Thumbs.db
 .cache/
 .pytest_cache/
 
+# Additional files
+inspirations/
+
