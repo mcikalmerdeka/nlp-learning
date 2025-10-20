@@ -192,7 +192,6 @@ RAG Visualizer/
 │           ├── augmentation_section.py
 │           └── generation_section.py
 ├── README.md                          # This file
-├── VISUALIZATION_GUIDE.md            # Visualization features (NEW!)
 └── DEPLOYMENT_GUIDE.md               # Cloud deployment
 ```
 
@@ -330,8 +329,6 @@ These features were inspired by advanced embedding analysis research but impleme
 - 💾 Low memory usage (~100MB)
 - 🎯 Optimized for educational purposes
 - 📚 Clear, interpretable results
-
-See [VISUALIZATION_GUIDE.md](VISUALIZATION_GUIDE.md) for comprehensive documentation with examples and best practices.
 
 ## 🔮 Future Enhancements
 
