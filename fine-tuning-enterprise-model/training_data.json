@@ -1,0 +1,136 @@
+[
+    {
+        "messages": [
+            {"role": "system", "content": "You are a customer support assistant for TechCorp."},
+            {"role": "user", "content": "How do I reset my password?"},
+            {"role": "assistant", "content": "To reset your password: 1) Go to login page 2) Click 'Forgot Password' 3) Enter your email 4) Check your inbox for reset link"}
+        ]
+    },
+    {
+        "messages": [
+            {"role": "system", "content": "You are a customer support assistant for TechCorp."},
+            {"role": "user", "content": "What are your business hours?"},
+            {"role": "assistant", "content": "TechCorp support is available Monday-Friday, 9 AM to 6 PM EST. For urgent issues, our emergency line is available 24/7."}
+        ]
+    },
+    {
+        "messages": [
+            {"role": "system", "content": "You are a customer support assistant for TechCorp."},
+            {"role": "user", "content": "How can I cancel my subscription?"},
+            {"role": "assistant", "content": "To cancel your subscription: 1) Log into your account 2) Go to 'Billing & Subscriptions' 3) Select the subscription you want to cancel 4) Click 'Cancel Subscription' and confirm. You'll have access until the end of your billing period."}
+        ]
+    },
+    {
+        "messages": [
+            {"role": "system", "content": "You are a customer support assistant for TechCorp."},
+            {"role": "user", "content": "I'm having trouble logging in"},
+            {"role": "assistant", "content": "Let me help you with that. First, verify you're using the correct email address. If you forgot your password, use the 'Forgot Password' link. If you're still having issues, clear your browser cache or try a different browser. Contact us at support@techcorp.com if problems persist."}
+        ]
+    },
+    {
+        "messages": [
+            {"role": "system", "content": "You are a customer support assistant for TechCorp."},
+            {"role": "user", "content": "What payment methods do you accept?"},
+            {"role": "assistant", "content": "We accept all major credit cards (Visa, Mastercard, American Express, Discover), PayPal, and bank transfers for enterprise accounts. All payments are processed securely through our encrypted payment gateway."}
+        ]
+    },
+    {
+        "messages": [
+            {"role": "system", "content": "You are a customer support assistant for TechCorp."},
+            {"role": "user", "content": "Can I get a refund?"},
+            {"role": "assistant", "content": "Yes, we offer a 30-day money-back guarantee. To request a refund: 1) Contact support@techcorp.com 2) Provide your order number and reason for refund 3) Refunds are typically processed within 5-7 business days to your original payment method."}
+        ]
+    },
+    {
+        "messages": [
+            {"role": "system", "content": "You are a customer support assistant for TechCorp."},
+            {"role": "user", "content": "How do I upgrade my plan?"},
+            {"role": "assistant", "content": "To upgrade your plan: 1) Log into your account 2) Navigate to 'Billing & Subscriptions' 3) Click 'Upgrade Plan' 4) Select your desired plan 5) Confirm the changes. You'll be charged a prorated amount for the remainder of your billing cycle."}
+        ]
+    },
+    {
+        "messages": [
+            {"role": "system", "content": "You are a customer support assistant for TechCorp."},
+            {"role": "user", "content": "Is my data secure?"},
+            {"role": "assistant", "content": "Absolutely. We use bank-level 256-bit SSL encryption for all data transmission. Your data is stored in SOC 2 Type II certified data centers with regular security audits. We never share your data with third parties without your explicit consent."}
+        ]
+    },
+    {
+        "messages": [
+            {"role": "system", "content": "You are a customer support assistant for TechCorp."},
+            {"role": "user", "content": "How do I contact technical support?"},
+            {"role": "assistant", "content": "You can reach our technical support team via: 1) Email: support@techcorp.com 2) Live chat on our website during business hours 3) Phone: 1-800-TECHCORP 4) Submit a ticket through your account dashboard. Premium users have priority support with faster response times."}
+        ]
+    },
+    {
+        "messages": [
+            {"role": "system", "content": "You are a customer support assistant for TechCorp."},
+            {"role": "user", "content": "Can I export my data?"},
+            {"role": "assistant", "content": "Yes, you can export your data anytime: 1) Go to 'Settings' in your account 2) Click 'Data Management' 3) Select 'Export Data' 4) Choose format (CSV, JSON, or XML) 5) You'll receive a download link via email within 24 hours."}
+        ]
+    },
+    {
+        "messages": [
+            {"role": "system", "content": "You are a customer support assistant for TechCorp."},
+            {"role": "user", "content": "Do you offer student discounts?"},
+            {"role": "assistant", "content": "Yes! Students with valid .edu email addresses receive 50% off all individual plans. To apply: 1) Sign up with your student email 2) Verify your status through our verification partner 3) Your discount will be applied automatically. This discount is valid while you maintain student status."}
+        ]
+    },
+    {
+        "messages": [
+            {"role": "system", "content": "You are a customer support assistant for TechCorp."},
+            {"role": "user", "content": "How do I add team members?"},
+            {"role": "assistant", "content": "To add team members (available on Team and Enterprise plans): 1) Go to 'Team Management' 2) Click 'Invite Member' 3) Enter their email address 4) Assign their role and permissions 5) Click 'Send Invitation'. They'll receive an email to join your workspace."}
+        ]
+    },
+    {
+        "messages": [
+            {"role": "system", "content": "You are a customer support assistant for TechCorp."},
+            {"role": "user", "content": "What's the difference between Basic and Pro plans?"},
+            {"role": "assistant", "content": "Basic plan includes: 5 projects, 10GB storage, email support. Pro plan includes: Unlimited projects, 100GB storage, priority support, advanced analytics, API access, and custom integrations. Pro is ideal for power users and small teams who need more features and capacity."}
+        ]
+    },
+    {
+        "messages": [
+            {"role": "system", "content": "You are a customer support assistant for TechCorp."},
+            {"role": "user", "content": "My account is locked. What should I do?"},
+            {"role": "assistant", "content": "Accounts are typically locked after multiple failed login attempts for security. Wait 30 minutes and try again, or click 'Forgot Password' to reset immediately. If your account is locked for other reasons, contact support@techcorp.com with your account email for immediate assistance."}
+        ]
+    },
+    {
+        "messages": [
+            {"role": "system", "content": "You are a customer support assistant for TechCorp."},
+            {"role": "user", "content": "Can I use TechCorp on mobile?"},
+            {"role": "assistant", "content": "Yes! TechCorp is available on iOS and Android. Download our mobile app from the App Store or Google Play. You can also access full functionality through your mobile browser at m.techcorp.com. All features sync seamlessly across devices."}
+        ]
+    },
+    {
+        "messages": [
+            {"role": "system", "content": "You are a customer support assistant for TechCorp."},
+            {"role": "user", "content": "How do I change my email address?"},
+            {"role": "assistant", "content": "To change your email: 1) Log into your account 2) Go to 'Account Settings' 3) Click 'Edit' next to your email 4) Enter new email address 5) Verify via confirmation link sent to new email 6) Your email will be updated once verified. Note: This will become your new login email."}
+        ]
+    },
+    {
+        "messages": [
+            {"role": "system", "content": "You are a customer support assistant for TechCorp."},
+            {"role": "user", "content": "Do you have an API?"},
+            {"role": "assistant", "content": "Yes! Our REST API is available on Pro and Enterprise plans. Access comprehensive documentation at developers.techcorp.com. You'll find API keys in your account dashboard under 'Developer Settings'. We offer webhooks, OAuth authentication, and rate limits of 1000 requests/hour for Pro and 10,000/hour for Enterprise."}
+        ]
+    },
+    {
+        "messages": [
+            {"role": "system", "content": "You are a customer support assistant for TechCorp."},
+            {"role": "user", "content": "I didn't receive my verification email"},
+            {"role": "assistant", "content": "Check your spam/junk folder first. If it's not there: 1) Log into your account 2) Click 'Resend verification email' on the banner 3) Wait 5-10 minutes. Still no email? Whitelist noreply@techcorp.com in your email settings and try again, or contact support@techcorp.com for manual verification."}
+        ]
+    },
+    {
+        "messages": [
+            {"role": "system", "content": "You are a customer support assistant for TechCorp."},
+            {"role": "user", "content": "Can I transfer my account to someone else?"},
+            {"role": "assistant", "content": "Account ownership transfers require contacting our support team directly at support@techcorp.com. You'll need to provide: 1) Current account details 2) New owner's information 3) Reason for transfer. We'll guide you through the secure transfer process, which typically takes 2-3 business days to complete."}
+        ]
+    }
+]
+
