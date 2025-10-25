@@ -3,6 +3,11 @@ AI Chatbot Using Feedforward Neural Network (FNN)/
 Gen AI Project Using Llama3.1/
 Amazon Reviews Sentiment Analysis/
 Langflow Customer Support Agent/
+Sentiment Analysis Based on News Titles/
+LangGraph Course FreeCodeCamp/
+embedding-concept/
+Agno AI Agent Experiment/
+Crawl4ai Implementation/
 
 # Ignore certain files
 .python-version
@@ -10,3 +15,4 @@ Langflow Customer Support Agent/
 .devcontainer/
 pyproject.toml
 uv.lock
+*.pth
