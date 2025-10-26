@@ -392,7 +392,470 @@ Retriever Summary:
 ==================
 
 ✅ Use .as_retriever() to get unified interface
-✅ Use .invoke("""
+✅ Use .invoke(query) for synchronous retrieval
+✅ Use .batch([queries]) for multiple queries
+✅ Customize with search_type and search_kwargs
+✅ Integrate seamlessly into LCEL chains
+✅ Leverage advanced retrievers (ensemble, compression, multi-query)
+
+Example Quick Start:
+-------------------
+# 1. Create retriever from any vector store
+retriever = vectorstore.as_retriever(search_kwargs={"k": 5})
+
+# 2. Retrieve documents
+docs = retriever.invoke("your query here")
+
+# 3. Use in RAG chain
+from langchain_core.prompts import ChatPromptTemplate
+from langchain_core.runnables import RunnablePassthrough
+
+prompt = ChatPromptTemplate.from_template(
+    "Context: {context}\\n\\nQuestion: {question}\\n\\nAnswer:"
+)
+
+def format_docs(docs):
+    return "\\n\\n".join(doc.page_content for doc in docs)
+
+chain = (
+    {"context": retriever | format_docs, "question": RunnablePassthrough()}
+    | prompt
+    | llm
+    | StrOutputParser()
+)
+
+answer = chain.invoke("What is the main topic?")
+""")
+
+print("\n" + "="*70)
+print("COMPLETE RETRIEVER COMPARISON")
+print("="*70)
+
+comparison_table = """
+Retriever Features by Database:
+================================
+
+┌────────────┬──────────┬──────────┬─────────────────┬──────────────────┐
+│ Database   │ MMR      │ Score    │ Filter Syntax   │ Special Features │
+│            │ Support  │ Threshold│                 │                  │
+├────────────┼──────────┼──────────┼─────────────────┼──────────────────┤
+│ ChromaDB   │    ✅    │    ✅    │ Dict (simple)   │ Easy setup       │
+│ Pinecone   │    ✅    │    ✅    │ Dict (MongoDB)  │ Namespaces       │
+│ Weaviate   │    ✅    │    ✅    │ Dict/Where      │ Hybrid built-in  │
+│ FAISS      │    ✅    │    ✅    │ Dict+fetch_k    │ Fastest search   │
+│ Qdrant     │    ✅    │    ✅    │ Filter objects  │ Advanced filters │
+│ Milvus     │    ✅    │    ✅    │ String expr     │ Partitions       │
+│ pgvector   │    ✅    │    ✅    │ Dict (SQL)      │ SQL integration  │
+└────────────┴──────────┴──────────┴─────────────────┴──────────────────┘
+
+Filter Syntax Examples:
+======================
+
+ChromaDB & pgvector:
+-------------------
+retriever = db.as_retriever(
+    search_kwargs={
+        "k": 5,
+        "filter": {
+            "source": "doc.pdf",
+            "category": "tech"
+        }
+    }
+)
+
+Pinecone:
+--------
+retriever = db.as_retriever(
+    search_kwargs={
+        "k": 5,
+        "filter": {
+            "source": {"$eq": "doc.pdf"},
+            "page": {"$gte": 5, "$lte": 20},
+            "category": {"$in": ["tech", "science"]}
+        }
+    }
+)
+
+Qdrant:
+------
+from qdrant_client.http import models
+
+retriever = db.as_retriever(
+    search_kwargs={
+        "k": 5,
+        "filter": models.Filter(
+            must=[
+                models.FieldCondition(
+                    key="metadata.source",
+                    match=models.MatchValue(value="doc.pdf")
+                )
+            ],
+            should=[
+                models.FieldCondition(
+                    key="metadata.category",
+                    match=models.MatchAny(any=["tech", "science"])
+                )
+            ]
+        )
+    }
+)
+
+Milvus:
+------
+retriever = db.as_retriever(
+    search_kwargs={
+        "k": 5,
+        "expr": 'source == "doc.pdf" and page >= 5 and page <= 20'
+    }
+)
+
+FAISS (requires fetch_k):
+------------------------
+retriever = db.as_retriever(
+    search_kwargs={
+        "k": 5,
+        "fetch_k": 20,  # Must be >= k when filtering
+        "filter": {"source": "doc.pdf"}
+    }
+)
+"""
+
+print(comparison_table)
+
+print("\n" + "="*70)
+print("REAL-WORLD RETRIEVER EXAMPLES")
+print("="*70)
+
+"""
+Example 1: Multi-Document QA System
+===================================
+"""
+
+def multi_document_qa_system():
+    """RAG system that searches across multiple documents"""
+    
+    # Setup
+    from langchain_openai import ChatOpenAI
+    from langchain_core.prompts import ChatPromptTemplate
+    from langchain_core.output_parsers import StrOutputParser
+    from langchain_core.runnables import RunnablePassthrough
+    
+    # Assume vectorstore is already populated with multiple docs
+    # vectorstore = Chroma(...)
+    
+    # Create retriever that searches across all documents
+    retriever = vectorstore.as_retriever(
+        search_type="mmr",  # Diverse results from different docs
+        search_kwargs={
+            "k": 5,
+            "fetch_k": 20,
+            "lambda_mult": 0.5
+        }
+    )
+    
+    # Define prompt that handles multiple sources
+    prompt = ChatPromptTemplate.from_template("""
+Answer the question based on the following context from multiple documents.
+Cite the source document for each piece of information.
+
+Context:
+{context}
+
+Question: {question}
+
+Answer (with sources):""")
+    
+    def format_docs_with_sources(docs):
+        formatted = []
+        for i, doc in enumerate(docs, 1):
+            source = doc.metadata.get("source", "Unknown")
+            formatted.append(f"[Source {i}: {source}]\n{doc.page_content}")
+        return "\n\n".join(formatted)
+    
+    # Build chain
+    llm = ChatOpenAI(model="gpt-4", temperature=0)
+    
+    chain = (
+        {
+            "context": retriever | format_docs_with_sources,
+            "question": RunnablePassthrough()
+        }
+        | prompt
+        | llm
+        | StrOutputParser()
+    )
+    
+    # Use it
+    answer = chain.invoke("Compare the methodologies in these papers")
+    return answer
+
+"""
+Example 2: Filtered Retrieval by Date
+=====================================
+"""
+
+def time_aware_retrieval(vectorstore, start_date, end_date):
+    """Retrieve documents within a specific time range"""
+    
+    # Create retriever with date filtering
+    retriever = vectorstore.as_retriever(
+        search_kwargs={
+            "k": 10,
+            "filter": {
+                "date": {
+                    "$gte": start_date,  # Pinecone syntax
+                    "$lte": end_date
+                }
+            }
+        }
+    )
+    
+    # For other databases, adjust filter syntax:
+    # Qdrant: models.Range(gte=start_date, lte=end_date)
+    # Milvus: f'date >= "{start_date}" and date <= "{end_date}"'
+    
+    query = "What are the latest developments?"
+    recent_docs = retriever.invoke(query)
+    
+    return recent_docs
+
+"""
+Example 3: Category-Specific RAG
+================================
+"""
+
+def category_specific_rag(vectorstore, category):
+    """RAG system that only searches within a category"""
+    
+    from langchain_openai import ChatOpenAI
+    from langchain_core.prompts import ChatPromptTemplate
+    from langchain_core.output_parsers import StrOutputParser
+    
+    # Retriever filtered by category
+    retriever = vectorstore.as_retriever(
+        search_kwargs={
+            "k": 5,
+            "filter": {"category": category}
+        }
+    )
+    
+    prompt = ChatPromptTemplate.from_template("""
+You are an expert in {category}. Answer the question using only 
+information from the {category} category.
+
+Context:
+{context}
+
+Question: {question}
+
+Expert Answer:""")
+    
+    def format_docs(docs):
+        return "\n\n".join(doc.page_content for doc in docs)
+    
+    llm = ChatOpenAI(temperature=0)
+    
+    chain = (
+        {
+            "context": retriever | format_docs,
+            "question": RunnablePassthrough(),
+            "category": lambda x: category
+        }
+        | prompt
+        | llm
+        | StrOutputParser()
+    )
+    
+    return chain
+
+# Usage:
+# tech_rag = category_specific_rag(vectorstore, "technology")
+# answer = tech_rag.invoke("What are the latest trends?")
+
+"""
+Example 4: Hybrid Search with Fallback
+======================================
+"""
+
+def hybrid_search_with_fallback(vectorstore):
+    """Try similarity search, fallback to broader search if no results"""
+    
+    def smart_retriever(query: str):
+        # First try: High threshold for quality results
+        retriever_strict = vectorstore.as_retriever(
+            search_type="similarity_score_threshold",
+            search_kwargs={
+                "score_threshold": 0.8,
+                "k": 5
+            }
+        )
+        
+        docs = retriever_strict.invoke(query)
+        
+        # If no results, fallback to standard search
+        if not docs:
+            print("No high-quality matches, broadening search...")
+            retriever_broad = vectorstore.as_retriever(
+                search_kwargs={"k": 10}
+            )
+            docs = retriever_broad.invoke(query)
+        
+        return docs
+    
+    return smart_retriever
+
+"""
+Example 5: Batch Processing Multiple Queries
+============================================
+"""
+
+def batch_retrieval_example(vectorstore):
+    """Efficiently process multiple queries at once"""
+    
+    retriever = vectorstore.as_retriever(
+        search_kwargs={"k": 3}
+    )
+    
+    # List of queries to process
+    queries = [
+        "What is machine learning?",
+        "Explain neural networks",
+        "What are the benefits of AI?",
+        "How does deep learning work?"
+    ]
+    
+    # Batch retrieval (more efficient than loop)
+    batch_results = retriever.batch(queries)
+    
+    # Process results
+    for query, docs in zip(queries, batch_results):
+        print(f"\nQuery: {query}")
+        print(f"Retrieved {len(docs)} documents")
+        if docs:
+            print(f"Top result: {docs[0].page_content[:100]}...")
+    
+    return batch_results
+
+"""
+Example 6: Async Retrieval for Better Performance
+=================================================
+"""
+
+async def async_retrieval_example(vectorstore):
+    """Use async for non-blocking retrieval"""
+    
+    retriever = vectorstore.as_retriever(
+        search_kwargs={"k": 5}
+    )
+    
+    # Single async query
+    docs = await retriever.ainvoke("What is AI?")
+    
+    # Async batch processing
+    queries = [
+        "What is machine learning?",
+        "Explain neural networks",
+        "What are transformers?"
+    ]
+    
+    batch_results = await retriever.abatch(queries)
+    
+    return batch_results
+
+# Usage:
+# import asyncio
+# results = asyncio.run(async_retrieval_example(vectorstore))
+
+"""
+Example 7: Quality-Aware Retrieval
+==================================
+"""
+
+def quality_aware_retrieval(vectorstore, query, min_score=0.7):
+    """Only return high-quality results with scores"""
+    
+    retriever = vectorstore.as_retriever(
+        search_type="similarity_score_threshold",
+        search_kwargs={
+            "score_threshold": min_score
+        }
+    )
+    
+    docs = retriever.invoke(query)
+    
+    if not docs:
+        return {
+            "status": "no_quality_matches",
+            "message": f"No documents found with score >= {min_score}",
+            "documents": []
+        }
+    
+    return {
+        "status": "success",
+        "num_results": len(docs),
+        "documents": docs
+    }
+
+"""
+Example 8: Retriever with Post-Processing
+=========================================
+"""
+
+def retriever_with_postprocessing(vectorstore):
+    """Add custom post-processing to retrieved documents"""
+    
+    base_retriever = vectorstore.as_retriever(
+        search_kwargs={"k": 10}
+    )
+    
+    def postprocess_docs(docs):
+        """Custom post-processing logic"""
+        
+        # 1. Remove duplicates based on content similarity
+        unique_docs = []
+        seen_content = set()
+        
+        for doc in docs:
+            content_hash = hash(doc.page_content[:100])
+            if content_hash not in seen_content:
+                unique_docs.append(doc)
+                seen_content.add(content_hash)
+        
+        # 2. Sort by metadata (e.g., date)
+        unique_docs.sort(
+            key=lambda x: x.metadata.get("date", ""),
+            reverse=True
+        )
+        
+        # 3. Limit to top 5
+        return unique_docs[:5]
+    
+    def custom_invoke(query):
+        docs = base_retriever.invoke(query)
+        return postprocess_docs(docs)
+    
+    return custom_invoke
+
+print("""
+Advanced Retriever Patterns Summary:
+====================================
+
+1. Multi-Document QA: Use MMR for diverse sources
+2. Time-Aware: Filter by date ranges
+3. Category-Specific: Scope search to categories
+4. Hybrid with Fallback: Try strict then broad
+5. Batch Processing: Handle multiple queries efficiently
+6. Async Retrieval: Non-blocking for better performance
+7. Quality-Aware: Enforce minimum score thresholds
+8. Post-Processing: Custom logic on retrieved docs
+
+All these patterns work with ANY vector database by using the 
+unified .as_retriever() interface!
+""")
+
+print("\n" + "="*70)
+print("END OF RETRIEVER GUIDE")
+print("="*70)"""
 Complete Vector Database RAG Guide with LangChain (2025)
 =========================================================
 Comprehensive examples for indexing and retrieval using 7 popular vector databases:
