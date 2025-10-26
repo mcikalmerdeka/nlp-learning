@@ -1,4 +1,398 @@
+print("\n" + "="*70)
+print("Setup complete! Choose the vector database that fits your needs.")
+print("="*70)
+
+
+# =============================================================================
+# RETRIEVER INTERFACE - DETAILED EXPLANATION
+# =============================================================================
+
+print("\n" + "="*70)
+print("RETRIEVER INTERFACE - UNIVERSAL PATTERN")
+print("="*70)
+
 """
+Understanding .as_retriever() Method
+====================================
+
+The .as_retriever() method is a LangChain standard that converts any vector 
+store into a Retriever object. This provides a unified interface across all 
+vector databases, making it easy to switch between them without changing 
+your application code.
+
+Key Benefits:
+-------------
+1. Unified Interface: Same methods (invoke, batch, stream) across all databases
+2. Chain Integration: Easily use in LCEL (LangChain Expression Language) chains
+3. Standard Parameters: Consistent search_type and search_kwargs across databases
+4. Runnable Protocol: Inherits async support, batch processing, streaming
+
+Basic Usage Pattern:
+-------------------
+"""
+
+# Example with any vector store
+def retriever_pattern_example(vectorstore):
+    """Universal pattern that works with ALL vector databases"""
+    
+    # 1. Convert vector store to retriever
+    retriever = vectorstore.as_retriever()
+    
+    # 2. Use invoke() to retrieve documents
+    query = "What is machine learning?"
+    docs = retriever.invoke(query)
+    
+    # 3. Process results (same format for all databases)
+    for i, doc in enumerate(docs):
+        print(f"Document {i+1}:")
+        print(f"  Content: {doc.page_content[:100]}...")
+        print(f"  Metadata: {doc.metadata}")
+    
+    return docs
+
+"""
+Search Types Explained:
+-----------------------
+
+1. "similarity" (default)
+   - Standard semantic similarity search
+   - Returns k most similar documents
+   - Usage: retriever = db.as_retriever(search_type="similarity")
+   
+2. "mmr" (Maximum Marginal Relevance)
+   - Balances similarity with diversity
+   - Prevents redundant results
+   - Parameters:
+     * k: Number of docs to return
+     * fetch_k: Number to fetch before reranking (>= k)
+     * lambda_mult: 0 = max diversity, 1 = max similarity
+   - Usage:
+     retriever = db.as_retriever(
+         search_type="mmr",
+         search_kwargs={"k": 5, "fetch_k": 20, "lambda_mult": 0.5}
+     )
+   
+3. "similarity_score_threshold"
+   - Only returns docs above a similarity threshold
+   - Useful for quality control
+   - Parameters:
+     * score_threshold: Minimum score (0.0 to 1.0)
+   - Usage:
+     retriever = db.as_retriever(
+         search_type="similarity_score_threshold",
+         search_kwargs={"score_threshold": 0.7}
+     )
+
+Common search_kwargs:
+--------------------
+- k: Number of documents to return (default: 4)
+- fetch_k: Docs to fetch for MMR (default: 20)
+- lambda_mult: MMR diversity parameter (default: 0.5)
+- score_threshold: Minimum similarity score
+- filter: Metadata filtering (syntax varies by database)
+
+Database-Specific Filter Syntax:
+--------------------------------
+"""
+
+# ChromaDB & pgvector - Simple dictionary
+filter_chroma = {"source": "document.pdf", "category": "tech"}
+
+# Pinecone - Nested operators
+filter_pinecone = {
+    "source": {"$eq": "document.pdf"},
+    "page": {"$gte": 5, "$lte": 20}
+}
+
+# Qdrant - Filter objects
+from qdrant_client.http import models
+filter_qdrant = models.Filter(
+    must=[
+        models.FieldCondition(
+            key="metadata.source",
+            match=models.MatchValue(value="document.pdf")
+        )
+    ]
+)
+
+# Milvus - String expressions
+filter_milvus = 'source == "document.pdf" and page >= 5'
+
+"""
+Retriever Methods:
+-----------------
+"""
+
+def retriever_methods_demo(retriever):
+    """All methods available on retriever objects"""
+    
+    query = "What is AI?"
+    
+    # 1. invoke() - Synchronous retrieval
+    docs = retriever.invoke(query)
+    
+    # 2. ainvoke() - Async retrieval
+    # docs = await retriever.ainvoke(query)
+    
+    # 3. batch() - Multiple queries at once
+    queries = ["What is AI?", "What is ML?"]
+    batch_results = retriever.batch(queries)
+    
+    # 4. abatch() - Async batch
+    # batch_results = await retriever.abatch(queries)
+    
+    # 5. stream() - Stream results (if supported)
+    # for doc in retriever.stream(query):
+    #     print(doc)
+    
+    # 6. get_relevant_documents() - Legacy method (same as invoke)
+    docs = retriever.get_relevant_documents(query)
+    
+    return docs
+
+"""
+Using Retrievers in RAG Chains:
+-------------------------------
+"""
+
+# Example 1: Simple RAG chain with LCEL
+def simple_rag_chain(retriever, llm):
+    """Basic RAG pattern using LangChain Expression Language"""
+    from langchain_core.output_parsers import StrOutputParser
+    from langchain_core.prompts import ChatPromptTemplate
+    from langchain_core.runnables import RunnablePassthrough
+    
+    # Define prompt template
+    template = """Answer the question based only on the following context:
+
+Context: {context}
+
+Question: {question}
+
+Answer:"""
+    
+    prompt = ChatPromptTemplate.from_template(template)
+    
+    # Format documents helper
+    def format_docs(docs):
+        return "\n\n".join(doc.page_content for doc in docs)
+    
+    # Build chain using LCEL
+    chain = (
+        {"context": retriever | format_docs, "question": RunnablePassthrough()}
+        | prompt
+        | llm
+        | StrOutputParser()
+    )
+    
+    # Use the chain
+    result = chain.invoke("What is the main topic?")
+    return result
+
+# Example 2: RAG with source tracking
+def rag_with_sources(retriever, llm):
+    """RAG that returns sources with answer"""
+    from langchain_core.prompts import ChatPromptTemplate
+    from langchain_core.runnables import RunnablePassthrough, RunnableParallel
+    
+    template = """Answer based on this context:
+{context}
+
+Question: {question}"""
+    
+    prompt = ChatPromptTemplate.from_template(template)
+    
+    def format_docs(docs):
+        return "\n\n".join(doc.page_content for doc in docs)
+    
+    # Chain that returns both answer and source documents
+    chain = RunnableParallel(
+        {
+            "context": retriever,
+            "question": RunnablePassthrough()
+        }
+    ).assign(
+        answer=lambda x: (
+            {"context": format_docs(x["context"]), "question": x["question"]}
+            | prompt
+            | llm
+        )
+    )
+    
+    result = chain.invoke("What is the main topic?")
+    # result = {"context": [docs], "question": str, "answer": str}
+    return result
+
+# Example 3: Conversational RAG with history
+def conversational_rag(retriever, llm):
+    """RAG with chat history for follow-up questions"""
+    from langchain.chains import create_history_aware_retriever
+    from langchain_core.prompts import MessagesPlaceholder
+    
+    # This will reformulate questions based on chat history
+    contextualize_q_prompt = ChatPromptTemplate.from_messages([
+        ("system", "Given chat history and latest question, formulate a standalone question."),
+        MessagesPlaceholder("chat_history"),
+        ("human", "{input}")
+    ])
+    
+    history_aware_retriever = create_history_aware_retriever(
+        llm, retriever, contextualize_q_prompt
+    )
+    
+    # Now use history_aware_retriever in your chain
+    # It will consider chat history when retrieving
+    return history_aware_retriever
+
+"""
+Advanced Retriever Patterns:
+----------------------------
+"""
+
+# 1. Ensemble Retriever - Combine multiple retrievers
+def ensemble_retriever_example(vectorstore1, vectorstore2):
+    """Combine results from multiple retrievers"""
+    from langchain.retrievers import EnsembleRetriever
+    
+    retriever1 = vectorstore1.as_retriever(search_kwargs={"k": 3})
+    retriever2 = vectorstore2.as_retriever(search_kwargs={"k": 3})
+    
+    # Combine with weighted results
+    ensemble = EnsembleRetriever(
+        retrievers=[retriever1, retriever2],
+        weights=[0.5, 0.5]  # Equal weight
+    )
+    
+    docs = ensemble.invoke("query")
+    return docs
+
+# 2. Contextual Compression - Compress retrieved docs
+def compression_retriever_example(base_retriever, llm):
+    """Compress documents to most relevant parts"""
+    from langchain.retrievers import ContextualCompressionRetriever
+    from langchain.retrievers.document_compressors import LLMChainExtractor
+    
+    compressor = LLMChainExtractor.from_llm(llm)
+    compression_retriever = ContextualCompressionRetriever(
+        base_compressor=compressor,
+        base_retriever=base_retriever
+    )
+    
+    docs = compression_retriever.invoke("query")
+    return docs
+
+# 3. Multi-Query Retriever - Generate multiple queries
+def multi_query_retriever_example(base_retriever, llm):
+    """Generate multiple query variations for better retrieval"""
+    from langchain.retrievers.multi_query import MultiQueryRetriever
+    
+    multi_query_retriever = MultiQueryRetriever.from_llm(
+        retriever=base_retriever,
+        llm=llm
+    )
+    
+    # This generates 3-5 variations of your query automatically
+    docs = multi_query_retriever.invoke("What is AI?")
+    return docs
+
+# 4. Parent Document Retriever - Retrieve larger context
+def parent_document_retriever_example(vectorstore):
+    """Store small chunks, retrieve larger parent documents"""
+    from langchain.retrievers import ParentDocumentRetriever
+    from langchain.storage import InMemoryStore
+    from langchain_text_splitters import RecursiveCharacterTextSplitter
+    
+    # Store for parent documents
+    docstore = InMemoryStore()
+    
+    # Splitters for child and parent chunks
+    child_splitter = RecursiveCharacterTextSplitter(chunk_size=400)
+    parent_splitter = RecursiveCharacterTextSplitter(chunk_size=2000)
+    
+    retriever = ParentDocumentRetriever(
+        vectorstore=vectorstore,
+        docstore=docstore,
+        child_splitter=child_splitter,
+        parent_splitter=parent_splitter
+    )
+    
+    # Add documents - it stores small chunks in vector store
+    # but retrieves larger parent chunks
+    # retriever.add_documents(documents)
+    
+    return retriever
+
+"""
+Testing Your Retriever:
+----------------------
+"""
+
+def test_retriever_quality(retriever, test_queries):
+    """Helper to test retriever performance"""
+    
+    results = {}
+    
+    for query in test_queries:
+        docs = retriever.invoke(query)
+        
+        results[query] = {
+            "num_results": len(docs),
+            "first_result": docs[0].page_content[:100] if docs else None,
+            "sources": [doc.metadata.get("source") for doc in docs]
+        }
+    
+    return results
+
+# Example usage
+test_queries = [
+    "What is the main topic?",
+    "Who are the authors?",
+    "What are the conclusions?"
+]
+
+# results = test_retriever_quality(retriever_chroma, test_queries)
+# print(json.dumps(results, indent=2))
+
+"""
+Performance Tips:
+----------------
+
+1. Choose appropriate k value:
+   - k=3-5: Most focused, fastest
+   - k=10-20: Balanced
+   - k=50+: Comprehensive but slower
+
+2. Use MMR for diverse results:
+   - Prevents redundant information
+   - Better for exploratory queries
+   - lambda_mult=0.5 is a good default
+
+3. Set score thresholds:
+   - Filters out low-quality matches
+   - Prevents irrelevant context in RAG
+   - Start with 0.7, adjust based on results
+
+4. Leverage metadata filters:
+   - Reduces search space
+   - Faster queries
+   - More relevant results
+
+5. Batch processing:
+   - Use batch() for multiple queries
+   - More efficient than sequential invoke()
+
+6. Monitor retrieval quality:
+   - Log retrieved documents
+   - Track relevance scores
+   - A/B test different retrieval strategies
+"""
+
+print("""
+Retriever Summary:
+==================
+
+✅ Use .as_retriever() to get unified interface
+✅ Use .invoke("""
 Complete Vector Database RAG Guide with LangChain (2025)
 =========================================================
 Comprehensive examples for indexing and retrieval using 7 popular vector databases:
@@ -115,6 +509,52 @@ results_filtered = vectorstore_chroma.similarity_search(
 print(f"ChromaDB Query: {query}")
 print(f"Results: {len(results_chroma)} documents")
 
+# --- Using ChromaDB as a Retriever ---
+print("\n--- ChromaDB as Retriever ---")
+
+# Create retriever with default settings (similarity search, k=4)
+retriever_chroma = vectorstore_chroma.as_retriever()
+
+# Use retriever with invoke() method
+retrieved_docs = retriever_chroma.invoke(query)
+print(f"Retrieved {len(retrieved_docs)} documents using invoke()")
+
+# Create retriever with custom k value
+retriever_chroma_k3 = vectorstore_chroma.as_retriever(
+    search_kwargs={"k": 3}
+)
+
+# Create retriever with MMR (Maximum Marginal Relevance) for diversity
+retriever_chroma_mmr = vectorstore_chroma.as_retriever(
+    search_type="mmr",
+    search_kwargs={
+        "k": 5,
+        "fetch_k": 20,  # Fetch 20 docs, then select 5 most diverse
+        "lambda_mult": 0.5  # 0 = max diversity, 1 = min diversity
+    }
+)
+
+# Create retriever with similarity score threshold
+retriever_chroma_threshold = vectorstore_chroma.as_retriever(
+    search_type="similarity_score_threshold",
+    search_kwargs={
+        "score_threshold": 0.5  # Only return docs with score > 0.5
+    }
+)
+
+# Create retriever with metadata filtering
+retriever_chroma_filtered = vectorstore_chroma.as_retriever(
+    search_kwargs={
+        "k": 3,
+        "filter": {"source": "specific_document.pdf"}
+    }
+)
+
+# Using retrievers in a chain (example pattern)
+# retriever_chroma.invoke() returns List[Document]
+# This can be used in RAG chains like:
+# chain = retriever_chroma | format_docs | llm | output_parser
+
 
 # =============================================================================
 # 2. PINECONE - Cloud-Native Vector Database
@@ -181,6 +621,57 @@ results_pinecone_filtered = vectorstore_pinecone.similarity_search(
 print(f"Pinecone Query: {query}")
 print(f"Results: {len(results_pinecone)} documents")
 
+# --- Using Pinecone as a Retriever ---
+print("\n--- Pinecone as Retriever ---")
+
+# Create retriever with default settings
+retriever_pinecone = vectorstore_pinecone.as_retriever()
+
+# Use retriever with invoke() method
+retrieved_docs = retriever_pinecone.invoke(query)
+print(f"Retrieved {len(retrieved_docs)} documents using invoke()")
+
+# Create retriever with custom k value
+retriever_pinecone_k5 = vectorstore_pinecone.as_retriever(
+    search_kwargs={"k": 5}
+)
+
+# Create retriever with MMR for diversity
+retriever_pinecone_mmr = vectorstore_pinecone.as_retriever(
+    search_type="mmr",
+    search_kwargs={
+        "k": 5,
+        "fetch_k": 20,
+        "lambda_mult": 0.5
+    }
+)
+
+# Create retriever with similarity score threshold
+retriever_pinecone_threshold = vectorstore_pinecone.as_retriever(
+    search_type="similarity_score_threshold",
+    search_kwargs={
+        "score_threshold": 0.7
+    }
+)
+
+# Create retriever with metadata filtering (Pinecone filter syntax)
+retriever_pinecone_filtered = vectorstore_pinecone.as_retriever(
+    search_kwargs={
+        "k": 5,
+        "filter": {
+            "source": {"$eq": "specific_document.pdf"}
+        }
+    }
+)
+
+# Advanced: Namespace filtering with retriever
+# retriever_pinecone_ns = vectorstore_pinecone.as_retriever(
+#     search_kwargs={
+#         "k": 5,
+#         "namespace": "user_123"
+#     }
+# )
+
 
 # =============================================================================
 # 3. WEAVIATE - Open-Source Vector Database
@@ -228,6 +719,48 @@ results_weaviate_scores = vectorstore_weaviate.similarity_search_with_score(
 
 print(f"Weaviate Query: {query}")
 print(f"Results: {len(results_weaviate)} documents")
+
+# --- Using Weaviate as a Retriever ---
+print("\n--- Weaviate as Retriever ---")
+
+# Create retriever with default settings
+retriever_weaviate = vectorstore_weaviate.as_retriever()
+
+# Use retriever with invoke() method
+retrieved_docs = retriever_weaviate.invoke(query)
+print(f"Retrieved {len(retrieved_docs)} documents using invoke()")
+
+# Create retriever with custom k value
+retriever_weaviate_k4 = vectorstore_weaviate.as_retriever(
+    search_kwargs={"k": 4}
+)
+
+# Create retriever with MMR for diversity
+retriever_weaviate_mmr = vectorstore_weaviate.as_retriever(
+    search_type="mmr",
+    search_kwargs={
+        "k": 5,
+        "fetch_k": 20,
+        "lambda_mult": 0.5
+    }
+)
+
+# Create retriever with similarity score threshold
+retriever_weaviate_threshold = vectorstore_weaviate.as_retriever(
+    search_type="similarity_score_threshold",
+    search_kwargs={
+        "score_threshold": 0.6
+    }
+)
+
+# Create retriever with metadata filtering
+# Weaviate uses where filters
+retriever_weaviate_filtered = vectorstore_weaviate.as_retriever(
+    search_kwargs={
+        "k": 5,
+        "filter": {"source": "specific_document.pdf"}
+    }
+)
 
 # Don't forget to close the connection
 weaviate_client.close()
@@ -295,6 +828,51 @@ results_faiss_filtered = vectorstore_faiss.similarity_search(
 
 print(f"FAISS Query: {query}")
 print(f"Results: {len(results_faiss)} documents")
+
+# --- Using FAISS as a Retriever ---
+print("\n--- FAISS as Retriever ---")
+
+# Create retriever with default settings
+retriever_faiss = vectorstore_faiss.as_retriever()
+
+# Use retriever with invoke() method
+retrieved_docs = retriever_faiss.invoke(query)
+print(f"Retrieved {len(retrieved_docs)} documents using invoke()")
+
+# Create retriever with custom k value
+retriever_faiss_k5 = vectorstore_faiss.as_retriever(
+    search_kwargs={"k": 5}
+)
+
+# Create retriever with MMR for diversity
+retriever_faiss_mmr = vectorstore_faiss.as_retriever(
+    search_type="mmr",
+    search_kwargs={
+        "k": 5,
+        "fetch_k": 20,  # FAISS fetches more docs then reranks
+        "lambda_mult": 0.5
+    }
+)
+
+# Create retriever with similarity score threshold
+# Note: FAISS returns L2 distance, not similarity score
+# Score threshold behavior depends on the distance metric
+retriever_faiss_threshold = vectorstore_faiss.as_retriever(
+    search_type="similarity_score_threshold",
+    search_kwargs={
+        "score_threshold": 0.8
+    }
+)
+
+# Create retriever with metadata filtering
+# FAISS requires fetch_k > k when filtering
+retriever_faiss_filtered = vectorstore_faiss.as_retriever(
+    search_kwargs={
+        "k": 3,
+        "fetch_k": 10,  # Fetch 10, filter, return top 3
+        "filter": {"source": "specific_document.pdf"}
+    }
+)
 
 
 # =============================================================================
@@ -380,6 +958,77 @@ results_qdrant_filtered = vectorstore_qdrant.similarity_search(
 print(f"Qdrant Query: {query}")
 print(f"Results: {len(results_qdrant)} documents")
 
+# --- Using Qdrant as a Retriever ---
+print("\n--- Qdrant as Retriever ---")
+
+# Create retriever with default settings
+retriever_qdrant = vectorstore_qdrant.as_retriever()
+
+# Use retriever with invoke() method
+retrieved_docs = retriever_qdrant.invoke(query)
+print(f"Retrieved {len(retrieved_docs)} documents using invoke()")
+
+# Create retriever with custom k value
+retriever_qdrant_k5 = vectorstore_qdrant.as_retriever(
+    search_kwargs={"k": 5}
+)
+
+# Create retriever with MMR for diversity
+retriever_qdrant_mmr = vectorstore_qdrant.as_retriever(
+    search_type="mmr",
+    search_kwargs={
+        "k": 5,
+        "fetch_k": 20,
+        "lambda_mult": 0.5
+    }
+)
+
+# Create retriever with similarity score threshold
+retriever_qdrant_threshold = vectorstore_qdrant.as_retriever(
+    search_type="similarity_score_threshold",
+    search_kwargs={
+        "score_threshold": 0.7
+    }
+)
+
+# Create retriever with metadata filtering (Qdrant filter syntax)
+from qdrant_client.http import models
+
+retriever_qdrant_filtered = vectorstore_qdrant.as_retriever(
+    search_kwargs={
+        "k": 5,
+        "filter": models.Filter(
+            must=[
+                models.FieldCondition(
+                    key="metadata.source",
+                    match=models.MatchValue(value="specific_document.pdf")
+                )
+            ]
+        )
+    }
+)
+
+# Advanced: Combined filters with retriever
+retriever_qdrant_advanced = vectorstore_qdrant.as_retriever(
+    search_kwargs={
+        "k": 5,
+        "filter": models.Filter(
+            must=[
+                models.FieldCondition(
+                    key="metadata.category",
+                    match=models.MatchValue(value="tech")
+                )
+            ],
+            should=[
+                models.FieldCondition(
+                    key="metadata.priority",
+                    match=models.MatchValue(value="high")
+                )
+            ]
+        )
+    }
+)
+
 
 # =============================================================================
 # 6. MILVUS - Scalable Vector Database
@@ -448,6 +1097,56 @@ results_milvus_filtered = vectorstore_milvus_lite.similarity_search(
 print(f"Milvus Query: {query}")
 print(f"Results: {len(results_milvus)} documents")
 
+# --- Using Milvus as a Retriever ---
+print("\n--- Milvus as Retriever ---")
+
+# Create retriever with default settings
+retriever_milvus = vectorstore_milvus_lite.as_retriever()
+
+# Use retriever with invoke() method
+retrieved_docs = retriever_milvus.invoke(query)
+print(f"Retrieved {len(retrieved_docs)} documents using invoke()")
+
+# Create retriever with custom k value
+retriever_milvus_k5 = vectorstore_milvus_lite.as_retriever(
+    search_kwargs={"k": 5}
+)
+
+# Create retriever with MMR for diversity
+retriever_milvus_mmr = vectorstore_milvus_lite.as_retriever(
+    search_type="mmr",
+    search_kwargs={
+        "k": 5,
+        "fetch_k": 20,
+        "lambda_mult": 0.5
+    }
+)
+
+# Create retriever with similarity score threshold
+retriever_milvus_threshold = vectorstore_milvus_lite.as_retriever(
+    search_type="similarity_score_threshold",
+    search_kwargs={
+        "score_threshold": 0.6
+    }
+)
+
+# Create retriever with metadata filtering (Milvus expression syntax)
+# Milvus uses string expressions for filtering
+retriever_milvus_filtered = vectorstore_milvus_lite.as_retriever(
+    search_kwargs={
+        "k": 5,
+        "expr": 'source == "specific_document.pdf"'
+    }
+)
+
+# Advanced: Complex expressions with retriever
+retriever_milvus_advanced = vectorstore_milvus_lite.as_retriever(
+    search_kwargs={
+        "k": 5,
+        "expr": 'source == "document.pdf" and page > 5 and page < 20'
+    }
+)
+
 
 # =============================================================================
 # 7. PGVECTOR - PostgreSQL Vector Extension
@@ -505,6 +1204,59 @@ results_pgvector_filtered = vectorstore_pgvector.similarity_search(
 
 print(f"pgvector Query: {query}")
 print(f"Results: {len(results_pgvector)} documents")
+
+# --- Using pgvector as a Retriever ---
+print("\n--- pgvector as Retriever ---")
+
+# Create retriever with default settings
+retriever_pgvector = vectorstore_pgvector.as_retriever()
+
+# Use retriever with invoke() method
+retrieved_docs = retriever_pgvector.invoke(query)
+print(f"Retrieved {len(retrieved_docs)} documents using invoke()")
+
+# Create retriever with custom k value
+retriever_pgvector_k5 = vectorstore_pgvector.as_retriever(
+    search_kwargs={"k": 5}
+)
+
+# Create retriever with MMR for diversity
+retriever_pgvector_mmr = vectorstore_pgvector.as_retriever(
+    search_type="mmr",
+    search_kwargs={
+        "k": 5,
+        "fetch_k": 20,
+        "lambda_mult": 0.5
+    }
+)
+
+# Create retriever with similarity score threshold
+retriever_pgvector_threshold = vectorstore_pgvector.as_retriever(
+    search_type="similarity_score_threshold",
+    search_kwargs={
+        "score_threshold": 0.7
+    }
+)
+
+# Create retriever with metadata filtering
+# pgvector uses dictionary-based filtering
+retriever_pgvector_filtered = vectorstore_pgvector.as_retriever(
+    search_kwargs={
+        "k": 5,
+        "filter": {"source": "specific_document.pdf"}
+    }
+)
+
+# Advanced: Multiple metadata filters
+retriever_pgvector_advanced = vectorstore_pgvector.as_retriever(
+    search_kwargs={
+        "k": 5,
+        "filter": {
+            "source": "document.pdf",
+            "category": "tech"
+        }
+    }
+)
 
 
 # =============================================================================
