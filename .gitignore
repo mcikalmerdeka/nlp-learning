@@ -10,9 +10,6 @@ Agno AI Agent Experiment/
 Crawl4ai Implementation/
 
 # Ignore certain files
-.python-version
 .venv/
 .devcontainer/
-pyproject.toml
-uv.lock
 *.pth
