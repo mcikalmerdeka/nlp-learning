@@ -1,0 +1,1001 @@
+Transaction_ID,Date,Product,Category,Quantity,Unit_Price,Total_Price,Customer_Name,Region,Sales_Rep,Payment_Method,Discount_Applied
+TXN00001,2024-08-07,Desk Chair,Furniture,2,261.42,522.84,Allison Hill,Central,Noah Rhodes,Credit Card,0
+TXN00002,2023-10-14,Laptop,Electronics,1,1414.32,1414.32,Angie Henderson,North,Daniel Wagner,Debit Card,0
+TXN00003,2023-10-25,Desk Chair,Furniture,1,215.12,215.12,Cristian Santos,North,Connie Lawrence,PayPal,15
+TXN00004,2023-12-20,HDMI Cable,Accessories,3,13.23,39.69,Abigail Shaffer,South,Gina Moore,Credit Card,0
+TXN00005,2024-02-09,Keyboard,Accessories,5,105.84,529.2,Gabrielle Davis,East,Ryan Munoz,Cash,0
+TXN00006,2024-03-31,Mouse,Accessories,3,33.26,99.78,Monica Herrera,North,Jamie Arnold,Credit Card,0
+TXN00007,2023-09-28,Keyboard,Accessories,3,89.19,267.57,Lisa Hensley,West,Michele Williams,Cash,0
+TXN00008,2024-01-18,USB Cable,Accessories,1,11.34,11.34,Dylan Miller,South,Brian Ramirez,Debit Card,0
+TXN00009,2023-06-02,HDMI Cable,Accessories,1,17.98,17.98,Holly Wood,East,Derek Zuniga,PayPal,15
+TXN00010,2023-11-20,HDMI Cable,Accessories,1,34.74,34.74,Lisa Jackson,North,Carla Gray,Debit Card,0
+TXN00011,2024-12-17,Headphones,Accessories,1,280.78,280.78,Margaret Hawkins DDS,Central,Patty Perez,PayPal,10
+TXN00012,2024-11-03,Mouse,Accessories,4,51.34,205.36,Ethan Adams,East,Tommy Walter,Cash,20
+TXN00013,2023-11-28,USB Cable,Accessories,1,5.52,5.52,Matthew Foster,North,Judy Baker,Credit Card,0
+TXN00014,2024-04-15,Desk Chair,Furniture,4,410.0,1640.0,Justin Baker,North,Stephanie Ross,Cash,0
+TXN00015,2024-02-08,USB Cable,Accessories,2,15.4,30.8,Zachary Hicks,Central,Anthony Rodriguez,Credit Card,0
+TXN00016,2023-03-25,Mouse,Accessories,4,74.83,299.32,Rebecca Henderson,North,James Ferrell,Cash,0
+TXN00017,2023-04-26,Desk Chair,Furniture,5,584.68,2923.4,Tricia Valencia,East,Nathan Maldonado,Debit Card,0
+TXN00018,2023-04-04,Desk Chair,Furniture,3,167.05,501.15,Debra Davidson,North,Jeffrey Chavez,Credit Card,15
+TXN00019,2024-03-10,HDMI Cable,Accessories,4,11.02,44.08,Sherri Baker,West,Cassandra Gaines,PayPal,10
+TXN00020,2023-03-04,Monitor,Electronics,2,246.58,493.16,Elizabeth Fowler,West,Brittany Farmer,Debit Card,0
+TXN00021,2024-01-29,USB Cable,Accessories,5,10.49,52.45,Paula Moreno,North,Fred Smith,Cash,15
+TXN00022,2023-05-15,USB Cable,Accessories,5,16.0,80.0,Sherry Decker,Central,Anthony Humphrey,Cash,0
+TXN00023,2024-07-31,USB Cable,Accessories,2,14.52,29.04,Angelica Tucker,South,Philip Cannon,Cash,0
+TXN00024,2023-09-10,Desk Chair,Furniture,2,580.56,1161.12,John Pierce,South,Shane Henderson,Cash,20
+TXN00025,2024-11-27,Headphones,Accessories,4,143.4,573.6,Joshua Blair,East,Eric Carney,PayPal,0
+TXN00026,2024-10-24,Standing Desk,Furniture,1,834.25,834.25,Jessica Holmes,Central,Danny Morgan,Cash,0
+TXN00027,2024-08-08,Keyboard,Accessories,2,34.79,69.58,Crystal Robinson,West,Mark Perez,PayPal,0
+TXN00028,2023-07-20,Headphones,Accessories,3,244.85,734.55,Shannon Jones,West,Michael Lewis,Cash,0
+TXN00029,2023-05-13,Keyboard,Accessories,2,64.52,129.04,Timothy Duncan,South,Richard Aguirre,Debit Card,0
+TXN00030,2024-09-08,Standing Desk,Furniture,3,822.98,2468.94,Brent Jordan,North,John Daniel,Debit Card,0
+TXN00031,2024-07-13,Mouse,Accessories,5,19.41,97.05,Victoria Garcia,North,Gerald Hensley,PayPal,15
+TXN00032,2023-03-13,Webcam,Electronics,1,57.33,57.33,Connor West,Central,Donald Wright,Cash,0
+TXN00033,2024-03-07,Mouse,Accessories,3,50.41,151.23,Jessica Callahan,West,Amber Kidd,Debit Card,0
+TXN00034,2024-09-18,Desk Chair,Furniture,2,268.08,536.16,Tracy House,Central,Carol Tucker,Credit Card,0
+TXN00035,2024-05-25,Monitor,Electronics,2,315.39,630.78,James Brown,South,William Baker,PayPal,0
+TXN00036,2023-11-03,USB Cable,Accessories,1,19.79,19.79,Jordan Henderson,North,Whitney Peters,Cash,0
+TXN00037,2024-02-29,Laptop,Electronics,2,1531.49,3062.98,Brittney Phillips,Central,Lauren Daniels,Debit Card,0
+TXN00038,2023-06-15,Webcam,Electronics,4,77.85,311.4,Amy Silva,West,Sarah Moore,PayPal,0
+TXN00039,2023-02-08,Monitor,Electronics,3,221.13,663.39,Angela Lopez,West,Megan Young,Cash,5
+TXN00040,2024-02-28,Headphones,Accessories,3,223.2,669.6,Steve Sanchez,South,Lisa Barnes,Cash,0
+TXN00041,2023-07-02,Standing Desk,Furniture,3,1029.52,3088.56,Kelly Donovan,East,Mike Allen,PayPal,20
+TXN00042,2023-05-17,Headphones,Accessories,5,75.2,376.0,Michael Evans,North,Paul Jones,Credit Card,0
+TXN00043,2024-06-18,Monitor,Electronics,2,549.69,1099.38,Zachary Ferrell,West,Daniel Baker,PayPal,5
+TXN00044,2023-06-28,HDMI Cable,Accessories,4,23.72,94.88,Shirley Suarez,West,Christopher Bass,Debit Card,0
+TXN00045,2024-08-18,Monitor,Electronics,3,213.42,640.26,Lisa Archer,North,Aimee Montoya,Debit Card,0
+TXN00046,2024-10-19,Keyboard,Accessories,2,117.43,234.86,Matthew Mcmillan,Central,Brian Rodriguez,PayPal,0
+TXN00047,2023-04-22,Headphones,Accessories,5,144.66,723.3,Denise Jacobs,East,Christina Walters,Debit Card,0
+TXN00048,2024-08-04,Mouse,Accessories,3,76.91,230.73,John Whitehead,South,Anna Henderson,Credit Card,0
+TXN00049,2024-12-21,Monitor,Electronics,3,536.79,1610.37,Aaron Wise,Central,Deborah Figueroa,Credit Card,10
+TXN00050,2024-08-27,Monitor,Electronics,5,454.59,2272.95,Jessica Smith,South,Stephen Mckee,PayPal,0
+TXN00051,2023-09-07,Webcam,Electronics,4,47.25,189.0,Sandra Aguilar,East,Cameron Parker,Cash,15
+TXN00052,2024-12-16,Headphones,Accessories,2,169.19,338.38,Rebecca Valencia,Central,Christine Wright,PayPal,0
+TXN00053,2023-08-23,Keyboard,Accessories,1,60.92,60.92,Richard Henson,Central,Marc Moore,Cash,0
+TXN00054,2024-07-01,Webcam,Electronics,4,99.29,397.16,Sharon Cherry,Central,Sierra Johnson,PayPal,0
+TXN00055,2023-05-13,Monitor,Electronics,3,575.92,1727.76,Evelyn Galvan,West,Sharon Cochran,Credit Card,0
+TXN00056,2023-01-17,Monitor,Electronics,2,784.31,1568.62,Richard Rodriguez,East,Shannon Walker,Cash,0
+TXN00057,2023-11-20,Laptop,Electronics,5,1903.01,9515.05,Julia Torres,East,Crystal Johnson,PayPal,0
+TXN00058,2023-06-03,Headphones,Accessories,3,203.27,609.81,Garrett Lin,East,Diana May,Credit Card,0
+TXN00059,2023-08-12,Laptop,Electronics,2,2476.54,4953.08,William Herrera,West,Ashley Waller,Debit Card,0
+TXN00060,2024-03-22,HDMI Cable,Accessories,5,30.89,154.45,Victor Baker,Central,Jeffrey Chandler,Cash,0
+TXN00061,2023-11-21,Laptop,Electronics,4,2065.72,8262.88,Larry Dixon,Central,Kenneth Scott,Cash,15
+TXN00062,2023-05-21,Keyboard,Accessories,1,92.08,92.08,April Frost,North,Michelle Harmon,PayPal,15
+TXN00063,2023-12-03,Standing Desk,Furniture,4,621.35,2485.4,Helen Jones,South,Erin Edwards,Debit Card,0
+TXN00064,2024-08-29,Mouse,Accessories,1,59.49,59.49,Michelle Evans,South,Jason Powell,Credit Card,20
+TXN00065,2023-04-18,Headphones,Accessories,1,168.09,168.09,Cameron Fisher,South,Megan Orr,Debit Card,0
+TXN00066,2024-11-04,HDMI Cable,Accessories,4,22.82,91.28,Elizabeth Kelley,West,Dustin Jordan,Cash,0
+TXN00067,2023-03-04,Monitor,Electronics,3,296.98,890.94,Mary Marshall,Central,Daniel Kennedy,Credit Card,0
+TXN00068,2024-09-16,Webcam,Electronics,4,136.16,544.64,Rebecca Jackson,East,Jose Schultz,Credit Card,0
+TXN00069,2024-12-10,Desk Chair,Furniture,1,269.87,269.87,Robert Potter,Central,Courtney Gonzalez,Cash,0
+TXN00070,2024-07-01,Mouse,Accessories,2,33.74,67.48,David Alvarez,East,Angel Perry,Credit Card,0
+TXN00071,2024-05-03,Laptop,Electronics,4,1566.71,6266.84,Cheyenne Horton,West,David Douglas Jr.,Credit Card,0
+TXN00072,2024-04-02,Desk Chair,Furniture,4,500.41,2001.64,Patricia Rodriguez,East,Christopher Rubio,Debit Card,0
+TXN00073,2023-01-07,Laptop,Electronics,3,2404.48,7213.44,Amber Wright,North,Joyce Solis,PayPal,0
+TXN00074,2024-11-04,Keyboard,Accessories,3,109.02,327.06,Victoria Larson,North,Stephanie Salazar,Credit Card,0
+TXN00075,2024-01-28,Monitor,Electronics,1,307.6,307.6,Kathy Rivas,Central,Stephanie Manning,Credit Card,0
+TXN00076,2023-12-18,Monitor,Electronics,2,578.91,1157.82,David Wright,East,Pamela Boyd,Cash,0
+TXN00077,2024-08-31,Laptop,Electronics,3,2358.55,7075.65,Denise Jones,West,Devon Flores,PayPal,0
+TXN00078,2023-01-08,Standing Desk,Furniture,4,617.6,2470.4,Brenda Hall,South,Michelle Brown,Cash,0
+TXN00079,2023-05-17,USB Cable,Accessories,5,18.28,91.4,Joshua Perry,South,Jason Stein,Credit Card,0
+TXN00080,2024-10-10,HDMI Cable,Accessories,2,33.3,66.6,Melissa Gates,West,Jamie Smith,PayPal,0
+TXN00081,2023-09-08,Keyboard,Accessories,2,123.07,246.14,Paul Castaneda,Central,Jennifer Adkins,Credit Card,20
+TXN00082,2024-04-26,Laptop,Electronics,3,1720.03,5160.09,Lindsey Walker,Central,Jeffrey Johnson,Credit Card,0
+TXN00083,2023-04-20,Webcam,Electronics,3,89.18,267.54,Michael Powell,Central,John Anderson,Cash,0
+TXN00084,2023-12-21,Laptop,Electronics,5,1238.53,6192.65,Alyssa Long,South,Alyssa Day,PayPal,0
+TXN00085,2024-01-06,HDMI Cable,Accessories,2,39.76,79.52,Joel Williams,North,Daniel Murphy,Debit Card,0
+TXN00086,2024-09-17,Mouse,Accessories,5,67.89,339.45,Jamie Walton,East,Darlene Miller,Credit Card,10
+TXN00087,2024-07-16,USB Cable,Accessories,4,24.1,96.4,Joshua Cooke,West,Matthew Harrington,Debit Card,0
+TXN00088,2023-04-23,Webcam,Electronics,1,59.19,59.19,Nicole Herring,Central,Alex Hernandez,PayPal,0
+TXN00089,2023-05-19,Laptop,Electronics,4,2298.5,9194.0,Michael Elliott,West,Michael Wang,Credit Card,0
+TXN00090,2024-03-15,Standing Desk,Furniture,1,877.91,877.91,Lawrence Adkins,East,Robert Oconnell,PayPal,0
+TXN00091,2023-08-10,USB Cable,Accessories,1,13.2,13.2,Alexander Collins,North,Tina Sanders,Debit Card,15
+TXN00092,2023-01-04,Desk Chair,Furniture,3,428.75,1286.25,Angela Vaughn,North,Ashley Barton,Credit Card,0
+TXN00093,2023-09-24,USB Cable,Accessories,2,5.9,11.8,Lindsay Martinez,South,Dr. Hannah Patterson,Debit Card,0
+TXN00094,2024-01-01,Standing Desk,Furniture,5,967.03,4835.15,Jonathan Peterson,North,Samantha Garcia,Debit Card,0
+TXN00095,2024-02-23,Desk Chair,Furniture,1,544.5,544.5,Madison Poole,South,Jessica Gross,Debit Card,10
+TXN00096,2023-08-25,Standing Desk,Furniture,5,497.52,2487.6,Debra Morton,West,Karen Graham,Cash,0
+TXN00097,2024-07-24,Standing Desk,Furniture,1,1028.46,1028.46,Debra Christian,East,Angelica Keith,PayPal,0
+TXN00098,2024-05-09,Headphones,Accessories,3,277.3,831.9,John Bishop,East,Allen Rosales,Credit Card,5
+TXN00099,2024-02-06,Keyboard,Accessories,2,117.03,234.06,Daniel Salinas,West,Spencer Haynes,Debit Card,0
+TXN00100,2023-12-18,Desk Chair,Furniture,1,585.45,585.45,Adam Vaughan,West,Nathan Freeman,Credit Card,0
+TXN00101,2024-01-25,Laptop,Electronics,3,2407.51,7222.53,Melissa Brewer,West,Ricky Davis II,Credit Card,0
+TXN00102,2023-04-12,USB Cable,Accessories,2,13.51,27.02,Elizabeth Perkins,West,Joseph Coleman,PayPal,0
+TXN00103,2023-11-03,Laptop,Electronics,3,1894.18,5682.54,Erin Warner,East,David Martinez,PayPal,0
+TXN00104,2023-08-04,Keyboard,Accessories,2,121.41,242.82,Bryan Herrera,West,Cathy Robinson,PayPal,0
+TXN00105,2024-02-28,Keyboard,Accessories,3,121.3,363.9,Dr. William Warren,South,Brian Lee,Credit Card,0
+TXN00106,2024-04-30,Desk Chair,Furniture,5,424.69,2123.45,Christopher Smith,South,Denise Mccann,PayPal,10
+TXN00107,2024-10-13,HDMI Cable,Accessories,1,15.37,15.37,Melissa Martinez,West,Katherine Salas,Debit Card,0
+TXN00108,2023-02-24,Headphones,Accessories,5,227.01,1135.05,Julie Alexander,Central,Anthony Everett,Debit Card,10
+TXN00109,2024-09-24,Monitor,Electronics,3,527.5,1582.5,Rodney Morales,Central,Mark Brown,PayPal,0
+TXN00110,2023-01-29,Laptop,Electronics,2,2163.67,4327.34,Justin Torres,Central,Bailey Duran DDS,PayPal,0
+TXN00111,2024-12-30,Monitor,Electronics,1,475.31,475.31,Courtney Mills,Central,Jeremy Dalton,Cash,15
+TXN00112,2024-05-09,Laptop,Electronics,1,1272.92,1272.92,Elizabeth Oliver DDS,South,Theresa Clark,Cash,0
+TXN00113,2023-11-01,Keyboard,Accessories,5,117.27,586.35,Matthew Moore,South,Benjamin Smith,Debit Card,0
+TXN00114,2024-08-17,Headphones,Accessories,5,247.82,1239.1,Kirk Carter,North,Michael Warner,Debit Card,0
+TXN00115,2023-07-14,USB Cable,Accessories,1,12.02,12.02,Michael Bradshaw,West,Lori Guerrero,PayPal,0
+TXN00116,2023-11-24,Keyboard,Accessories,1,72.04,72.04,Jessica Stephens,West,Susan Serrano,Cash,0
+TXN00117,2024-02-28,Mouse,Accessories,2,35.56,71.12,Christopher Parker,East,Laura Roberts,Cash,0
+TXN00118,2024-05-31,Headphones,Accessories,1,84.77,84.77,Michael Lyons,South,Kathryn Snyder,PayPal,0
+TXN00119,2024-07-28,Monitor,Electronics,4,606.65,2426.6,Andrew Reynolds,South,David Davis,Cash,0
+TXN00120,2024-08-06,Desk Chair,Furniture,5,553.88,2769.4,Sara Johnston,West,Yvonne Chambers,Debit Card,0
+TXN00121,2024-07-07,Standing Desk,Furniture,3,1028.66,3085.98,Andrew Avila,South,Matthew Moon,Debit Card,10
+TXN00122,2023-12-29,Webcam,Electronics,3,60.63,181.89,Kevin Walters,East,Brandon Bailey MD,Credit Card,5
+TXN00123,2024-09-30,Desk Chair,Furniture,2,264.95,529.9,Shannon Rivera,Central,Donna Landry,PayPal,10
+TXN00124,2023-07-01,USB Cable,Accessories,5,14.5,72.5,Krista Gibson,West,Frank Cordova,Debit Card,0
+TXN00125,2023-12-15,Mouse,Accessories,5,36.61,183.05,Jose Travis,North,Kimberly Gutierrez,Credit Card,0
+TXN00126,2023-03-30,Monitor,Electronics,3,404.35,1213.05,Isaiah Avila,Central,Olivia Harris,Credit Card,10
+TXN00127,2023-01-15,Monitor,Electronics,3,764.94,2294.82,Tanya Kim,North,Barbara Dudley,Debit Card,0
+TXN00128,2024-02-24,Webcam,Electronics,3,72.55,217.65,Cynthia Moore,East,Kristen Davis,Cash,0
+TXN00129,2024-10-25,Mouse,Accessories,2,35.83,71.66,Susan Murray MD,East,Kathleen Moran,Debit Card,0
+TXN00130,2024-05-02,Monitor,Electronics,2,684.15,1368.3,Denise Davenport,Central,Mrs. Kristen Reyes,PayPal,0
+TXN00131,2024-03-20,HDMI Cable,Accessories,1,35.43,35.43,Katie Suarez,East,Desiree Tyler,Credit Card,0
+TXN00132,2023-10-04,Keyboard,Accessories,3,91.31,273.93,Timothy Romero,West,Diane Evans,Cash,0
+TXN00133,2024-03-29,HDMI Cable,Accessories,2,21.75,43.5,Yvonne Burns,North,Joshua Reed,Cash,15
+TXN00134,2024-01-11,Standing Desk,Furniture,1,554.48,554.48,Kimberly Gibson,South,Colin Terry,Debit Card,0
+TXN00135,2024-05-15,Headphones,Accessories,3,205.94,617.82,Cynthia Rowe,North,Patrick Thornton,PayPal,0
+TXN00136,2023-05-23,Keyboard,Accessories,2,113.78,227.56,Jasmin Alvarado,South,Veronica Simpson,PayPal,0
+TXN00137,2023-07-30,Monitor,Electronics,2,651.39,1302.78,Jonathan Lawrence,West,Shelly Alexander,Cash,0
+TXN00138,2024-07-01,Standing Desk,Furniture,2,784.73,1569.46,Joyce Bowen,Central,Matthew Moore,Cash,20
+TXN00139,2024-03-07,Desk Chair,Furniture,1,230.8,230.8,Wayne Morgan,South,Marie Christian,PayPal,0
+TXN00140,2024-02-15,Standing Desk,Furniture,2,1172.88,2345.76,Shannon James,Central,Nathan Malone,Credit Card,0
+TXN00141,2024-12-03,Headphones,Accessories,4,231.69,926.76,Amanda Jones,West,Tammie Bright,Credit Card,0
+TXN00142,2024-10-25,Webcam,Electronics,5,88.71,443.55,Jessica Garcia,South,Shelia Wallace,Credit Card,0
+TXN00143,2024-07-19,HDMI Cable,Accessories,1,32.95,32.95,Stephanie Williams,North,Elaine Brooks,Credit Card,20
+TXN00144,2023-03-29,Webcam,Electronics,5,125.18,625.9,Joseph Knight,East,Carolyn Miller,Debit Card,0
+TXN00145,2024-05-01,Laptop,Electronics,5,1844.06,9220.3,Lisa Allen,North,Briana Murray,Credit Card,0
+TXN00146,2024-06-07,USB Cable,Accessories,4,16.38,65.52,David Smith,East,Stephanie Byrd,PayPal,0
+TXN00147,2023-07-20,Headphones,Accessories,4,78.1,312.4,Jeremy Reed,West,Margaret Coleman,PayPal,0
+TXN00148,2024-11-27,Webcam,Electronics,5,115.65,578.25,Ryan Gonzalez,Central,John Young,Credit Card,0
+TXN00149,2024-01-13,Webcam,Electronics,1,65.85,65.85,Laura Haney,North,William Barrett,Credit Card,0
+TXN00150,2023-04-03,Standing Desk,Furniture,1,1035.08,1035.08,Keith Jennings,West,Amber Obrien,PayPal,0
+TXN00151,2023-05-13,HDMI Cable,Accessories,1,22.22,22.22,Tanner Mitchell DDS,West,Heather Fields,Credit Card,0
+TXN00152,2024-11-18,Keyboard,Accessories,1,72.49,72.49,Megan Le,Central,Sara Fuller,PayPal,0
+TXN00153,2024-12-14,Keyboard,Accessories,4,141.26,565.04,Maria Parker,North,Kevin Oconnor,PayPal,0
+TXN00154,2024-08-28,Mouse,Accessories,4,22.59,90.36,Edward Burgess,South,Carlos Ryan,Cash,0
+TXN00155,2024-07-13,Monitor,Electronics,1,332.54,332.54,Kiara Mcintyre,West,Dawn Summers,Credit Card,0
+TXN00156,2023-09-01,USB Cable,Accessories,5,14.05,70.25,Dr. Paul Morgan,Central,Victor Taylor,Cash,5
+TXN00157,2023-12-07,Standing Desk,Furniture,2,343.64,687.28,Shannon Ramsey,North,Tracy Ballard,Cash,0
+TXN00158,2024-07-29,Standing Desk,Furniture,2,1179.9,2359.8,Richard Smith,Central,Jordan Chambers,Debit Card,0
+TXN00159,2023-11-04,Monitor,Electronics,5,298.12,1490.6,Lauren Carson,West,Ashley Hall,Cash,0
+TXN00160,2024-08-06,HDMI Cable,Accessories,5,16.46,82.3,Stephen Hoffman,Central,Connie Brown,Debit Card,0
+TXN00161,2024-12-22,Monitor,Electronics,5,636.15,3180.75,Susan Turner,East,Charles Shah,PayPal,0
+TXN00162,2023-07-07,Headphones,Accessories,1,204.71,204.71,Johnathan Davis,East,Brandy Chavez,PayPal,0
+TXN00163,2024-09-12,Desk Chair,Furniture,2,231.04,462.08,Natalie Bautista,South,Patrick Moore,Cash,20
+TXN00164,2023-05-15,Webcam,Electronics,2,117.46,234.92,Brett Burns,Central,Trevor Johnson,Credit Card,0
+TXN00165,2023-07-29,Headphones,Accessories,4,214.34,857.36,Jeremy Sampson,Central,Ariana Jennings,PayPal,0
+TXN00166,2023-05-07,HDMI Cable,Accessories,4,38.79,155.16,Vanessa Howard,South,Colton Martinez,Debit Card,0
+TXN00167,2024-01-01,Webcam,Electronics,5,44.82,224.1,Jordan Bates,South,Linda Smith,Debit Card,0
+TXN00168,2023-07-20,Mouse,Accessories,5,41.17,205.85,Dana Martinez,South,Andrea Hubbard,PayPal,15
+TXN00169,2023-10-28,Keyboard,Accessories,4,144.99,579.96,Daniel Kane,North,Charles Lester,Debit Card,20
+TXN00170,2024-07-07,Standing Desk,Furniture,1,963.22,963.22,Scott Thomas,West,David Thompson,Debit Card,20
+TXN00171,2024-11-06,Standing Desk,Furniture,4,1021.31,4085.24,Allison Smith,South,Cynthia Morris,Cash,15
+TXN00172,2024-09-25,USB Cable,Accessories,4,18.93,75.72,Anthony Harmon,West,Nichole Alvarez,PayPal,0
+TXN00173,2023-10-06,Desk Chair,Furniture,5,280.86,1404.3,Kayla Rodriguez,South,Theresa Williams,PayPal,0
+TXN00174,2023-02-01,Laptop,Electronics,2,1569.87,3139.74,Sharon Boyd,West,Victor Brown,PayPal,0
+TXN00175,2024-10-25,USB Cable,Accessories,3,20.24,60.72,James Parks,East,Theodore Jones Jr.,Credit Card,0
+TXN00176,2024-01-09,Keyboard,Accessories,3,42.01,126.03,Ana Hill,East,Kimberly Nguyen,Debit Card,10
+TXN00177,2023-03-01,Laptop,Electronics,5,1075.74,5378.7,Kerry Chavez DDS,South,Michael Farrell,Debit Card,0
+TXN00178,2023-02-01,HDMI Cable,Accessories,1,11.17,11.17,Patricia Le,North,Jesse Perez,Credit Card,0
+TXN00179,2024-08-11,Keyboard,Accessories,2,99.25,198.5,Jesse Perry,South,Jeffery Ortega,Debit Card,0
+TXN00180,2023-01-20,HDMI Cable,Accessories,3,31.16,93.48,Christian Leblanc,East,Ronald Davis,Debit Card,15
+TXN00181,2023-05-12,Mouse,Accessories,5,55.71,278.55,Parker Cain,Central,Laurie Hoffman,PayPal,0
+TXN00182,2023-04-27,Mouse,Accessories,4,64.45,257.8,Bryan Gomez,Central,Nicole Parrish,PayPal,0
+TXN00183,2023-11-24,Monitor,Electronics,3,486.8,1460.4,Tracy Burke,South,Kenneth Lewis,Debit Card,0
+TXN00184,2024-07-25,Laptop,Electronics,2,1738.55,3477.1,Courtney Rodriguez,West,Holly Farmer,Cash,0
+TXN00185,2023-04-26,HDMI Cable,Accessories,3,38.88,116.64,Renee Bruce,South,Sabrina Austin,Debit Card,5
+TXN00186,2024-06-11,Keyboard,Accessories,1,115.28,115.28,Allison Hickman,East,Debra White,Debit Card,0
+TXN00187,2023-10-19,Monitor,Electronics,3,589.81,1769.43,Ellen Morgan,Central,Sergio Knight,Credit Card,15
+TXN00188,2024-11-27,Webcam,Electronics,2,93.99,187.98,Charles Schultz,North,Paul Lewis,Credit Card,0
+TXN00189,2024-02-21,Laptop,Electronics,3,2265.12,6795.36,Glen Wood,East,Paula Bradley,Debit Card,0
+TXN00190,2024-02-06,Monitor,Electronics,1,305.92,305.92,Anthony Moore,West,Megan Nelson,PayPal,0
+TXN00191,2024-08-26,Mouse,Accessories,1,77.84,77.84,Karla Ramos,South,Paul Wilson,PayPal,0
+TXN00192,2024-11-02,HDMI Cable,Accessories,1,32.94,32.94,Douglas Gregory,South,Mr. Andrew Foster,Debit Card,10
+TXN00193,2023-02-12,Mouse,Accessories,1,54.08,54.08,Aimee Turner,West,Chad Scott,Cash,10
+TXN00194,2024-08-10,Monitor,Electronics,2,790.75,1581.5,Adam Burgess,South,James Padilla,Debit Card,15
+TXN00195,2023-01-03,Keyboard,Accessories,1,100.8,100.8,Sandra Drake,North,Scott Williams,PayPal,0
+TXN00196,2024-01-05,Desk Chair,Furniture,4,504.71,2018.84,Thomas Atkins,South,Laura Mckinney,Cash,20
+TXN00197,2024-04-15,USB Cable,Accessories,1,15.05,15.05,Brian Smith,East,Robert Montgomery,Debit Card,0
+TXN00198,2023-12-14,Webcam,Electronics,5,60.3,301.5,Tamara Davis,Central,Dana Chapman,Cash,0
+TXN00199,2023-07-10,Standing Desk,Furniture,5,459.49,2297.45,Jennifer Collins,Central,Gary Jackson,Debit Card,0
+TXN00200,2024-12-06,Desk Chair,Furniture,1,218.47,218.47,Ashley Hicks,Central,Hannah Luna,PayPal,5
+TXN00201,2024-10-05,Laptop,Electronics,5,1111.44,5557.2,Robin Young,East,Craig Morrison,Cash,0
+TXN00202,2024-03-23,Laptop,Electronics,3,1149.81,3449.43,Mary Thompson,West,Kathleen Webster,PayPal,5
+TXN00203,2023-08-14,Standing Desk,Furniture,1,394.94,394.94,Joann Glass,North,Madison Weber,Credit Card,0
+TXN00204,2023-08-20,Keyboard,Accessories,3,124.68,374.04,Lori Hernandez,Central,Jeremy Turner,Debit Card,0
+TXN00205,2024-02-16,Standing Desk,Furniture,5,1029.58,5147.9,Anthony Romero,North,Jesse Brown,Credit Card,0
+TXN00206,2023-04-15,Keyboard,Accessories,3,62.92,188.76,Angela Lin,North,Lisa Hunter,PayPal,10
+TXN00207,2024-11-14,Monitor,Electronics,1,359.31,359.31,Julian Conner,North,Joanna Pacheco,PayPal,0
+TXN00208,2023-07-13,Desk Chair,Furniture,4,460.05,1840.2,Erica Alvarez,North,Antonio Garcia,Cash,0
+TXN00209,2024-08-07,Mouse,Accessories,3,23.29,69.87,Gwendolyn Klein,West,Carrie Wright,Credit Card,0
+TXN00210,2024-02-18,Monitor,Electronics,4,376.9,1507.6,Jeffrey Mills,West,Jake Campbell,Cash,0
+TXN00211,2024-02-12,Webcam,Electronics,3,114.25,342.75,George Harper,North,Maria Jones,PayPal,0
+TXN00212,2023-01-31,Desk Chair,Furniture,2,471.02,942.04,Michael Mitchell,Central,Mary Escobar,Debit Card,0
+TXN00213,2023-02-10,Laptop,Electronics,2,1028.45,2056.9,Felicia Aguilar,West,Gregory Ponce,PayPal,0
+TXN00214,2024-09-24,USB Cable,Accessories,4,15.48,61.92,Jenna Larson,East,Emily Bennett,Debit Card,0
+TXN00215,2023-11-10,USB Cable,Accessories,2,15.27,30.54,Robin Santiago,East,Nancy Jennings,Cash,0
+TXN00216,2023-01-02,Desk Chair,Furniture,5,204.51,1022.55,Maria Henderson,East,Jack White,PayPal,0
+TXN00217,2023-07-14,Mouse,Accessories,1,76.88,76.88,Travis Tucker,North,Chad Jones,PayPal,0
+TXN00218,2024-10-17,Keyboard,Accessories,2,127.6,255.2,Ashley Wise,West,Sophia Johnson,Credit Card,0
+TXN00219,2024-11-30,Keyboard,Accessories,5,83.85,419.25,Ralph Anderson,West,Christopher Guerra,PayPal,0
+TXN00220,2024-06-25,Keyboard,Accessories,5,34.97,174.85,Rhonda Martin,Central,Jason Rhodes,Credit Card,0
+TXN00221,2024-08-16,Mouse,Accessories,2,52.07,104.14,Jeremy Mitchell,North,Joann Ferguson,PayPal,0
+TXN00222,2024-06-17,Laptop,Electronics,1,1798.5,1798.5,Robert Harrison,Central,Holly Valentine,Cash,0
+TXN00223,2023-07-07,Mouse,Accessories,2,48.06,96.12,Mrs. Diane Reyes,East,Tracy Montoya,Credit Card,0
+TXN00224,2024-09-13,Desk Chair,Furniture,2,503.58,1007.16,Brenda Wright,North,Shelly Spencer,Cash,0
+TXN00225,2023-05-19,Laptop,Electronics,5,1007.83,5039.15,Ryan Rosales,North,Phillip Nelson,Cash,0
+TXN00226,2024-02-15,HDMI Cable,Accessories,1,24.68,24.68,Brittany Kim,West,Courtney Hayes,Credit Card,0
+TXN00227,2023-02-05,Standing Desk,Furniture,3,569.18,1707.54,Alexander Brown,North,Cynthia Vang,Cash,0
+TXN00228,2024-10-08,Keyboard,Accessories,3,116.44,349.32,Alfred Galvan,East,Marie Moody,Credit Card,0
+TXN00229,2024-07-28,Headphones,Accessories,4,236.1,944.4,Dustin Gallegos,East,Brenda Thornton,Credit Card,0
+TXN00230,2023-04-21,Mouse,Accessories,3,19.3,57.9,Aaron Miller,South,Ruben Dunn,Cash,0
+TXN00231,2024-06-22,Headphones,Accessories,3,138.26,414.78,Kelsey Rodriguez,Central,Eric Williams,Cash,0
+TXN00232,2024-04-21,USB Cable,Accessories,3,13.58,40.74,Riley Bryant,West,Taylor Carlson,PayPal,0
+TXN00233,2023-10-21,Laptop,Electronics,3,1502.3,4506.9,Jose Allen,Central,Jeffrey Mendez,Credit Card,0
+TXN00234,2024-09-02,Keyboard,Accessories,3,95.79,287.37,Jason Beck,East,William Jones,Credit Card,0
+TXN00235,2024-03-29,USB Cable,Accessories,5,9.84,49.2,Katie Mcneil,North,Jeanette Harrison,Cash,0
+TXN00236,2023-09-24,USB Cable,Accessories,4,10.36,41.44,Veronica King,Central,Richard Cooper,PayPal,0
+TXN00237,2023-05-29,Headphones,Accessories,4,258.29,1033.16,Lori Ingram,Central,Evelyn Williams,PayPal,0
+TXN00238,2023-11-29,Standing Desk,Furniture,1,682.01,682.01,Robin Thompson,West,Julie Dominguez,Credit Card,0
+TXN00239,2024-06-08,HDMI Cable,Accessories,4,29.37,117.48,Robin Brown,North,Judith Carter,Credit Card,0
+TXN00240,2024-01-18,Desk Chair,Furniture,4,261.92,1047.68,Curtis Williams,West,Kaylee Hays,Credit Card,20
+TXN00241,2024-05-22,Webcam,Electronics,2,60.75,121.5,Dawn Mullins,West,Howard Norman,Cash,0
+TXN00242,2024-02-11,Laptop,Electronics,3,1752.21,5256.63,Evelyn Martinez,West,Steve Paul,Debit Card,0
+TXN00243,2023-04-06,Desk Chair,Furniture,2,556.62,1113.24,Jasmine Beltran,North,Jonathan Glass MD,Cash,15
+TXN00244,2023-04-25,Monitor,Electronics,3,205.33,615.99,Monica Miller,West,Samantha Gardner,PayPal,0
+TXN00245,2023-11-17,Webcam,Electronics,1,80.59,80.59,Bobby Guerrero,West,Lance Simmons,Debit Card,0
+TXN00246,2023-06-05,Webcam,Electronics,5,146.77,733.85,Heather Williams,West,Heather Bolton,Cash,0
+TXN00247,2023-04-12,Desk Chair,Furniture,1,205.02,205.02,William Gould,North,Mark Cox,PayPal,10
+TXN00248,2024-05-01,Webcam,Electronics,1,119.95,119.95,Meghan Cisneros,Central,Lawrence Harrington,PayPal,10
+TXN00249,2023-03-04,USB Cable,Accessories,5,8.95,44.75,Austin Osborne,West,James Bradley,Credit Card,0
+TXN00250,2023-04-13,Laptop,Electronics,3,2302.99,6908.97,Meghan Rush,Central,Phillip Berry,Cash,0
+TXN00251,2023-07-16,Monitor,Electronics,2,576.66,1153.32,Jennifer Banks,North,Brian Fitzgerald,Cash,0
+TXN00252,2024-08-14,USB Cable,Accessories,1,17.34,17.34,Mr. Justin Green III,East,Zachary Mitchell,Debit Card,0
+TXN00253,2024-03-03,Webcam,Electronics,5,128.28,641.4,Katherine Martinez,West,Jodi Roach,Cash,0
+TXN00254,2023-11-05,HDMI Cable,Accessories,2,27.97,55.94,Brandon Fleming,Central,Emma Reed,Debit Card,0
+TXN00255,2023-07-27,Mouse,Accessories,4,21.49,85.96,Joshua Vance,North,Michelle Ho,Credit Card,0
+TXN00256,2024-02-21,Keyboard,Accessories,1,31.7,31.7,Rebecca Hicks,East,Curtis Taylor,Cash,0
+TXN00257,2024-04-14,USB Cable,Accessories,4,22.36,89.44,Allison Spencer,West,Robert Arnold,PayPal,0
+TXN00258,2023-05-18,Webcam,Electronics,3,125.46,376.38,Angelica Parker,West,Dr. Kelly Hammond DVM,Cash,5
+TXN00259,2024-12-30,Webcam,Electronics,4,92.2,368.8,William Day,North,Michael Cooper,PayPal,10
+TXN00260,2023-04-29,Monitor,Electronics,5,498.9,2494.5,Penny Bowman,East,Vincent Reynolds,Debit Card,0
+TXN00261,2023-07-12,Monitor,Electronics,1,201.73,201.73,Amy Martinez,East,Christopher Morris,Cash,0
+TXN00262,2024-05-18,Mouse,Accessories,1,23.93,23.93,Hannah Everett,East,Sarah King,Credit Card,0
+TXN00263,2024-03-25,HDMI Cable,Accessories,4,17.04,68.16,Krista Martinez,Central,Joseph Shaw,PayPal,0
+TXN00264,2023-03-30,Monitor,Electronics,4,559.06,2236.24,Todd Moore,North,Michelle Jacobs,Cash,0
+TXN00265,2023-03-20,Webcam,Electronics,2,105.35,210.7,Kristy Bryan,South,Angel May,Cash,0
+TXN00266,2024-04-17,Headphones,Accessories,4,154.94,619.76,Marilyn Wang,West,Mark Jimenez,Cash,0
+TXN00267,2024-08-28,HDMI Cable,Accessories,3,33.35,100.05,Donna Frye,West,Dr. Michael Evans,PayPal,0
+TXN00268,2024-01-28,Desk Chair,Furniture,5,449.53,2247.65,Anthony Gonzales,North,Mr. Lawrence Edwards,Debit Card,0
+TXN00269,2023-02-06,Standing Desk,Furniture,2,902.49,1804.98,Morgan Valencia,West,Bianca Wood,Credit Card,20
+TXN00270,2023-08-09,Webcam,Electronics,1,130.7,130.7,Emma Owens,South,David Davis,Credit Card,10
+TXN00271,2023-03-23,Desk Chair,Furniture,4,350.4,1401.6,James Gilbert,West,Sean Moore,PayPal,0
+TXN00272,2024-04-06,Webcam,Electronics,4,102.25,409.0,Kenneth Edwards,East,Kathleen Robertson,Debit Card,0
+TXN00273,2024-05-13,Monitor,Electronics,3,643.68,1931.04,Mr. Alexander Landry MD,Central,Cindy Gomez,PayPal,0
+TXN00274,2023-04-17,Webcam,Electronics,2,78.45,156.9,Johnny Khan,South,Julie Herrera,PayPal,5
+TXN00275,2024-10-05,Keyboard,Accessories,5,140.27,701.35,Jessica Khan,Central,Pamela Diaz,Cash,0
+TXN00276,2023-06-30,Laptop,Electronics,1,1390.67,1390.67,Kelly Lee,East,Angel Gordon,Credit Card,0
+TXN00277,2024-11-09,Desk Chair,Furniture,3,515.45,1546.35,Diana Hays,Central,Barbara Hester,Debit Card,20
+TXN00278,2023-03-24,USB Cable,Accessories,4,19.77,79.08,Robert Morgan,South,Nicole Gonzalez,Credit Card,10
+TXN00279,2023-10-30,Standing Desk,Furniture,3,618.67,1856.01,Kathryn Williams,East,Gary Wells,Credit Card,0
+TXN00280,2023-04-22,Desk Chair,Furniture,5,214.64,1073.2,Larry Robertson,East,Louis Martin,Credit Card,0
+TXN00281,2023-07-11,Monitor,Electronics,4,374.32,1497.28,Nancy Evans MD,Central,Kim Erickson,Cash,0
+TXN00282,2024-03-03,Monitor,Electronics,1,312.59,312.59,Robert Richardson,Central,Veronica Silva,PayPal,20
+TXN00283,2024-02-09,Webcam,Electronics,5,129.87,649.35,Molly Watts,South,John Coffey,PayPal,0
+TXN00284,2024-03-22,Mouse,Accessories,3,71.42,214.26,Paula Lane,East,Lauren Jackson,Credit Card,15
+TXN00285,2023-07-17,Mouse,Accessories,2,70.1,140.2,Lisa Randall,North,Michael Johnson,Credit Card,0
+TXN00286,2023-10-14,Laptop,Electronics,5,1028.04,5140.2,Ashley Smith,West,Christian Vaughn,Debit Card,0
+TXN00287,2024-11-07,Keyboard,Accessories,5,90.76,453.8,Reginald Knapp,Central,Nancy Brown,Credit Card,0
+TXN00288,2024-07-28,Webcam,Electronics,5,116.98,584.9,Daniel Nguyen,North,Kelly Edwards,Credit Card,0
+TXN00289,2024-04-15,Desk Chair,Furniture,4,313.54,1254.16,Thomas Peterson,South,Raymond Le,PayPal,0
+TXN00290,2023-06-20,Laptop,Electronics,4,1203.85,4815.4,Melissa Bishop,North,David Grant,Credit Card,0
+TXN00291,2024-01-02,HDMI Cable,Accessories,3,22.38,67.14,William Evans,Central,Daniel Bush,Cash,0
+TXN00292,2024-12-25,HDMI Cable,Accessories,3,29.85,89.55,Gregory Peck,North,Denise Martinez,PayPal,0
+TXN00293,2024-12-17,Monitor,Electronics,2,363.81,727.62,Jamie Baird,West,Tina Ballard,Cash,0
+TXN00294,2024-08-07,Webcam,Electronics,1,94.23,94.23,Dwayne Klein,Central,Jeremy Scott,Debit Card,0
+TXN00295,2024-09-05,HDMI Cable,Accessories,2,22.18,44.36,Dale Ryan,Central,Melissa Taylor,Debit Card,0
+TXN00296,2024-05-02,Headphones,Accessories,3,50.31,150.93,Laurie Sanchez,East,Kiara Little,Cash,0
+TXN00297,2024-04-06,Headphones,Accessories,2,113.63,227.26,Jason Love,West,Randy Smith,PayPal,0
+TXN00298,2024-12-06,Laptop,Electronics,4,1682.86,6731.44,Tanya Russell,North,Sherry Woods,PayPal,15
+TXN00299,2024-07-11,Headphones,Accessories,4,298.17,1192.68,Victor Morris,Central,Susan Davis,PayPal,0
+TXN00300,2023-08-11,Standing Desk,Furniture,5,897.07,4485.35,Kimberly Sharp,West,Susan Thompson,PayPal,5
+TXN00301,2024-02-14,Keyboard,Accessories,4,84.72,338.88,Casey Gillespie,Central,Jennifer Simpson DVM,Credit Card,0
+TXN00302,2024-04-12,Keyboard,Accessories,5,34.21,171.05,Tammy Mcdowell,West,Keith Rodriguez,PayPal,0
+TXN00303,2024-02-26,Laptop,Electronics,3,870.45,2611.35,Mrs. Virginia Daniels,West,Todd Rosales MD,Credit Card,0
+TXN00304,2023-08-24,USB Cable,Accessories,5,20.16,100.8,Brian Martin,West,David Lopez,Debit Card,0
+TXN00305,2023-12-23,Headphones,Accessories,2,50.18,100.36,Rachel Bradley,North,Casey Chase,PayPal,0
+TXN00306,2024-06-22,Keyboard,Accessories,1,100.75,100.75,Samantha Robertson,West,Michael Lopez,Debit Card,0
+TXN00307,2023-06-07,Desk Chair,Furniture,3,265.1,795.3,Franklin Wright,Central,David Molina,PayPal,5
+TXN00308,2023-02-24,Keyboard,Accessories,5,111.88,559.4,Elizabeth Sharp,West,Matthew Schwartz,Credit Card,10
+TXN00309,2023-05-02,Monitor,Electronics,1,761.28,761.28,Bryan Parker,Central,Jonathan Jacobson,Credit Card,0
+TXN00310,2024-04-26,USB Cable,Accessories,2,20.25,40.5,Emily Wilson,North,Elizabeth Mendez,Debit Card,0
+TXN00311,2023-12-16,Standing Desk,Furniture,5,807.31,4036.55,Casey Hernandez,South,Lisa Perry,PayPal,0
+TXN00312,2023-07-22,USB Cable,Accessories,4,9.96,39.84,Kaitlin Medina,Central,Colleen Wright,Cash,0
+TXN00313,2024-11-10,Desk Chair,Furniture,1,230.88,230.88,Shelley Miller,South,Michael Miller,Cash,0
+TXN00314,2024-05-26,Mouse,Accessories,3,71.21,213.63,Amy Kelley,Central,Laura Hernandez,PayPal,0
+TXN00315,2024-07-20,Standing Desk,Furniture,1,413.2,413.2,Joseph Wilson,South,Kevin Davis,PayPal,0
+TXN00316,2024-08-08,Headphones,Accessories,2,237.82,475.64,Rhonda Chavez,East,Joyce Brown,Cash,5
+TXN00317,2023-06-27,Webcam,Electronics,1,40.4,40.4,Robert Cummings,Central,Robert Reese,Debit Card,0
+TXN00318,2023-03-16,Headphones,Accessories,4,213.84,855.36,Amber Cooper,West,Zachary Michael,Debit Card,0
+TXN00319,2024-07-12,Monitor,Electronics,4,435.72,1742.88,Timothy Johnson,North,Randy Cannon,PayPal,0
+TXN00320,2024-08-10,Desk Chair,Furniture,2,451.68,903.36,Maria Fisher,Central,Janet Kane DVM,PayPal,0
+TXN00321,2024-10-07,HDMI Cable,Accessories,3,39.95,119.85,Michael Stanley,South,Martha Bailey,Credit Card,5
+TXN00322,2023-02-09,Mouse,Accessories,5,58.71,293.55,Joshua Rice,South,Courtney Smith,Credit Card,0
+TXN00323,2023-05-25,Webcam,Electronics,2,126.74,253.48,Edwin Nunez,Central,Kim Morrow,Credit Card,0
+TXN00324,2023-08-28,Laptop,Electronics,4,1550.97,6203.88,Gregory Hill,South,Molly Rodriguez,Credit Card,5
+TXN00325,2023-08-21,Keyboard,Accessories,2,131.65,263.3,Jennifer Miranda,West,Alexis Harris,Credit Card,0
+TXN00326,2024-11-19,Standing Desk,Furniture,4,1018.23,4072.92,Andrew Harper,North,Amber Yang,Credit Card,0
+TXN00327,2024-10-25,Monitor,Electronics,3,445.37,1336.11,David Robinson,East,Amy Gordon,Cash,0
+TXN00328,2024-12-03,Mouse,Accessories,4,68.6,274.4,Robert Dennis,East,Kyle Chambers,PayPal,20
+TXN00329,2024-02-09,Mouse,Accessories,5,43.53,217.65,Eric Thomas,West,Connie Turner,PayPal,0
+TXN00330,2023-05-14,HDMI Cable,Accessories,2,32.82,65.64,Travis Hobbs,North,Lori Simmons,Cash,0
+TXN00331,2024-09-10,HDMI Cable,Accessories,2,23.06,46.12,William David DDS,South,Emma Butler,Cash,0
+TXN00332,2024-10-15,Laptop,Electronics,4,2149.81,8599.24,James Webster,North,Samuel Turner,Credit Card,0
+TXN00333,2024-01-26,Keyboard,Accessories,3,52.5,157.5,Renee Melendez,West,Tracy Grant,Cash,0
+TXN00334,2023-02-05,Mouse,Accessories,1,79.9,79.9,David Harris,West,Tammy Boone,Debit Card,0
+TXN00335,2023-12-10,Webcam,Electronics,3,123.55,370.65,Nathaniel Lee,North,Michael Morrison,PayPal,0
+TXN00336,2023-12-17,Headphones,Accessories,2,215.76,431.52,Chelsea Gill,West,Kristin Mendoza,PayPal,0
+TXN00337,2024-07-13,Headphones,Accessories,4,205.53,822.12,Felicia Krueger,South,Timothy Hayden,Debit Card,0
+TXN00338,2023-11-01,USB Cable,Accessories,4,22.29,89.16,Zachary Mendoza,East,Larry Harris,Debit Card,0
+TXN00339,2023-03-15,Laptop,Electronics,5,1667.22,8336.1,Kristen Rowe,Central,Joseph Howard,PayPal,0
+TXN00340,2023-08-05,Headphones,Accessories,4,164.28,657.12,Jose Crawford,East,William Harrison,Credit Card,0
+TXN00341,2024-08-07,Mouse,Accessories,3,15.75,47.25,Suzanne Wood,West,Justin Walker,Cash,0
+TXN00342,2023-07-28,Laptop,Electronics,4,1713.21,6852.84,Dean Donovan,Central,Jennifer Hernandez,Credit Card,0
+TXN00343,2023-11-12,Keyboard,Accessories,5,108.97,544.85,James Whitaker,East,Mr. Michael Scott PhD,Credit Card,20
+TXN00344,2023-11-11,Mouse,Accessories,3,28.37,85.11,Maria Henry,Central,Robert Jackson,Debit Card,0
+TXN00345,2023-01-28,Webcam,Electronics,5,146.26,731.3,Katherine Stark,South,Maria Brown,Debit Card,0
+TXN00346,2023-09-12,HDMI Cable,Accessories,3,8.77,26.31,Ryan Landry,Central,Pamela Gutierrez,Debit Card,15
+TXN00347,2023-02-12,HDMI Cable,Accessories,4,19.84,79.36,Crystal Mann,East,Jonathan Brooks,Credit Card,0
+TXN00348,2023-12-30,Laptop,Electronics,4,1578.06,6312.24,Mary Jensen,North,Mr. Aaron Arnold,Cash,0
+TXN00349,2023-08-04,Standing Desk,Furniture,4,411.77,1647.08,Joseph Hill,South,Alicia Li,Debit Card,0
+TXN00350,2024-10-26,Keyboard,Accessories,1,44.18,44.18,Renee Browning,East,Brent Hernandez,Cash,0
+TXN00351,2023-07-30,Laptop,Electronics,1,1332.03,1332.03,Joseph Ochoa,East,James Watson,Credit Card,0
+TXN00352,2024-07-29,Desk Chair,Furniture,2,561.74,1123.48,Karl Branch,West,Michael Abbott,Debit Card,0
+TXN00353,2023-12-11,Desk Chair,Furniture,3,352.31,1056.93,Shannon Malone,West,James Tran,PayPal,0
+TXN00354,2024-01-15,Headphones,Accessories,4,198.9,795.6,Adam Jackson,Central,Mr. Richard Knight PhD,Credit Card,10
+TXN00355,2023-02-20,Headphones,Accessories,4,249.54,998.16,Joseph Williams,East,Sean Clay,PayPal,0
+TXN00356,2024-04-20,Desk Chair,Furniture,5,235.21,1176.05,Anthony Jones,North,Stephanie Elliott,PayPal,0
+TXN00357,2024-01-01,Monitor,Electronics,1,320.18,320.18,Timothy Edwards,North,Laurie Goodwin,Cash,0
+TXN00358,2023-02-22,USB Cable,Accessories,2,13.18,26.36,Jennifer Jones,North,David Davenport,PayPal,0
+TXN00359,2023-06-17,HDMI Cable,Accessories,3,20.2,60.6,Steven Rivera,North,Brenda Hinton,Cash,0
+TXN00360,2024-12-26,Webcam,Electronics,2,113.51,227.02,Kathryn Mccann,East,Jeffrey Roberson,Cash,0
+TXN00361,2024-01-01,Laptop,Electronics,4,2024.76,8099.04,Randy Friedman,South,Raymond Johnson,Cash,0
+TXN00362,2023-11-05,Standing Desk,Furniture,1,418.32,418.32,Willie Henry,Central,Todd Reynolds,PayPal,5
+TXN00363,2024-11-11,Desk Chair,Furniture,1,347.23,347.23,Mary Miller,West,Rebecca Marquez,Debit Card,0
+TXN00364,2024-10-06,HDMI Cable,Accessories,1,31.73,31.73,Christian Dawson,West,Nancy Stewart,Cash,5
+TXN00365,2023-06-17,Mouse,Accessories,3,56.61,169.83,Aaron Parker,South,Derrick Anderson,PayPal,10
+TXN00366,2024-09-06,Laptop,Electronics,5,928.38,4641.9,Jerry Peters,West,Alexander Gomez,Cash,0
+TXN00367,2024-10-23,USB Cable,Accessories,1,22.21,22.21,Kyle Nguyen,North,Edgar Hughes,Debit Card,0
+TXN00368,2024-08-11,Desk Chair,Furniture,4,485.42,1941.68,Steven Stein,East,Laura Jackson,Debit Card,0
+TXN00369,2024-12-23,HDMI Cable,Accessories,1,36.42,36.42,Charles Turner,North,Arthur Hamilton MD,Cash,0
+TXN00370,2023-05-03,HDMI Cable,Accessories,4,30.36,121.44,Mr. David Wright,North,Linda Gonzalez,PayPal,0
+TXN00371,2024-02-07,HDMI Cable,Accessories,1,29.93,29.93,Eric Rush,South,Manuel Brock,PayPal,5
+TXN00372,2023-10-29,Standing Desk,Furniture,1,432.31,432.31,George Ochoa,North,Valerie Taylor,PayPal,0
+TXN00373,2024-10-24,Laptop,Electronics,3,2203.33,6609.99,Travis Harris,South,Vincent Novak,Credit Card,5
+TXN00374,2024-09-23,Webcam,Electronics,1,85.98,85.98,Michael Henry,North,Dana Bennett,PayPal,0
+TXN00375,2024-09-18,USB Cable,Accessories,1,23.79,23.79,Jenna Wilson,South,Leslie Gardner,Debit Card,0
+TXN00376,2023-09-02,Mouse,Accessories,1,53.39,53.39,Krista Benton,East,Michael Gonzales,Credit Card,0
+TXN00377,2023-07-29,USB Cable,Accessories,5,8.51,42.55,Michael Fuentes,Central,Jennifer Porter,Credit Card,0
+TXN00378,2023-02-03,HDMI Cable,Accessories,2,8.84,17.68,Dana Hopkins,South,Rachel Jones,Cash,0
+TXN00379,2024-03-14,HDMI Cable,Accessories,4,10.19,40.76,Karen Morales DDS,Central,Melissa Stephens,Debit Card,0
+TXN00380,2024-12-15,Mouse,Accessories,4,67.83,271.32,Heather Woodard,Central,Margaret Miller,Credit Card,0
+TXN00381,2023-11-28,Monitor,Electronics,5,598.53,2992.65,Mary Kelly,South,Amanda Terrell,Debit Card,0
+TXN00382,2023-12-03,Laptop,Electronics,3,2409.35,7228.05,Jennifer Goodwin,East,Jessica Smith,PayPal,0
+TXN00383,2024-10-29,USB Cable,Accessories,5,16.08,80.4,Jorge Stone,West,Laura Griffin,Debit Card,0
+TXN00384,2023-04-18,Monitor,Electronics,5,723.41,3617.05,Raymond Chapman,West,Haley Johnson,Cash,0
+TXN00385,2023-07-20,Standing Desk,Furniture,5,827.13,4135.65,Jason Nixon,East,Todd Thomas,Cash,20
+TXN00386,2024-02-24,Keyboard,Accessories,3,56.83,170.49,Jesse Clark,West,Mr. Jeffrey Horton,Debit Card,20
+TXN00387,2023-02-23,Laptop,Electronics,1,1276.13,1276.13,Eric Patrick,South,Samuel Wong,Credit Card,0
+TXN00388,2023-01-07,Desk Chair,Furniture,4,426.36,1705.44,Carly Riggs,Central,Christopher Moore,Debit Card,0
+TXN00389,2024-08-19,Monitor,Electronics,2,639.95,1279.9,Tina Hall,South,Cody Davidson,Cash,5
+TXN00390,2023-12-20,Desk Chair,Furniture,1,209.01,209.01,Allen Mendez,South,Kevin Price,Cash,0
+TXN00391,2023-11-29,Desk Chair,Furniture,5,590.98,2954.9,Christine Goodwin,Central,Amy Garcia,PayPal,0
+TXN00392,2024-08-31,Keyboard,Accessories,1,98.31,98.31,Chelsea Nguyen,North,Dennis Huffman,Cash,0
+TXN00393,2024-04-16,Mouse,Accessories,4,60.77,243.08,Margaret Harper,North,Laurie Bailey,Cash,0
+TXN00394,2023-07-10,Desk Chair,Furniture,1,531.18,531.18,Lisa Cervantes,North,Elizabeth Mendez,Credit Card,0
+TXN00395,2024-09-22,USB Cable,Accessories,4,5.71,22.84,Cesar Wilson,South,Clayton Steele,Debit Card,0
+TXN00396,2023-04-16,Standing Desk,Furniture,2,1100.25,2200.5,Jennifer Taylor,South,Cody Reid,Credit Card,0
+TXN00397,2024-08-09,Webcam,Electronics,4,111.47,445.88,Maria Cooke,South,Katherine Taylor,Credit Card,20
+TXN00398,2023-04-06,Desk Chair,Furniture,5,437.02,2185.1,Jerry Brown,South,Adam Taylor,Credit Card,0
+TXN00399,2024-03-18,Headphones,Accessories,3,164.89,494.67,Tracey Wagner,South,Michael Perry PhD,Credit Card,0
+TXN00400,2024-07-29,HDMI Cable,Accessories,1,22.89,22.89,Bradley Johnson DDS,West,Donald Medina,Debit Card,0
+TXN00401,2024-03-17,HDMI Cable,Accessories,4,9.16,36.64,Jim Newton,East,Krista Wilson,Debit Card,0
+TXN00402,2024-03-11,Keyboard,Accessories,2,117.91,235.82,Reginald Morrow,Central,Rodney Williams,Cash,5
+TXN00403,2023-04-06,Webcam,Electronics,2,76.95,153.9,Kimberly Fritz,West,Ronald Potter,PayPal,0
+TXN00404,2023-11-28,Headphones,Accessories,4,151.92,607.68,Zachary Cole,Central,Robert Gonzales,Cash,0
+TXN00405,2024-09-13,USB Cable,Accessories,4,9.09,36.36,Patricia Young PhD,East,Heather Page,Credit Card,0
+TXN00406,2024-01-18,Headphones,Accessories,4,274.57,1098.28,Carol Taylor,Central,Daniel Brown,Debit Card,15
+TXN00407,2024-08-07,Keyboard,Accessories,4,77.72,310.88,Douglas Ryan,West,Michael Roberts,Cash,0
+TXN00408,2024-06-06,Webcam,Electronics,3,122.86,368.58,Scott Duke,Central,Anna Estes,Debit Card,0
+TXN00409,2023-10-09,Webcam,Electronics,1,45.12,45.12,Tamara Riddle,West,Beth Cline,Cash,0
+TXN00410,2024-11-28,Desk Chair,Furniture,5,528.63,2643.15,Michael Poole,South,Megan Burns,PayPal,0
+TXN00411,2023-08-31,Laptop,Electronics,3,936.85,2810.55,Debra Perry,East,Mark Beard,Debit Card,20
+TXN00412,2024-03-24,HDMI Cable,Accessories,1,31.15,31.15,Jose Ramirez,North,Jackie Clements,PayPal,0
+TXN00413,2024-04-14,Desk Chair,Furniture,4,438.82,1755.28,Aaron Schroeder,South,Monica Ellis,Cash,0
+TXN00414,2023-12-29,Webcam,Electronics,1,128.92,128.92,Heather Brown,South,Claudia Jordan,Cash,15
+TXN00415,2023-05-14,HDMI Cable,Accessories,3,35.37,106.11,Derrick Clayton,East,Kenneth Knight,PayPal,0
+TXN00416,2023-01-30,Desk Chair,Furniture,5,238.34,1191.7,Mr. Michael Williams,East,Richard Stevens,Debit Card,0
+TXN00417,2024-03-13,Mouse,Accessories,5,29.65,148.25,Scott Alexander,East,Tyler Harris,PayPal,0
+TXN00418,2023-11-29,Headphones,Accessories,5,256.31,1281.55,Bonnie Santos,North,Timothy Hill,Debit Card,0
+TXN00419,2023-03-05,HDMI Cable,Accessories,5,33.64,168.2,Danielle Watson,North,Carol Sanders,PayPal,0
+TXN00420,2023-05-23,HDMI Cable,Accessories,5,17.98,89.9,Michael Young,Central,Michele Smith,PayPal,0
+TXN00421,2023-12-07,Headphones,Accessories,1,69.29,69.29,Casey Perez,North,Alexandra Dominguez,Debit Card,0
+TXN00422,2023-12-13,Keyboard,Accessories,4,145.49,581.96,Virginia Henderson,North,Benjamin Reyes,Credit Card,0
+TXN00423,2024-10-29,Standing Desk,Furniture,3,911.47,2734.41,Ashley Edwards,West,Breanna Ayala,PayPal,0
+TXN00424,2024-11-10,Standing Desk,Furniture,5,315.09,1575.45,Brandi Haney,West,Joseph Smith,Debit Card,0
+TXN00425,2024-12-16,Desk Chair,Furniture,2,222.26,444.52,Jessica Bowen,North,Brittany Jenkins,Debit Card,0
+TXN00426,2023-08-02,HDMI Cable,Accessories,3,25.8,77.4,Shannon Miller,West,Paul Lawrence,Cash,0
+TXN00427,2024-05-20,Standing Desk,Furniture,1,1173.89,1173.89,Victor Edwards,South,Donald Miller,PayPal,0
+TXN00428,2024-05-09,HDMI Cable,Accessories,4,19.73,78.92,Lindsay Lawson,East,Melissa Abbott,Debit Card,0
+TXN00429,2024-01-26,Mouse,Accessories,3,74.0,222.0,Elizabeth Holmes,Central,Nicole Phillips,Credit Card,0
+TXN00430,2024-05-13,Keyboard,Accessories,1,89.39,89.39,Steven Blevins,Central,Brian Porter MD,Credit Card,0
+TXN00431,2024-09-09,Webcam,Electronics,3,125.92,377.76,Vanessa Hatfield,North,Bonnie Valencia,PayPal,5
+TXN00432,2024-05-11,Mouse,Accessories,1,50.84,50.84,Holly Vega,South,Tiffany Townsend,Credit Card,0
+TXN00433,2023-03-11,Mouse,Accessories,4,28.37,113.48,Austin Baker,East,Antonio Mccormick,PayPal,0
+TXN00434,2023-01-15,Laptop,Electronics,2,2489.52,4979.04,Lori Mason,North,Michael Miller,PayPal,0
+TXN00435,2024-05-14,Monitor,Electronics,4,229.84,919.36,Lisa Ramirez,North,Jorge Harris,Cash,0
+TXN00436,2024-05-06,Keyboard,Accessories,2,117.57,235.14,Kimberly Myers,West,Sandra Becker,Debit Card,0
+TXN00437,2024-07-03,Monitor,Electronics,2,377.2,754.4,Michael Blair,South,Amy Miller,PayPal,0
+TXN00438,2024-10-29,HDMI Cable,Accessories,3,20.93,62.79,Jesse Lynch,Central,Patrick Yang,Cash,0
+TXN00439,2023-09-14,USB Cable,Accessories,3,23.85,71.55,Michael Miles,West,Troy Mills,Cash,20
+TXN00440,2023-08-22,Laptop,Electronics,5,2406.29,12031.45,Michelle Jackson,Central,Richard Adams,Debit Card,0
+TXN00441,2023-04-07,Desk Chair,Furniture,3,539.58,1618.74,Patricia Johnson,South,Denise Brown,Credit Card,0
+TXN00442,2024-09-07,Laptop,Electronics,3,934.57,2803.71,Laura Jones,South,Ian Porter,Credit Card,0
+TXN00443,2024-04-07,Headphones,Accessories,3,267.46,802.38,Holly Scott,Central,Kenneth Sharp,PayPal,0
+TXN00444,2024-11-20,Standing Desk,Furniture,1,661.37,661.37,Jordan Williams,North,Dana Ruiz,Credit Card,0
+TXN00445,2023-06-26,Standing Desk,Furniture,4,1111.59,4446.36,Chris Velazquez,East,Kristen Sloan,Debit Card,0
+TXN00446,2023-12-20,Laptop,Electronics,4,1374.26,5497.04,Jennifer Morris,North,Nathan Nelson,Debit Card,15
+TXN00447,2023-06-20,Headphones,Accessories,4,67.26,269.04,Jake Shaw,South,Cassie Brock,PayPal,0
+TXN00448,2023-03-02,Keyboard,Accessories,1,114.48,114.48,Dr. Andrea Marshall,West,Ryan Murphy,Cash,0
+TXN00449,2024-05-13,Desk Chair,Furniture,3,446.78,1340.34,Aimee Gonzalez,South,Elizabeth Dean,Debit Card,0
+TXN00450,2024-09-13,Laptop,Electronics,1,2118.93,2118.93,Kevin Snyder,North,Christie Mccullough,PayPal,0
+TXN00451,2024-05-01,Monitor,Electronics,5,259.16,1295.8,Danielle Smith,Central,David Reed,PayPal,20
+TXN00452,2024-01-19,Standing Desk,Furniture,3,882.06,2646.18,Sherry Tapia,South,Matthew Sweeney,Debit Card,0
+TXN00453,2023-11-18,Monitor,Electronics,4,624.04,2496.16,Ashley Moreno,South,Johnathan Brown,Cash,0
+TXN00454,2024-08-22,USB Cable,Accessories,2,16.02,32.04,Michelle Davis DVM,West,Kelly Haynes,Credit Card,0
+TXN00455,2023-10-19,Monitor,Electronics,4,693.26,2773.04,William Miller,West,Casey Wilkins,Cash,10
+TXN00456,2023-04-19,USB Cable,Accessories,2,9.52,19.04,Keith Graham,East,Cynthia Green,Debit Card,0
+TXN00457,2023-08-06,Standing Desk,Furniture,5,1157.75,5788.75,Robert Haynes,Central,Emily Nelson,PayPal,0
+TXN00458,2024-10-19,HDMI Cable,Accessories,4,27.59,110.36,Dale Chan,South,Brittney Martin,PayPal,0
+TXN00459,2023-10-12,Mouse,Accessories,5,33.96,169.8,Jason Herrera,South,Christine Parker,Cash,20
+TXN00460,2024-06-16,Monitor,Electronics,4,442.18,1768.72,Bryan Moore,North,Samantha Terry,Cash,20
+TXN00461,2024-05-12,HDMI Cable,Accessories,5,33.25,166.25,Russell Murphy,East,David Kelly,PayPal,0
+TXN00462,2024-03-14,Keyboard,Accessories,4,76.42,305.68,Megan Green,Central,Amanda Sullivan MD,Cash,0
+TXN00463,2023-06-22,Monitor,Electronics,5,722.87,3614.35,Danielle Murray,East,Brenda Smith,Cash,20
+TXN00464,2024-08-20,HDMI Cable,Accessories,1,17.42,17.42,Vickie Anderson,Central,Jacqueline Mccoy,PayPal,20
+TXN00465,2023-12-10,Desk Chair,Furniture,5,206.34,1031.7,Lauren Green,West,Alison Brown,Credit Card,5
+TXN00466,2023-02-01,HDMI Cable,Accessories,1,12.63,12.63,Jill Anderson,West,Sandra Rivera,PayPal,0
+TXN00467,2024-09-20,USB Cable,Accessories,3,7.79,23.37,Joel Jackson,East,Samantha Foster,Credit Card,5
+TXN00468,2024-10-07,Mouse,Accessories,4,29.26,117.04,Michael Thompson,South,Cody Ramirez,PayPal,0
+TXN00469,2023-08-28,Mouse,Accessories,3,23.87,71.61,Amanda Harvey,East,Edward Jenkins,Debit Card,0
+TXN00470,2023-06-23,USB Cable,Accessories,5,16.9,84.5,Amy Ramirez,South,Curtis Wilkerson,Cash,0
+TXN00471,2023-04-07,Headphones,Accessories,4,228.08,912.32,Lydia Pham,North,Virginia Casey,PayPal,0
+TXN00472,2024-06-22,Laptop,Electronics,2,1103.96,2207.92,Joshua Washington,North,Kathryn Price,PayPal,15
+TXN00473,2024-05-18,Keyboard,Accessories,2,146.57,293.14,Francis Robinson,Central,Paula Brown,Credit Card,10
+TXN00474,2024-01-12,Keyboard,Accessories,2,92.94,185.88,Kendra Wang DVM,North,Ariel Sandoval,PayPal,0
+TXN00475,2023-09-14,Mouse,Accessories,1,35.74,35.74,Robert Stark,South,Zachary Robinson,Debit Card,0
+TXN00476,2024-06-10,Keyboard,Accessories,5,137.51,687.55,Rebecca Kelly,West,Sarah Thompson,Cash,0
+TXN00477,2023-04-29,HDMI Cable,Accessories,1,20.31,20.31,Renee Wolfe,South,Alyssa Haynes,Cash,0
+TXN00478,2023-04-12,Monitor,Electronics,5,207.34,1036.7,Kristy Hart,West,William Keith,Credit Card,10
+TXN00479,2024-04-28,Standing Desk,Furniture,3,321.34,964.02,Eric Henry Jr.,South,Daniel Fox,Debit Card,0
+TXN00480,2023-09-30,Keyboard,Accessories,3,56.33,168.99,Thomas Harris,Central,Mitchell Sellers,PayPal,0
+TXN00481,2023-03-12,USB Cable,Accessories,2,17.06,34.12,Erica Johnson,East,Sylvia Schroeder,Credit Card,0
+TXN00482,2024-12-01,Mouse,Accessories,1,43.56,43.56,Shannon Yu,East,Tom Foster,Debit Card,0
+TXN00483,2024-09-02,Standing Desk,Furniture,3,494.08,1482.24,Eric Taylor,North,Travis Conner,Credit Card,0
+TXN00484,2023-01-19,Monitor,Electronics,2,736.67,1473.34,Marie Thompson,South,Melissa Mcfarland,Cash,15
+TXN00485,2023-07-20,Webcam,Electronics,5,78.27,391.35,Courtney Chapman,East,Eric Barker,Cash,0
+TXN00486,2024-10-27,Desk Chair,Furniture,5,516.46,2582.3,Nicholas Rush,North,Jenna Gamble,Debit Card,0
+TXN00487,2023-04-21,Laptop,Electronics,2,1678.96,3357.92,Amanda Guzman,East,Tracy Walker,PayPal,0
+TXN00488,2023-01-27,Mouse,Accessories,5,31.44,157.2,Taylor Taylor,North,Cynthia Haas,Debit Card,0
+TXN00489,2024-04-30,Webcam,Electronics,2,75.44,150.88,Stephen Davis,Central,Margaret Tanner,Credit Card,0
+TXN00490,2024-10-30,HDMI Cable,Accessories,3,28.41,85.23,Derek Wright,Central,David Rodriguez,Cash,10
+TXN00491,2023-09-27,Webcam,Electronics,1,64.13,64.13,James Oconnor,North,Stacey Snyder,Credit Card,15
+TXN00492,2024-05-05,Headphones,Accessories,4,224.79,899.16,Joshua Garcia,West,Sean Curtis,Debit Card,0
+TXN00493,2023-10-28,Laptop,Electronics,2,2231.45,4462.9,Carla Jones,South,Elizabeth Flores,Cash,5
+TXN00494,2024-10-30,Standing Desk,Furniture,1,606.6,606.6,Angela Jackson,North,Nicholas Payne,Credit Card,0
+TXN00495,2024-12-16,Desk Chair,Furniture,4,274.59,1098.36,Anna Wheeler,Central,Karen Johnson,Credit Card,0
+TXN00496,2024-09-18,Standing Desk,Furniture,3,1098.73,3296.19,Carmen Preston,West,Brian Harris,Debit Card,0
+TXN00497,2023-02-12,Webcam,Electronics,1,94.21,94.21,Michael Bowen,Central,Deborah Campbell,Cash,0
+TXN00498,2023-02-18,Keyboard,Accessories,3,141.39,424.17,Anthony Armstrong,South,Brittany Ward,Debit Card,20
+TXN00499,2024-01-26,USB Cable,Accessories,3,13.65,40.95,Edward Stanley,Central,Christina Johnson,Credit Card,0
+TXN00500,2023-02-15,Webcam,Electronics,2,113.8,227.6,Edgar Miller,Central,Elizabeth Sanders,Credit Card,0
+TXN00501,2023-12-24,Mouse,Accessories,1,52.63,52.63,Matthew Davis MD,Central,Stephen Wood,PayPal,0
+TXN00502,2023-08-10,Keyboard,Accessories,2,101.29,202.58,Dennis Marshall,South,Derrick Brown,PayPal,0
+TXN00503,2024-10-04,Headphones,Accessories,5,140.85,704.25,Mary Miller,North,Joshua Arellano,Cash,0
+TXN00504,2023-05-26,HDMI Cable,Accessories,2,14.12,28.24,Kristen Randall,South,Jennifer Nichols,Credit Card,0
+TXN00505,2024-10-30,Keyboard,Accessories,1,114.68,114.68,Karen Keith,West,Blake Orr,Cash,0
+TXN00506,2024-08-04,Laptop,Electronics,5,987.5,4937.5,Kathryn Lester,East,Megan Oliver,Cash,0
+TXN00507,2024-08-30,Desk Chair,Furniture,4,284.69,1138.76,Peter Thompson,South,Dr. Rhonda Martinez,Credit Card,0
+TXN00508,2023-04-26,Mouse,Accessories,5,78.83,394.15,William Graham,Central,Lori Flowers MD,Debit Card,0
+TXN00509,2023-11-06,Mouse,Accessories,4,76.92,307.68,Suzanne Jones,South,James Nguyen,Debit Card,0
+TXN00510,2023-01-06,Mouse,Accessories,2,63.25,126.5,Jimmy Marks,North,Lisa Mills,PayPal,0
+TXN00511,2024-01-23,Keyboard,Accessories,4,80.9,323.6,Jason Hernandez,East,Olivia Ayers,Credit Card,0
+TXN00512,2023-03-08,Mouse,Accessories,5,36.3,181.5,Kristine Garcia,West,Joseph Cooper,Credit Card,0
+TXN00513,2024-02-10,Standing Desk,Furniture,3,912.06,2736.18,James Washington,West,Amanda Hill,Credit Card,0
+TXN00514,2024-09-16,Desk Chair,Furniture,1,526.29,526.29,Lee Steele,Central,Steve Rivera,Credit Card,0
+TXN00515,2023-03-22,Keyboard,Accessories,1,46.19,46.19,Patrick Mccall,North,Alicia Roth,Credit Card,0
+TXN00516,2024-12-15,Webcam,Electronics,5,97.65,488.25,Douglas Vasquez,West,Annette Melton,Cash,0
+TXN00517,2024-12-05,HDMI Cable,Accessories,4,24.0,96.0,William Ramos,West,Debra Butler,Cash,0
+TXN00518,2024-05-04,HDMI Cable,Accessories,2,32.42,64.84,Chelsea Lewis,Central,Natalie Malone,PayPal,0
+TXN00519,2024-08-15,Keyboard,Accessories,5,54.71,273.55,Samantha Robertson,West,Eric Hunter,Debit Card,0
+TXN00520,2023-08-28,Keyboard,Accessories,5,30.9,154.5,Samuel Suarez,South,Corey Whitaker,Debit Card,0
+TXN00521,2024-02-21,USB Cable,Accessories,1,15.97,15.97,Danielle Bryant,East,Michele Hill,Debit Card,0
+TXN00522,2024-09-05,HDMI Cable,Accessories,3,34.28,102.84,Kathy Reid,West,Andre Watson,Debit Card,5
+TXN00523,2024-10-01,Laptop,Electronics,3,1940.19,5820.57,Cassandra Harrell,South,Hannah Martin,Credit Card,0
+TXN00524,2024-09-08,Monitor,Electronics,2,749.85,1499.7,Nicole Barker,South,James Martin,Credit Card,0
+TXN00525,2024-02-02,USB Cable,Accessories,4,16.62,66.48,Traci Vincent,Central,Megan Adams,PayPal,0
+TXN00526,2024-06-17,USB Cable,Accessories,4,9.79,39.16,Alejandro Deleon,South,Alexa Buck,Credit Card,0
+TXN00527,2023-07-10,Monitor,Electronics,1,391.66,391.66,Lindsay Smith,Central,Robert Torres,Cash,0
+TXN00528,2023-01-12,HDMI Cable,Accessories,2,29.36,58.72,Maria Coleman,North,Gregory King,Debit Card,0
+TXN00529,2024-04-02,Monitor,Electronics,1,404.11,404.11,Michael Holloway,Central,Brian Hunt,PayPal,0
+TXN00530,2024-02-17,Webcam,Electronics,1,48.33,48.33,Sarah Brooks,North,Lisa Evans,PayPal,20
+TXN00531,2023-03-16,Webcam,Electronics,3,84.77,254.31,Arthur Mcneil,South,Shannon Green,PayPal,5
+TXN00532,2024-12-18,Standing Desk,Furniture,3,1133.35,3400.05,Stephanie Evans,West,Ralph Yoder,Cash,0
+TXN00533,2024-11-21,Monitor,Electronics,1,283.74,283.74,Rebekah Greene,East,Melanie Griffith,Cash,0
+TXN00534,2023-10-08,Keyboard,Accessories,1,143.08,143.08,Yolanda Green,West,James Johnson,PayPal,0
+TXN00535,2023-12-06,Mouse,Accessories,2,78.65,157.3,Laura Lee,South,Courtney Nichols,Credit Card,10
+TXN00536,2023-08-03,HDMI Cable,Accessories,2,11.22,22.44,Susan Powers,North,Sarah Pittman,Debit Card,0
+TXN00537,2024-12-22,Mouse,Accessories,1,54.86,54.86,Catherine Davis,North,David Stokes,Credit Card,5
+TXN00538,2024-11-17,Desk Chair,Furniture,5,260.21,1301.05,Catherine Frazier,South,Brandon Kelly,Debit Card,0
+TXN00539,2024-02-19,Headphones,Accessories,1,63.15,63.15,Elizabeth French,Central,David Carter,Debit Card,0
+TXN00540,2024-06-14,Desk Chair,Furniture,4,449.19,1796.76,Julie Delacruz,West,Terry Jones,Credit Card,0
+TXN00541,2023-08-15,Desk Chair,Furniture,3,307.8,923.4,Kathryn Dillon,East,Edwin Brown,PayPal,20
+TXN00542,2024-06-06,Laptop,Electronics,3,1565.35,4696.05,Brenda Gonzalez,North,Keith Knox,Debit Card,0
+TXN00543,2024-08-03,USB Cable,Accessories,1,6.06,6.06,Eugene Baldwin,West,Katherine Welch,Cash,0
+TXN00544,2023-05-04,Mouse,Accessories,5,19.06,95.3,Mark Smith,West,Philip Jackson,Credit Card,0
+TXN00545,2023-07-26,Webcam,Electronics,1,119.94,119.94,Katherine Gallagher,North,Lucas Schultz,Cash,0
+TXN00546,2023-10-22,Headphones,Accessories,4,99.11,396.44,Vincent Reyes,South,Curtis Watson,PayPal,0
+TXN00547,2024-10-28,Laptop,Electronics,4,1105.22,4420.88,Frank Whitaker,South,Michael Sims,PayPal,0
+TXN00548,2024-02-25,Webcam,Electronics,5,51.19,255.95,Michael Cooper,East,James Chapman,Debit Card,5
+TXN00549,2024-10-05,Monitor,Electronics,4,634.92,2539.68,Rodney Evans,South,Nicholas Carlson,PayPal,15
+TXN00550,2024-10-27,Laptop,Electronics,4,1434.28,5737.12,Stephen Cowan,North,Steven Howard,Debit Card,20
+TXN00551,2024-03-26,HDMI Cable,Accessories,2,16.4,32.8,Travis Hull,East,Darryl Acosta,Credit Card,0
+TXN00552,2024-01-27,HDMI Cable,Accessories,1,27.75,27.75,Nicholas Lawrence,South,Jacob Santos,Cash,0
+TXN00553,2023-01-07,Standing Desk,Furniture,1,329.18,329.18,Shawn Scott,South,Amber Vang,Debit Card,20
+TXN00554,2024-04-01,Desk Chair,Furniture,3,351.37,1054.11,Martha Smith,North,Jennifer James,Debit Card,0
+TXN00555,2023-02-23,Monitor,Electronics,4,551.17,2204.68,Kara Hernandez,West,Lorraine Turner,Debit Card,5
+TXN00556,2024-02-18,Mouse,Accessories,5,47.56,237.8,Mary Nelson,North,Breanna Rivas,Cash,0
+TXN00557,2024-07-28,Keyboard,Accessories,5,105.05,525.25,Nathan Wilson,West,Brian Gonzalez,PayPal,0
+TXN00558,2023-12-11,Desk Chair,Furniture,5,209.84,1049.2,Dennis Mills,South,Michael Phillips,Debit Card,0
+TXN00559,2023-02-03,USB Cable,Accessories,3,18.4,55.2,Jon Clark,Central,Erin Smith,PayPal,0
+TXN00560,2023-07-14,Headphones,Accessories,3,289.39,868.17,Susan Conley,Central,Brittany Davis,PayPal,10
+TXN00561,2023-09-06,HDMI Cable,Accessories,2,36.66,73.32,Misty Garcia,East,David Hinton,Credit Card,5
+TXN00562,2023-06-19,Mouse,Accessories,4,46.78,187.12,John Garcia,North,Andrew Roberts,Debit Card,0
+TXN00563,2024-06-30,Desk Chair,Furniture,4,545.48,2181.92,Emily Rodgers,East,Peter Williams,Cash,0
+TXN00564,2023-05-21,Headphones,Accessories,5,193.46,967.3,Mary Jackson,South,Jeffrey Howell,Cash,0
+TXN00565,2023-07-16,Desk Chair,Furniture,2,585.84,1171.68,Anna Briggs,North,James Rivers,Cash,0
+TXN00566,2023-10-06,Standing Desk,Furniture,3,1135.04,3405.12,James Jefferson,North,Mariah Robles,PayPal,0
+TXN00567,2024-09-24,Mouse,Accessories,5,76.54,382.7,Michael Brown,North,Caitlin Perry,Cash,0
+TXN00568,2023-04-27,Monitor,Electronics,5,550.56,2752.8,Rebekah Gregory,East,James Howard,Debit Card,0
+TXN00569,2023-11-25,HDMI Cable,Accessories,4,13.12,52.48,Michael Roberson,Central,Bianca Knapp,Debit Card,0
+TXN00570,2023-04-04,Headphones,Accessories,3,211.79,635.37,Jason Williams,West,Ernest Bush,Cash,0
+TXN00571,2023-03-07,Webcam,Electronics,4,70.01,280.04,Patricia Ray,North,Vanessa Santiago,Debit Card,0
+TXN00572,2023-07-19,USB Cable,Accessories,3,23.51,70.53,Joseph Haynes,North,Matthew Wright,Debit Card,0
+TXN00573,2023-01-19,Headphones,Accessories,5,119.49,597.45,Michael Cruz,North,Kristin Huerta,Cash,10
+TXN00574,2023-05-29,Monitor,Electronics,3,741.02,2223.06,Mason Moore,North,Sarah Booth,Credit Card,0
+TXN00575,2024-07-16,Standing Desk,Furniture,3,657.54,1972.62,John Allen,East,Amber Walker,PayPal,0
+TXN00576,2024-12-20,USB Cable,Accessories,1,24.1,24.1,Jennifer Young,South,Robert West,Debit Card,0
+TXN00577,2023-11-10,Monitor,Electronics,5,434.11,2170.55,Jillian Wilson,Central,Matthew Garcia MD,Debit Card,0
+TXN00578,2023-08-16,Webcam,Electronics,4,46.89,187.56,April Davis,North,Lisa Torres,Debit Card,0
+TXN00579,2023-06-05,USB Cable,Accessories,1,9.16,9.16,Christine Powers,North,Heidi Brown,Credit Card,0
+TXN00580,2024-10-29,Webcam,Electronics,4,101.64,406.56,Jesse Castro,East,Kara Sandoval,PayPal,0
+TXN00581,2024-03-23,Monitor,Electronics,3,365.22,1095.66,Ashley Malone,South,Glenn Gallegos,PayPal,0
+TXN00582,2024-10-03,Monitor,Electronics,4,362.4,1449.6,Dorothy Boyd,North,Amber Martin,Credit Card,0
+TXN00583,2023-06-01,Keyboard,Accessories,4,106.46,425.84,Mitchell Griffith,Central,Levi Lopez,PayPal,20
+TXN00584,2024-11-29,USB Cable,Accessories,3,18.23,54.69,Jenna Bryant,Central,Michelle Rodriguez,Debit Card,0
+TXN00585,2024-01-13,USB Cable,Accessories,5,12.49,62.45,Timothy Monroe,North,Patricia Hayes,Debit Card,0
+TXN00586,2024-01-04,USB Cable,Accessories,1,18.49,18.49,Tina Taylor,South,Mr. Anthony Mcconnell PhD,PayPal,0
+TXN00587,2023-03-14,Laptop,Electronics,1,1804.49,1804.49,Mr. Thomas Thompson,Central,Monica Anderson,Cash,0
+TXN00588,2024-01-24,Laptop,Electronics,2,1272.25,2544.5,Kyle Andrade,West,Janice Petty,Credit Card,0
+TXN00589,2023-05-08,HDMI Cable,Accessories,5,30.95,154.75,Pamela Hill,East,Tracy Chavez,Cash,0
+TXN00590,2023-08-28,Keyboard,Accessories,3,54.24,162.72,Jason Graves,East,Elizabeth Miles,Cash,0
+TXN00591,2024-07-27,Webcam,Electronics,4,129.22,516.88,Michelle Walls,West,Christina Weber,Debit Card,0
+TXN00592,2024-05-05,USB Cable,Accessories,2,21.59,43.18,Gregory Chambers,Central,Miss Tina Gordon,Credit Card,0
+TXN00593,2024-08-12,Monitor,Electronics,5,248.14,1240.7,Erica Wilson,East,John Duncan,Debit Card,10
+TXN00594,2023-04-26,Mouse,Accessories,5,30.01,150.05,Jennifer Adkins,Central,Donna Boone,PayPal,0
+TXN00595,2023-07-16,USB Cable,Accessories,1,18.18,18.18,Kelly Johnson,South,Michael Gonzalez,Debit Card,5
+TXN00596,2023-10-02,Headphones,Accessories,2,211.93,423.86,Candace Mitchell,Central,Ryan Vaughn,Debit Card,20
+TXN00597,2023-02-12,Keyboard,Accessories,5,103.08,515.4,Paul Johnson,South,Ashley Parrish,Cash,15
+TXN00598,2024-11-21,Monitor,Electronics,4,670.6,2682.4,Sharon Newton,Central,Cynthia Mueller,Debit Card,0
+TXN00599,2023-12-27,Laptop,Electronics,4,2124.12,8496.48,Donna Beck,East,Jasmine Frye,Debit Card,0
+TXN00600,2024-10-04,HDMI Cable,Accessories,3,24.48,73.44,Emily Arnold,East,David Oliver,Credit Card,0
+TXN00601,2023-08-14,Mouse,Accessories,5,40.97,204.85,Sheila Greer,North,Michele Holland,Cash,0
+TXN00602,2024-09-15,Desk Chair,Furniture,3,274.95,824.85,Kimberly Morrison,West,Tracey Phillips,PayPal,0
+TXN00603,2024-06-12,Headphones,Accessories,3,254.43,763.29,Michael Lopez,North,Jose Bennett,Debit Card,20
+TXN00604,2024-06-24,Desk Chair,Furniture,5,536.81,2684.05,Justin Anderson,East,Dawn Rivera,Cash,0
+TXN00605,2024-08-12,Standing Desk,Furniture,3,547.65,1642.95,Brittney Hernandez,South,Anthony Randolph,Cash,0
+TXN00606,2023-09-05,Monitor,Electronics,1,237.16,237.16,Mary Henry,North,Heather Bowers,Debit Card,5
+TXN00607,2024-12-02,Mouse,Accessories,5,44.46,222.3,Daniel White,Central,Jonathan Perry,Cash,20
+TXN00608,2023-05-22,Webcam,Electronics,2,92.08,184.16,Anna Walker,North,Gary Ward,Cash,10
+TXN00609,2023-09-27,Keyboard,Accessories,2,145.89,291.78,Paul Moreno,North,Samantha Zavala MD,Credit Card,10
+TXN00610,2024-03-27,Keyboard,Accessories,2,134.09,268.18,Jill Conway,East,Lisa Haley,Cash,0
+TXN00611,2024-04-19,Desk Chair,Furniture,4,517.31,2069.24,Erica Moon,Central,Janice Fernandez,Credit Card,0
+TXN00612,2024-05-12,Standing Desk,Furniture,4,1146.07,4584.28,Thomas Short,South,Robert Griffin,PayPal,0
+TXN00613,2024-02-27,Mouse,Accessories,5,31.84,159.2,Steven Lee,East,Tiffany Jackson,Cash,0
+TXN00614,2023-09-02,USB Cable,Accessories,5,18.23,91.15,Kimberly Smith,South,Michael Ayala,PayPal,0
+TXN00615,2024-06-12,Laptop,Electronics,1,972.27,972.27,Jessica Garcia,West,Michele Cherry,PayPal,0
+TXN00616,2023-10-14,Monitor,Electronics,2,383.31,766.62,Maria Case,North,Brittany Stevens,PayPal,0
+TXN00617,2024-10-01,Webcam,Electronics,4,51.04,204.16,Brandon Brown,Central,Kristin Andrews,Credit Card,0
+TXN00618,2023-10-02,USB Cable,Accessories,5,17.16,85.8,David Hughes,South,Jessica Smith,Debit Card,0
+TXN00619,2023-08-13,Keyboard,Accessories,5,34.2,171.0,Kimberly May,South,Nicole Richards,Debit Card,0
+TXN00620,2024-08-31,Standing Desk,Furniture,3,536.97,1610.91,Angel Reilly,East,Richard Turner,Credit Card,0
+TXN00621,2024-09-10,Laptop,Electronics,5,1000.38,5001.9,Preston Kim,West,Matthew Wells,PayPal,5
+TXN00622,2024-08-23,USB Cable,Accessories,3,16.96,50.88,Brandy Myers,West,Kimberly Choi,PayPal,0
+TXN00623,2024-12-02,Mouse,Accessories,1,37.05,37.05,Michael Sloan,Central,Monica Brooks,Debit Card,0
+TXN00624,2023-05-06,USB Cable,Accessories,1,21.49,21.49,Kristen Peters,East,Aaron Carlson,Debit Card,10
+TXN00625,2024-07-12,HDMI Cable,Accessories,2,24.12,48.24,Theresa Torres,Central,Stephanie Cooper,Credit Card,15
+TXN00626,2023-06-05,Webcam,Electronics,2,142.13,284.26,Matthew Hunt,North,Daniel Davenport,PayPal,0
+TXN00627,2024-02-01,Desk Chair,Furniture,5,340.69,1703.45,Christopher Marsh,Central,Sarah Randolph,PayPal,0
+TXN00628,2023-05-26,USB Cable,Accessories,3,17.7,53.1,Julia Dunn MD,East,Brett Swanson,Cash,0
+TXN00629,2024-07-26,Standing Desk,Furniture,1,1188.03,1188.03,Mr. Carl Rios,Central,Manuel Mccullough,Cash,0
+TXN00630,2024-07-11,Keyboard,Accessories,2,116.78,233.56,Jerry Jensen,North,Kevin Cunningham,Credit Card,0
+TXN00631,2024-07-05,Monitor,Electronics,1,507.15,507.15,Eugene Patterson,Central,David Walker,Cash,0
+TXN00632,2024-07-06,Keyboard,Accessories,3,49.37,148.11,Jessica Larsen,West,Nicholas Humphrey,Cash,0
+TXN00633,2023-05-26,Webcam,Electronics,4,108.09,432.36,Ian Torres,South,Casey Obrien,PayPal,0
+TXN00634,2023-03-04,Standing Desk,Furniture,2,711.42,1422.84,Shannon Taylor,South,Deborah Mercado,Debit Card,0
+TXN00635,2023-01-17,HDMI Cable,Accessories,2,14.5,29.0,Bernard Smith,East,Amanda Perkins,PayPal,5
+TXN00636,2024-04-03,Laptop,Electronics,3,859.09,2577.27,Kevin Escobar,East,Kimberly Lutz,PayPal,0
+TXN00637,2024-10-03,Webcam,Electronics,5,50.8,254.0,Reginald Diaz,East,Raymond Quinn,Debit Card,0
+TXN00638,2023-12-22,Webcam,Electronics,5,119.67,598.35,John Dixon,Central,Jonathan Bates,Debit Card,0
+TXN00639,2024-02-25,Monitor,Electronics,5,285.76,1428.8,Renee Mendez,South,Jose Griffin,Credit Card,0
+TXN00640,2024-11-18,Mouse,Accessories,1,15.8,15.8,Travis Hopkins,West,Nancy Webb,Credit Card,0
+TXN00641,2024-08-12,Headphones,Accessories,3,255.53,766.59,Daniel Freeman,North,Jacob Williams,Credit Card,0
+TXN00642,2024-05-08,Monitor,Electronics,4,243.92,975.68,Terry Ward,Central,Jesse Williams,Debit Card,0
+TXN00643,2023-10-16,Monitor,Electronics,2,663.6,1327.2,Mrs. Michele Boyd,North,Sandy Baker,Credit Card,0
+TXN00644,2023-09-23,USB Cable,Accessories,1,11.33,11.33,Carrie Valdez,South,Matthew Houston,Cash,0
+TXN00645,2023-11-22,Standing Desk,Furniture,4,746.95,2987.8,Jamie Solomon,Central,Heather Parrish,Debit Card,0
+TXN00646,2024-09-10,Webcam,Electronics,3,136.01,408.03,Mr. Larry Shaw,Central,Christopher Jones,Credit Card,5
+TXN00647,2023-03-04,USB Cable,Accessories,5,20.95,104.75,Christine Lopez,West,Mitchell Wilson,Cash,0
+TXN00648,2023-03-20,HDMI Cable,Accessories,4,32.94,131.76,Robert Cortez,East,Mr. Daniel Martin,Credit Card,0
+TXN00649,2023-07-29,Laptop,Electronics,3,2472.53,7417.59,Alison Williams,West,Candace Soto,Credit Card,0
+TXN00650,2023-08-29,Standing Desk,Furniture,3,437.75,1313.25,Kenneth Brown,West,Christopher Mullen,Credit Card,0
+TXN00651,2024-06-24,Keyboard,Accessories,5,53.03,265.15,Kristy Smith,East,Mary Campbell,PayPal,10
+TXN00652,2023-02-06,Mouse,Accessories,5,48.96,244.8,Jerry Haney,South,Carolyn Greer,Cash,0
+TXN00653,2024-05-20,Keyboard,Accessories,2,141.77,283.54,Rebecca Hoover,North,Matthew Baker,PayPal,0
+TXN00654,2024-03-12,Monitor,Electronics,2,277.1,554.2,Grace Chavez,South,Crystal Cruz,Debit Card,0
+TXN00655,2023-08-07,Desk Chair,Furniture,2,594.99,1189.98,Dale Heath,South,Jennifer Hernandez,Cash,0
+TXN00656,2023-06-30,HDMI Cable,Accessories,1,37.26,37.26,John Mendez,Central,Richard Gordon,Debit Card,0
+TXN00657,2023-07-01,Desk Chair,Furniture,5,255.12,1275.6,John Anderson,East,Samantha Prince,PayPal,0
+TXN00658,2024-06-18,Webcam,Electronics,4,80.21,320.84,Marie Boyd,Central,Andrew Moreno,Cash,0
+TXN00659,2023-05-13,HDMI Cable,Accessories,1,34.78,34.78,Robert Clarke,North,Kevin Figueroa,Credit Card,15
+TXN00660,2023-02-12,Webcam,Electronics,1,126.42,126.42,Melissa Davis,North,John Hall,Credit Card,15
+TXN00661,2024-09-16,USB Cable,Accessories,4,12.68,50.72,Diane Mcdowell,Central,Colin Fletcher,Debit Card,0
+TXN00662,2023-12-29,USB Cable,Accessories,5,9.37,46.85,Laura Wilson,East,Matthew Watts,Cash,10
+TXN00663,2023-01-25,Laptop,Electronics,2,2388.75,4777.5,Jack Moore,Central,Dawn Wyatt,Debit Card,0
+TXN00664,2024-01-21,Keyboard,Accessories,5,84.61,423.05,Jacob Hill,West,Nicole Gutierrez,PayPal,0
+TXN00665,2024-11-14,Webcam,Electronics,5,52.27,261.35,Karen Wood,West,Dawn Parker,Cash,0
+TXN00666,2023-05-28,USB Cable,Accessories,2,14.0,28.0,Michael Fitzgerald,West,Mary Adkins,PayPal,0
+TXN00667,2024-08-24,Webcam,Electronics,5,139.21,696.05,Michael Martin,North,James Morgan,Debit Card,0
+TXN00668,2024-09-10,HDMI Cable,Accessories,2,35.08,70.16,Melissa Mann,South,Vincent Smith,Credit Card,0
+TXN00669,2024-09-21,Standing Desk,Furniture,5,1081.87,5409.35,Charles Frost,Central,Austin Walker,Cash,0
+TXN00670,2023-06-12,Webcam,Electronics,2,68.65,137.3,Andrew Cruz,North,Miss Kelly Dawson,PayPal,0
+TXN00671,2023-12-05,Mouse,Accessories,3,75.18,225.54,Theresa Wilkins,West,Jessica Harris,Cash,0
+TXN00672,2024-01-31,HDMI Cable,Accessories,2,12.31,24.62,Regina Mitchell,West,Kyle Black,PayPal,5
+TXN00673,2024-02-03,Keyboard,Accessories,3,54.25,162.75,Christopher Johnson,South,Aaron Moore,PayPal,0
+TXN00674,2024-07-21,Keyboard,Accessories,1,58.26,58.26,Penny Gomez MD,North,Kelly Mclaughlin,Cash,0
+TXN00675,2023-06-12,Mouse,Accessories,3,49.98,149.94,Brandon Mitchell,North,Suzanne Bailey,PayPal,0
+TXN00676,2023-09-10,Desk Chair,Furniture,2,346.1,692.2,Destiny Obrien,South,Timothy Andrews,Credit Card,0
+TXN00677,2024-01-26,Desk Chair,Furniture,4,530.36,2121.44,Jason Rodriguez,West,Edward Arroyo,Cash,0
+TXN00678,2023-10-11,Desk Chair,Furniture,5,275.05,1375.25,Tina Walter,Central,Laura Benson,Credit Card,0
+TXN00679,2024-10-23,Monitor,Electronics,2,682.54,1365.08,Kristine Carrillo,South,Tonya Ellis,Debit Card,0
+TXN00680,2023-08-21,Mouse,Accessories,2,45.91,91.82,Kevin Johnson,East,Austin Schultz,Credit Card,0
+TXN00681,2023-10-21,Headphones,Accessories,5,146.54,732.7,Megan Hall MD,North,Kelli Smith,PayPal,0
+TXN00682,2024-12-08,USB Cable,Accessories,3,24.96,74.88,Danielle Davis,East,Samantha Jones,Cash,0
+TXN00683,2024-08-10,Desk Chair,Furniture,1,405.64,405.64,Karen Gomez,North,Debra Valentine,PayPal,0
+TXN00684,2024-07-27,Desk Chair,Furniture,1,418.23,418.23,Susan Porter,East,Nicolas Salas,PayPal,0
+TXN00685,2023-07-10,Webcam,Electronics,5,118.3,591.5,Dale Wright,Central,Brittney Rodriguez,Cash,0
+TXN00686,2024-04-12,HDMI Cable,Accessories,5,11.74,58.7,Megan Alvarado,East,Pamela Weaver,Cash,0
+TXN00687,2024-01-10,Webcam,Electronics,5,97.46,487.3,John Oliver,West,William Prince PhD,Cash,0
+TXN00688,2023-12-04,Headphones,Accessories,2,124.05,248.1,William Moon IV,West,Kenneth Brown,Debit Card,0
+TXN00689,2023-11-23,Desk Chair,Furniture,4,503.12,2012.48,Karen Fernandez,South,Jennifer Parks,Debit Card,0
+TXN00690,2024-11-06,Headphones,Accessories,4,103.64,414.56,William Wolfe,North,Michael Smith,PayPal,15
+TXN00691,2023-11-13,Keyboard,Accessories,1,131.14,131.14,Kevin Nguyen,Central,Debbie Dunn,Debit Card,5
+TXN00692,2023-02-04,Webcam,Electronics,1,59.15,59.15,John Austin,West,Jonathan Clark,Credit Card,0
+TXN00693,2024-03-25,USB Cable,Accessories,1,20.0,20.0,Jacqueline Dickerson,South,Christopher Anderson,Cash,0
+TXN00694,2023-06-30,Mouse,Accessories,4,15.18,60.72,Crystal Garcia,Central,David Reynolds,Credit Card,0
+TXN00695,2024-04-16,Desk Chair,Furniture,5,416.21,2081.05,Charles Haley,North,Robert Thompson,Debit Card,0
+TXN00696,2024-08-11,Laptop,Electronics,2,1241.12,2482.24,Dr. Samuel Holmes DDS,North,Elizabeth Hart,Cash,0
+TXN00697,2023-03-07,Monitor,Electronics,3,690.81,2072.43,Jennifer Vaughn,South,Robert Woods,PayPal,0
+TXN00698,2023-04-07,Webcam,Electronics,2,47.56,95.12,Joanna Cook,West,Justin Frederick,PayPal,0
+TXN00699,2023-12-10,Keyboard,Accessories,4,96.48,385.92,Alejandro Martinez,South,Tracey Gonzalez,PayPal,0
+TXN00700,2024-03-07,Webcam,Electronics,1,143.54,143.54,Mariah Thompson,West,Heather Nunez,Cash,5
+TXN00701,2023-03-16,Desk Chair,Furniture,1,558.04,558.04,Dr. Steve James,West,Mark Thomas,Debit Card,0
+TXN00702,2024-01-03,Mouse,Accessories,1,50.58,50.58,Robert Rogers,South,Laura Sweeney,Cash,0
+TXN00703,2024-01-24,Monitor,Electronics,2,779.77,1559.54,Christopher Perez,East,Eddie Adams,PayPal,0
+TXN00704,2023-11-12,HDMI Cable,Accessories,5,10.53,52.65,Denise Wallace,South,Heidi Matthews,Debit Card,0
+TXN00705,2023-05-02,Mouse,Accessories,1,26.88,26.88,Jennifer White,North,Nicholas Stanley,PayPal,0
+TXN00706,2024-09-06,Headphones,Accessories,2,266.39,532.78,Mercedes Miller,South,Brian Brown,Debit Card,0
+TXN00707,2024-06-02,USB Cable,Accessories,3,18.95,56.85,Kimberly Johnson,North,Phillip Miller,Debit Card,0
+TXN00708,2024-03-15,Standing Desk,Furniture,3,870.39,2611.17,Christopher Pena,East,Ellen Wright,Credit Card,0
+TXN00709,2023-11-29,Headphones,Accessories,4,273.01,1092.04,Mark Anderson,South,Alyssa Alvarado,Cash,0
+TXN00710,2023-10-18,Webcam,Electronics,3,97.22,291.66,Erika Alvarez,South,Kimberly Nelson,PayPal,0
+TXN00711,2023-12-31,HDMI Cable,Accessories,2,36.44,72.88,Wayne Wolfe,South,Kyle Welch,Credit Card,0
+TXN00712,2024-07-24,Standing Desk,Furniture,4,802.49,3209.96,Kristy Mills,Central,Emily Reed,Credit Card,0
+TXN00713,2024-10-13,Desk Chair,Furniture,5,453.05,2265.25,Regina Ramos,Central,David Torres,Debit Card,0
+TXN00714,2023-09-02,USB Cable,Accessories,1,18.13,18.13,Robert Charles,Central,John Smith,Debit Card,20
+TXN00715,2023-06-28,USB Cable,Accessories,1,12.71,12.71,Theresa Woods,Central,Jeffrey Carter,PayPal,0
+TXN00716,2024-02-28,Mouse,Accessories,3,68.69,206.07,Adam Brooks,South,Justin Foster,Cash,0
+TXN00717,2024-02-27,Desk Chair,Furniture,4,240.3,961.2,Omar Price,North,Dennis Henderson,PayPal,5
+TXN00718,2023-07-26,Monitor,Electronics,1,618.25,618.25,Phillip Kent,Central,Melinda Mitchell,Cash,10
+TXN00719,2023-12-17,Mouse,Accessories,1,28.34,28.34,Rhonda Gutierrez,North,Catherine Roberts,PayPal,20
+TXN00720,2024-06-29,Headphones,Accessories,2,196.92,393.84,Lisa Nelson,North,Chelsea Smith,Debit Card,0
+TXN00721,2023-08-18,Webcam,Electronics,1,111.26,111.26,Joseph Lopez,Central,Derrick Espinoza,Credit Card,20
+TXN00722,2023-04-08,Laptop,Electronics,1,2243.08,2243.08,Crystal Hernandez,North,Glenn Collins DDS,PayPal,0
+TXN00723,2023-09-23,Laptop,Electronics,5,1140.56,5702.8,Mrs. Raven Rivera DVM,West,Amy Rowe,Cash,0
+TXN00724,2024-09-20,Laptop,Electronics,5,1341.02,6705.1,John Lee,Central,Ruth Clayton,PayPal,0
+TXN00725,2024-04-14,Desk Chair,Furniture,4,562.7,2250.8,Randy Wright,East,Jessica Rojas,Cash,5
+TXN00726,2023-04-19,Monitor,Electronics,4,303.7,1214.8,Joel Wise,North,Vickie Kennedy,Debit Card,0
+TXN00727,2023-06-03,Standing Desk,Furniture,2,665.01,1330.02,Emily Morris,West,Amanda Pineda,Cash,0
+TXN00728,2023-01-25,Webcam,Electronics,4,44.32,177.28,Dawn Little,North,Stephen Boyer,Cash,0
+TXN00729,2023-09-14,Laptop,Electronics,5,2470.81,12354.05,Brian Chen,Central,Christopher Hill,Credit Card,0
+TXN00730,2024-10-31,Mouse,Accessories,3,31.91,95.73,Richard Smith,South,Richard Alvarez,Cash,0
+TXN00731,2023-05-03,USB Cable,Accessories,3,16.5,49.5,Jacqueline Davis,Central,Brandon Montgomery,Cash,0
+TXN00732,2023-03-11,Monitor,Electronics,2,724.8,1449.6,Yolanda Garrett,Central,Matthew Miles,PayPal,0
+TXN00733,2023-03-24,Monitor,Electronics,2,512.34,1024.68,Beth Hall,Central,Dr. Nicole Trujillo,Debit Card,0
+TXN00734,2023-10-24,Keyboard,Accessories,3,54.26,162.78,Corey Norris,South,Chad Roach,PayPal,0
+TXN00735,2023-06-30,Webcam,Electronics,1,67.01,67.01,Mr. Edward Terry,South,Cody Bailey,PayPal,0
+TXN00736,2024-05-11,Mouse,Accessories,5,78.9,394.5,Denise Guerra,Central,Kristen Jones,Debit Card,0
+TXN00737,2024-11-18,Mouse,Accessories,5,52.85,264.25,Edward Baker,South,Aaron Little,PayPal,0
+TXN00738,2023-11-26,Keyboard,Accessories,1,132.85,132.85,Cody Smith,East,Patty Allen,Credit Card,20
+TXN00739,2024-07-29,Headphones,Accessories,3,104.46,313.38,Mary Ryan,North,Joseph Jimenez,Cash,0
+TXN00740,2024-07-13,Laptop,Electronics,3,809.74,2429.22,Lisa Morris,South,Ashley Mills,Cash,5
+TXN00741,2023-05-25,HDMI Cable,Accessories,2,25.77,51.54,Russell Anderson,North,Christina Washington,Credit Card,15
+TXN00742,2023-06-17,USB Cable,Accessories,4,15.96,63.84,Kenneth Huff,South,Kelly Miles,Cash,0
+TXN00743,2023-10-30,HDMI Cable,Accessories,4,15.64,62.56,Jacob Obrien,North,Timothy Clark,Credit Card,0
+TXN00744,2023-09-30,Standing Desk,Furniture,1,1105.05,1105.05,Steve Miller PhD,East,Justin Hurley,PayPal,0
+TXN00745,2024-05-18,Mouse,Accessories,1,69.96,69.96,Jacob Erickson,East,Deborah Williams,Cash,0
+TXN00746,2024-01-30,Laptop,Electronics,1,908.26,908.26,Eric Blackburn,East,Anne Hardy,Debit Card,10
+TXN00747,2023-01-10,Webcam,Electronics,3,91.2,273.6,Chelsey Fox,Central,Mario White,Debit Card,15
+TXN00748,2023-01-06,USB Cable,Accessories,5,9.14,45.7,Jennifer Garcia,Central,Heather Ellis,PayPal,0
+TXN00749,2023-07-16,Webcam,Electronics,4,96.1,384.4,Sonya Jackson,Central,James Morgan,PayPal,0
+TXN00750,2024-11-28,HDMI Cable,Accessories,5,26.58,132.9,Zachary Ramos,North,Ethan Frey,Cash,0
+TXN00751,2023-06-01,Laptop,Electronics,1,1799.25,1799.25,Jacob Duran,South,Nicholas Franklin,Cash,0
+TXN00752,2023-07-08,Keyboard,Accessories,3,107.92,323.76,Cindy Cannon,West,Dawn Nixon,Credit Card,0
+TXN00753,2024-02-08,Standing Desk,Furniture,3,905.03,2715.09,James Barber,Central,Ms. Kelly Holder,Credit Card,0
+TXN00754,2024-11-14,Headphones,Accessories,3,72.2,216.6,Eric Walker,Central,Alison Short,Debit Card,0
+TXN00755,2023-10-21,Monitor,Electronics,3,400.34,1201.02,Desiree Spencer,North,Tammy Moore,Credit Card,0
+TXN00756,2023-11-22,USB Cable,Accessories,4,17.65,70.6,Henry Taylor,Central,Kevin Hall,PayPal,0
+TXN00757,2024-04-18,Webcam,Electronics,1,103.85,103.85,Anna Ross,North,Morgan Cummings,PayPal,0
+TXN00758,2023-03-22,Standing Desk,Furniture,4,545.39,2181.56,Carrie Petersen,West,Laura Velez,Cash,0
+TXN00759,2024-02-15,Desk Chair,Furniture,5,464.78,2323.9,Elizabeth Cross,West,Angela Brown,Credit Card,0
+TXN00760,2024-11-08,Monitor,Electronics,1,279.56,279.56,Hannah Montoya,North,Sean Kane,PayPal,0
+TXN00761,2024-07-23,Monitor,Electronics,2,245.52,491.04,Matthew Guzman,East,Richard Reyes,Credit Card,0
+TXN00762,2023-08-09,HDMI Cable,Accessories,5,9.39,46.95,Andrew Fernandez,West,Jonathan Walker,Cash,0
+TXN00763,2023-08-03,Mouse,Accessories,4,22.43,89.72,Nicholas Long,North,Kurt Wagner,Cash,0
+TXN00764,2023-08-13,Monitor,Electronics,1,679.09,679.09,Dylan Foster,North,Bradley Duncan,Debit Card,0
+TXN00765,2024-05-30,HDMI Cable,Accessories,5,27.26,136.3,James Miller,Central,Patricia Anderson,Credit Card,10
+TXN00766,2023-05-12,Monitor,Electronics,1,790.04,790.04,Justin Freeman,East,Christina Gilbert,Credit Card,0
+TXN00767,2024-07-21,Standing Desk,Furniture,3,1078.61,3235.83,Danielle Jones,East,Erica Glass,PayPal,0
+TXN00768,2023-06-28,Mouse,Accessories,3,24.81,74.43,Michael Henderson,Central,Frank Wheeler,Cash,0
+TXN00769,2024-03-27,Headphones,Accessories,3,89.48,268.44,Eric Huerta,South,Wanda Ramos,Debit Card,0
+TXN00770,2024-09-11,Desk Chair,Furniture,4,218.86,875.44,Andrew Meyers,North,James Todd,PayPal,0
+TXN00771,2023-03-29,Desk Chair,Furniture,5,516.67,2583.35,Ashley Brown,North,Tammy Melton,Credit Card,20
+TXN00772,2023-12-28,Webcam,Electronics,2,54.28,108.56,Alexis Benson,Central,Jerry Johnson,PayPal,0
+TXN00773,2024-07-12,Mouse,Accessories,5,59.05,295.25,Joshua Harris,South,Deanna Webb,Cash,0
+TXN00774,2023-01-23,Standing Desk,Furniture,2,649.92,1299.84,Brenda Hale,East,Kevin Alvarado,Credit Card,0
+TXN00775,2023-10-12,Headphones,Accessories,4,283.04,1132.16,Christopher Campbell,West,Lisa Brown,Debit Card,10
+TXN00776,2023-04-01,Standing Desk,Furniture,5,931.97,4659.85,Alejandra Price,North,Samuel Keller,Cash,5
+TXN00777,2024-04-12,HDMI Cable,Accessories,3,10.9,32.7,Alicia Dillon,North,Crystal James,Cash,0
+TXN00778,2023-08-27,USB Cable,Accessories,4,9.3,37.2,Ariana Stewart,Central,Kim Lopez,Cash,0
+TXN00779,2024-10-07,HDMI Cable,Accessories,3,10.95,32.85,Judith House,East,David Moreno,PayPal,15
+TXN00780,2024-02-16,Laptop,Electronics,3,1321.27,3963.81,James Moore,Central,Harold Garrett,PayPal,20
+TXN00781,2023-07-13,Desk Chair,Furniture,4,235.7,942.8,William Mason,West,Lori Johns,Debit Card,10
+TXN00782,2023-11-30,Monitor,Electronics,1,300.54,300.54,Robin Johnson,North,Diana Hernandez,Credit Card,0
+TXN00783,2024-11-11,Headphones,Accessories,2,170.65,341.3,Mary Miller,West,Tyler Salazar,Cash,0
+TXN00784,2023-07-25,Laptop,Electronics,1,2129.01,2129.01,Crystal Allen,South,Wesley Browning,Debit Card,15
+TXN00785,2023-12-12,Headphones,Accessories,1,73.33,73.33,Joshua Clark,South,Joshua Mcbride,Cash,0
+TXN00786,2024-03-22,HDMI Cable,Accessories,3,16.07,48.21,Ellen Thornton,West,Brandy Forbes,Credit Card,0
+TXN00787,2023-06-01,Monitor,Electronics,5,601.13,3005.65,Brianna Fitzpatrick,South,Emily Grant,Cash,0
+TXN00788,2024-10-25,Headphones,Accessories,3,183.26,549.78,Bailey Stewart,East,Monica Cannon,Credit Card,0
+TXN00789,2024-09-12,Standing Desk,Furniture,1,322.37,322.37,Jennifer Jenkins,North,Timothy Shannon,Debit Card,0
+TXN00790,2023-10-27,Keyboard,Accessories,2,142.08,284.16,Denise Maxwell,North,Cody Farmer,Credit Card,0
+TXN00791,2023-08-05,Webcam,Electronics,4,94.73,378.92,Debra Bradley,West,David Mcdaniel,Cash,0
+TXN00792,2024-07-29,Desk Chair,Furniture,5,296.49,1482.45,Michael Woods,Central,Lisa Joseph,Debit Card,0
+TXN00793,2023-04-30,Laptop,Electronics,5,1818.81,9094.05,Samuel Henry,West,Corey Johnson,Debit Card,0
+TXN00794,2023-10-24,Laptop,Electronics,1,1584.35,1584.35,Alexis Nelson,East,Patrick Mcneil,Cash,5
+TXN00795,2024-05-22,Standing Desk,Furniture,2,1011.03,2022.06,Andrea Ho,West,Dr. Katherine Nguyen,Credit Card,0
+TXN00796,2024-12-20,Headphones,Accessories,1,184.77,184.77,David Sullivan,North,Nicolas James,PayPal,15
+TXN00797,2023-01-11,Laptop,Electronics,5,955.63,4778.15,Logan Newton,North,Kelly Liu,PayPal,15
+TXN00798,2024-05-03,USB Cable,Accessories,5,15.48,77.4,Kelly Hayes,West,Amanda Forbes,Credit Card,10
+TXN00799,2024-06-04,Desk Chair,Furniture,2,457.71,915.42,Jennifer Moss,South,Kelli Mccoy,Credit Card,15
+TXN00800,2023-01-10,Mouse,Accessories,3,57.43,172.29,Eddie Sanders,South,Ronald Murray,Cash,0
+TXN00801,2024-03-12,Headphones,Accessories,4,181.7,726.8,Louis Brown,Central,Brenda Gallegos,Debit Card,0
+TXN00802,2023-12-17,Keyboard,Accessories,2,83.71,167.42,Nathan Wilson,South,Teresa Horton,Cash,10
+TXN00803,2024-11-29,Keyboard,Accessories,1,103.15,103.15,Jason Hayes,West,Kevin Marquez,Credit Card,0
+TXN00804,2023-12-09,Monitor,Electronics,2,372.57,745.14,Jesse Wright,South,Susan Hogan,Debit Card,0
+TXN00805,2023-09-09,HDMI Cable,Accessories,3,12.23,36.69,Becky Wilson,East,Jack Mills,Cash,0
+TXN00806,2024-02-10,Desk Chair,Furniture,3,282.05,846.15,Richard Hunt,East,Jamie James,Debit Card,20
+TXN00807,2023-03-07,Standing Desk,Furniture,3,608.98,1826.94,Susan Cunningham,North,Brittany Melton,PayPal,5
+TXN00808,2023-01-14,Webcam,Electronics,4,123.75,495.0,Michael Barnes,East,Randy Griffin,Credit Card,10
+TXN00809,2024-01-25,Laptop,Electronics,2,2251.33,4502.66,Autumn Anderson,South,Marcus King,Credit Card,0
+TXN00810,2024-06-24,Keyboard,Accessories,2,129.8,259.6,Scott Stephens,East,Stephen Young,PayPal,0
+TXN00811,2023-02-21,Headphones,Accessories,2,166.03,332.06,Karen Ortiz,East,Kyle Sanchez,Cash,5
+TXN00812,2023-05-24,Laptop,Electronics,3,1326.78,3980.34,Lisa Grant,South,Amber Hernandez,PayPal,0
+TXN00813,2023-12-28,Desk Chair,Furniture,5,528.16,2640.8,Amanda Nash,South,Sara Evans,Debit Card,20
+TXN00814,2024-11-23,Laptop,Electronics,3,1920.06,5760.18,Amber Butler,South,Michael Carr,PayPal,20
+TXN00815,2024-12-04,Headphones,Accessories,3,139.57,418.71,Linda Cobb,North,Jesse Riley,Cash,10
+TXN00816,2024-11-09,Laptop,Electronics,4,2019.04,8076.16,Anna Evans,West,James Jones,Debit Card,0
+TXN00817,2023-02-24,Standing Desk,Furniture,5,517.15,2585.75,Joshua Carter,North,Michael Hill,Cash,0
+TXN00818,2024-07-11,Headphones,Accessories,5,60.98,304.9,Kelly Dominguez,South,Ashley Blair,Debit Card,0
+TXN00819,2024-02-17,Webcam,Electronics,5,136.53,682.65,Victoria Webb,North,Taylor Andersen,Cash,0
+TXN00820,2023-11-26,Webcam,Electronics,1,88.5,88.5,Lee Stewart,East,Whitney Gomez,PayPal,15
+TXN00821,2024-03-04,Standing Desk,Furniture,5,842.77,4213.85,Justin Stone,West,Katherine White,Credit Card,0
+TXN00822,2023-03-03,Mouse,Accessories,4,76.36,305.44,Michelle Krause,North,Alexander Garrett,Credit Card,0
+TXN00823,2023-09-09,HDMI Cable,Accessories,1,22.18,22.18,Ryan Marsh,Central,Mrs. Felicia Castro DDS,PayPal,0
+TXN00824,2024-08-03,Monitor,Electronics,2,647.54,1295.08,Curtis Campbell,Central,Elizabeth Hunter,PayPal,0
+TXN00825,2023-06-12,Mouse,Accessories,5,36.63,183.15,Aaron Jennings,South,Nathaniel Gilbert,Credit Card,0
+TXN00826,2024-10-24,Standing Desk,Furniture,2,1036.59,2073.18,Christopher Rivera,South,Michael Hendricks,Debit Card,0
+TXN00827,2023-08-11,Desk Chair,Furniture,3,219.53,658.59,Maria Olson,North,Stephanie Herrera,PayPal,20
+TXN00828,2023-05-14,Laptop,Electronics,4,1441.47,5765.88,Richard Gutierrez,East,Sandy Evans,Credit Card,0
+TXN00829,2023-09-21,Webcam,Electronics,4,63.29,253.16,Emily Herrera,South,Michael Marsh,Cash,20
+TXN00830,2024-05-04,Headphones,Accessories,3,271.75,815.25,Heather Montes,West,Andre Terrell,Debit Card,0
+TXN00831,2023-11-23,Monitor,Electronics,2,494.56,989.12,Sarah Duncan,West,Kurt Hancock,Credit Card,0
+TXN00832,2024-07-01,Standing Desk,Furniture,1,959.71,959.71,Michele Edwards,North,Jason Crawford,Credit Card,20
+TXN00833,2024-02-05,Laptop,Electronics,5,1847.22,9236.1,Jesse Sampson,Central,Eric Rodriguez,PayPal,0
+TXN00834,2023-12-01,Webcam,Electronics,1,129.34,129.34,Paula Gentry,East,Alexander Webb,Cash,20
+TXN00835,2024-09-16,Desk Chair,Furniture,3,298.83,896.49,Cheryl Mclean,West,Kelly Rowe,Credit Card,0
+TXN00836,2024-11-21,Keyboard,Accessories,5,38.25,191.25,Shane Short,West,Megan Anderson,PayPal,0
+TXN00837,2023-11-04,Mouse,Accessories,1,28.42,28.42,Julia Reeves,Central,April Randolph,PayPal,5
+TXN00838,2024-10-06,HDMI Cable,Accessories,4,31.96,127.84,Linda Miller,South,Angel Meyer,Debit Card,0
+TXN00839,2023-10-08,Laptop,Electronics,5,1362.65,6813.25,Emily Lane,West,Steven Flores,Credit Card,0
+TXN00840,2023-01-21,Keyboard,Accessories,1,49.05,49.05,Donald Flores,East,Bruce Hernandez,Debit Card,0
+TXN00841,2023-10-15,USB Cable,Accessories,4,23.63,94.52,Adrian Dean,North,Christine Bell,Cash,0
+TXN00842,2024-02-08,Webcam,Electronics,3,55.59,166.77,Charles Bush,West,David Jones,Cash,0
+TXN00843,2023-08-01,Headphones,Accessories,3,182.29,546.87,Gina Wallace,West,John Lowe,Credit Card,0
+TXN00844,2024-02-26,HDMI Cable,Accessories,5,31.43,157.15,Anthony Simmons,West,Kyle Watkins,Debit Card,0
+TXN00845,2023-05-18,Standing Desk,Furniture,2,444.4,888.8,Melissa Jensen,West,Robert Marquez,Cash,5
+TXN00846,2024-11-03,Standing Desk,Furniture,2,413.44,826.88,Kim Beltran,South,Julie Anderson,Debit Card,0
+TXN00847,2023-10-13,Keyboard,Accessories,3,136.76,410.28,Tamara Mcdonald,South,Michael Mckinney,Cash,10
+TXN00848,2024-02-22,Laptop,Electronics,2,846.78,1693.56,David Walker,East,Lisa Durham,Debit Card,10
+TXN00849,2024-03-31,Desk Chair,Furniture,3,447.37,1342.11,Michael Ortega,South,Sonya Chavez,Cash,0
+TXN00850,2023-03-17,Monitor,Electronics,5,362.65,1813.25,John Bell,North,Christopher Tate,Debit Card,0
+TXN00851,2024-03-20,Monitor,Electronics,3,399.71,1199.13,Bethany Garcia,South,Rebecca Nguyen,Debit Card,0
+TXN00852,2024-11-19,Mouse,Accessories,4,54.65,218.6,Rebecca Patel,West,Jason Oliver,PayPal,0
+TXN00853,2024-07-17,USB Cable,Accessories,5,12.86,64.3,Valerie Reyes,West,Robert Garza,Credit Card,0
+TXN00854,2023-04-26,Headphones,Accessories,2,192.76,385.52,Jessica Cobb,South,Cynthia Bates,PayPal,0
+TXN00855,2024-11-09,Mouse,Accessories,5,58.61,293.05,Timothy Andrews,East,Mr. Joel Peters,Debit Card,20
+TXN00856,2024-01-09,USB Cable,Accessories,3,14.2,42.6,Casey Blanchard,South,Brian Cervantes,Cash,0
+TXN00857,2023-10-01,HDMI Cable,Accessories,2,9.85,19.7,Jamie Snyder,West,Ann Montoya,Cash,0
+TXN00858,2023-04-09,Desk Chair,Furniture,2,328.8,657.6,Stephanie Fields,South,Charles Hernandez,PayPal,0
+TXN00859,2023-04-12,Monitor,Electronics,2,420.99,841.98,Jean Lane,South,Michael Stewart,Debit Card,20
+TXN00860,2024-09-16,Standing Desk,Furniture,2,808.93,1617.86,Susan Torres,Central,Jessica Haas,Debit Card,0
+TXN00861,2023-02-10,Webcam,Electronics,4,127.71,510.84,Brandon Smith,South,Mrs. Bethany Phillips,Debit Card,0
+TXN00862,2023-02-23,Desk Chair,Furniture,2,497.9,995.8,Joshua Brown,East,Samantha Howard,Debit Card,0
+TXN00863,2024-07-09,USB Cable,Accessories,4,11.32,45.28,Sharon Young,East,Jennifer Flores,PayPal,0
+TXN00864,2023-10-31,Standing Desk,Furniture,5,300.92,1504.6,James Gardner,West,Karen Lopez,PayPal,0
+TXN00865,2024-12-26,Keyboard,Accessories,1,113.56,113.56,Tim Larsen,North,Zachary Santiago,PayPal,0
+TXN00866,2024-08-25,Laptop,Electronics,1,2268.8,2268.8,Benjamin Smith,East,Katelyn Kim,Debit Card,0
+TXN00867,2024-11-26,Desk Chair,Furniture,1,533.31,533.31,Angela May MD,East,Richard Munoz,Credit Card,0
+TXN00868,2023-09-04,Monitor,Electronics,3,414.91,1244.73,Christopher Hicks,North,Joanna Kelly,Debit Card,15
+TXN00869,2024-04-15,Monitor,Electronics,1,302.79,302.79,Larry Lane,South,Cynthia Shaw,Debit Card,0
+TXN00870,2024-01-04,Desk Chair,Furniture,3,185.0,555.0,Joshua Richardson,North,Laura Bush,Debit Card,0
+TXN00871,2024-07-06,Headphones,Accessories,3,68.03,204.09,John Vaughn,North,Nicholas Terrell,Credit Card,10
+TXN00872,2024-04-19,Mouse,Accessories,4,15.15,60.6,Dr. Julie Miller,North,Ann Kennedy,Debit Card,0
+TXN00873,2023-08-17,Webcam,Electronics,2,147.82,295.64,Toni Miller,West,Rebecca Edwards,Credit Card,0
+TXN00874,2023-05-08,HDMI Cable,Accessories,1,31.11,31.11,Greg Osborne,South,Jose Harrison,Debit Card,0
+TXN00875,2024-11-10,Headphones,Accessories,3,98.76,296.28,Jennifer Yu,Central,Donna Johnson,Credit Card,0
+TXN00876,2024-06-11,Laptop,Electronics,3,1149.29,3447.87,Nicole Acosta,North,Amy Kennedy,Credit Card,0
+TXN00877,2023-05-09,Standing Desk,Furniture,1,330.02,330.02,Anthony Mooney,West,Lori Mitchell,Cash,0
+TXN00878,2024-09-28,Monitor,Electronics,3,748.26,2244.78,Jonathan York,North,Casey Campbell,Debit Card,0
+TXN00879,2023-12-08,Headphones,Accessories,2,248.28,496.56,Alexis Rodriguez,South,Kevin Hernandez,PayPal,0
+TXN00880,2024-12-14,Laptop,Electronics,2,1126.41,2252.82,Robert Green,West,Kari Lloyd,Credit Card,0
+TXN00881,2024-11-07,USB Cable,Accessories,2,18.05,36.1,Grace Miller,North,Timothy Moore,PayPal,0
+TXN00882,2023-08-21,Keyboard,Accessories,3,134.79,404.37,Wyatt Townsend II,East,Mark Clark,PayPal,0
+TXN00883,2023-11-28,Webcam,Electronics,4,112.86,451.44,Haley May,West,Audrey Jackson,Cash,0
+TXN00884,2023-01-13,USB Cable,Accessories,3,17.03,51.09,Eric Reese,North,Kim James,Debit Card,0
+TXN00885,2023-03-20,USB Cable,Accessories,2,5.52,11.04,Karen Thomas,North,Alexandra Ho,Credit Card,0
+TXN00886,2024-12-15,Mouse,Accessories,5,47.37,236.85,Michael Nixon,West,Amanda Hardin,PayPal,0
+TXN00887,2024-07-16,Monitor,Electronics,5,441.4,2207.0,Tina Reynolds,North,Shannon Rogers,Cash,20
+TXN00888,2023-06-14,Mouse,Accessories,1,55.3,55.3,Brett Pena,East,Raymond Curry,Cash,0
+TXN00889,2023-05-18,HDMI Cable,Accessories,4,29.84,119.36,Leah Lee,South,Michael White,Debit Card,0
+TXN00890,2023-07-18,Monitor,Electronics,5,317.42,1587.1,Megan Decker,South,Brent Garcia,Cash,0
+TXN00891,2023-06-28,HDMI Cable,Accessories,4,33.75,135.0,Daniel Campbell,Central,Alexander Davis,Credit Card,0
+TXN00892,2023-07-27,Standing Desk,Furniture,4,889.45,3557.8,Mary Houston,East,Margaret Erickson,PayPal,0
+TXN00893,2023-02-28,Webcam,Electronics,5,149.7,748.5,Scott Anderson,East,Stephanie Knight,Credit Card,15
+TXN00894,2024-01-12,Webcam,Electronics,2,48.35,96.7,Stephanie Dominguez,West,John Mayer,PayPal,20
+TXN00895,2024-08-11,USB Cable,Accessories,4,17.52,70.08,Tammy Hill,North,Steven Carrillo,Credit Card,0
+TXN00896,2023-01-28,Mouse,Accessories,2,64.69,129.38,Christopher Jones,South,Janet Cook,Credit Card,0
+TXN00897,2024-08-01,Monitor,Electronics,2,527.41,1054.82,Tyler Baker,East,John Mcfarland,PayPal,0
+TXN00898,2024-05-29,Headphones,Accessories,2,57.68,115.36,Cassandra Vasquez,West,Randy Robinson,Cash,0
+TXN00899,2024-06-07,USB Cable,Accessories,3,22.09,66.27,Susan Baldwin,Central,Benjamin Duncan,Cash,0
+TXN00900,2024-01-17,Mouse,Accessories,1,67.49,67.49,Jeremy Mosley,West,Martin Fitzpatrick,Cash,0
+TXN00901,2024-02-08,Webcam,Electronics,1,101.18,101.18,Deborah Graves,South,Laura Robertson,Debit Card,5
+TXN00902,2024-12-26,USB Cable,Accessories,3,11.22,33.66,Katherine Graham,North,Priscilla Floyd,Cash,0
+TXN00903,2024-12-23,Standing Desk,Furniture,4,777.05,3108.2,April Finley,West,Karen Bradley,Debit Card,15
+TXN00904,2024-01-24,Standing Desk,Furniture,2,983.84,1967.68,Heather Maldonado,Central,Mark Benjamin,Debit Card,0
+TXN00905,2024-01-30,Keyboard,Accessories,5,107.37,536.85,Joseph Woodward,West,Joe Miranda,Debit Card,5
+TXN00906,2023-01-10,Headphones,Accessories,1,77.71,77.71,Cassandra Williams,South,Connor Dominguez,Cash,5
+TXN00907,2024-01-31,Desk Chair,Furniture,5,205.11,1025.55,Lydia Howard,East,Mark Moss,Debit Card,15
+TXN00908,2024-12-18,Desk Chair,Furniture,3,225.41,676.23,Corey Cortez,West,Katherine Brown,Debit Card,15
+TXN00909,2023-08-08,Webcam,Electronics,3,87.84,263.52,Elizabeth Ferguson,North,Joann Forbes,Cash,0
+TXN00910,2023-06-19,Standing Desk,Furniture,1,338.12,338.12,Anthony French,East,Bruce Roman,PayPal,0
+TXN00911,2024-02-05,Laptop,Electronics,3,1760.82,5282.46,Judy Gregory,East,Brittany Riley,Credit Card,5
+TXN00912,2023-07-31,Standing Desk,Furniture,2,835.55,1671.1,Amanda Thomas,Central,Kaitlin Hardin,PayPal,0
+TXN00913,2024-11-03,Keyboard,Accessories,1,61.59,61.59,Michael Anderson,Central,Anthony Parker,PayPal,20
+TXN00914,2023-12-06,HDMI Cable,Accessories,3,21.03,63.09,Joy Jackson,Central,Sabrina Rodriguez,Credit Card,5
+TXN00915,2024-04-13,Desk Chair,Furniture,4,247.86,991.44,Robert Walker PhD,West,Robert Hendrix,Credit Card,0
+TXN00916,2023-04-07,Desk Chair,Furniture,1,491.95,491.95,Erika Daugherty,South,Brenda Copeland,PayPal,0
+TXN00917,2024-03-14,Webcam,Electronics,4,132.78,531.12,Pamela Watkins,North,Bryan Thomas,Debit Card,0
+TXN00918,2024-07-09,Laptop,Electronics,2,2406.75,4813.5,Michael Tran,South,Timothy Williams,Debit Card,0
+TXN00919,2023-06-19,Webcam,Electronics,4,68.23,272.92,Ryan Salazar,Central,Alexis Tucker,Debit Card,0
+TXN00920,2023-08-11,Laptop,Electronics,5,1455.24,7276.2,Christopher Davis,North,Stacie Butler,Cash,0
+TXN00921,2024-09-01,Laptop,Electronics,4,1102.86,4411.44,Patricia Schwartz,East,Mark Mills,Cash,10
+TXN00922,2023-08-26,HDMI Cable,Accessories,3,24.58,73.74,Todd Bishop,South,Christopher Porter,PayPal,0
+TXN00923,2024-02-02,Webcam,Electronics,1,112.41,112.41,Lori Patton,East,Aaron Young,Debit Card,0
+TXN00924,2024-12-10,Webcam,Electronics,2,42.92,85.84,Joseph Davis,South,Philip Fernandez,PayPal,0
+TXN00925,2023-06-09,Laptop,Electronics,5,1479.46,7397.3,Randy Hopkins,West,Cory Hogan,Debit Card,0
+TXN00926,2023-04-16,HDMI Cable,Accessories,1,39.96,39.96,Tracy Wells,West,Michael Williams,Credit Card,0
+TXN00927,2023-05-01,Mouse,Accessories,5,28.82,144.1,Dominique Hamilton,East,Robert Chang,PayPal,0
+TXN00928,2024-07-06,Desk Chair,Furniture,3,439.52,1318.56,Patrick Buckley,North,Richard Washington,PayPal,0
+TXN00929,2024-04-28,Desk Chair,Furniture,1,223.98,223.98,Steven Griffith,South,Erika Gonzalez,Cash,0
+TXN00930,2024-02-07,Headphones,Accessories,1,222.37,222.37,Erika Maxwell,North,Brent Rojas,PayPal,0
+TXN00931,2024-12-13,USB Cable,Accessories,4,16.42,65.68,Jaime Walker,Central,John Zamora,Credit Card,0
+TXN00932,2023-08-14,Mouse,Accessories,5,58.87,294.35,Timothy Gibson,North,Chad Cortez,PayPal,0
+TXN00933,2023-09-21,Laptop,Electronics,1,1739.86,1739.86,Vanessa Harris,Central,Michael Brown,Cash,0
+TXN00934,2023-07-09,Laptop,Electronics,5,934.83,4674.15,Samuel Ellis,West,Greg Tanner,Credit Card,0
+TXN00935,2024-09-18,Laptop,Electronics,1,1688.73,1688.73,Rachel Little,East,Carolyn Cordova,Debit Card,0
+TXN00936,2024-06-27,Mouse,Accessories,3,65.14,195.42,Angelica Vincent,South,Zachary Vargas PhD,PayPal,0
+TXN00937,2023-08-08,HDMI Cable,Accessories,1,19.84,19.84,Nicholas Fitzgerald,North,Garrett Riley,Credit Card,0
+TXN00938,2023-05-08,Headphones,Accessories,1,50.27,50.27,Leslie Hernandez,North,Abigail Baird,Debit Card,15
+TXN00939,2024-12-06,Laptop,Electronics,1,2066.03,2066.03,John Mack,North,Joseph Mendoza,PayPal,0
+TXN00940,2023-10-15,USB Cable,Accessories,2,8.93,17.86,Samantha Chavez,East,Justin Smith,Cash,5
+TXN00941,2023-10-07,USB Cable,Accessories,1,15.29,15.29,Tiffany Anderson,Central,Matthew Davis,Credit Card,0
+TXN00942,2024-11-11,Mouse,Accessories,4,57.28,229.12,Eric Warner,North,Nicole Johnson,Credit Card,20
+TXN00943,2024-06-28,Standing Desk,Furniture,2,337.2,674.4,Raymond Sawyer,East,Richard Wood,Debit Card,5
+TXN00944,2023-10-01,Laptop,Electronics,3,2370.28,7110.84,Mark Dalton,North,Steven Cook,PayPal,5
+TXN00945,2023-12-24,HDMI Cable,Accessories,1,12.64,12.64,Jeffery Nelson,North,Kimberly Norton,Cash,0
+TXN00946,2023-11-11,Webcam,Electronics,4,80.76,323.04,Angela Gilmore,Central,Amy Dougherty,Debit Card,10
+TXN00947,2023-06-18,Keyboard,Accessories,3,79.74,239.22,Stacy Rodriguez,North,Manuel Diaz,PayPal,0
+TXN00948,2024-01-11,Laptop,Electronics,4,1021.88,4087.52,Justin Jones,South,Christine Zavala,Debit Card,0
+TXN00949,2024-04-23,Desk Chair,Furniture,2,340.6,681.2,Brian Mendoza,Central,Lauren Haley,PayPal,15
+TXN00950,2023-03-02,Keyboard,Accessories,5,61.1,305.5,Patrick Perez,South,Derek Frazier,Credit Card,0
+TXN00951,2023-11-30,Standing Desk,Furniture,4,393.75,1575.0,Arthur Reed,West,Mr. Bryan Mckinney,PayPal,0
+TXN00952,2023-03-13,Keyboard,Accessories,4,104.33,417.32,Kim Carter,North,Rebecca Dougherty,PayPal,0
+TXN00953,2023-05-22,Laptop,Electronics,2,2144.79,4289.58,Teresa Jones,North,Judith Miller,Debit Card,0
+TXN00954,2023-09-20,Standing Desk,Furniture,3,711.7,2135.1,Donna Frye,Central,Donald Terry,Debit Card,15
+TXN00955,2024-12-20,Monitor,Electronics,4,604.5,2418.0,Shaun Meyer DDS,South,Wayne Weaver,PayPal,0
+TXN00956,2023-04-19,HDMI Cable,Accessories,4,12.78,51.12,Gregory Wallace,East,Dorothy Brown,Debit Card,0
+TXN00957,2024-08-22,Keyboard,Accessories,5,110.39,551.95,Crystal Meza,South,Jennifer Cooper,Credit Card,0
+TXN00958,2023-10-14,USB Cable,Accessories,2,19.63,39.26,Erin Watkins,Central,Sarah Wallace,Debit Card,0
+TXN00959,2024-09-25,Monitor,Electronics,4,581.57,2326.28,Carlos Clarke,East,David Washington,PayPal,0
+TXN00960,2024-07-05,Webcam,Electronics,5,66.12,330.6,Patricia Williams,East,Jesus Jackson,Debit Card,0
+TXN00961,2023-09-21,Desk Chair,Furniture,2,547.68,1095.36,Michelle Mitchell,North,Sara Schwartz,Credit Card,0
+TXN00962,2024-12-30,Monitor,Electronics,5,361.48,1807.4,Brittany Young,West,Eugene Martinez,PayPal,0
+TXN00963,2024-01-11,Desk Chair,Furniture,4,360.94,1443.76,Cody Hart,East,Evan Cooper,PayPal,5
+TXN00964,2024-05-02,Headphones,Accessories,1,239.85,239.85,Joshua Martin,North,Thomas Sullivan,Credit Card,20
+TXN00965,2024-06-23,Keyboard,Accessories,2,60.32,120.64,Mr. Jimmy Flores Jr.,East,Vanessa Rivera,Cash,0
+TXN00966,2023-07-28,Webcam,Electronics,1,122.74,122.74,Kara Roberts,South,Veronica Berry,Cash,0
+TXN00967,2023-08-22,Keyboard,Accessories,2,32.94,65.88,Keith Meadows,South,Michael Dennis,Credit Card,0
+TXN00968,2024-06-08,Headphones,Accessories,4,69.07,276.28,Brenda Pierce,West,James Randall,Debit Card,20
+TXN00969,2024-08-23,Standing Desk,Furniture,4,1122.2,4488.8,Brandon Brown,North,Lauren Walker,Debit Card,0
+TXN00970,2023-06-20,Desk Chair,Furniture,3,522.76,1568.28,Diana Johnson,South,Jill Powers,Cash,0
+TXN00971,2023-10-09,Standing Desk,Furniture,4,1168.51,4674.04,Jorge Lee,East,Larry Harding,PayPal,0
+TXN00972,2023-11-25,Headphones,Accessories,5,235.17,1175.85,Heather Hernandez,Central,Jaclyn Watson,Credit Card,0
+TXN00973,2024-11-13,Webcam,Electronics,4,60.66,242.64,Gregory Madden,West,Anita Luna,Debit Card,5
+TXN00974,2024-02-05,Standing Desk,Furniture,5,349.61,1748.05,Willie Lara,East,Robert Waller,Debit Card,20
+TXN00975,2024-08-13,Desk Chair,Furniture,3,569.3,1707.9,Steven Taylor,West,Angelica Clark,Credit Card,0
+TXN00976,2024-06-13,Mouse,Accessories,4,20.07,80.28,Sean Hatfield,West,Tyler Avila,Credit Card,10
+TXN00977,2024-03-29,USB Cable,Accessories,4,22.46,89.84,Jason Rocha,Central,Justin Page,Credit Card,0
+TXN00978,2023-12-27,Keyboard,Accessories,1,131.67,131.67,Breanna Lopez,South,Julian Williams,Cash,0
+TXN00979,2024-04-16,Laptop,Electronics,3,2065.1,6195.3,Sandra Torres,North,Julie Johnson,Cash,0
+TXN00980,2023-03-16,Desk Chair,Furniture,5,346.7,1733.5,Dennis Blanchard,West,Kaitlyn Valdez,Credit Card,0
+TXN00981,2023-09-18,Standing Desk,Furniture,4,653.26,2613.04,Jennifer Vasquez,South,Danielle Wilson,Credit Card,0
+TXN00982,2024-11-27,Keyboard,Accessories,1,44.55,44.55,Zachary Jones,North,Lauren Cunningham,PayPal,0
+TXN00983,2024-03-05,HDMI Cable,Accessories,5,36.8,184.0,Lori Alvarez,East,Barbara Hunt,Credit Card,0
+TXN00984,2023-04-14,Monitor,Electronics,2,794.73,1589.46,Sarah Martin,Central,Francisco Johns,Debit Card,10
+TXN00985,2024-07-12,Webcam,Electronics,4,131.39,525.56,Christopher Nelson,West,Thomas Kelly,Cash,15
+TXN00986,2024-11-15,Standing Desk,Furniture,4,951.34,3805.36,Joseph Mayer,South,Pamela White,Credit Card,0
+TXN00987,2023-07-13,Keyboard,Accessories,4,105.71,422.84,Paul Stephens,West,Samantha Cohen,PayPal,0
+TXN00988,2024-08-29,Standing Desk,Furniture,1,1061.42,1061.42,Michael Barker,South,Kevin Morrow,Cash,10
+TXN00989,2024-10-14,Mouse,Accessories,5,48.23,241.15,Joseph Watson,North,Mr. Thomas Garcia,Debit Card,20
+TXN00990,2023-08-07,Standing Desk,Furniture,3,338.06,1014.18,Daniel Lopez,North,Lisa Guerra,Credit Card,0
+TXN00991,2024-03-06,Webcam,Electronics,1,60.76,60.76,Kim Arnold,Central,Ashley Stevens,Credit Card,0
+TXN00992,2024-05-14,Keyboard,Accessories,3,43.17,129.51,Robert Mclean,West,Eric Cox,PayPal,15
+TXN00993,2024-04-11,HDMI Cable,Accessories,1,32.83,32.83,Stacy Harper,South,Gloria Mckinney,Debit Card,0
+TXN00994,2024-11-21,Keyboard,Accessories,1,33.16,33.16,Robert Walker,West,Brenda Perez,Debit Card,0
+TXN00995,2023-02-27,Keyboard,Accessories,3,92.76,278.28,Carlos Miller,North,Rachel Jones,PayPal,0
+TXN00996,2024-05-23,USB Cable,Accessories,2,16.69,33.38,Nicole Williams,Central,Ricky Palmer,Cash,0
+TXN00997,2024-02-19,USB Cable,Accessories,4,21.09,84.36,Bryan King,West,Michael Webster,PayPal,0
+TXN00998,2024-10-11,Standing Desk,Furniture,3,720.72,2162.16,Tamara Harris,North,Cathy Bell,PayPal,0
+TXN00999,2024-06-25,Laptop,Electronics,3,983.02,2949.06,Ryan Mcmahon,East,Hannah Martin,Cash,0
+TXN01000,2023-01-25,Keyboard,Accessories,3,131.7,395.1,Monica Allen,West,Annette Lane,Credit Card,0

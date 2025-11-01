@@ -1,0 +1,501 @@
+Order_ID,Order_Date,Customer_ID,Customer_Email,Product_Name,Product_Category,Price,Quantity,Shipping_Cost,Status,Delivery_Date,Rating
+ORD000001,2025-04-28,CUST0067,udavis@example.net,Business-focused tertiary framework,Home & Garden,401.72,3,14.73,Delivered,2025-04-30,5.0
+ORD000002,2024-10-21,CUST0055,barbararamos@example.com,Implemented client-server database,Sports,458.29,9,7.48,Delivered,2024-10-27,2.0
+ORD000003,2024-04-18,CUST0022,jillsmith@example.net,Re-engineered bi-directional service-desk,Books,355.74,7,19.8,Delivered,2024-04-29,2.0
+ORD000004,2025-07-03,CUST0060,nicholasmcgrath@example.net,Down-sized analyzing attitude,Home & Garden,364.68,6,17.7,Delivered,2025-07-05,3.0
+ORD000005,2024-08-03,CUST0098,dwhite@example.org,Profound solution-oriented Graphical User Interface,Clothing,412.75,10,24.77,Shipped,,
+ORD000006,2025-02-03,CUST0032,obooker@example.net,Open-architected dynamic alliance,Home & Garden,186.07,10,19.33,Delivered,2025-02-05,3.0
+ORD000007,2024-02-01,CUST0029,randyturner@example.net,Enhanced solution-oriented synergy,Books,65.42,4,12.45,Delivered,2024-02-11,5.0
+ORD000008,2024-08-18,CUST0064,stricklandmichelle@example.net,Multi-tiered even-keeled product,Clothing,158.43,3,6.71,Delivered,2024-08-24,5.0
+ORD000009,2025-03-22,CUST0093,hrichardson@example.org,Configurable bottom-line matrix,Books,47.04,8,10.26,Delivered,2025-04-03,2.0
+ORD000010,2025-03-13,CUST0005,andrewberry@example.net,Polarized even-keeled solution,Sports,470.93,5,9.61,Delivered,2025-03-25,1.0
+ORD000011,2025-06-01,CUST0050,bauerherbert@example.com,Stand-alone tangible Internet solution,Home & Garden,64.66,1,24.92,Cancelled,,
+ORD000012,2024-06-19,CUST0079,corybrown@example.net,Enterprise-wide impactful standardization,Home & Garden,23.18,6,8.3,Delivered,2024-07-01,3.0
+ORD000013,2023-11-16,CUST0027,ihawkins@example.net,Pre-emptive asymmetric model,Books,94.73,2,5.3,Delivered,2023-11-26,1.0
+ORD000014,2025-08-12,CUST0046,molinajared@example.net,Decentralized contextually-based policy,Electronics,103.16,1,5.02,Cancelled,,
+ORD000015,2025-04-23,CUST0010,adamwest@example.com,Decentralized 6thgeneration capacity,Home & Garden,67.36,1,19.75,Delivered,2025-05-05,3.0
+ORD000016,2025-01-20,CUST0094,denisemiller@example.com,Versatile 5thgeneration artificial intelligence,Books,272.03,7,23.8,Delivered,2025-02-02,5.0
+ORD000017,2024-02-05,CUST0020,michael82@example.com,Switchable 24hour encryption,Books,366.59,1,25.57,Delivered,2024-02-16,1.0
+ORD000018,2024-06-21,CUST0083,shahapril@example.com,Switchable national intranet,Clothing,248.14,2,14.2,Shipped,,
+ORD000019,2024-02-17,CUST0015,hneal@example.com,Robust national migration,Electronics,301.98,6,5.32,Delivered,2024-03-02,2.0
+ORD000020,2024-04-11,CUST0027,batesbradley@example.org,Ergonomic client-server framework,Books,159.06,7,26.06,Delivered,2024-04-16,3.0
+ORD000021,2025-08-26,CUST0032,susanguzman@example.org,Reverse-engineered heuristic focus group,Clothing,130.07,5,17.44,Delivered,2025-08-28,4.0
+ORD000022,2024-02-08,CUST0054,qjones@example.com,Multi-tiered solution-oriented complexity,Books,418.19,8,25.86,Delivered,2024-02-18,2.0
+ORD000023,2024-09-06,CUST0004,qmiller@example.net,Optimized system-worthy circuit,Sports,79.78,6,25.64,Delivered,2024-09-09,2.0
+ORD000024,2024-12-21,CUST0019,chadoconnor@example.net,Total secondary core,Electronics,169.91,9,10.46,Delivered,2025-01-01,1.0
+ORD000025,2025-05-08,CUST0089,anne89@example.org,Operative coherent functionalities,Books,485.6,7,28.84,Delivered,2025-05-18,3.0
+ORD000026,2025-07-04,CUST0065,mgray@example.org,Compatible encompassing capability,Sports,491.8,8,20.22,Delivered,2025-07-08,5.0
+ORD000027,2024-12-17,CUST0045,suttonrichard@example.com,Sharable background hierarchy,Electronics,67.01,8,14.67,Delivered,2024-12-19,3.0
+ORD000028,2025-10-07,CUST0080,kimberly23@example.com,Advanced bandwidth-monitored implementation,Books,23.64,8,23.78,Delivered,2025-10-21,1.0
+ORD000029,2024-04-21,CUST0021,ylynn@example.org,Enhanced multi-tasking superstructure,Home & Garden,33.8,4,18.34,Delivered,2024-04-26,2.0
+ORD000030,2025-09-11,CUST0084,brianna71@example.net,Monitored tangible orchestration,Home & Garden,131.71,5,7.23,Delivered,2025-09-14,3.0
+ORD000031,2025-09-03,CUST0046,andrea91@example.org,Down-sized foreground system engine,Sports,394.5,1,15.27,Delivered,2025-09-08,1.0
+ORD000032,2024-08-29,CUST0051,michaelfigueroa@example.net,Reactive radical initiative,Electronics,325.44,1,6.99,Pending,,
+ORD000033,2024-11-05,CUST0013,jonathonparks@example.net,Distributed stable capacity,Books,26.44,10,10.3,Delivered,2024-11-10,3.0
+ORD000034,2024-02-19,CUST0094,rbradley@example.org,Up-sized scalable hub,Clothing,23.23,4,26.33,Delivered,2024-02-23,3.0
+ORD000035,2025-05-03,CUST0034,erikabarnes@example.com,Enterprise-wide leadingedge help-desk,Sports,482.66,2,7.83,Delivered,2025-05-12,4.0
+ORD000036,2025-07-13,CUST0022,rshaw@example.com,Programmable transitional emulation,Home & Garden,280.84,9,9.2,Delivered,2025-07-25,3.0
+ORD000037,2024-06-25,CUST0034,mezarichard@example.com,Cross-group scalable artificial intelligence,Electronics,199.52,5,13.87,Delivered,2024-07-02,2.0
+ORD000038,2023-12-30,CUST0082,shirleymartin@example.org,Configurable value-added forecast,Electronics,493.75,6,28.61,Delivered,2024-01-12,1.0
+ORD000039,2025-01-04,CUST0049,astokes@example.com,Synergistic multimedia superstructure,Home & Garden,344.8,3,10.58,Delivered,2025-01-10,2.0
+ORD000040,2024-02-14,CUST0060,rjimenez@example.net,Public-key tangible capability,Sports,320.89,3,12.62,Delivered,2024-02-18,1.0
+ORD000041,2024-09-10,CUST0027,jensenrhonda@example.net,Adaptive transitional interface,Home & Garden,417.39,2,25.22,Delivered,2024-09-24,2.0
+ORD000042,2025-04-29,CUST0037,john89@example.org,Robust local concept,Books,405.47,8,22.23,Delivered,2025-05-10,3.0
+ORD000043,2025-04-07,CUST0063,gregoryrichardson@example.org,Profound heuristic application,Clothing,30.79,7,7.06,Delivered,2025-04-09,5.0
+ORD000044,2024-09-24,CUST0008,xgray@example.org,Mandatory systematic encryption,Home & Garden,86.51,9,21.77,Delivered,2024-10-08,1.0
+ORD000045,2025-08-08,CUST0088,robertstimothy@example.com,Extended 24hour support,Clothing,353.75,5,25.32,Delivered,2025-08-12,3.0
+ORD000046,2025-03-05,CUST0097,trobinson@example.net,Profound 5thgeneration Local Area Network,Books,453.04,10,26.51,Delivered,2025-03-18,4.0
+ORD000047,2025-09-24,CUST0033,abrown@example.net,Persevering full-range framework,Sports,132.46,9,28.72,Delivered,2025-10-02,2.0
+ORD000048,2024-08-01,CUST0004,smithpamela@example.org,Open-architected heuristic access,Books,455.14,4,17.9,Delivered,2024-08-07,3.0
+ORD000049,2024-01-18,CUST0090,fvasquez@example.net,Profound coherent installation,Books,345.39,5,9.21,Delivered,2024-01-29,2.0
+ORD000050,2024-02-05,CUST0088,xsmith@example.net,Function-based directional leverage,Books,436.11,7,17.49,Delivered,2024-02-16,2.0
+ORD000051,2024-09-03,CUST0099,kevin62@example.net,Future-proofed bi-directional intranet,Clothing,219.75,8,9.72,Delivered,2024-09-08,3.0
+ORD000052,2025-03-24,CUST0001,wmartin@example.net,Optional 24hour help-desk,Books,427.31,9,27.86,Delivered,2025-04-04,4.0
+ORD000053,2025-09-17,CUST0037,danielmitchell@example.org,Object-based intangible synergy,Sports,20.18,5,9.97,Delivered,2025-09-25,3.0
+ORD000054,2024-07-15,CUST0068,martinjames@example.com,Synchronized encompassing capability,Home & Garden,465.3,2,20.58,Shipped,,
+ORD000055,2024-09-23,CUST0054,zpierce@example.net,Universal clear-thinking Graphic Interface,Clothing,455.7,5,8.69,Delivered,2024-09-30,4.0
+ORD000056,2025-06-06,CUST0066,vshaw@example.com,De-engineered bifurcated benchmark,Home & Garden,195.99,1,25.56,Pending,,
+ORD000057,2025-07-08,CUST0039,martinezmaurice@example.org,Visionary systemic encoding,Electronics,477.42,9,18.67,Delivered,2025-07-17,5.0
+ORD000058,2023-12-11,CUST0077,russell90@example.com,Polarized explicit forecast,Clothing,496.69,6,5.73,Delivered,2023-12-19,4.0
+ORD000059,2024-11-12,CUST0013,hodgesjohn@example.org,Upgradable multimedia contingency,Clothing,26.6,2,26.21,Delivered,2024-11-20,4.0
+ORD000060,2024-05-12,CUST0057,katie43@example.net,Optimized dedicated leverage,Electronics,468.53,5,8.79,Delivered,2024-05-21,5.0
+ORD000061,2025-05-02,CUST0078,hayneswayne@example.org,Ergonomic optimizing product,Clothing,328.13,7,9.13,Delivered,2025-05-09,5.0
+ORD000062,2025-03-07,CUST0094,jeromeanderson@example.org,Grass-roots content-based circuit,Clothing,238.73,7,25.18,Cancelled,,
+ORD000063,2024-09-27,CUST0090,jensenchristopher@example.org,Multi-tiered incremental moderator,Home & Garden,263.52,5,21.16,Delivered,2024-10-02,4.0
+ORD000064,2024-06-26,CUST0072,jeffreysimmons@example.org,Profound interactive project,Books,157.36,5,25.75,Delivered,2024-06-29,5.0
+ORD000065,2023-12-11,CUST0095,daniel54@example.com,Universal intangible encryption,Clothing,257.57,6,11.94,Delivered,2023-12-21,4.0
+ORD000066,2024-07-06,CUST0002,whiteaaron@example.net,User-friendly fresh-thinking data-warehouse,Clothing,441.02,7,28.7,Delivered,2024-07-20,5.0
+ORD000067,2024-06-09,CUST0025,mramirez@example.org,Optional contextually-based extranet,Clothing,469.55,1,16.5,Delivered,2024-06-15,1.0
+ORD000068,2024-11-16,CUST0072,matthew11@example.net,Advanced systemic neural-net,Sports,298.15,1,11.83,Delivered,2024-11-24,1.0
+ORD000069,2025-06-21,CUST0033,markfigueroa@example.com,User-friendly zero-defect parallelism,Electronics,207.3,2,14.28,Delivered,2025-06-26,3.0
+ORD000070,2024-12-15,CUST0035,john43@example.net,Networked background benchmark,Books,241.32,5,7.26,Delivered,2024-12-20,1.0
+ORD000071,2024-02-10,CUST0014,williamstanya@example.net,Ergonomic content-based strategy,Electronics,99.12,2,18.15,Delivered,2024-02-22,1.0
+ORD000072,2024-10-12,CUST0015,jonesamy@example.com,Innovative uniform leverage,Electronics,196.38,3,10.47,Delivered,2024-10-25,1.0
+ORD000073,2025-06-14,CUST0009,amandahernandez@example.org,Ergonomic intangible neural-net,Home & Garden,225.45,9,6.83,Delivered,2025-06-20,5.0
+ORD000074,2025-05-06,CUST0057,patricia85@example.com,Organized responsive structure,Electronics,295.47,8,9.15,Delivered,2025-05-16,3.0
+ORD000075,2024-01-31,CUST0015,ajones@example.net,Profit-focused 3rdgeneration concept,Home & Garden,342.26,7,19.5,Delivered,2024-02-02,5.0
+ORD000076,2025-02-08,CUST0014,heather24@example.org,Re-contextualized analyzing utilization,Books,222.4,8,10.0,Delivered,2025-02-12,3.0
+ORD000077,2025-04-22,CUST0054,joysanders@example.net,Public-key multimedia archive,Clothing,188.6,2,26.7,Delivered,2025-04-27,5.0
+ORD000078,2024-03-08,CUST0055,ychristensen@example.net,Vision-oriented human-resource initiative,Books,73.65,8,27.0,Delivered,2024-03-13,4.0
+ORD000079,2025-02-14,CUST0045,jamie02@example.net,Extended optimizing standardization,Sports,19.34,6,27.11,Delivered,2025-02-24,5.0
+ORD000080,2023-11-07,CUST0014,ugordon@example.net,Fundamental exuding definition,Electronics,448.12,10,28.08,Delivered,2023-11-11,5.0
+ORD000081,2024-06-18,CUST0057,andrea23@example.org,Public-key disintermediate frame,Home & Garden,239.85,1,27.67,Pending,,
+ORD000082,2023-12-01,CUST0043,sheriramirez@example.org,Future-proofed actuating project,Clothing,102.02,9,21.88,Delivered,2023-12-11,4.0
+ORD000083,2024-05-12,CUST0084,amandasmith@example.com,Self-enabling real-time hub,Electronics,214.1,5,29.83,Delivered,2024-05-25,1.0
+ORD000084,2024-07-10,CUST0049,pottsnicole@example.com,Up-sized client-driven installation,Electronics,263.66,3,10.51,Delivered,2024-07-17,2.0
+ORD000085,2025-09-28,CUST0006,mark00@example.com,Face-to-face upward-trending focus group,Books,191.99,7,20.27,Delivered,2025-09-30,3.0
+ORD000086,2024-03-17,CUST0075,teresa89@example.org,Up-sized value-added solution,Electronics,82.64,4,8.68,Delivered,2024-03-30,5.0
+ORD000087,2024-08-23,CUST0044,molly98@example.org,Organic directional Graphic Interface,Electronics,39.03,9,8.43,Delivered,2024-08-28,5.0
+ORD000088,2024-05-27,CUST0018,bonniemorton@example.com,Distributed local emulation,Sports,440.01,7,23.81,Delivered,2024-05-29,5.0
+ORD000089,2025-05-20,CUST0017,erichardson@example.org,Proactive contextually-based knowledgebase,Sports,455.68,9,8.71,Delivered,2025-06-03,4.0
+ORD000090,2024-03-23,CUST0073,jacobhenry@example.net,Enterprise-wide secondary forecast,Electronics,495.05,3,20.4,Delivered,2024-03-31,1.0
+ORD000091,2023-11-17,CUST0024,frank26@example.net,Robust content-based architecture,Clothing,394.09,7,29.63,Delivered,2023-11-19,4.0
+ORD000092,2024-02-20,CUST0014,simmonsspencer@example.net,Open-architected bandwidth-monitored success,Clothing,255.52,6,26.82,Delivered,2024-03-01,3.0
+ORD000093,2024-12-14,CUST0071,jessicamorton@example.net,Cross-platform homogeneous info-mediaries,Sports,20.9,9,16.34,Delivered,2024-12-19,1.0
+ORD000094,2023-11-17,CUST0058,serranokathryn@example.net,Balanced clear-thinking encryption,Clothing,69.68,3,26.52,Delivered,2023-12-01,3.0
+ORD000095,2025-06-21,CUST0071,adamssheena@example.net,Advanced 24/7 utilization,Home & Garden,72.68,6,21.04,Delivered,2025-06-30,4.0
+ORD000096,2024-01-22,CUST0042,melissa13@example.org,Polarized well-modulated open system,Books,213.16,2,17.78,Delivered,2024-01-31,1.0
+ORD000097,2025-09-24,CUST0096,tochoa@example.com,Polarized coherent encryption,Books,98.9,10,8.39,Delivered,2025-10-07,1.0
+ORD000098,2023-12-14,CUST0087,courtney10@example.org,Customer-focused needs-based frame,Home & Garden,431.37,6,10.27,Delivered,2023-12-21,1.0
+ORD000099,2024-01-19,CUST0097,othomas@example.org,Focused interactive info-mediaries,Books,89.05,4,27.84,Delivered,2024-01-26,3.0
+ORD000100,2024-02-23,CUST0035,diana36@example.net,Universal bifurcated matrix,Books,411.26,4,25.26,Delivered,2024-03-04,1.0
+ORD000101,2024-03-11,CUST0061,walkerstephanie@example.com,Multi-channeled asynchronous pricing structure,Books,125.25,4,7.19,Delivered,2024-03-18,1.0
+ORD000102,2024-07-17,CUST0061,wardsandy@example.org,Balanced real-time collaboration,Books,135.28,6,5.87,Delivered,2024-07-26,1.0
+ORD000103,2024-03-18,CUST0091,mmoreno@example.org,Synergistic interactive collaboration,Clothing,27.68,1,25.52,Delivered,2024-03-30,2.0
+ORD000104,2025-09-24,CUST0029,colleen45@example.org,Future-proofed modular protocol,Books,303.33,6,6.4,Delivered,2025-09-29,1.0
+ORD000105,2024-08-13,CUST0100,lisa10@example.org,Vision-oriented solution-oriented circuit,Clothing,124.13,7,27.82,Delivered,2024-08-25,3.0
+ORD000106,2024-07-06,CUST0045,petergriffith@example.com,Cloned bifurcated orchestration,Home & Garden,209.07,3,21.52,Delivered,2024-07-11,1.0
+ORD000107,2024-09-28,CUST0042,duane52@example.org,Visionary human-resource help-desk,Books,193.37,6,6.18,Delivered,2024-10-01,4.0
+ORD000108,2024-07-06,CUST0026,scoleman@example.com,Robust scalable groupware,Sports,411.33,9,27.92,Delivered,2024-07-18,4.0
+ORD000109,2024-02-16,CUST0032,patrickdunn@example.net,Public-key modular monitoring,Home & Garden,330.09,9,22.43,Delivered,2024-02-19,4.0
+ORD000110,2024-12-21,CUST0062,patrickcarpenter@example.com,Progressive object-oriented time-frame,Clothing,126.4,9,20.51,Delivered,2024-12-31,3.0
+ORD000111,2025-04-22,CUST0081,jacquelineyoung@example.org,Expanded 3rdgeneration hierarchy,Home & Garden,329.18,10,21.0,Delivered,2025-04-30,5.0
+ORD000112,2025-01-07,CUST0078,hrosario@example.org,Monitored high-level time-frame,Clothing,343.03,7,27.94,Delivered,2025-01-18,4.0
+ORD000113,2025-07-29,CUST0039,kenneththomas@example.net,Operative dynamic database,Books,135.33,5,18.15,Delivered,2025-08-08,3.0
+ORD000114,2025-08-04,CUST0100,briantaylor@example.net,Triple-buffered client-server implementation,Home & Garden,493.08,2,12.74,Delivered,2025-08-18,3.0
+ORD000115,2025-05-23,CUST0018,hortonroger@example.org,Total bi-directional protocol,Books,364.59,7,8.02,Cancelled,,
+ORD000116,2025-01-25,CUST0079,woodsbrittney@example.org,Assimilated client-server hierarchy,Books,431.45,10,26.43,Pending,,
+ORD000117,2024-02-18,CUST0057,sanchezalexander@example.com,Distributed well-modulated contingency,Clothing,104.99,6,21.11,Cancelled,,
+ORD000118,2024-10-30,CUST0015,kaitlinhale@example.com,Phased incremental success,Electronics,402.49,8,10.45,Delivered,2024-11-08,4.0
+ORD000119,2024-07-20,CUST0011,sharrington@example.org,Horizontal bifurcated collaboration,Books,208.87,5,22.14,Delivered,2024-07-23,3.0
+ORD000120,2023-12-17,CUST0031,munozglenn@example.org,Advanced hybrid interface,Sports,139.29,7,20.0,Delivered,2023-12-20,2.0
+ORD000121,2025-04-12,CUST0056,qspencer@example.net,Profit-focused fault-tolerant strategy,Books,91.44,9,28.95,Delivered,2025-04-25,3.0
+ORD000122,2024-04-25,CUST0013,rhuynh@example.org,Programmable homogeneous capacity,Clothing,150.26,9,6.75,Delivered,2024-05-05,2.0
+ORD000123,2025-05-31,CUST0031,richardbrown@example.com,Enterprise-wide value-added open architecture,Sports,23.18,2,22.44,Delivered,2025-06-03,2.0
+ORD000124,2025-02-12,CUST0088,velasqueztaylor@example.com,Streamlined secondary initiative,Books,55.4,7,7.39,Delivered,2025-02-24,4.0
+ORD000125,2025-08-04,CUST0092,zmartin@example.com,Stand-alone interactive core,Books,197.76,1,16.5,Delivered,2025-08-12,2.0
+ORD000126,2024-05-28,CUST0067,garciamichael@example.com,Assimilated disintermediate forecast,Electronics,495.12,10,13.21,Delivered,2024-06-07,1.0
+ORD000127,2024-03-06,CUST0090,jonescarla@example.com,Ergonomic neutral customer loyalty,Home & Garden,108.39,6,7.48,Delivered,2024-03-08,1.0
+ORD000128,2025-03-10,CUST0022,allenchristopher@example.net,Re-contextualized 6thgeneration open system,Sports,155.3,5,15.69,Delivered,2025-03-20,5.0
+ORD000129,2025-07-06,CUST0011,uwilliams@example.org,Integrated 24/7 help-desk,Electronics,303.51,7,5.4,Delivered,2025-07-16,3.0
+ORD000130,2025-06-06,CUST0012,susan83@example.com,Versatile hybrid success,Books,126.63,5,20.3,Shipped,,
+ORD000131,2024-08-03,CUST0027,jacquelinedavis@example.com,User-centric motivating attitude,Electronics,28.96,2,26.11,Delivered,2024-08-12,4.0
+ORD000132,2024-11-25,CUST0050,andrewflynn@example.com,Reverse-engineered 5thgeneration frame,Books,101.05,2,9.86,Delivered,2024-12-09,5.0
+ORD000133,2024-03-05,CUST0007,faithmiller@example.net,Cross-group transitional emulation,Electronics,55.04,10,23.78,Delivered,2024-03-14,1.0
+ORD000134,2025-09-17,CUST0057,lindseypena@example.net,Diverse motivating model,Sports,27.67,2,19.37,Delivered,2025-09-19,5.0
+ORD000135,2025-05-20,CUST0009,seth25@example.com,Multi-lateral regional Internet solution,Electronics,255.52,1,6.69,Delivered,2025-05-24,2.0
+ORD000136,2023-12-02,CUST0033,nallen@example.net,Compatible coherent open system,Electronics,394.8,5,16.1,Delivered,2023-12-15,3.0
+ORD000137,2025-03-02,CUST0046,adavis@example.org,Visionary fault-tolerant neural-net,Clothing,480.48,3,29.21,Delivered,2025-03-09,1.0
+ORD000138,2025-09-04,CUST0089,portershawn@example.org,Implemented cohesive architecture,Clothing,349.84,9,25.28,Delivered,2025-09-16,3.0
+ORD000139,2024-06-05,CUST0052,michael12@example.net,Visionary logistical firmware,Sports,392.35,5,23.25,Delivered,2024-06-19,1.0
+ORD000140,2024-11-02,CUST0085,kathryn72@example.org,Re-contextualized mobile analyzer,Home & Garden,473.95,9,9.73,Delivered,2024-11-10,5.0
+ORD000141,2024-08-09,CUST0064,richard92@example.com,Multi-lateral multimedia process improvement,Sports,256.79,9,13.17,Delivered,2024-08-21,3.0
+ORD000142,2024-07-01,CUST0092,christopher68@example.com,Fundamental systemic analyzer,Home & Garden,299.55,9,18.97,Delivered,2024-07-08,1.0
+ORD000143,2025-02-25,CUST0032,figueroajohn@example.net,Advanced coherent benchmark,Clothing,357.34,10,24.51,Delivered,2025-02-27,5.0
+ORD000144,2024-06-13,CUST0076,zmoore@example.org,Face-to-face human-resource Local Area Network,Home & Garden,386.05,3,12.24,Shipped,,
+ORD000145,2025-04-03,CUST0080,baileytaylor@example.net,Persistent bi-directional artificial intelligence,Electronics,274.08,2,9.3,Delivered,2025-04-13,2.0
+ORD000146,2024-03-20,CUST0045,lowerysandra@example.com,Exclusive impactful groupware,Home & Garden,276.75,3,19.77,Delivered,2024-04-01,5.0
+ORD000147,2023-12-21,CUST0050,matthew97@example.org,Total user-facing leverage,Electronics,350.0,8,28.74,Delivered,2024-01-02,2.0
+ORD000148,2024-01-28,CUST0075,shawn82@example.com,Digitized scalable data-warehouse,Home & Garden,448.82,8,8.34,Delivered,2024-02-11,3.0
+ORD000149,2024-07-06,CUST0047,huertakim@example.org,Multi-lateral intermediate leverage,Home & Garden,434.04,8,10.88,Delivered,2024-07-20,5.0
+ORD000150,2024-04-14,CUST0044,lewisandrew@example.net,Optimized encompassing extranet,Sports,104.79,2,11.72,Delivered,2024-04-27,4.0
+ORD000151,2025-03-08,CUST0080,christopherjones@example.com,Configurable exuding structure,Electronics,253.99,3,29.78,Delivered,2025-03-13,1.0
+ORD000152,2024-10-16,CUST0093,qwarren@example.com,Enterprise-wide actuating array,Home & Garden,436.51,1,19.78,Cancelled,,
+ORD000153,2025-09-26,CUST0036,wpeterson@example.com,Down-sized dedicated hardware,Sports,40.12,8,23.23,Delivered,2025-10-09,3.0
+ORD000154,2024-09-21,CUST0092,salvarez@example.org,Total intermediate help-desk,Home & Garden,361.46,1,14.25,Delivered,2024-10-05,1.0
+ORD000155,2025-10-09,CUST0010,jmorrow@example.net,Exclusive asynchronous success,Electronics,88.87,10,20.53,Delivered,2025-10-14,4.0
+ORD000156,2025-04-02,CUST0053,mariodowns@example.net,User-friendly user-facing superstructure,Sports,328.45,5,6.25,Delivered,2025-04-10,2.0
+ORD000157,2024-07-03,CUST0100,hernandezstephen@example.org,Proactive foreground budgetary management,Electronics,33.42,6,25.43,Delivered,2024-07-12,1.0
+ORD000158,2025-07-08,CUST0062,ubaker@example.org,Organized clear-thinking productivity,Electronics,222.44,7,17.38,Delivered,2025-07-12,4.0
+ORD000159,2024-10-15,CUST0007,johnsonjulie@example.org,Operative tangible moratorium,Home & Garden,231.19,10,14.65,Delivered,2024-10-28,1.0
+ORD000160,2025-06-24,CUST0068,carolynrobinson@example.org,Ergonomic systematic orchestration,Clothing,193.85,2,15.95,Delivered,2025-07-07,1.0
+ORD000161,2023-11-12,CUST0033,lisa04@example.com,Profit-focused bottom-line standardization,Home & Garden,490.69,7,23.85,Delivered,2023-11-24,5.0
+ORD000162,2024-11-22,CUST0091,wgutierrez@example.com,Quality-focused interactive model,Clothing,339.25,9,9.89,Delivered,2024-11-27,1.0
+ORD000163,2025-06-17,CUST0081,daniel27@example.com,Multi-layered context-sensitive neural-net,Home & Garden,223.16,2,22.41,Delivered,2025-06-21,4.0
+ORD000164,2025-02-05,CUST0087,amyjames@example.net,Team-oriented systemic Internet solution,Clothing,78.93,3,9.03,Cancelled,,
+ORD000165,2025-03-07,CUST0076,jacqueline11@example.org,Cross-group solution-oriented adapter,Clothing,282.32,1,20.85,Delivered,2025-03-12,2.0
+ORD000166,2025-02-21,CUST0064,vgarcia@example.net,Quality-focused bandwidth-monitored productivity,Electronics,177.04,10,26.48,Delivered,2025-02-27,1.0
+ORD000167,2024-10-10,CUST0018,contrerasmelissa@example.org,Face-to-face zero-defect knowledgebase,Sports,440.21,5,21.41,Delivered,2024-10-13,4.0
+ORD000168,2025-01-02,CUST0051,ewilson@example.org,Monitored maximized installation,Books,256.42,5,13.66,Delivered,2025-01-14,2.0
+ORD000169,2025-10-06,CUST0035,xsmith@example.org,Profit-focused executive flexibility,Sports,308.1,5,12.48,Cancelled,,
+ORD000170,2025-09-14,CUST0008,kyle63@example.org,Operative 5thgeneration access,Books,377.14,7,13.33,Delivered,2025-09-17,5.0
+ORD000171,2023-11-21,CUST0087,krystalrandall@example.net,User-centric radical functionalities,Sports,442.61,8,19.62,Delivered,2023-11-28,3.0
+ORD000172,2024-07-18,CUST0035,susanhaney@example.org,Realigned hybrid core,Home & Garden,351.19,8,10.59,Delivered,2024-08-01,2.0
+ORD000173,2025-02-21,CUST0062,zpoole@example.net,Optimized clear-thinking productivity,Home & Garden,301.54,2,22.64,Pending,,
+ORD000174,2024-08-30,CUST0015,richardflores@example.org,Optional discrete attitude,Sports,22.34,10,14.9,Delivered,2024-09-03,5.0
+ORD000175,2025-05-05,CUST0075,williamwelch@example.com,Virtual responsive firmware,Books,161.23,2,5.8,Delivered,2025-05-07,3.0
+ORD000176,2025-08-12,CUST0065,stacyharris@example.org,Assimilated intermediate access,Home & Garden,211.84,8,13.2,Delivered,2025-08-24,3.0
+ORD000177,2025-03-03,CUST0021,anthonyzimmerman@example.org,Re-engineered homogeneous algorithm,Clothing,402.73,4,13.14,Delivered,2025-03-10,5.0
+ORD000178,2025-05-30,CUST0007,tonyawalters@example.com,Enterprise-wide disintermediate projection,Clothing,354.47,5,24.05,Delivered,2025-06-04,2.0
+ORD000179,2025-09-28,CUST0054,kennethnichols@example.org,Up-sized zero-defect workforce,Home & Garden,209.31,6,6.04,Delivered,2025-10-03,1.0
+ORD000180,2025-07-03,CUST0043,qtownsend@example.org,Grass-roots attitude-oriented circuit,Books,102.22,3,21.63,Delivered,2025-07-13,1.0
+ORD000181,2025-03-02,CUST0057,littlebeth@example.org,Customizable logistical policy,Sports,472.7,2,25.54,Delivered,2025-03-15,3.0
+ORD000182,2024-02-04,CUST0065,thomasjose@example.org,Cross-group asynchronous methodology,Home & Garden,495.53,5,7.76,Delivered,2024-02-13,1.0
+ORD000183,2025-08-18,CUST0037,roberta36@example.org,Pre-emptive 3rdgeneration installation,Electronics,363.47,3,24.77,Delivered,2025-08-28,3.0
+ORD000184,2023-12-28,CUST0061,echung@example.org,Synergized intangible implementation,Books,39.15,10,22.49,Delivered,2024-01-08,1.0
+ORD000185,2025-09-22,CUST0044,cynthia72@example.org,Innovative 24/7 conglomeration,Sports,242.96,7,26.51,Delivered,2025-09-27,1.0
+ORD000186,2025-03-27,CUST0045,wilsonmatthew@example.com,Polarized reciprocal policy,Home & Garden,240.8,9,24.21,Delivered,2025-04-04,3.0
+ORD000187,2024-12-29,CUST0007,moorejudy@example.org,Ergonomic real-time algorithm,Electronics,176.68,10,18.14,Delivered,2024-12-31,5.0
+ORD000188,2024-12-21,CUST0035,holmeskathleen@example.org,Multi-lateral bifurcated data-warehouse,Clothing,414.77,5,7.78,Delivered,2025-01-01,5.0
+ORD000189,2023-11-23,CUST0035,dillon12@example.com,Grass-roots mission-critical customer loyalty,Electronics,15.73,7,13.0,Cancelled,,
+ORD000190,2024-01-11,CUST0077,jean47@example.net,Proactive intermediate migration,Sports,218.82,2,8.17,Pending,,
+ORD000191,2024-09-06,CUST0003,johngonzalez@example.net,Grass-roots hybrid benchmark,Clothing,267.27,5,12.96,Delivered,2024-09-10,5.0
+ORD000192,2025-01-27,CUST0035,gabriel37@example.com,Organized interactive policy,Electronics,395.63,3,28.58,Pending,,
+ORD000193,2025-06-03,CUST0072,lisa91@example.net,Networked interactive customer loyalty,Books,258.51,10,19.56,Delivered,2025-06-13,4.0
+ORD000194,2025-01-14,CUST0045,nathaniel17@example.org,Automated multimedia extranet,Home & Garden,49.71,1,22.44,Delivered,2025-01-22,1.0
+ORD000195,2025-01-29,CUST0100,pcarter@example.net,Multi-channeled hybrid algorithm,Home & Garden,153.58,9,29.16,Delivered,2025-02-04,1.0
+ORD000196,2024-01-29,CUST0023,lisajordan@example.org,Multi-channeled dynamic archive,Home & Garden,363.32,7,8.33,Delivered,2024-02-11,1.0
+ORD000197,2024-04-16,CUST0046,nathan51@example.org,Intuitive system-worthy access,Clothing,37.45,1,5.18,Delivered,2024-04-27,5.0
+ORD000198,2025-05-10,CUST0035,jason95@example.org,Realigned asymmetric info-mediaries,Books,485.11,2,17.84,Delivered,2025-05-12,1.0
+ORD000199,2024-06-08,CUST0070,alisongarcia@example.com,Universal real-time workforce,Clothing,373.22,7,18.74,Delivered,2024-06-13,4.0
+ORD000200,2025-08-29,CUST0001,berrydebbie@example.net,Versatile intermediate functionalities,Clothing,407.49,1,11.38,Cancelled,,
+ORD000201,2025-07-24,CUST0041,james07@example.com,Balanced even-keeled instruction set,Electronics,165.53,6,9.45,Delivered,2025-08-04,4.0
+ORD000202,2024-02-01,CUST0031,chavezcarolyn@example.net,Networked disintermediate orchestration,Electronics,417.96,6,13.37,Delivered,2024-02-13,1.0
+ORD000203,2023-11-17,CUST0088,andrew90@example.com,Horizontal clear-thinking initiative,Sports,266.88,7,22.52,Delivered,2023-11-24,2.0
+ORD000204,2023-11-29,CUST0060,rogersallen@example.com,Cross-platform intangible success,Sports,230.0,1,15.59,Delivered,2023-12-10,3.0
+ORD000205,2024-06-21,CUST0082,logan56@example.org,Realigned zero-defect functionalities,Sports,400.02,5,20.5,Delivered,2024-07-04,3.0
+ORD000206,2024-11-18,CUST0064,longheather@example.com,Proactive secondary capability,Sports,229.68,3,26.87,Delivered,2024-11-29,3.0
+ORD000207,2025-08-16,CUST0002,sharon10@example.org,Business-focused 24/7 challenge,Sports,259.81,2,14.07,Delivered,2025-08-23,4.0
+ORD000208,2024-01-21,CUST0067,michelle63@example.org,Cross-group content-based success,Books,135.47,6,22.55,Delivered,2024-01-31,2.0
+ORD000209,2025-10-01,CUST0066,lisa80@example.net,Business-focused empowering toolset,Home & Garden,54.16,4,18.49,Delivered,2025-10-07,4.0
+ORD000210,2023-12-04,CUST0062,williamskevin@example.com,Managed system-worthy pricing structure,Sports,209.36,3,10.29,Delivered,2023-12-17,5.0
+ORD000211,2025-07-07,CUST0039,knelson@example.org,Reduced logistical capability,Home & Garden,363.12,5,20.47,Delivered,2025-07-19,2.0
+ORD000212,2024-02-07,CUST0070,michelle96@example.net,Organized static capability,Sports,118.65,5,9.97,Delivered,2024-02-21,1.0
+ORD000213,2024-12-10,CUST0051,beckystanley@example.com,Inverse zero administration superstructure,Electronics,235.15,4,22.63,Cancelled,,
+ORD000214,2024-11-09,CUST0052,christophermiranda@example.net,Configurable heuristic open architecture,Home & Garden,272.51,5,16.43,Delivered,2024-11-20,4.0
+ORD000215,2025-08-10,CUST0015,donnamoss@example.org,Team-oriented asynchronous archive,Home & Garden,350.99,7,6.38,Delivered,2025-08-23,4.0
+ORD000216,2024-11-19,CUST0022,lewisellen@example.com,Networked content-based matrix,Clothing,346.38,6,10.98,Delivered,2024-11-27,1.0
+ORD000217,2024-01-21,CUST0080,jason98@example.net,Intuitive well-modulated function,Home & Garden,167.1,3,17.76,Pending,,
+ORD000218,2025-05-04,CUST0024,grios@example.org,De-engineered directional hierarchy,Electronics,497.61,7,12.31,Delivered,2025-05-12,4.0
+ORD000219,2024-08-26,CUST0042,gparrish@example.org,Vision-oriented impactful core,Sports,439.08,7,20.58,Delivered,2024-08-28,4.0
+ORD000220,2023-12-24,CUST0045,rodney49@example.net,Customer-focused client-server Local Area Network,Sports,175.6,7,19.64,Delivered,2024-01-02,5.0
+ORD000221,2025-09-11,CUST0055,mcgeejohn@example.com,Enterprise-wide encompassing algorithm,Sports,449.74,9,5.07,Delivered,2025-09-23,4.0
+ORD000222,2024-11-04,CUST0051,hbell@example.net,Configurable heuristic Internet solution,Home & Garden,117.06,2,13.41,Delivered,2024-11-06,1.0
+ORD000223,2024-04-13,CUST0067,randyjordan@example.com,Business-focused leadingedge flexibility,Home & Garden,177.32,5,5.66,Delivered,2024-04-19,2.0
+ORD000224,2024-08-14,CUST0001,williamspatrick@example.com,Ergonomic explicit core,Books,417.21,8,9.89,Delivered,2024-08-28,5.0
+ORD000225,2024-09-08,CUST0008,brookemoreno@example.com,Programmable intermediate benchmark,Electronics,69.81,9,6.47,Delivered,2024-09-10,1.0
+ORD000226,2025-04-13,CUST0090,lucassusan@example.org,Customizable actuating alliance,Home & Garden,387.84,1,28.5,Delivered,2025-04-22,2.0
+ORD000227,2025-01-20,CUST0002,john81@example.com,Face-to-face regional standardization,Home & Garden,387.65,4,29.11,Delivered,2025-01-31,4.0
+ORD000228,2025-05-09,CUST0083,gmyers@example.org,Upgradable system-worthy flexibility,Clothing,68.62,10,28.66,Delivered,2025-05-17,2.0
+ORD000229,2024-11-19,CUST0032,georgeharris@example.net,Horizontal tertiary policy,Sports,131.56,3,7.56,Delivered,2024-11-23,4.0
+ORD000230,2024-06-11,CUST0023,daviswesley@example.net,Secured mission-critical support,Clothing,238.22,2,15.68,Delivered,2024-06-24,4.0
+ORD000231,2024-06-25,CUST0067,georgemaldonado@example.org,Enterprise-wide full-range knowledgebase,Clothing,329.91,9,23.04,Shipped,,
+ORD000232,2024-02-19,CUST0050,waderonnie@example.org,Enhanced empowering archive,Clothing,358.2,9,25.51,Delivered,2024-02-21,5.0
+ORD000233,2024-03-12,CUST0092,wheelertara@example.net,Adaptive mobile encryption,Home & Garden,310.28,5,15.3,Cancelled,,
+ORD000234,2024-11-02,CUST0041,williamsandre@example.net,Implemented discrete moderator,Books,141.28,2,19.15,Delivered,2024-11-07,4.0
+ORD000235,2024-11-25,CUST0015,karirowe@example.org,Innovative user-facing groupware,Sports,385.9,2,24.34,Delivered,2024-12-03,1.0
+ORD000236,2024-10-17,CUST0042,inavarro@example.com,Switchable mobile extranet,Clothing,335.13,7,28.24,Delivered,2024-10-23,4.0
+ORD000237,2024-08-09,CUST0044,wsmith@example.com,Triple-buffered full-range model,Home & Garden,373.69,10,26.07,Delivered,2024-08-14,1.0
+ORD000238,2025-06-24,CUST0038,rrodriguez@example.net,Upgradable scalable adapter,Electronics,121.3,5,26.31,Delivered,2025-06-29,2.0
+ORD000239,2024-02-23,CUST0084,qchase@example.org,Multi-channeled modular algorithm,Electronics,241.17,8,5.72,Delivered,2024-02-28,4.0
+ORD000240,2024-05-08,CUST0081,vhoward@example.org,Ergonomic homogeneous productivity,Home & Garden,283.26,1,6.7,Delivered,2024-05-14,4.0
+ORD000241,2024-01-23,CUST0080,natalie87@example.net,Enhanced empowering service-desk,Clothing,25.2,9,6.94,Delivered,2024-01-27,2.0
+ORD000242,2024-07-28,CUST0069,peter64@example.com,Ergonomic 6thgeneration paradigm,Sports,386.86,8,18.91,Pending,,
+ORD000243,2024-12-08,CUST0053,mary16@example.com,Re-contextualized grid-enabled forecast,Home & Garden,302.8,5,14.07,Delivered,2024-12-16,5.0
+ORD000244,2024-01-25,CUST0089,portergina@example.com,Synergized coherent model,Electronics,292.91,6,7.56,Delivered,2024-02-06,2.0
+ORD000245,2024-06-13,CUST0045,kevinroberts@example.com,Advanced logistical analyzer,Clothing,43.05,4,28.36,Delivered,2024-06-20,4.0
+ORD000246,2024-04-17,CUST0068,margaret10@example.com,Integrated 24hour Internet solution,Books,343.84,8,15.45,Delivered,2024-04-22,2.0
+ORD000247,2024-07-31,CUST0085,williamsdevin@example.com,Profit-focused static throughput,Home & Garden,237.27,7,20.63,Delivered,2024-08-10,4.0
+ORD000248,2025-01-09,CUST0027,stephaniereeves@example.org,Upgradable dedicated Internet solution,Electronics,334.82,3,27.93,Delivered,2025-01-18,4.0
+ORD000249,2025-01-28,CUST0078,carterantonio@example.com,Fully-configurable systematic productivity,Electronics,280.99,1,27.19,Delivered,2025-02-06,3.0
+ORD000250,2024-08-27,CUST0090,gross@example.com,Innovative radical function,Sports,374.41,3,13.34,Delivered,2024-09-04,4.0
+ORD000251,2024-03-14,CUST0012,ushelton@example.net,Devolved systemic throughput,Books,338.81,9,18.11,Delivered,2024-03-27,1.0
+ORD000252,2024-04-03,CUST0089,derek83@example.com,Integrated attitude-oriented framework,Electronics,59.29,3,25.22,Delivered,2024-04-11,1.0
+ORD000253,2025-01-14,CUST0095,ygardner@example.com,Cross-platform client-driven moderator,Books,19.56,8,12.85,Delivered,2025-01-16,1.0
+ORD000254,2024-10-09,CUST0046,william57@example.com,Optimized maximized instruction set,Home & Garden,165.72,3,23.57,Delivered,2024-10-15,4.0
+ORD000255,2024-09-14,CUST0097,jjohnson@example.org,Visionary intangible array,Home & Garden,276.81,5,22.58,Delivered,2024-09-22,4.0
+ORD000256,2025-06-10,CUST0089,christinaturner@example.org,Reduced multimedia hub,Home & Garden,350.34,7,17.24,Delivered,2025-06-15,4.0
+ORD000257,2024-02-07,CUST0015,brian62@example.com,Synchronized 24hour Local Area Network,Electronics,252.84,9,21.25,Delivered,2024-02-20,4.0
+ORD000258,2025-07-20,CUST0070,fcombs@example.org,Future-proofed solution-oriented benchmark,Clothing,86.12,1,13.03,Delivered,2025-08-01,4.0
+ORD000259,2024-07-17,CUST0079,shortariana@example.net,Managed analyzing capability,Electronics,422.57,7,24.15,Delivered,2024-07-30,4.0
+ORD000260,2025-05-29,CUST0099,mileszachary@example.net,User-centric modular challenge,Books,28.23,6,18.96,Delivered,2025-06-06,3.0
+ORD000261,2024-04-22,CUST0024,kevincollins@example.org,Pre-emptive regional solution,Home & Garden,78.2,4,21.42,Delivered,2024-04-28,3.0
+ORD000262,2024-04-04,CUST0099,joneseric@example.org,Programmable bandwidth-monitored encryption,Books,428.42,8,6.64,Delivered,2024-04-06,2.0
+ORD000263,2024-04-07,CUST0061,wellsmarissa@example.com,Object-based analyzing capability,Electronics,244.0,9,27.11,Delivered,2024-04-15,2.0
+ORD000264,2024-06-20,CUST0087,lwebb@example.org,Quality-focused empowering pricing structure,Clothing,391.09,6,22.13,Delivered,2024-06-30,5.0
+ORD000265,2025-04-13,CUST0092,nvillarreal@example.org,Optional client-server productivity,Clothing,440.85,1,21.3,Delivered,2025-04-25,1.0
+ORD000266,2023-11-17,CUST0049,donaldgarner@example.org,Down-sized multimedia support,Electronics,431.84,3,25.8,Delivered,2023-11-22,4.0
+ORD000267,2025-04-27,CUST0082,thomasroberts@example.net,Cross-platform optimizing methodology,Books,339.77,8,5.28,Delivered,2025-05-05,5.0
+ORD000268,2024-08-12,CUST0025,peter17@example.com,Optimized client-server algorithm,Home & Garden,35.39,3,14.6,Delivered,2024-08-20,5.0
+ORD000269,2024-06-08,CUST0051,ywilson@example.org,Reduced exuding alliance,Clothing,385.53,8,26.35,Delivered,2024-06-10,1.0
+ORD000270,2025-03-16,CUST0060,wwilliams@example.org,Persistent uniform knowledgebase,Sports,247.12,9,19.88,Delivered,2025-03-18,4.0
+ORD000271,2024-06-03,CUST0033,holdenmichael@example.net,Expanded grid-enabled strategy,Clothing,211.09,1,24.8,Delivered,2024-06-13,4.0
+ORD000272,2024-12-12,CUST0078,lpalmer@example.net,Distributed heuristic projection,Clothing,11.79,4,13.57,Delivered,2024-12-25,4.0
+ORD000273,2025-05-12,CUST0098,stephen24@example.net,Innovative hybrid architecture,Home & Garden,297.3,4,9.34,Delivered,2025-05-25,1.0
+ORD000274,2025-10-12,CUST0061,ebennett@example.net,Switchable contextually-based orchestration,Electronics,10.49,9,13.58,Delivered,2025-10-23,1.0
+ORD000275,2025-05-04,CUST0010,david59@example.net,Monitored optimal process improvement,Sports,345.01,2,24.26,Delivered,2025-05-15,5.0
+ORD000276,2025-08-06,CUST0052,bjones@example.net,Diverse discrete attitude,Sports,40.0,5,21.93,Delivered,2025-08-13,4.0
+ORD000277,2025-03-31,CUST0041,portererin@example.com,Virtual discrete throughput,Electronics,211.57,9,29.54,Delivered,2025-04-04,1.0
+ORD000278,2025-07-21,CUST0091,danielgilmore@example.net,Networked web-enabled instruction set,Sports,34.0,9,24.56,Delivered,2025-08-01,5.0
+ORD000279,2025-10-17,CUST0039,brownjohn@example.org,User-friendly asynchronous intranet,Home & Garden,285.24,7,5.29,Delivered,2025-10-30,5.0
+ORD000280,2025-06-15,CUST0053,catherine02@example.com,Customer-focused tangible knowledge user,Sports,284.19,8,19.69,Delivered,2025-06-23,1.0
+ORD000281,2024-08-20,CUST0038,vanessaberry@example.org,Exclusive eco-centric matrix,Home & Garden,282.12,9,21.27,Delivered,2024-08-22,4.0
+ORD000282,2024-10-05,CUST0020,jeremiah26@example.net,Ergonomic background paradigm,Sports,357.4,1,17.27,Delivered,2024-10-19,1.0
+ORD000283,2023-11-19,CUST0096,harrislisa@example.org,Multi-lateral zero-defect installation,Home & Garden,361.11,7,29.94,Delivered,2023-12-02,2.0
+ORD000284,2025-01-15,CUST0069,petersonfaith@example.net,Stand-alone multi-tasking methodology,Clothing,50.26,5,17.9,Delivered,2025-01-20,5.0
+ORD000285,2024-03-27,CUST0003,ashleywells@example.com,Multi-channeled regional open architecture,Sports,447.1,9,17.12,Delivered,2024-04-02,1.0
+ORD000286,2025-08-24,CUST0059,lauriegonzales@example.net,Multi-tiered asynchronous open system,Home & Garden,77.59,6,28.36,Delivered,2025-08-28,1.0
+ORD000287,2023-12-31,CUST0073,kimberlyevans@example.org,Proactive discrete application,Books,291.0,9,16.24,Delivered,2024-01-02,2.0
+ORD000288,2025-02-10,CUST0070,andrew44@example.com,Triple-buffered heuristic architecture,Sports,248.14,5,26.37,Delivered,2025-02-12,5.0
+ORD000289,2025-09-08,CUST0050,tammyjones@example.net,Front-line multi-state pricing structure,Sports,193.01,2,24.78,Delivered,2025-09-12,3.0
+ORD000290,2024-11-23,CUST0045,reginald08@example.net,Customizable optimal leverage,Clothing,182.58,1,16.63,Cancelled,,
+ORD000291,2025-10-28,CUST0023,denise05@example.com,Fundamental dedicated groupware,Books,260.26,5,17.75,Delivered,2025-10-31,3.0
+ORD000292,2025-09-20,CUST0016,tayloramy@example.net,Managed web-enabled protocol,Sports,330.02,7,21.82,Delivered,2025-09-24,4.0
+ORD000293,2025-10-09,CUST0022,youngcharles@example.net,Seamless tangible task-force,Electronics,175.52,8,29.38,Delivered,2025-10-21,4.0
+ORD000294,2025-07-20,CUST0043,reedchad@example.com,Right-sized user-facing pricing structure,Electronics,37.76,2,27.31,Delivered,2025-08-02,5.0
+ORD000295,2025-10-22,CUST0044,claytimothy@example.org,Future-proofed uniform analyzer,Sports,360.47,8,5.86,Delivered,2025-10-31,5.0
+ORD000296,2024-01-20,CUST0096,crawfordjeffrey@example.com,Optional mission-critical framework,Clothing,151.87,1,5.53,Cancelled,,
+ORD000297,2025-06-30,CUST0047,andrewbrown@example.org,Public-key real-time implementation,Books,221.73,8,8.26,Delivered,2025-07-02,4.0
+ORD000298,2025-04-13,CUST0043,tranbrett@example.com,Total clear-thinking Internet solution,Sports,144.68,6,8.95,Delivered,2025-04-20,4.0
+ORD000299,2025-04-28,CUST0006,hdunn@example.com,Decentralized reciprocal hub,Sports,142.06,3,23.82,Delivered,2025-05-04,5.0
+ORD000300,2024-07-31,CUST0075,matthewhull@example.org,Focused background parallelism,Home & Garden,459.96,5,19.08,Pending,,
+ORD000301,2023-11-08,CUST0046,robertgoodwin@example.net,Re-contextualized 6thgeneration website,Books,33.13,10,29.43,Delivered,2023-11-10,3.0
+ORD000302,2023-11-12,CUST0079,lisajones@example.org,Organic contextually-based forecast,Books,365.03,3,29.02,Shipped,,
+ORD000303,2023-12-04,CUST0095,michael34@example.org,Robust hybrid matrices,Home & Garden,380.45,10,25.99,Delivered,2023-12-09,2.0
+ORD000304,2025-03-25,CUST0059,douglascharles@example.net,Expanded modular strategy,Sports,78.18,10,14.46,Delivered,2025-04-08,4.0
+ORD000305,2025-05-25,CUST0094,priscilla37@example.net,Innovative high-level time-frame,Clothing,13.19,10,21.15,Delivered,2025-06-04,2.0
+ORD000306,2025-01-02,CUST0057,misty38@example.com,Intuitive tangible moratorium,Clothing,271.94,4,5.19,Delivered,2025-01-08,2.0
+ORD000307,2024-11-26,CUST0087,brownrachel@example.net,Secured mobile focus group,Home & Garden,128.36,2,11.72,Delivered,2024-12-06,1.0
+ORD000308,2023-12-31,CUST0041,rhondaskinner@example.net,Focused fault-tolerant support,Sports,303.27,9,9.28,Delivered,2024-01-10,4.0
+ORD000309,2025-01-03,CUST0035,davidhardy@example.org,Automated disintermediate standardization,Sports,203.68,5,20.61,Delivered,2025-01-10,2.0
+ORD000310,2024-10-07,CUST0026,bbenton@example.com,Automated encompassing focus group,Clothing,218.44,8,13.95,Delivered,2024-10-12,2.0
+ORD000311,2025-01-30,CUST0019,fevans@example.org,Grass-roots reciprocal info-mediaries,Clothing,490.41,10,12.49,Delivered,2025-02-11,4.0
+ORD000312,2024-11-19,CUST0003,roypatrick@example.org,Face-to-face demand-driven implementation,Sports,391.57,3,14.42,Delivered,2024-12-03,3.0
+ORD000313,2024-03-23,CUST0054,qpatel@example.com,Automated needs-based task-force,Books,94.77,10,6.56,Delivered,2024-04-01,4.0
+ORD000314,2024-07-28,CUST0041,kentkaren@example.com,Fundamental web-enabled parallelism,Clothing,464.17,7,15.05,Delivered,2024-08-07,1.0
+ORD000315,2024-04-17,CUST0038,petersonmaria@example.com,Optimized zero tolerance superstructure,Sports,307.92,4,21.53,Delivered,2024-04-25,4.0
+ORD000316,2025-10-22,CUST0056,aguirreangela@example.net,Synergistic executive monitoring,Home & Garden,219.96,1,8.89,Delivered,2025-11-04,1.0
+ORD000317,2024-10-26,CUST0001,karmstrong@example.net,Fundamental cohesive implementation,Electronics,310.89,6,18.25,Delivered,2024-11-01,2.0
+ORD000318,2024-10-28,CUST0038,davidsmith@example.net,Grass-roots attitude-oriented encryption,Electronics,189.67,8,29.41,Delivered,2024-11-07,2.0
+ORD000319,2025-06-22,CUST0020,matthew60@example.net,Grass-roots high-level flexibility,Electronics,36.56,10,11.33,Delivered,2025-07-01,3.0
+ORD000320,2025-03-27,CUST0087,kimberly90@example.org,Integrated non-volatile protocol,Clothing,61.05,6,18.06,Delivered,2025-04-07,5.0
+ORD000321,2024-07-07,CUST0006,melanie77@example.org,Organic 24/7 Local Area Network,Home & Garden,268.33,4,26.82,Delivered,2024-07-18,2.0
+ORD000322,2023-11-29,CUST0075,timothy83@example.com,Centralized optimal artificial intelligence,Sports,355.64,3,6.42,Delivered,2023-12-03,1.0
+ORD000323,2024-06-02,CUST0026,stephanie72@example.com,Visionary zero tolerance focus group,Clothing,108.14,5,28.22,Delivered,2024-06-11,3.0
+ORD000324,2024-05-20,CUST0079,omartinez@example.org,Digitized regional projection,Sports,31.67,1,21.39,Delivered,2024-06-03,1.0
+ORD000325,2023-12-09,CUST0082,dannyjohnson@example.net,Profit-focused leadingedge paradigm,Clothing,351.85,6,9.08,Delivered,2023-12-19,1.0
+ORD000326,2024-07-04,CUST0045,tranjeremy@example.net,Fundamental eco-centric adapter,Sports,102.79,8,13.54,Cancelled,,
+ORD000327,2025-04-10,CUST0065,amber09@example.org,Monitored bi-directional archive,Sports,262.35,9,12.54,Delivered,2025-04-18,1.0
+ORD000328,2024-11-28,CUST0016,ewilson@example.org,Expanded fresh-thinking orchestration,Clothing,62.26,9,8.52,Delivered,2024-12-05,5.0
+ORD000329,2024-08-15,CUST0029,bjones@example.com,Digitized 4thgeneration Graphic Interface,Sports,173.02,3,7.69,Delivered,2024-08-26,1.0
+ORD000330,2025-02-14,CUST0090,matthew65@example.com,Implemented regional algorithm,Books,126.17,1,26.51,Delivered,2025-02-16,1.0
+ORD000331,2024-03-04,CUST0052,bradley29@example.org,Customer-focused real-time data-warehouse,Sports,17.07,1,12.32,Delivered,2024-03-18,5.0
+ORD000332,2025-07-20,CUST0085,william89@example.net,Monitored didactic implementation,Clothing,249.3,3,5.59,Pending,,
+ORD000333,2025-08-07,CUST0003,sandovaledward@example.net,Configurable asynchronous definition,Books,276.34,10,17.5,Delivered,2025-08-17,4.0
+ORD000334,2025-01-13,CUST0047,hryan@example.net,Business-focused real-time leverage,Home & Garden,179.82,2,24.08,Delivered,2025-01-16,4.0
+ORD000335,2025-03-27,CUST0013,mstewart@example.net,Implemented dynamic groupware,Home & Garden,408.02,2,27.23,Delivered,2025-04-04,1.0
+ORD000336,2024-05-07,CUST0010,jerry51@example.net,Front-line leadingedge superstructure,Clothing,90.57,1,27.95,Delivered,2024-05-20,4.0
+ORD000337,2025-09-14,CUST0053,wcox@example.net,Profit-focused asynchronous hierarchy,Sports,309.25,7,23.11,Delivered,2025-09-23,3.0
+ORD000338,2025-03-22,CUST0012,cjacobs@example.com,Focused non-volatile capacity,Home & Garden,275.87,7,7.31,Delivered,2025-03-26,4.0
+ORD000339,2025-10-20,CUST0050,kimberlyrussell@example.net,Synchronized client-driven portal,Sports,284.48,6,12.89,Delivered,2025-10-22,5.0
+ORD000340,2024-05-21,CUST0054,matthew11@example.com,Operative motivating circuit,Clothing,283.06,4,17.43,Delivered,2024-05-24,1.0
+ORD000341,2025-01-21,CUST0085,xchen@example.org,Enterprise-wide logistical access,Electronics,424.02,3,27.22,Delivered,2025-01-31,3.0
+ORD000342,2024-03-09,CUST0012,barneskathy@example.net,Phased value-added attitude,Sports,48.57,10,19.34,Delivered,2024-03-15,2.0
+ORD000343,2024-02-07,CUST0041,bassandrew@example.org,Compatible clear-thinking migration,Books,333.21,3,5.86,Delivered,2024-02-10,4.0
+ORD000344,2025-09-04,CUST0045,wstrong@example.org,Open-architected tangible open architecture,Clothing,14.61,2,18.12,Delivered,2025-09-07,5.0
+ORD000345,2024-05-06,CUST0019,david59@example.net,Seamless bi-directional success,Clothing,418.91,5,7.64,Delivered,2024-05-17,5.0
+ORD000346,2023-12-06,CUST0025,rodgersmichael@example.com,Open-source responsive knowledge user,Sports,468.76,6,24.19,Delivered,2023-12-19,2.0
+ORD000347,2025-05-29,CUST0043,eroberts@example.net,Devolved upward-trending contingency,Clothing,353.0,10,14.63,Delivered,2025-06-06,4.0
+ORD000348,2025-05-16,CUST0012,hernandezalan@example.net,Multi-layered systematic projection,Sports,196.62,8,27.4,Delivered,2025-05-30,2.0
+ORD000349,2024-10-18,CUST0075,lflores@example.net,Up-sized optimizing focus group,Sports,319.13,10,10.15,Delivered,2024-10-27,1.0
+ORD000350,2025-06-23,CUST0003,halltrevor@example.org,Re-contextualized multi-state moderator,Sports,452.82,10,27.55,Delivered,2025-07-04,1.0
+ORD000351,2025-01-24,CUST0072,ymitchell@example.com,Versatile context-sensitive circuit,Sports,281.26,10,12.47,Delivered,2025-02-05,1.0
+ORD000352,2023-12-03,CUST0024,russellramirez@example.net,Intuitive bandwidth-monitored hardware,Home & Garden,63.39,2,7.01,Delivered,2023-12-09,2.0
+ORD000353,2024-06-09,CUST0050,davidhill@example.com,Face-to-face composite forecast,Home & Garden,252.35,9,9.65,Delivered,2024-06-14,5.0
+ORD000354,2025-10-30,CUST0059,vanessa13@example.net,Grass-roots client-server attitude,Clothing,168.8,9,19.09,Delivered,2025-11-04,4.0
+ORD000355,2024-04-09,CUST0047,anthonyorr@example.net,Public-key content-based ability,Clothing,128.05,10,9.73,Delivered,2024-04-13,2.0
+ORD000356,2024-11-14,CUST0057,woodjuan@example.net,Optimized upward-trending intranet,Electronics,393.75,1,7.47,Delivered,2024-11-17,1.0
+ORD000357,2024-12-09,CUST0077,mariahphillips@example.org,Universal tertiary capability,Electronics,156.01,3,27.31,Delivered,2024-12-19,4.0
+ORD000358,2024-10-11,CUST0037,fsnyder@example.org,Grass-roots upward-trending secured line,Clothing,125.48,5,28.7,Delivered,2024-10-22,3.0
+ORD000359,2024-01-30,CUST0012,linda31@example.com,Diverse motivating groupware,Clothing,381.02,1,13.87,Pending,,
+ORD000360,2024-06-02,CUST0037,gmccoy@example.net,Vision-oriented asynchronous strategy,Sports,488.85,5,17.47,Delivered,2024-06-15,5.0
+ORD000361,2025-04-18,CUST0002,patricia06@example.org,Triple-buffered multi-state functionalities,Books,100.04,10,14.21,Delivered,2025-04-27,3.0
+ORD000362,2024-03-27,CUST0027,averycourtney@example.org,Devolved optimizing implementation,Electronics,261.53,7,20.14,Delivered,2024-04-06,1.0
+ORD000363,2025-09-08,CUST0081,emilybaker@example.org,Pre-emptive contextually-based superstructure,Sports,244.66,10,27.91,Delivered,2025-09-17,1.0
+ORD000364,2024-11-20,CUST0010,david18@example.net,User-friendly didactic ability,Electronics,364.02,10,15.19,Delivered,2024-12-02,2.0
+ORD000365,2024-10-03,CUST0023,henrycheryl@example.net,Enhanced 5thgeneration instruction set,Sports,136.51,6,13.61,Delivered,2024-10-16,2.0
+ORD000366,2025-04-18,CUST0063,christina93@example.net,Monitored mission-critical moderator,Home & Garden,368.93,4,18.29,Delivered,2025-04-24,3.0
+ORD000367,2025-03-25,CUST0056,nataliepittman@example.com,Synchronized mobile matrix,Books,163.4,7,10.11,Delivered,2025-04-04,4.0
+ORD000368,2025-07-11,CUST0093,iharper@example.com,Implemented bandwidth-monitored definition,Books,194.43,1,8.75,Delivered,2025-07-19,2.0
+ORD000369,2024-01-27,CUST0018,robert75@example.org,Switchable interactive budgetary management,Books,450.99,2,9.73,Delivered,2024-02-07,1.0
+ORD000370,2024-03-16,CUST0029,qhuber@example.org,Monitored tangible infrastructure,Clothing,132.07,1,12.68,Delivered,2024-03-25,1.0
+ORD000371,2025-05-01,CUST0008,kimwebb@example.com,Right-sized incremental software,Electronics,230.45,1,13.81,Delivered,2025-05-15,2.0
+ORD000372,2024-05-01,CUST0068,carterwilliam@example.com,Centralized next generation throughput,Home & Garden,119.34,6,28.08,Shipped,,
+ORD000373,2024-07-09,CUST0090,emily66@example.com,Optimized impactful firmware,Clothing,347.94,5,12.89,Delivered,2024-07-23,1.0
+ORD000374,2025-10-09,CUST0032,adamsjessica@example.com,Sharable 6thgeneration function,Electronics,133.97,1,19.22,Delivered,2025-10-19,5.0
+ORD000375,2024-10-13,CUST0019,kwalker@example.net,Expanded zero-defect product,Books,124.9,3,7.14,Delivered,2024-10-19,3.0
+ORD000376,2024-01-25,CUST0017,david80@example.net,Ameliorated homogeneous array,Clothing,105.85,8,13.82,Delivered,2024-02-04,5.0
+ORD000377,2025-06-29,CUST0005,rhonda81@example.net,Business-focused multi-state database,Home & Garden,484.47,3,13.88,Delivered,2025-07-13,2.0
+ORD000378,2024-08-08,CUST0052,traciemassey@example.com,Universal discrete frame,Home & Garden,224.54,6,10.03,Shipped,,
+ORD000379,2025-07-15,CUST0056,reneerivera@example.org,Reactive upward-trending encryption,Home & Garden,83.42,8,23.11,Delivered,2025-07-25,4.0
+ORD000380,2025-10-31,CUST0003,johnsonandrew@example.net,Customer-focused motivating infrastructure,Books,436.3,3,22.97,Delivered,2025-11-06,3.0
+ORD000381,2025-07-07,CUST0055,swilliams@example.com,Assimilated discrete product,Electronics,72.28,10,16.13,Delivered,2025-07-13,3.0
+ORD000382,2025-06-22,CUST0053,arthurbrady@example.com,Streamlined impactful capacity,Sports,405.86,10,28.54,Delivered,2025-06-29,4.0
+ORD000383,2025-07-28,CUST0021,michelle11@example.net,Up-sized tertiary task-force,Books,163.23,7,25.17,Delivered,2025-08-10,1.0
+ORD000384,2025-05-23,CUST0022,vsmith@example.net,Robust coherent attitude,Home & Garden,426.86,7,9.26,Delivered,2025-06-04,5.0
+ORD000385,2025-05-25,CUST0078,mlee@example.com,Inverse interactive migration,Home & Garden,198.04,8,18.73,Delivered,2025-06-06,2.0
+ORD000386,2025-05-31,CUST0049,turnerstephen@example.org,Fundamental solution-oriented orchestration,Sports,460.45,10,22.54,Delivered,2025-06-05,1.0
+ORD000387,2024-11-01,CUST0060,fcarter@example.org,Open-source next generation focus group,Sports,423.61,7,23.67,Delivered,2024-11-04,5.0
+ORD000388,2024-11-10,CUST0043,rebecca88@example.org,Multi-tiered 3rdgeneration methodology,Electronics,36.93,6,7.64,Delivered,2024-11-23,3.0
+ORD000389,2025-05-19,CUST0048,wbean@example.net,Universal bi-directional knowledge user,Electronics,94.88,7,6.48,Delivered,2025-05-24,3.0
+ORD000390,2024-04-23,CUST0052,sandersjesse@example.com,Polarized non-volatile benchmark,Clothing,402.52,5,27.44,Delivered,2024-05-04,3.0
+ORD000391,2025-03-14,CUST0053,martin11@example.net,Down-sized demand-driven matrix,Clothing,406.36,8,12.19,Delivered,2025-03-22,4.0
+ORD000392,2025-02-03,CUST0048,christopherpowell@example.com,Programmable uniform open system,Clothing,335.78,2,7.2,Delivered,2025-02-12,5.0
+ORD000393,2025-06-13,CUST0094,briansnyder@example.com,Integrated user-facing Graphical User Interface,Home & Garden,147.15,10,24.47,Delivered,2025-06-15,1.0
+ORD000394,2025-08-10,CUST0001,benjaminbarker@example.net,Open-source 24hour flexibility,Sports,286.77,2,16.63,Shipped,,
+ORD000395,2025-04-20,CUST0059,karinorton@example.net,Proactive foreground projection,Sports,344.22,3,21.35,Delivered,2025-05-03,2.0
+ORD000396,2024-05-02,CUST0081,steven78@example.net,User-centric upward-trending artificial intelligence,Sports,55.7,9,8.0,Delivered,2024-05-12,1.0
+ORD000397,2025-10-16,CUST0049,simmonschris@example.org,Versatile 24/7 complexity,Home & Garden,446.79,4,14.24,Delivered,2025-10-19,4.0
+ORD000398,2024-12-08,CUST0007,martinsamuel@example.org,Automated interactive methodology,Books,133.56,3,24.97,Delivered,2024-12-10,3.0
+ORD000399,2024-03-12,CUST0054,jtaylor@example.com,Open-architected 24/7 frame,Sports,302.91,9,26.03,Delivered,2024-03-15,2.0
+ORD000400,2024-01-31,CUST0071,uforbes@example.net,Future-proofed multi-state Graphic Interface,Sports,180.68,9,11.33,Delivered,2024-02-07,2.0
+ORD000401,2025-02-20,CUST0070,anne22@example.com,Programmable systemic database,Sports,151.61,6,17.11,Delivered,2025-02-26,4.0
+ORD000402,2025-07-16,CUST0072,april47@example.com,Expanded full-range synergy,Home & Garden,220.96,4,14.38,Delivered,2025-07-23,4.0
+ORD000403,2025-05-13,CUST0096,frankespinoza@example.com,Advanced foreground instruction set,Clothing,109.36,8,5.62,Delivered,2025-05-22,4.0
+ORD000404,2024-03-19,CUST0094,thomasholder@example.org,Integrated tangible core,Home & Garden,175.97,8,26.86,Delivered,2024-04-01,5.0
+ORD000405,2024-04-03,CUST0007,medinamark@example.org,Secured maximized policy,Clothing,355.5,9,28.74,Delivered,2024-04-14,5.0
+ORD000406,2024-03-01,CUST0018,bellangie@example.org,Monitored responsive access,Clothing,317.46,3,16.39,Delivered,2024-03-12,1.0
+ORD000407,2025-10-21,CUST0034,joshuahoover@example.com,Reduced upward-trending function,Books,182.85,3,21.95,Delivered,2025-11-03,2.0
+ORD000408,2024-08-12,CUST0090,jvilla@example.net,Stand-alone stable customer loyalty,Electronics,352.67,5,23.36,Delivered,2024-08-23,3.0
+ORD000409,2023-12-31,CUST0057,dakotarobinson@example.org,Fundamental non-volatile benchmark,Clothing,420.27,9,6.23,Shipped,,
+ORD000410,2024-02-07,CUST0067,xrivera@example.net,Robust even-keeled workforce,Electronics,191.75,4,16.74,Delivered,2024-02-17,1.0
+ORD000411,2025-05-26,CUST0012,aclark@example.org,Extended background website,Electronics,214.33,10,15.24,Delivered,2025-05-28,4.0
+ORD000412,2025-02-20,CUST0032,douglasalvarez@example.org,Inverse asynchronous application,Clothing,84.71,10,20.69,Delivered,2025-03-05,1.0
+ORD000413,2024-02-15,CUST0065,ecoleman@example.com,Innovative motivating task-force,Home & Garden,193.17,9,29.75,Pending,,
+ORD000414,2024-01-31,CUST0047,annbennett@example.com,Triple-buffered methodical help-desk,Books,287.43,3,10.17,Delivered,2024-02-10,3.0
+ORD000415,2024-06-30,CUST0077,alyssa93@example.org,Sharable even-keeled structure,Books,420.24,9,22.6,Delivered,2024-07-14,2.0
+ORD000416,2024-02-19,CUST0016,fcastro@example.net,Function-based systemic capability,Clothing,54.93,8,12.85,Delivered,2024-03-01,4.0
+ORD000417,2025-01-07,CUST0033,lpearson@example.org,Multi-lateral maximized throughput,Clothing,193.74,7,10.49,Delivered,2025-01-11,3.0
+ORD000418,2025-04-04,CUST0006,jessica39@example.net,Ergonomic homogeneous hub,Electronics,269.2,8,28.61,Delivered,2025-04-13,4.0
+ORD000419,2024-03-19,CUST0099,gonzalezmichael@example.org,Adaptive optimizing function,Home & Garden,213.35,10,19.74,Delivered,2024-03-23,4.0
+ORD000420,2024-07-13,CUST0053,bartlettruth@example.net,Advanced real-time flexibility,Electronics,243.01,10,12.84,Delivered,2024-07-21,3.0
+ORD000421,2023-11-27,CUST0042,darlene60@example.net,Triple-buffered eco-centric focus group,Sports,308.8,10,13.2,Delivered,2023-12-09,2.0
+ORD000422,2025-02-28,CUST0065,maddoxmadeline@example.net,Phased real-time product,Books,453.63,7,6.41,Delivered,2025-03-14,1.0
+ORD000423,2024-10-19,CUST0068,vthompson@example.net,Versatile needs-based workforce,Sports,253.43,4,14.18,Delivered,2024-10-23,1.0
+ORD000424,2024-01-20,CUST0068,woodchloe@example.net,Distributed tertiary support,Sports,150.37,7,13.46,Delivered,2024-01-24,1.0
+ORD000425,2024-03-17,CUST0088,christopherflowers@example.org,Centralized leadingedge productivity,Electronics,127.03,6,23.57,Delivered,2024-03-19,4.0
+ORD000426,2025-05-05,CUST0079,edwardsmichaela@example.com,Ergonomic solution-oriented pricing structure,Sports,399.59,2,11.95,Delivered,2025-05-09,2.0
+ORD000427,2025-05-26,CUST0029,cookemily@example.com,Triple-buffered composite parallelism,Clothing,59.1,4,14.25,Delivered,2025-06-06,1.0
+ORD000428,2025-05-14,CUST0011,zachary66@example.net,Synchronized analyzing architecture,Sports,364.97,10,8.56,Delivered,2025-05-21,1.0
+ORD000429,2024-03-29,CUST0053,jessicamiller@example.com,Balanced even-keeled portal,Home & Garden,388.71,9,24.52,Delivered,2024-04-08,1.0
+ORD000430,2024-04-03,CUST0068,vthompson@example.org,Integrated even-keeled open architecture,Home & Garden,258.98,8,21.1,Delivered,2024-04-06,1.0
+ORD000431,2024-07-30,CUST0056,petersonashley@example.net,Cross-group non-volatile Local Area Network,Home & Garden,434.98,1,19.3,Delivered,2024-08-04,5.0
+ORD000432,2024-01-08,CUST0091,hardinian@example.org,Enterprise-wide foreground parallelism,Sports,358.82,7,18.08,Delivered,2024-01-11,5.0
+ORD000433,2025-03-01,CUST0067,wangkristina@example.org,Sharable holistic knowledgebase,Electronics,111.53,5,29.57,Delivered,2025-03-14,4.0
+ORD000434,2024-01-03,CUST0077,kylebecker@example.org,User-friendly web-enabled support,Sports,136.14,3,12.98,Delivered,2024-01-06,3.0
+ORD000435,2024-02-12,CUST0041,brian42@example.com,Devolved non-volatile functionalities,Sports,350.56,4,12.52,Delivered,2024-02-20,4.0
+ORD000436,2024-09-17,CUST0035,marynelson@example.org,Enhanced explicit firmware,Home & Garden,159.04,8,28.61,Delivered,2024-09-29,4.0
+ORD000437,2025-04-25,CUST0093,fbaker@example.com,Reduced high-level hardware,Electronics,111.14,2,26.98,Delivered,2025-05-03,5.0
+ORD000438,2025-06-22,CUST0062,rgallegos@example.org,Automated optimal info-mediaries,Home & Garden,458.9,4,13.27,Delivered,2025-06-27,1.0
+ORD000439,2024-02-29,CUST0004,victoriahamilton@example.net,Synergized executive database,Books,85.55,9,9.0,Delivered,2024-03-11,2.0
+ORD000440,2024-07-23,CUST0079,christopher34@example.org,Persistent empowering alliance,Clothing,426.61,7,13.8,Delivered,2024-08-05,2.0
+ORD000441,2025-10-17,CUST0026,holmescrystal@example.com,Devolved maximized parallelism,Home & Garden,76.91,4,16.18,Delivered,2025-10-31,4.0
+ORD000442,2024-07-08,CUST0086,anne90@example.com,Total bi-directional product,Electronics,360.57,4,29.38,Shipped,,
+ORD000443,2024-08-05,CUST0077,moorethomas@example.com,Stand-alone bandwidth-monitored contingency,Clothing,83.3,6,10.46,Delivered,2024-08-10,5.0
+ORD000444,2025-10-10,CUST0094,kevin78@example.org,Versatile 3rdgeneration intranet,Electronics,484.3,8,26.67,Delivered,2025-10-15,3.0
+ORD000445,2025-07-21,CUST0008,swatkins@example.com,Upgradable impactful leverage,Home & Garden,154.89,4,16.06,Cancelled,,
+ORD000446,2025-08-09,CUST0055,johnnybrooks@example.com,Polarized systematic initiative,Books,455.0,1,11.58,Delivered,2025-08-13,3.0
+ORD000447,2024-06-21,CUST0098,arellanonatalie@example.net,Customer-focused intangible interface,Electronics,498.31,5,8.02,Delivered,2024-06-29,1.0
+ORD000448,2025-06-24,CUST0085,stephanie69@example.org,Diverse multimedia concept,Electronics,165.82,5,19.44,Delivered,2025-07-05,5.0
+ORD000449,2025-10-17,CUST0077,olivia83@example.net,Versatile client-driven capacity,Books,131.87,10,26.44,Delivered,2025-10-21,1.0
+ORD000450,2025-03-30,CUST0018,kristina01@example.com,Visionary client-server website,Home & Garden,117.43,4,23.43,Delivered,2025-04-10,3.0
+ORD000451,2024-07-26,CUST0083,dfoster@example.org,Switchable client-server customer loyalty,Clothing,139.53,7,23.94,Delivered,2024-07-28,1.0
+ORD000452,2025-09-16,CUST0082,kevinmiller@example.org,Expanded intermediate array,Sports,214.33,8,24.53,Delivered,2025-09-21,1.0
+ORD000453,2025-05-16,CUST0075,ericpeters@example.com,Adaptive mission-critical complexity,Electronics,470.49,10,11.92,Delivered,2025-05-24,1.0
+ORD000454,2024-07-25,CUST0073,ruizgloria@example.net,Extended methodical secured line,Electronics,486.04,4,18.89,Delivered,2024-08-02,1.0
+ORD000455,2024-08-19,CUST0018,wmccarthy@example.org,Networked clear-thinking functionalities,Home & Garden,319.34,8,22.45,Delivered,2024-08-21,3.0
+ORD000456,2025-06-15,CUST0044,ricardomurphy@example.com,Synergistic upward-trending interface,Sports,215.5,4,28.37,Delivered,2025-06-23,1.0
+ORD000457,2025-02-06,CUST0097,wferguson@example.com,Synchronized user-facing parallelism,Electronics,380.56,5,12.64,Delivered,2025-02-17,5.0
+ORD000458,2023-11-21,CUST0100,nicolethompson@example.org,Multi-layered high-level Graphical User Interface,Clothing,99.31,4,13.52,Delivered,2023-11-23,5.0
+ORD000459,2024-11-24,CUST0021,bishopkaren@example.org,Stand-alone discrete challenge,Home & Garden,469.03,2,9.07,Delivered,2024-12-02,5.0
+ORD000460,2024-11-23,CUST0030,bradleyturner@example.org,Mandatory human-resource projection,Books,16.52,6,15.21,Delivered,2024-12-01,4.0
+ORD000461,2024-03-19,CUST0079,thernandez@example.com,Synergistic mission-critical alliance,Home & Garden,56.59,1,8.13,Delivered,2024-03-23,2.0
+ORD000462,2024-05-21,CUST0023,zwhite@example.net,Programmable bi-directional Local Area Network,Books,316.63,5,19.76,Delivered,2024-06-04,1.0
+ORD000463,2025-07-19,CUST0047,reedjessica@example.net,Open-architected 24/7 complexity,Sports,477.18,2,20.48,Delivered,2025-07-28,1.0
+ORD000464,2024-07-05,CUST0026,autumncruz@example.com,Advanced mobile projection,Electronics,401.81,10,5.25,Delivered,2024-07-15,1.0
+ORD000465,2025-04-04,CUST0023,dhenderson@example.com,Optimized empowering support,Electronics,21.99,2,19.9,Delivered,2025-04-07,1.0
+ORD000466,2025-03-07,CUST0037,munozleah@example.com,Profit-focused holistic time-frame,Home & Garden,253.66,5,7.3,Delivered,2025-03-10,1.0
+ORD000467,2024-11-02,CUST0009,megan51@example.org,Optimized national task-force,Sports,192.05,4,24.09,Delivered,2024-11-11,4.0
+ORD000468,2024-08-24,CUST0047,hernandezmatthew@example.net,Reverse-engineered empowering customer loyalty,Electronics,436.1,8,25.96,Delivered,2024-09-02,3.0
+ORD000469,2024-12-04,CUST0022,dgraham@example.com,Balanced bottom-line matrix,Books,366.51,5,5.64,Delivered,2024-12-07,3.0
+ORD000470,2024-10-23,CUST0099,brendan95@example.com,Optimized global service-desk,Books,339.3,9,24.21,Delivered,2024-10-27,3.0
+ORD000471,2024-06-18,CUST0093,danielsguy@example.com,Operative 3rdgeneration knowledge user,Electronics,257.2,10,10.63,Delivered,2024-06-28,3.0
+ORD000472,2024-07-10,CUST0050,cynthia91@example.com,Upgradable 5thgeneration monitoring,Sports,470.75,6,6.12,Delivered,2024-07-22,3.0
+ORD000473,2025-05-27,CUST0077,fwright@example.net,Cross-platform clear-thinking superstructure,Electronics,155.04,8,11.95,Delivered,2025-06-03,4.0
+ORD000474,2024-02-21,CUST0020,rjordan@example.com,Persevering system-worthy process improvement,Books,289.29,5,18.12,Delivered,2024-03-06,4.0
+ORD000475,2024-05-08,CUST0076,uwilliams@example.com,Automated client-server portal,Sports,222.48,9,15.12,Delivered,2024-05-13,3.0
+ORD000476,2025-05-16,CUST0059,reyestina@example.org,Mandatory scalable synergy,Sports,197.72,4,21.31,Delivered,2025-05-21,2.0
+ORD000477,2024-06-22,CUST0029,lmorales@example.net,Function-based uniform projection,Books,254.83,2,11.3,Delivered,2024-06-26,5.0
+ORD000478,2025-05-30,CUST0007,copelandryan@example.org,Ergonomic object-oriented firmware,Electronics,151.67,8,5.43,Delivered,2025-06-10,5.0
+ORD000479,2024-06-23,CUST0069,heatherwilliams@example.net,Phased didactic task-force,Books,257.12,1,22.49,Delivered,2024-07-05,1.0
+ORD000480,2025-10-27,CUST0003,shill@example.org,Grass-roots motivating secured line,Books,345.32,3,24.2,Delivered,2025-11-09,2.0
+ORD000481,2023-12-06,CUST0072,rbrowning@example.com,Future-proofed 24hour installation,Sports,66.24,6,20.06,Delivered,2023-12-11,5.0
+ORD000482,2024-04-09,CUST0075,caseydiane@example.com,Future-proofed maximized policy,Home & Garden,160.76,9,23.14,Delivered,2024-04-19,4.0
+ORD000483,2025-07-06,CUST0059,colton30@example.net,Inverse directional architecture,Home & Garden,125.76,4,6.03,Delivered,2025-07-09,5.0
+ORD000484,2025-02-17,CUST0017,jessica97@example.net,Operative scalable policy,Books,433.46,6,29.0,Delivered,2025-02-25,4.0
+ORD000485,2024-07-13,CUST0014,jalvarez@example.org,Mandatory global functionalities,Electronics,56.95,5,23.31,Delivered,2024-07-17,3.0
+ORD000486,2024-07-27,CUST0017,vhernandez@example.com,Expanded national standardization,Sports,266.52,8,15.8,Delivered,2024-08-01,3.0
+ORD000487,2024-03-12,CUST0047,cscott@example.net,Re-engineered attitude-oriented product,Home & Garden,304.1,2,10.08,Delivered,2024-03-22,2.0
+ORD000488,2024-11-12,CUST0093,christopher85@example.com,Implemented web-enabled functionalities,Clothing,114.26,8,19.69,Delivered,2024-11-22,3.0
+ORD000489,2024-10-16,CUST0071,njohnson@example.net,Down-sized regional help-desk,Clothing,192.04,8,11.79,Shipped,,
+ORD000490,2025-01-12,CUST0041,wperry@example.org,Versatile executive open architecture,Clothing,96.38,3,29.98,Delivered,2025-01-21,4.0
+ORD000491,2025-05-31,CUST0050,yfritz@example.net,De-engineered homogeneous portal,Home & Garden,222.92,1,15.19,Delivered,2025-06-10,3.0
+ORD000492,2025-08-21,CUST0093,davisjeffery@example.org,Re-engineered explicit conglomeration,Books,89.38,10,23.26,Delivered,2025-08-30,2.0
+ORD000493,2025-09-02,CUST0016,katiejoyce@example.com,Reactive incremental help-desk,Books,15.05,3,16.17,Delivered,2025-09-14,1.0
+ORD000494,2025-06-06,CUST0058,robertgreene@example.com,Visionary high-level product,Electronics,176.0,1,24.01,Delivered,2025-06-19,5.0
+ORD000495,2024-01-22,CUST0038,wayne86@example.org,Open-architected modular system engine,Electronics,141.98,7,6.33,Delivered,2024-01-27,3.0
+ORD000496,2024-10-26,CUST0073,margaret72@example.org,Open-architected executive ability,Electronics,75.02,3,20.03,Delivered,2024-11-09,5.0
+ORD000497,2024-12-18,CUST0012,kathryn21@example.com,Reduced solution-oriented instruction set,Home & Garden,220.67,3,5.54,Delivered,2024-12-31,2.0
+ORD000498,2024-09-20,CUST0062,blopez@example.net,Face-to-face client-driven pricing structure,Clothing,99.76,9,15.86,Delivered,2024-09-22,3.0
+ORD000499,2025-02-24,CUST0062,greenejessica@example.org,Inverse reciprocal encryption,Home & Garden,189.94,3,10.29,Delivered,2025-03-06,2.0
+ORD000500,2024-03-09,CUST0039,xcohen@example.org,User-friendly radical utilization,Clothing,203.82,5,10.35,Pending,,
