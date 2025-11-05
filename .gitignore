@@ -6,10 +6,7 @@ Langflow Customer Support Agent/
 Sentiment Analysis Based on News Titles/
 LangGraph Course FreeCodeCamp/
 embedding-concept/
-Agno AI Agent Experiment/
 Crawl4ai Implementation/
 
 # Ignore certain files
-.venv/
-.devcontainer/
 *.pth
