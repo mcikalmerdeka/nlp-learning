@@ -1,24 +1,15 @@
-from typing import Any
+from typing import Any, Iterator
 import streamlit as st
 from agno.models.openai import OpenAIChat
-from agno.agent import Agent
+from agno.agent import Agent, RunOutputEvent, RunEvent
 from agno.tools.pandas import PandasTools
+from agno.utils.pprint import pprint_run_response
 from utils import preprocess_and_save
-
-# Import necessary modules for terminal display
-from typing import get_args
-from rich.console import Console, Group
-from rich.live import Live
-from rich.status import Status
-from rich.text import Text
-from agno.utils.response import create_panel, format_tool_calls
-from agno.run.agent import RunEvent, RunOutputEvent
-from agno.utils.timer import Timer
 
 # Streamlit app
 st.title("📊 Data Analyst Agent")
 
-# Sidebar for API keys
+# Sidebar for API keys and settings
 with st.sidebar:
     st.header("API Keys")
     openai_key = st.text_input("Enter your OpenAI API key:", type="password")
@@ -27,6 +18,14 @@ with st.sidebar:
         st.success("API key saved!")
     else:
         st.warning("Please enter your OpenAI API key to proceed.")
+    
+    st.divider()
+    st.header("Settings")
+    debug_mode = st.checkbox("Debug Mode", value=False, help="Enable agent debug mode for detailed logging and execution traces")
+    st.session_state.debug_mode = debug_mode
+    
+    show_pretty_print = st.checkbox("Pretty Terminal Output", value=False, help="Show beautifully formatted output in terminal with tool calls and timing")
+    st.session_state.show_pretty_print = show_pretty_print
 
 # File upload widget
 uploaded_file = st.file_uploader("Upload a CSV or Excel file", type=["csv", "xlsx"])
@@ -49,9 +48,9 @@ if uploaded_file is not None and "openai_key" in st.session_state:
         
         # Initialize the Agent with PandasTools
         data_analyst = Agent(
+            name="Data Analyst Agent",
             model=OpenAIChat(id="gpt-4.1-mini", api_key=st.session_state.openai_key),
-            tools=[pandas_tools],
-            markdown=True,
+            description="You are an expert data analyst.",
             instructions=[
                 f"You are an expert data analyst.",
                 f"A pandas DataFrame named 'uploaded_data' is already loaded with {len(df)} rows.",
@@ -60,7 +59,10 @@ if uploaded_file is not None and "openai_key" in st.session_state:
                 f"Sample data:\n{df.head(3).to_string()}",
                 "Use the run_dataframe_operation tool to analyze 'uploaded_data'.",
                 "Always provide clear insights and explanations with your analysis.",
-            ]
+            ],
+            debug_mode=st.session_state.get("debug_mode", False),
+            tools=[pandas_tools],
+            markdown=True
         )
         
         # Initialize code storage in session state
@@ -71,7 +73,16 @@ if uploaded_file is not None and "openai_key" in st.session_state:
         user_query = st.text_area("Ask a query about the data:")
         
         # Add info message about terminal output
-        st.info("💡 Check your terminal for a clearer output of the agent's response")
+        info_parts = []
+        if st.session_state.get("debug_mode", False):
+            info_parts.append("🐛 Agent debug mode enabled")
+        if st.session_state.get("show_pretty_print", False):
+            info_parts.append("✨ Pretty terminal output enabled")
+        
+        if info_parts:
+            st.info(" | ".join(info_parts))
+        else:
+            st.info("💡 Check your terminal for the agent's response stream")
         
         if st.button("Submit Query"):
             if user_query.strip() == "":
@@ -80,80 +91,41 @@ if uploaded_file is not None and "openai_key" in st.session_state:
                 try:
                     # Show loading spinner while processing
                     with st.spinner('Processing your query...'):
-                        # Set up terminal display
-                        console = Console()
-                        accumulated_tool_calls = []
                         response_content = ""
                         
-                        with Live(console=console) as live_log:
-                            status = Status("Thinking...", spinner="aesthetic", speed=0.4, refresh_per_second=10)
-                            response_timer = Timer()
-                            response_timer.start()
-                            panels = [status]
-                            
-                            # Display user query
-                            message_panel = create_panel(
-                                content=Text(user_query, style="green"),
-                                title="Message",
-                                border_style="cyan",
-                            )
-                            panels.append(message_panel)
-                            live_log.update(Group(*panels))
-                            
-                            # Run the agent with streaming enabled
-                            for response_event in data_analyst.run(
+                        # Use pretty print mode for terminal output or simple streaming
+                        if st.session_state.get("show_pretty_print", False):
+                            # Create stream for detailed terminal output with pprint
+                            stream: Iterator[RunOutputEvent] = data_analyst.run(
                                 input=user_query,
-                                stream=True,
-                                stream_events=True
-                            ):
-                                # Handle events
-                                if isinstance(response_event, tuple(get_args(RunOutputEvent))):
-                                    # Capture tool calls
-                                    if (response_event.event == RunEvent.tool_call_started and 
-                                        hasattr(response_event, "tool") and 
-                                        response_event.tool is not None):
-                                        accumulated_tool_calls.append(response_event.tool)
-                                    
-                                    # Capture response content
-                                    if response_event.event == RunEvent.run_content:
-                                        if hasattr(response_event, "content") and isinstance(response_event.content, str):
-                                            response_content += response_event.content
-                                
-                                # Update display with tool calls
-                                panels = [status, message_panel]
-                                
-                                if accumulated_tool_calls:
-                                    tool_calls_content = Text()
-                                    formatted_tool_calls = format_tool_calls(accumulated_tool_calls)
-                                    for formatted_tool_call in formatted_tool_calls:
-                                        tool_calls_content.append(f"• {formatted_tool_call}\n")
-                                    
-                                    tool_calls_panel = create_panel(
-                                        content=tool_calls_content.plain.rstrip(),
-                                        title="Tool Calls",
-                                        border_style="yellow",
-                                    )
-                                    panels.append(tool_calls_panel)
-                                
-                                if response_content:
-                                    response_panel = create_panel(
-                                        content=response_content,
-                                        title=f"Response ({response_timer.elapsed:.1f}s)",
-                                        border_style="blue",
-                                    )
-                                    panels.append(response_panel)
-                                
-                                live_log.update(Group(*panels))
+                                stream=True
+                            )
+                            pprint_run_response(stream, markdown=True)
                             
-                            response_timer.stop()
-                            # Remove thinking status
-                            panels = [p for p in panels if not isinstance(p, Status)]
-                            live_log.update(Group(*panels))
-
-                    # Display the response in Streamlit
-                    st.markdown(response_content)
-                
+                            # Get response content with a fresh non-streaming call
+                            response = data_analyst.run(input=user_query, stream=False)
+                            response_content = response.content
+                        else:
+                            # Run the agent with streaming enabled
+                            stream: Iterator[RunOutputEvent] = data_analyst.run(
+                                input=user_query,
+                                stream=True
+                            )
+                            
+                            # Simple streaming - just print content as it arrives
+                            for chunk in stream:
+                                if chunk.event == RunEvent.run_content and chunk.content:
+                                    print(chunk.content, end="", flush=True)
+                                    response_content += chunk.content
+                            
+                            print()  # New line after streaming completes
                     
+                    # Display the response in Streamlit
+                    if response_content:
+                        st.markdown(response_content)
+                    else:
+                        st.info("No response content was generated.")
+                
                 except Exception as e:
                     st.error(f"Error generating response from the agent: {e}")
                     st.error("Please try rephrasing your query or check if the data format is correct.")
