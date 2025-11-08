@@ -1,0 +1,6 @@
+.venv
+.env
+__pycache__/
+
+# Temporary ignore the vector databases folder
+tmp/
