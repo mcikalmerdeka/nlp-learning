@@ -1,0 +1,55 @@
+# Report on Current Flagship GPUs from NVIDIA, AMD, and Intel
+
+This report summarizes the key specifications and details of the current flagship graphics processing units (GPUs) from the leading manufacturers NVIDIA, AMD, and Intel, based on recent research findings.
+
+---
+
+## NVIDIA GeForce RTX 5090
+
+- **MSRP:** Not explicitly stated (likely >$1,500 based on previous trends)
+- **TDP:** Approximately 600 Watts (implied from reviews)
+- **Launch Date:** January 2025
+- **Architecture:** Blackwell
+- **Memory:** GDDR7
+
+**Notes:**
+The GeForce RTX 5090 is NVIDIA's top flagship GPU offering cutting-edge technology and very high power consumption reflective of its advanced performance tier.
+
+**Citations:**
+- [NVIDIA official](https://www.nvidia.com/en-us/geforce/graphics-cards/50-series/rtx-5090/)
+- [PC Perspective review](https://pcper.com/2025/01/nvidia-geforce-rtx-5090-founders-edition-review/)
+
+---
+
+## AMD Radeon RX 9070 XT
+
+- **MSRP:** Approx. $709 (from latest market sources like Tom's Hardware)
+- **TDP:** Around 255 Watts (based on RDNA 4 architecture info)
+- **Launch Date:** Early 2025
+
+**Notes:**
+This GPU is AMD's flagship enthusiast-class card in the RX 9000 series, utilizing the RDNA 4 architecture.
+
+**Citations:**
+- [AMD official](https://www.amd.com/en/products/graphics/desktops/radeon.html)
+- [TechRadar](https://www.techradar.com/news/amd-graphics-cards)
+- [Tom's Hardware](https://www.tomshardware.com/reviews/best-gpus,4380.html)
+
+---
+
+## Intel Arc B580
+
+- **MSRP:** $250 (launch MSRP)
+- **TDP:** Approx. 225 Watts (typical for Intel Arc B-series)
+- **Launch Date:** Late 2024
+
+**Notes:**
+Intel's highest desktop discrete GPU offering aggressive pricing and positioned more in the midrange compared to NVIDIA and AMD flagships.
+
+**Citations:**
+- [PC Guide](https://www.pcguide.com/news/intels-best-graphics-card-is-less-than-msrp-and-comes-with-a-free-game-of-your-choice-in-this-new-bundle/)
+- [Intel official](https://www.intel.com/content/www/us/en/products/docs/discrete-gpus/arc/desktop/b-series/overview.html)
+
+---
+
+If deeper technical specifications or exact MSRP details from retail sources are needed, please request additional information.

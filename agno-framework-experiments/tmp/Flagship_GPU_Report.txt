@@ -1,0 +1,39 @@
+# Flagship GPUs Report: NVIDIA, AMD, and Intel
+
+This report provides an overview of the current flagship GPUs from the three leading GPU manufacturers: NVIDIA, AMD, and Intel. The data is compiled from recent research and official sources, covering model names, MSRP, thermal design power (TDP), launch dates, and citations for reference.
+
+| Manufacturer | Model Name       | MSRP (USD) | TDP (Watts) | Launch Date  |
+|--------------|------------------|------------|-------------|--------------|
+| NVIDIA       | GeForce RTX 5090 | Unknown*   | ~600W       | January 2025 |
+| AMD          | Radeon RX 9070 XT| Unknown**  | Unknown     | Unknown 2025 |
+| Intel        | Arc B580         | $250       | Unknown     | Late 2024    |
+
+## Detailed Notes
+
+- **NVIDIA GeForce RTX 5090** 
+  - MSRP is not fully confirmed on the official page (listed as "Starting at $XXX.00") but typical flagship pricing suggests it will be above $1,500.
+  - TDP is approximately 600 watts based on available reviews.
+  - Launched in January 2025.
+
+- **AMD Radeon RX 9070 XT** 
+  - MSRP and TDP details are not explicitly stated in the available official sources.
+  - The launch date is noted as sometime in 2025 but exact timing is not confirmed.
+
+- **Intel Arc B580** 
+  - MSRP is confirmed at $250 according to recent news.
+  - TDP value has not yet been disclosed.
+  - The card was launched in late 2024.
+
+## Sources and Citations
+
+- NVIDIA RTX 5090 page: [https://www.nvidia.com/en-us/geforce/graphics-cards/50-series/rtx-5090/](https://www.nvidia.com/en-us/geforce/graphics-cards/50-series/rtx-5090/)
+- NVIDIA TDP review: [PC Perspective](https://pcper.com/2025/01/nvidia-geforce-rtx-5090-founders-edition-review/)
+- NVIDIA Launch info: [LTT Labs](https://www.lttlabs.com/articles/gpu/nvidia-geforce-rtx-5080-founders-edition)
+- AMD official product page: [AMD Radeon RX 9070 XT](https://www.amd.com/en/products/graphics/desktops/radeon/9000-series/amd-radeon-rx-9070xt.html)
+- AMD overview: [AMD Radeon RX series](https://www.amd.com/en/products/graphics/desktops/radeon.html)
+- Intel info: [PC Guide](https://www.pcguide.com/news/intels-best-graphics-card-is-less-than-msrp-and-comes-with-a-free-game-of-your-choice-in-this-new-bundle/)
+- Intel product overview: [Intel Arc B-Series](https://www.intel.com/content/www/us/en/products/docs/discrete-gpus/arc/desktop/b-series/overview.html)
+
+---
+
+If more detailed specifications become available for the AMD and Intel cards, especially regarding MSRP and TDP, a follow-up report can be generated to update this information.
