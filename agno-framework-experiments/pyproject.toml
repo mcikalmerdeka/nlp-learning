@@ -6,6 +6,8 @@ readme = "README.md"
 requires-python = ">=3.11"
 dependencies = [
     "agno>=2.2.7",
+    "anthropic>=0.72.0",
+    "cartesia>=2.0.15",
     "exa-py>=2.0.0",
     "fastapi>=0.121.1",
     "mcp>=1.21.0",
