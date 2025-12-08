@@ -3,9 +3,13 @@ This script demonstrates the basic usage of LangChain framework. Several feature
 1. Tool calling
 2. Structured output
 3. Agent creation
+4. Streaming response
+5. Memory
+6. Multi-agent collaboration
 """
 
 import os
+import json
 from dotenv import load_dotenv
 load_dotenv()
 
@@ -13,6 +17,7 @@ from pydantic import BaseModel, Field
 from langchain_openai import ChatOpenAI
 from langchain.tools import tool
 from langchain.agents import create_agent
+from langgraph.checkpoint.memory import MemorySaver
 
 
 # Setup a basic weather database in dictionary
@@ -32,7 +37,7 @@ temperature_db = {
     "Beijing": 10,
 }
 
-# Setup structured output
+# Setup structured output for Research Agent
 class WeatherReport(BaseModel):
     """Weather report for a specified city."""
     city: str = Field(..., description="The city of requested weather")
@@ -43,51 +48,100 @@ class WeatherReportList(BaseModel):
     """List of weather reports for multiple cities."""
     reports: list[WeatherReport] = Field(..., description="List of weather reports for each requested city")
 
-# Initialize Tools
+
+# ============================================
+# RESEARCH AGENT: Handles weather data lookup
+# ============================================
+
 @tool
 def get_weather(city: str) -> str:
     """Get the current weather for a specified city."""
-
-    # Simulate API call
     return weather_db.get(city, "unknown")
 
 @tool
 def get_temperature(city: str) -> int:
     """Get the current temperature for a specified city."""
-
-    # Simulate API call
     return temperature_db.get(city, 0)
 
-tools = [get_weather, get_temperature]
+weather_tools = [get_weather, get_temperature]
 
-# Initialize Model and Agent
-llm = ChatOpenAI(model="gpt-4o-mini",
-                 openai_api_key=os.getenv("OPENAI_API_KEY"),
-                 temperature=0.5,
-                 max_tokens=200)
-
-agent = create_agent(
-    llm,                    # LLM with tool calling support
-    tools,                  # List of tools
-    response_format=WeatherReportList,
-    system_prompt="You are a weather assistant with access to tools. Always return structured weather data for ALL cities requested by the user."
+# Initialize Research Agent LLM
+research_llm = ChatOpenAI(
+    model="gpt-4o-mini",
+    openai_api_key=os.getenv("OPENAI_API_KEY"),
+    temperature=0,
+    max_tokens=500
 )
 
-# Running option 1: Invoke the Agent
-result = agent.invoke({
-    "messages": [
-        {"role": "user", 
-        "content": "What's the weather and temperature in New York and Tokyo?"}
-    ]
-})
+# Research Agent: structured output, no memory (stateless)
+research_agent = create_agent(
+    research_llm,
+    weather_tools,
+    system_prompt="You are a weather research agent. Use the tools to look up weather and temperature for the requested cities. Return structured data for ALL cities mentioned.",
+    response_format=WeatherReportList,
+)
 
-print(result["messages"][-1].content)
 
-# # Running option 2: Streaming response
-# for chunk in agent.stream({
-#     "messages": [{"role": "user", "content": "What's the weather and temperature in New York and Tokyo?"}]
-# }, stream_mode="values"):
-#     if "messages" in chunk:
-#         last_msg = chunk["messages"][-1]
-#         if last_msg.content:
-#             print(last_msg.content, end="", flush=True)
+# ============================================
+# CHAT AGENT: Conversational interface
+# ============================================
+
+@tool
+def lookup_weather(cities: str) -> str:
+    """
+    Look up weather information for one or more cities.
+    Pass a comma-separated list of city names, e.g., "Tokyo, New York".
+    Returns structured weather data that you can use to form a natural response.
+    """
+    result = research_agent.invoke({
+        "messages": [
+            {"role": "user", "content": f"Get weather and temperature for: {cities}"}
+        ]
+    })
+    return result["messages"][-1].content
+
+chat_tools = [lookup_weather]
+
+# Initialize memory for Chat Agent
+chat_checkpointer = MemorySaver()
+
+# Chat Agent LLM
+chat_llm = ChatOpenAI(
+    model="gpt-4o-mini",
+    openai_api_key=os.getenv("OPENAI_API_KEY"),
+    temperature=0.7,
+    max_tokens=500
+)
+
+# Chat Agent: conversational, with memory
+chat_agent = create_agent(
+    chat_llm,
+    chat_tools,
+    system_prompt="""You are a friendly weather assistant. You can:
+1. Look up weather information using the lookup_weather tool when users ask about weather
+2. Have normal conversations about anything else
+
+When presenting weather data, format it nicely in natural language. 
+Remember previous conversations with the user.""",
+    checkpointer=chat_checkpointer,
+    # No response_format - allows natural conversation!
+)
+
+
+if __name__ == "__main__":
+    print("Weather Chat Assistant (type 'exit' to quit)")
+    print("-" * 45)
+
+    while True:
+        user_input = input("\nUser: ")
+        if user_input.lower() == "exit":
+            print("Goodbye!")
+            break
+        
+        result = chat_agent.invoke({
+            "messages": [
+                {"role": "user", "content": user_input}
+            ]
+        }, config={"configurable": {"thread_id": "user_session_1"}})
+        
+        print(f"\nAssistant: {result['messages'][-1].content}")
