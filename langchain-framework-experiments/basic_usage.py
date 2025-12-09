@@ -17,7 +17,7 @@ from pydantic import BaseModel, Field
 from langchain_openai import ChatOpenAI
 from langchain.tools import tool
 from langchain.agents import create_agent
-from langgraph.checkpoint.memory import MemorySaver
+from langgraph.checkpoint.memory import InMemorySaver
 
 
 # Setup a basic weather database in dictionary
@@ -103,7 +103,7 @@ def lookup_weather(cities: str) -> str:
 chat_tools = [lookup_weather]
 
 # Initialize memory for Chat Agent
-chat_checkpointer = MemorySaver()
+chat_checkpointer = InMemorySaver()
 
 # Chat Agent LLM
 chat_llm = ChatOpenAI(
