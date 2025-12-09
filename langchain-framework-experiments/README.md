@@ -5,4 +5,5 @@ Repository for the usage of LangChain framework in the newest version Langchain 
 Source for faster learning:
 
 - Langchain official docs: https://docs.langchain.com/oss/python/langchain/overview
+- Langchain package reference documentation: https://reference.langchain.com/python/langchain/
 - Langchain docs chatbot: https://chat.langchain.com/
