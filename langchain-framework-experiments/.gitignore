@@ -155,3 +155,6 @@ Thumbs.db
 # Project specific
 *.bak
 *.tmp
+
+# Chroma
+.chromadb/
