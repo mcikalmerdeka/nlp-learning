@@ -3,14 +3,15 @@ from dotenv import load_dotenv
 load_dotenv()
 
 from langchain.agents import create_agent
-from langchain_openai import ChatOpenAI, OpenAIEmbeddings
+from langchain_openai import OpenAIEmbeddings
+from langchain.chat_models import init_chat_model
 from langchain_chroma import Chroma
 from langchain_core.tools import tool
 from langchain_community.document_loaders import PyPDFLoader
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 
 # Initialize model
-model = ChatOpenAI(model="gpt-4.1-mini", api_key=os.getenv("OPENAI_API_KEY"))
+model = init_chat_model(model="gpt-4.1-mini", api_key=os.getenv("OPENAI_API_KEY"))
 
 # Initialize embeddings
 embeddings = OpenAIEmbeddings(model="text-embedding-3-small", api_key=os.getenv("OPENAI_API_KEY"))
@@ -65,7 +66,7 @@ system_prompt = (
 agent = create_agent(model, tools, system_prompt=system_prompt)
 
 # Test the agent
-query = "What is the initial annual base rent and the method of payment?"
+query = "What is the termination term for this lease agreement?"
 
 # Stream the agent's response
 for step in agent.stream(
