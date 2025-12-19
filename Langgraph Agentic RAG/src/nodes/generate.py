@@ -3,6 +3,7 @@
 from typing import Any, Dict
 
 from src.chains import generation_chain
+from src.core import logger
 from src.core.state import GraphState
 
 
@@ -16,11 +17,13 @@ def generate_node(state: GraphState) -> Dict[str, Any]:
     Returns:
         Updated state with generation.
     """
-    print("---GENERATE NODE---")
+    logger.debug("Generating answer...")
 
     question = state["question"]
     documents = state["documents"]
 
     generation = generation_chain.invoke({"question": question, "context": documents})
+
+    logger.info(f"Generated response ({len(generation)} chars)")
 
     return {"generation": generation, "documents": documents}

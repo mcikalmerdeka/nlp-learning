@@ -28,6 +28,9 @@ class Settings:
     # Graph Output
     GRAPH_OUTPUT_PATH: str = "outputs/complete_rag_graph.png"
 
+    # Logging
+    LOG_LEVEL: str = os.getenv("LOG_LEVEL", "INFO")
+
 
 settings = Settings()
 

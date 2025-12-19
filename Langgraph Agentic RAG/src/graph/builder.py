@@ -3,6 +3,7 @@
 from langgraph.graph import END, START, StateGraph
 
 from src.config.settings import settings
+from src.core import logger
 from src.core.state import GraphState
 from src.graph.constants import (
     GENERATE,
@@ -79,4 +80,4 @@ def save_graph_visualization(output_path: str | None = None) -> None:
     """Save the graph visualization to a PNG file."""
     path = output_path or settings.GRAPH_OUTPUT_PATH
     rag_app.get_graph().draw_mermaid_png(output_file_path=path)
-    print(f"Graph saved to: {path}")
+    logger.info(f"Graph saved to: {path}")

@@ -1,6 +1,7 @@
 """Conditional edge functions for the RAG graph."""
 
 from src.chains import answer_grader, hallucination_grader, question_router, RouterQuery
+from src.core import logger
 from src.core.state import GraphState
 from src.graph.constants import (
     GENERATE,
@@ -23,16 +24,16 @@ def route_question(state: GraphState) -> str:
     Returns:
         Route decision: 'vectorstore' or 'websearch'.
     """
-    print("---ROUTING QUESTION---")
+    logger.debug("Routing question...")
 
     question = state["question"]
     source: RouterQuery = question_router.invoke({"question": question})
 
     if source.datasource == "websearch":
-        print("---DECISION: ROUTING TO WEB SEARCH---")
+        logger.info("Route → Web Search")
         return DECISION_WEBSEARCH
     else:
-        print("---DECISION: ROUTING TO VECTORSTORE---")
+        logger.info("Route → Vectorstore")
         return DECISION_VECTORSTORE
 
 
@@ -46,13 +47,13 @@ def decide_to_generate(state: GraphState) -> str:
     Returns:
         Next node: WEB_SEARCH or GENERATE.
     """
-    print("---ASSESS GRADED DOCUMENTS---")
+    logger.debug("Assessing graded documents...")
 
     if state["web_search"]:
-        print("---DECISION: NOT ALL DOCUMENTS RELEVANT, ROUTING TO WEB SEARCH---")
+        logger.info("Documents insufficient → Web Search")
         return WEB_SEARCH
     else:
-        print("---DECISION: ALL DOCUMENTS RELEVANT, ROUTING TO GENERATE---")
+        logger.info("Documents sufficient → Generate")
         return GENERATE
 
 
@@ -66,7 +67,7 @@ def grade_generation(state: GraphState) -> str:
     Returns:
         Decision: 'useful', 'not_useful', or 'not_supported'.
     """
-    print("---CHECKING HALLUCINATIONS---")
+    logger.debug("Checking for hallucinations...")
 
     question = state["question"]
     documents = state["documents"]
@@ -78,8 +79,7 @@ def grade_generation(state: GraphState) -> str:
     )
 
     if hallucination_score.binary_score:
-        print("---DECISION: GENERATION IS GROUNDED IN DOCUMENTS---")
-        print("---GRADING GENERATION vs QUESTION---")
+        logger.debug("Generation grounded in documents")
 
         # Check if generation addresses the question
         answer_score = answer_grader.invoke(
@@ -87,12 +87,11 @@ def grade_generation(state: GraphState) -> str:
         )
 
         if answer_score.binary_score:
-            print("---DECISION: GENERATION ADDRESSES QUESTION---")
+            logger.info("Generation ✓ Useful")
             return DECISION_USEFUL
         else:
-            print("---DECISION: GENERATION DOES NOT ADDRESS QUESTION---")
+            logger.warning("Generation does not address question → Retry")
             return DECISION_NOT_USEFUL
     else:
-        print("---DECISION: GENERATION NOT GROUNDED, RETRYING---")
+        logger.warning("Generation not grounded → Web Search")
         return DECISION_NOT_SUPPORTED
-
