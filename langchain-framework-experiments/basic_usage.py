@@ -18,6 +18,7 @@ from langchain_openai import ChatOpenAI
 from langchain.tools import tool
 from langchain.agents import create_agent
 from langgraph.checkpoint.memory import InMemorySaver
+from langchain.messages import HumanMessage
 
 
 # Setup a basic weather database in dictionary
@@ -134,14 +135,28 @@ if __name__ == "__main__":
 
     while True:
         user_input = input("\nUser: ")
-        if user_input.lower() == "exit":
+        if user_input.lower() in ["exit", "quit"]:
             print("Goodbye!")
             break
         
-        result = chat_agent.invoke({
-            "messages": [
-                {"role": "user", "content": user_input}
-            ]
-        }, config={"configurable": {"thread_id": "user_session_1"}})
+        # # For one time conversation, we can use the invoke method
+        # result = chat_agent.invoke({
+        #     "messages": [
+        #         {"role": "user", "content": user_input}
+        #     ]
+        # }, config={"configurable": {"thread_id": "user_session_1"}})
         
-        print(f"\nAssistant: {result['messages'][-1].content}")
+        # print(f"\nAssistant: {result['messages'][-1].content}")
+
+        # For streaming conversation, we can use the stream method
+        for token, metadata in chat_agent.stream(
+            {"messages": [HumanMessage(content=user_input)]},
+            config={"configurable": {"thread_id": "user_session_1"}},
+            stream_mode="messages"
+        ):
+            # token is a message chunk with token content
+            # metadata contains which node produced the token
+            if token.content:  # Check if there's actual content
+                print(token.content, end="", flush=True)  # Print token
+            
+        print("\n")
