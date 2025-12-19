@@ -14,8 +14,8 @@ wheels/
 # Environment variables
 .env
 
-# Python packages files
-*__init__.py
+# # Python packages files
+# *__init__.py
 
 # IDE/Editor files
 .vscode/
