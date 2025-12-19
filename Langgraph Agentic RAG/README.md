@@ -34,45 +34,94 @@ The system implements a sophisticated **StateGraph** with four main processing n
 ## 📁 Project Structure
 
 ```
-langgraph_agentic_rag/
-├── main.py                    # Main application entry point with test scenarios
-├── ingestion.py              # Document loading, chunking, and vectorstore setup
-├── complete_rag_graph.png    # Visual representation of the complete workflow
-├── graph/                    # Core graph implementation
+langgraph-agentic-rag/
+├── main.py                         # Application entry point
+├── pyproject.toml                  # Dependencies & project config
+│
+├── src/                            # Source code
 │   ├── __init__.py
-│   ├── state.py              # GraphState definition with typed attributes
-│   ├── consts.py             # Node name constants for consistency
-│   ├── graph.py              # Main graph construction and routing logic
-│   ├── chains/               # LLM chains for different processing stages
-│   │   ├── router.py         # Query routing to vectorstore/websearch
-│   │   ├── generation.py     # Response generation with context filtering
-│   │   ├── retrieval_grader.py   # Document relevance assessment
-│   │   ├── hallucination_grader.py # Hallucination detection
-│   │   ├── answer_grader.py  # Answer quality evaluation
-│   │   └── tests/            # Chain testing utilities
-│   └── nodes/                # Graph node implementations
-│       ├── retrieve.py       # Vector database retrieval
-│       ├── grade_documents.py # Document relevance filtering
-│       ├── websearch.py      # Tavily web search integration
-│       └── generate.py       # Response generation orchestration
-└── .chroma_db/              # Persistent vector database (gitignored)
+│   │
+│   ├── config/                     # Centralized configuration
+│   │   ├── settings.py             # Environment variables & settings
+│   │   └── prompts.py              # All prompt templates
+│   │
+│   ├── core/                       # Shared core components
+│   │   ├── llm.py                  # Cached LLM instances
+│   │   └── state.py                # GraphState definition
+│   │
+│   ├── chains/                     # LangChain chains
+│   │   ├── generation.py           # Response generation chain
+│   │   ├── router.py               # Query routing chain
+│   │   └── graders/                # Grading chains
+│   │       ├── answer.py           # Answer quality grader
+│   │       ├── hallucination.py    # Hallucination detector
+│   │       └── retrieval.py        # Document relevance grader
+│   │
+│   ├── nodes/                      # Graph node implementations
+│   │   ├── generate.py             # Response generation
+│   │   ├── grade_documents.py      # Document filtering
+│   │   ├── retrieve.py             # Vector database retrieval
+│   │   └── websearch.py            # Tavily web search
+│   │
+│   ├── ingestion/                  # Data ingestion
+│   │   └── vectorstore.py          # Document loading & vectorstore
+│   │
+│   └── graph/                      # Graph construction
+│       ├── builder.py              # Graph building & compilation
+│       ├── constants.py            # Node name constants
+│       └── edges.py                # Conditional edge functions
+│
+├── scripts/                        # Utility scripts
+│   ├── ingest.py                   # Run document ingestion
+│   ├── visualize_graph.py          # Generate graph PNG
+│   └── cleanup.ps1                 # Clean pycache folders
+│
+├── tests/                          # Test suite
+│   └── test_chains.py              # Chain unit tests
+│
+└── outputs/                        # Generated outputs (gitignored)
+    └── rag_graph.png               # Workflow visualization
 ```
 
 ## 🛠️ Technical Implementation
 
-### State Management (`state.py`)
+### State Management (`src/core/state.py`)
 
 ```python
 class GraphState(TypedDict):
     question: str                           # User query
     generation: str                         # Generated response
-    web_search: bool                       # Web search trigger flag
+    web_search: bool                        # Web search trigger flag
     documents: Annotated[List[Document], operator.add]  # Retrieved documents
 ```
 
-### Intelligent Query Router (`chains/router.py`)
+### Centralized Configuration (`src/config/settings.py`)
 
-The system uses a **Pydantic-structured LLM** to intelligently route queries:
+```python
+@dataclass(frozen=True)
+class Settings:
+    OPENAI_API_KEY: str = os.getenv("OPENAI_API_KEY", "")
+    TAVILY_API_KEY: str = os.getenv("TAVILY_API_KEY", "")
+    LLM_MODEL: str = "gpt-4.1-mini"
+    EMBEDDING_MODEL: str = "text-embedding-3-small"
+    CHROMA_COLLECTION_NAME: str = "rag-chroma"
+    # ...
+```
+
+### Cached LLM Instances (`src/core/llm.py`)
+
+```python
+@lru_cache(maxsize=1)
+def get_llm() -> ChatOpenAI:
+    """Get the default LLM instance (cached)."""
+    return ChatOpenAI(
+        model=settings.LLM_MODEL,
+        temperature=settings.LLM_TEMPERATURE,
+        api_key=settings.OPENAI_API_KEY,
+    )
+```
+
+### Intelligent Query Router (`src/chains/router.py`)
 
 ```python
 class RouterQuery(BaseModel):
@@ -87,29 +136,28 @@ class RouterQuery(BaseModel):
 
 ### Multi-Stage Quality Validation
 
-#### 1. Document Relevance Grading (`chains/retrieval_grader.py`)
+#### 1. Document Relevance Grading (`src/chains/graders/retrieval.py`)
 - **Binary scoring system** for document-question relevance
 - **Semantic and keyword matching** evaluation
 - **Automatic filtering** of irrelevant documents
 
-#### 2. Hallucination Detection (`chains/hallucination_grader.py`)
+#### 2. Hallucination Detection (`src/chains/graders/hallucination.py`)
 - **Fact-grounding validation** against source documents
 - **Binary assessment** of response accuracy
 - **Automatic retry mechanism** for unsupported claims
 
-#### 3. Answer Quality Assessment (`chains/answer_grader.py`)
+#### 3. Answer Quality Assessment (`src/chains/graders/answer.py`)
 - **Question-answer alignment** verification
 - **Completeness evaluation** of responses
 - **Retry logic** for inadequate answers
 
-### Advanced Response Generation (`chains/generation.py`)
+### Advanced Response Generation (`src/chains/generation.py`)
 
 Enhanced prompt template with **intelligent content filtering**:
 
 ```python
 prompt_template = ChatPromptTemplate.from_template("""
-You are an assistant for question-answering tasks. Use the following pieces of retrieved context to answer the question. If you don't know the answer, just say that you don't know. Use three sentences maximum and keep the answer concise.
-
+You are an assistant for question-answering tasks...
 Question: {question} 
 Context: {context} 
 Additional Instructions: {additional_instructions}
@@ -121,22 +169,6 @@ Answer:
 - Removes image links, code blocks, JSON structures
 - Filters HTML markup, navigation elements, advertisements
 - Focuses on relevant textual content for accurate responses
-
-### Web Search Integration (`nodes/websearch.py`)
-
-**Tavily API Integration** with intelligent result processing:
-
-```python
-def web_search_node(state: GraphState) -> Dict[str, Any]:
-    # Invoke Tavily search with max 2 results
-    tavily_results = web_search_tool.invoke({"query": question})["results"]
-    
-    # Process and combine search results
-    joined_tavily_result = "\n".join([result["content"] for result in tavily_results])
-    
-    # Append to existing documents or create new document list
-    web_results = Document(page_content=joined_tavily_result)
-```
 
 ## 🔄 Workflow Execution Flow
 
@@ -160,7 +192,7 @@ Generate Response → Hallucination Check → Answer Quality Check → [End | Re
 Failed Validation → Web Search → Re-generate → Re-validate
 ```
 
-## 📊 Knowledge Base Setup (`ingestion.py`)
+## 📊 Knowledge Base
 
 The system processes high-quality AI research content from **Lilian Weng's blog**:
 
@@ -169,91 +201,59 @@ The system processes high-quality AI research content from **Lilian Weng's blog*
 - **Prompt Engineering**: Advanced prompting techniques and strategies  
 - **Adversarial Attacks**: LLM security and robustness research
 
-### Processing Pipeline
+### Processing Pipeline (`src/ingestion/vectorstore.py`)
 ```python
 # Document loading from multiple URLs
-urls = [
+DEFAULT_URLS = [
     "https://lilianweng.github.io/posts/2023-06-23-agent/",
     "https://lilianweng.github.io/posts/2023-03-15-prompt-engineering/",
     "https://lilianweng.github.io/posts/2023-10-25-adv-attack-llm/",
 ]
 
 # Advanced chunking with tiktoken encoder
-text_splitter = RecursiveCharacterTextSplitter.from_tiktoken_encoder(
+splitter = RecursiveCharacterTextSplitter.from_tiktoken_encoder(
     chunk_size=500, 
     chunk_overlap=100
 )
-
-# Vector database with OpenAI embeddings
-vectorstore = Chroma.from_documents(
-    documents=docs_split,
-    collection_name="rag-chroma",
-    embedding=OpenAIEmbeddings(model="text-embedding-3-small"),
-    persist_directory="langgraph_agentic_rag/.chroma_db"
-)
 ```
 
-## 🎯 Example Use Cases & Test Scenarios
+## 🎯 Example Use Cases
 
 ### Scenario 1: Knowledge Base Query
 **Query**: *"What is agent memory?"*
 - **Route**: Vectorstore (topic within knowledge base)
 - **Process**: Retrieve → Grade → Generate → Validate → End
-- **Expected**: Detailed explanation from Lilian Weng's agent research
 
 ### Scenario 2: Prompt Engineering Query  
 **Query**: *"Can you explain the concept of few-shot prompting?"*
 - **Route**: Vectorstore (covered in prompt engineering content)
 - **Process**: Retrieve → Grade → Generate → Validate → End
-- **Expected**: Comprehensive few-shot prompting explanation
 
 ### Scenario 3: External Knowledge Query
 **Query**: *"What is the definition of Microsoft AI search service?"*
 - **Route**: Web Search (outside knowledge base)
 - **Process**: Web Search → Generate → Validate → End
-- **Expected**: Current Microsoft AI search information
 
 ### Scenario 4: Off-Topic Query with Fallback
 **Query**: *"What are the places to visit in Indonesia?"*
 - **Route**: Web Search (completely outside domain)
 - **Process**: Web Search → Generate → Validate → End
-- **Expected**: Travel information from web sources
-
-## 🚀 Advanced Features
-
-### Self-Healing Architecture
-- **Automatic retry mechanisms** for failed validations
-- **Intelligent fallback** from vectorstore to web search
-- **Quality-driven iteration** until satisfactory response
-
-### Comprehensive Logging System
-```python
-print("---ROUTING QUESTION---")
-print("---DECISION: ROUTING TO WEB SEARCH NODE---")
-print("---ASSES GRADED DOCUMENTS---")
-print("---CHECKING HALLUCINATIONS---")
-print("---DECISION: GENERATION IS GROUNDED IN DOCUMENTS---")
-```
-
-### Structured Output Validation
-- **Pydantic models** for consistent response formatting
-- **Type-safe state management** with TypedDict
-- **Binary scoring systems** for objective evaluation
 
 ## 🔧 Setup and Installation
 
 ### Prerequisites
 - Python 3.11+
-- OpenAI API key for GPT-4.1 and embeddings
-- Tavily API key for web search functionality
+- [uv](https://docs.astral.sh/uv/) package manager (recommended)
+- OpenAI API key
+- Tavily API key
 
-### Installation Steps
+### Installation
 
 1. **Clone and Setup Environment**
    ```bash
    git clone <repository-url>
-   cd langgraph_agentic_rag
-   pip install -r requirements.txt
+   cd langgraph-agentic-rag
+   uv sync
    ```
 
 2. **Configure API Keys**
@@ -263,35 +263,46 @@ print("---DECISION: GENERATION IS GROUNDED IN DOCUMENTS---")
    TAVILY_API_KEY=your_tavily_api_key
    ```
 
-3. **Initialize Knowledge Base**
+3. **Initialize Knowledge Base** (run once)
    ```bash
-   python ingestion.py  # Run once to create vector database
+   uv run python scripts/ingest.py
    ```
 
 4. **Run Application**
    ```bash
-   python main.py  # Execute test scenarios
+   uv run python main.py
    ```
 
-## 📋 Required Dependencies
+### Other Commands
 
-```python
-# Core LangChain components
-langchain-core>=0.3.0
-langchain-openai>=0.3.0
-langchain-community>=0.3.0
-langchain-chroma>=0.2.0
-langchain-tavily>=0.2.0
+```bash
+# Run tests
+uv run pytest -s -v
 
-# Graph and state management
-langgraph>=0.2.0
+# Generate graph visualization
+uv run python scripts/visualize_graph.py
 
-# Data processing
-pydantic>=2.0.0
-python-dotenv>=1.0.0
+# Clean up pycache folders (PowerShell)
+.\scripts\cleanup.ps1
+```
 
-# Vector database
-chromadb>=0.5.0
+## 📋 Dependencies
+
+```toml
+[project]
+dependencies = [
+    "langchain>=0.3.25",
+    "langchain-core>=0.3.0",
+    "langchain-openai>=0.3.23",
+    "langchain-community>=0.3.25",
+    "langchain-text-splitters>=0.3.8",
+    "langchain-chroma>=0.2.4",
+    "langchain-tavily>=0.2.3",
+    "langgraph>=0.5.0",
+    "python-dotenv>=1.0.0",
+    "tiktoken>=0.9.0",
+    "pytest>=8.4.1",
+]
 ```
 
 ## 🔍 Performance Characteristics
@@ -306,53 +317,44 @@ chromadb>=0.5.0
 - **Web Search**: ~5-7 seconds including external API calls
 - **Quality Validation**: Additional 1-2 seconds per validation stage
 
-### Cost Optimization
-- **Intelligent routing** minimizes unnecessary web searches
-- **Efficient chunking** reduces embedding costs
-- **Structured outputs** minimize token usage
-
 ## 🎨 Visual Workflow
 
-The system generates a **complete workflow visualization** (`complete_rag_graph.png`) showing:
+Generate the workflow visualization:
+```bash
+uv run python scripts/visualize_graph.py
+```
+
+The output (`outputs/rag_graph.png`) shows:
 - **Node relationships** and conditional routing
 - **Decision points** and validation stages
 - **Self-correction loops** and retry mechanisms
 
 ## 🔮 Future Enhancements
 
-### Planned Improvements
 - **Multi-modal support** for image and document analysis
 - **Conversation memory** for contextual follow-up questions
 - **Custom knowledge base** integration for domain-specific content
 - **Performance monitoring** and analytics dashboard
 - **Batch processing** for multiple query handling
 
-### Scalability Considerations
-- **Distributed vector storage** for larger knowledge bases
-- **Caching mechanisms** for frequently accessed content
-- **Load balancing** for high-traffic scenarios
-- **Model fine-tuning** for domain-specific improvements
+## 📊 Portfolio Highlights
 
-## 📊 Benefits for Portfolio Demonstration
+This project demonstrates:
 
-This project showcases:
-
-### **Advanced AI Engineering Skills**
-- **Complex graph workflows** with LangGraph
-- **Multi-stage validation** systems
-- **Intelligent routing** and decision making
-- **Error handling** and self-correction
+### **Advanced AI Engineering**
+- Complex graph workflows with LangGraph
+- Multi-stage validation systems
+- Intelligent routing and decision making
+- Error handling and self-correction
 
 ### **Production-Ready Architecture**
-- **Modular design** with clear separation of concerns
-- **Comprehensive logging** and monitoring
-- **Type safety** with Pydantic and TypedDict
-- **Scalable structure** for enterprise deployment
+- Modular design with clear separation of concerns
+- Centralized configuration management
+- Cached LLM instances for efficiency
+- Type safety with Pydantic and TypedDict
 
 ### **Integration Expertise**
-- **Multiple LLM providers** (OpenAI)
-- **External APIs** (Tavily search)
-- **Vector databases** (Chroma)
-- **Modern Python practices** and tooling
-
-This **Agentic RAG system** represents a sophisticated approach to intelligent information retrieval, demonstrating expertise in cutting-edge AI technologies and production-ready software architecture.
+- OpenAI GPT-4.1-mini & embeddings
+- Tavily search API
+- ChromaDB vector database
+- Modern Python tooling (uv, pytest)
