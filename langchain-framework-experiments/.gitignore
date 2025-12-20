@@ -159,3 +159,6 @@ Thumbs.db
 # Vector stores
 .chromadb/
 .sqlite/
+
+# LangSmith studio
+.langgraph_api/
