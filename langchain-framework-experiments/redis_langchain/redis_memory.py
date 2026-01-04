@@ -35,7 +35,7 @@ redis_client = redis.Redis(host="localhost", port=6379, db=0) # specify the data
 def get_redis_history(session_id: str) -> BaseChatMessageHistory:
     return RedisChatMessageHistory(session_id=session_id, redis_client=redis_client)
 
-# Define the chain with history from redis
+# Define the chain with history from redis and the new query from the user
 chain_with_history = RunnableWithMessageHistory(
     chain,
     get_session_history=get_redis_history,
@@ -49,6 +49,6 @@ if __name__ == "__main__":
         user_question = input(">>>>")
         result = chain_with_history.invoke(
             {"question": user_question},
-            config={"configurable": {"session_id": "session_3"}}
+            config={"configurable": {"session_id": "session_4"}}
         )
         print(result.content)
