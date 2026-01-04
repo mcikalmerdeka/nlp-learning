@@ -12,6 +12,7 @@ dependencies = [
     "langchain-community>=0.4.1",
     "langchain-core>=1.1.1",
     "langchain-openai>=1.1.0",
+    "langchain-redis>=0.2.5",
     "langchain-tavily>=0.2.15",
     "langchain-text-splitters>=1.0.0",
     "langgraph>=1.0.4",
@@ -19,4 +20,5 @@ dependencies = [
     "pydantic>=2.12.5",
     "pypdf>=6.4.1",
     "python-dotenv>=1.2.1",
+    "redis>=7.1.0",
 ]
