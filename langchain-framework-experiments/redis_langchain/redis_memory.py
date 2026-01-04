@@ -11,25 +11,31 @@ from langchain_core.chat_history import (
 )
 from langchain_redis import RedisChatMessageHistory
 
+# Initialize the llm
 model = ChatOpenAI(model="gpt-4.1-nano", api_key=os.getenv("OPENAI_API_KEY"))
 
+# Define the prompt template
 human_template = f"{{question}}"
 prompt_template = ChatPromptTemplate.from_messages(
     [
+        # Add the history to the prompt
         MessagesPlaceholder(variable_name="history"),
+        # Add the human message to the prompt
         ("human", human_template),
     ]
 )
+
+# Define the chain
 chain = prompt_template | model
 
+# Initialize the redis client
+redis_client = redis.Redis(host="localhost", port=6379, db=0) # specify the database number (default is 0)
 
-redis_client = redis.Redis(host="localhost", port=6379)
-
-
+# Define the function to get the redis history
 def get_redis_history(session_id: str) -> BaseChatMessageHistory:
     return RedisChatMessageHistory(session_id=session_id, redis_client=redis_client)
 
-
+# Define the chain with history from redis
 chain_with_history = RunnableWithMessageHistory(
     chain,
     get_session_history=get_redis_history,
@@ -37,10 +43,12 @@ chain_with_history = RunnableWithMessageHistory(
     history_messages_key="history",
 )
 
-while True:
-    user_question = input(">>>>")
-    result = chain_with_history.invoke(
-        {"question": user_question},
-        config={"configurable": {"session_id": "session_1"}},
-    )
-    print(result.content)
+# Define the main conversation loop
+if __name__ == "__main__":
+    while True:
+        user_question = input(">>>>")
+        result = chain_with_history.invoke(
+            {"question": user_question},
+            config={"configurable": {"session_id": "session_3"}}
+        )
+        print(result.content)
