@@ -1,0 +1,171 @@
+Source: https://chatgpt.com/c/695a7dd7-b398-8323-849d-0c231e9e98db
+
+can you research the internet about langchain runnables implementation and based on these classes from the official docs code search which one are the widely used?
+
+    "AddableDict",
+    "ConfigurableField",
+    "ConfigurableFieldMultiOption",
+    "ConfigurableFieldSingleOption",
+    "ConfigurableFieldSpec",
+    "RouterInput",
+    "RouterRunnable",
+    "Runnable",
+    "RunnableAssign",
+    "RunnableBinding",
+    "RunnableBranch",
+    "RunnableConfig",
+    "RunnableGenerator",
+    "RunnableLambda",
+    "RunnableMap",
+    "RunnableParallel",
+    "RunnablePassthrough",
+    "RunnablePick",
+    "RunnableSequence",
+    "RunnableSerializable",
+    "RunnableWithFallbacks",
+    "RunnableWithMessageHistory",
+    "aadd",
+    "add",
+    "chain",
+    "ensure_config",
+    "get_config_list",
+    "patch_config",
+    "run_in_executor",
+
+Here’s a research-based overview of **LangChain Runnables** (from the official docs, API references, and community resources), plus an assessment of which classes in your list are *widely used in practice* when implementing Runnables and composing workflows.
+
+---
+
+## 📌 What *Runnables* Are in LangChain
+
+A **Runnable** is the foundational abstraction in LangChain’s newer execution model (LCEL — LangChain Expression Language). It represents a **unit of work** that can be:
+
+* **invoked** (sync or async)
+* **batched**
+* **streamed**
+* **composed** with other runnables
+
+These units can be as simple as a prompt to an LLM or as complex as a whole chain. ([LangChain Reference][1])
+
+---
+
+## 🧱 Core Runnable Classes (Widely Used)
+
+These are the most central and commonly used Runnable-related classes in real code and official docs:
+
+### ✅ `Runnable`
+
+The **base interface** — every runnable extends this. You rarely instantiate it directly, but most LangChain components (LLMs, prompts, output parsers, etc.) implement it, which is what makes runnable composition possible. ([Dart packages][2])
+
+---
+
+### ✅ Composition Primitives
+
+These are fundamental blocks for assembling workflows:
+
+| Class                  | Description                                                                             | Usage                                                                  |
+| ---------------------- | --------------------------------------------------------------------------------------- | ---------------------------------------------------------------------- |
+| **`RunnableSequence`** | Chains multiple runnables *sequentially* (output of one → input of next).               | Used in nearly every composed workflow. ([LangChain Reference][1])     |
+| **`RunnableParallel`** | Runs runnable mappings *in parallel* on the same input.                                 | Used when parallel tasks are needed. ([LangChain Reference][1])        |
+| **`RunnableMap`**      | Alias or parallel equivalent in some APIs (runs multiple runnables and returns a dict). | Used when you need dictionary-structured multi-outputs. ([AiDocZh][3]) |
+
+➡️ *`RunnableSequence`* and *parallel* constructs are arguably the **most widely used** since they are essential for chaining and parallelizing tasks in pipelines. ([LangChain Reference][1])
+
+---
+
+### ✅ Lightweight Runnable Wrappers
+
+These provide simple ways to turn code into runnable steps:
+
+| Class                   | Purpose                                                   |                                                                |
+| ----------------------- | --------------------------------------------------------- | -------------------------------------------------------------- |
+| **`RunnableLambda`**    | Wraps a Python function/callable into a Runnable.         | Very common for custom logic. ([LangChain Reference][1])       |
+| **`RunnableGenerator`** | Wraps a generator (i.e., streaming or iterative outputs). | Used when streaming results needed. ([LangChain Reference][1]) |
+
+---
+
+### ✅ Control & Conditional Execution
+
+| Class                | Purpose                                                          |                                                                   |
+| -------------------- | ---------------------------------------------------------------- | ----------------------------------------------------------------- |
+| **`RouterRunnable`** | Routes execution to sub-runnables based on a key in the input.   | Used for conditional logic or routing. ([LangChain][4])           |
+| **`RunnableBranch`** | Conditional branching utility (older/less common but available). | Used when you want condition → runnable mapping. ([LangChain][5]) |
+
+---
+
+### ⚙️ Functional Helpers & Decorators
+
+These aren’t runnables per se but support how runnables are composed or executed:
+
+| Function              | Purpose                                                                 |                                                              |
+| --------------------- | ----------------------------------------------------------------------- | ------------------------------------------------------------ |
+| **`chain`**           | Decorator to create a runnable chain from a function (syntactic sugar). | Common for custom chains (community examples). ([Reddit][6]) |
+| **`run_in_executor`** | Utilities around concurrency/async execution.                           | Useful in custom situations (not core to most workflows).    |
+| **`add` / `aadd`**    | Internal helpers for runnable map/parallel constructs.                  |                                                              |
+
+---
+
+## 🧰 Other Runnable-Related Classes (Less Frequently Used)
+
+These appear in the codebase but are **less commonly used** in everyday LangChain pipelines:
+
+| Class                                     | Typical Use                                        |                                                                    |
+| ----------------------------------------- | -------------------------------------------------- | ------------------------------------------------------------------ |
+| **`RunnableWithFallbacks`**               | Wraps a runnable to fallback to others on failure. | Useful but specialized. ([LangChain Reference][7])                 |
+| **`RunnableWithMessageHistory`**          | Tracks message history for debugging/logging.      | Useful for conversational workflows. ([GitHub][8])                 |
+| **`RunnableAssign` / `RunnablePick`**     | Helpers that assign or pick keys in dict outputs.  | Handy in transformation pipelines (less central). ([Mirascope][9]) |
+| **`RunnableConfig` / ConfigurableField+** | Support runtime configuration and UI forms.        | Primarily for introspection and tooling.                           |
+| **`RunnableSerializable`**                | Enables serialization of runnables.                | Useful for persistence; not used in basic pipelines.               |
+| **AddableDict**                           | Utility base class for dict manipulations.         | Ancillary.                                                         |
+
+---
+
+## 📊 Summary: Widely Used vs Less Used
+
+### **Most Essential & Widely Used**
+
+1. **Runnable** (base)
+2. **RunnableSequence**
+3. **RunnableParallel / RunnableMap**
+4. **RunnableLambda**
+5. **RunnableGenerator**
+6. **RouterRunnable**
+
+These appear in most LangChain runnable workflows and form the core of pipeline composition. ([LangChain Reference][1])
+
+---
+
+### **Used Less Often or in Special Cases**
+
+* **RunnableBranch**
+* **RunnableWithFallbacks**
+* **RunnableWithMessageHistory**
+* **RunnableAssign / Pick**
+* **RunnableConfig / ConfigurableField…**
+* Helpers like `add`, `aadd`, config utilities, and executor utilities
+
+These are useful, but not *core* in typical workflows. ([Mirascope][9])
+
+---
+
+## 🧠 Practical Tip
+
+When building LangChain systems in Python (or JS/TS):
+
+* Start by composing **RunnableSequence** and **RunnableParallel** with **RunnableLambda** or model runnables.
+* Use **RouterRunnable** when you need dynamic routing.
+* Add fallback, history, or configurable behavior only when your logic demands it.
+
+---
+
+If you want, I can dive deeper into **code examples** for how to use these in Python or JavaScript!
+
+[1]: https://reference.langchain.com/python/langchain_core/runnables/?utm_source=chatgpt.com "Runnables | LangChain Reference"
+[2]: https://pub.dev/documentation/langchain/latest/langchain/Runnable-class.html?utm_source=chatgpt.com "Runnable class - langchain library - Dart API"
+[3]: https://aidoczh.com/langchain/api_reference/core/runnables/langchain_core.runnables.base.RunnableMap.html?utm_source=chatgpt.com "RunnableMap — LangChain documentation - AiDocZh"
+[4]: https://api.python.langchain.com/en/latest/core/runnables/langchain_core.runnables.router.RouterRunnable.html?utm_source=chatgpt.com "RouterRunnable — 🦜🔗 LangChain documentation"
+[5]: https://js.langchain.com/docs/how_to/routing?utm_source=chatgpt.com "How to route execution within a chain | 🦜️🔗 Langchain"
+[6]: https://www.reddit.com/r/LangChain/comments/1bvy2ws?utm_source=chatgpt.com "How to deploy langgraph using langserve?"
+[7]: https://reference.langchain.com/javascript/classes/_langchain_core.runnables.RunnableWithFallbacks.html?utm_source=chatgpt.com "RunnableWithFallbacks | langchain.js"
+[8]: https://github.com/langchain-ai/langchain/blob/master/libs/core/langchain_core/runnables/history.py?utm_source=chatgpt.com "langchain/libs/core/langchain_core/runnables/history.py at master"
+[9]: https://mirascope.com/blog/langchain-runnables?utm_source=chatgpt.com "Understanding LangChain Runnables - Mirascope"
