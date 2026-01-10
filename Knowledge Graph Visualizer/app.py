@@ -34,16 +34,17 @@ if input_method == "Upload txt":
         if st.sidebar.button("Generate Knowledge Graph"):
             with st.spinner("Generating knowledge graph..."):
                 # Call the function to generate the graph from the text
+                output_file = "knowledge_graph_3.html"
                 net = generate_knowledge_graph(text)
-                st.success("Knowledge graph generated successfully!")
                 
-                # Save the graph to an HTML file
-                output_file = "knowledge_graph.html"
-                net.save_graph(output_file) 
-
-                # Open the HTML file and display it within the Streamlit app
-                HtmlFile = open(output_file, 'r', encoding='utf-8')
-                components.html(HtmlFile.read(), height=1000)
+                if net is not None:
+                    st.success("Knowledge graph generated successfully!")
+                    
+                    # Open the HTML file and display it within the Streamlit app
+                    HtmlFile = open(output_file, 'r', encoding='utf-8')
+                    components.html(HtmlFile.read(), height=1000)
+                else:
+                    st.error("Failed to generate knowledge graph. Check console for errors.")
 
 # Case 2: User chooses to directly input text
 else:
@@ -54,13 +55,14 @@ else:
         if st.sidebar.button("Generate Knowledge Graph"):
             with st.spinner("Generating knowledge graph..."):
                 # Call the function to generate the graph from the input text
+                output_file = "knowledge_graph_3.html"
                 net = generate_knowledge_graph(text)
-                st.success("Knowledge graph generated successfully!")
                 
-                # Save the graph to an HTML file
-                output_file = "knowledge_graph.html"
-                net.save_graph(output_file) 
-
-                # Open the HTML file and display it within the Streamlit app
-                HtmlFile = open(output_file, 'r', encoding='utf-8')
-                components.html(HtmlFile.read(), height=1000)
+                if net is not None:
+                    st.success("Knowledge graph generated successfully!")
+                    
+                    # Open the HTML file and display it within the Streamlit app
+                    HtmlFile = open(output_file, 'r', encoding='utf-8')
+                    components.html(HtmlFile.read(), height=1000)
+                else:
+                    st.error("Failed to generate knowledge graph. Check console for errors.")

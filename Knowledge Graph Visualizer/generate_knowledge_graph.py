@@ -4,17 +4,14 @@ from langchain_openai import ChatOpenAI
 from pyvis.network import Network
 
 from dotenv import load_dotenv
-import os
 import asyncio
 from pathlib import Path
 
 
 # Load the .env file
 load_dotenv()
-# Get API key from environment variable
-api_key = os.getenv("OPENAI_API_KEY")
 
-llm = ChatOpenAI(temperature=0, model_name="gpt-4.1")
+llm = ChatOpenAI(temperature=0, model_name="gpt-4.1-mini")
 
 graph_transformer = LLMGraphTransformer(llm=llm)
 
@@ -103,9 +100,9 @@ def visualize_graph(graph_documents):
 
     # Save the graph
     current_dir = Path.cwd()
-    output_file = current_dir / "knowledge_graph.html"
+    output_file = current_dir / "knowledge_graph_3.html"
     try:
-        net.save_graph(output_file)
+        net.save_graph(str(output_file))
         print(f"Graph saved to {output_file}")
         return net
     except Exception as e:
