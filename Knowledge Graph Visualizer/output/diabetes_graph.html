@@ -1,0 +1,492 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        
+            <script>function neighbourhoodHighlight(params) {
+  // console.log("in nieghbourhoodhighlight");
+  allNodes = nodes.get({ returnType: "Object" });
+  // originalNodes = JSON.parse(JSON.stringify(allNodes));
+  // if something is selected:
+  if (params.nodes.length > 0) {
+    highlightActive = true;
+    var i, j;
+    var selectedNode = params.nodes[0];
+    var degrees = 2;
+
+    // mark all nodes as hard to read.
+    for (let nodeId in allNodes) {
+      // nodeColors[nodeId] = allNodes[nodeId].color;
+      allNodes[nodeId].color = "rgba(200,200,200,0.5)";
+      if (allNodes[nodeId].hiddenLabel === undefined) {
+        allNodes[nodeId].hiddenLabel = allNodes[nodeId].label;
+        allNodes[nodeId].label = undefined;
+      }
+    }
+    var connectedNodes = network.getConnectedNodes(selectedNode);
+    var allConnectedNodes = [];
+
+    // get the second degree nodes
+    for (i = 1; i < degrees; i++) {
+      for (j = 0; j < connectedNodes.length; j++) {
+        allConnectedNodes = allConnectedNodes.concat(
+          network.getConnectedNodes(connectedNodes[j])
+        );
+      }
+    }
+
+    // all second degree nodes get a different color and their label back
+    for (i = 0; i < allConnectedNodes.length; i++) {
+      // allNodes[allConnectedNodes[i]].color = "pink";
+      allNodes[allConnectedNodes[i]].color = "rgba(150,150,150,0.75)";
+      if (allNodes[allConnectedNodes[i]].hiddenLabel !== undefined) {
+        allNodes[allConnectedNodes[i]].label =
+          allNodes[allConnectedNodes[i]].hiddenLabel;
+        allNodes[allConnectedNodes[i]].hiddenLabel = undefined;
+      }
+    }
+
+    // all first degree nodes get their own color and their label back
+    for (i = 0; i < connectedNodes.length; i++) {
+      // allNodes[connectedNodes[i]].color = undefined;
+      allNodes[connectedNodes[i]].color = nodeColors[connectedNodes[i]];
+      if (allNodes[connectedNodes[i]].hiddenLabel !== undefined) {
+        allNodes[connectedNodes[i]].label =
+          allNodes[connectedNodes[i]].hiddenLabel;
+        allNodes[connectedNodes[i]].hiddenLabel = undefined;
+      }
+    }
+
+    // the main node gets its own color and its label back.
+    // allNodes[selectedNode].color = undefined;
+    allNodes[selectedNode].color = nodeColors[selectedNode];
+    if (allNodes[selectedNode].hiddenLabel !== undefined) {
+      allNodes[selectedNode].label = allNodes[selectedNode].hiddenLabel;
+      allNodes[selectedNode].hiddenLabel = undefined;
+    }
+  } else if (highlightActive === true) {
+    // console.log("highlightActive was true");
+    // reset all nodes
+    for (let nodeId in allNodes) {
+      // allNodes[nodeId].color = "purple";
+      allNodes[nodeId].color = nodeColors[nodeId];
+      // delete allNodes[nodeId].color;
+      if (allNodes[nodeId].hiddenLabel !== undefined) {
+        allNodes[nodeId].label = allNodes[nodeId].hiddenLabel;
+        allNodes[nodeId].hiddenLabel = undefined;
+      }
+    }
+    highlightActive = false;
+  }
+
+  // transform the object into an array
+  var updateArray = [];
+  if (params.nodes.length > 0) {
+    for (let nodeId in allNodes) {
+      if (allNodes.hasOwnProperty(nodeId)) {
+        // console.log(allNodes[nodeId]);
+        updateArray.push(allNodes[nodeId]);
+      }
+    }
+    nodes.update(updateArray);
+  } else {
+    // console.log("Nothing was selected");
+    for (let nodeId in allNodes) {
+      if (allNodes.hasOwnProperty(nodeId)) {
+        // console.log(allNodes[nodeId]);
+        // allNodes[nodeId].color = {};
+        updateArray.push(allNodes[nodeId]);
+      }
+    }
+    nodes.update(updateArray);
+  }
+}
+
+function filterHighlight(params) {
+  allNodes = nodes.get({ returnType: "Object" });
+  // if something is selected:
+  if (params.nodes.length > 0) {
+    filterActive = true;
+    let selectedNodes = params.nodes;
+
+    // hiding all nodes and saving the label
+    for (let nodeId in allNodes) {
+      allNodes[nodeId].hidden = true;
+      if (allNodes[nodeId].savedLabel === undefined) {
+        allNodes[nodeId].savedLabel = allNodes[nodeId].label;
+        allNodes[nodeId].label = undefined;
+      }
+    }
+
+    for (let i=0; i < selectedNodes.length; i++) {
+      allNodes[selectedNodes[i]].hidden = false;
+      if (allNodes[selectedNodes[i]].savedLabel !== undefined) {
+        allNodes[selectedNodes[i]].label = allNodes[selectedNodes[i]].savedLabel;
+        allNodes[selectedNodes[i]].savedLabel = undefined;
+      }
+    }
+
+  } else if (filterActive === true) {
+    // reset all nodes
+    for (let nodeId in allNodes) {
+      allNodes[nodeId].hidden = false;
+      if (allNodes[nodeId].savedLabel !== undefined) {
+        allNodes[nodeId].label = allNodes[nodeId].savedLabel;
+        allNodes[nodeId].savedLabel = undefined;
+      }
+    }
+    filterActive = false;
+  }
+
+  // transform the object into an array
+  var updateArray = [];
+  if (params.nodes.length > 0) {
+    for (let nodeId in allNodes) {
+      if (allNodes.hasOwnProperty(nodeId)) {
+        updateArray.push(allNodes[nodeId]);
+      }
+    }
+    nodes.update(updateArray);
+  } else {
+    for (let nodeId in allNodes) {
+      if (allNodes.hasOwnProperty(nodeId)) {
+        updateArray.push(allNodes[nodeId]);
+      }
+    }
+    nodes.update(updateArray);
+  }
+}
+
+function selectNode(nodes) {
+  network.selectNodes(nodes);
+  neighbourhoodHighlight({ nodes: nodes });
+  return nodes;
+}
+
+function selectNodes(nodes) {
+  network.selectNodes(nodes);
+  filterHighlight({nodes: nodes});
+  return nodes;
+}
+
+function highlightFilter(filter) {
+  let selectedNodes = []
+  let selectedProp = filter['property']
+  if (filter['item'] === 'node') {
+    let allNodes = nodes.get({ returnType: "Object" });
+    for (let nodeId in allNodes) {
+      if (allNodes[nodeId][selectedProp] && filter['value'].includes((allNodes[nodeId][selectedProp]).toString())) {
+        selectedNodes.push(nodeId)
+      }
+    }
+  }
+  else if (filter['item'] === 'edge'){
+    let allEdges = edges.get({returnType: 'object'});
+    // check if the selected property exists for selected edge and select the nodes connected to the edge
+    for (let edge in allEdges) {
+      if (allEdges[edge][selectedProp] && filter['value'].includes((allEdges[edge][selectedProp]).toString())) {
+        selectedNodes.push(allEdges[edge]['from'])
+        selectedNodes.push(allEdges[edge]['to'])
+      }
+    }
+  }
+  selectNodes(selectedNodes)
+}</script>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/dist/vis-network.min.css" integrity="sha512-WgxfT5LWjfszlPHXRmBWHkV2eceiWTOBvrKCNbdgDYTHrT2AeLCGbF4sZlZw3UMN3WtL0tGUoIAKsu8mllg/XA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/vis-network.min.js" integrity="sha512-LnvoEWDFrqGHlHmDD2101OrLcbsfkrzoSpvtSQtxK3RMnRV0eOkhhBN2dXHKRrUU8p2DGRTk35n4O8nWSVe1mQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+            
+            
+            
+            
+            
+            
+                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tom-select/2.0.0-rc.4/css/tom-select.min.css" integrity="sha512-43fHB3GLgZfz8QXl1RPQ8O66oIgv3po9cJ5erMt1c4QISq9dYb195T3vr5ImnJPXuVroKcGBPXBFKETW8jrPNQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/tom-select/2.0.0-rc.4/js/tom-select.complete.js" integrity="sha512-jeF9CfnvzDiw9G9xiksVjxR2lib44Gnovvkv+3CgCG6NXCD4gqlA5nDAVW5WjpA+i+/zKsUWV5xNEbW1X/HH0Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+            
+
+        
+<center>
+<h1></h1>
+</center>
+
+<!-- <link rel="stylesheet" href="../node_modules/vis/dist/vis.min.css" type="text/css" />
+<script type="text/javascript" src="../node_modules/vis/dist/vis.js"> </script>-->
+        <link
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+          crossorigin="anonymous"
+        />
+        <script
+          src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+          crossorigin="anonymous"
+        ></script>
+
+
+        <center>
+          <h1></h1>
+        </center>
+        <style type="text/css">
+
+             #mynetwork {
+                 width: 100%;
+                 height: 1200px;
+                 background-color: #222222;
+                 border: 1px solid lightgray;
+                 position: relative;
+                 float: left;
+             }
+
+             
+
+             
+
+             
+        </style>
+    </head>
+
+
+    <body>
+        <div class="card" style="width: 100%">
+            
+            
+              <div id="filter-menu" class="card-header">
+                <div class="row no-gutters">
+                  <div class="col-3 pb-2">
+                    <select
+                            class="form-select"
+                            aria-label="Default select example"
+                            onchange="updateFilter(value, 'item')"
+                            id="select-item"
+                        >
+                        <option value="">Select a network item</option>
+                        <option value="edge">edge</option>
+                        <option value="node">node</option>
+                    </select>
+                  </div>
+                  <div class="col-3 pb-2">
+                    <select
+                            class="form-select"
+                            aria-label="Default select example"
+                            onchange="updateFilter(value, 'property')"
+                            id="select-property"
+                        >
+                        <option value="">Select a property...</option>
+                    </select>
+                  </div>
+                  <div class="col-3 pb-2">
+                    <select
+                            class="form-select"
+                            aria-label="Default select example"
+                            id="select-value"
+                        >
+                        <option value="">Select value(s)...</option>
+                    </select>
+                  </div>
+                  <div class="col-1 pb-2">
+                    <button type="button" class="btn btn-primary btn-block" onclick="highlightFilter(filter);">Filter</button>
+                  </div>
+                  <div class="col-2 pb-2">
+                    <button type="button" class="btn btn-primary btn-block" onclick="clearFilter(true)">Reset Selection</button>
+                  </div>
+                </div>
+              </div>
+            
+            <div id="mynetwork" class="card-body"></div>
+        </div>
+
+        
+        
+
+        <script type="text/javascript">
+
+              // initialize global variables.
+              var edges;
+              var nodes;
+              var allNodes;
+              var allEdges;
+              var nodeColors;
+              var originalNodes;
+              var network;
+              var container;
+              var options, data;
+              var filter = {
+                  item : '',
+                  property : '',
+                  value : []
+              };
+
+              
+
+              
+                  // explicitly using onItemAdd and this function as we need to save multiple values
+                  let updateValueFilter = function() {
+                      return function () {
+                      filter['value'].push(arguments[0])
+                      }
+                  }
+
+                  let valueControl = new TomSelect("#select-value",{
+                      maxItems: null,
+                      valueField: 'id',
+                      labelField: 'title',
+                      searchField: 'title',
+                      create: false,
+                      sortField: {
+                          field: "text",
+                          direction: "asc"
+                      },
+                      onItemAdd: updateValueFilter()
+                  });
+
+                  let addValues = function() {
+                      return function () {
+                          // clear the current value options and add the selected attribute values
+                          // tom-select handles duplicates
+                          let selectedProperty = arguments[0];
+                          valueControl.clear();
+                          valueControl.clearOptions();
+                          filter['value'] = []
+                          if (filter['item'] === 'node') {
+                              for (let each in allNodes) {
+                                  valueControl.addOption({
+                                      id:allNodes[each][selectedProperty],
+                                      title:allNodes[each][selectedProperty]
+                                  })
+                              }
+                          }
+                          else if (filter['item'] === 'edge') {
+                              for (let each in allEdges) {
+                                  valueControl.addOption({
+                                      id:allEdges[each][selectedProperty],
+                                      title:allEdges[each][selectedProperty]
+                                  })
+                              }
+                          }
+                      }
+                  };
+
+                  let propControl = new TomSelect("#select-property",{
+                      valueField: 'id',
+                      labelField: 'title',
+                      searchField: 'title',
+                      create: false,
+                      sortField: {
+                          field: "text",
+                          direction: "asc"
+                      },
+                      onItemAdd: addValues()
+                  });
+
+                  let addProperties = function() {
+                      return function () {
+                          // loops through the selected network item and adds the attributes to dropdown
+                          // tom-select handles duplicates
+                          clearFilter(false)
+                          if (arguments[0] === 'edge') {
+                              for (let each in allEdges) {
+                                  if (allEdges.hasOwnProperty(each)) {
+                                      for (let eachProp in allEdges[each]) {
+                                          if (allEdges[each].hasOwnProperty(eachProp)) {
+                                              propControl.addOption({id: eachProp, title: eachProp})
+                                          }
+                                      }
+                                  }
+                              }
+                          }
+                          else if (arguments[0] === 'node') {
+                              for (let each in allNodes) {
+                                  if (allNodes.hasOwnProperty(each)) {
+                                      for (let eachProp in allNodes[each]) {
+                                          if (allNodes[each].hasOwnProperty(eachProp)
+                                              && (eachProp !== 'hidden' && eachProp !== 'savedLabel'
+                                                  && eachProp !== 'hiddenLabel')) {
+                                              propControl.addOption({id: eachProp, title: eachProp})
+
+                                          }
+                                      }
+                                  }
+                              }
+                          }
+                      }
+                  };
+
+                  let itemControl = new TomSelect("#select-item",{
+                      create: false,
+                      sortField:{
+                          field: "text",
+                          direction: "asc"
+                      },
+                      onItemAdd: addProperties()
+                  });
+
+                  function clearFilter(reset) {
+                      // utility function to clear all the selected filter options
+                      // if reset is set to true, the existing filter will be removed
+                      // else, only the dropdown options are cleared
+                      propControl.clear();
+                      propControl.clearOptions();
+                      valueControl.clear();
+                      valueControl.clearOptions();
+                      filter = {
+                          item : '',
+                          property : '',
+                          value : []
+                      }
+                      if (reset) {
+                          itemControl.clear();
+                          filterHighlight({nodes: []})
+                      }
+                  }
+
+                  function updateFilter(value, key) {
+                      // key could be 'item' or 'property' and value is as selected in dropdown
+                      filter[key] = value
+                  }
+
+              
+
+              // This method is responsible for drawing the graph, returns the drawn network
+              function drawGraph() {
+                  var container = document.getElementById('mynetwork');
+
+                  
+
+                  // parsing and collecting nodes and edges from the python
+                  nodes = new vis.DataSet([{"font": {"color": "white"}, "group": "Medication", "id": "Dpp-4 Inhibitors", "label": "Dpp-4 Inhibitors", "shape": "dot", "title": "Medication"}, {"font": {"color": "white"}, "group": "Concept", "id": "Metformin Contraindications", "label": "Metformin Contraindications", "shape": "dot", "title": "Concept"}, {"font": {"color": "white"}, "group": "Condition", "id": "Metabolic Syndrome", "label": "Metabolic Syndrome", "shape": "dot", "title": "Condition"}, {"font": {"color": "white"}, "group": "Symptom", "id": "Fatigue", "label": "Fatigue", "shape": "dot", "title": "Symptom"}, {"font": {"color": "white"}, "group": "Test", "id": "Urine Albumin-To-Creatinine Ratio", "label": "Urine Albumin-To-Creatinine Ratio", "shape": "dot", "title": "Test"}, {"font": {"color": "white"}, "group": "Disease", "id": "Diabetes Mellitus", "label": "Diabetes Mellitus", "shape": "dot", "title": "Disease"}, {"font": {"color": "white"}, "group": "Concept", "id": "Metformin Interactions", "label": "Metformin Interactions", "shape": "dot", "title": "Concept"}, {"font": {"color": "white"}, "group": "Concept", "id": "Exogenous Insulin Administration", "label": "Exogenous Insulin Administration", "shape": "dot", "title": "Concept"}, {"font": {"color": "white"}, "group": "Treatment", "id": "Short-Acting Insulin", "label": "Short-Acting Insulin", "shape": "dot", "title": "Treatment"}, {"font": {"color": "white"}, "group": "Disease", "id": "Type 2 Diabetes", "label": "Type 2 Diabetes", "shape": "dot", "title": "Disease"}, {"font": {"color": "white"}, "group": "Treatment", "id": "Long-Acting Insulin", "label": "Long-Acting Insulin", "shape": "dot", "title": "Treatment"}, {"font": {"color": "white"}, "group": "Treatment", "id": "Continuous Glucose Monitoring", "label": "Continuous Glucose Monitoring", "shape": "dot", "title": "Treatment"}, {"font": {"color": "white"}, "group": "Treatment", "id": "Beta Cell Replacement And Regeneration", "label": "Beta Cell Replacement And Regeneration", "shape": "dot", "title": "Treatment"}, {"font": {"color": "white"}, "group": "Symptom", "id": "Acanthosis Nigricans", "label": "Acanthosis Nigricans", "shape": "dot", "title": "Symptom"}, {"font": {"color": "white"}, "group": "Treatment", "id": "Rapid-Acting Insulin", "label": "Rapid-Acting Insulin", "shape": "dot", "title": "Treatment"}, {"font": {"color": "white"}, "group": "Treatment", "id": "Intermediate-Acting Insulin", "label": "Intermediate-Acting Insulin", "shape": "dot", "title": "Treatment"}, {"font": {"color": "white"}, "group": "Concept", "id": "Progressive Beta Cell Failure", "label": "Progressive Beta Cell Failure", "shape": "dot", "title": "Concept"}, {"font": {"color": "white"}, "group": "Test", "id": "Oral Glucose Tolerance Test", "label": "Oral Glucose Tolerance Test", "shape": "dot", "title": "Test"}, {"font": {"color": "white"}, "group": "Complication", "id": "Cardiovascular Disease", "label": "Cardiovascular Disease", "shape": "dot", "title": "Complication"}, {"font": {"color": "white"}, "group": "Symptom", "id": "Polyphagia", "label": "Polyphagia", "shape": "dot", "title": "Symptom"}, {"font": {"color": "white"}, "group": "Complication", "id": "Diabetic Retinopathy", "label": "Diabetic Retinopathy", "shape": "dot", "title": "Complication"}, {"font": {"color": "white"}, "group": "Complication", "id": "Diabetic Foot Disease", "label": "Diabetic Foot Disease", "shape": "dot", "title": "Complication"}, {"font": {"color": "white"}, "group": "Condition", "id": "Pregnancy", "label": "Pregnancy", "shape": "dot", "title": "Condition"}, {"font": {"color": "white"}, "group": "Symptom", "id": "Unexplained Weight Loss", "label": "Unexplained Weight Loss", "shape": "dot", "title": "Symptom"}, {"font": {"color": "white"}, "group": "Concept", "id": "Insulin Interactions", "label": "Insulin Interactions", "shape": "dot", "title": "Concept"}, {"font": {"color": "white"}, "group": "Condition", "id": "Obesity", "label": "Obesity", "shape": "dot", "title": "Condition"}, {"font": {"color": "white"}, "group": "Symptom", "id": "Frequent Infections", "label": "Frequent Infections", "shape": "dot", "title": "Symptom"}, {"font": {"color": "white"}, "group": "Concept", "id": "Sulfonylurea Interactions", "label": "Sulfonylurea Interactions", "shape": "dot", "title": "Concept"}, {"font": {"color": "white"}, "group": "Test", "id": "Fasting Plasma Glucose", "label": "Fasting Plasma Glucose", "shape": "dot", "title": "Test"}, {"font": {"color": "white"}, "group": "Treatment", "id": "Immunomodulation Therapy", "label": "Immunomodulation Therapy", "shape": "dot", "title": "Treatment"}, {"font": {"color": "white"}, "group": "Disease", "id": "Type 1 Diabetes", "label": "Type 1 Diabetes", "shape": "dot", "title": "Disease"}, {"font": {"color": "white"}, "group": "Condition", "id": "Pediatric Diabetes", "label": "Pediatric Diabetes", "shape": "dot", "title": "Condition"}, {"font": {"color": "white"}, "group": "Medication", "id": "Sglt2 Inhibitors", "label": "Sglt2 Inhibitors", "shape": "dot", "title": "Medication"}, {"font": {"color": "white"}, "group": "Concept", "id": "Patient Education And Self-Management", "label": "Patient Education And Self-Management", "shape": "dot", "title": "Concept"}, {"font": {"color": "white"}, "group": "Complication", "id": "Hypoglycemia", "label": "Hypoglycemia", "shape": "dot", "title": "Complication"}, {"font": {"color": "white"}, "group": "Condition", "id": "Pregnancy And Diabetes", "label": "Pregnancy And Diabetes", "shape": "dot", "title": "Condition"}, {"font": {"color": "white"}, "group": "Concept", "id": "Absolute Insulin Deficiency", "label": "Absolute Insulin Deficiency", "shape": "dot", "title": "Concept"}, {"font": {"color": "white"}, "group": "Medication", "id": "Thiazolidinediones", "label": "Thiazolidinediones", "shape": "dot", "title": "Medication"}, {"font": {"color": "white"}, "group": "Test", "id": "Lipid Profile Assessment", "label": "Lipid Profile Assessment", "shape": "dot", "title": "Test"}, {"font": {"color": "white"}, "group": "Treatment", "id": "Gene Therapy Approaches", "label": "Gene Therapy Approaches", "shape": "dot", "title": "Treatment"}, {"font": {"color": "white"}, "group": "Symptom", "id": "Polydipsia", "label": "Polydipsia", "shape": "dot", "title": "Symptom"}, {"font": {"color": "white"}, "group": "Complication", "id": "Diabetic Ketoacidosis", "label": "Diabetic Ketoacidosis", "shape": "dot", "title": "Complication"}, {"font": {"color": "white"}, "group": "Treatment", "id": "Automated Insulin Delivery Systems", "label": "Automated Insulin Delivery Systems", "shape": "dot", "title": "Treatment"}, {"font": {"color": "white"}, "group": "Treatment", "id": "Weight Management", "label": "Weight Management", "shape": "dot", "title": "Treatment"}, {"font": {"color": "white"}, "group": "Medication", "id": "Metformin", "label": "Metformin", "shape": "dot", "title": "Medication"}, {"font": {"color": "white"}, "group": "Medication", "id": "Sulfonylureas", "label": "Sulfonylureas", "shape": "dot", "title": "Medication"}, {"font": {"color": "white"}, "group": "Concept", "id": "Sglt2 Inhibitor Contraindications", "label": "Sglt2 Inhibitor Contraindications", "shape": "dot", "title": "Concept"}, {"font": {"color": "white"}, "group": "Concept", "id": "Prognosis And Long-Term Outcomes", "label": "Prognosis And Long-Term Outcomes", "shape": "dot", "title": "Concept"}, {"font": {"color": "white"}, "group": "Concept", "id": "Insulin Resistance In Peripheral Tissues", "label": "Insulin Resistance In Peripheral Tissues", "shape": "dot", "title": "Concept"}, {"font": {"color": "white"}, "group": "Symptom", "id": "Tingling Or Numbness In Extremities", "label": "Tingling Or Numbness In Extremities", "shape": "dot", "title": "Symptom"}, {"font": {"color": "white"}, "group": "Concept", "id": "Sglt2 Inhibitor Interactions", "label": "Sglt2 Inhibitor Interactions", "shape": "dot", "title": "Concept"}, {"font": {"color": "white"}, "group": "Condition", "id": "Elderly Patients", "label": "Elderly Patients", "shape": "dot", "title": "Condition"}, {"font": {"color": "white"}, "group": "Treatment", "id": "Self-Monitoring Of Blood Glucose", "label": "Self-Monitoring Of Blood Glucose", "shape": "dot", "title": "Treatment"}, {"font": {"color": "white"}, "group": "Concept", "id": "Autoimmune Destruction Of Pancreatic Beta Cells", "label": "Autoimmune Destruction Of Pancreatic Beta Cells", "shape": "dot", "title": "Concept"}, {"font": {"color": "white"}, "group": "Medication", "id": "Glp-1 Receptor Agonists", "label": "Glp-1 Receptor Agonists", "shape": "dot", "title": "Medication"}, {"font": {"color": "white"}, "group": "Treatment", "id": "Insulin Therapy", "label": "Insulin Therapy", "shape": "dot", "title": "Treatment"}, {"font": {"color": "white"}, "group": "Concept", "id": "Ace Inhibitor/Arb Contraindications", "label": "Ace Inhibitor/Arb Contraindications", "shape": "dot", "title": "Concept"}, {"font": {"color": "white"}, "group": "Symptom", "id": "Blurred Vision", "label": "Blurred Vision", "shape": "dot", "title": "Symptom"}, {"font": {"color": "white"}, "group": "Test", "id": "Kidney Function Tests", "label": "Kidney Function Tests", "shape": "dot", "title": "Test"}, {"font": {"color": "white"}, "group": "Complication", "id": "Diabetic Neuropathy", "label": "Diabetic Neuropathy", "shape": "dot", "title": "Complication"}, {"font": {"color": "white"}, "group": "Test", "id": "C-Peptide Levels", "label": "C-Peptide Levels", "shape": "dot", "title": "Test"}, {"font": {"color": "white"}, "group": "Condition", "id": "Sedentary Lifestyle", "label": "Sedentary Lifestyle", "shape": "dot", "title": "Condition"}, {"font": {"color": "white"}, "group": "Test", "id": "Hemoglobin A1C", "label": "Hemoglobin A1C", "shape": "dot", "title": "Test"}, {"font": {"color": "white"}, "group": "Symptom", "id": "Polyuria", "label": "Polyuria", "shape": "dot", "title": "Symptom"}, {"font": {"color": "white"}, "group": "Treatment", "id": "Advanced Incretin-Based Therapies", "label": "Advanced Incretin-Based Therapies", "shape": "dot", "title": "Treatment"}, {"font": {"color": "white"}, "group": "Disease", "id": "Gestational Diabetes Mellitus", "label": "Gestational Diabetes Mellitus", "shape": "dot", "title": "Disease"}, {"font": {"color": "white"}, "group": "Complication", "id": "Diabetic Nephropathy", "label": "Diabetic Nephropathy", "shape": "dot", "title": "Complication"}, {"font": {"color": "white"}, "group": "Treatment", "id": "Physical Activity", "label": "Physical Activity", "shape": "dot", "title": "Treatment"}, {"font": {"color": "white"}, "group": "Test", "id": "Autoantibody Testing", "label": "Autoantibody Testing", "shape": "dot", "title": "Test"}, {"font": {"color": "white"}, "group": "Symptom", "id": "Slow-Healing Wounds", "label": "Slow-Healing Wounds", "shape": "dot", "title": "Symptom"}, {"font": {"color": "white"}, "group": "Complication", "id": "Hyperosmolar Hyperglycemic State", "label": "Hyperosmolar Hyperglycemic State", "shape": "dot", "title": "Complication"}, {"font": {"color": "white"}, "group": "Concept", "id": "Glp-1 Agonist Contraindications", "label": "Glp-1 Agonist Contraindications", "shape": "dot", "title": "Concept"}, {"font": {"color": "white"}, "group": "Treatment", "id": "Medical Nutrition Therapy", "label": "Medical Nutrition Therapy", "shape": "dot", "title": "Treatment"}, {"font": {"color": "white"}, "group": "Test", "id": "Random Plasma Glucose", "label": "Random Plasma Glucose", "shape": "dot", "title": "Test"}]);
+                  edges = new vis.DataSet([{"arrows": "to", "from": "Type 1 Diabetes", "label": "type_of", "to": "Diabetes Mellitus"}, {"arrows": "to", "from": "Type 2 Diabetes", "label": "type_of", "to": "Diabetes Mellitus"}, {"arrows": "to", "from": "Gestational Diabetes Mellitus", "label": "type_of", "to": "Diabetes Mellitus"}, {"arrows": "to", "from": "Type 1 Diabetes", "label": "characterized_by", "to": "Autoimmune Destruction Of Pancreatic Beta Cells"}, {"arrows": "to", "from": "Type 1 Diabetes", "label": "characterized_by", "to": "Absolute Insulin Deficiency"}, {"arrows": "to", "from": "Type 1 Diabetes", "label": "requires", "to": "Exogenous Insulin Administration"}, {"arrows": "to", "from": "Type 1 Diabetes", "label": "associated_with", "to": "Autoimmune Destruction Of Pancreatic Beta Cells"}, {"arrows": "to", "from": "Type 2 Diabetes", "label": "characterized_by", "to": "Insulin Resistance In Peripheral Tissues"}, {"arrows": "to", "from": "Type 2 Diabetes", "label": "characterized_by", "to": "Progressive Beta Cell Failure"}, {"arrows": "to", "from": "Type 2 Diabetes", "label": "associated_with", "to": "Obesity"}, {"arrows": "to", "from": "Type 2 Diabetes", "label": "associated_with", "to": "Sedentary Lifestyle"}, {"arrows": "to", "from": "Type 2 Diabetes", "label": "associated_with", "to": "Metabolic Syndrome"}, {"arrows": "to", "from": "Gestational Diabetes Mellitus", "label": "develops_during", "to": "Pregnancy"}, {"arrows": "to", "from": "Polyuria", "label": "symptom_of", "to": "Diabetes Mellitus"}, {"arrows": "to", "from": "Polydipsia", "label": "symptom_of", "to": "Diabetes Mellitus"}, {"arrows": "to", "from": "Polyphagia", "label": "symptom_of", "to": "Diabetes Mellitus"}, {"arrows": "to", "from": "Unexplained Weight Loss", "label": "symptom_of", "to": "Type 1 Diabetes"}, {"arrows": "to", "from": "Fatigue", "label": "symptom_of", "to": "Diabetes Mellitus"}, {"arrows": "to", "from": "Blurred Vision", "label": "symptom_of", "to": "Diabetes Mellitus"}, {"arrows": "to", "from": "Slow-Healing Wounds", "label": "symptom_of", "to": "Diabetes Mellitus"}, {"arrows": "to", "from": "Frequent Infections", "label": "symptom_of", "to": "Diabetes Mellitus"}, {"arrows": "to", "from": "Tingling Or Numbness In Extremities", "label": "symptom_of", "to": "Diabetic Neuropathy"}, {"arrows": "to", "from": "Acanthosis Nigricans", "label": "associated_with", "to": "Type 2 Diabetes"}, {"arrows": "to", "from": "Fasting Plasma Glucose", "label": "diagnostic_test_for", "to": "Diabetes Mellitus"}, {"arrows": "to", "from": "Oral Glucose Tolerance Test", "label": "diagnostic_test_for", "to": "Diabetes Mellitus"}, {"arrows": "to", "from": "Hemoglobin A1C", "label": "diagnostic_test_for", "to": "Diabetes Mellitus"}, {"arrows": "to", "from": "Random Plasma Glucose", "label": "diagnostic_test_for", "to": "Diabetes Mellitus"}, {"arrows": "to", "from": "C-Peptide Levels", "label": "diagnostic_test_for", "to": "Type 1 Diabetes"}, {"arrows": "to", "from": "Autoantibody Testing", "label": "diagnostic_test_for", "to": "Type 1 Diabetes"}, {"arrows": "to", "from": "Lipid Profile Assessment", "label": "diagnostic_test_for", "to": "Diabetes Mellitus"}, {"arrows": "to", "from": "Kidney Function Tests", "label": "diagnostic_test_for", "to": "Diabetic Nephropathy"}, {"arrows": "to", "from": "Urine Albumin-To-Creatinine Ratio", "label": "diagnostic_test_for", "to": "Diabetic Nephropathy"}, {"arrows": "to", "from": "Insulin Therapy", "label": "treatment_for", "to": "Type 1 Diabetes"}, {"arrows": "to", "from": "Insulin Therapy", "label": "treatment_for", "to": "Type 2 Diabetes"}, {"arrows": "to", "from": "Rapid-Acting Insulin", "label": "type_of", "to": "Insulin Therapy"}, {"arrows": "to", "from": "Short-Acting Insulin", "label": "type_of", "to": "Insulin Therapy"}, {"arrows": "to", "from": "Intermediate-Acting Insulin", "label": "type_of", "to": "Insulin Therapy"}, {"arrows": "to", "from": "Long-Acting Insulin", "label": "type_of", "to": "Insulin Therapy"}, {"arrows": "to", "from": "Metformin", "label": "treatment_for", "to": "Type 2 Diabetes"}, {"arrows": "to", "from": "Sulfonylureas", "label": "treatment_for", "to": "Type 2 Diabetes"}, {"arrows": "to", "from": "Dpp-4 Inhibitors", "label": "treatment_for", "to": "Type 2 Diabetes"}, {"arrows": "to", "from": "Sglt2 Inhibitors", "label": "treatment_for", "to": "Type 2 Diabetes"}, {"arrows": "to", "from": "Glp-1 Receptor Agonists", "label": "treatment_for", "to": "Type 2 Diabetes"}, {"arrows": "to", "from": "Thiazolidinediones", "label": "treatment_for", "to": "Type 2 Diabetes"}, {"arrows": "to", "from": "Medical Nutrition Therapy", "label": "treatment_for", "to": "Diabetes Mellitus"}, {"arrows": "to", "from": "Physical Activity", "label": "treatment_for", "to": "Diabetes Mellitus"}, {"arrows": "to", "from": "Weight Management", "label": "treatment_for", "to": "Type 2 Diabetes"}, {"arrows": "to", "from": "Self-Monitoring Of Blood Glucose", "label": "treatment_for", "to": "Diabetes Mellitus"}, {"arrows": "to", "from": "Diabetic Ketoacidosis", "label": "complication_of", "to": "Type 1 Diabetes"}, {"arrows": "to", "from": "Hyperosmolar Hyperglycemic State", "label": "complication_of", "to": "Type 2 Diabetes"}, {"arrows": "to", "from": "Hypoglycemia", "label": "complication_of", "to": "Diabetes Mellitus"}, {"arrows": "to", "from": "Cardiovascular Disease", "label": "complication_of", "to": "Diabetes Mellitus"}, {"arrows": "to", "from": "Diabetic Retinopathy", "label": "complication_of", "to": "Diabetes Mellitus"}, {"arrows": "to", "from": "Diabetic Nephropathy", "label": "complication_of", "to": "Diabetes Mellitus"}, {"arrows": "to", "from": "Diabetic Neuropathy", "label": "complication_of", "to": "Diabetes Mellitus"}, {"arrows": "to", "from": "Diabetic Foot Disease", "label": "associated_with", "to": "Diabetic Neuropathy"}, {"arrows": "to", "from": "Diabetic Foot Disease", "label": "associated_with", "to": "Cardiovascular Disease"}, {"arrows": "to", "from": "Diabetic Foot Disease", "label": "complication_of", "to": "Diabetes Mellitus"}, {"arrows": "to", "from": "Pregnancy And Diabetes", "label": "condition_in", "to": "Diabetes Mellitus"}, {"arrows": "to", "from": "Pediatric Diabetes", "label": "condition_in", "to": "Type 1 Diabetes"}, {"arrows": "to", "from": "Elderly Patients", "label": "condition_in", "to": "Diabetes Mellitus"}, {"arrows": "to", "from": "Continuous Glucose Monitoring", "label": "treatment_for", "to": "Diabetes Mellitus"}, {"arrows": "to", "from": "Automated Insulin Delivery Systems", "label": "treatment_for", "to": "Diabetes Mellitus"}, {"arrows": "to", "from": "Immunomodulation Therapy", "label": "treatment_for", "to": "Type 1 Diabetes"}, {"arrows": "to", "from": "Beta Cell Replacement And Regeneration", "label": "treatment_for", "to": "Type 1 Diabetes"}, {"arrows": "to", "from": "Gene Therapy Approaches", "label": "treatment_for", "to": "Type 1 Diabetes"}, {"arrows": "to", "from": "Advanced Incretin-Based Therapies", "label": "treatment_for", "to": "Type 2 Diabetes"}, {"arrows": "to", "from": "Metformin Interactions", "label": "interaction_with", "to": "Metformin"}, {"arrows": "to", "from": "Insulin Interactions", "label": "interaction_with", "to": "Insulin Therapy"}, {"arrows": "to", "from": "Sglt2 Inhibitor Interactions", "label": "interaction_with", "to": "Sglt2 Inhibitors"}, {"arrows": "to", "from": "Sulfonylurea Interactions", "label": "interaction_with", "to": "Sulfonylureas"}, {"arrows": "to", "from": "Metformin Contraindications", "label": "contraindicated_for", "to": "Metformin"}, {"arrows": "to", "from": "Sglt2 Inhibitor Contraindications", "label": "contraindicated_for", "to": "Sglt2 Inhibitors"}, {"arrows": "to", "from": "Glp-1 Agonist Contraindications", "label": "contraindicated_for", "to": "Glp-1 Receptor Agonists"}, {"arrows": "to", "from": "Ace Inhibitor/Arb Contraindications", "label": "contraindicated_for", "to": "Ace Inhibitor/Arb Contraindications"}, {"arrows": "to", "from": "Patient Education And Self-Management", "label": "required_for_management_of", "to": "Diabetes Mellitus"}, {"arrows": "to", "from": "Prognosis And Long-Term Outcomes", "label": "related_to", "to": "Diabetes Mellitus"}]);
+
+                  nodeColors = {};
+                  allNodes = nodes.get({ returnType: "Object" });
+                  for (nodeId in allNodes) {
+                    nodeColors[nodeId] = allNodes[nodeId].color;
+                  }
+                  allEdges = edges.get({ returnType: "Object" });
+                  // adding nodes and edges to the graph
+                  data = {nodes: nodes, edges: edges};
+
+                  var options = {"physics": {"forceAtlas2Based": {"gravitationalConstant": -100, "centralGravity": 0.01, "springLength": 200, "springConstant": 0.08}, "minVelocity": 0.75, "solver": "forceAtlas2Based"}};
+
+                  
+
+
+                  
+
+                  network = new vis.Network(container, data, options);
+
+                  
+
+                  
+
+                  
+
+
+                  
+
+                  return network;
+
+              }
+              drawGraph();
+        </script>
+    </body>
+</html>
