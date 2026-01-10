@@ -1,0 +1,492 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        
+            <script>function neighbourhoodHighlight(params) {
+  // console.log("in nieghbourhoodhighlight");
+  allNodes = nodes.get({ returnType: "Object" });
+  // originalNodes = JSON.parse(JSON.stringify(allNodes));
+  // if something is selected:
+  if (params.nodes.length > 0) {
+    highlightActive = true;
+    var i, j;
+    var selectedNode = params.nodes[0];
+    var degrees = 2;
+
+    // mark all nodes as hard to read.
+    for (let nodeId in allNodes) {
+      // nodeColors[nodeId] = allNodes[nodeId].color;
+      allNodes[nodeId].color = "rgba(200,200,200,0.5)";
+      if (allNodes[nodeId].hiddenLabel === undefined) {
+        allNodes[nodeId].hiddenLabel = allNodes[nodeId].label;
+        allNodes[nodeId].label = undefined;
+      }
+    }
+    var connectedNodes = network.getConnectedNodes(selectedNode);
+    var allConnectedNodes = [];
+
+    // get the second degree nodes
+    for (i = 1; i < degrees; i++) {
+      for (j = 0; j < connectedNodes.length; j++) {
+        allConnectedNodes = allConnectedNodes.concat(
+          network.getConnectedNodes(connectedNodes[j])
+        );
+      }
+    }
+
+    // all second degree nodes get a different color and their label back
+    for (i = 0; i < allConnectedNodes.length; i++) {
+      // allNodes[allConnectedNodes[i]].color = "pink";
+      allNodes[allConnectedNodes[i]].color = "rgba(150,150,150,0.75)";
+      if (allNodes[allConnectedNodes[i]].hiddenLabel !== undefined) {
+        allNodes[allConnectedNodes[i]].label =
+          allNodes[allConnectedNodes[i]].hiddenLabel;
+        allNodes[allConnectedNodes[i]].hiddenLabel = undefined;
+      }
+    }
+
+    // all first degree nodes get their own color and their label back
+    for (i = 0; i < connectedNodes.length; i++) {
+      // allNodes[connectedNodes[i]].color = undefined;
+      allNodes[connectedNodes[i]].color = nodeColors[connectedNodes[i]];
+      if (allNodes[connectedNodes[i]].hiddenLabel !== undefined) {
+        allNodes[connectedNodes[i]].label =
+          allNodes[connectedNodes[i]].hiddenLabel;
+        allNodes[connectedNodes[i]].hiddenLabel = undefined;
+      }
+    }
+
+    // the main node gets its own color and its label back.
+    // allNodes[selectedNode].color = undefined;
+    allNodes[selectedNode].color = nodeColors[selectedNode];
+    if (allNodes[selectedNode].hiddenLabel !== undefined) {
+      allNodes[selectedNode].label = allNodes[selectedNode].hiddenLabel;
+      allNodes[selectedNode].hiddenLabel = undefined;
+    }
+  } else if (highlightActive === true) {
+    // console.log("highlightActive was true");
+    // reset all nodes
+    for (let nodeId in allNodes) {
+      // allNodes[nodeId].color = "purple";
+      allNodes[nodeId].color = nodeColors[nodeId];
+      // delete allNodes[nodeId].color;
+      if (allNodes[nodeId].hiddenLabel !== undefined) {
+        allNodes[nodeId].label = allNodes[nodeId].hiddenLabel;
+        allNodes[nodeId].hiddenLabel = undefined;
+      }
+    }
+    highlightActive = false;
+  }
+
+  // transform the object into an array
+  var updateArray = [];
+  if (params.nodes.length > 0) {
+    for (let nodeId in allNodes) {
+      if (allNodes.hasOwnProperty(nodeId)) {
+        // console.log(allNodes[nodeId]);
+        updateArray.push(allNodes[nodeId]);
+      }
+    }
+    nodes.update(updateArray);
+  } else {
+    // console.log("Nothing was selected");
+    for (let nodeId in allNodes) {
+      if (allNodes.hasOwnProperty(nodeId)) {
+        // console.log(allNodes[nodeId]);
+        // allNodes[nodeId].color = {};
+        updateArray.push(allNodes[nodeId]);
+      }
+    }
+    nodes.update(updateArray);
+  }
+}
+
+function filterHighlight(params) {
+  allNodes = nodes.get({ returnType: "Object" });
+  // if something is selected:
+  if (params.nodes.length > 0) {
+    filterActive = true;
+    let selectedNodes = params.nodes;
+
+    // hiding all nodes and saving the label
+    for (let nodeId in allNodes) {
+      allNodes[nodeId].hidden = true;
+      if (allNodes[nodeId].savedLabel === undefined) {
+        allNodes[nodeId].savedLabel = allNodes[nodeId].label;
+        allNodes[nodeId].label = undefined;
+      }
+    }
+
+    for (let i=0; i < selectedNodes.length; i++) {
+      allNodes[selectedNodes[i]].hidden = false;
+      if (allNodes[selectedNodes[i]].savedLabel !== undefined) {
+        allNodes[selectedNodes[i]].label = allNodes[selectedNodes[i]].savedLabel;
+        allNodes[selectedNodes[i]].savedLabel = undefined;
+      }
+    }
+
+  } else if (filterActive === true) {
+    // reset all nodes
+    for (let nodeId in allNodes) {
+      allNodes[nodeId].hidden = false;
+      if (allNodes[nodeId].savedLabel !== undefined) {
+        allNodes[nodeId].label = allNodes[nodeId].savedLabel;
+        allNodes[nodeId].savedLabel = undefined;
+      }
+    }
+    filterActive = false;
+  }
+
+  // transform the object into an array
+  var updateArray = [];
+  if (params.nodes.length > 0) {
+    for (let nodeId in allNodes) {
+      if (allNodes.hasOwnProperty(nodeId)) {
+        updateArray.push(allNodes[nodeId]);
+      }
+    }
+    nodes.update(updateArray);
+  } else {
+    for (let nodeId in allNodes) {
+      if (allNodes.hasOwnProperty(nodeId)) {
+        updateArray.push(allNodes[nodeId]);
+      }
+    }
+    nodes.update(updateArray);
+  }
+}
+
+function selectNode(nodes) {
+  network.selectNodes(nodes);
+  neighbourhoodHighlight({ nodes: nodes });
+  return nodes;
+}
+
+function selectNodes(nodes) {
+  network.selectNodes(nodes);
+  filterHighlight({nodes: nodes});
+  return nodes;
+}
+
+function highlightFilter(filter) {
+  let selectedNodes = []
+  let selectedProp = filter['property']
+  if (filter['item'] === 'node') {
+    let allNodes = nodes.get({ returnType: "Object" });
+    for (let nodeId in allNodes) {
+      if (allNodes[nodeId][selectedProp] && filter['value'].includes((allNodes[nodeId][selectedProp]).toString())) {
+        selectedNodes.push(nodeId)
+      }
+    }
+  }
+  else if (filter['item'] === 'edge'){
+    let allEdges = edges.get({returnType: 'object'});
+    // check if the selected property exists for selected edge and select the nodes connected to the edge
+    for (let edge in allEdges) {
+      if (allEdges[edge][selectedProp] && filter['value'].includes((allEdges[edge][selectedProp]).toString())) {
+        selectedNodes.push(allEdges[edge]['from'])
+        selectedNodes.push(allEdges[edge]['to'])
+      }
+    }
+  }
+  selectNodes(selectedNodes)
+}</script>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/dist/vis-network.min.css" integrity="sha512-WgxfT5LWjfszlPHXRmBWHkV2eceiWTOBvrKCNbdgDYTHrT2AeLCGbF4sZlZw3UMN3WtL0tGUoIAKsu8mllg/XA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/vis-network.min.js" integrity="sha512-LnvoEWDFrqGHlHmDD2101OrLcbsfkrzoSpvtSQtxK3RMnRV0eOkhhBN2dXHKRrUU8p2DGRTk35n4O8nWSVe1mQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+            
+            
+            
+            
+            
+            
+                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tom-select/2.0.0-rc.4/css/tom-select.min.css" integrity="sha512-43fHB3GLgZfz8QXl1RPQ8O66oIgv3po9cJ5erMt1c4QISq9dYb195T3vr5ImnJPXuVroKcGBPXBFKETW8jrPNQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/tom-select/2.0.0-rc.4/js/tom-select.complete.js" integrity="sha512-jeF9CfnvzDiw9G9xiksVjxR2lib44Gnovvkv+3CgCG6NXCD4gqlA5nDAVW5WjpA+i+/zKsUWV5xNEbW1X/HH0Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+            
+
+        
+<center>
+<h1></h1>
+</center>
+
+<!-- <link rel="stylesheet" href="../node_modules/vis/dist/vis.min.css" type="text/css" />
+<script type="text/javascript" src="../node_modules/vis/dist/vis.js"> </script>-->
+        <link
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+          crossorigin="anonymous"
+        />
+        <script
+          src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+          crossorigin="anonymous"
+        ></script>
+
+
+        <center>
+          <h1></h1>
+        </center>
+        <style type="text/css">
+
+             #mynetwork {
+                 width: 100%;
+                 height: 1200px;
+                 background-color: #222222;
+                 border: 1px solid lightgray;
+                 position: relative;
+                 float: left;
+             }
+
+             
+
+             
+
+             
+        </style>
+    </head>
+
+
+    <body>
+        <div class="card" style="width: 100%">
+            
+            
+              <div id="filter-menu" class="card-header">
+                <div class="row no-gutters">
+                  <div class="col-3 pb-2">
+                    <select
+                            class="form-select"
+                            aria-label="Default select example"
+                            onchange="updateFilter(value, 'item')"
+                            id="select-item"
+                        >
+                        <option value="">Select a network item</option>
+                        <option value="edge">edge</option>
+                        <option value="node">node</option>
+                    </select>
+                  </div>
+                  <div class="col-3 pb-2">
+                    <select
+                            class="form-select"
+                            aria-label="Default select example"
+                            onchange="updateFilter(value, 'property')"
+                            id="select-property"
+                        >
+                        <option value="">Select a property...</option>
+                    </select>
+                  </div>
+                  <div class="col-3 pb-2">
+                    <select
+                            class="form-select"
+                            aria-label="Default select example"
+                            id="select-value"
+                        >
+                        <option value="">Select value(s)...</option>
+                    </select>
+                  </div>
+                  <div class="col-1 pb-2">
+                    <button type="button" class="btn btn-primary btn-block" onclick="highlightFilter(filter);">Filter</button>
+                  </div>
+                  <div class="col-2 pb-2">
+                    <button type="button" class="btn btn-primary btn-block" onclick="clearFilter(true)">Reset Selection</button>
+                  </div>
+                </div>
+              </div>
+            
+            <div id="mynetwork" class="card-body"></div>
+        </div>
+
+        
+        
+
+        <script type="text/javascript">
+
+              // initialize global variables.
+              var edges;
+              var nodes;
+              var allNodes;
+              var allEdges;
+              var nodeColors;
+              var originalNodes;
+              var network;
+              var container;
+              var options, data;
+              var filter = {
+                  item : '',
+                  property : '',
+                  value : []
+              };
+
+              
+
+              
+                  // explicitly using onItemAdd and this function as we need to save multiple values
+                  let updateValueFilter = function() {
+                      return function () {
+                      filter['value'].push(arguments[0])
+                      }
+                  }
+
+                  let valueControl = new TomSelect("#select-value",{
+                      maxItems: null,
+                      valueField: 'id',
+                      labelField: 'title',
+                      searchField: 'title',
+                      create: false,
+                      sortField: {
+                          field: "text",
+                          direction: "asc"
+                      },
+                      onItemAdd: updateValueFilter()
+                  });
+
+                  let addValues = function() {
+                      return function () {
+                          // clear the current value options and add the selected attribute values
+                          // tom-select handles duplicates
+                          let selectedProperty = arguments[0];
+                          valueControl.clear();
+                          valueControl.clearOptions();
+                          filter['value'] = []
+                          if (filter['item'] === 'node') {
+                              for (let each in allNodes) {
+                                  valueControl.addOption({
+                                      id:allNodes[each][selectedProperty],
+                                      title:allNodes[each][selectedProperty]
+                                  })
+                              }
+                          }
+                          else if (filter['item'] === 'edge') {
+                              for (let each in allEdges) {
+                                  valueControl.addOption({
+                                      id:allEdges[each][selectedProperty],
+                                      title:allEdges[each][selectedProperty]
+                                  })
+                              }
+                          }
+                      }
+                  };
+
+                  let propControl = new TomSelect("#select-property",{
+                      valueField: 'id',
+                      labelField: 'title',
+                      searchField: 'title',
+                      create: false,
+                      sortField: {
+                          field: "text",
+                          direction: "asc"
+                      },
+                      onItemAdd: addValues()
+                  });
+
+                  let addProperties = function() {
+                      return function () {
+                          // loops through the selected network item and adds the attributes to dropdown
+                          // tom-select handles duplicates
+                          clearFilter(false)
+                          if (arguments[0] === 'edge') {
+                              for (let each in allEdges) {
+                                  if (allEdges.hasOwnProperty(each)) {
+                                      for (let eachProp in allEdges[each]) {
+                                          if (allEdges[each].hasOwnProperty(eachProp)) {
+                                              propControl.addOption({id: eachProp, title: eachProp})
+                                          }
+                                      }
+                                  }
+                              }
+                          }
+                          else if (arguments[0] === 'node') {
+                              for (let each in allNodes) {
+                                  if (allNodes.hasOwnProperty(each)) {
+                                      for (let eachProp in allNodes[each]) {
+                                          if (allNodes[each].hasOwnProperty(eachProp)
+                                              && (eachProp !== 'hidden' && eachProp !== 'savedLabel'
+                                                  && eachProp !== 'hiddenLabel')) {
+                                              propControl.addOption({id: eachProp, title: eachProp})
+
+                                          }
+                                      }
+                                  }
+                              }
+                          }
+                      }
+                  };
+
+                  let itemControl = new TomSelect("#select-item",{
+                      create: false,
+                      sortField:{
+                          field: "text",
+                          direction: "asc"
+                      },
+                      onItemAdd: addProperties()
+                  });
+
+                  function clearFilter(reset) {
+                      // utility function to clear all the selected filter options
+                      // if reset is set to true, the existing filter will be removed
+                      // else, only the dropdown options are cleared
+                      propControl.clear();
+                      propControl.clearOptions();
+                      valueControl.clear();
+                      valueControl.clearOptions();
+                      filter = {
+                          item : '',
+                          property : '',
+                          value : []
+                      }
+                      if (reset) {
+                          itemControl.clear();
+                          filterHighlight({nodes: []})
+                      }
+                  }
+
+                  function updateFilter(value, key) {
+                      // key could be 'item' or 'property' and value is as selected in dropdown
+                      filter[key] = value
+                  }
+
+              
+
+              // This method is responsible for drawing the graph, returns the drawn network
+              function drawGraph() {
+                  var container = document.getElementById('mynetwork');
+
+                  
+
+                  // parsing and collecting nodes and edges from the python
+                  nodes = new vis.DataSet([{"font": {"color": "white"}, "group": "Concept", "id": "Supply Chain Control Towers", "label": "Supply Chain Control Towers", "shape": "dot", "title": "Concept"}, {"font": {"color": "white"}, "group": "Person", "id": "Catl", "label": "Catl", "shape": "dot", "title": "Person"}, {"font": {"color": "white"}, "group": "Concept", "id": "Toyota Jit", "label": "Toyota Jit", "shape": "dot", "title": "Concept"}, {"font": {"color": "white"}, "group": "Person", "id": "Tesla", "label": "Tesla", "shape": "dot", "title": "Person"}, {"font": {"color": "white"}, "group": "Concept", "id": "Tier 3 Suppliers", "label": "Tier 3 Suppliers", "shape": "dot", "title": "Concept"}, {"font": {"color": "white"}, "group": "Person", "id": "Mobileye", "label": "Mobileye", "shape": "dot", "title": "Person"}, {"font": {"color": "white"}, "group": "Person", "id": "Toyota", "label": "Toyota", "shape": "dot", "title": "Person"}, {"font": {"color": "white"}, "group": "Place", "id": "Australia", "label": "Australia", "shape": "dot", "title": "Place"}, {"font": {"color": "white"}, "group": "Concept", "id": "Steel", "label": "Steel", "shape": "dot", "title": "Concept"}, {"font": {"color": "white"}, "group": "Person", "id": "Aptiv", "label": "Aptiv", "shape": "dot", "title": "Person"}, {"font": {"color": "white"}, "group": "Person", "id": "Valeo", "label": "Valeo", "shape": "dot", "title": "Person"}, {"font": {"color": "white"}, "group": "Person", "id": "Tsmc", "label": "Tsmc", "shape": "dot", "title": "Person"}, {"font": {"color": "white"}, "group": "Concept", "id": "Raw Material Suppliers", "label": "Raw Material Suppliers", "shape": "dot", "title": "Concept"}, {"font": {"color": "white"}, "group": "Person", "id": "Tenneco", "label": "Tenneco", "shape": "dot", "title": "Person"}, {"font": {"color": "white"}, "group": "Concept", "id": "Cobalt", "label": "Cobalt", "shape": "dot", "title": "Concept"}, {"font": {"color": "white"}, "group": "Concept", "id": "Mining And Extraction", "label": "Mining And Extraction", "shape": "dot", "title": "Concept"}, {"font": {"color": "white"}, "group": "Person", "id": "Denso", "label": "Denso", "shape": "dot", "title": "Person"}, {"font": {"color": "white"}, "group": "Person", "id": "Lear Corporation", "label": "Lear Corporation", "shape": "dot", "title": "Person"}, {"font": {"color": "white"}, "group": "Concept", "id": "Chemical Manufacturers", "label": "Chemical Manufacturers", "shape": "dot", "title": "Concept"}, {"font": {"color": "white"}, "group": "Place", "id": "South Korea", "label": "South Korea", "shape": "dot", "title": "Place"}, {"font": {"color": "white"}, "group": "Person", "id": "Stmicroelectronics", "label": "Stmicroelectronics", "shape": "dot", "title": "Person"}, {"font": {"color": "white"}, "group": "Concept", "id": "Powertrain Systems", "label": "Powertrain Systems", "shape": "dot", "title": "Concept"}, {"font": {"color": "white"}, "group": "Concept", "id": "Electrical And Electronics Systems", "label": "Electrical And Electronics Systems", "shape": "dot", "title": "Concept"}, {"font": {"color": "white"}, "group": "Concept", "id": "Lithium", "label": "Lithium", "shape": "dot", "title": "Concept"}, {"font": {"color": "white"}, "group": "Concept", "id": "Body And Interior Systems", "label": "Body And Interior Systems", "shape": "dot", "title": "Concept"}, {"font": {"color": "white"}, "group": "Place", "id": "Australia Iron Ore Mining", "label": "Australia Iron Ore Mining", "shape": "dot", "title": "Place"}, {"font": {"color": "white"}, "group": "Concept", "id": "Chassis And Suspension Systems", "label": "Chassis And Suspension Systems", "shape": "dot", "title": "Concept"}, {"font": {"color": "white"}, "group": "Concept", "id": "Rare Earth Elements", "label": "Rare Earth Elements", "shape": "dot", "title": "Concept"}, {"font": {"color": "white"}, "group": "Person", "id": "Trw Automotive (Zf)", "label": "Trw Automotive (Zf)", "shape": "dot", "title": "Person"}, {"font": {"color": "white"}, "group": "Person", "id": "Kyb Corporation", "label": "Kyb Corporation", "shape": "dot", "title": "Person"}, {"font": {"color": "white"}, "group": "Place", "id": "Democratic Republic Of Congo (Drc)", "label": "Democratic Republic Of Congo (Drc)", "shape": "dot", "title": "Place"}, {"font": {"color": "white"}, "group": "Person", "id": "Qualcomm", "label": "Qualcomm", "shape": "dot", "title": "Person"}, {"font": {"color": "white"}, "group": "Concept", "id": "Battery Electric Vehicle (Bev) Materials", "label": "Battery Electric Vehicle (Bev) Materials", "shape": "dot", "title": "Concept"}, {"font": {"color": "white"}, "group": "Person", "id": "Harman International", "label": "Harman International", "shape": "dot", "title": "Person"}, {"font": {"color": "white"}, "group": "Place", "id": "China", "label": "China", "shape": "dot", "title": "Place"}, {"font": {"color": "white"}, "group": "Place", "id": "Canada", "label": "Canada", "shape": "dot", "title": "Place"}, {"font": {"color": "white"}, "group": "Concept", "id": "Nickel", "label": "Nickel", "shape": "dot", "title": "Concept"}, {"font": {"color": "white"}, "group": "Person", "id": "Infineon Technologies", "label": "Infineon Technologies", "shape": "dot", "title": "Person"}, {"font": {"color": "white"}, "group": "Person", "id": "Adient", "label": "Adient", "shape": "dot", "title": "Person"}, {"font": {"color": "white"}, "group": "Place", "id": "Philippines", "label": "Philippines", "shape": "dot", "title": "Place"}, {"font": {"color": "white"}, "group": "Concept", "id": "Tier 1 Suppliers", "label": "Tier 1 Suppliers", "shape": "dot", "title": "Concept"}, {"font": {"color": "white"}, "group": "Place", "id": "Argentina", "label": "Argentina", "shape": "dot", "title": "Place"}, {"font": {"color": "white"}, "group": "Concept", "id": "Aluminum", "label": "Aluminum", "shape": "dot", "title": "Concept"}, {"font": {"color": "white"}, "group": "Place", "id": "Taiwan", "label": "Taiwan", "shape": "dot", "title": "Place"}, {"font": {"color": "white"}, "group": "Person", "id": "Continental", "label": "Continental", "shape": "dot", "title": "Person"}, {"font": {"color": "white"}, "group": "Person", "id": "Samsung Sdi", "label": "Samsung Sdi", "shape": "dot", "title": "Person"}, {"font": {"color": "white"}, "group": "Place", "id": "Guinea", "label": "Guinea", "shape": "dot", "title": "Place"}, {"font": {"color": "white"}, "group": "Concept", "id": "Electronic Component Manufacturers", "label": "Electronic Component Manufacturers", "shape": "dot", "title": "Concept"}, {"font": {"color": "white"}, "group": "Person", "id": "Brembo", "label": "Brembo", "shape": "dot", "title": "Person"}, {"font": {"color": "white"}, "group": "Person", "id": "Renesas Electronics", "label": "Renesas Electronics", "shape": "dot", "title": "Person"}, {"font": {"color": "white"}, "group": "Person", "id": "Zf Friedrichshafen", "label": "Zf Friedrichshafen", "shape": "dot", "title": "Person"}, {"font": {"color": "white"}, "group": "Place", "id": "Russia", "label": "Russia", "shape": "dot", "title": "Place"}, {"font": {"color": "white"}, "group": "Person", "id": "Gentex", "label": "Gentex", "shape": "dot", "title": "Person"}, {"font": {"color": "white"}, "group": "Person", "id": "Faurecia", "label": "Faurecia", "shape": "dot", "title": "Person"}, {"font": {"color": "white"}, "group": "Person", "id": "Nxp Semiconductors", "label": "Nxp Semiconductors", "shape": "dot", "title": "Person"}, {"font": {"color": "white"}, "group": "Person", "id": "Intel", "label": "Intel", "shape": "dot", "title": "Person"}, {"font": {"color": "white"}, "group": "Person", "id": "Panasonic", "label": "Panasonic", "shape": "dot", "title": "Person"}, {"font": {"color": "white"}, "group": "Person", "id": "Texas Instruments", "label": "Texas Instruments", "shape": "dot", "title": "Person"}, {"font": {"color": "white"}, "group": "Concept", "id": "High-Strength Steel (Hss)", "label": "High-Strength Steel (Hss)", "shape": "dot", "title": "Concept"}, {"font": {"color": "white"}, "group": "Person", "id": "Nvidia", "label": "Nvidia", "shape": "dot", "title": "Person"}, {"font": {"color": "white"}, "group": "Person", "id": "Volkswagen", "label": "Volkswagen", "shape": "dot", "title": "Person"}, {"font": {"color": "white"}, "group": "Person", "id": "Bmw", "label": "Bmw", "shape": "dot", "title": "Person"}, {"font": {"color": "white"}, "group": "Place", "id": "Indonesia", "label": "Indonesia", "shape": "dot", "title": "Place"}, {"font": {"color": "white"}, "group": "Concept", "id": "2011 Renesas Electronics Fire", "label": "2011 Renesas Electronics Fire", "shape": "dot", "title": "Concept"}, {"font": {"color": "white"}, "group": "Person", "id": "Samsung", "label": "Samsung", "shape": "dot", "title": "Person"}, {"font": {"color": "white"}, "group": "Place", "id": "Brazil Iron Ore Mining", "label": "Brazil Iron Ore Mining", "shape": "dot", "title": "Place"}, {"font": {"color": "white"}, "group": "Place", "id": "Chile", "label": "Chile", "shape": "dot", "title": "Place"}, {"font": {"color": "white"}, "group": "Concept", "id": "Just-In-Time (Jit) Manufacturing", "label": "Just-In-Time (Jit) Manufacturing", "shape": "dot", "title": "Concept"}, {"font": {"color": "white"}, "group": "Concept", "id": "Original Equipment Manufacturer (Oem)", "label": "Original Equipment Manufacturer (Oem)", "shape": "dot", "title": "Concept"}, {"font": {"color": "white"}, "group": "Person", "id": "Bosch", "label": "Bosch", "shape": "dot", "title": "Person"}, {"font": {"color": "white"}, "group": "Concept", "id": "Internet Of Things (Iot) And Sensors", "label": "Internet Of Things (Iot) And Sensors", "shape": "dot", "title": "Concept"}, {"font": {"color": "white"}, "group": "Person", "id": "Borgwarner", "label": "Borgwarner", "shape": "dot", "title": "Person"}, {"font": {"color": "white"}, "group": "Concept", "id": "Advanced High-Strength Steel (Ahss)", "label": "Advanced High-Strength Steel (Ahss)", "shape": "dot", "title": "Concept"}, {"font": {"color": "white"}, "group": "Concept", "id": "Semiconductors", "label": "Semiconductors", "shape": "dot", "title": "Concept"}, {"font": {"color": "white"}, "group": "Person", "id": "General Motors", "label": "General Motors", "shape": "dot", "title": "Person"}, {"font": {"color": "white"}, "group": "Person", "id": "Lg Energy Solution", "label": "Lg Energy Solution", "shape": "dot", "title": "Person"}, {"font": {"color": "white"}, "group": "Person", "id": "Ford", "label": "Ford", "shape": "dot", "title": "Person"}, {"font": {"color": "white"}, "group": "Person", "id": "Magna International", "label": "Magna International", "shape": "dot", "title": "Person"}, {"font": {"color": "white"}, "group": "Place", "id": "Japan", "label": "Japan", "shape": "dot", "title": "Place"}, {"font": {"color": "white"}, "group": "Concept", "id": "Tier 2 Suppliers", "label": "Tier 2 Suppliers", "shape": "dot", "title": "Concept"}]);
+                  edges = new vis.DataSet([{"arrows": "to", "from": "Original Equipment Manufacturer (Oem)", "label": "example_of", "to": "Toyota"}, {"arrows": "to", "from": "Original Equipment Manufacturer (Oem)", "label": "example_of", "to": "Ford"}, {"arrows": "to", "from": "Original Equipment Manufacturer (Oem)", "label": "example_of", "to": "General Motors"}, {"arrows": "to", "from": "Original Equipment Manufacturer (Oem)", "label": "example_of", "to": "Volkswagen"}, {"arrows": "to", "from": "Original Equipment Manufacturer (Oem)", "label": "example_of", "to": "Bmw"}, {"arrows": "to", "from": "Original Equipment Manufacturer (Oem)", "label": "example_of", "to": "Tesla"}, {"arrows": "to", "from": "Tier 1 Suppliers", "label": "includes", "to": "Powertrain Systems"}, {"arrows": "to", "from": "Powertrain Systems", "label": "major_supplier", "to": "Bosch"}, {"arrows": "to", "from": "Powertrain Systems", "label": "major_supplier", "to": "Denso"}, {"arrows": "to", "from": "Powertrain Systems", "label": "major_supplier", "to": "Continental"}, {"arrows": "to", "from": "Powertrain Systems", "label": "major_supplier", "to": "Zf Friedrichshafen"}, {"arrows": "to", "from": "Powertrain Systems", "label": "major_supplier", "to": "Borgwarner"}, {"arrows": "to", "from": "Tier 1 Suppliers", "label": "includes", "to": "Chassis And Suspension Systems"}, {"arrows": "to", "from": "Chassis And Suspension Systems", "label": "key_supplier", "to": "Brembo"}, {"arrows": "to", "from": "Chassis And Suspension Systems", "label": "key_supplier", "to": "Trw Automotive (Zf)"}, {"arrows": "to", "from": "Chassis And Suspension Systems", "label": "key_supplier", "to": "Tenneco"}, {"arrows": "to", "from": "Chassis And Suspension Systems", "label": "key_supplier", "to": "Kyb Corporation"}, {"arrows": "to", "from": "Tier 1 Suppliers", "label": "includes", "to": "Body And Interior Systems"}, {"arrows": "to", "from": "Body And Interior Systems", "label": "major_supplier", "to": "Lear Corporation"}, {"arrows": "to", "from": "Body And Interior Systems", "label": "major_supplier", "to": "Adient"}, {"arrows": "to", "from": "Body And Interior Systems", "label": "major_supplier", "to": "Faurecia"}, {"arrows": "to", "from": "Body And Interior Systems", "label": "major_supplier", "to": "Magna International"}, {"arrows": "to", "from": "Tier 1 Suppliers", "label": "includes", "to": "Electrical And Electronics Systems"}, {"arrows": "to", "from": "Electrical And Electronics Systems", "label": "leading_supplier", "to": "Aptiv"}, {"arrows": "to", "from": "Electrical And Electronics Systems", "label": "leading_supplier", "to": "Valeo"}, {"arrows": "to", "from": "Electrical And Electronics Systems", "label": "leading_supplier", "to": "Gentex"}, {"arrows": "to", "from": "Electrical And Electronics Systems", "label": "leading_supplier", "to": "Harman International"}, {"arrows": "to", "from": "Tier 2 Suppliers", "label": "includes", "to": "Electronic Component Manufacturers"}, {"arrows": "to", "from": "Electronic Component Manufacturers", "label": "company", "to": "Infineon Technologies"}, {"arrows": "to", "from": "Electronic Component Manufacturers", "label": "company", "to": "Nxp Semiconductors"}, {"arrows": "to", "from": "Electronic Component Manufacturers", "label": "company", "to": "Stmicroelectronics"}, {"arrows": "to", "from": "Electronic Component Manufacturers", "label": "company", "to": "Texas Instruments"}, {"arrows": "to", "from": "Electronic Component Manufacturers", "label": "company", "to": "Renesas Electronics"}, {"arrows": "to", "from": "Tier 3 Suppliers", "label": "includes", "to": "Raw Material Suppliers"}, {"arrows": "to", "from": "Tier 3 Suppliers", "label": "includes", "to": "Chemical Manufacturers"}, {"arrows": "to", "from": "Tier 3 Suppliers", "label": "includes", "to": "Mining And Extraction"}, {"arrows": "to", "from": "Battery Electric Vehicle (Bev) Materials", "label": "includes", "to": "Lithium"}, {"arrows": "to", "from": "Lithium", "label": "major_source", "to": "Australia"}, {"arrows": "to", "from": "Lithium", "label": "major_source", "to": "Chile"}, {"arrows": "to", "from": "Lithium", "label": "major_source", "to": "Argentina"}, {"arrows": "to", "from": "Lithium", "label": "processing_dominance", "to": "China"}, {"arrows": "to", "from": "Battery Electric Vehicle (Bev) Materials", "label": "battery_manufacturer", "to": "Catl"}, {"arrows": "to", "from": "Battery Electric Vehicle (Bev) Materials", "label": "battery_manufacturer", "to": "Lg Energy Solution"}, {"arrows": "to", "from": "Battery Electric Vehicle (Bev) Materials", "label": "battery_manufacturer", "to": "Panasonic"}, {"arrows": "to", "from": "Battery Electric Vehicle (Bev) Materials", "label": "battery_manufacturer", "to": "Samsung Sdi"}, {"arrows": "to", "from": "Battery Electric Vehicle (Bev) Materials", "label": "controls_60_percent_lithium_processing_capacity", "to": "China"}, {"arrows": "to", "from": "Battery Electric Vehicle (Bev) Materials", "label": "includes", "to": "Cobalt"}, {"arrows": "to", "from": "Cobalt", "label": "produces_70_percent_global_supply", "to": "Democratic Republic Of Congo (Drc)"}, {"arrows": "to", "from": "Battery Electric Vehicle (Bev) Materials", "label": "includes", "to": "Nickel"}, {"arrows": "to", "from": "Nickel", "label": "major_source", "to": "Indonesia"}, {"arrows": "to", "from": "Nickel", "label": "major_source", "to": "Philippines"}, {"arrows": "to", "from": "Nickel", "label": "major_source", "to": "Russia"}, {"arrows": "to", "from": "Nickel", "label": "major_source", "to": "Canada"}, {"arrows": "to", "from": "Nickel", "label": "major_source", "to": "Australia"}, {"arrows": "to", "from": "Battery Electric Vehicle (Bev) Materials", "label": "includes", "to": "Rare Earth Elements"}, {"arrows": "to", "from": "Rare Earth Elements", "label": "controls_85_percent_global_processing_capacity", "to": "China"}, {"arrows": "to", "from": "Rare Earth Elements", "label": "controls_60_percent_global_mining", "to": "China"}, {"arrows": "to", "from": "Steel", "label": "includes", "to": "High-Strength Steel (Hss)"}, {"arrows": "to", "from": "Steel", "label": "includes", "to": "Advanced High-Strength Steel (Ahss)"}, {"arrows": "to", "from": "Steel", "label": "major_producer", "to": "Australia Iron Ore Mining"}, {"arrows": "to", "from": "Steel", "label": "major_producer", "to": "Brazil Iron Ore Mining"}, {"arrows": "to", "from": "Aluminum", "label": "major_producer", "to": "Australia"}, {"arrows": "to", "from": "Aluminum", "label": "major_producer", "to": "Guinea"}, {"arrows": "to", "from": "Semiconductors", "label": "leading_producer", "to": "Japan"}, {"arrows": "to", "from": "Semiconductors", "label": "leading_producer", "to": "Taiwan"}, {"arrows": "to", "from": "Semiconductors", "label": "leading_producer", "to": "South Korea"}, {"arrows": "to", "from": "Semiconductors", "label": "fabless_company", "to": "Qualcomm"}, {"arrows": "to", "from": "Semiconductors", "label": "fabless_company", "to": "Nvidia"}, {"arrows": "to", "from": "Semiconductors", "label": "fabless_company", "to": "Mobileye"}, {"arrows": "to", "from": "Semiconductors", "label": "fabrication_foundry", "to": "Tsmc"}, {"arrows": "to", "from": "Semiconductors", "label": "fabrication_foundry", "to": "Samsung"}, {"arrows": "to", "from": "Semiconductors", "label": "fabrication_foundry", "to": "Intel"}, {"arrows": "to", "from": "Just-In-Time (Jit) Manufacturing", "label": "pioneered_by", "to": "Toyota Jit"}, {"arrows": "to", "from": "China", "label": "dominates_processing", "to": "Rare Earth Elements"}, {"arrows": "to", "from": "China", "label": "dominates_processing", "to": "Lithium"}, {"arrows": "to", "from": "China", "label": "dominates_battery_cell_production_75_percent_global_capacity", "to": "Battery Electric Vehicle (Bev) Materials"}, {"arrows": "to", "from": "China", "label": "dominates_assembly_and_testing_40_percent_global_capacity", "to": "Semiconductors"}, {"arrows": "to", "from": "China", "label": "dominates_magnet_production_90_percent_global_capacity", "to": "Rare Earth Elements"}, {"arrows": "to", "from": "2011 Renesas Electronics Fire", "label": "event_at", "to": "Renesas Electronics"}, {"arrows": "to", "from": "2011 Renesas Electronics Fire", "label": "affected_oem", "to": "Toyota"}, {"arrows": "to", "from": "Supply Chain Control Towers", "label": "integrates_with", "to": "Internet Of Things (Iot) And Sensors"}]);
+
+                  nodeColors = {};
+                  allNodes = nodes.get({ returnType: "Object" });
+                  for (nodeId in allNodes) {
+                    nodeColors[nodeId] = allNodes[nodeId].color;
+                  }
+                  allEdges = edges.get({ returnType: "Object" });
+                  // adding nodes and edges to the graph
+                  data = {nodes: nodes, edges: edges};
+
+                  var options = {"physics": {"forceAtlas2Based": {"gravitationalConstant": -100, "centralGravity": 0.01, "springLength": 200, "springConstant": 0.08}, "minVelocity": 0.75, "solver": "forceAtlas2Based"}};
+
+                  
+
+
+                  
+
+                  network = new vis.Network(container, data, options);
+
+                  
+
+                  
+
+                  
+
+
+                  
+
+                  return network;
+
+              }
+              drawGraph();
+        </script>
+    </body>
+</html>
