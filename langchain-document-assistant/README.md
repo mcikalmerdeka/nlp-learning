@@ -12,7 +12,7 @@ Experience the power of AI-driven document analysis instantly! No setup required
 
 ### Cloud vs Local Deployment
 
-| Feature | **Cloud Version** (Streamlit Community Cloud) | **Local Version** (`rag_gpt_claude.py`) |
+| Feature | **Cloud Version** (Streamlit Community Cloud) | **Local Version** (`app.py`) |
 |---------|-----------------------------------------------|------------------------------------------|
 | **Setup** | Zero setup - ready to use | Requires local installation & API keys |
 | **Storage** | InMemoryVectorStore (session-based) | ChromaDB (persistent) |
@@ -38,14 +38,15 @@ Experience the power of AI-driven document analysis instantly! No setup required
 
 - Built with **LangChain** framework for document processing and retrieval augmented generation (RAG)
 - Utilizes **Streamlit** for the web interface
+- **Professional Architecture**: Modular structure with separated config, core logic, and UI components
 - Implements chunking with `RecursiveCharacterTextSplitter` for optimal document segmentation
 - **External Search**: Powered by **Tavily Search API** for up-to-date external information
-- **Intelligent Agent System**: Uses LangChain agents with ReAct pattern for external resource lookup
+- **Intelligent Agent System**: Uses LangChain agents (v1 API) with modern `create_agent` pattern
 - Supports two vector store implementations:
-  - **ChromaDB** (current approach): Persistent vector database for better scalability and performance
-  - **InMemoryVectorStore** (legacy approach): Simple in-memory storage for lightweight applications
+  - **ChromaDB**: Persistent vector database for better scalability and performance
+  - **InMemoryVectorStore**: Simple in-memory storage for lightweight applications
 - Supports semantic search with both cloud and local embedding models
-- Handles PDF documents using `PyMuPDFLoader` (GPT/Claude version) and `PDFPlumberLoader` (DeepSeek version)
+- Handles PDF documents using `PyMuPDFLoader` (cloud models) and `PDFPlumberLoader` (DeepSeek version)
 - Includes chat history management for continuous conversations
 
 ## 🔍 External Search Integration
@@ -130,23 +131,33 @@ Simply visit **[https://docu-chat-ai.streamlit.app/](https://docu-chat-ai.stream
 
 ### Local Installation
 
-#### GPT-4o and Claude Sonnet 4 Version (ChromaDB)
+#### Production Version (ChromaDB Persistent Storage)
 
+```bash
+streamlit run app.py
 ```
-streamlit run rag_gpt_claude.py
-```
+**Best for**: Production use, persistent document storage, multiple documents
 
-#### GPT-4o and Claude Sonnet 4 Version (Legacy InMemoryVectorStore)
+#### Development Version (InMemory Storage)
 
+```bash
+streamlit run app_inmemory.py
 ```
-streamlit run rag_gpt_claude_old_approach.py
-```
+**Best for**: Testing, development, temporary document analysis
 
-#### DeepSeek R1 Version
+#### Local LLM Version (DeepSeek R1 with Ollama)
 
+```bash
+streamlit run app_deepseek.py
 ```
-streamlit run rag_deepseek_r1.py
+**Best for**: Privacy-focused use, offline processing, local LLM experimentation
+
+#### Cloud Deployment Version
+
+```bash
+streamlit run streamlit_cloud.py
 ```
+**Best for**: Deploying to Streamlit Community Cloud or similar platforms
 
 ### How to Use
 
@@ -233,25 +244,25 @@ The application uses different embedding models based on the version:
 
 ## 🗄️ Vector Storage Options
 
-### ChromaDB (Current Approach)
+### ChromaDB (Production)
 
 - **Persistent Storage**: Document embeddings are saved to disk
 - **Better Scalability**: Can handle larger document collections
 - **Improved Performance**: Optimized for efficient retrieval
-- **Implementation**: Used in `rag_gpt_claude.py`
+- **Implementation**: Used in `app.py`
 
-### InMemoryVectorStore (Legacy Approach)
+### InMemoryVectorStore (Development)
 
 - **Lightweight**: Simple in-memory storage with no persistence
 - **Fast for Small Datasets**: Efficient for smaller document collections
-- **Implementation**: Used in `rag_gpt_claude_old_approach.py`
+- **Implementation**: Used in `app_inmemory.py`, `app_deepseek.py`, and `streamlit_cloud.py`
 
 ## 🤖 External Search Agent Architecture
 
 The application uses an intelligent agent system for external search:
 
-- **Agent Framework**: LangChain ReAct agent pattern
-- **Tools**: Tavily Search API integration
+- **Agent Framework**: LangChain v1 `create_agent` (modern API)
+- **Tools**: Tavily Search API integration using `@tool` decorator
 - **Orchestration**: Automatic fallback when document context is insufficient
 - **Response Enhancement**: Combines document and external contexts intelligently
 
@@ -271,6 +282,34 @@ The application uses an intelligent agent system for external search:
 - **Seamless integration**: No manual switching between modes
 - **Clear source indication**: Know what information comes from documents vs. external sources
 - **Intelligent fallback**: External search only triggers when needed
+
+## 📁 Project Structure
+
+```
+langchain-document-assistant/
+├── config/                      # Configuration & Settings
+│   ├── settings.py              # Constants, paths, model configs
+│   ├── models.py                # LLM initialization
+│   └── prompts/                 # Prompt templates
+├── core/                        # Core Business Logic
+│   ├── document_processor.py    # PDF loading, chunking
+│   ├── vector_store.py          # Vector store wrappers
+│   └── rag_chain.py             # RAG chain & answer generation
+├── agents/                      # Agent implementations
+├── tools/                       # Tool implementations
+├── components/                  # UI components
+├── styles/                      # Styling
+├── app.py                       # Main app (ChromaDB)
+├── app_inmemory.py              # Development version
+├── app_deepseek.py              # DeepSeek local LLM version
+└── streamlit_cloud.py           # Cloud deployment version
+```
+
+This modular architecture provides:
+- **Separation of Concerns**: Config, core logic, and UI are separated
+- **Reusability**: Core modules can be imported and reused
+- **Maintainability**: Easy to find and modify specific functionality
+- **Scalability**: Simple to add new features without bloating main files
 
 ## Project Screenshots
 
