@@ -5,22 +5,22 @@ def apply_custom_theme():
     st.markdown("""
         <style>
         .stApp {
-            background-color: #f0f2f6;
-            color: #262730;
+            background-color: #0e1117;
+            color: #fafafa;
         }
         
         /* Chat Input Styling */
         .stChatInput input {
-            background-color: #ffffff !important;
-            color: #262730 !important;
-            border: 1px solid #cccccc !important;
+            background-color: #262730 !important;
+            color: #fafafa !important;
+            border: 1px solid #4a4a4a !important;
         }
         
         /* User Message Styling */
         .stChatMessage[data-testid="stChatMessage"]:nth-child(odd) {
-            background-color: #e6f3ff !important;
-            border: 1px solid #b3d9ff !important;
-            color: #262730 !important;
+            background-color: #1e2130 !important;
+            border: 1px solid #3a3f5c !important;
+            color: #fafafa !important;
             border-radius: 10px;
             padding: 15px;
             margin: 10px 0;
@@ -28,9 +28,9 @@ def apply_custom_theme():
         
         /* Assistant Message Styling */
         .stChatMessage[data-testid="stChatMessage"]:nth-child(even) {
-            background-color: #ffffff !important;
-            border: 1px solid #e6e6e6 !important;
-            color: #262730 !important;
+            background-color: #262730 !important;
+            border: 1px solid #4a4a4a !important;
+            color: #fafafa !important;
             border-radius: 10px;
             padding: 15px;
             margin: 10px 0;
@@ -44,18 +44,18 @@ def apply_custom_theme():
         
         /* Text Color Fix */
         .stChatMessage p, .stChatMessage div {
-            color: #262730 !important;
+            color: #fafafa !important;
         }
         
         .stFileUploader {
-            background-color: #ffffff;
-            border: 1px solid #cccccc;
+            background-color: #262730;
+            border: 1px solid #4a4a4a;
             border-radius: 5px;
             padding: 15px;
         }
         
         h1, h2, h3 {
-            color: #0068c9 !important;
+            color: #4b9eff !important;
         }
         </style>
         """, unsafe_allow_html=True) 
