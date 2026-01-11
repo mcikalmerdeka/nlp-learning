@@ -113,19 +113,32 @@ def save_uploaded_file(uploaded_file):
 # Fuction to load PDF documents from the uploaded file
 def load_pdf_documents(file_path):
     document_loader = PyMuPDFLoader(file_path)
-    return document_loader.load()
+    docs = document_loader.load()
+    if not docs:
+        raise ValueError(f"Failed to load any content from PDF: {file_path}")
+    return docs
 
 # Function to chunk the documents into smaller parts
 def chunk_documents(raw_documents):
+    if not raw_documents:
+        raise ValueError("No documents to chunk. The document may be empty.")
+    
     text_processor = RecursiveCharacterTextSplitter(
         chunk_size=1000,
         chunk_overlap=200,
         add_start_index=True
     )
-    return text_processor.split_documents(raw_documents)
+    chunks = text_processor.split_documents(raw_documents)
+    
+    if not chunks:
+        raise ValueError("Chunking produced no results. The document may contain no text.")
+    
+    return chunks
 
 # Function to index the document chunks
 def index_documents(document_chunks):
+    if not document_chunks:
+        raise ValueError("No document chunks to index. The document may be empty or failed to load.")
     DOCUMENT_VECTOR_DB.add_documents(document_chunks)
 
 # Function to check if document already exists in vector store
@@ -310,18 +323,25 @@ if uploaded_pdf: # If a PDF file is uploaded
     
     # Check if document already exists before processing
     if not document_already_exists(uploaded_pdf.name):
-        raw_docs = load_pdf_documents(saved_path) # Load the PDF document
-        processed_chunks = chunk_documents(raw_docs) # Chunk the document into smaller parts
-        index_documents(processed_chunks) # Index the document chunks
-        
-        # Create the RAG chain using LCEL
-        retriever = create_retriever(k=5)
-        rag_chain = create_rag_chain(LANGUAGE_MODEL, retriever, external_search_enabled)
-        
-        # Display success message
-        mode_info = "with External Search" if external_search_enabled else "Document Only Mode"
-        render_status_message("success", "New document processed and added to vector store! Ask your questions below", 
-                            model_name=selected_model, mode_info=mode_info)
+        try:
+            raw_docs = load_pdf_documents(saved_path) # Load the PDF document
+            processed_chunks = chunk_documents(raw_docs) # Chunk the document into smaller parts
+            index_documents(processed_chunks) # Index the document chunks
+            
+            # Create the RAG chain using LCEL
+            retriever = create_retriever(k=5)
+            rag_chain = create_rag_chain(LANGUAGE_MODEL, retriever, external_search_enabled)
+            
+            # Display success message
+            mode_info = "with External Search" if external_search_enabled else "Document Only Mode"
+            render_status_message("success", "New document processed and added to vector store! Ask your questions below", 
+                                model_name=selected_model, mode_info=mode_info)
+        except ValueError as e:
+            render_status_message("error", f"Failed to process document: {str(e)}")
+            st.stop()
+        except Exception as e:
+            render_status_message("error", f"Unexpected error processing document: {str(e)}")
+            st.stop()
     else:
         # Document already exists, just create retriever and chain
         retriever = create_retriever(k=5)
