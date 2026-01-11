@@ -1,0 +1,71 @@
+Here are 20+ example questions covering all sections of the WRS Health EHR document:
+
+**Introduction to WRS Health EHR Platform (Section 1)**
+1. What specialties does WRS Health EHR support?
+2. What recognition has WRS Health received from PC Magazine?
+3. Is the WRS Health platform HIPAA-compliant?
+
+**Clinical Documentation Requirements (Section 2)**
+4. What is the SOAP format and why is it important for clinical documentation?
+5. Within how many hours must clinical encounters be documented?
+6. What smart documentation tools does WRS Health provide to help physicians?
+7. What specific elements must be included in clinical encounter documentation?
+
+**Patient Registration and Demographics (Section 3)**
+8. What demographic information is captured during patient registration?
+9. How does the system handle duplicate patient records?
+10. How can staff verify insurance eligibility in the WRS Health system?
+
+**Clinical Workflow and Scheduling (Section 4)**
+11. What types of appointment reminders can be sent to patients?
+12. What appointment types does the scheduling module support?
+13. How does the scheduling module integrate with clinical workflows?
+
+**E-Prescribing and Medication Management (Section 5)**
+14. Is WRS Health certified for electronic prescribing of controlled substances?
+15. What types of alerts does the e-prescribing module provide?
+16. How many pharmacies can receive electronic prescriptions through the Surescripts network?
+17. How does the medication reconciliation feature improve patient safety?
+
+**Laboratory and Diagnostic Imaging (Section 6)**
+18. How are laboratory results matched to the correct patient chart?
+19. What happens when a critical lab value is received?
+20. How does the cumulative results view benefit chronic disease management?
+
+**Clinical Decision Support (Section 7)**
+21. What quality reporting programs does WRS Health support?
+22. What types of clinical decision support alerts are available?
+23. How do population health tools help identify patients with care gaps?
+
+**Billing and Revenue Cycle (Section 8)**
+24. What does the charge capture module help providers with?
+25. How are insurance claims transmitted in WRS Health?
+26. What key performance indicators are available in financial reports?
+
+**Patient Portal (Section 9)**
+27. What can patients do through the WRS Health patient portal?
+28. Does the patient portal support family proxy access?
+29. On what devices can patients access the portal?
+
+**Interoperability and HIE (Section 10)**
+30. What interoperability standards does WRS Health support?
+31. What is a CCD and when is it used?
+32. How does Direct messaging work in the system?
+
+**System Administration and Security (Section 11)**
+33. What security features does WRS Health implement?
+34. What information is captured in the audit log?
+35. What certifications does WRS Health maintain for security compliance?
+
+**Training and Support (Section 12)**
+36. What training resources are available to WRS Health users?
+37. What support channels does WRS Health offer?
+38. How often does WRS Health release software updates?
+
+**Cross-sectional/Integration Questions**
+39. How does the system ensure both clinical quality and billing accuracy?
+40. What features support HIPAA compliance throughout the platform?
+41. Compare the e-prescribing capabilities with the lab integration features.
+42. How do clinical decision support tools integrate with quality measure reporting?
+
+These questions range from simple fact retrieval to more complex queries requiring synthesis across multiple sections - perfect for testing your RAG chatbot's capabilities!
