@@ -91,7 +91,7 @@ Business Intelligence Chatbot with Langchain/
 
 ### Prerequisites
 
-- Python 3.11+
+- Python 3.12+
 - PostgreSQL database
 - OpenAI API key and/or Anthropic API key
 
@@ -99,38 +99,52 @@ Business Intelligence Chatbot with Langchain/
 
 1. Clone this repository:
 
-   ```
-   git clone https://github.com/yourusername/Business-Intelligence-Chatbot-with-Langchain.git
-   cd Business-Intelligence-Chatbot-with-Langchain
+   ```bash
+   git clone https://github.com/mcikalmerdeka/NLP-Learning.git
+   cd "NLP-Learning/Business Intelligence Chatbot with Langchain"
    ```
 
 2. Install dependencies:
 
-   Using pip:
+   **Option A: Using uv (recommended)**
 
+   Sync from pyproject.toml:
+
+   ```bash
+   uv sync
    ```
+
+   Or install from requirements.txt:
+
+   ```bash
+   uv add -r requirements.txt
+   ```
+
+   **Option B: Using pip**
+
+   ```bash
    pip install -e .
    ```
 
-   Using uv package manager (recommended):
+   Or from requirements.txt:
 
+   ```bash
+   pip install -r requirements.txt
    ```
-   uv pip install -e .
-   ```
 
-   Required dependencies (from pyproject.toml):
+   **Required dependencies** (from pyproject.toml):
 
-   - faiss-cpu>=1.11.0
-   - langchain>=0.3.25
-   - langchain-anthropic>=0.3.13
-   - langchain-community>=0.3.24
-   - langchain-openai>=0.3.16
-   - numpy>=2.2.5
-   - openai>=1.78.0
-   - pandas>=2.2.3
-   - psycopg2>=2.9.10
-   - python-dotenv>=1.1.0
-   - streamlit>=1.45.0
+   - faiss-cpu>=1.13.2
+   - langchain>=1.2.3
+   - langchain-anthropic>=1.3.1
+   - langchain-community>=0.4.1
+   - langchain-openai>=1.1.7
+   - numpy>=2.4.1
+   - openai>=2.15.0
+   - pandas>=2.3.3
+   - psycopg2>=2.9.11
+   - python-dotenv>=1.2.1
+   - streamlit>=1.52.2
 
 3. Create a `.env` file in the project root with your API and database credentials:
 
