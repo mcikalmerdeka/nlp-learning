@@ -30,7 +30,7 @@ MODEL_OPTIONS = {
 EMBEDDING_MODEL = "text-embedding-3-large"
 
 # Vector Store Configuration
-FAISS_INDEX_PATH = "faiss_index_store"
+FAISS_INDEX_PATH = os.path.join(os.path.dirname(os.path.dirname(__file__)), "faiss_index_store")
 
 # Schema Paths
 SCHEMA_PATH_SINGLE = r"E:\NLP Learning\NLP-Learning\Business Intelligence Chatbot with Langchain\datasets\dataset_single_table"
