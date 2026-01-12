@@ -16,25 +16,63 @@ And in this project we will try to implement that approach.
 
 ## 📁 Project Structure
 
-The project now has two main approaches:
+The project has been refactored with a professional, modular structure:
 
-### Single Table Approach
+```
+Business Intelligence Chatbot with Langchain/
+│
+├── src/
+│   └── app/                           # Main application package
+│       ├── __init__.py
+│       │
+│       ├── config/                    # Configuration and settings
+│       │   ├── __init__.py
+│       │   ├── settings.py            # App settings and environment variables
+│       │   ├── models.py              # LLM model initialization
+│       │   └── prompts/               # Prompt templates
+│       │       ├── __init__.py
+│       │       └── templates.py
+│       │
+│       ├── core/                      # Core business logic
+│       │   ├── __init__.py
+│       │   ├── database.py            # Database connection and queries
+│       │   ├── llm_client.py          # LLM interaction handling
+│       │   └── rag.py                 # RAG implementation for schema retrieval
+│       │
+│       ├── utils/                     # Utility scripts
+│       │   ├── __init__.py
+│       │   ├── database_setup_single_table.py
+│       │   └── database_setup_multiple_tables.py
+│       │
+│       ├── db/                        # Database-related utilities
+│       │   └── __init__.py
+│       │
+│       ├── app_single_basic.py        # Single table - Basic approach
+│       ├── app_single_rag.py          # Single table - With RAG
+│       ├── app_multi_basic.py         # Multiple tables - Basic approach
+│       └── app_multi_rag.py           # Multiple tables - With RAG
+│
+├── datasets/
+│   ├── dataset_single_table/          # Sales data CSV
+│   └── dataset_multiple_tables/       # Olist e-commerce datasets
+│
+├── pyproject.toml
+├── requirements.txt
+├── .env
+└── README.md
+```
 
-Analysis of sales data using a single database table:
+### Application Variants
 
-- `src/app_single_table/app_with_rag.py`: Main application incorporating RAG for better schema understanding
-- `src/app_single_table/app_without_rag.py`: Simplified version without the RAG approach
-- `src/app_single_table/database_setup_single_table.py`: Script to set up PostgreSQL database with sample sales data
-- `datasets/dataset_single_table/`: Contains the sales data CSV used for this approach
+**Single Table Approach** - Sales data analysis:
 
-### Multiple Tables Approach
+- `app_single_basic.py`: Simple approach with full schema loaded
+- `app_single_rag.py`: RAG-enhanced (note: minimal benefit for single table)
 
-Analysis of e-commerce data (Olist) using multiple related tables:
+**Multiple Tables Approach** - E-commerce (Olist) data analysis:
 
-- `src/app_multiple_tables/app_with_rag.py`: Enhanced version supporting multiple table queries with RAG
-- `src/app_multiple_tables/app_without_rag.py`: Basic version for multiple tables without RAG
-- `src/app_multiple_tables/database_setup_multiple_tables.py`: Script to set up database with Olist e-commerce data
-- `datasets/dataset_multiple_tables/`: Contains the Olist e-commerce datasets with multiple related tables
+- `app_multi_basic.py`: Full schema loaded approach
+- `app_multi_rag.py`: RAG-enhanced for better context retrieval
 
 ## 🚀 Features
 
@@ -65,6 +103,7 @@ Analysis of e-commerce data (Olist) using multiple related tables:
    git clone https://github.com/yourusername/Business-Intelligence-Chatbot-with-Langchain.git
    cd Business-Intelligence-Chatbot-with-Langchain
    ```
+
 2. Install dependencies:
 
    Using pip:
@@ -92,6 +131,7 @@ Analysis of e-commerce data (Olist) using multiple related tables:
    - psycopg2>=2.9.10
    - python-dotenv>=1.1.0
    - streamlit>=1.45.0
+
 3. Create a `.env` file in the project root with your API and database credentials:
 
    ```
@@ -102,35 +142,39 @@ Analysis of e-commerce data (Olist) using multiple related tables:
    DB_HOST=your_database_host
    DB_PORT=your_database_port
    ```
+
 4. Set up the database:
 
    For single table approach:
 
    ```
-   python src/app_single_table/database_setup_single_table.py
+   python src/app/utils/database_setup_single_table.py
    ```
 
    For multiple tables approach:
 
    ```
-   python src/app_multiple_tables/database_setup_multiple_tables.py
+   python src/app/utils/database_setup_multiple_tables.py
    ```
 
 ## 💻 Usage
 
 ### Single Table Approach
 
-1. Launch the application with RAG:
+1. Launch the application:
+
+   Basic version (recommended):
 
    ```
-   streamlit run src/app_single_table/app_with_rag.py
+   streamlit run src/app/app_single_basic.py
    ```
 
-   Or without RAG:
+   Or with RAG:
 
    ```
-   streamlit run src/app_single_table/app_without_rag.py
+   streamlit run src/app/app_single_rag.py
    ```
+
 2. Access the application at `http://localhost:8501`
 3. Configure your database connection in the sidebar
 4. Start asking questions in natural language about your sales data!
@@ -146,17 +190,20 @@ Example queries for sales data:
 
 ### Multiple Tables Approach
 
-1. Launch the application with RAG:
+1. Launch the application:
+
+   Basic version:
 
    ```
-   streamlit run src/app_multiple_tables/app_with_rag.py
+   streamlit run src/app/app_multi_basic.py
    ```
 
-   Or without RAG:
+   Or with RAG (recommended for multi-table):
 
    ```
-   streamlit run src/app_multiple_tables/app_without_rag.py
+   streamlit run src/app/app_multi_rag.py
    ```
+
 2. Access the application at `http://localhost:8501`
 3. Configure your database connection in the sidebar
 4. Start asking questions in natural language about the Olist e-commerce data!
@@ -179,6 +226,7 @@ Example queries for Olist e-commerce data:
    - SQL query is executed against the database
    - Results are passed back to LLM for human-friendly response generation
    - Conversation context is maintained for follow-up questions
+
 2. **With RAG (Enhanced Approach)**:
 
    - Database schema descriptions are embedded and stored in a FAISS index
@@ -209,18 +257,18 @@ In this demo I used the multi-table approach using RAG implementation. The scree
 
 ![Part 1](./assets/Project%20Screenshot%201.png)
 
-*The interface allows users to connect to their database and begin querying immediately. After establishing the connection, the system retrieves and processes the database schema information, allowing users to ask specific questions about the data in natural language without needing to write SQL queries manually.*
+_The interface allows users to connect to their database and begin querying immediately. After establishing the connection, the system retrieves and processes the database schema information, allowing users to ask specific questions about the data in natural language without needing to write SQL queries manually._
 
 ### Query Generation and Model Response
 
 ![Part 2](./assets/Project%20Screenshot%202.png)
 ![Part 3](./assets/Project%20Screenshot%203.png)
 
-*The AI assistant retrieves relevant schema context and automatically generates the appropriate SQL query based on the user's natural language question. The query is executed against the database, and results are returned in both raw format and a user-friendly interpretation. The LLM analyzes the query results and presents them with meaningful insights, transforming complex data into actionable business intelligence.*
+_The AI assistant retrieves relevant schema context and automatically generates the appropriate SQL query based on the user's natural language question. The query is executed against the database, and results are returned in both raw format and a user-friendly interpretation. The LLM analyzes the query results and presents them with meaningful insights, transforming complex data into actionable business intelligence._
 
 ### Follow-up Question Capabilities
 
 ![Part 4](./assets/Project%20Screenshot%204.png)
 ![Part 5](./assets/Project%20Screenshot%205.png)
 
-*The system implements conversational memory to maintain context between interactions, enabling natural follow-up questions. Users can ask for additional details, different breakdowns of the same data, or comparative analysis without repeating their original query context. This creates a more intuitive and efficient data exploration experience that mimics talking with a human data analyst.*
+_The system implements conversational memory to maintain context between interactions, enabling natural follow-up questions. Users can ask for additional details, different breakdowns of the same data, or comparative analysis without repeating their original query context. This creates a more intuitive and efficient data exploration experience that mimics talking with a human data analyst._
