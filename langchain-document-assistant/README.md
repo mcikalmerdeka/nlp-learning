@@ -12,16 +12,16 @@ Experience the power of AI-driven document analysis instantly! No setup required
 
 ### Cloud vs Local Deployment
 
-| Feature | **Cloud Version** (Streamlit Community Cloud) | **Local Version** (`app.py`) |
-|---------|-----------------------------------------------|------------------------------------------|
-| **Setup** | Zero setup - ready to use | Requires local installation & API keys |
-| **Storage** | InMemoryVectorStore (session-based) | ChromaDB (persistent) |
-| **File Persistence** | Documents reset on app restart | Documents saved permanently |
-| **Performance** | Shared resources, 1GB memory limit | Full local resources |
-| **Concurrent Users** | 3-5 users on free tier | Single user (your machine) |
-| **External Search** | Limited without Tavily API key | Full capability with API keys |
-| **Privacy** | Documents processed on Streamlit servers | Complete local privacy |
-| **Best For** | Quick testing, sharing, demos | Production use, large documents, privacy |
+| Feature              | **Cloud Version** (Streamlit Community Cloud) | **Local Version** (`app.py`)             |
+| -------------------- | --------------------------------------------- | ---------------------------------------- |
+| **Setup**            | Zero setup - ready to use                     | Requires local installation & API keys   |
+| **Storage**          | InMemoryVectorStore (session-based)           | ChromaDB (persistent)                    |
+| **File Persistence** | Documents reset on app restart                | Documents saved permanently              |
+| **Performance**      | Shared resources, 1GB memory limit            | Full local resources                     |
+| **Concurrent Users** | 3-5 users on free tier                        | Single user (your machine)               |
+| **External Search**  | Limited without Tavily API key                | Full capability with API keys            |
+| **Privacy**          | Documents processed on Streamlit servers      | Complete local privacy                   |
+| **Best For**         | Quick testing, sharing, demos                 | Production use, large documents, privacy |
 
 ## 🚀 Features
 
@@ -58,6 +58,81 @@ Experience the power of AI-driven document analysis instantly! No setup required
 3. **Combined Response**: You get a comprehensive answer that combines both document content and external search results
 4. **Toggle Control**: Enable/disable external search via the sidebar toggle
 
+### Application Architecture & Flow
+
+#### Document Processing Phase
+
+```mermaid
+sequenceDiagram
+    participant User
+    participant Streamlit UI
+    participant DocumentProcessor
+    participant VectorStore
+    participant EmbeddingModel
+
+    User->>Streamlit UI: Upload PDF document
+    Streamlit UI->>DocumentProcessor: Save and load PDF
+    DocumentProcessor->>DocumentProcessor: Load PDF (PyMuPDF/PDFPlumber)
+    DocumentProcessor->>DocumentProcessor: Split into chunks<br/>(size: 1000, overlap: 200)
+    DocumentProcessor->>EmbeddingModel: Generate embeddings
+    EmbeddingModel-->>DocumentProcessor: Return embeddings
+    DocumentProcessor->>VectorStore: Store chunks + embeddings
+    VectorStore-->>Streamlit UI: Document indexed successfully
+    Streamlit UI-->>User: Ready for questions
+```
+
+#### Query Without External Search
+
+```mermaid
+sequenceDiagram
+    participant User
+    participant Streamlit UI
+    participant VectorStore
+    participant RAGChain
+    participant LLM
+
+    User->>Streamlit UI: Ask question
+    Streamlit UI->>VectorStore: Similarity search (k=5)
+    VectorStore-->>Streamlit UI: Return relevant chunks
+    Streamlit UI->>RAGChain: Create prompt<br/>(question + context)
+    RAGChain->>LLM: Generate answer
+    LLM-->>RAGChain: Return response
+    RAGChain-->>Streamlit UI: Formatted answer
+    Streamlit UI-->>User: Display answer
+```
+
+#### Query With External Search (Enhanced Mode)
+
+```mermaid
+sequenceDiagram
+    participant User
+    participant Streamlit UI
+    participant VectorStore
+    participant RAGChain
+    participant LLM
+    participant Agent
+    participant TavilyAPI
+
+    User->>Streamlit UI: Ask question
+    Streamlit UI->>VectorStore: Similarity search (k=5)
+    VectorStore-->>Streamlit UI: Return relevant chunks
+    Streamlit UI->>RAGChain: Create prompt<br/>(question + context)
+    RAGChain->>LLM: Generate initial answer
+    LLM-->>RAGChain: Response with [EXTERNAL_SEARCH_NEEDED]
+
+    Note over RAGChain,TavilyAPI: External Search Triggered
+    RAGChain->>Agent: Activate agent (create_agent)
+    Agent->>TavilyAPI: Execute search tool (@tool)
+    TavilyAPI-->>Agent: Return search results
+    Agent-->>RAGChain: External context
+
+    RAGChain->>RAGChain: Combine document + external contexts
+    RAGChain->>LLM: Generate enhanced answer
+    LLM-->>RAGChain: Final comprehensive response
+    RAGChain-->>Streamlit UI: Formatted answer
+    Streamlit UI-->>User: Display enhanced answer
+```
+
 ### Search Modes
 
 - **🔍 External Search Enabled**: AI will search external sources when document context is insufficient
@@ -80,21 +155,22 @@ Experience the power of AI-driven document analysis instantly! No setup required
 
 ## 📋 Requirements
 
-- Python 3.11+
-- Required packages (from pyproject.toml):
+- Python 3.12+
+- Required packages:
   ```
-  langchain-anthropic>=0.3.13
-  langchain-chroma>=0.2.3
-  langchain-community>=0.3.24
-  langchain-core>=0.3.59
-  langchain-ollama>=0.3.2
-  langchain-openai>=0.3.16
-  langchain-tavily>=0.2.4
-  langchain-text-splitters>=0.3.8
-  pymupdf>=1.25.5
-  protobuf<=3.20.3
-  python-dotenv>=1.1.0
-  streamlit>=1.45.1
+  streamlit>=1.52.2
+  langchain-core>=1.2.7
+  langchain-community>=0.4.1
+  langchain-openai>=1.1.7
+  langchain-anthropic>=1.3.1
+  langchain-tavily>=0.2.16
+  langchain-text-splitters>=1.1.0
+  langchain-chroma>=1.1.0
+  python-dotenv>=1.2.1
+  PyMuPDF>=1.26.7
+  protobuf>=3.20.3
+  openai>=2.15.0
+  anthropic>=0.75.0
   ```
 - API keys for OpenAI and Anthropic (for cloud models)
 - **Tavily API key** (for external search functionality)
@@ -103,22 +179,45 @@ Experience the power of AI-driven document analysis instantly! No setup required
 ## 🔧 Setup
 
 1. Clone this repository
-2. Install the required packages using uv package manager:
+2. Install dependencies using one of these methods:
+
+   **Option 1: Using uv sync (Recommended)**
+
+   ```bash
+   uv sync
    ```
+
+   This installs all dependencies from `pyproject.toml` and creates a lock file.
+
+   **Option 2: Using requirements.txt**
+
+   ```bash
+   uv pip install -r requirements.txt
+   ```
+
+   **Option 3: Using pyproject.toml directly**
+
+   ```bash
    uv pip install .
    ```
+
 3. Create a `.env` file with your API keys:
+
    ```
    OPENAI_API_KEY=your_openai_api_key
    ANTHROPIC_API_KEY=your_anthropic_api_key
    TAVILY_API_KEY=your_tavily_api_key
    ```
+
 4. Get a **Tavily API key** from [https://tavily.com/](https://tavily.com/) for external search functionality
 5. For local models, install Ollama and pull the DeepSeek models:
+
    ```
    ollama pull deepseek-r1:1.5b
    ```
+
 6. Create a directory for document storage:
+
    ```
    mkdir -p document_store/pdfs
    ```
@@ -136,6 +235,7 @@ Simply visit **[https://docu-chat-ai.streamlit.app/](https://docu-chat-ai.stream
 ```bash
 streamlit run app.py
 ```
+
 **Best for**: Production use, persistent document storage, multiple documents
 
 #### Development Version (InMemory Storage)
@@ -143,6 +243,7 @@ streamlit run app.py
 ```bash
 streamlit run app_inmemory.py
 ```
+
 **Best for**: Testing, development, temporary document analysis
 
 #### Local LLM Version (DeepSeek R1 with Ollama)
@@ -150,6 +251,7 @@ streamlit run app_inmemory.py
 ```bash
 streamlit run app_deepseek.py
 ```
+
 **Best for**: Privacy-focused use, offline processing, local LLM experimentation
 
 #### Cloud Deployment Version
@@ -157,6 +259,7 @@ streamlit run app_deepseek.py
 ```bash
 streamlit run streamlit_cloud.py
 ```
+
 **Best for**: Deploying to Streamlit Community Cloud or similar platforms
 
 ### How to Use
@@ -177,19 +280,19 @@ The application is deployed on **Streamlit Community Cloud** and accessible at:
 
 #### Key Features for Cloud Deployment
 
-✅ **InMemoryVectorStore** - No persistence issues on cloud platforms  
-✅ **Temporary file handling** - Cloud-compatible PDF processing  
-✅ **Session state tracking** - Remembers processed files during your session  
-✅ **Cached resources** - Optimized performance  
-✅ **Error handling** - Robust cloud deployment with graceful fallbacks  
-✅ **Graceful fallbacks** - Works even without external search API keys  
+✅ **InMemoryVectorStore** - No persistence issues on cloud platforms
+✅ **Temporary file handling** - Cloud-compatible PDF processing
+✅ **Session state tracking** - Remembers processed files during your session
+✅ **Cached resources** - Optimized performance
+✅ **Error handling** - Robust cloud deployment with graceful fallbacks
+✅ **Graceful fallbacks** - Works even without external search API keys
 
 #### Cloud Limitations
 
-⚠️ **File persistence:** Documents reset when app restarts (session-based storage)  
-⚠️ **Concurrent users:** ~3-5 users simultaneously on free tier  
-⚠️ **Resource limits:** 1GB memory limit on Streamlit Community Cloud  
-⚠️ **External search:** Limited functionality without Tavily API key  
+⚠️ **File persistence:** Documents reset when app restarts (session-based storage)
+⚠️ **Concurrent users:** ~3-5 users simultaneously on free tier
+⚠️ **Resource limits:** 1GB memory limit on Streamlit Community Cloud
+⚠️ **External search:** Limited functionality without Tavily API key
 
 #### Deploy Your Own Instance
 
@@ -226,18 +329,21 @@ The application uses different embedding models based on the version:
 ## 🔒 Privacy
 
 ### Cloud Deployment (Streamlit Community Cloud)
+
 - **Document processing**: Files are temporarily processed on Streamlit servers
 - **No persistence**: Documents are deleted when session ends or app restarts
 - **API calls**: Document content sent to OpenAI/Anthropic APIs for processing
 - **External search**: Search queries sent to Tavily API when enabled
 
 ### Local Deployment
+
 - **Complete privacy**: All document processing happens on your machine
 - **Local storage**: Documents stored in local ChromaDB (persistent)
 - **API calls**: Only model responses sent to external APIs (OpenAI/Anthropic)
 - **DeepSeek R1**: Fully local processing with no external API calls
 
 ### Model Privacy Levels
+
 - **Cloud models** (GPT-4o, GPT-4.1, Claude Sonnet 4): Document content sent to external APIs
 - **Local models** (DeepSeek R1): All processing happens locally with no data leaving your machine
 - **External Search**: When enabled, search queries are sent to Tavily API for external information
@@ -306,6 +412,7 @@ langchain-document-assistant/
 ```
 
 This modular architecture provides:
+
 - **Separation of Concerns**: Config, core logic, and UI are separated
 - **Reusability**: Core modules can be imported and reused
 - **Maintainability**: Easy to find and modify specific functionality
@@ -319,16 +426,16 @@ In this demo I used the BPS Palu City data of [population and employment](https:
 
 ![Upload Document](./assets/Project%20Screenshot%201.png)
 
-*The document upload interface allows users to select and upload PDF files for analysis. The system processes the document and prepares it for question answering with optional external search capabilities.*
+_The document upload interface allows users to select and upload PDF files for analysis. The system processes the document and prepares it for question answering with optional external search capabilities._
 
 ### Initial Question and Answer
 
 ![Document Chat](./assets/Project%20Screenshot%202.png)
 
-*After document processing, users can ask specific questions about the content. The AI assistant retrieves relevant information from the document and provides comprehensive answers based on the document context, with the option to enhance responses using external search.*
+_After document processing, users can ask specific questions about the content. The AI assistant retrieves relevant information from the document and provides comprehensive answers based on the document context, with the option to enhance responses using external search._
 
 ### Follow-up Question Capabilities
 
 ![Follow-up Questions](./assets/Project%20Screenshot%203.png)
 
-*The system supports follow-up questions, maintaining context from previous interactions. This allows for a natural conversation flow while exploring document content in greater depth, with intelligent external search integration when document context is insufficient.*
+_The system supports follow-up questions, maintaining context from previous interactions. This allows for a natural conversation flow while exploring document content in greater depth, with intelligent external search integration when document context is insufficient._
