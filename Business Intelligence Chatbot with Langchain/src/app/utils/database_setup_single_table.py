@@ -7,7 +7,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # Step 1: Load the CSV file
-csv_file = "https://raw.githubusercontent.com/mcikalmerdeka/NLP-Learning/main/Business%20Intelligence%20Chatbot%20with%20Langchain/dataset_experiments/sales_data_sample.csv"
+csv_file = "https://raw.githubusercontent.com/mcikalmerdeka/nlp-learning/main/Business%20Intelligence%20Chatbot%20with%20Langchain/datasets/dataset_single_table/sales_data_sample.csv"
 df = pd.read_csv(csv_file, encoding='ISO-8859-1')
 
 # Replace NaN values with None (PostgreSQL's NULL)
