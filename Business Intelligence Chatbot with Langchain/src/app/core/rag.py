@@ -5,7 +5,7 @@ import streamlit as st
 from typing import List
 from langchain_openai import OpenAIEmbeddings
 from langchain_community.vectorstores import FAISS
-from langchain.schema import Document
+from langchain_core.documents import Document
 from config import EMBEDDING_MODEL, FAISS_INDEX_PATH, SCHEMA_PATH_MULTI, SCHEMA_URL_MULTI
 
 
