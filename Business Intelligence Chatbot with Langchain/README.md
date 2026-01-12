@@ -219,21 +219,81 @@ Example queries for Olist e-commerce data:
 
 ## ⚙️ How It Works
 
-1. **Without RAG (Basic Approach)**:
+### Without RAG (Basic Approach)
 
-   - User submits a natural language query
-   - LLM converts it to SQL based on predefined schema information
-   - SQL query is executed against the database
-   - Results are passed back to LLM for human-friendly response generation
-   - Conversation context is maintained for follow-up questions
+```mermaid
+sequenceDiagram
+    participant User
+    participant Streamlit UI
+    participant LLMClient
+    participant Database
 
-2. **With RAG (Enhanced Approach)**:
+    User->>Streamlit UI: Submit natural language query
+    Streamlit UI->>Streamlit UI: Load full schema description
+    Streamlit UI->>LLMClient: Send query + full schema + chat history
+    LLMClient->>LLMClient: Generate SQL query
+    LLMClient-->>Streamlit UI: Return SQL query
+    Streamlit UI->>Database: Execute SQL query
+    Database-->>Streamlit UI: Return query results
+    Streamlit UI->>LLMClient: Send results + question + history
+    LLMClient->>LLMClient: Generate human-friendly response
+    LLMClient-->>Streamlit UI: Return formatted response
+    Streamlit UI-->>User: Display response
+```
 
-   - Database schema descriptions are embedded and stored in a FAISS index
-   - When a query is received, the system retrieves relevant schema information
-   - This context-enriched information is sent to the LLM for SQL generation
-   - The generated SQL is executed and results formatted into natural language
-   - Chat history provides context for follow-up questions
+**Flow:**
+
+1. User submits a natural language query
+2. Full database schema is loaded from file/configuration
+3. LLM converts query to SQL using complete schema information
+4. SQL query is executed against the database
+5. Results are passed back to LLM for human-friendly response generation
+6. Conversation context is maintained for follow-up questions
+
+### With RAG (Enhanced Approach)
+
+```mermaid
+sequenceDiagram
+    participant User
+    participant Streamlit UI
+    participant RAGEngine
+    participant FAISS Index
+    participant LLMClient
+    participant Database
+
+    Note over RAGEngine,FAISS Index: Initialization Phase
+    RAGEngine->>RAGEngine: Load schema description
+    RAGEngine->>RAGEngine: Chunk schema into segments
+    RAGEngine->>FAISS Index: Embed and store chunks
+
+    Note over User,Database: Query Phase
+    User->>Streamlit UI: Submit natural language query
+    Streamlit UI->>RAGEngine: Request relevant schema
+    RAGEngine->>FAISS Index: Similarity search (k=5)
+    FAISS Index-->>RAGEngine: Return top 5 relevant chunks
+    RAGEngine-->>Streamlit UI: Return retrieved schema
+    Streamlit UI->>LLMClient: Send query + retrieved schema + history
+    LLMClient->>LLMClient: Generate SQL query
+    LLMClient-->>Streamlit UI: Return SQL query
+    Streamlit UI->>Database: Execute SQL query
+    Database-->>Streamlit UI: Return query results
+    Streamlit UI->>LLMClient: Send results + question + history
+    LLMClient->>LLMClient: Generate human-friendly response
+    LLMClient-->>Streamlit UI: Return formatted response
+    Streamlit UI-->>User: Display response
+```
+
+**Flow:**
+
+1. **Initialization**: Database schema descriptions are embedded and stored in a FAISS vector index
+2. User submits a natural language query
+3. RAG engine retrieves only the most relevant schema chunks via similarity search
+4. Context-enriched schema information is sent to LLM for SQL generation
+5. Generated SQL is executed against the database
+6. Results are formatted into natural language response
+7. Chat history provides context for follow-up questions
+
+**Key Difference**: RAG approach only sends relevant schema portions to the LLM, improving accuracy and reducing token usage for large schemas with multiple tables.
 
 ## 🔮 Future Improvements
 
