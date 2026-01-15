@@ -1,0 +1,5 @@
+(.venv) PS D:\Cikal Data Lab\docling-milvus-rag> uv add milvus-lite
+Resolved 151 packages in 2.56s                                                                                                                                                   
+error: Distribution `milvus-lite==2.5.1 @ registry+https://pypi.org/simple` can't be installed because it doesn't have a source distribution or wheel for the current platform   
+
+hint: You're on Windows (`win_amd64`), but `milvus-lite` (v2.5.1) only has wheels for the following platforms: `manylinux2014_aarch64`, `manylinux2014_x86_64`, `macosx_10_9_x86_64`, `macosx_11_0_arm64`
