@@ -7,14 +7,15 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # Step 1: Load the CSV files
-customers      = pd.read_csv('https://raw.githubusercontent.com/mcikalmerdeka/NLP-Learning/main/Business%20Intelligence%20Chatbot%20with%20Langchain/dataset_multiple_tables/customers_dataset.csv')
-geolocation    = pd.read_csv('https://raw.githubusercontent.com/mcikalmerdeka/NLP-Learning/main/Business%20Intelligence%20Chatbot%20with%20Langchain/dataset_multiple_tables/geolocation_dataset.csv')
-order_items    = pd.read_csv('https://raw.githubusercontent.com/mcikalmerdeka/NLP-Learning/main/Business%20Intelligence%20Chatbot%20with%20Langchain/dataset_multiple_tables/order_items_dataset.csv')
-order_payments = pd.read_csv('https://raw.githubusercontent.com/mcikalmerdeka/NLP-Learning/main/Business%20Intelligence%20Chatbot%20with%20Langchain/dataset_multiple_tables/order_payments_dataset.csv')
-order_reviews  = pd.read_csv('https://raw.githubusercontent.com/mcikalmerdeka/NLP-Learning/main/Business%20Intelligence%20Chatbot%20with%20Langchain/dataset_multiple_tables/order_reviews_dataset.csv')
-orders         = pd.read_csv('https://raw.githubusercontent.com/mcikalmerdeka/NLP-Learning/main/Business%20Intelligence%20Chatbot%20with%20Langchain/dataset_multiple_tables/orders_dataset.csv')
-products       = pd.read_csv('https://raw.githubusercontent.com/mcikalmerdeka/NLP-Learning/main/Business%20Intelligence%20Chatbot%20with%20Langchain/dataset_multiple_tables/product_dataset.csv', index_col=0)
-sellers        = pd.read_csv('https://raw.githubusercontent.com/mcikalmerdeka/NLP-Learning/main/Business%20Intelligence%20Chatbot%20with%20Langchain/dataset_multiple_tables/sellers_dataset.csv')
+base_path = 'datasets/dataset_multiple_tables/olist_db/'
+customers      = pd.read_csv(f'{base_path}customers_dataset.csv')
+geolocation    = pd.read_csv(f'{base_path}geolocation_dataset.csv')
+order_items    = pd.read_csv(f'{base_path}order_items_dataset.csv')
+order_payments = pd.read_csv(f'{base_path}order_payments_dataset.csv')
+order_reviews  = pd.read_csv(f'{base_path}order_reviews_dataset.csv')
+orders         = pd.read_csv(f'{base_path}orders_dataset.csv')
+products       = pd.read_csv(f'{base_path}product_dataset.csv', index_col=0)
+sellers        = pd.read_csv(f'{base_path}sellers_dataset.csv')
 
 # Replace NaN values with None (PostgreSQL's NULL)
 all_df = [customers, geolocation, order_items, order_payments, order_reviews, orders, products, sellers]
