@@ -1,0 +1,1001 @@
+diagnosis_id,appointment_id,patient_id,provider_id,icd10_code,diagnosis_description,diagnosis_type,severity,onset_date,status,notes,created_date
+DIA000001,APT000023,PAT000463,PRV000185,I10,Essential (primary) hypertension,Tertiary,Mild,2023-04-19,Resolved,Lifestyle modifications discussed,2024-10-11 23:53:58.013099
+DIA000002,APT000047,PAT000382,PRV000989,K58.9,Irritable bowel syndrome without diarrhea,Primary,Mild,2025-02-07,Active,Patient reports symptoms for several weeks,2024-09-19 23:53:58.013099
+DIA000003,APT000109,PAT000226,PRV000648,F41.9,"Anxiety disorder, unspecified",Secondary,Mild,2021-10-28,Resolved,Condition well-controlled with medication,2025-08-24 23:53:58.013099
+DIA000004,APT000433,PAT000634,PRV000250,M79.3,"Panniculitis, unspecified",Primary,Moderate,2016-08-22,Active,,2025-02-22 23:53:58.013099
+DIA000005,APT000561,PAT000205,PRV000609,K21.9,Gastro-esophageal reflux disease without esophagitis,Secondary,Moderate,2023-07-18,Active,Follow-up in 3 months recommended,2024-06-27 23:53:58.013099
+DIA000006,APT000300,PAT000436,PRV000766,N39.0,"Urinary tract infection, site not specified",Primary,Severe,2021-04-07,Recurrent,,2025-03-16 23:53:58.013099
+DIA000007,APT000356,PAT000930,PRV000259,F41.9,"Anxiety disorder, unspecified",Primary,Mild,2026-01-14,Resolved,Patient referred to specialist,2025-11-27 23:53:58.013099
+DIA000008,APT000068,PAT000064,PRV000892,E78.5,"Hyperlipidemia, unspecified",Primary,Moderate,,Chronic,,2025-11-23 23:53:58.013099
+DIA000009,APT000641,PAT000029,PRV000263,J45.909,"Unspecified asthma, uncomplicated",Primary,Severe,2016-11-03,Resolved,Patient referred to specialist,2024-05-05 23:53:58.013099
+DIA000010,APT000150,PAT000492,PRV000839,M79.3,"Panniculitis, unspecified",Primary,Severe,2023-11-16,Active,,2024-03-30 23:53:58.013099
+DIA000011,APT000173,PAT000304,PRV000824,J45.909,"Unspecified asthma, uncomplicated",Primary,Severe,2019-07-12,Resolved,,2026-01-10 23:53:58.013099
+DIA000012,APT000750,PAT000529,PRV000664,M79.3,"Panniculitis, unspecified",Primary,Moderate,2025-08-02,Resolved,Patient referred to specialist,2024-11-17 23:53:58.013099
+DIA000013,APT000278,PAT000112,PRV000793,K58.9,Irritable bowel syndrome without diarrhea,Primary,,,Recurrent,,2025-07-08 23:53:58.013099
+DIA000014,APT000906,PAT000944,PRV001000,M19.90,"Unspecified osteoarthritis, unspecified site",Primary,Mild,2022-09-24,Active,,2024-04-07 23:53:58.013099
+DIA000015,APT000646,PAT000207,PRV000623,E11.9,Type 2 diabetes mellitus without complications,Primary,Moderate,,Chronic,Condition well-controlled with medication,2025-02-10 23:53:58.013099
+DIA000016,APT000965,PAT000871,PRV000262,M19.90,"Unspecified osteoarthritis, unspecified site",Primary,Mild,2018-12-25,Recurrent,Lifestyle modifications discussed,2025-12-20 23:53:58.013099
+DIA000017,APT000064,PAT000702,PRV000632,L70.0,Acne vulgaris,Primary,Mild,2017-07-22,Resolved,Patient reports symptoms for several weeks,2024-05-26 23:53:58.013099
+DIA000018,APT000179,PAT000194,PRV000223,K21.9,Gastro-esophageal reflux disease without esophagitis,Secondary,Mild,2021-07-08,Recurrent,,2025-04-12 23:53:58.013099
+DIA000019,APT000227,PAT000379,PRV000006,I10,Essential (primary) hypertension,Primary,Mild,2016-07-08,Active,Condition well-controlled with medication,2024-11-23 23:53:58.013099
+DIA000020,APT000532,PAT000242,PRV000475,K58.9,Irritable bowel syndrome without diarrhea,Secondary,Mild,,Recurrent,Patient reports symptoms for several weeks,2024-01-25 23:53:58.013099
+DIA000021,APT000779,PAT000217,PRV000668,F33.9,"Major depressive disorder, recurrent, unspecified",Primary,Mild,2017-11-17,Chronic,Patient referred to specialist,2024-12-18 23:53:58.013099
+DIA000022,APT000456,PAT000984,PRV000712,M19.90,"Unspecified osteoarthritis, unspecified site",Secondary,Mild,2023-09-06,Active,Follow-up in 3 months recommended,2024-03-04 23:53:58.013099
+DIA000023,APT000828,PAT000711,PRV000567,M19.90,"Unspecified osteoarthritis, unspecified site",Primary,,2024-05-29,Recurrent,,2024-12-07 23:53:58.013099
+DIA000024,APT000957,PAT000251,PRV000317,K21.9,Gastro-esophageal reflux disease without esophagitis,Primary,Mild,2023-11-08,Active,,2026-01-12 23:53:58.013099
+DIA000025,APT000549,PAT000976,PRV000337,M25.561,Pain in right knee,Primary,Moderate,2016-09-08,Active,Patient referred to specialist,2025-02-07 23:53:58.013099
+DIA000026,APT000629,PAT000439,PRV000466,K21.9,Gastro-esophageal reflux disease without esophagitis,Primary,Mild,2016-12-08,Resolved,Patient reports symptoms for several weeks,2026-01-14 23:53:58.013099
+DIA000027,APT000694,PAT000931,PRV000879,I10,Essential (primary) hypertension,Primary,,,Active,Lifestyle modifications discussed,2024-11-15 23:53:58.013099
+DIA000028,APT000979,PAT000637,PRV000851,R10.9,Unspecified abdominal pain,Primary,Severe,2016-04-13,Active,Follow-up in 3 months recommended,2024-08-04 23:53:58.013099
+DIA000029,APT000194,PAT000282,PRV000515,J45.909,"Unspecified asthma, uncomplicated",Tertiary,Moderate,2018-03-11,Chronic,Patient referred to specialist,2024-06-14 23:53:58.013099
+DIA000030,APT000046,PAT000065,PRV000269,K21.9,Gastro-esophageal reflux disease without esophagitis,Primary,Moderate,,Active,Patient referred to specialist,2025-12-20 23:53:58.013099
+DIA000031,APT000208,PAT000892,PRV000257,K58.9,Irritable bowel syndrome without diarrhea,Primary,Mild,2016-12-27,Active,Follow-up in 3 months recommended,2025-07-13 23:53:58.013099
+DIA000032,APT000551,PAT000454,PRV000611,R10.9,Unspecified abdominal pain,Secondary,,2021-04-17,Active,Patient referred to specialist,2025-01-08 23:53:58.013099
+DIA000033,APT000119,PAT000359,PRV000667,J45.909,"Unspecified asthma, uncomplicated",Primary,Severe,2021-12-17,Active,,2025-01-02 23:53:58.013099
+DIA000034,APT000924,PAT000114,PRV000737,R10.9,Unspecified abdominal pain,Secondary,Severe,2021-08-19,Chronic,Follow-up in 3 months recommended,2025-08-08 23:53:58.013099
+DIA000035,APT000303,PAT000514,PRV000064,L70.0,Acne vulgaris,Primary,Moderate,2020-11-06,Chronic,,2024-08-16 23:53:58.013099
+DIA000036,APT000749,PAT000031,PRV000753,E66.9,"Obesity, unspecified",Secondary,Mild,2025-11-21,Recurrent,Follow-up in 3 months recommended,2024-07-31 23:53:58.013099
+DIA000037,APT000477,PAT000690,PRV000825,E11.9,Type 2 diabetes mellitus without complications,Primary,Severe,2023-04-24,Resolved,Condition well-controlled with medication,2024-05-14 23:53:58.013099
+DIA000038,APT000402,PAT000004,PRV000173,F41.9,"Anxiety disorder, unspecified",Secondary,Mild,2022-03-24,Active,,2024-10-06 23:53:58.013099
+DIA000039,APT000971,PAT000460,PRV000829,E11.9,Type 2 diabetes mellitus without complications,Secondary,Moderate,2024-10-03,Recurrent,Follow-up in 3 months recommended,2025-06-27 23:53:58.013099
+DIA000040,APT000845,PAT000680,PRV000769,K58.9,Irritable bowel syndrome without diarrhea,Primary,Mild,2025-02-04,Chronic,Condition well-controlled with medication,2024-10-01 23:53:58.013099
+DIA000041,APT000053,PAT000359,PRV000240,E78.5,"Hyperlipidemia, unspecified",Primary,,,Resolved,Lifestyle modifications discussed,2024-04-02 23:53:58.013099
+DIA000042,APT000282,PAT000396,PRV000060,L70.0,Acne vulgaris,Primary,Mild,2021-06-16,Resolved,Patient referred to specialist,2024-06-22 23:53:58.013099
+DIA000043,APT000003,PAT000377,PRV000492,M19.90,"Unspecified osteoarthritis, unspecified site",Tertiary,Mild,2021-08-31,Recurrent,,2025-04-21 23:53:58.013099
+DIA000044,APT000588,PAT000549,PRV000837,E66.9,"Obesity, unspecified",Primary,Moderate,2019-02-19,Chronic,Follow-up in 3 months recommended,2025-12-20 23:53:58.013099
+DIA000045,APT000406,PAT000146,PRV000897,K58.9,Irritable bowel syndrome without diarrhea,Primary,Severe,2023-12-25,Active,Lifestyle modifications discussed,2024-10-20 23:53:58.013099
+DIA000046,APT000896,PAT000345,PRV000486,M79.3,"Panniculitis, unspecified",Primary,Moderate,2019-06-27,Chronic,Patient reports symptoms for several weeks,2024-03-12 23:53:58.013099
+DIA000047,APT000716,PAT000982,PRV000118,L70.0,Acne vulgaris,Primary,Mild,2024-04-23,Active,Patient referred to specialist,2026-01-04 23:53:58.013099
+DIA000048,APT000898,PAT000336,PRV000900,M79.3,"Panniculitis, unspecified",Primary,Mild,2022-11-12,Active,,2025-04-21 23:53:58.013099
+DIA000049,APT000189,PAT000268,PRV000804,J06.9,"Acute upper respiratory infection, unspecified",Tertiary,Severe,2019-04-22,Active,,2025-09-20 23:53:58.013099
+DIA000050,APT000756,PAT000523,PRV000318,M25.561,Pain in right knee,Primary,,2020-05-25,Active,Condition well-controlled with medication,2024-05-30 23:53:58.013099
+DIA000051,APT000936,PAT000756,PRV000672,K21.9,Gastro-esophageal reflux disease without esophagitis,Secondary,Severe,2025-02-07,Active,Condition well-controlled with medication,2025-12-19 23:53:58.013099
+DIA000052,APT000433,PAT000245,PRV000396,M54.5,Low back pain,Primary,Moderate,2023-12-17,Active,Patient referred to specialist,2025-07-22 23:53:58.013099
+DIA000053,APT000148,PAT000519,PRV000844,K58.9,Irritable bowel syndrome without diarrhea,Primary,,2023-09-24,Resolved,Lifestyle modifications discussed,2025-04-16 23:53:58.013099
+DIA000054,APT000927,PAT000437,PRV000338,E66.9,"Obesity, unspecified",Primary,Moderate,2019-05-01,Chronic,,2025-09-14 23:53:58.013099
+DIA000055,APT000577,PAT000572,PRV000943,F41.9,"Anxiety disorder, unspecified",Primary,Moderate,2021-01-23,Recurrent,Lifestyle modifications discussed,2024-11-21 23:53:58.013099
+DIA000056,APT000985,PAT000764,PRV000704,L70.0,Acne vulgaris,Tertiary,Moderate,2022-10-17,Active,Follow-up in 3 months recommended,2024-02-20 23:53:58.013099
+DIA000057,APT000165,PAT000994,PRV000033,M25.561,Pain in right knee,Secondary,Moderate,,Resolved,,2025-10-01 23:53:58.013099
+DIA000058,APT000155,PAT000931,PRV000670,N39.0,"Urinary tract infection, site not specified",Primary,Severe,2023-07-16,Recurrent,Patient referred to specialist,2024-08-26 23:53:58.013099
+DIA000059,APT000358,PAT000930,PRV000692,K58.9,Irritable bowel syndrome without diarrhea,Primary,Moderate,2021-05-23,Active,Patient reports symptoms for several weeks,2024-10-14 23:53:58.013099
+DIA000060,APT000800,PAT000880,PRV000953,L70.0,Acne vulgaris,Primary,Mild,2025-06-01,Chronic,Follow-up in 3 months recommended,2025-08-29 23:53:58.013099
+DIA000061,APT000973,PAT000829,PRV000154,E11.9,Type 2 diabetes mellitus without complications,Tertiary,Mild,,Chronic,,2025-07-04 23:53:58.013099
+DIA000062,APT000582,PAT000385,PRV000570,N39.0,"Urinary tract infection, site not specified",Secondary,Mild,2020-01-05,Active,,2024-08-23 23:53:58.013099
+DIA000063,APT000803,PAT000091,PRV000433,L70.0,Acne vulgaris,Secondary,Moderate,2020-09-06,Chronic,Follow-up in 3 months recommended,2024-06-11 23:53:58.013099
+DIA000064,APT000729,PAT000145,PRV000014,K58.9,Irritable bowel syndrome without diarrhea,Primary,Mild,2018-05-18,Chronic,Lifestyle modifications discussed,2024-04-07 23:53:58.013099
+DIA000065,APT000366,PAT000204,PRV000860,G47.00,"Insomnia, unspecified",Primary,Mild,,Active,,2024-10-22 23:53:58.013099
+DIA000066,APT000208,PAT000914,PRV000077,F33.9,"Major depressive disorder, recurrent, unspecified",Primary,Moderate,2017-09-02,Active,Patient referred to specialist,2025-05-26 23:53:58.013099
+DIA000067,APT000453,PAT000697,PRV000079,M19.90,"Unspecified osteoarthritis, unspecified site",Primary,Moderate,2025-08-19,Active,Patient referred to specialist,2025-12-14 23:53:58.013099
+DIA000068,APT000437,PAT000349,PRV000520,E66.9,"Obesity, unspecified",Primary,Severe,2019-11-25,Active,,2024-06-13 23:53:58.013099
+DIA000069,APT000173,PAT000786,PRV000256,K58.9,Irritable bowel syndrome without diarrhea,Primary,Moderate,2017-04-18,Resolved,,2025-12-31 23:53:58.013099
+DIA000070,APT000122,PAT000534,PRV000456,I10,Essential (primary) hypertension,Primary,Severe,2021-03-29,Resolved,Patient referred to specialist,2025-02-13 23:53:58.013099
+DIA000071,APT000878,PAT000499,PRV000419,G47.00,"Insomnia, unspecified",Secondary,,2016-12-27,Active,Follow-up in 3 months recommended,2025-05-31 23:53:58.013099
+DIA000072,APT000006,PAT000625,PRV000856,E66.9,"Obesity, unspecified",Secondary,Severe,2021-12-23,Recurrent,Patient referred to specialist,2025-06-30 23:53:58.013099
+DIA000073,APT000742,PAT000003,PRV000631,L70.0,Acne vulgaris,Primary,Moderate,2019-03-11,Active,Patient reports symptoms for several weeks,2025-11-19 23:53:58.013099
+DIA000074,APT000579,PAT000945,PRV000069,F33.9,"Major depressive disorder, recurrent, unspecified",Primary,Mild,2019-12-26,Active,,2025-09-19 23:53:58.013099
+DIA000075,APT000563,PAT000347,PRV000033,M19.90,"Unspecified osteoarthritis, unspecified site",Primary,,2018-11-22,Active,Patient referred to specialist,2024-02-24 23:53:58.013099
+DIA000076,APT000878,PAT000005,PRV000523,I10,Essential (primary) hypertension,Secondary,Mild,,Resolved,,2024-05-20 23:53:58.013099
+DIA000077,APT000369,PAT000491,PRV000075,F41.9,"Anxiety disorder, unspecified",Secondary,Mild,2024-10-26,Active,Condition well-controlled with medication,2025-08-04 23:53:58.013099
+DIA000078,APT000205,PAT000832,PRV000804,J06.9,"Acute upper respiratory infection, unspecified",Secondary,Moderate,2022-07-19,Active,Follow-up in 3 months recommended,2025-02-12 23:53:58.013099
+DIA000079,APT000186,PAT000211,PRV000922,R51,Headache,Secondary,Mild,2019-10-29,Active,Patient reports symptoms for several weeks,2025-09-10 23:53:58.013099
+DIA000080,APT000733,PAT000043,PRV000917,E66.9,"Obesity, unspecified",Primary,,2020-07-02,Chronic,,2024-07-25 23:53:58.013099
+DIA000081,APT000456,PAT000720,PRV000560,J06.9,"Acute upper respiratory infection, unspecified",Primary,Moderate,2020-03-05,Recurrent,Follow-up in 3 months recommended,2024-11-04 23:53:58.013099
+DIA000082,APT000133,PAT000756,PRV000729,J06.9,"Acute upper respiratory infection, unspecified",Primary,Moderate,2021-11-18,Active,Lifestyle modifications discussed,2025-04-02 23:53:58.013099
+DIA000083,APT000450,PAT000611,PRV000615,F41.9,"Anxiety disorder, unspecified",Primary,Moderate,2021-08-27,Active,Patient reports symptoms for several weeks,2024-10-14 23:53:58.013099
+DIA000084,APT000822,PAT000064,PRV000553,K21.9,Gastro-esophageal reflux disease without esophagitis,Secondary,Moderate,2017-01-29,Resolved,Condition well-controlled with medication,2025-12-26 23:53:58.013099
+DIA000085,APT000140,PAT000493,PRV000100,N39.0,"Urinary tract infection, site not specified",Primary,Mild,2023-10-04,Chronic,Patient reports symptoms for several weeks,2025-04-26 23:53:58.013099
+DIA000086,APT000817,PAT000887,PRV000712,M19.90,"Unspecified osteoarthritis, unspecified site",Primary,Moderate,2016-03-18,Active,Condition well-controlled with medication,2024-07-24 23:53:58.013099
+DIA000087,APT000995,PAT000131,PRV000664,K58.9,Irritable bowel syndrome without diarrhea,Primary,Moderate,2018-08-17,Recurrent,Lifestyle modifications discussed,2024-12-30 23:53:58.013099
+DIA000088,APT000042,PAT000580,PRV000774,I25.10,Atherosclerotic heart disease of native coronary artery without angina pectoris,Tertiary,Moderate,,Resolved,Follow-up in 3 months recommended,2025-02-24 23:53:58.013099
+DIA000089,APT000443,PAT000257,PRV000225,J06.9,"Acute upper respiratory infection, unspecified",Primary,Severe,2020-01-06,Active,Lifestyle modifications discussed,2025-11-30 23:53:58.013099
+DIA000090,APT000407,PAT000979,PRV000485,K58.9,Irritable bowel syndrome without diarrhea,Secondary,Mild,2021-07-03,Resolved,Follow-up in 3 months recommended,2025-07-25 23:53:58.013099
+DIA000091,APT000475,PAT000700,PRV000541,J06.9,"Acute upper respiratory infection, unspecified",Primary,Mild,,Recurrent,Condition well-controlled with medication,2025-06-20 23:53:58.013099
+DIA000092,APT000378,PAT000689,PRV000057,E11.9,Type 2 diabetes mellitus without complications,Primary,Mild,2019-01-26,Chronic,Condition well-controlled with medication,2025-10-23 23:53:58.013099
+DIA000093,APT000994,PAT000542,PRV000116,M19.90,"Unspecified osteoarthritis, unspecified site",Primary,Mild,2024-06-14,Active,Patient reports symptoms for several weeks,2025-05-06 23:53:58.013099
+DIA000094,APT000281,PAT000322,PRV000114,F41.9,"Anxiety disorder, unspecified",Secondary,Severe,,Active,,2024-10-12 23:53:58.013099
+DIA000095,APT000902,PAT000396,PRV000046,F33.9,"Major depressive disorder, recurrent, unspecified",Primary,Severe,2021-09-12,Active,Lifestyle modifications discussed,2025-03-21 23:53:58.013099
+DIA000096,APT000596,PAT000815,PRV000292,E11.9,Type 2 diabetes mellitus without complications,Secondary,Mild,2022-04-08,Active,Condition well-controlled with medication,2024-01-20 23:53:58.013099
+DIA000097,APT000664,PAT000255,PRV000471,E78.5,"Hyperlipidemia, unspecified",Primary,Moderate,2021-05-06,Chronic,Condition well-controlled with medication,2025-04-13 23:53:58.013099
+DIA000098,APT000016,PAT000397,PRV000004,M19.90,"Unspecified osteoarthritis, unspecified site",Primary,Moderate,2019-03-26,Chronic,,2024-09-02 23:53:58.013099
+DIA000099,APT000373,PAT000437,PRV000521,I10,Essential (primary) hypertension,Tertiary,Mild,,Chronic,Lifestyle modifications discussed,2025-09-14 23:53:58.013099
+DIA000100,APT000961,PAT000414,PRV000671,F33.9,"Major depressive disorder, recurrent, unspecified",Primary,Mild,2017-05-04,Recurrent,Lifestyle modifications discussed,2025-01-28 23:53:58.013099
+DIA000101,APT000592,PAT000453,PRV000659,N39.0,"Urinary tract infection, site not specified",Primary,,2020-07-24,Active,Patient referred to specialist,2024-12-24 23:53:58.013099
+DIA000102,APT000510,PAT000199,PRV000275,J06.9,"Acute upper respiratory infection, unspecified",Secondary,Moderate,2020-06-16,Chronic,Condition well-controlled with medication,2025-01-14 23:53:58.013099
+DIA000103,APT000220,PAT000101,PRV000284,E78.5,"Hyperlipidemia, unspecified",Primary,,2017-07-18,Chronic,,2025-11-23 23:53:58.013099
+DIA000104,APT000987,PAT000935,PRV000715,E78.5,"Hyperlipidemia, unspecified",Secondary,Mild,,Active,,2025-06-06 23:53:58.013099
+DIA000105,APT000017,PAT000945,PRV000807,J06.9,"Acute upper respiratory infection, unspecified",Primary,Moderate,2023-11-08,Chronic,Patient referred to specialist,2024-09-18 23:53:58.013099
+DIA000106,APT000247,PAT000219,PRV000260,L70.0,Acne vulgaris,Primary,Mild,2018-01-19,Active,,2025-10-06 23:53:58.013099
+DIA000107,APT000468,PAT000775,PRV000262,M19.90,"Unspecified osteoarthritis, unspecified site",Primary,Mild,2025-03-14,Chronic,,2025-02-18 23:53:58.013099
+DIA000108,APT000332,PAT000617,PRV000324,L70.0,Acne vulgaris,Secondary,Moderate,2020-11-20,Resolved,Condition well-controlled with medication,2024-01-22 23:53:58.013099
+DIA000109,APT000683,PAT000759,PRV000878,I10,Essential (primary) hypertension,Primary,Mild,2021-06-06,Active,Patient referred to specialist,2025-12-15 23:53:58.013099
+DIA000110,APT000248,PAT000415,PRV000899,J45.909,"Unspecified asthma, uncomplicated",Secondary,Mild,2017-01-19,Resolved,Condition well-controlled with medication,2026-01-05 23:53:58.013099
+DIA000111,APT000484,PAT000767,PRV000236,R51,Headache,Tertiary,Mild,2020-10-10,Resolved,Patient reports symptoms for several weeks,2024-09-07 23:53:58.013099
+DIA000112,APT000794,PAT000183,PRV000794,G47.00,"Insomnia, unspecified",Primary,Mild,2021-05-15,Active,Lifestyle modifications discussed,2025-04-28 23:53:58.013099
+DIA000113,APT000262,PAT000707,PRV000864,I25.10,Atherosclerotic heart disease of native coronary artery without angina pectoris,Primary,Moderate,2024-04-15,Active,Condition well-controlled with medication,2024-06-26 23:53:58.013099
+DIA000114,APT000384,PAT000532,PRV000690,L70.0,Acne vulgaris,Primary,Moderate,,Active,,2024-08-06 23:53:58.013099
+DIA000115,APT000808,PAT000407,PRV000138,M19.90,"Unspecified osteoarthritis, unspecified site",Primary,Mild,,Resolved,,2025-06-03 23:53:58.013099
+DIA000116,APT000846,PAT000253,PRV000358,L70.0,Acne vulgaris,Primary,Mild,2017-09-24,Chronic,Patient reports symptoms for several weeks,2024-08-11 23:53:58.013099
+DIA000117,APT000706,PAT000210,PRV000416,K21.9,Gastro-esophageal reflux disease without esophagitis,Secondary,Mild,2016-11-14,Recurrent,Follow-up in 3 months recommended,2025-08-16 23:53:58.013099
+DIA000118,APT000920,PAT000558,PRV000482,I25.10,Atherosclerotic heart disease of native coronary artery without angina pectoris,Tertiary,Moderate,,Resolved,,2024-10-26 23:53:58.013099
+DIA000119,APT000063,PAT000592,PRV000138,K21.9,Gastro-esophageal reflux disease without esophagitis,Tertiary,Mild,2019-07-07,Chronic,,2024-07-14 23:53:58.013099
+DIA000120,APT000971,PAT000470,PRV000092,R10.9,Unspecified abdominal pain,Secondary,Severe,2016-11-27,Active,,2025-08-20 23:53:58.013099
+DIA000121,APT000519,PAT000343,PRV000997,M79.3,"Panniculitis, unspecified",Secondary,Mild,2017-11-21,Chronic,Patient referred to specialist,2025-11-20 23:53:58.013099
+DIA000122,APT000787,PAT000316,PRV000848,M54.5,Low back pain,Primary,Mild,2023-01-19,Active,Follow-up in 3 months recommended,2025-10-24 23:53:58.013099
+DIA000123,APT000721,PAT000502,PRV000933,R10.9,Unspecified abdominal pain,Secondary,Severe,2019-05-17,Active,Follow-up in 3 months recommended,2025-08-22 23:53:58.013099
+DIA000124,APT000529,PAT000024,PRV000712,I25.10,Atherosclerotic heart disease of native coronary artery without angina pectoris,Secondary,Moderate,2020-12-07,Resolved,,2025-12-11 23:53:58.013099
+DIA000125,APT000209,PAT000121,PRV000066,N39.0,"Urinary tract infection, site not specified",Primary,Mild,2020-01-04,Active,Patient referred to specialist,2025-08-21 23:53:58.013099
+DIA000126,APT000005,PAT000685,PRV000577,K58.9,Irritable bowel syndrome without diarrhea,Tertiary,Severe,2023-12-24,Chronic,,2025-09-27 23:53:58.013099
+DIA000127,APT000736,PAT000082,PRV000697,I25.10,Atherosclerotic heart disease of native coronary artery without angina pectoris,Primary,Moderate,2022-08-31,Chronic,Condition well-controlled with medication,2025-02-23 23:53:58.013099
+DIA000128,APT000411,PAT000186,PRV000805,E66.9,"Obesity, unspecified",Secondary,Severe,2018-11-27,Active,,2025-08-22 23:53:58.013099
+DIA000129,APT000575,PAT000086,PRV000340,K58.9,Irritable bowel syndrome without diarrhea,Secondary,Moderate,,Active,Lifestyle modifications discussed,2024-11-27 23:53:58.013099
+DIA000130,APT000841,PAT000295,PRV000078,M79.3,"Panniculitis, unspecified",Tertiary,Moderate,2022-03-24,Chronic,Follow-up in 3 months recommended,2025-07-22 23:53:58.013099
+DIA000131,APT000143,PAT000202,PRV000982,J06.9,"Acute upper respiratory infection, unspecified",Primary,,2020-09-04,Chronic,Lifestyle modifications discussed,2025-11-27 23:53:58.013099
+DIA000132,APT000578,PAT000869,PRV000903,I10,Essential (primary) hypertension,Secondary,Mild,2025-03-31,Active,Condition well-controlled with medication,2024-09-07 23:53:58.013099
+DIA000133,APT000267,PAT000728,PRV000089,M25.561,Pain in right knee,Primary,Moderate,2023-04-21,Active,Condition well-controlled with medication,2024-03-11 23:53:58.013099
+DIA000134,APT000529,PAT000368,PRV000008,J06.9,"Acute upper respiratory infection, unspecified",Primary,Moderate,2018-11-21,Resolved,Patient reports symptoms for several weeks,2024-02-20 23:53:58.013099
+DIA000135,APT000126,PAT000623,PRV000582,L70.0,Acne vulgaris,Secondary,Mild,2020-07-14,Resolved,Patient reports symptoms for several weeks,2024-11-06 23:53:58.013099
+DIA000136,APT000876,PAT000845,PRV000280,J06.9,"Acute upper respiratory infection, unspecified",Primary,Mild,2023-07-25,Active,Patient referred to specialist,2024-02-14 23:53:58.013099
+DIA000137,APT000453,PAT000818,PRV000371,M54.5,Low back pain,Secondary,Mild,2017-08-24,Active,,2024-09-19 23:53:58.013099
+DIA000138,APT000946,PAT000761,PRV000744,J06.9,"Acute upper respiratory infection, unspecified",Primary,Moderate,,Chronic,Lifestyle modifications discussed,2024-06-08 23:53:58.013099
+DIA000139,APT000909,PAT000196,PRV000703,M54.5,Low back pain,Primary,Moderate,2021-05-10,Resolved,Patient reports symptoms for several weeks,2025-01-07 23:53:58.013099
+DIA000140,APT000053,PAT000918,PRV000696,M25.561,Pain in right knee,Secondary,Moderate,2025-12-08,Recurrent,,2024-01-17 23:53:58.013099
+DIA000141,APT000285,PAT000633,PRV000806,E66.9,"Obesity, unspecified",Primary,Mild,2016-10-16,Chronic,Lifestyle modifications discussed,2024-08-29 23:53:58.013099
+DIA000142,APT000966,PAT000233,PRV000136,G47.00,"Insomnia, unspecified",Primary,Moderate,2016-09-05,Recurrent,,2025-03-01 23:53:58.013099
+DIA000143,APT000593,PAT000584,PRV000412,M19.90,"Unspecified osteoarthritis, unspecified site",Tertiary,,2020-01-25,Active,Lifestyle modifications discussed,2024-02-20 23:53:58.013099
+DIA000144,APT000706,PAT000266,PRV000363,K21.9,Gastro-esophageal reflux disease without esophagitis,Primary,Mild,2025-01-26,Chronic,Condition well-controlled with medication,2024-09-29 23:53:58.013099
+DIA000145,APT000430,PAT000166,PRV000920,F41.9,"Anxiety disorder, unspecified",Secondary,Moderate,2023-10-22,Active,Follow-up in 3 months recommended,2025-10-01 23:53:58.013099
+DIA000146,APT000500,PAT000921,PRV000775,E66.9,"Obesity, unspecified",Primary,Severe,2021-09-20,Resolved,Lifestyle modifications discussed,2024-08-16 23:53:58.013099
+DIA000147,APT000153,PAT000456,PRV000538,K21.9,Gastro-esophageal reflux disease without esophagitis,Primary,Severe,,Active,Patient reports symptoms for several weeks,2024-10-29 23:53:58.013099
+DIA000148,APT000598,PAT000175,PRV000656,K21.9,Gastro-esophageal reflux disease without esophagitis,Primary,Moderate,2018-04-22,Active,Patient reports symptoms for several weeks,2024-05-11 23:53:58.013099
+DIA000149,APT000306,PAT000525,PRV000959,J06.9,"Acute upper respiratory infection, unspecified",Primary,Severe,,Chronic,Patient reports symptoms for several weeks,2024-10-13 23:53:58.013099
+DIA000150,APT000139,PAT000847,PRV000136,N39.0,"Urinary tract infection, site not specified",Primary,Mild,2019-11-26,Chronic,Condition well-controlled with medication,2025-08-24 23:53:58.013099
+DIA000151,APT000457,PAT000764,PRV000073,G47.00,"Insomnia, unspecified",Primary,Severe,2021-12-16,Active,Patient referred to specialist,2025-01-04 23:53:58.013099
+DIA000152,APT000738,PAT000791,PRV000417,I10,Essential (primary) hypertension,Primary,Mild,2019-08-18,Resolved,Follow-up in 3 months recommended,2025-12-30 23:53:58.013099
+DIA000153,APT000635,PAT000153,PRV000350,K58.9,Irritable bowel syndrome without diarrhea,Primary,Mild,,Active,Patient reports symptoms for several weeks,2025-12-19 23:53:58.013099
+DIA000154,APT000784,PAT000933,PRV000366,J45.909,"Unspecified asthma, uncomplicated",Primary,Mild,,Active,Lifestyle modifications discussed,2024-10-26 23:53:58.013099
+DIA000155,APT000087,PAT000814,PRV000091,J45.909,"Unspecified asthma, uncomplicated",Primary,Severe,,Chronic,Follow-up in 3 months recommended,2024-05-16 23:53:58.013099
+DIA000156,APT000932,PAT000546,PRV000308,F33.9,"Major depressive disorder, recurrent, unspecified",Primary,Moderate,2016-09-19,Active,Condition well-controlled with medication,2024-09-25 23:53:58.013099
+DIA000157,APT000599,PAT000909,PRV000825,N39.0,"Urinary tract infection, site not specified",Tertiary,Mild,2021-02-05,Recurrent,Patient reports symptoms for several weeks,2025-05-10 23:53:58.013099
+DIA000158,APT000960,PAT000524,PRV000445,M19.90,"Unspecified osteoarthritis, unspecified site",Secondary,Mild,2020-02-14,Active,Patient reports symptoms for several weeks,2024-11-08 23:53:58.013099
+DIA000159,APT000072,PAT000124,PRV000177,I25.10,Atherosclerotic heart disease of native coronary artery without angina pectoris,Secondary,,2019-10-25,Resolved,Patient referred to specialist,2025-01-30 23:53:58.013099
+DIA000160,APT000440,PAT000787,PRV000697,E66.9,"Obesity, unspecified",Primary,Severe,2017-06-22,Resolved,Condition well-controlled with medication,2024-08-06 23:53:58.013099
+DIA000161,APT000930,PAT000360,PRV000900,J45.909,"Unspecified asthma, uncomplicated",Tertiary,Moderate,,Active,Patient referred to specialist,2024-10-13 23:53:58.013099
+DIA000162,APT000971,PAT000906,PRV000888,R51,Headache,Secondary,Moderate,2016-12-28,Active,Lifestyle modifications discussed,2024-03-28 23:53:58.013099
+DIA000163,APT000892,PAT000427,PRV000012,R51,Headache,Secondary,Moderate,2023-01-14,Chronic,Follow-up in 3 months recommended,2024-01-21 23:53:58.013099
+DIA000164,APT000985,PAT000377,PRV000871,E66.9,"Obesity, unspecified",Primary,Mild,,Chronic,Condition well-controlled with medication,2024-05-29 23:53:58.013099
+DIA000165,APT000218,PAT000761,PRV000001,I25.10,Atherosclerotic heart disease of native coronary artery without angina pectoris,Tertiary,,2021-08-07,Active,Patient referred to specialist,2025-04-23 23:53:58.013099
+DIA000166,APT000463,PAT000640,PRV000008,N39.0,"Urinary tract infection, site not specified",Secondary,Mild,2018-11-03,Resolved,Lifestyle modifications discussed,2024-05-22 23:53:58.013099
+DIA000167,APT000711,PAT000778,PRV000546,K58.9,Irritable bowel syndrome without diarrhea,Secondary,Moderate,2024-12-11,Active,,2024-02-02 23:53:58.013099
+DIA000168,APT000631,PAT000828,PRV000525,J06.9,"Acute upper respiratory infection, unspecified",Primary,Mild,2026-01-01,Active,,2025-08-17 23:53:58.013099
+DIA000169,APT000536,PAT000392,PRV000556,M19.90,"Unspecified osteoarthritis, unspecified site",Primary,Moderate,2022-05-14,Active,Follow-up in 3 months recommended,2024-03-12 23:53:58.013099
+DIA000170,APT000800,PAT000015,PRV000767,I10,Essential (primary) hypertension,Primary,Moderate,2022-02-14,Active,Patient referred to specialist,2025-06-14 23:53:58.013099
+DIA000171,APT000962,PAT000301,PRV000534,K58.9,Irritable bowel syndrome without diarrhea,Primary,Moderate,,Chronic,Patient referred to specialist,2025-09-15 23:53:58.013099
+DIA000172,APT000030,PAT000056,PRV000669,R10.9,Unspecified abdominal pain,Secondary,Mild,2025-01-19,Chronic,,2024-04-08 23:53:58.013099
+DIA000173,APT000037,PAT000180,PRV000998,N39.0,"Urinary tract infection, site not specified",Primary,Moderate,2017-08-10,Recurrent,Patient reports symptoms for several weeks,2025-01-26 23:53:58.013099
+DIA000174,APT000276,PAT000569,PRV000941,F33.9,"Major depressive disorder, recurrent, unspecified",Primary,Mild,2025-11-24,Resolved,,2025-09-27 23:53:58.013099
+DIA000175,APT000774,PAT000674,PRV000483,M79.3,"Panniculitis, unspecified",Primary,Mild,2020-04-07,Recurrent,Lifestyle modifications discussed,2025-09-25 23:53:58.013099
+DIA000176,APT000933,PAT000476,PRV000658,I10,Essential (primary) hypertension,Primary,Mild,2020-04-07,Resolved,Lifestyle modifications discussed,2026-01-07 23:53:58.013099
+DIA000177,APT000459,PAT000289,PRV000432,F33.9,"Major depressive disorder, recurrent, unspecified",Primary,Severe,2025-12-22,Resolved,Patient reports symptoms for several weeks,2024-04-07 23:53:58.013099
+DIA000178,APT000150,PAT000313,PRV000306,I10,Essential (primary) hypertension,Secondary,Moderate,2018-09-22,Recurrent,Lifestyle modifications discussed,2024-06-23 23:53:58.013099
+DIA000179,APT000002,PAT000472,PRV000763,I25.10,Atherosclerotic heart disease of native coronary artery without angina pectoris,Primary,Moderate,2023-02-07,Resolved,Follow-up in 3 months recommended,2025-10-27 23:53:58.013099
+DIA000180,APT000171,PAT000476,PRV000807,M79.3,"Panniculitis, unspecified",Primary,Moderate,2018-06-01,Active,Patient reports symptoms for several weeks,2024-08-28 23:53:58.013099
+DIA000181,APT000710,PAT000937,PRV000110,M79.3,"Panniculitis, unspecified",Primary,Moderate,2018-02-02,Chronic,Condition well-controlled with medication,2024-08-09 23:53:58.013099
+DIA000182,APT000747,PAT000020,PRV000316,J06.9,"Acute upper respiratory infection, unspecified",Primary,Moderate,2022-01-01,Recurrent,,2025-06-27 23:53:58.013099
+DIA000183,APT000544,PAT000394,PRV000246,E11.9,Type 2 diabetes mellitus without complications,Primary,Mild,2023-03-16,Chronic,Follow-up in 3 months recommended,2025-10-27 23:53:58.013099
+DIA000184,APT000960,PAT000288,PRV000469,F41.9,"Anxiety disorder, unspecified",Secondary,Mild,2016-07-07,Resolved,Patient referred to specialist,2025-05-27 23:53:58.013099
+DIA000185,APT000551,PAT000556,PRV000919,F41.9,"Anxiety disorder, unspecified",Secondary,Moderate,,Resolved,Patient reports symptoms for several weeks,2025-02-12 23:53:58.013099
+DIA000186,APT000571,PAT000081,PRV000456,K21.9,Gastro-esophageal reflux disease without esophagitis,Secondary,Moderate,2019-06-05,Recurrent,Lifestyle modifications discussed,2024-10-03 23:53:58.013099
+DIA000187,APT000728,PAT000211,PRV000170,M54.5,Low back pain,Secondary,Severe,2020-11-19,Active,Lifestyle modifications discussed,2025-11-04 23:53:58.013099
+DIA000188,APT000173,PAT000246,PRV000164,M19.90,"Unspecified osteoarthritis, unspecified site",Primary,Severe,,Resolved,Lifestyle modifications discussed,2024-04-22 23:53:58.013099
+DIA000189,APT000219,PAT000346,PRV000184,E66.9,"Obesity, unspecified",Tertiary,Mild,2019-04-25,Active,Follow-up in 3 months recommended,2025-11-16 23:53:58.013099
+DIA000190,APT000593,PAT000512,PRV000520,E11.9,Type 2 diabetes mellitus without complications,Secondary,Mild,2024-06-12,Resolved,Patient referred to specialist,2024-05-20 23:53:58.013099
+DIA000191,APT000454,PAT000536,PRV000378,I25.10,Atherosclerotic heart disease of native coronary artery without angina pectoris,Tertiary,Moderate,2018-04-28,Resolved,Follow-up in 3 months recommended,2024-02-10 23:53:58.013099
+DIA000192,APT000577,PAT001000,PRV000334,N39.0,"Urinary tract infection, site not specified",Primary,Mild,2018-07-15,Active,Condition well-controlled with medication,2025-06-28 23:53:58.013099
+DIA000193,APT000942,PAT000957,PRV000965,K58.9,Irritable bowel syndrome without diarrhea,Tertiary,Mild,2016-05-11,Active,,2024-02-06 23:53:58.013099
+DIA000194,APT000886,PAT000163,PRV000975,M54.5,Low back pain,Secondary,Severe,2018-05-07,Resolved,Follow-up in 3 months recommended,2024-11-22 23:53:58.013099
+DIA000195,APT000816,PAT000633,PRV000440,N39.0,"Urinary tract infection, site not specified",Secondary,Mild,2017-03-18,Active,Patient referred to specialist,2024-11-06 23:53:58.013099
+DIA000196,APT000500,PAT000867,PRV000808,F41.9,"Anxiety disorder, unspecified",Primary,,2017-08-24,Active,Patient referred to specialist,2025-09-24 23:53:58.013099
+DIA000197,APT000003,PAT000604,PRV000594,F41.9,"Anxiety disorder, unspecified",Secondary,Moderate,2019-02-12,Chronic,,2024-09-07 23:53:58.013099
+DIA000198,APT000786,PAT000814,PRV000988,M19.90,"Unspecified osteoarthritis, unspecified site",Tertiary,Severe,,Active,Condition well-controlled with medication,2024-11-22 23:53:58.013099
+DIA000199,APT000575,PAT000159,PRV000743,N39.0,"Urinary tract infection, site not specified",Secondary,Mild,2021-02-18,Active,Condition well-controlled with medication,2025-01-11 23:53:58.013099
+DIA000200,APT000964,PAT000275,PRV000702,E11.9,Type 2 diabetes mellitus without complications,Primary,Mild,2023-10-10,Recurrent,Lifestyle modifications discussed,2024-08-14 23:53:58.013099
+DIA000201,APT000897,PAT000886,PRV000195,R10.9,Unspecified abdominal pain,Tertiary,Moderate,2024-08-22,Active,Patient referred to specialist,2024-08-14 23:53:58.013099
+DIA000202,APT000451,PAT000764,PRV000081,R51,Headache,Primary,Mild,2019-04-23,Active,,2025-10-20 23:53:58.013099
+DIA000203,APT000488,PAT000291,PRV000861,R51,Headache,Primary,Mild,2021-08-08,Resolved,Patient reports symptoms for several weeks,2024-07-26 23:53:58.013099
+DIA000204,APT000040,PAT000952,PRV000774,K21.9,Gastro-esophageal reflux disease without esophagitis,Primary,Mild,,Chronic,,2024-08-11 23:53:58.013099
+DIA000205,APT000883,PAT000134,PRV000286,E66.9,"Obesity, unspecified",Tertiary,Mild,2022-02-01,Recurrent,Patient reports symptoms for several weeks,2025-05-15 23:53:58.013099
+DIA000206,APT000071,PAT000238,PRV000578,E11.9,Type 2 diabetes mellitus without complications,Primary,Mild,2021-01-18,Recurrent,Patient reports symptoms for several weeks,2024-09-26 23:53:58.013099
+DIA000207,APT000324,PAT000912,PRV000238,J06.9,"Acute upper respiratory infection, unspecified",Primary,Severe,2024-02-17,Chronic,,2024-12-25 23:53:58.013099
+DIA000208,APT000684,PAT000333,PRV000364,L70.0,Acne vulgaris,Secondary,Mild,2021-12-01,Active,Follow-up in 3 months recommended,2025-12-24 23:53:58.013099
+DIA000209,APT000173,PAT000794,PRV000295,K58.9,Irritable bowel syndrome without diarrhea,Secondary,Mild,2021-07-15,Active,Patient referred to specialist,2024-11-10 23:53:58.013099
+DIA000210,APT000915,PAT000046,PRV000550,R51,Headache,Primary,Moderate,2021-03-03,Active,Condition well-controlled with medication,2025-11-07 23:53:58.013099
+DIA000211,APT000763,PAT000416,PRV000572,L70.0,Acne vulgaris,Tertiary,,2022-01-07,Active,Lifestyle modifications discussed,2024-03-21 23:53:58.013099
+DIA000212,APT000308,PAT000560,PRV000074,I25.10,Atherosclerotic heart disease of native coronary artery without angina pectoris,Tertiary,Mild,,Chronic,Follow-up in 3 months recommended,2024-01-27 23:53:58.013099
+DIA000213,APT000703,PAT000530,PRV000740,J45.909,"Unspecified asthma, uncomplicated",Primary,Mild,2025-02-06,Resolved,,2024-10-11 23:53:58.013099
+DIA000214,APT000178,PAT000320,PRV000046,L70.0,Acne vulgaris,Primary,Moderate,2016-09-22,Active,,2025-10-28 23:53:58.013099
+DIA000215,APT000274,PAT000221,PRV000739,M79.3,"Panniculitis, unspecified",Primary,,2019-06-24,Chronic,Lifestyle modifications discussed,2025-09-02 23:53:58.013099
+DIA000216,APT000291,PAT000776,PRV000954,F33.9,"Major depressive disorder, recurrent, unspecified",Primary,Severe,2016-03-08,Active,Patient referred to specialist,2025-01-17 23:53:58.013099
+DIA000217,APT000255,PAT000607,PRV000505,R51,Headache,Primary,Moderate,,Active,Follow-up in 3 months recommended,2025-01-31 23:53:58.013099
+DIA000218,APT000090,PAT000254,PRV000206,M54.5,Low back pain,Tertiary,Mild,2023-11-01,Resolved,Lifestyle modifications discussed,2024-02-10 23:53:58.013099
+DIA000219,APT000046,PAT000605,PRV000147,G47.00,"Insomnia, unspecified",Secondary,Moderate,2023-10-25,Active,Patient reports symptoms for several weeks,2025-11-20 23:53:58.013099
+DIA000220,APT000946,PAT000819,PRV000475,M54.5,Low back pain,Primary,Mild,2019-10-06,Active,Patient referred to specialist,2024-10-11 23:53:58.013099
+DIA000221,APT000978,PAT000229,PRV000427,G47.00,"Insomnia, unspecified",Primary,Moderate,2021-08-08,Active,Patient reports symptoms for several weeks,2025-01-28 23:53:58.013099
+DIA000222,APT000130,PAT000683,PRV000883,I25.10,Atherosclerotic heart disease of native coronary artery without angina pectoris,Primary,Moderate,2023-03-29,Active,Patient reports symptoms for several weeks,2024-07-11 23:53:58.013099
+DIA000223,APT000636,PAT000849,PRV000947,K58.9,Irritable bowel syndrome without diarrhea,Primary,,2017-06-22,Chronic,Condition well-controlled with medication,2025-04-19 23:53:58.013099
+DIA000224,APT000588,PAT000836,PRV000965,E78.5,"Hyperlipidemia, unspecified",Primary,Mild,2021-01-09,Recurrent,Follow-up in 3 months recommended,2024-06-07 23:53:58.013099
+DIA000225,APT000223,PAT000959,PRV000729,E66.9,"Obesity, unspecified",Secondary,Mild,,Active,,2025-06-29 23:53:58.013099
+DIA000226,APT000831,PAT000817,PRV000872,K21.9,Gastro-esophageal reflux disease without esophagitis,Tertiary,Moderate,2025-05-15,Active,Follow-up in 3 months recommended,2024-05-01 23:53:58.013099
+DIA000227,APT000147,PAT000637,PRV000074,E66.9,"Obesity, unspecified",Primary,Moderate,2022-05-08,Chronic,Patient referred to specialist,2025-09-18 23:53:58.013099
+DIA000228,APT000097,PAT000399,PRV000606,R10.9,Unspecified abdominal pain,Secondary,Severe,2016-08-09,Recurrent,Patient reports symptoms for several weeks,2024-02-29 23:53:58.013099
+DIA000229,APT000023,PAT000028,PRV000692,E11.9,Type 2 diabetes mellitus without complications,Primary,Mild,2023-01-04,Active,Follow-up in 3 months recommended,2024-09-12 23:53:58.013099
+DIA000230,APT000917,PAT000402,PRV000623,I10,Essential (primary) hypertension,Secondary,Mild,2016-07-10,Active,Condition well-controlled with medication,2024-07-16 23:53:58.013099
+DIA000231,APT000220,PAT000717,PRV000740,K58.9,Irritable bowel syndrome without diarrhea,Primary,Moderate,2019-03-17,Chronic,Lifestyle modifications discussed,2025-08-05 23:53:58.013099
+DIA000232,APT000414,PAT000149,PRV000042,M19.90,"Unspecified osteoarthritis, unspecified site",Primary,Mild,,Resolved,,2024-11-12 23:53:58.013099
+DIA000233,APT000484,PAT000894,PRV000243,F33.9,"Major depressive disorder, recurrent, unspecified",Tertiary,Severe,2021-07-01,Active,Patient reports symptoms for several weeks,2025-04-18 23:53:58.013099
+DIA000234,APT000669,PAT000433,PRV000459,M25.561,Pain in right knee,Primary,Moderate,,Resolved,Condition well-controlled with medication,2025-11-17 23:53:58.013099
+DIA000235,APT000874,PAT000202,PRV000981,I10,Essential (primary) hypertension,Secondary,Severe,2023-02-08,Active,Follow-up in 3 months recommended,2024-07-04 23:53:58.013099
+DIA000236,APT000271,PAT000556,PRV000483,M25.561,Pain in right knee,Primary,Moderate,2023-05-11,Resolved,,2025-06-28 23:53:58.013099
+DIA000237,APT000837,PAT000721,PRV000463,E66.9,"Obesity, unspecified",Primary,Severe,2021-01-11,Resolved,,2025-04-14 23:53:58.013099
+DIA000238,APT000037,PAT000152,PRV000253,N39.0,"Urinary tract infection, site not specified",Primary,Mild,,Chronic,,2024-03-09 23:53:58.013099
+DIA000239,APT000037,PAT000236,PRV000091,R10.9,Unspecified abdominal pain,Primary,Severe,2025-11-09,Active,Patient referred to specialist,2025-04-11 23:53:58.013099
+DIA000240,APT000603,PAT000636,PRV000100,I10,Essential (primary) hypertension,Secondary,Mild,2022-06-04,Active,,2025-03-07 23:53:58.013099
+DIA000241,APT000189,PAT000113,PRV000010,G47.00,"Insomnia, unspecified",Primary,Moderate,2019-02-14,Active,Patient reports symptoms for several weeks,2025-06-17 23:53:58.013099
+DIA000242,APT000748,PAT000614,PRV000813,G47.00,"Insomnia, unspecified",Secondary,Mild,,Chronic,Patient reports symptoms for several weeks,2025-04-09 23:53:58.013099
+DIA000243,APT000349,PAT000141,PRV000175,J06.9,"Acute upper respiratory infection, unspecified",Secondary,Moderate,,Active,,2025-11-14 23:53:58.013099
+DIA000244,APT000843,PAT000600,PRV000838,E66.9,"Obesity, unspecified",Secondary,Mild,2021-04-11,Active,,2025-07-12 23:53:58.013099
+DIA000245,APT000795,PAT000303,PRV000854,G47.00,"Insomnia, unspecified",Primary,Mild,,Active,Patient reports symptoms for several weeks,2024-08-04 23:53:58.013099
+DIA000246,APT000683,PAT000482,PRV000327,J06.9,"Acute upper respiratory infection, unspecified",Tertiary,,2020-02-03,Chronic,Patient reports symptoms for several weeks,2024-07-30 23:53:58.013099
+DIA000247,APT000752,PAT000945,PRV000707,K21.9,Gastro-esophageal reflux disease without esophagitis,Primary,Mild,2017-06-12,Active,Patient reports symptoms for several weeks,2025-02-07 23:53:58.013099
+DIA000248,APT000270,PAT000716,PRV000831,K21.9,Gastro-esophageal reflux disease without esophagitis,Primary,Severe,,Active,Patient reports symptoms for several weeks,2024-02-11 23:53:58.013099
+DIA000249,APT000151,PAT000763,PRV000198,R51,Headache,Primary,,2020-04-23,Active,Condition well-controlled with medication,2025-03-01 23:53:58.013099
+DIA000250,APT000509,PAT000515,PRV000802,E11.9,Type 2 diabetes mellitus without complications,Primary,Mild,2024-06-13,Chronic,,2024-05-18 23:53:58.013099
+DIA000251,APT000025,PAT000704,PRV000466,M19.90,"Unspecified osteoarthritis, unspecified site",Primary,Moderate,2021-11-22,Resolved,Lifestyle modifications discussed,2024-05-17 23:53:58.013099
+DIA000252,APT000813,PAT000674,PRV000676,G47.00,"Insomnia, unspecified",Secondary,Mild,2017-02-01,Chronic,,2025-10-21 23:53:58.013099
+DIA000253,APT000604,PAT000483,PRV000327,I10,Essential (primary) hypertension,Primary,Mild,2016-03-01,Chronic,,2025-11-19 23:53:58.013099
+DIA000254,APT000528,PAT000286,PRV000879,M54.5,Low back pain,Primary,Moderate,2016-01-20,Recurrent,Follow-up in 3 months recommended,2024-08-10 23:53:58.013099
+DIA000255,APT000221,PAT000364,PRV000935,M54.5,Low back pain,Secondary,,,Active,,2024-10-05 23:53:58.013099
+DIA000256,APT000111,PAT000810,PRV000595,M54.5,Low back pain,Primary,Mild,2020-10-07,Recurrent,Follow-up in 3 months recommended,2024-10-09 23:53:58.013099
+DIA000257,APT000709,PAT000263,PRV000225,E11.9,Type 2 diabetes mellitus without complications,Primary,Moderate,2019-06-27,Active,Patient referred to specialist,2025-09-27 23:53:58.013099
+DIA000258,APT000884,PAT000824,PRV000214,M79.3,"Panniculitis, unspecified",Primary,Moderate,2020-09-07,Active,Follow-up in 3 months recommended,2024-09-02 23:53:58.013099
+DIA000259,APT000527,PAT000369,PRV000339,K21.9,Gastro-esophageal reflux disease without esophagitis,Secondary,Severe,,Chronic,Follow-up in 3 months recommended,2025-02-28 23:53:58.013099
+DIA000260,APT000875,PAT000430,PRV000962,K21.9,Gastro-esophageal reflux disease without esophagitis,Primary,Mild,2018-06-28,Active,,2024-10-25 23:53:58.013099
+DIA000261,APT000125,PAT000734,PRV000557,K21.9,Gastro-esophageal reflux disease without esophagitis,Primary,Moderate,2025-08-02,Active,,2024-12-25 23:53:58.013099
+DIA000262,APT000967,PAT000697,PRV000322,R51,Headache,Primary,Moderate,2021-02-24,Active,Patient referred to specialist,2024-02-17 23:53:58.013099
+DIA000263,APT000559,PAT000727,PRV000118,M25.561,Pain in right knee,Secondary,Moderate,2023-01-31,Resolved,,2025-05-08 23:53:58.013099
+DIA000264,APT000063,PAT000826,PRV000712,J45.909,"Unspecified asthma, uncomplicated",Secondary,,2022-06-03,Active,Patient reports symptoms for several weeks,2025-03-01 23:53:58.013099
+DIA000265,APT000243,PAT000016,PRV000356,F33.9,"Major depressive disorder, recurrent, unspecified",Secondary,Severe,2019-06-21,Chronic,,2024-09-01 23:53:58.013099
+DIA000266,APT000796,PAT000881,PRV000684,E78.5,"Hyperlipidemia, unspecified",Primary,Mild,2022-12-05,Chronic,Patient referred to specialist,2024-05-30 23:53:58.013099
+DIA000267,APT000286,PAT000197,PRV000070,F33.9,"Major depressive disorder, recurrent, unspecified",Primary,Moderate,2018-09-11,Resolved,Patient reports symptoms for several weeks,2026-01-14 23:53:58.013099
+DIA000268,APT000193,PAT000680,PRV000641,R51,Headache,Primary,Mild,2025-03-31,Active,Patient referred to specialist,2025-06-30 23:53:58.013099
+DIA000269,APT000031,PAT000125,PRV000303,R10.9,Unspecified abdominal pain,Primary,Mild,2018-06-30,Recurrent,Lifestyle modifications discussed,2024-08-14 23:53:58.013099
+DIA000270,APT000937,PAT000665,PRV000589,E66.9,"Obesity, unspecified",Primary,Moderate,,Active,Patient reports symptoms for several weeks,2025-11-06 23:53:58.013099
+DIA000271,APT000468,PAT000651,PRV000281,M25.561,Pain in right knee,Primary,Mild,2016-03-09,Active,,2024-07-13 23:53:58.013099
+DIA000272,APT000108,PAT000860,PRV000041,M79.3,"Panniculitis, unspecified",Primary,Moderate,2016-08-19,Active,Patient reports symptoms for several weeks,2024-11-07 23:53:58.013099
+DIA000273,APT000310,PAT000947,PRV000681,K58.9,Irritable bowel syndrome without diarrhea,Secondary,,2023-04-14,Resolved,,2024-08-01 23:53:58.013099
+DIA000274,APT000843,PAT000556,PRV000021,K58.9,Irritable bowel syndrome without diarrhea,Primary,Mild,2021-06-20,Active,Lifestyle modifications discussed,2025-06-23 23:53:58.013099
+DIA000275,APT000555,PAT000422,PRV000507,N39.0,"Urinary tract infection, site not specified",Secondary,,2025-02-17,Active,Patient referred to specialist,2025-08-03 23:53:58.013099
+DIA000276,APT000802,PAT000517,PRV000272,M25.561,Pain in right knee,Primary,Moderate,,Active,Patient referred to specialist,2025-11-14 23:53:58.013099
+DIA000277,APT000564,PAT000919,PRV000945,J06.9,"Acute upper respiratory infection, unspecified",Primary,Moderate,2025-02-27,Active,Lifestyle modifications discussed,2026-01-06 23:53:58.013099
+DIA000278,APT000658,PAT000846,PRV000840,E11.9,Type 2 diabetes mellitus without complications,Primary,Severe,2018-05-11,Resolved,Lifestyle modifications discussed,2024-09-24 23:53:58.013099
+DIA000279,APT000223,PAT000395,PRV000442,E78.5,"Hyperlipidemia, unspecified",Primary,Mild,,Chronic,Lifestyle modifications discussed,2025-06-21 23:53:58.013099
+DIA000280,APT000903,PAT000370,PRV000892,I25.10,Atherosclerotic heart disease of native coronary artery without angina pectoris,Primary,Moderate,,Chronic,Patient referred to specialist,2024-06-28 23:53:58.013099
+DIA000281,APT000043,PAT000597,PRV000871,M79.3,"Panniculitis, unspecified",Primary,Moderate,,Active,Follow-up in 3 months recommended,2024-02-14 23:53:58.013099
+DIA000282,APT000955,PAT000188,PRV000485,I10,Essential (primary) hypertension,Tertiary,Mild,2021-07-26,Active,,2024-12-09 23:53:58.013099
+DIA000283,APT000339,PAT000487,PRV000138,M79.3,"Panniculitis, unspecified",Secondary,,2021-04-01,Recurrent,Condition well-controlled with medication,2025-02-13 23:53:58.013099
+DIA000284,APT000765,PAT000612,PRV000233,M54.5,Low back pain,Primary,Severe,2021-02-03,Active,Patient referred to specialist,2025-03-25 23:53:58.013099
+DIA000285,APT000315,PAT000847,PRV000602,K58.9,Irritable bowel syndrome without diarrhea,Secondary,Mild,2025-08-08,Chronic,Condition well-controlled with medication,2025-05-22 23:53:58.013099
+DIA000286,APT000354,PAT000612,PRV000470,M54.5,Low back pain,Secondary,Mild,2021-06-07,Active,,2024-10-17 23:53:58.013099
+DIA000287,APT000026,PAT000899,PRV000792,E78.5,"Hyperlipidemia, unspecified",Secondary,Moderate,2025-07-26,Recurrent,,2026-01-12 23:53:58.013099
+DIA000288,APT000809,PAT000319,PRV000638,I25.10,Atherosclerotic heart disease of native coronary artery without angina pectoris,Secondary,Mild,,Active,Condition well-controlled with medication,2025-09-29 23:53:58.013099
+DIA000289,APT000885,PAT000949,PRV000833,K21.9,Gastro-esophageal reflux disease without esophagitis,Primary,Moderate,,Active,Patient reports symptoms for several weeks,2025-09-12 23:53:58.013099
+DIA000290,APT000810,PAT000529,PRV000854,F41.9,"Anxiety disorder, unspecified",Primary,Mild,2022-12-29,Chronic,Patient reports symptoms for several weeks,2025-09-02 23:53:58.013099
+DIA000291,APT000563,PAT000117,PRV000959,K21.9,Gastro-esophageal reflux disease without esophagitis,Primary,Moderate,2025-07-20,Resolved,Patient referred to specialist,2024-12-08 23:53:58.013099
+DIA000292,APT000136,PAT000840,PRV000948,J45.909,"Unspecified asthma, uncomplicated",Primary,Mild,2020-05-07,Active,Patient referred to specialist,2024-05-16 23:53:58.013099
+DIA000293,APT000947,PAT000647,PRV000535,I10,Essential (primary) hypertension,Primary,Mild,2022-03-11,Resolved,,2024-05-26 23:53:58.013099
+DIA000294,APT000506,PAT000181,PRV000550,G47.00,"Insomnia, unspecified",Primary,Moderate,2017-09-05,Chronic,Follow-up in 3 months recommended,2025-07-16 23:53:58.013099
+DIA000295,APT000653,PAT000621,PRV000997,K58.9,Irritable bowel syndrome without diarrhea,Tertiary,Moderate,,Active,Condition well-controlled with medication,2024-07-27 23:53:58.013099
+DIA000296,APT000367,PAT000657,PRV000084,M54.5,Low back pain,Tertiary,,,Active,,2024-05-02 23:53:58.013099
+DIA000297,APT000703,PAT000423,PRV000107,F33.9,"Major depressive disorder, recurrent, unspecified",Secondary,Severe,2019-10-28,Active,Follow-up in 3 months recommended,2024-10-02 23:53:58.013099
+DIA000298,APT000910,PAT000302,PRV000538,F33.9,"Major depressive disorder, recurrent, unspecified",Secondary,Mild,2024-12-03,Active,Follow-up in 3 months recommended,2024-03-23 23:53:58.013099
+DIA000299,APT000614,PAT000330,PRV000992,K58.9,Irritable bowel syndrome without diarrhea,Tertiary,Mild,2018-08-25,Resolved,Patient reports symptoms for several weeks,2025-08-29 23:53:58.013099
+DIA000300,APT000558,PAT000995,PRV000517,L70.0,Acne vulgaris,Primary,Severe,2017-12-21,Active,Patient referred to specialist,2025-09-01 23:53:58.013099
+DIA000301,APT000829,PAT000932,PRV000148,R51,Headache,Primary,,2023-07-18,Active,,2025-04-22 23:53:58.013099
+DIA000302,APT000727,PAT000292,PRV000099,E66.9,"Obesity, unspecified",Primary,Severe,2025-03-23,Active,Follow-up in 3 months recommended,2024-06-09 23:53:58.013099
+DIA000303,APT000407,PAT000533,PRV000775,E78.5,"Hyperlipidemia, unspecified",Secondary,Mild,2016-03-16,Resolved,Patient referred to specialist,2024-10-17 23:53:58.013099
+DIA000304,APT000531,PAT000855,PRV000955,I10,Essential (primary) hypertension,Primary,,2023-04-12,Active,Lifestyle modifications discussed,2024-11-24 23:53:58.013099
+DIA000305,APT000378,PAT000915,PRV000767,N39.0,"Urinary tract infection, site not specified",Secondary,Mild,2020-06-26,Active,,2025-10-15 23:53:58.013099
+DIA000306,APT000568,PAT000134,PRV000769,R51,Headache,Primary,Moderate,2020-02-13,Active,Condition well-controlled with medication,2024-04-30 23:53:58.013099
+DIA000307,APT000100,PAT000472,PRV000049,E78.5,"Hyperlipidemia, unspecified",Primary,,2023-11-13,Recurrent,Follow-up in 3 months recommended,2024-02-20 23:53:58.013099
+DIA000308,APT000610,PAT000508,PRV000450,E11.9,Type 2 diabetes mellitus without complications,Secondary,Mild,2017-09-15,Active,,2025-06-05 23:53:58.013099
+DIA000309,APT000983,PAT000128,PRV000387,J45.909,"Unspecified asthma, uncomplicated",Primary,,2023-01-29,Chronic,Condition well-controlled with medication,2025-03-04 23:53:58.013099
+DIA000310,APT000506,PAT000580,PRV000876,J45.909,"Unspecified asthma, uncomplicated",Primary,Mild,2020-08-18,Active,Lifestyle modifications discussed,2024-07-17 23:53:58.013099
+DIA000311,APT000287,PAT000751,PRV000792,K58.9,Irritable bowel syndrome without diarrhea,Primary,,2017-10-16,Active,Lifestyle modifications discussed,2024-08-27 23:53:58.013099
+DIA000312,APT000519,PAT000745,PRV000782,E66.9,"Obesity, unspecified",Primary,Mild,2024-08-06,Resolved,Lifestyle modifications discussed,2024-09-17 23:53:58.013099
+DIA000313,APT000565,PAT000356,PRV000699,I25.10,Atherosclerotic heart disease of native coronary artery without angina pectoris,Secondary,,2025-06-06,Active,Patient referred to specialist,2024-03-27 23:53:58.013099
+DIA000314,APT000697,PAT000619,PRV000033,K58.9,Irritable bowel syndrome without diarrhea,Primary,Mild,2017-09-29,Recurrent,Patient referred to specialist,2024-02-18 23:53:58.013099
+DIA000315,APT000719,PAT000083,PRV000332,F41.9,"Anxiety disorder, unspecified",Primary,Moderate,2020-10-01,Recurrent,Lifestyle modifications discussed,2024-12-21 23:53:58.013099
+DIA000316,APT000809,PAT000975,PRV000683,F33.9,"Major depressive disorder, recurrent, unspecified",Primary,Moderate,,Chronic,Condition well-controlled with medication,2025-12-02 23:53:58.013099
+DIA000317,APT000307,PAT000650,PRV000786,F41.9,"Anxiety disorder, unspecified",Secondary,Moderate,2020-12-17,Resolved,Patient referred to specialist,2025-10-09 23:53:58.013099
+DIA000318,APT000427,PAT000125,PRV000592,I25.10,Atherosclerotic heart disease of native coronary artery without angina pectoris,Primary,Mild,2022-10-13,Active,Condition well-controlled with medication,2025-06-02 23:53:58.013099
+DIA000319,APT000672,PAT000639,PRV000943,M25.561,Pain in right knee,Secondary,Moderate,2016-07-09,Active,Patient reports symptoms for several weeks,2025-10-03 23:53:58.013099
+DIA000320,APT000450,PAT000768,PRV000373,R51,Headache,Secondary,Mild,2023-06-09,Recurrent,,2025-12-24 23:53:58.013099
+DIA000321,APT000265,PAT000602,PRV000914,I10,Essential (primary) hypertension,Primary,Moderate,2022-03-18,Resolved,Patient referred to specialist,2024-04-16 23:53:58.013099
+DIA000322,APT000560,PAT000270,PRV000326,J45.909,"Unspecified asthma, uncomplicated",Secondary,Mild,,Resolved,,2024-07-18 23:53:58.013099
+DIA000323,APT000902,PAT000114,PRV000549,K58.9,Irritable bowel syndrome without diarrhea,Secondary,,2024-03-02,Active,Patient reports symptoms for several weeks,2024-11-03 23:53:58.013099
+DIA000324,APT000160,PAT000849,PRV000675,L70.0,Acne vulgaris,Primary,Mild,2020-12-25,Active,Follow-up in 3 months recommended,2025-09-03 23:53:58.013099
+DIA000325,APT000175,PAT000741,PRV000649,J45.909,"Unspecified asthma, uncomplicated",Primary,Mild,,Recurrent,Condition well-controlled with medication,2025-04-23 23:53:58.013099
+DIA000326,APT000195,PAT000233,PRV000704,R51,Headache,Tertiary,Mild,2017-10-19,Active,,2025-01-08 23:53:58.013099
+DIA000327,APT000176,PAT000409,PRV000701,M19.90,"Unspecified osteoarthritis, unspecified site",Secondary,Moderate,2017-04-15,Active,,2025-06-27 23:53:58.013099
+DIA000328,APT000810,PAT000305,PRV000475,G47.00,"Insomnia, unspecified",Primary,Mild,2024-03-16,Active,Patient reports symptoms for several weeks,2025-10-26 23:53:58.013099
+DIA000329,APT000551,PAT000318,PRV000789,G47.00,"Insomnia, unspecified",Primary,Moderate,2021-12-03,Chronic,,2025-09-11 23:53:58.013099
+DIA000330,APT000409,PAT000696,PRV000047,J06.9,"Acute upper respiratory infection, unspecified",Secondary,Severe,2019-12-29,Active,Condition well-controlled with medication,2025-02-28 23:53:58.013099
+DIA000331,APT000994,PAT000457,PRV000258,M79.3,"Panniculitis, unspecified",Secondary,Moderate,2018-12-28,Chronic,Lifestyle modifications discussed,2024-08-29 23:53:58.013099
+DIA000332,APT000261,PAT000483,PRV000148,L70.0,Acne vulgaris,Secondary,Moderate,2024-12-12,Active,,2025-09-29 23:53:58.013099
+DIA000333,APT000170,PAT000165,PRV000378,J45.909,"Unspecified asthma, uncomplicated",Primary,Mild,,Chronic,,2024-07-06 23:53:58.013099
+DIA000334,APT000837,PAT000593,PRV000229,K58.9,Irritable bowel syndrome without diarrhea,Secondary,Moderate,2016-06-05,Chronic,,2025-08-26 23:53:58.013099
+DIA000335,APT000343,PAT000099,PRV000709,E78.5,"Hyperlipidemia, unspecified",Primary,Mild,2022-02-19,Active,Patient referred to specialist,2024-12-12 23:53:58.013099
+DIA000336,APT000009,PAT000123,PRV000449,G47.00,"Insomnia, unspecified",Primary,Severe,2018-05-07,Resolved,Patient reports symptoms for several weeks,2025-02-06 23:53:58.013099
+DIA000337,APT000311,PAT000556,PRV000931,J45.909,"Unspecified asthma, uncomplicated",Secondary,Mild,2016-08-07,Active,Condition well-controlled with medication,2025-08-31 23:53:58.013099
+DIA000338,APT000418,PAT000515,PRV000480,N39.0,"Urinary tract infection, site not specified",Tertiary,Moderate,2018-10-08,Active,Follow-up in 3 months recommended,2025-07-15 23:53:58.013099
+DIA000339,APT000286,PAT000291,PRV000417,M79.3,"Panniculitis, unspecified",Primary,Mild,2017-09-08,Chronic,,2024-10-06 23:53:58.013099
+DIA000340,APT000983,PAT000884,PRV000608,K21.9,Gastro-esophageal reflux disease without esophagitis,Primary,Severe,2020-04-23,Active,Condition well-controlled with medication,2025-09-18 23:53:58.013099
+DIA000341,APT000473,PAT000318,PRV000734,M79.3,"Panniculitis, unspecified",Secondary,Mild,2016-03-16,Active,Lifestyle modifications discussed,2024-02-07 23:53:58.013099
+DIA000342,APT000096,PAT000045,PRV000417,M19.90,"Unspecified osteoarthritis, unspecified site",Primary,Moderate,,Active,Patient referred to specialist,2026-01-06 23:53:58.013099
+DIA000343,APT000955,PAT000752,PRV000490,J06.9,"Acute upper respiratory infection, unspecified",Secondary,Mild,2021-04-08,Active,Patient referred to specialist,2024-11-29 23:53:58.013099
+DIA000344,APT000714,PAT000792,PRV000733,K58.9,Irritable bowel syndrome without diarrhea,Secondary,Moderate,2020-01-13,Chronic,Lifestyle modifications discussed,2024-07-22 23:53:58.013099
+DIA000345,APT000864,PAT000120,PRV000256,F41.9,"Anxiety disorder, unspecified",Primary,,,Active,Follow-up in 3 months recommended,2025-04-24 23:53:58.013099
+DIA000346,APT000756,PAT000817,PRV000135,L70.0,Acne vulgaris,Tertiary,Moderate,2021-12-02,Recurrent,,2024-11-22 23:53:58.013099
+DIA000347,APT000718,PAT000262,PRV000861,L70.0,Acne vulgaris,Secondary,Moderate,2023-07-29,Recurrent,Condition well-controlled with medication,2024-11-08 23:53:58.013099
+DIA000348,APT000801,PAT000458,PRV000383,E78.5,"Hyperlipidemia, unspecified",Secondary,,2023-06-21,Active,,2024-10-26 23:53:58.013099
+DIA000349,APT000498,PAT000799,PRV000910,G47.00,"Insomnia, unspecified",Secondary,Moderate,2017-11-22,Active,Patient reports symptoms for several weeks,2025-01-15 23:53:58.013099
+DIA000350,APT000300,PAT000714,PRV000278,E66.9,"Obesity, unspecified",Secondary,Moderate,2016-04-11,Chronic,Condition well-controlled with medication,2024-11-14 23:53:58.013099
+DIA000351,APT000143,PAT000002,PRV000602,M25.561,Pain in right knee,Primary,Moderate,2021-10-29,Active,Lifestyle modifications discussed,2025-01-06 23:53:58.013099
+DIA000352,APT000397,PAT000570,PRV000402,J06.9,"Acute upper respiratory infection, unspecified",Primary,Moderate,2017-06-28,Active,,2024-07-10 23:53:58.013099
+DIA000353,APT000371,PAT000182,PRV000392,K21.9,Gastro-esophageal reflux disease without esophagitis,Secondary,Mild,2017-04-03,Active,Condition well-controlled with medication,2025-05-04 23:53:58.013099
+DIA000354,APT000835,PAT000992,PRV000031,R10.9,Unspecified abdominal pain,Primary,Severe,,Resolved,Patient referred to specialist,2025-12-13 23:53:58.013099
+DIA000355,APT000838,PAT000204,PRV000922,J06.9,"Acute upper respiratory infection, unspecified",Primary,Moderate,,Chronic,Follow-up in 3 months recommended,2025-03-31 23:53:58.013099
+DIA000356,APT000558,PAT000091,PRV000839,E66.9,"Obesity, unspecified",Secondary,Mild,2023-03-20,Active,Condition well-controlled with medication,2025-07-11 23:53:58.013099
+DIA000357,APT000558,PAT000701,PRV000948,M25.561,Pain in right knee,Secondary,Severe,,Active,,2024-04-04 23:53:58.013099
+DIA000358,APT000920,PAT000606,PRV000498,N39.0,"Urinary tract infection, site not specified",Primary,Mild,,Recurrent,,2024-06-01 23:53:58.013099
+DIA000359,APT000821,PAT000805,PRV000804,G47.00,"Insomnia, unspecified",Secondary,Mild,2019-04-16,Chronic,Patient reports symptoms for several weeks,2025-10-22 23:53:58.013099
+DIA000360,APT000306,PAT000387,PRV000008,M79.3,"Panniculitis, unspecified",Secondary,Moderate,2017-08-18,Resolved,Follow-up in 3 months recommended,2024-03-26 23:53:58.013099
+DIA000361,APT000937,PAT000113,PRV000181,L70.0,Acne vulgaris,Primary,Severe,2022-10-09,Chronic,,2025-11-13 23:53:58.013099
+DIA000362,APT000055,PAT000484,PRV000561,K58.9,Irritable bowel syndrome without diarrhea,Secondary,Severe,2016-06-12,Active,Patient referred to specialist,2025-06-09 23:53:58.013099
+DIA000363,APT000991,PAT000665,PRV000650,I25.10,Atherosclerotic heart disease of native coronary artery without angina pectoris,Primary,,2018-12-29,Chronic,Lifestyle modifications discussed,2024-10-19 23:53:58.013099
+DIA000364,APT000418,PAT000147,PRV000481,L70.0,Acne vulgaris,Primary,Severe,2022-09-05,Active,Patient reports symptoms for several weeks,2025-04-17 23:53:58.013099
+DIA000365,APT000446,PAT000362,PRV000220,K21.9,Gastro-esophageal reflux disease without esophagitis,Primary,Mild,2018-05-24,Active,Lifestyle modifications discussed,2024-05-28 23:53:58.013099
+DIA000366,APT000813,PAT000525,PRV000976,M54.5,Low back pain,Primary,Mild,2017-04-08,Chronic,Condition well-controlled with medication,2024-10-10 23:53:58.013099
+DIA000367,APT000087,PAT000877,PRV000771,J06.9,"Acute upper respiratory infection, unspecified",Primary,Severe,2018-10-21,Active,,2025-07-01 23:53:58.013099
+DIA000368,APT000935,PAT000560,PRV000815,F33.9,"Major depressive disorder, recurrent, unspecified",Secondary,Mild,2017-11-04,Recurrent,Patient referred to specialist,2024-11-07 23:53:58.013099
+DIA000369,APT000154,PAT000137,PRV000508,M25.561,Pain in right knee,Secondary,Moderate,2021-06-07,Active,Condition well-controlled with medication,2025-03-15 23:53:58.013099
+DIA000370,APT000277,PAT000700,PRV000860,G47.00,"Insomnia, unspecified",Primary,Moderate,2021-01-24,Recurrent,,2025-01-09 23:53:58.013099
+DIA000371,APT000354,PAT000679,PRV000131,R51,Headache,Secondary,Mild,2018-12-21,Recurrent,Patient reports symptoms for several weeks,2024-11-17 23:53:58.013099
+DIA000372,APT000027,PAT000529,PRV000215,M54.5,Low back pain,Primary,,,Active,Patient referred to specialist,2024-08-26 23:53:58.013099
+DIA000373,APT000086,PAT000265,PRV000564,G47.00,"Insomnia, unspecified",Primary,Moderate,2021-09-12,Chronic,Patient referred to specialist,2025-11-01 23:53:58.013099
+DIA000374,APT000072,PAT000705,PRV000030,M79.3,"Panniculitis, unspecified",Secondary,Moderate,2025-08-02,Active,Condition well-controlled with medication,2025-08-05 23:53:58.013099
+DIA000375,APT000444,PAT000269,PRV000370,R51,Headache,Primary,,2016-11-26,Recurrent,,2025-10-27 23:53:58.013099
+DIA000376,APT000685,PAT000938,PRV000467,G47.00,"Insomnia, unspecified",Primary,Moderate,2021-01-23,Active,,2024-01-27 23:53:58.013099
+DIA000377,APT000039,PAT000751,PRV000120,F41.9,"Anxiety disorder, unspecified",Secondary,Mild,2017-01-12,Chronic,Patient reports symptoms for several weeks,2025-08-03 23:53:58.013099
+DIA000378,APT000830,PAT000175,PRV001000,G47.00,"Insomnia, unspecified",Primary,Moderate,2025-05-07,Active,Lifestyle modifications discussed,2025-03-15 23:53:58.013099
+DIA000379,APT000103,PAT000976,PRV000160,J06.9,"Acute upper respiratory infection, unspecified",Secondary,Severe,2018-05-11,Active,Follow-up in 3 months recommended,2024-05-03 23:53:58.013099
+DIA000380,APT000161,PAT000453,PRV000119,G47.00,"Insomnia, unspecified",Primary,Severe,2022-07-26,Active,,2024-06-29 23:53:58.013099
+DIA000381,APT000820,PAT000997,PRV000413,R10.9,Unspecified abdominal pain,Primary,Severe,2017-03-19,Active,Patient referred to specialist,2024-10-16 23:53:58.013099
+DIA000382,APT000653,PAT000121,PRV000873,K21.9,Gastro-esophageal reflux disease without esophagitis,Primary,Moderate,,Chronic,Follow-up in 3 months recommended,2024-10-30 23:53:58.013099
+DIA000383,APT000277,PAT000655,PRV000862,M79.3,"Panniculitis, unspecified",Primary,Mild,,Resolved,Follow-up in 3 months recommended,2024-03-31 23:53:58.013099
+DIA000384,APT000721,PAT000826,PRV000758,R10.9,Unspecified abdominal pain,Primary,Severe,2023-02-07,Resolved,Follow-up in 3 months recommended,2025-03-13 23:53:58.013099
+DIA000385,APT000871,PAT000520,PRV000995,L70.0,Acne vulgaris,Primary,Severe,2022-10-28,Active,Follow-up in 3 months recommended,2025-10-31 23:53:58.013099
+DIA000386,APT000118,PAT000867,PRV000836,E11.9,Type 2 diabetes mellitus without complications,Secondary,Mild,2019-10-12,Active,Condition well-controlled with medication,2025-02-20 23:53:58.013099
+DIA000387,APT000854,PAT000030,PRV000922,G47.00,"Insomnia, unspecified",Tertiary,Mild,2022-05-20,Active,,2025-01-20 23:53:58.013099
+DIA000388,APT000568,PAT000271,PRV000836,J45.909,"Unspecified asthma, uncomplicated",Primary,,2024-12-15,Chronic,Follow-up in 3 months recommended,2024-09-17 23:53:58.013099
+DIA000389,APT000108,PAT000370,PRV000447,E78.5,"Hyperlipidemia, unspecified",Primary,Severe,2019-08-13,Recurrent,,2024-03-01 23:53:58.013099
+DIA000390,APT000104,PAT000334,PRV000185,M25.561,Pain in right knee,Primary,Severe,2017-05-09,Active,Condition well-controlled with medication,2025-08-29 23:53:58.013099
+DIA000391,APT000708,PAT000627,PRV000618,K21.9,Gastro-esophageal reflux disease without esophagitis,Tertiary,Severe,2022-02-26,Active,Lifestyle modifications discussed,2025-09-13 23:53:58.013099
+DIA000392,APT000420,PAT000958,PRV000394,E66.9,"Obesity, unspecified",Tertiary,Moderate,2020-08-26,Active,,2024-02-21 23:53:58.013099
+DIA000393,APT000055,PAT000094,PRV000689,G47.00,"Insomnia, unspecified",Primary,Moderate,2020-03-15,Resolved,Lifestyle modifications discussed,2025-05-07 23:53:58.013099
+DIA000394,APT000468,PAT001000,PRV000919,K58.9,Irritable bowel syndrome without diarrhea,Secondary,Moderate,2019-04-19,Resolved,,2025-11-10 23:53:58.013099
+DIA000395,APT000407,PAT000180,PRV000396,M79.3,"Panniculitis, unspecified",Primary,Mild,2017-01-14,Chronic,,2024-02-03 23:53:58.013099
+DIA000396,APT000183,PAT000949,PRV000535,E78.5,"Hyperlipidemia, unspecified",Primary,Moderate,2019-11-17,Active,Patient referred to specialist,2024-04-19 23:53:58.013099
+DIA000397,APT000758,PAT000556,PRV000646,M79.3,"Panniculitis, unspecified",Primary,Moderate,2016-07-23,Chronic,Lifestyle modifications discussed,2025-10-22 23:53:58.013099
+DIA000398,APT000104,PAT000888,PRV000787,M54.5,Low back pain,Primary,Moderate,,Resolved,Condition well-controlled with medication,2025-05-07 23:53:58.013099
+DIA000399,APT000024,PAT000949,PRV000705,N39.0,"Urinary tract infection, site not specified",Primary,Moderate,2020-06-15,Active,Follow-up in 3 months recommended,2024-05-29 23:53:58.013099
+DIA000400,APT000599,PAT000623,PRV000186,J06.9,"Acute upper respiratory infection, unspecified",Primary,Moderate,,Resolved,Condition well-controlled with medication,2024-12-24 23:53:58.013099
+DIA000401,APT000961,PAT000579,PRV000490,F41.9,"Anxiety disorder, unspecified",Secondary,Mild,,Active,Lifestyle modifications discussed,2024-07-26 23:53:58.013099
+DIA000402,APT000836,PAT000382,PRV000235,M25.561,Pain in right knee,Primary,Mild,2019-11-09,Active,Follow-up in 3 months recommended,2025-05-13 23:53:58.013099
+DIA000403,APT000410,PAT000119,PRV000272,G47.00,"Insomnia, unspecified",Primary,Mild,2017-06-27,Chronic,Patient referred to specialist,2024-05-20 23:53:58.013099
+DIA000404,APT000626,PAT000166,PRV000174,M25.561,Pain in right knee,Primary,Mild,2017-05-24,Active,Condition well-controlled with medication,2024-01-28 23:53:58.013099
+DIA000405,APT000665,PAT000112,PRV000537,M19.90,"Unspecified osteoarthritis, unspecified site",Primary,,2024-09-18,Chronic,,2025-11-28 23:53:58.013099
+DIA000406,APT000935,PAT000652,PRV000578,M19.90,"Unspecified osteoarthritis, unspecified site",Primary,Mild,,Resolved,Patient reports symptoms for several weeks,2025-07-27 23:53:58.013099
+DIA000407,APT000738,PAT000847,PRV000891,G47.00,"Insomnia, unspecified",Primary,Mild,2023-11-13,Active,Patient reports symptoms for several weeks,2024-08-20 23:53:58.013099
+DIA000408,APT000167,PAT000691,PRV000061,G47.00,"Insomnia, unspecified",Primary,Moderate,2021-06-05,Resolved,Condition well-controlled with medication,2025-08-05 23:53:58.013099
+DIA000409,APT000419,PAT000489,PRV000670,E11.9,Type 2 diabetes mellitus without complications,Primary,Moderate,2016-07-30,Resolved,,2024-06-04 23:53:58.013099
+DIA000410,APT000752,PAT000925,PRV000828,J06.9,"Acute upper respiratory infection, unspecified",Primary,Mild,2023-08-06,Active,,2024-10-10 23:53:58.013099
+DIA000411,APT000186,PAT000314,PRV000272,M79.3,"Panniculitis, unspecified",Primary,Severe,2025-09-07,Active,Lifestyle modifications discussed,2024-10-29 23:53:58.013099
+DIA000412,APT000095,PAT000770,PRV000175,J06.9,"Acute upper respiratory infection, unspecified",Secondary,Severe,,Active,,2024-09-05 23:53:58.013099
+DIA000413,APT000386,PAT000935,PRV000407,M54.5,Low back pain,Secondary,Mild,2017-08-04,Active,Condition well-controlled with medication,2025-07-19 23:53:58.013099
+DIA000414,APT000575,PAT000654,PRV000556,L70.0,Acne vulgaris,Primary,Mild,2018-11-20,Active,,2025-07-17 23:53:58.013099
+DIA000415,APT000278,PAT000934,PRV000333,L70.0,Acne vulgaris,Primary,,2019-12-15,Active,Patient reports symptoms for several weeks,2025-12-30 23:53:58.013099
+DIA000416,APT000481,PAT000316,PRV000757,E66.9,"Obesity, unspecified",Primary,Severe,2022-04-06,Active,Patient reports symptoms for several weeks,2024-08-26 23:53:58.013099
+DIA000417,APT000185,PAT000831,PRV000703,J45.909,"Unspecified asthma, uncomplicated",Primary,Moderate,2022-04-13,Recurrent,Patient reports symptoms for several weeks,2025-10-21 23:53:58.013099
+DIA000418,APT000749,PAT000455,PRV000299,K21.9,Gastro-esophageal reflux disease without esophagitis,Primary,Mild,2021-09-27,Active,Follow-up in 3 months recommended,2024-03-28 23:53:58.013099
+DIA000419,APT000020,PAT000953,PRV000298,I25.10,Atherosclerotic heart disease of native coronary artery without angina pectoris,Primary,Moderate,2020-11-17,Chronic,,2025-10-29 23:53:58.013099
+DIA000420,APT000161,PAT000384,PRV000404,J06.9,"Acute upper respiratory infection, unspecified",Primary,Moderate,2021-04-04,Resolved,Patient referred to specialist,2025-06-09 23:53:58.013099
+DIA000421,APT000049,PAT000981,PRV000844,K21.9,Gastro-esophageal reflux disease without esophagitis,Tertiary,Mild,2025-09-22,Chronic,,2025-01-06 23:53:58.013099
+DIA000422,APT000389,PAT000434,PRV000004,E78.5,"Hyperlipidemia, unspecified",Primary,Moderate,2024-05-31,Active,Patient referred to specialist,2025-12-18 23:53:58.013099
+DIA000423,APT000200,PAT000769,PRV000646,M25.561,Pain in right knee,Primary,Moderate,2024-10-17,Recurrent,Condition well-controlled with medication,2024-03-29 23:53:58.013099
+DIA000424,APT000072,PAT000744,PRV000671,N39.0,"Urinary tract infection, site not specified",Primary,Mild,2018-01-01,Resolved,Follow-up in 3 months recommended,2024-01-18 23:53:58.013099
+DIA000425,APT000803,PAT000762,PRV000646,M19.90,"Unspecified osteoarthritis, unspecified site",Tertiary,Severe,,Chronic,Lifestyle modifications discussed,2025-05-28 23:53:58.013099
+DIA000426,APT000320,PAT000235,PRV000733,I10,Essential (primary) hypertension,Secondary,Severe,2021-03-23,Active,,2025-07-06 23:53:58.013099
+DIA000427,APT000070,PAT000401,PRV000979,I25.10,Atherosclerotic heart disease of native coronary artery without angina pectoris,Primary,Mild,,Active,Follow-up in 3 months recommended,2024-11-25 23:53:58.013099
+DIA000428,APT000825,PAT000351,PRV000677,M25.561,Pain in right knee,Secondary,Severe,2020-08-18,Resolved,Follow-up in 3 months recommended,2024-11-19 23:53:58.013099
+DIA000429,APT000036,PAT000128,PRV000413,E78.5,"Hyperlipidemia, unspecified",Primary,Mild,2020-05-09,Active,Condition well-controlled with medication,2024-08-02 23:53:58.013099
+DIA000430,APT000941,PAT000873,PRV000519,K58.9,Irritable bowel syndrome without diarrhea,Secondary,Severe,2022-09-11,Active,Lifestyle modifications discussed,2024-05-21 23:53:58.013099
+DIA000431,APT000606,PAT000516,PRV000540,G47.00,"Insomnia, unspecified",Secondary,Mild,2018-04-24,Active,,2025-03-27 23:53:58.013099
+DIA000432,APT000134,PAT000223,PRV000589,G47.00,"Insomnia, unspecified",Primary,Mild,2019-12-07,Resolved,Patient reports symptoms for several weeks,2024-05-03 23:53:58.013099
+DIA000433,APT000288,PAT000803,PRV000340,M54.5,Low back pain,Secondary,Moderate,2025-04-19,Recurrent,,2025-03-27 23:53:58.013099
+DIA000434,APT000264,PAT000796,PRV000960,M54.5,Low back pain,Primary,Moderate,2021-06-07,Active,Follow-up in 3 months recommended,2024-05-06 23:53:58.013099
+DIA000435,APT000220,PAT000481,PRV000519,J06.9,"Acute upper respiratory infection, unspecified",Primary,,2018-04-19,Chronic,Condition well-controlled with medication,2025-08-24 23:53:58.013099
+DIA000436,APT000187,PAT000025,PRV000995,K58.9,Irritable bowel syndrome without diarrhea,Primary,Mild,,Resolved,,2024-08-27 23:53:58.013099
+DIA000437,APT000600,PAT000311,PRV000620,R51,Headache,Secondary,Mild,2024-06-16,Active,Follow-up in 3 months recommended,2024-06-21 23:53:58.013099
+DIA000438,APT000366,PAT000470,PRV000624,I10,Essential (primary) hypertension,Primary,Moderate,2016-04-02,Recurrent,Patient referred to specialist,2025-06-19 23:53:58.013099
+DIA000439,APT000765,PAT000044,PRV000803,E11.9,Type 2 diabetes mellitus without complications,Primary,Moderate,2019-06-11,Chronic,Condition well-controlled with medication,2024-11-05 23:53:58.013099
+DIA000440,APT000925,PAT000727,PRV000895,R51,Headache,Secondary,Mild,2020-04-23,Chronic,Condition well-controlled with medication,2024-09-15 23:53:58.013099
+DIA000441,APT000305,PAT000168,PRV000245,E78.5,"Hyperlipidemia, unspecified",Primary,Moderate,,Active,,2024-09-10 23:53:58.013099
+DIA000442,APT000005,PAT000198,PRV000150,J45.909,"Unspecified asthma, uncomplicated",Primary,Severe,2024-10-24,Resolved,Lifestyle modifications discussed,2025-04-05 23:53:58.013099
+DIA000443,APT000681,PAT000885,PRV000073,E11.9,Type 2 diabetes mellitus without complications,Primary,Severe,,Active,,2025-03-18 23:53:58.013099
+DIA000444,APT000353,PAT000465,PRV000639,R10.9,Unspecified abdominal pain,Primary,,2025-11-30,Active,Condition well-controlled with medication,2024-08-31 23:53:58.013099
+DIA000445,APT000817,PAT000782,PRV000079,M19.90,"Unspecified osteoarthritis, unspecified site",Primary,Mild,2023-10-30,Active,Patient reports symptoms for several weeks,2025-07-07 23:53:58.013099
+DIA000446,APT000447,PAT000127,PRV000688,F33.9,"Major depressive disorder, recurrent, unspecified",Primary,Moderate,2019-03-27,Chronic,Patient reports symptoms for several weeks,2025-07-26 23:53:58.013099
+DIA000447,APT000880,PAT000672,PRV000848,M19.90,"Unspecified osteoarthritis, unspecified site",Tertiary,Mild,2022-12-10,Chronic,Follow-up in 3 months recommended,2025-03-25 23:53:58.013099
+DIA000448,APT000544,PAT000705,PRV000833,K58.9,Irritable bowel syndrome without diarrhea,Secondary,Moderate,2023-04-16,Active,,2025-02-10 23:53:58.013099
+DIA000449,APT000719,PAT000167,PRV000759,K58.9,Irritable bowel syndrome without diarrhea,Primary,Moderate,,Active,Lifestyle modifications discussed,2024-10-10 23:53:58.013099
+DIA000450,APT000400,PAT000372,PRV000235,M54.5,Low back pain,Primary,,2023-12-26,Chronic,Patient referred to specialist,2025-09-20 23:53:58.013099
+DIA000451,APT000293,PAT000024,PRV000194,G47.00,"Insomnia, unspecified",Primary,Moderate,,Active,,2024-06-08 23:53:58.013099
+DIA000452,APT000152,PAT000386,PRV000752,E66.9,"Obesity, unspecified",Secondary,,,Resolved,,2025-02-11 23:53:58.013099
+DIA000453,APT000973,PAT000805,PRV000033,E11.9,Type 2 diabetes mellitus without complications,Primary,Severe,2020-07-21,Active,Patient reports symptoms for several weeks,2025-01-06 23:53:58.013099
+DIA000454,APT000587,PAT000522,PRV000944,J45.909,"Unspecified asthma, uncomplicated",Primary,,2019-12-25,Active,,2025-04-13 23:53:58.013099
+DIA000455,APT000828,PAT000190,PRV000285,M19.90,"Unspecified osteoarthritis, unspecified site",Secondary,Severe,2017-12-27,Recurrent,Patient referred to specialist,2024-06-15 23:53:58.013099
+DIA000456,APT000404,PAT000114,PRV000305,I25.10,Atherosclerotic heart disease of native coronary artery without angina pectoris,Primary,Moderate,,Active,Patient reports symptoms for several weeks,2024-10-27 23:53:58.013099
+DIA000457,APT000763,PAT000751,PRV000130,E66.9,"Obesity, unspecified",Primary,Mild,2022-03-09,Active,Condition well-controlled with medication,2024-07-11 23:53:58.013099
+DIA000458,APT000127,PAT000980,PRV000098,I25.10,Atherosclerotic heart disease of native coronary artery without angina pectoris,Secondary,Mild,2017-09-10,Active,Follow-up in 3 months recommended,2025-05-01 23:53:58.013099
+DIA000459,APT000725,PAT000141,PRV000490,G47.00,"Insomnia, unspecified",Secondary,Mild,2017-09-09,Recurrent,Patient referred to specialist,2024-09-15 23:53:58.013099
+DIA000460,APT000948,PAT000008,PRV000620,M19.90,"Unspecified osteoarthritis, unspecified site",Primary,Moderate,2021-01-14,Chronic,Condition well-controlled with medication,2025-08-07 23:53:58.013099
+DIA000461,APT000504,PAT000951,PRV000334,K21.9,Gastro-esophageal reflux disease without esophagitis,Secondary,Moderate,2020-05-24,Active,Condition well-controlled with medication,2024-10-05 23:53:58.013099
+DIA000462,APT000178,PAT000952,PRV000216,M19.90,"Unspecified osteoarthritis, unspecified site",Primary,Moderate,2024-09-15,Active,,2024-02-12 23:53:58.013099
+DIA000463,APT000786,PAT000225,PRV000307,M19.90,"Unspecified osteoarthritis, unspecified site",Secondary,,2021-02-01,Resolved,,2024-11-30 23:53:58.013099
+DIA000464,APT000284,PAT000878,PRV000981,F41.9,"Anxiety disorder, unspecified",Primary,,2016-09-07,Active,,2025-12-03 23:53:58.013099
+DIA000465,APT000811,PAT000377,PRV000708,F33.9,"Major depressive disorder, recurrent, unspecified",Secondary,Mild,,Resolved,Condition well-controlled with medication,2025-04-24 23:53:58.013099
+DIA000466,APT000778,PAT000527,PRV000545,L70.0,Acne vulgaris,Tertiary,Mild,2018-04-30,Active,Condition well-controlled with medication,2025-11-06 23:53:58.013099
+DIA000467,APT000469,PAT000123,PRV000798,K21.9,Gastro-esophageal reflux disease without esophagitis,Tertiary,Moderate,2023-10-26,Active,Condition well-controlled with medication,2025-07-21 23:53:58.013099
+DIA000468,APT000930,PAT000800,PRV000355,I25.10,Atherosclerotic heart disease of native coronary artery without angina pectoris,Tertiary,Mild,2019-05-20,Resolved,Patient reports symptoms for several weeks,2024-07-08 23:53:58.013099
+DIA000469,APT000801,PAT000247,PRV000427,I10,Essential (primary) hypertension,Primary,Severe,2024-06-12,Active,Follow-up in 3 months recommended,2025-10-13 23:53:58.013099
+DIA000470,APT000141,PAT000997,PRV000258,F33.9,"Major depressive disorder, recurrent, unspecified",Primary,Moderate,2020-10-30,Chronic,Lifestyle modifications discussed,2024-09-13 23:53:58.013099
+DIA000471,APT000824,PAT000790,PRV000891,M19.90,"Unspecified osteoarthritis, unspecified site",Primary,Moderate,2021-08-14,Active,Lifestyle modifications discussed,2024-08-22 23:53:58.013099
+DIA000472,APT000504,PAT000950,PRV000359,K58.9,Irritable bowel syndrome without diarrhea,Secondary,Severe,2024-10-17,Active,Lifestyle modifications discussed,2025-09-24 23:53:58.013099
+DIA000473,APT000692,PAT000632,PRV000767,R10.9,Unspecified abdominal pain,Secondary,Severe,,Recurrent,Condition well-controlled with medication,2024-09-05 23:53:58.013099
+DIA000474,APT000214,PAT000645,PRV000015,I10,Essential (primary) hypertension,Primary,Mild,2025-04-22,Active,Patient referred to specialist,2025-10-15 23:53:58.013099
+DIA000475,APT000070,PAT000675,PRV000291,M19.90,"Unspecified osteoarthritis, unspecified site",Tertiary,Moderate,2019-10-12,Chronic,Lifestyle modifications discussed,2024-12-17 23:53:58.013099
+DIA000476,APT000538,PAT000456,PRV000320,F33.9,"Major depressive disorder, recurrent, unspecified",Secondary,Moderate,2018-01-09,Active,Patient referred to specialist,2024-05-26 23:53:58.013099
+DIA000477,APT000883,PAT000635,PRV000425,L70.0,Acne vulgaris,Tertiary,Mild,2017-05-28,Resolved,Condition well-controlled with medication,2024-05-21 23:53:58.013099
+DIA000478,APT000569,PAT000677,PRV000173,R10.9,Unspecified abdominal pain,Secondary,Mild,2018-05-15,Chronic,Patient referred to specialist,2025-03-28 23:53:58.013099
+DIA000479,APT000584,PAT000339,PRV000265,F41.9,"Anxiety disorder, unspecified",Primary,Moderate,2016-08-26,Active,Condition well-controlled with medication,2025-04-12 23:53:58.013099
+DIA000480,APT000503,PAT000085,PRV000026,E11.9,Type 2 diabetes mellitus without complications,Primary,Mild,,Chronic,Patient reports symptoms for several weeks,2025-03-04 23:53:58.013099
+DIA000481,APT000038,PAT000638,PRV000878,F33.9,"Major depressive disorder, recurrent, unspecified",Primary,Mild,2016-10-31,Resolved,,2025-07-10 23:53:58.013099
+DIA000482,APT000445,PAT000813,PRV000795,M19.90,"Unspecified osteoarthritis, unspecified site",Primary,Moderate,,Active,,2024-03-25 23:53:58.013099
+DIA000483,APT000937,PAT000879,PRV000317,K58.9,Irritable bowel syndrome without diarrhea,Secondary,Severe,2023-07-10,Resolved,Condition well-controlled with medication,2024-06-20 23:53:58.013099
+DIA000484,APT000049,PAT000922,PRV000702,M25.561,Pain in right knee,Secondary,Mild,2019-10-25,Resolved,Patient reports symptoms for several weeks,2025-07-07 23:53:58.013099
+DIA000485,APT000317,PAT000699,PRV000785,M25.561,Pain in right knee,Secondary,Mild,2019-12-18,Active,Lifestyle modifications discussed,2024-05-29 23:53:58.013099
+DIA000486,APT000274,PAT000982,PRV000776,K58.9,Irritable bowel syndrome without diarrhea,Secondary,Severe,2020-10-31,Active,Condition well-controlled with medication,2024-12-24 23:53:58.013099
+DIA000487,APT000399,PAT000443,PRV000967,J45.909,"Unspecified asthma, uncomplicated",Primary,Mild,2018-11-12,Active,Patient referred to specialist,2025-06-11 23:53:58.013099
+DIA000488,APT000146,PAT000650,PRV000665,E11.9,Type 2 diabetes mellitus without complications,Primary,,2018-10-20,Active,Patient reports symptoms for several weeks,2025-07-22 23:53:58.013099
+DIA000489,APT000018,PAT000187,PRV000299,M79.3,"Panniculitis, unspecified",Primary,Moderate,2016-06-30,Chronic,Condition well-controlled with medication,2025-04-12 23:53:58.013099
+DIA000490,APT000216,PAT000720,PRV000921,K21.9,Gastro-esophageal reflux disease without esophagitis,Primary,Mild,2017-05-16,Active,,2024-08-29 23:53:58.013099
+DIA000491,APT000454,PAT000271,PRV000099,I25.10,Atherosclerotic heart disease of native coronary artery without angina pectoris,Primary,Mild,2022-07-05,Recurrent,,2025-12-05 23:53:58.013099
+DIA000492,APT000289,PAT000384,PRV000415,E78.5,"Hyperlipidemia, unspecified",Primary,Mild,2019-11-21,Active,Condition well-controlled with medication,2026-01-04 23:53:58.013099
+DIA000493,APT000954,PAT000154,PRV000955,J06.9,"Acute upper respiratory infection, unspecified",Primary,Mild,2016-07-16,Active,Patient referred to specialist,2025-03-04 23:53:58.013099
+DIA000494,APT000295,PAT000271,PRV000221,E11.9,Type 2 diabetes mellitus without complications,Primary,Mild,,Chronic,Patient reports symptoms for several weeks,2025-07-28 23:53:58.013099
+DIA000495,APT000750,PAT000033,PRV000094,K58.9,Irritable bowel syndrome without diarrhea,Secondary,Moderate,2021-12-23,Resolved,Patient reports symptoms for several weeks,2024-05-27 23:53:58.013099
+DIA000496,APT000363,PAT000375,PRV000435,K21.9,Gastro-esophageal reflux disease without esophagitis,Primary,Mild,2019-02-15,Resolved,,2024-02-18 23:53:58.013099
+DIA000497,APT000487,PAT000371,PRV000743,J45.909,"Unspecified asthma, uncomplicated",Primary,Moderate,,Active,Lifestyle modifications discussed,2024-03-13 23:53:58.013099
+DIA000498,APT000076,PAT000519,PRV000676,R10.9,Unspecified abdominal pain,Primary,Moderate,2020-10-18,Active,Follow-up in 3 months recommended,2024-12-31 23:53:58.013099
+DIA000499,APT000591,PAT000580,PRV000734,M54.5,Low back pain,Tertiary,Mild,2021-03-07,Active,,2025-02-20 23:53:58.013099
+DIA000500,APT000640,PAT000478,PRV000738,E78.5,"Hyperlipidemia, unspecified",Primary,Mild,2023-06-29,Recurrent,,2024-01-19 23:53:58.013099
+DIA000501,APT000079,PAT000178,PRV000770,I25.10,Atherosclerotic heart disease of native coronary artery without angina pectoris,Primary,Mild,2021-06-14,Active,,2025-04-13 23:53:58.013099
+DIA000502,APT000684,PAT000239,PRV000396,J06.9,"Acute upper respiratory infection, unspecified",Secondary,Mild,2020-03-30,Chronic,Patient reports symptoms for several weeks,2024-09-22 23:53:58.013099
+DIA000503,APT000447,PAT000841,PRV000787,I25.10,Atherosclerotic heart disease of native coronary artery without angina pectoris,Primary,Moderate,,Resolved,Condition well-controlled with medication,2025-09-19 23:53:58.013099
+DIA000504,APT000697,PAT000784,PRV000772,F33.9,"Major depressive disorder, recurrent, unspecified",Tertiary,Mild,2018-10-21,Active,Lifestyle modifications discussed,2025-07-30 23:53:58.013099
+DIA000505,APT000489,PAT000372,PRV000295,R51,Headache,Primary,Severe,2019-05-29,Resolved,Patient referred to specialist,2025-11-26 23:53:58.013099
+DIA000506,APT000205,PAT000610,PRV000864,J06.9,"Acute upper respiratory infection, unspecified",Primary,Moderate,2018-07-02,Chronic,,2025-12-09 23:53:58.013099
+DIA000507,APT000289,PAT000065,PRV000098,M54.5,Low back pain,Primary,Moderate,2025-01-24,Chronic,Lifestyle modifications discussed,2024-10-21 23:53:58.013099
+DIA000508,APT000716,PAT000810,PRV000499,E66.9,"Obesity, unspecified",Secondary,Moderate,2017-02-12,Active,,2025-05-23 23:53:58.013099
+DIA000509,APT000152,PAT000945,PRV000057,K21.9,Gastro-esophageal reflux disease without esophagitis,Primary,Moderate,,Active,Condition well-controlled with medication,2025-10-17 23:53:58.013099
+DIA000510,APT000874,PAT000582,PRV000055,F41.9,"Anxiety disorder, unspecified",Primary,Mild,2020-07-25,Active,,2024-12-19 23:53:58.013099
+DIA000511,APT000642,PAT000683,PRV000064,E78.5,"Hyperlipidemia, unspecified",Primary,Mild,2017-01-14,Active,Patient referred to specialist,2024-06-26 23:53:58.013099
+DIA000512,APT000076,PAT000640,PRV000227,M54.5,Low back pain,Primary,Moderate,,Resolved,,2025-12-03 23:53:58.013099
+DIA000513,APT000261,PAT000526,PRV000225,E11.9,Type 2 diabetes mellitus without complications,Primary,Mild,2022-08-23,Chronic,Condition well-controlled with medication,2024-07-15 23:53:58.013099
+DIA000514,APT000149,PAT000823,PRV000452,N39.0,"Urinary tract infection, site not specified",Secondary,Moderate,2020-03-16,Active,Follow-up in 3 months recommended,2025-12-02 23:53:58.013099
+DIA000515,APT000976,PAT000530,PRV000601,R51,Headache,Secondary,Moderate,,Chronic,,2024-12-22 23:53:58.013099
+DIA000516,APT000094,PAT000991,PRV000017,I25.10,Atherosclerotic heart disease of native coronary artery without angina pectoris,Primary,Moderate,2022-07-25,Resolved,Patient referred to specialist,2024-06-20 23:53:58.013099
+DIA000517,APT000102,PAT000322,PRV000264,G47.00,"Insomnia, unspecified",Primary,Moderate,2019-08-23,Active,Follow-up in 3 months recommended,2025-07-14 23:53:58.013099
+DIA000518,APT000286,PAT000795,PRV001000,K58.9,Irritable bowel syndrome without diarrhea,Secondary,Moderate,2017-06-06,Active,,2025-04-14 23:53:58.013099
+DIA000519,APT000026,PAT000954,PRV000857,K58.9,Irritable bowel syndrome without diarrhea,Primary,Moderate,2025-10-10,Chronic,Patient referred to specialist,2025-08-24 23:53:58.013099
+DIA000520,APT000475,PAT000367,PRV000904,R51,Headache,Primary,Moderate,2024-06-19,Chronic,Lifestyle modifications discussed,2025-05-09 23:53:58.013099
+DIA000521,APT000672,PAT000161,PRV000452,K58.9,Irritable bowel syndrome without diarrhea,Primary,Moderate,2023-06-04,Resolved,Patient reports symptoms for several weeks,2024-04-22 23:53:58.013099
+DIA000522,APT000572,PAT000870,PRV000273,L70.0,Acne vulgaris,Secondary,Moderate,2019-07-09,Active,,2024-04-06 23:53:58.013099
+DIA000523,APT000792,PAT000174,PRV000817,E11.9,Type 2 diabetes mellitus without complications,Tertiary,Severe,,Active,Lifestyle modifications discussed,2024-05-11 23:53:58.013099
+DIA000524,APT000080,PAT000615,PRV000129,N39.0,"Urinary tract infection, site not specified",Secondary,Moderate,2024-12-30,Active,Patient referred to specialist,2024-09-17 23:53:58.013099
+DIA000525,APT000885,PAT000160,PRV000120,M19.90,"Unspecified osteoarthritis, unspecified site",Primary,Moderate,2018-07-20,Resolved,Patient reports symptoms for several weeks,2024-04-02 23:53:58.013099
+DIA000526,APT000237,PAT000627,PRV000136,M54.5,Low back pain,Primary,Severe,2016-11-17,Chronic,Follow-up in 3 months recommended,2024-10-24 23:53:58.013099
+DIA000527,APT000989,PAT000450,PRV000767,J06.9,"Acute upper respiratory infection, unspecified",Secondary,Moderate,2018-02-20,Active,Patient reports symptoms for several weeks,2024-12-10 23:53:58.013099
+DIA000528,APT000448,PAT000495,PRV000932,F33.9,"Major depressive disorder, recurrent, unspecified",Primary,Mild,2020-02-02,Chronic,Patient reports symptoms for several weeks,2024-02-05 23:53:58.013099
+DIA000529,APT000680,PAT000806,PRV000041,R51,Headache,Tertiary,Severe,2024-03-18,Resolved,Lifestyle modifications discussed,2024-09-09 23:53:58.013099
+DIA000530,APT000390,PAT000035,PRV000436,F41.9,"Anxiety disorder, unspecified",Tertiary,Mild,2021-03-08,Resolved,Condition well-controlled with medication,2025-02-22 23:53:58.013099
+DIA000531,APT000842,PAT000187,PRV000823,E11.9,Type 2 diabetes mellitus without complications,Primary,Moderate,,Recurrent,Condition well-controlled with medication,2025-06-27 23:53:58.013099
+DIA000532,APT000320,PAT000374,PRV000895,E11.9,Type 2 diabetes mellitus without complications,Tertiary,Severe,,Active,Lifestyle modifications discussed,2025-09-07 23:53:58.013099
+DIA000533,APT000612,PAT000646,PRV000690,E78.5,"Hyperlipidemia, unspecified",Primary,,2022-07-13,Recurrent,Patient reports symptoms for several weeks,2024-04-17 23:53:58.013099
+DIA000534,APT000136,PAT000600,PRV000405,L70.0,Acne vulgaris,Secondary,Mild,,Active,Patient referred to specialist,2024-06-13 23:53:58.013099
+DIA000535,APT000846,PAT000813,PRV000022,M19.90,"Unspecified osteoarthritis, unspecified site",Primary,Moderate,2021-01-09,Active,Patient reports symptoms for several weeks,2024-06-14 23:53:58.013099
+DIA000536,APT000608,PAT000565,PRV000384,E78.5,"Hyperlipidemia, unspecified",Primary,Moderate,,Chronic,Follow-up in 3 months recommended,2024-07-15 23:53:58.013099
+DIA000537,APT000011,PAT000291,PRV000894,M25.561,Pain in right knee,Secondary,Mild,,Recurrent,Lifestyle modifications discussed,2025-06-02 23:53:58.013099
+DIA000538,APT000507,PAT000364,PRV000691,R51,Headache,Secondary,Mild,,Resolved,Lifestyle modifications discussed,2024-06-03 23:53:58.013099
+DIA000539,APT000059,PAT000574,PRV000776,M25.561,Pain in right knee,Primary,Moderate,,Resolved,Condition well-controlled with medication,2025-10-04 23:53:58.013099
+DIA000540,APT000197,PAT000829,PRV000513,G47.00,"Insomnia, unspecified",Primary,Moderate,2017-08-07,Chronic,Patient reports symptoms for several weeks,2024-06-30 23:53:58.013099
+DIA000541,APT000531,PAT000328,PRV000027,M79.3,"Panniculitis, unspecified",Primary,Mild,2025-04-21,Chronic,Patient reports symptoms for several weeks,2024-09-11 23:53:58.013099
+DIA000542,APT000832,PAT000936,PRV000711,R51,Headache,Primary,Moderate,2017-03-25,Active,Patient referred to specialist,2024-01-28 23:53:58.013099
+DIA000543,APT000228,PAT000322,PRV000852,F41.9,"Anxiety disorder, unspecified",Primary,Moderate,,Chronic,,2025-02-01 23:53:58.013099
+DIA000544,APT000870,PAT000863,PRV000549,R51,Headache,Primary,Severe,,Active,Condition well-controlled with medication,2024-05-04 23:53:58.013099
+DIA000545,APT000578,PAT000292,PRV000786,K21.9,Gastro-esophageal reflux disease without esophagitis,Primary,,2023-03-19,Active,Condition well-controlled with medication,2024-06-07 23:53:58.013099
+DIA000546,APT000299,PAT000140,PRV000334,K58.9,Irritable bowel syndrome without diarrhea,Primary,Moderate,2020-11-14,Active,Patient reports symptoms for several weeks,2025-11-24 23:53:58.013099
+DIA000547,APT000178,PAT000162,PRV000429,K58.9,Irritable bowel syndrome without diarrhea,Primary,,2024-04-28,Resolved,Lifestyle modifications discussed,2025-01-09 23:53:58.013099
+DIA000548,APT000474,PAT000862,PRV000608,I10,Essential (primary) hypertension,Primary,Severe,2024-04-16,Recurrent,Lifestyle modifications discussed,2024-08-19 23:53:58.013099
+DIA000549,APT000118,PAT000039,PRV000948,M79.3,"Panniculitis, unspecified",Primary,Mild,2025-08-13,Resolved,Lifestyle modifications discussed,2024-07-22 23:53:58.013099
+DIA000550,APT000871,PAT000330,PRV000007,M25.561,Pain in right knee,Tertiary,Mild,2022-02-11,Recurrent,,2025-03-14 23:53:58.013099
+DIA000551,APT000765,PAT000302,PRV000771,G47.00,"Insomnia, unspecified",Primary,Moderate,2021-05-23,Active,Follow-up in 3 months recommended,2025-09-18 23:53:58.013099
+DIA000552,APT000226,PAT000747,PRV000135,F41.9,"Anxiety disorder, unspecified",Tertiary,Moderate,2018-11-23,Chronic,Patient reports symptoms for several weeks,2024-05-28 23:53:58.013099
+DIA000553,APT000745,PAT000515,PRV000742,J06.9,"Acute upper respiratory infection, unspecified",Secondary,Moderate,2020-06-26,Chronic,Condition well-controlled with medication,2024-03-23 23:53:58.013099
+DIA000554,APT000272,PAT000743,PRV000573,R10.9,Unspecified abdominal pain,Secondary,Moderate,,Resolved,Lifestyle modifications discussed,2025-03-04 23:53:58.013099
+DIA000555,APT000147,PAT000927,PRV000683,F41.9,"Anxiety disorder, unspecified",Secondary,Moderate,,Resolved,Lifestyle modifications discussed,2024-08-08 23:53:58.013099
+DIA000556,APT000305,PAT000464,PRV000596,L70.0,Acne vulgaris,Secondary,Moderate,2021-02-09,Resolved,Follow-up in 3 months recommended,2025-07-12 23:53:58.013099
+DIA000557,APT000502,PAT000956,PRV000100,L70.0,Acne vulgaris,Primary,Mild,,Chronic,Lifestyle modifications discussed,2025-04-08 23:53:58.013099
+DIA000558,APT000059,PAT000183,PRV000643,R51,Headache,Primary,Severe,2019-09-11,Chronic,Lifestyle modifications discussed,2024-11-14 23:53:58.013099
+DIA000559,APT000427,PAT000861,PRV000510,I10,Essential (primary) hypertension,Secondary,Mild,2021-11-03,Active,,2025-03-19 23:53:58.013099
+DIA000560,APT000684,PAT000804,PRV000054,M19.90,"Unspecified osteoarthritis, unspecified site",Primary,,2016-03-07,Chronic,Follow-up in 3 months recommended,2024-02-16 23:53:58.013099
+DIA000561,APT000922,PAT000890,PRV000513,I25.10,Atherosclerotic heart disease of native coronary artery without angina pectoris,Secondary,Mild,2017-04-30,Active,,2025-09-19 23:53:58.013099
+DIA000562,APT000305,PAT000816,PRV000902,R10.9,Unspecified abdominal pain,Primary,,2023-06-04,Active,Condition well-controlled with medication,2025-11-08 23:53:58.013099
+DIA000563,APT000682,PAT000592,PRV000520,E66.9,"Obesity, unspecified",Secondary,Mild,2016-03-02,Chronic,Lifestyle modifications discussed,2024-07-23 23:53:58.013099
+DIA000564,APT000685,PAT000114,PRV000515,M54.5,Low back pain,Primary,Mild,2017-11-23,Active,,2024-07-30 23:53:58.013099
+DIA000565,APT000583,PAT000191,PRV000012,F33.9,"Major depressive disorder, recurrent, unspecified",Primary,Mild,,Chronic,Patient referred to specialist,2026-01-11 23:53:58.013099
+DIA000566,APT000137,PAT000615,PRV000450,M25.561,Pain in right knee,Primary,Moderate,2018-03-09,Active,,2025-05-23 23:53:58.013099
+DIA000567,APT000132,PAT000517,PRV000830,K58.9,Irritable bowel syndrome without diarrhea,Secondary,Severe,2023-03-08,Active,Lifestyle modifications discussed,2025-04-14 23:53:58.013099
+DIA000568,APT000851,PAT000673,PRV000145,M54.5,Low back pain,Secondary,Moderate,2020-11-23,Active,Patient reports symptoms for several weeks,2024-12-01 23:53:58.013099
+DIA000569,APT000131,PAT000706,PRV000283,M25.561,Pain in right knee,Primary,,,Active,Follow-up in 3 months recommended,2024-10-10 23:53:58.013099
+DIA000570,APT000323,PAT000902,PRV000154,G47.00,"Insomnia, unspecified",Secondary,Moderate,,Chronic,Patient reports symptoms for several weeks,2025-11-30 23:53:58.013099
+DIA000571,APT000712,PAT000700,PRV000974,M54.5,Low back pain,Primary,Moderate,2025-03-28,Active,,2024-01-27 23:53:58.013099
+DIA000572,APT000456,PAT000577,PRV000064,M79.3,"Panniculitis, unspecified",Primary,Severe,2018-04-27,Active,,2025-12-28 23:53:58.013099
+DIA000573,APT000818,PAT000412,PRV000489,F41.9,"Anxiety disorder, unspecified",Primary,Mild,2019-10-21,Active,Patient reports symptoms for several weeks,2024-11-09 23:53:58.013099
+DIA000574,APT000834,PAT000459,PRV000338,E78.5,"Hyperlipidemia, unspecified",Primary,Mild,2018-03-25,Active,Patient reports symptoms for several weeks,2025-09-28 23:53:58.013099
+DIA000575,APT000778,PAT000245,PRV000241,E11.9,Type 2 diabetes mellitus without complications,Primary,,2019-02-11,Chronic,Follow-up in 3 months recommended,2024-11-09 23:53:58.013099
+DIA000576,APT000100,PAT000255,PRV000019,F33.9,"Major depressive disorder, recurrent, unspecified",Primary,,,Active,Patient referred to specialist,2024-05-09 23:53:58.013099
+DIA000577,APT000432,PAT000668,PRV000985,E78.5,"Hyperlipidemia, unspecified",Secondary,,,Resolved,Patient reports symptoms for several weeks,2025-06-10 23:53:58.013099
+DIA000578,APT000742,PAT000375,PRV000774,J45.909,"Unspecified asthma, uncomplicated",Secondary,,2016-08-07,Recurrent,Follow-up in 3 months recommended,2024-07-12 23:53:58.013099
+DIA000579,APT000905,PAT000693,PRV000575,M54.5,Low back pain,Primary,Mild,2025-02-18,Resolved,Patient referred to specialist,2025-04-19 23:53:58.013099
+DIA000580,APT000298,PAT000886,PRV000964,M19.90,"Unspecified osteoarthritis, unspecified site",Primary,Severe,2020-07-28,Chronic,Patient reports symptoms for several weeks,2024-08-31 23:53:58.013099
+DIA000581,APT000051,PAT000704,PRV000710,L70.0,Acne vulgaris,Primary,Moderate,2017-02-08,Active,,2025-05-16 23:53:58.013099
+DIA000582,APT000813,PAT000242,PRV000456,I10,Essential (primary) hypertension,Primary,,2025-01-18,Active,,2024-08-10 23:53:58.013099
+DIA000583,APT000029,PAT000467,PRV000893,M54.5,Low back pain,Primary,Moderate,2019-06-07,Chronic,,2025-11-02 23:53:58.013099
+DIA000584,APT000287,PAT000030,PRV000474,I25.10,Atherosclerotic heart disease of native coronary artery without angina pectoris,Primary,Moderate,2020-02-12,Chronic,,2025-12-16 23:53:58.013099
+DIA000585,APT000871,PAT000865,PRV000150,E11.9,Type 2 diabetes mellitus without complications,Tertiary,Moderate,2021-03-24,Resolved,Condition well-controlled with medication,2024-02-08 23:53:58.013099
+DIA000586,APT000514,PAT000648,PRV000156,F41.9,"Anxiety disorder, unspecified",Secondary,Mild,,Resolved,Condition well-controlled with medication,2024-12-06 23:53:58.013099
+DIA000587,APT000928,PAT000439,PRV000389,F41.9,"Anxiety disorder, unspecified",Primary,Mild,2020-10-23,Active,Condition well-controlled with medication,2025-05-09 23:53:58.013099
+DIA000588,APT000974,PAT000765,PRV000855,E78.5,"Hyperlipidemia, unspecified",Primary,Severe,2025-05-27,Active,,2024-08-23 23:53:58.013099
+DIA000589,APT000723,PAT000221,PRV000613,J06.9,"Acute upper respiratory infection, unspecified",Primary,Severe,2020-11-06,Chronic,,2026-01-11 23:53:58.013099
+DIA000590,APT000586,PAT000150,PRV000434,F33.9,"Major depressive disorder, recurrent, unspecified",Secondary,Mild,,Resolved,Lifestyle modifications discussed,2024-02-14 23:53:58.013099
+DIA000591,APT000369,PAT000212,PRV000794,I10,Essential (primary) hypertension,Primary,Severe,2025-02-26,Active,,2024-10-23 23:53:58.013099
+DIA000592,APT000843,PAT000053,PRV000940,M25.561,Pain in right knee,Primary,Moderate,2021-07-13,Chronic,Lifestyle modifications discussed,2025-07-27 23:53:58.013099
+DIA000593,APT000167,PAT000004,PRV000401,F41.9,"Anxiety disorder, unspecified",Secondary,Moderate,2016-03-13,Active,Patient referred to specialist,2025-11-04 23:53:58.013099
+DIA000594,APT000270,PAT000642,PRV000954,J45.909,"Unspecified asthma, uncomplicated",Primary,Mild,,Active,Patient referred to specialist,2024-06-19 23:53:58.013099
+DIA000595,APT000121,PAT000077,PRV000456,M25.561,Pain in right knee,Primary,Severe,,Chronic,Patient reports symptoms for several weeks,2024-12-30 23:53:58.013099
+DIA000596,APT000273,PAT000452,PRV000232,K21.9,Gastro-esophageal reflux disease without esophagitis,Primary,Moderate,2016-10-01,Chronic,Patient reports symptoms for several weeks,2025-12-09 23:53:58.013099
+DIA000597,APT000228,PAT000088,PRV000286,G47.00,"Insomnia, unspecified",Primary,Moderate,,Resolved,Lifestyle modifications discussed,2024-06-20 23:53:58.013099
+DIA000598,APT000653,PAT000624,PRV000635,L70.0,Acne vulgaris,Primary,Moderate,2018-02-11,Active,Patient referred to specialist,2025-09-07 23:53:58.013099
+DIA000599,APT000288,PAT000999,PRV000323,E11.9,Type 2 diabetes mellitus without complications,Primary,Mild,2017-03-12,Active,Follow-up in 3 months recommended,2025-08-28 23:53:58.013099
+DIA000600,APT000806,PAT000881,PRV000912,I10,Essential (primary) hypertension,Primary,Moderate,2022-10-10,Resolved,Follow-up in 3 months recommended,2024-12-09 23:53:58.013099
+DIA000601,APT000853,PAT000753,PRV000882,I25.10,Atherosclerotic heart disease of native coronary artery without angina pectoris,Primary,Mild,,Active,Condition well-controlled with medication,2025-11-10 23:53:58.013099
+DIA000602,APT000918,PAT000363,PRV000535,L70.0,Acne vulgaris,Secondary,Mild,2021-03-08,Chronic,Follow-up in 3 months recommended,2024-12-02 23:53:58.013099
+DIA000603,APT000721,PAT000990,PRV000714,R51,Headache,Primary,Moderate,2017-01-11,Recurrent,Follow-up in 3 months recommended,2025-05-06 23:53:58.013099
+DIA000604,APT000732,PAT000365,PRV000984,E11.9,Type 2 diabetes mellitus without complications,Primary,,2016-12-16,Chronic,Patient referred to specialist,2025-03-07 23:53:58.013099
+DIA000605,APT000711,PAT000897,PRV000806,R10.9,Unspecified abdominal pain,Secondary,Moderate,,Active,,2025-11-29 23:53:58.013099
+DIA000606,APT000373,PAT000850,PRV000447,E66.9,"Obesity, unspecified",Secondary,Mild,2025-12-30,Chronic,Follow-up in 3 months recommended,2025-01-29 23:53:58.013099
+DIA000607,APT000440,PAT000489,PRV000998,J06.9,"Acute upper respiratory infection, unspecified",Secondary,Moderate,2021-05-14,Active,Lifestyle modifications discussed,2025-04-02 23:53:58.013099
+DIA000608,APT000316,PAT000814,PRV000064,E78.5,"Hyperlipidemia, unspecified",Primary,Severe,2016-03-21,Active,,2024-12-12 23:53:58.013099
+DIA000609,APT000419,PAT000441,PRV000092,M19.90,"Unspecified osteoarthritis, unspecified site",Primary,Moderate,,Active,,2025-03-29 23:53:58.013099
+DIA000610,APT000939,PAT000194,PRV000755,M25.561,Pain in right knee,Secondary,Severe,2021-04-19,Active,,2024-04-29 23:53:58.013099
+DIA000611,APT000405,PAT000136,PRV000333,L70.0,Acne vulgaris,Secondary,Moderate,2019-06-09,Recurrent,Condition well-controlled with medication,2024-08-14 23:53:58.013099
+DIA000612,APT000224,PAT000610,PRV000732,N39.0,"Urinary tract infection, site not specified",Primary,Severe,,Active,Patient reports symptoms for several weeks,2025-02-15 23:53:58.013099
+DIA000613,APT000619,PAT000906,PRV000037,M54.5,Low back pain,Tertiary,Mild,,Active,Condition well-controlled with medication,2024-04-26 23:53:58.013099
+DIA000614,APT000493,PAT000384,PRV000046,N39.0,"Urinary tract infection, site not specified",Primary,Mild,2018-12-09,Recurrent,Condition well-controlled with medication,2025-12-26 23:53:58.013099
+DIA000615,APT000082,PAT000665,PRV000542,I10,Essential (primary) hypertension,Tertiary,Mild,2023-08-10,Active,,2025-09-23 23:53:58.013099
+DIA000616,APT000834,PAT000851,PRV000381,G47.00,"Insomnia, unspecified",Secondary,Moderate,2020-05-13,Chronic,Lifestyle modifications discussed,2024-09-15 23:53:58.013099
+DIA000617,APT000513,PAT000123,PRV000808,M19.90,"Unspecified osteoarthritis, unspecified site",Secondary,,,Active,Patient reports symptoms for several weeks,2025-01-25 23:53:58.013099
+DIA000618,APT000044,PAT000403,PRV000569,K21.9,Gastro-esophageal reflux disease without esophagitis,Tertiary,Severe,2021-04-17,Active,Patient reports symptoms for several weeks,2025-07-25 23:53:58.013099
+DIA000619,APT000861,PAT000875,PRV000331,F41.9,"Anxiety disorder, unspecified",Secondary,Mild,,Recurrent,Condition well-controlled with medication,2025-03-05 23:53:58.013099
+DIA000620,APT000093,PAT000424,PRV000778,E11.9,Type 2 diabetes mellitus without complications,Primary,Mild,2017-12-04,Active,Lifestyle modifications discussed,2025-11-14 23:53:58.013099
+DIA000621,APT000143,PAT000130,PRV000278,I10,Essential (primary) hypertension,Primary,Mild,2022-12-16,Resolved,Lifestyle modifications discussed,2024-01-31 23:53:58.013099
+DIA000622,APT000750,PAT000073,PRV000590,K58.9,Irritable bowel syndrome without diarrhea,Primary,Mild,2024-12-31,Active,,2026-01-07 23:53:58.013099
+DIA000623,APT000943,PAT000897,PRV000070,E78.5,"Hyperlipidemia, unspecified",Primary,Moderate,2021-08-17,Active,,2025-11-03 23:53:58.013099
+DIA000624,APT000046,PAT000357,PRV000729,E78.5,"Hyperlipidemia, unspecified",Secondary,,2017-08-28,Active,Condition well-controlled with medication,2024-10-07 23:53:58.013099
+DIA000625,APT000395,PAT000708,PRV000299,R51,Headache,Primary,,2021-06-24,Active,Patient referred to specialist,2025-01-06 23:53:58.013099
+DIA000626,APT000213,PAT000434,PRV000707,J06.9,"Acute upper respiratory infection, unspecified",Primary,Moderate,2018-03-04,Active,Condition well-controlled with medication,2025-01-10 23:53:58.013099
+DIA000627,APT000247,PAT000651,PRV000399,M19.90,"Unspecified osteoarthritis, unspecified site",Primary,Severe,2024-04-13,Chronic,Patient referred to specialist,2025-12-21 23:53:58.013099
+DIA000628,APT000363,PAT000868,PRV000359,M79.3,"Panniculitis, unspecified",Secondary,Moderate,2024-08-06,Active,,2025-03-22 23:53:58.013099
+DIA000629,APT000957,PAT000858,PRV000070,M25.561,Pain in right knee,Primary,Mild,2019-06-13,Active,Follow-up in 3 months recommended,2024-05-19 23:53:58.013099
+DIA000630,APT000972,PAT000485,PRV000448,I10,Essential (primary) hypertension,Primary,Moderate,,Active,Lifestyle modifications discussed,2024-03-05 23:53:58.013099
+DIA000631,APT000506,PAT000277,PRV000919,I25.10,Atherosclerotic heart disease of native coronary artery without angina pectoris,Primary,Moderate,2024-07-16,Recurrent,Follow-up in 3 months recommended,2025-05-17 23:53:58.013099
+DIA000632,APT000366,PAT000816,PRV000509,M79.3,"Panniculitis, unspecified",Secondary,Moderate,,Recurrent,Patient reports symptoms for several weeks,2025-02-16 23:53:58.013099
+DIA000633,APT000652,PAT000571,PRV000807,E11.9,Type 2 diabetes mellitus without complications,Primary,Mild,,Chronic,Patient reports symptoms for several weeks,2024-10-12 23:53:58.013099
+DIA000634,APT000593,PAT000757,PRV000865,K58.9,Irritable bowel syndrome without diarrhea,Secondary,Mild,2022-10-19,Chronic,Follow-up in 3 months recommended,2024-07-03 23:53:58.013099
+DIA000635,APT000628,PAT000386,PRV000599,N39.0,"Urinary tract infection, site not specified",Primary,Mild,,Active,Lifestyle modifications discussed,2025-09-20 23:53:58.013099
+DIA000636,APT000730,PAT000211,PRV000173,M54.5,Low back pain,Primary,,,Active,Condition well-controlled with medication,2025-03-26 23:53:58.013099
+DIA000637,APT000489,PAT000509,PRV000983,F33.9,"Major depressive disorder, recurrent, unspecified",Tertiary,Moderate,2016-11-08,Resolved,Lifestyle modifications discussed,2025-10-12 23:53:58.013099
+DIA000638,APT000635,PAT000290,PRV000114,I10,Essential (primary) hypertension,Primary,Severe,2023-06-22,Resolved,,2025-08-14 23:53:58.013099
+DIA000639,APT000280,PAT000837,PRV000147,J06.9,"Acute upper respiratory infection, unspecified",Primary,Severe,,Active,Patient referred to specialist,2024-09-19 23:53:58.013099
+DIA000640,APT000612,PAT000504,PRV000452,M79.3,"Panniculitis, unspecified",Primary,Mild,2020-06-05,Active,Lifestyle modifications discussed,2024-09-05 23:53:58.013099
+DIA000641,APT000479,PAT000053,PRV000067,M19.90,"Unspecified osteoarthritis, unspecified site",Primary,Moderate,2024-07-28,Recurrent,Patient referred to specialist,2025-12-22 23:53:58.013099
+DIA000642,APT000324,PAT000243,PRV000737,K21.9,Gastro-esophageal reflux disease without esophagitis,Primary,Severe,2024-10-24,Chronic,Lifestyle modifications discussed,2025-10-30 23:53:58.013099
+DIA000643,APT000917,PAT000659,PRV000618,E66.9,"Obesity, unspecified",Primary,Moderate,,Active,,2025-01-11 23:53:58.013099
+DIA000644,APT000415,PAT000017,PRV000978,J06.9,"Acute upper respiratory infection, unspecified",Primary,,,Chronic,,2025-05-15 23:53:58.013099
+DIA000645,APT000472,PAT000218,PRV000873,E11.9,Type 2 diabetes mellitus without complications,Primary,Mild,,Active,Patient referred to specialist,2025-07-01 23:53:58.013099
+DIA000646,APT000365,PAT000424,PRV000328,I25.10,Atherosclerotic heart disease of native coronary artery without angina pectoris,Secondary,Mild,2020-03-15,Active,Patient referred to specialist,2024-07-31 23:53:58.013099
+DIA000647,APT000429,PAT000403,PRV000146,J06.9,"Acute upper respiratory infection, unspecified",Secondary,Severe,2023-11-21,Active,Condition well-controlled with medication,2024-08-27 23:53:58.013099
+DIA000648,APT000288,PAT000250,PRV000416,M79.3,"Panniculitis, unspecified",Primary,Severe,2025-04-08,Active,Condition well-controlled with medication,2024-05-14 23:53:58.013099
+DIA000649,APT000388,PAT000979,PRV000095,N39.0,"Urinary tract infection, site not specified",Primary,,,Active,Lifestyle modifications discussed,2025-08-30 23:53:58.013099
+DIA000650,APT000676,PAT000880,PRV000495,M79.3,"Panniculitis, unspecified",Primary,Moderate,2020-05-20,Chronic,,2024-03-09 23:53:58.013099
+DIA000651,APT000433,PAT000529,PRV000126,M79.3,"Panniculitis, unspecified",Primary,,,Active,Patient referred to specialist,2024-07-13 23:53:58.013099
+DIA000652,APT000508,PAT000438,PRV000526,K58.9,Irritable bowel syndrome without diarrhea,Primary,Severe,2020-06-16,Resolved,Condition well-controlled with medication,2025-05-16 23:53:58.013099
+DIA000653,APT000387,PAT000684,PRV000430,E78.5,"Hyperlipidemia, unspecified",Primary,Severe,2017-10-24,Active,Condition well-controlled with medication,2024-05-25 23:53:58.013099
+DIA000654,APT000407,PAT000723,PRV000482,F41.9,"Anxiety disorder, unspecified",Primary,Moderate,2020-02-26,Active,Follow-up in 3 months recommended,2025-07-27 23:53:58.013099
+DIA000655,APT000958,PAT000056,PRV000062,F41.9,"Anxiety disorder, unspecified",Primary,Mild,2016-05-18,Chronic,Condition well-controlled with medication,2024-05-17 23:53:58.013099
+DIA000656,APT000452,PAT000131,PRV000682,R51,Headache,Primary,,2024-06-15,Resolved,Condition well-controlled with medication,2025-09-10 23:53:58.013099
+DIA000657,APT000824,PAT000396,PRV000600,M79.3,"Panniculitis, unspecified",Tertiary,Moderate,2018-05-10,Recurrent,Lifestyle modifications discussed,2025-08-11 23:53:58.013099
+DIA000658,APT000262,PAT000642,PRV000441,M25.561,Pain in right knee,Primary,Moderate,2024-08-23,Recurrent,Patient reports symptoms for several weeks,2025-05-14 23:53:58.013099
+DIA000659,APT000988,PAT000524,PRV000518,F41.9,"Anxiety disorder, unspecified",Secondary,Moderate,2020-06-14,Active,Follow-up in 3 months recommended,2024-08-19 23:53:58.013099
+DIA000660,APT000589,PAT000466,PRV000247,M19.90,"Unspecified osteoarthritis, unspecified site",Secondary,Moderate,2017-12-04,Active,,2024-02-27 23:53:58.013099
+DIA000661,APT000732,PAT000848,PRV000879,N39.0,"Urinary tract infection, site not specified",Primary,Moderate,2019-09-03,Chronic,Condition well-controlled with medication,2025-09-11 23:53:58.013099
+DIA000662,APT000096,PAT000120,PRV000716,I10,Essential (primary) hypertension,Primary,Mild,,Recurrent,Lifestyle modifications discussed,2025-10-25 23:53:58.013099
+DIA000663,APT000226,PAT000698,PRV000731,J45.909,"Unspecified asthma, uncomplicated",Primary,Severe,2023-10-29,Resolved,Lifestyle modifications discussed,2024-03-15 23:53:58.013099
+DIA000664,APT000310,PAT000468,PRV000765,E11.9,Type 2 diabetes mellitus without complications,Primary,Moderate,2019-11-01,Chronic,Lifestyle modifications discussed,2024-06-28 23:53:58.013099
+DIA000665,APT000720,PAT000342,PRV000820,E78.5,"Hyperlipidemia, unspecified",Primary,Moderate,2018-10-30,Chronic,Patient referred to specialist,2024-08-31 23:53:58.013099
+DIA000666,APT000523,PAT000958,PRV000486,M25.561,Pain in right knee,Secondary,Mild,2019-02-07,Active,Patient referred to specialist,2025-04-06 23:53:58.013099
+DIA000667,APT000106,PAT000515,PRV000144,F41.9,"Anxiety disorder, unspecified",Primary,Mild,,Resolved,,2024-03-18 23:53:58.013099
+DIA000668,APT000403,PAT000265,PRV000904,K21.9,Gastro-esophageal reflux disease without esophagitis,Primary,Mild,2020-11-29,Chronic,,2025-11-30 23:53:58.013099
+DIA000669,APT000939,PAT000930,PRV000028,F41.9,"Anxiety disorder, unspecified",Secondary,Moderate,2025-01-01,Resolved,Patient referred to specialist,2025-11-20 23:53:58.013099
+DIA000670,APT000599,PAT000987,PRV000070,M79.3,"Panniculitis, unspecified",Secondary,Mild,2016-02-26,Active,Patient reports symptoms for several weeks,2024-08-26 23:53:58.013099
+DIA000671,APT000783,PAT000021,PRV000791,K21.9,Gastro-esophageal reflux disease without esophagitis,Primary,,2025-06-27,Active,Patient reports symptoms for several weeks,2025-05-02 23:53:58.013099
+DIA000672,APT000804,PAT000342,PRV000448,M19.90,"Unspecified osteoarthritis, unspecified site",Secondary,Mild,2022-06-19,Active,Patient reports symptoms for several weeks,2025-06-01 23:53:58.013099
+DIA000673,APT000744,PAT000232,PRV000262,M19.90,"Unspecified osteoarthritis, unspecified site",Primary,Mild,2022-11-20,Active,Follow-up in 3 months recommended,2025-08-22 23:53:58.013099
+DIA000674,APT000979,PAT000991,PRV000555,E78.5,"Hyperlipidemia, unspecified",Primary,Mild,,Recurrent,Patient reports symptoms for several weeks,2024-12-16 23:53:58.013099
+DIA000675,APT000286,PAT000784,PRV000668,L70.0,Acne vulgaris,Primary,Mild,2018-04-25,Active,Patient referred to specialist,2025-07-31 23:53:58.013099
+DIA000676,APT000932,PAT000069,PRV000898,M54.5,Low back pain,Primary,Severe,2022-06-03,Active,,2024-07-15 23:53:58.013099
+DIA000677,APT000013,PAT000545,PRV000323,K58.9,Irritable bowel syndrome without diarrhea,Tertiary,Severe,2023-12-28,Active,Condition well-controlled with medication,2024-04-10 23:53:58.013099
+DIA000678,APT000218,PAT000642,PRV000964,M79.3,"Panniculitis, unspecified",Primary,Moderate,2024-10-11,Resolved,,2025-05-02 23:53:58.013099
+DIA000679,APT000171,PAT000565,PRV000266,R51,Headache,Primary,Mild,2021-04-27,Resolved,Lifestyle modifications discussed,2025-06-12 23:53:58.013099
+DIA000680,APT000309,PAT000417,PRV000474,F41.9,"Anxiety disorder, unspecified",Primary,Mild,2019-02-04,Active,Condition well-controlled with medication,2025-07-28 23:53:58.013099
+DIA000681,APT000798,PAT000340,PRV000081,F33.9,"Major depressive disorder, recurrent, unspecified",Primary,Moderate,,Active,Lifestyle modifications discussed,2025-05-31 23:53:58.013099
+DIA000682,APT000146,PAT000560,PRV000253,M25.561,Pain in right knee,Primary,,2017-02-09,Active,Lifestyle modifications discussed,2024-03-10 23:53:58.013099
+DIA000683,APT000166,PAT000334,PRV000225,M54.5,Low back pain,Primary,Mild,2017-11-30,Resolved,Patient referred to specialist,2024-09-04 23:53:58.013099
+DIA000684,APT000114,PAT000187,PRV000138,I10,Essential (primary) hypertension,Secondary,Moderate,2019-06-30,Active,Condition well-controlled with medication,2024-12-18 23:53:58.013099
+DIA000685,APT000434,PAT000191,PRV000682,F41.9,"Anxiety disorder, unspecified",Primary,Moderate,2024-09-22,Recurrent,Follow-up in 3 months recommended,2025-12-04 23:53:58.013099
+DIA000686,APT000719,PAT000520,PRV000334,E78.5,"Hyperlipidemia, unspecified",Primary,Mild,2024-11-11,Active,,2024-04-09 23:53:58.013099
+DIA000687,APT000262,PAT000527,PRV000568,M79.3,"Panniculitis, unspecified",Primary,Moderate,,Active,Lifestyle modifications discussed,2025-06-11 23:53:58.013099
+DIA000688,APT000761,PAT000655,PRV000094,J06.9,"Acute upper respiratory infection, unspecified",Primary,Mild,2024-12-10,Chronic,Condition well-controlled with medication,2025-02-22 23:53:58.013099
+DIA000689,APT000362,PAT000481,PRV000718,R10.9,Unspecified abdominal pain,Primary,Severe,2019-11-12,Active,Lifestyle modifications discussed,2024-12-25 23:53:58.013099
+DIA000690,APT000205,PAT000400,PRV000600,J45.909,"Unspecified asthma, uncomplicated",Secondary,Mild,2019-09-15,Resolved,Patient referred to specialist,2024-09-17 23:53:58.013099
+DIA000691,APT000719,PAT000752,PRV000722,I25.10,Atherosclerotic heart disease of native coronary artery without angina pectoris,Tertiary,Moderate,2017-08-15,Active,Follow-up in 3 months recommended,2025-08-27 23:53:58.013099
+DIA000692,APT000140,PAT000127,PRV000418,J45.909,"Unspecified asthma, uncomplicated",Primary,Mild,2023-10-04,Resolved,Lifestyle modifications discussed,2024-05-18 23:53:58.013099
+DIA000693,APT000894,PAT000457,PRV000214,I10,Essential (primary) hypertension,Primary,,2025-12-04,Chronic,Follow-up in 3 months recommended,2025-04-05 23:53:58.013099
+DIA000694,APT000696,PAT000161,PRV000260,J45.909,"Unspecified asthma, uncomplicated",Secondary,Mild,,Recurrent,,2025-04-10 23:53:58.013099
+DIA000695,APT000291,PAT000474,PRV000568,R10.9,Unspecified abdominal pain,Primary,Severe,2022-07-12,Active,Lifestyle modifications discussed,2025-08-19 23:53:58.013099
+DIA000696,APT000739,PAT000280,PRV000903,M19.90,"Unspecified osteoarthritis, unspecified site",Primary,Severe,2022-08-20,Active,Lifestyle modifications discussed,2025-03-29 23:53:58.013099
+DIA000697,APT000294,PAT000908,PRV000093,M54.5,Low back pain,Primary,,2019-03-29,Active,Condition well-controlled with medication,2024-09-10 23:53:58.013099
+DIA000698,APT000708,PAT000428,PRV000234,M25.561,Pain in right knee,Secondary,Moderate,2020-06-23,Recurrent,,2025-07-23 23:53:58.013099
+DIA000699,APT000650,PAT000060,PRV000019,E78.5,"Hyperlipidemia, unspecified",Primary,Moderate,2023-06-17,Recurrent,,2025-08-27 23:53:58.013099
+DIA000700,APT000137,PAT000011,PRV000864,J45.909,"Unspecified asthma, uncomplicated",Secondary,Mild,2020-12-10,Active,Patient reports symptoms for several weeks,2025-08-07 23:53:58.013099
+DIA000701,APT000123,PAT000252,PRV000037,E11.9,Type 2 diabetes mellitus without complications,Secondary,Mild,2021-08-05,Active,Follow-up in 3 months recommended,2024-11-08 23:53:58.013099
+DIA000702,APT000314,PAT000899,PRV000311,M54.5,Low back pain,Primary,Moderate,2018-04-29,Active,Condition well-controlled with medication,2025-03-28 23:53:58.013099
+DIA000703,APT000409,PAT000302,PRV000697,R10.9,Unspecified abdominal pain,Secondary,Mild,2022-03-03,Active,,2024-09-12 23:53:58.013099
+DIA000704,APT000098,PAT000093,PRV000992,F33.9,"Major depressive disorder, recurrent, unspecified",Secondary,,2024-05-22,Active,Lifestyle modifications discussed,2025-08-16 23:53:58.013099
+DIA000705,APT000014,PAT000001,PRV000984,K58.9,Irritable bowel syndrome without diarrhea,Primary,Mild,2022-12-20,Active,Patient reports symptoms for several weeks,2024-08-20 23:53:58.013099
+DIA000706,APT000017,PAT000781,PRV000248,R51,Headache,Primary,Moderate,2020-09-13,Resolved,,2025-05-07 23:53:58.013099
+DIA000707,APT000291,PAT000383,PRV000906,F41.9,"Anxiety disorder, unspecified",Primary,Moderate,2024-09-09,Recurrent,Condition well-controlled with medication,2024-03-29 23:53:58.013099
+DIA000708,APT000586,PAT000887,PRV000394,L70.0,Acne vulgaris,Primary,Moderate,,Recurrent,,2025-05-10 23:53:58.013099
+DIA000709,APT000527,PAT000575,PRV000900,J45.909,"Unspecified asthma, uncomplicated",Primary,Moderate,,Active,Follow-up in 3 months recommended,2025-06-05 23:53:58.013099
+DIA000710,APT000197,PAT000965,PRV000148,R51,Headache,Primary,Mild,2022-07-07,Resolved,Patient referred to specialist,2025-03-09 23:53:58.013099
+DIA000711,APT000323,PAT000816,PRV000381,M25.561,Pain in right knee,Primary,Moderate,2022-10-15,Chronic,Condition well-controlled with medication,2025-05-19 23:53:58.013099
+DIA000712,APT000968,PAT000571,PRV000658,M54.5,Low back pain,Secondary,Mild,2018-11-24,Active,Condition well-controlled with medication,2025-08-06 23:53:58.013099
+DIA000713,APT000636,PAT000177,PRV000943,M79.3,"Panniculitis, unspecified",Primary,,2021-05-16,Resolved,Lifestyle modifications discussed,2024-04-08 23:53:58.013099
+DIA000714,APT000044,PAT000824,PRV000401,R10.9,Unspecified abdominal pain,Primary,Severe,2016-03-24,Active,Follow-up in 3 months recommended,2024-12-24 23:53:58.013099
+DIA000715,APT000857,PAT000541,PRV000581,R51,Headache,Primary,,,Active,Patient reports symptoms for several weeks,2025-12-01 23:53:58.013099
+DIA000716,APT000055,PAT000462,PRV000118,M79.3,"Panniculitis, unspecified",Primary,Mild,2017-05-02,Active,Patient reports symptoms for several weeks,2024-02-13 23:53:58.013099
+DIA000717,APT000343,PAT000029,PRV000685,R10.9,Unspecified abdominal pain,Primary,Mild,,Active,Patient reports symptoms for several weeks,2024-02-27 23:53:58.013099
+DIA000718,APT000864,PAT000861,PRV000342,M19.90,"Unspecified osteoarthritis, unspecified site",Primary,Mild,2016-12-30,Resolved,Lifestyle modifications discussed,2025-06-07 23:53:58.013099
+DIA000719,APT000515,PAT000242,PRV000252,G47.00,"Insomnia, unspecified",Primary,Mild,2023-05-26,Active,Lifestyle modifications discussed,2025-07-15 23:53:58.013099
+DIA000720,APT000103,PAT000382,PRV000976,R10.9,Unspecified abdominal pain,Secondary,Mild,2017-09-10,Active,Patient reports symptoms for several weeks,2025-08-29 23:53:58.013099
+DIA000721,APT000783,PAT000091,PRV000766,L70.0,Acne vulgaris,Secondary,Moderate,2024-07-14,Active,Follow-up in 3 months recommended,2025-08-15 23:53:58.013099
+DIA000722,APT000633,PAT000489,PRV000659,J45.909,"Unspecified asthma, uncomplicated",Primary,Mild,2025-11-07,Chronic,Patient reports symptoms for several weeks,2024-03-12 23:53:58.013099
+DIA000723,APT000980,PAT000089,PRV000745,F33.9,"Major depressive disorder, recurrent, unspecified",Secondary,Moderate,2019-08-02,Active,,2024-10-16 23:53:58.013099
+DIA000724,APT000575,PAT000604,PRV000617,E66.9,"Obesity, unspecified",Secondary,Severe,2020-05-07,Resolved,,2025-02-11 23:53:58.013099
+DIA000725,APT000197,PAT000603,PRV000884,M25.561,Pain in right knee,Primary,Moderate,2018-02-13,Resolved,Lifestyle modifications discussed,2024-12-27 23:53:58.013099
+DIA000726,APT000433,PAT000276,PRV000693,E11.9,Type 2 diabetes mellitus without complications,Tertiary,Mild,2025-10-17,Active,,2025-10-05 23:53:58.013099
+DIA000727,APT000375,PAT000688,PRV000246,M79.3,"Panniculitis, unspecified",Secondary,Mild,2018-08-08,Active,,2024-08-23 23:53:58.013099
+DIA000728,APT000078,PAT000768,PRV000008,R10.9,Unspecified abdominal pain,Primary,Moderate,2025-03-08,Chronic,,2024-03-20 23:53:58.013099
+DIA000729,APT000782,PAT000710,PRV000352,M79.3,"Panniculitis, unspecified",Primary,Mild,2016-05-18,Active,Follow-up in 3 months recommended,2025-01-18 23:53:58.013099
+DIA000730,APT000300,PAT000580,PRV000570,M79.3,"Panniculitis, unspecified",Primary,Moderate,2019-10-29,Active,Patient referred to specialist,2024-07-24 23:53:58.013099
+DIA000731,APT000410,PAT000456,PRV000807,N39.0,"Urinary tract infection, site not specified",Primary,Mild,2016-09-11,Chronic,Condition well-controlled with medication,2025-06-10 23:53:58.013099
+DIA000732,APT000596,PAT000265,PRV000976,J06.9,"Acute upper respiratory infection, unspecified",Secondary,Severe,2016-12-14,Active,Patient referred to specialist,2025-03-09 23:53:58.013099
+DIA000733,APT000059,PAT000347,PRV000083,K21.9,Gastro-esophageal reflux disease without esophagitis,Primary,Severe,,Active,Lifestyle modifications discussed,2024-02-17 23:53:58.013099
+DIA000734,APT000331,PAT000016,PRV000959,M79.3,"Panniculitis, unspecified",Secondary,Moderate,2020-07-17,Active,Condition well-controlled with medication,2025-04-12 23:53:58.013099
+DIA000735,APT000610,PAT000866,PRV000552,E66.9,"Obesity, unspecified",Secondary,Mild,2024-08-16,Active,Condition well-controlled with medication,2024-02-28 23:53:58.013099
+DIA000736,APT000683,PAT000988,PRV000512,G47.00,"Insomnia, unspecified",Secondary,Mild,2025-04-07,Chronic,Follow-up in 3 months recommended,2025-11-03 23:53:58.013099
+DIA000737,APT000088,PAT000021,PRV000710,I10,Essential (primary) hypertension,Secondary,Severe,,Resolved,Condition well-controlled with medication,2024-10-05 23:53:58.013099
+DIA000738,APT000550,PAT000619,PRV000390,J45.909,"Unspecified asthma, uncomplicated",Primary,Moderate,2019-08-20,Resolved,Follow-up in 3 months recommended,2025-06-05 23:53:58.013099
+DIA000739,APT000929,PAT000489,PRV000170,R51,Headache,Primary,Mild,2018-10-17,Chronic,,2025-12-21 23:53:58.013099
+DIA000740,APT000233,PAT000051,PRV000941,M79.3,"Panniculitis, unspecified",Secondary,Mild,2019-12-03,Active,Lifestyle modifications discussed,2024-04-17 23:53:58.013099
+DIA000741,APT000493,PAT000438,PRV000289,E11.9,Type 2 diabetes mellitus without complications,Primary,Mild,2022-09-27,Active,Lifestyle modifications discussed,2024-08-14 23:53:58.013099
+DIA000742,APT000423,PAT000274,PRV000004,R51,Headache,Primary,Severe,2017-05-01,Active,Follow-up in 3 months recommended,2024-02-03 23:53:58.013099
+DIA000743,APT000362,PAT000972,PRV000288,L70.0,Acne vulgaris,Secondary,Mild,2022-11-05,Active,Follow-up in 3 months recommended,2025-10-22 23:53:58.013099
+DIA000744,APT000210,PAT000677,PRV000945,K58.9,Irritable bowel syndrome without diarrhea,Secondary,Moderate,2022-05-15,Recurrent,Condition well-controlled with medication,2024-08-06 23:53:58.013099
+DIA000745,APT000635,PAT000265,PRV000439,E78.5,"Hyperlipidemia, unspecified",Primary,Moderate,,Chronic,,2025-10-22 23:53:58.013099
+DIA000746,APT000469,PAT000052,PRV000388,E11.9,Type 2 diabetes mellitus without complications,Secondary,Moderate,2018-04-25,Active,Condition well-controlled with medication,2024-06-06 23:53:58.013099
+DIA000747,APT000591,PAT000822,PRV000095,E66.9,"Obesity, unspecified",Secondary,Severe,2024-11-18,Active,Patient reports symptoms for several weeks,2024-01-20 23:53:58.013099
+DIA000748,APT000770,PAT000989,PRV000029,J06.9,"Acute upper respiratory infection, unspecified",Primary,Severe,2022-12-23,Active,,2025-08-22 23:53:58.013099
+DIA000749,APT000034,PAT000709,PRV000860,N39.0,"Urinary tract infection, site not specified",Primary,Moderate,2021-06-15,Active,Condition well-controlled with medication,2025-03-26 23:53:58.013099
+DIA000750,APT000038,PAT000485,PRV000066,I25.10,Atherosclerotic heart disease of native coronary artery without angina pectoris,Tertiary,Mild,2023-04-28,Active,Patient referred to specialist,2024-03-11 23:53:58.013099
+DIA000751,APT000329,PAT000676,PRV000036,E78.5,"Hyperlipidemia, unspecified",Primary,Moderate,2021-05-02,Resolved,Patient reports symptoms for several weeks,2025-08-23 23:53:58.013099
+DIA000752,APT000470,PAT000074,PRV000446,E11.9,Type 2 diabetes mellitus without complications,Primary,Moderate,2024-03-26,Chronic,Patient reports symptoms for several weeks,2025-04-04 23:53:58.013099
+DIA000753,APT000552,PAT000656,PRV000993,E11.9,Type 2 diabetes mellitus without complications,Primary,Moderate,2025-12-03,Chronic,Condition well-controlled with medication,2025-09-25 23:53:58.013099
+DIA000754,APT000222,PAT000178,PRV000703,R10.9,Unspecified abdominal pain,Secondary,Moderate,2025-03-13,Active,Patient reports symptoms for several weeks,2025-07-25 23:53:58.013099
+DIA000755,APT000784,PAT000697,PRV000934,L70.0,Acne vulgaris,Primary,Mild,,Active,Lifestyle modifications discussed,2024-05-12 23:53:58.013099
+DIA000756,APT000262,PAT000329,PRV000960,K21.9,Gastro-esophageal reflux disease without esophagitis,Primary,Moderate,2025-05-22,Resolved,,2024-10-25 23:53:58.013099
+DIA000757,APT000094,PAT000235,PRV000720,F41.9,"Anxiety disorder, unspecified",Primary,Mild,2019-04-28,Chronic,Patient referred to specialist,2025-05-29 23:53:58.013099
+DIA000758,APT000018,PAT000820,PRV000067,F33.9,"Major depressive disorder, recurrent, unspecified",Tertiary,Severe,,Chronic,,2025-01-16 23:53:58.013099
+DIA000759,APT000556,PAT000295,PRV000587,K21.9,Gastro-esophageal reflux disease without esophagitis,Primary,Mild,2019-02-02,Recurrent,Condition well-controlled with medication,2024-05-09 23:53:58.013099
+DIA000760,APT000051,PAT000992,PRV000356,E66.9,"Obesity, unspecified",Primary,Moderate,2023-04-19,Resolved,Patient referred to specialist,2024-08-29 23:53:58.013099
+DIA000761,APT000510,PAT000429,PRV000762,N39.0,"Urinary tract infection, site not specified",Tertiary,Mild,2019-10-22,Resolved,Condition well-controlled with medication,2025-01-01 23:53:58.013099
+DIA000762,APT000367,PAT000109,PRV000520,E78.5,"Hyperlipidemia, unspecified",Primary,Moderate,2020-11-13,Active,Lifestyle modifications discussed,2025-08-04 23:53:58.013099
+DIA000763,APT000037,PAT000100,PRV000878,M19.90,"Unspecified osteoarthritis, unspecified site",Tertiary,Moderate,2017-09-03,Resolved,Patient referred to specialist,2025-08-28 23:53:58.013099
+DIA000764,APT000992,PAT000333,PRV000070,K21.9,Gastro-esophageal reflux disease without esophagitis,Tertiary,Mild,2019-10-14,Active,Lifestyle modifications discussed,2024-08-08 23:53:58.013099
+DIA000765,APT000924,PAT000867,PRV000812,R10.9,Unspecified abdominal pain,Secondary,Severe,2020-02-28,Active,,2024-02-03 23:53:58.013099
+DIA000766,APT000605,PAT000867,PRV000385,G47.00,"Insomnia, unspecified",Primary,Moderate,2019-07-26,Resolved,Follow-up in 3 months recommended,2024-08-13 23:53:58.013099
+DIA000767,APT000340,PAT000337,PRV000094,E78.5,"Hyperlipidemia, unspecified",Secondary,Moderate,2018-09-04,Active,Lifestyle modifications discussed,2025-05-27 23:53:58.013099
+DIA000768,APT000061,PAT000641,PRV000542,N39.0,"Urinary tract infection, site not specified",Secondary,Mild,2017-04-03,Active,,2025-08-16 23:53:58.013099
+DIA000769,APT000674,PAT000343,PRV000628,E78.5,"Hyperlipidemia, unspecified",Tertiary,Moderate,2024-09-21,Active,Condition well-controlled with medication,2025-12-15 23:53:58.013099
+DIA000770,APT000956,PAT000187,PRV000208,I10,Essential (primary) hypertension,Primary,Moderate,2016-05-31,Active,Patient referred to specialist,2024-04-21 23:53:58.013099
+DIA000771,APT000981,PAT000855,PRV000733,M54.5,Low back pain,Secondary,Moderate,2017-08-27,Active,Lifestyle modifications discussed,2025-06-04 23:53:58.013099
+DIA000772,APT000217,PAT000901,PRV000153,I25.10,Atherosclerotic heart disease of native coronary artery without angina pectoris,Primary,Moderate,,Active,Lifestyle modifications discussed,2024-05-23 23:53:58.013099
+DIA000773,APT000332,PAT000267,PRV000588,N39.0,"Urinary tract infection, site not specified",Primary,Moderate,2017-09-06,Active,Condition well-controlled with medication,2024-09-01 23:53:58.013099
+DIA000774,APT000279,PAT000645,PRV000713,E66.9,"Obesity, unspecified",Primary,Mild,2018-11-08,Active,Patient referred to specialist,2025-04-22 23:53:58.013099
+DIA000775,APT000925,PAT000031,PRV000555,G47.00,"Insomnia, unspecified",Secondary,Mild,2024-07-30,Recurrent,Follow-up in 3 months recommended,2024-04-23 23:53:58.013099
+DIA000776,APT000986,PAT000811,PRV000442,R10.9,Unspecified abdominal pain,Primary,Mild,2023-05-29,Active,Patient referred to specialist,2024-07-04 23:53:58.013099
+DIA000777,APT000382,PAT000141,PRV000333,M79.3,"Panniculitis, unspecified",Primary,Mild,2017-03-08,Active,Condition well-controlled with medication,2025-12-10 23:53:58.013099
+DIA000778,APT000115,PAT000971,PRV000198,E66.9,"Obesity, unspecified",Tertiary,Moderate,2026-01-09,Resolved,,2025-12-19 23:53:58.013099
+DIA000779,APT000215,PAT000450,PRV000439,G47.00,"Insomnia, unspecified",Primary,Severe,,Chronic,,2024-05-05 23:53:58.013099
+DIA000780,APT000933,PAT000574,PRV000395,J45.909,"Unspecified asthma, uncomplicated",Secondary,Mild,2016-07-11,Resolved,Follow-up in 3 months recommended,2025-07-19 23:53:58.013099
+DIA000781,APT000441,PAT000828,PRV000793,E78.5,"Hyperlipidemia, unspecified",Primary,,,Active,Lifestyle modifications discussed,2024-04-30 23:53:58.013099
+DIA000782,APT000282,PAT000696,PRV000116,G47.00,"Insomnia, unspecified",Primary,Moderate,2019-11-23,Resolved,,2025-05-24 23:53:58.013099
+DIA000783,APT000039,PAT000745,PRV000307,R10.9,Unspecified abdominal pain,Secondary,,2017-03-28,Chronic,Patient reports symptoms for several weeks,2024-11-24 23:53:58.013099
+DIA000784,APT000129,PAT000189,PRV000366,R51,Headache,Tertiary,Moderate,,Chronic,Condition well-controlled with medication,2024-10-19 23:53:58.013099
+DIA000785,APT000743,PAT000056,PRV000018,J06.9,"Acute upper respiratory infection, unspecified",Primary,Moderate,2016-02-01,Resolved,Follow-up in 3 months recommended,2024-10-23 23:53:58.013099
+DIA000786,APT000716,PAT000117,PRV000687,E11.9,Type 2 diabetes mellitus without complications,Secondary,Mild,2020-07-14,Chronic,,2024-07-18 23:53:58.013099
+DIA000787,APT000623,PAT000371,PRV000079,M79.3,"Panniculitis, unspecified",Primary,Mild,2020-07-20,Chronic,Patient reports symptoms for several weeks,2025-01-04 23:53:58.013099
+DIA000788,APT000912,PAT000566,PRV000567,M25.561,Pain in right knee,Primary,Mild,2019-06-15,Resolved,,2025-10-23 23:53:58.013099
+DIA000789,APT000306,PAT000066,PRV000074,E11.9,Type 2 diabetes mellitus without complications,Primary,Moderate,2019-12-19,Active,Follow-up in 3 months recommended,2025-04-08 23:53:58.013099
+DIA000790,APT000180,PAT000118,PRV000575,N39.0,"Urinary tract infection, site not specified",Primary,Mild,2016-10-24,Resolved,Patient referred to specialist,2025-01-23 23:53:58.013099
+DIA000791,APT000992,PAT000235,PRV000492,M19.90,"Unspecified osteoarthritis, unspecified site",Primary,Severe,,Chronic,Condition well-controlled with medication,2025-01-29 23:53:58.013099
+DIA000792,APT000746,PAT000947,PRV000573,G47.00,"Insomnia, unspecified",Primary,Mild,2023-11-15,Active,Condition well-controlled with medication,2025-04-14 23:53:58.013099
+DIA000793,APT000153,PAT000031,PRV000372,E78.5,"Hyperlipidemia, unspecified",Primary,Severe,,Recurrent,,2024-05-17 23:53:58.013099
+DIA000794,APT000705,PAT000916,PRV000896,M54.5,Low back pain,Primary,Mild,2018-04-06,Active,,2025-03-02 23:53:58.013099
+DIA000795,APT000838,PAT000527,PRV000059,K21.9,Gastro-esophageal reflux disease without esophagitis,Primary,Mild,2016-09-25,Active,Patient referred to specialist,2025-03-31 23:53:58.013099
+DIA000796,APT000045,PAT000998,PRV000984,M25.561,Pain in right knee,Primary,Mild,2019-11-19,Chronic,,2025-04-11 23:53:58.013099
+DIA000797,APT000682,PAT000668,PRV000233,F41.9,"Anxiety disorder, unspecified",Tertiary,Moderate,2018-10-01,Active,,2025-03-08 23:53:58.013099
+DIA000798,APT000694,PAT000916,PRV000835,R51,Headache,Secondary,Mild,,Active,Follow-up in 3 months recommended,2025-08-24 23:53:58.013099
+DIA000799,APT000575,PAT000234,PRV000476,M19.90,"Unspecified osteoarthritis, unspecified site",Primary,Severe,2019-10-29,Active,Lifestyle modifications discussed,2024-05-11 23:53:58.013099
+DIA000800,APT000341,PAT000609,PRV000309,G47.00,"Insomnia, unspecified",Tertiary,Mild,2017-09-15,Active,Patient referred to specialist,2024-03-25 23:53:58.013099
+DIA000801,APT000600,PAT000360,PRV000771,I10,Essential (primary) hypertension,Secondary,Mild,2016-09-02,Active,Follow-up in 3 months recommended,2024-09-28 23:53:58.013099
+DIA000802,APT000330,PAT000196,PRV000731,G47.00,"Insomnia, unspecified",Primary,Severe,,Active,Patient reports symptoms for several weeks,2025-06-02 23:53:58.013099
+DIA000803,APT000003,PAT000114,PRV000208,K21.9,Gastro-esophageal reflux disease without esophagitis,Primary,Mild,2019-02-02,Active,Lifestyle modifications discussed,2024-09-02 23:53:58.013099
+DIA000804,APT000966,PAT000077,PRV000395,E11.9,Type 2 diabetes mellitus without complications,Secondary,,2024-03-27,Recurrent,Patient reports symptoms for several weeks,2025-08-18 23:53:58.013099
+DIA000805,APT000196,PAT000787,PRV000662,I25.10,Atherosclerotic heart disease of native coronary artery without angina pectoris,Primary,,,Recurrent,,2024-11-03 23:53:58.013099
+DIA000806,APT000811,PAT000445,PRV000077,L70.0,Acne vulgaris,Secondary,Mild,2021-07-15,Active,,2024-06-19 23:53:58.013099
+DIA000807,APT000103,PAT000653,PRV000182,E66.9,"Obesity, unspecified",Secondary,Mild,,Chronic,Condition well-controlled with medication,2025-07-07 23:53:58.013099
+DIA000808,APT000149,PAT000636,PRV000348,L70.0,Acne vulgaris,Secondary,Mild,2021-03-29,Active,Patient referred to specialist,2025-08-01 23:53:58.013099
+DIA000809,APT000812,PAT000332,PRV000068,K58.9,Irritable bowel syndrome without diarrhea,Tertiary,Severe,2019-02-18,Active,Follow-up in 3 months recommended,2025-05-24 23:53:58.013099
+DIA000810,APT000776,PAT000651,PRV000292,F33.9,"Major depressive disorder, recurrent, unspecified",Primary,Moderate,2023-05-07,Active,Follow-up in 3 months recommended,2025-06-20 23:53:58.013099
+DIA000811,APT000715,PAT000704,PRV000171,L70.0,Acne vulgaris,Primary,Moderate,2025-02-02,Recurrent,Condition well-controlled with medication,2025-05-01 23:53:58.013099
+DIA000812,APT000857,PAT000860,PRV000777,E66.9,"Obesity, unspecified",Secondary,Severe,2022-08-14,Recurrent,Follow-up in 3 months recommended,2024-07-19 23:53:58.013099
+DIA000813,APT000100,PAT000829,PRV000677,M79.3,"Panniculitis, unspecified",Primary,Mild,2017-12-05,Active,Condition well-controlled with medication,2025-06-11 23:53:58.013099
+DIA000814,APT000369,PAT000127,PRV000676,M19.90,"Unspecified osteoarthritis, unspecified site",Secondary,Severe,2024-01-03,Active,Patient reports symptoms for several weeks,2025-06-22 23:53:58.013099
+DIA000815,APT000345,PAT000361,PRV000847,F41.9,"Anxiety disorder, unspecified",Tertiary,Moderate,2018-03-05,Active,Patient reports symptoms for several weeks,2024-09-06 23:53:58.013099
+DIA000816,APT000933,PAT000824,PRV000734,I10,Essential (primary) hypertension,Secondary,Moderate,2024-01-19,Resolved,Patient reports symptoms for several weeks,2024-02-26 23:53:58.013099
+DIA000817,APT000588,PAT000131,PRV000397,E78.5,"Hyperlipidemia, unspecified",Primary,Severe,2023-10-14,Resolved,,2025-01-19 23:53:58.013099
+DIA000818,APT000366,PAT000151,PRV000897,E78.5,"Hyperlipidemia, unspecified",Primary,Moderate,2020-04-24,Active,,2024-12-31 23:53:58.013099
+DIA000819,APT000589,PAT000907,PRV000100,L70.0,Acne vulgaris,Primary,Mild,2024-01-23,Chronic,Patient referred to specialist,2024-02-09 23:53:58.013099
+DIA000820,APT000629,PAT000774,PRV000988,N39.0,"Urinary tract infection, site not specified",Primary,Moderate,2017-07-18,Active,Follow-up in 3 months recommended,2024-10-14 23:53:58.013099
+DIA000821,APT000866,PAT000888,PRV000966,R51,Headache,Secondary,Moderate,2018-09-14,Recurrent,Patient reports symptoms for several weeks,2024-04-02 23:53:58.013099
+DIA000822,APT000936,PAT000211,PRV000943,I10,Essential (primary) hypertension,Secondary,Mild,2016-09-11,Resolved,Follow-up in 3 months recommended,2024-04-08 23:53:58.013099
+DIA000823,APT000759,PAT000270,PRV000539,J06.9,"Acute upper respiratory infection, unspecified",Secondary,,2019-10-09,Active,Patient reports symptoms for several weeks,2025-06-05 23:53:58.013099
+DIA000824,APT000378,PAT000336,PRV000988,E11.9,Type 2 diabetes mellitus without complications,Primary,Mild,,Chronic,Lifestyle modifications discussed,2024-08-29 23:53:58.013099
+DIA000825,APT000585,PAT000812,PRV000618,E78.5,"Hyperlipidemia, unspecified",Primary,Moderate,,Chronic,,2024-07-10 23:53:58.013099
+DIA000826,APT000794,PAT000789,PRV000693,I25.10,Atherosclerotic heart disease of native coronary artery without angina pectoris,Secondary,Moderate,,Active,Condition well-controlled with medication,2025-02-01 23:53:58.013099
+DIA000827,APT000178,PAT000057,PRV000082,J45.909,"Unspecified asthma, uncomplicated",Primary,Mild,2024-02-20,Active,,2025-10-13 23:53:58.013099
+DIA000828,APT000935,PAT000852,PRV000134,E66.9,"Obesity, unspecified",Primary,,2022-07-04,Recurrent,Patient reports symptoms for several weeks,2025-05-23 23:53:58.013099
+DIA000829,APT000275,PAT000835,PRV000320,I25.10,Atherosclerotic heart disease of native coronary artery without angina pectoris,Secondary,Severe,2020-02-21,Active,Patient referred to specialist,2024-05-17 23:53:58.013099
+DIA000830,APT000072,PAT000564,PRV000065,K58.9,Irritable bowel syndrome without diarrhea,Secondary,Moderate,,Active,Patient reports symptoms for several weeks,2025-06-29 23:53:58.013099
+DIA000831,APT000623,PAT000579,PRV000336,J06.9,"Acute upper respiratory infection, unspecified",Primary,Mild,2020-11-07,Active,Patient referred to specialist,2025-10-29 23:53:58.013099
+DIA000832,APT000712,PAT000433,PRV000835,M54.5,Low back pain,Secondary,Mild,,Chronic,Condition well-controlled with medication,2025-09-28 23:53:58.013099
+DIA000833,APT000450,PAT000030,PRV000732,I10,Essential (primary) hypertension,Primary,Mild,2018-10-19,Chronic,Patient referred to specialist,2024-12-13 23:53:58.013099
+DIA000834,APT000114,PAT000704,PRV000164,M79.3,"Panniculitis, unspecified",Tertiary,Mild,,Recurrent,Patient referred to specialist,2025-02-12 23:53:58.013099
+DIA000835,APT000444,PAT000817,PRV000069,M54.5,Low back pain,Primary,Moderate,2023-10-31,Resolved,Patient referred to specialist,2025-06-09 23:53:58.013099
+DIA000836,APT000401,PAT000956,PRV000160,E66.9,"Obesity, unspecified",Primary,,2021-05-20,Active,Lifestyle modifications discussed,2025-09-21 23:53:58.013099
+DIA000837,APT000347,PAT000492,PRV000083,E78.5,"Hyperlipidemia, unspecified",Secondary,Moderate,2024-08-11,Resolved,,2025-08-20 23:53:58.013099
+DIA000838,APT000331,PAT000804,PRV000814,F41.9,"Anxiety disorder, unspecified",Primary,Severe,2022-05-24,Chronic,Patient referred to specialist,2024-11-11 23:53:58.013099
+DIA000839,APT000932,PAT000077,PRV000669,M54.5,Low back pain,Secondary,Moderate,2024-05-17,Active,Condition well-controlled with medication,2025-05-02 23:53:58.013099
+DIA000840,APT000821,PAT000926,PRV000810,L70.0,Acne vulgaris,Secondary,Moderate,2024-06-28,Active,Condition well-controlled with medication,2025-01-26 23:53:58.013099
+DIA000841,APT000222,PAT000760,PRV000641,J06.9,"Acute upper respiratory infection, unspecified",Secondary,Severe,2025-08-02,Active,,2024-12-21 23:53:58.013099
+DIA000842,APT000389,PAT000880,PRV000640,K58.9,Irritable bowel syndrome without diarrhea,Tertiary,Moderate,,Resolved,Follow-up in 3 months recommended,2024-02-04 23:53:58.013099
+DIA000843,APT000830,PAT000223,PRV000246,M79.3,"Panniculitis, unspecified",Primary,Severe,,Chronic,Follow-up in 3 months recommended,2024-04-25 23:53:58.013099
+DIA000844,APT000048,PAT000500,PRV000810,R10.9,Unspecified abdominal pain,Secondary,Mild,2016-01-29,Resolved,Patient reports symptoms for several weeks,2024-12-24 23:53:58.013099
+DIA000845,APT000121,PAT000879,PRV000825,E11.9,Type 2 diabetes mellitus without complications,Primary,Mild,,Recurrent,Patient referred to specialist,2024-10-17 23:53:58.013099
+DIA000846,APT000559,PAT000976,PRV000218,E66.9,"Obesity, unspecified",Primary,Severe,2025-11-09,Active,Condition well-controlled with medication,2025-01-20 23:53:58.013099
+DIA000847,APT000089,PAT000786,PRV000560,E11.9,Type 2 diabetes mellitus without complications,Secondary,Moderate,2020-02-26,Recurrent,,2024-10-19 23:53:58.013099
+DIA000848,APT000112,PAT000393,PRV000466,R51,Headache,Primary,Severe,2016-10-16,Chronic,,2025-12-11 23:53:58.013099
+DIA000849,APT000662,PAT000393,PRV000212,M54.5,Low back pain,Primary,,2018-09-02,Active,Patient reports symptoms for several weeks,2025-01-18 23:53:58.013099
+DIA000850,APT000482,PAT000828,PRV000018,R10.9,Unspecified abdominal pain,Primary,Mild,,Recurrent,Follow-up in 3 months recommended,2024-09-13 23:53:58.013099
+DIA000851,APT000786,PAT000479,PRV000047,L70.0,Acne vulgaris,Secondary,Moderate,2018-12-24,Active,Condition well-controlled with medication,2025-09-28 23:53:58.013099
+DIA000852,APT000001,PAT000013,PRV000700,F41.9,"Anxiety disorder, unspecified",Tertiary,Mild,,Chronic,Patient referred to specialist,2024-09-12 23:53:58.013099
+DIA000853,APT000210,PAT000674,PRV000396,G47.00,"Insomnia, unspecified",Primary,Moderate,,Chronic,,2025-10-12 23:53:58.013099
+DIA000854,APT000133,PAT000896,PRV000040,L70.0,Acne vulgaris,Primary,Severe,2023-10-24,Chronic,Follow-up in 3 months recommended,2025-01-10 23:53:58.013099
+DIA000855,APT000562,PAT000575,PRV000816,J45.909,"Unspecified asthma, uncomplicated",Secondary,Mild,2017-07-18,Resolved,Patient referred to specialist,2024-04-18 23:53:58.013099
+DIA000856,APT000046,PAT000897,PRV000241,R51,Headache,Primary,Moderate,2016-11-30,Active,Condition well-controlled with medication,2024-03-25 23:53:58.013099
+DIA000857,APT000687,PAT000064,PRV000666,F33.9,"Major depressive disorder, recurrent, unspecified",Primary,Moderate,2024-08-11,Resolved,,2025-10-19 23:53:58.013099
+DIA000858,APT000255,PAT000394,PRV000164,I10,Essential (primary) hypertension,Primary,Mild,2024-12-22,Active,Lifestyle modifications discussed,2024-03-19 23:53:58.013099
+DIA000859,APT000155,PAT000781,PRV000837,M54.5,Low back pain,Primary,Severe,,Chronic,Follow-up in 3 months recommended,2024-07-12 23:53:58.013099
+DIA000860,APT000711,PAT000011,PRV000954,E66.9,"Obesity, unspecified",Primary,Moderate,,Chronic,Condition well-controlled with medication,2025-06-01 23:53:58.013099
+DIA000861,APT000364,PAT000439,PRV000819,R51,Headache,Secondary,,2022-12-25,Recurrent,Patient referred to specialist,2025-05-25 23:53:58.013099
+DIA000862,APT000206,PAT000055,PRV000518,R10.9,Unspecified abdominal pain,Primary,Mild,2016-05-10,Active,,2025-05-29 23:53:58.013099
+DIA000863,APT000551,PAT000952,PRV000604,G47.00,"Insomnia, unspecified",Tertiary,Mild,,Chronic,Follow-up in 3 months recommended,2025-05-23 23:53:58.013099
+DIA000864,APT000205,PAT000352,PRV000455,M79.3,"Panniculitis, unspecified",Secondary,Moderate,2025-06-20,Recurrent,Patient referred to specialist,2025-01-06 23:53:58.013099
+DIA000865,APT000407,PAT000735,PRV000617,F33.9,"Major depressive disorder, recurrent, unspecified",Secondary,Mild,,Chronic,Follow-up in 3 months recommended,2024-12-07 23:53:58.013099
+DIA000866,APT000073,PAT000898,PRV000802,E78.5,"Hyperlipidemia, unspecified",Primary,,2025-02-22,Active,,2025-07-29 23:53:58.013099
+DIA000867,APT000898,PAT000062,PRV000988,M19.90,"Unspecified osteoarthritis, unspecified site",Primary,Mild,,Active,Patient referred to specialist,2024-04-08 23:53:58.013099
+DIA000868,APT000294,PAT000729,PRV000711,M79.3,"Panniculitis, unspecified",Primary,Severe,2020-11-12,Active,Condition well-controlled with medication,2024-03-17 23:53:58.013099
+DIA000869,APT000274,PAT000430,PRV000368,F41.9,"Anxiety disorder, unspecified",Tertiary,Moderate,,Resolved,Follow-up in 3 months recommended,2024-12-31 23:53:58.013099
+DIA000870,APT000999,PAT000297,PRV000970,I25.10,Atherosclerotic heart disease of native coronary artery without angina pectoris,Primary,Mild,2020-04-25,Resolved,Lifestyle modifications discussed,2025-02-05 23:53:58.013099
+DIA000871,APT000847,PAT000029,PRV000473,M19.90,"Unspecified osteoarthritis, unspecified site",Primary,Mild,2019-01-01,Recurrent,Lifestyle modifications discussed,2025-12-29 23:53:58.013099
+DIA000872,APT000713,PAT000364,PRV000233,K58.9,Irritable bowel syndrome without diarrhea,Primary,Moderate,,Active,,2025-09-12 23:53:58.013099
+DIA000873,APT000726,PAT000098,PRV000480,M79.3,"Panniculitis, unspecified",Primary,Moderate,2025-05-02,Active,Patient referred to specialist,2025-06-19 23:53:58.013099
+DIA000874,APT000638,PAT000091,PRV000761,M54.5,Low back pain,Primary,Mild,2016-06-26,Resolved,Patient reports symptoms for several weeks,2025-02-06 23:53:58.013099
+DIA000875,APT000125,PAT000554,PRV000993,M25.561,Pain in right knee,Primary,,2022-06-03,Chronic,,2024-06-30 23:53:58.013099
+DIA000876,APT000482,PAT000235,PRV000473,M25.561,Pain in right knee,Primary,Mild,,Recurrent,Patient referred to specialist,2025-03-09 23:53:58.013099
+DIA000877,APT000594,PAT000183,PRV000377,J06.9,"Acute upper respiratory infection, unspecified",Primary,Moderate,2024-11-02,Chronic,Lifestyle modifications discussed,2025-09-22 23:53:58.013099
+DIA000878,APT000160,PAT000565,PRV000447,N39.0,"Urinary tract infection, site not specified",Primary,Moderate,,Active,Lifestyle modifications discussed,2025-11-20 23:53:58.013099
+DIA000879,APT000843,PAT000748,PRV000973,M25.561,Pain in right knee,Secondary,Mild,,Resolved,Follow-up in 3 months recommended,2024-01-23 23:53:58.013099
+DIA000880,APT000073,PAT000283,PRV000760,K21.9,Gastro-esophageal reflux disease without esophagitis,Primary,,2025-05-16,Chronic,Condition well-controlled with medication,2025-05-12 23:53:58.013099
+DIA000881,APT000671,PAT000023,PRV000762,L70.0,Acne vulgaris,Primary,Mild,2024-10-07,Active,,2025-04-24 23:53:58.013099
+DIA000882,APT000429,PAT000848,PRV000707,R51,Headache,Primary,Mild,2020-05-23,Active,,2025-10-22 23:53:58.013099
+DIA000883,APT000347,PAT000715,PRV000955,K21.9,Gastro-esophageal reflux disease without esophagitis,Primary,Mild,2017-06-18,Active,Follow-up in 3 months recommended,2025-10-28 23:53:58.013099
+DIA000884,APT000076,PAT000764,PRV000646,E11.9,Type 2 diabetes mellitus without complications,Tertiary,Moderate,2025-05-15,Active,Follow-up in 3 months recommended,2025-05-22 23:53:58.013099
+DIA000885,APT000320,PAT000100,PRV000939,R10.9,Unspecified abdominal pain,Primary,Moderate,2024-01-02,Chronic,Patient reports symptoms for several weeks,2024-10-21 23:53:58.013099
+DIA000886,APT000855,PAT000676,PRV000304,E78.5,"Hyperlipidemia, unspecified",Secondary,Moderate,2017-01-17,Active,Patient reports symptoms for several weeks,2025-07-02 23:53:58.013099
+DIA000887,APT000880,PAT000301,PRV000659,E66.9,"Obesity, unspecified",Secondary,Mild,,Active,Patient referred to specialist,2024-03-09 23:53:58.013099
+DIA000888,APT000559,PAT000743,PRV000106,R10.9,Unspecified abdominal pain,Secondary,Mild,2019-06-09,Active,Patient referred to specialist,2025-08-26 23:53:58.013099
+DIA000889,APT000124,PAT000288,PRV000023,G47.00,"Insomnia, unspecified",Primary,Severe,2019-10-15,Resolved,,2025-12-22 23:53:58.013099
+DIA000890,APT000896,PAT000042,PRV000564,K58.9,Irritable bowel syndrome without diarrhea,Primary,Mild,,Active,,2024-03-09 23:53:58.013099
+DIA000891,APT000065,PAT000466,PRV000605,K58.9,Irritable bowel syndrome without diarrhea,Secondary,Severe,2024-12-24,Resolved,Lifestyle modifications discussed,2024-04-05 23:53:58.013099
+DIA000892,APT000102,PAT000636,PRV000878,K21.9,Gastro-esophageal reflux disease without esophagitis,Primary,Mild,2023-05-06,Active,Follow-up in 3 months recommended,2024-03-16 23:53:58.013099
+DIA000893,APT000886,PAT000021,PRV000316,K21.9,Gastro-esophageal reflux disease without esophagitis,Secondary,Severe,2024-11-01,Active,Condition well-controlled with medication,2025-09-06 23:53:58.013099
+DIA000894,APT000972,PAT000280,PRV000379,M79.3,"Panniculitis, unspecified",Secondary,Mild,2025-09-08,Active,,2025-09-02 23:53:58.013099
+DIA000895,APT000881,PAT000207,PRV000142,I10,Essential (primary) hypertension,Secondary,Moderate,2024-10-19,Active,Patient referred to specialist,2025-12-14 23:53:58.013099
+DIA000896,APT000302,PAT000935,PRV000033,F41.9,"Anxiety disorder, unspecified",Primary,Mild,2023-03-05,Active,Patient reports symptoms for several weeks,2025-10-22 23:53:58.013099
+DIA000897,APT000920,PAT000529,PRV000491,I10,Essential (primary) hypertension,Secondary,Mild,2020-01-04,Active,Follow-up in 3 months recommended,2024-10-06 23:53:58.013099
+DIA000898,APT000419,PAT000579,PRV000130,K58.9,Irritable bowel syndrome without diarrhea,Secondary,Mild,2024-09-07,Chronic,,2025-05-27 23:53:58.013099
+DIA000899,APT000567,PAT000910,PRV000992,M54.5,Low back pain,Secondary,Mild,2022-06-23,Resolved,,2024-07-11 23:53:58.013099
+DIA000900,APT000511,PAT000773,PRV000792,E78.5,"Hyperlipidemia, unspecified",Primary,Mild,2025-04-27,Active,Patient reports symptoms for several weeks,2025-07-20 23:53:58.013099
+DIA000901,APT000974,PAT000837,PRV000346,I10,Essential (primary) hypertension,Primary,Moderate,,Active,,2025-09-08 23:53:58.013099
+DIA000902,APT000183,PAT000197,PRV000624,N39.0,"Urinary tract infection, site not specified",Primary,Moderate,2023-06-29,Recurrent,Condition well-controlled with medication,2024-04-10 23:53:58.013099
+DIA000903,APT000389,PAT000329,PRV000280,I25.10,Atherosclerotic heart disease of native coronary artery without angina pectoris,Primary,Severe,2022-09-22,Resolved,Patient reports symptoms for several weeks,2024-11-01 23:53:58.013099
+DIA000904,APT000119,PAT000231,PRV000763,J06.9,"Acute upper respiratory infection, unspecified",Primary,Moderate,2023-05-11,Active,,2025-12-06 23:53:58.013099
+DIA000905,APT000122,PAT000104,PRV000007,M54.5,Low back pain,Tertiary,Moderate,2019-05-11,Chronic,,2024-12-05 23:53:58.013099
+DIA000906,APT000506,PAT000466,PRV000198,R10.9,Unspecified abdominal pain,Primary,Moderate,,Chronic,Follow-up in 3 months recommended,2024-07-13 23:53:58.013099
+DIA000907,APT000241,PAT000195,PRV000508,K58.9,Irritable bowel syndrome without diarrhea,Secondary,Moderate,,Chronic,Follow-up in 3 months recommended,2024-12-08 23:53:58.013099
+DIA000908,APT000490,PAT000757,PRV000395,E11.9,Type 2 diabetes mellitus without complications,Primary,Moderate,2023-06-27,Active,,2024-04-11 23:53:58.013099
+DIA000909,APT000015,PAT000150,PRV000269,K21.9,Gastro-esophageal reflux disease without esophagitis,Primary,Severe,2017-09-08,Active,,2024-06-25 23:53:58.013099
+DIA000910,APT000178,PAT000885,PRV000599,J06.9,"Acute upper respiratory infection, unspecified",Primary,Mild,,Active,,2024-02-03 23:53:58.014098
+DIA000911,APT000126,PAT000298,PRV000307,J06.9,"Acute upper respiratory infection, unspecified",Primary,Mild,2020-09-26,Recurrent,Follow-up in 3 months recommended,2024-03-28 23:53:58.014098
+DIA000912,APT000384,PAT000444,PRV000711,I10,Essential (primary) hypertension,Tertiary,Moderate,2019-02-12,Resolved,,2024-11-18 23:53:58.014098
+DIA000913,APT000214,PAT000112,PRV000082,M54.5,Low back pain,Primary,Mild,2022-01-27,Active,,2024-11-10 23:53:58.014098
+DIA000914,APT000559,PAT000360,PRV000198,L70.0,Acne vulgaris,Secondary,Severe,,Recurrent,Patient reports symptoms for several weeks,2025-05-25 23:53:58.014098
+DIA000915,APT000853,PAT000924,PRV000243,N39.0,"Urinary tract infection, site not specified",Primary,Severe,2023-11-17,Recurrent,,2026-01-15 23:53:58.014098
+DIA000916,APT000783,PAT000686,PRV000964,E66.9,"Obesity, unspecified",Tertiary,Mild,2018-08-20,Recurrent,Follow-up in 3 months recommended,2024-09-10 23:53:58.014098
+DIA000917,APT000907,PAT000367,PRV000024,N39.0,"Urinary tract infection, site not specified",Primary,Mild,2020-09-12,Chronic,Patient referred to specialist,2025-12-30 23:53:58.014098
+DIA000918,APT000264,PAT000161,PRV000958,R10.9,Unspecified abdominal pain,Primary,Moderate,2017-01-05,Recurrent,Lifestyle modifications discussed,2024-04-16 23:53:58.014098
+DIA000919,APT000359,PAT000159,PRV000608,N39.0,"Urinary tract infection, site not specified",Primary,Moderate,2016-11-30,Active,Patient reports symptoms for several weeks,2024-04-18 23:53:58.014098
+DIA000920,APT000043,PAT000298,PRV000525,J45.909,"Unspecified asthma, uncomplicated",Primary,Mild,2025-04-04,Chronic,Follow-up in 3 months recommended,2024-11-18 23:53:58.014098
+DIA000921,APT000886,PAT000667,PRV000886,M19.90,"Unspecified osteoarthritis, unspecified site",Primary,Moderate,2019-11-13,Chronic,,2025-03-31 23:53:58.014098
+DIA000922,APT000210,PAT000727,PRV000907,F33.9,"Major depressive disorder, recurrent, unspecified",Secondary,Moderate,,Active,Condition well-controlled with medication,2024-07-08 23:53:58.014098
+DIA000923,APT000372,PAT000083,PRV000999,J06.9,"Acute upper respiratory infection, unspecified",Secondary,Mild,2023-11-23,Active,Patient referred to specialist,2024-07-12 23:53:58.014098
+DIA000924,APT000334,PAT000069,PRV000261,M25.561,Pain in right knee,Secondary,Mild,2021-10-24,Recurrent,,2024-11-24 23:53:58.014098
+DIA000925,APT000643,PAT000255,PRV000750,R10.9,Unspecified abdominal pain,Primary,Severe,2023-01-05,Active,Patient referred to specialist,2025-05-27 23:53:58.014098
+DIA000926,APT000599,PAT000954,PRV000328,N39.0,"Urinary tract infection, site not specified",Primary,Mild,2018-12-20,Chronic,Patient referred to specialist,2024-05-16 23:53:58.014098
+DIA000927,APT000614,PAT000267,PRV000370,I10,Essential (primary) hypertension,Primary,Severe,2018-07-14,Active,Patient referred to specialist,2024-04-30 23:53:58.014098
+DIA000928,APT000407,PAT000081,PRV000160,J06.9,"Acute upper respiratory infection, unspecified",Tertiary,Moderate,2022-05-02,Active,Follow-up in 3 months recommended,2024-08-12 23:53:58.014098
+DIA000929,APT000950,PAT000301,PRV000732,R51,Headache,Secondary,Moderate,2025-03-22,Active,Lifestyle modifications discussed,2024-10-09 23:53:58.014098
+DIA000930,APT000473,PAT000900,PRV000940,R51,Headache,Secondary,Severe,,Active,,2025-03-01 23:53:58.014098
+DIA000931,APT000230,PAT000566,PRV000139,M19.90,"Unspecified osteoarthritis, unspecified site",Secondary,Severe,2020-12-28,Resolved,Follow-up in 3 months recommended,2024-11-02 23:53:58.014098
+DIA000932,APT000091,PAT000844,PRV000843,E78.5,"Hyperlipidemia, unspecified",Primary,Mild,2020-10-05,Resolved,,2024-06-20 23:53:58.014098
+DIA000933,APT000204,PAT000956,PRV000384,E11.9,Type 2 diabetes mellitus without complications,Primary,Mild,2021-01-29,Active,Follow-up in 3 months recommended,2025-10-07 23:53:58.014098
+DIA000934,APT000681,PAT000107,PRV000332,M19.90,"Unspecified osteoarthritis, unspecified site",Primary,Severe,2021-12-29,Active,Patient referred to specialist,2024-06-05 23:53:58.014098
+DIA000935,APT000110,PAT000142,PRV000298,N39.0,"Urinary tract infection, site not specified",Primary,Moderate,2021-03-07,Active,Lifestyle modifications discussed,2025-07-26 23:53:58.014098
+DIA000936,APT000156,PAT000425,PRV000982,J06.9,"Acute upper respiratory infection, unspecified",Primary,Mild,2020-11-11,Active,Lifestyle modifications discussed,2024-04-16 23:53:58.014098
+DIA000937,APT000121,PAT000750,PRV000887,M54.5,Low back pain,Primary,,,Chronic,Follow-up in 3 months recommended,2024-06-12 23:53:58.014098
+DIA000938,APT000208,PAT000563,PRV000637,N39.0,"Urinary tract infection, site not specified",Secondary,Mild,2018-01-31,Active,Patient reports symptoms for several weeks,2025-02-10 23:53:58.014098
+DIA000939,APT000823,PAT000580,PRV000724,J06.9,"Acute upper respiratory infection, unspecified",Secondary,Mild,2025-08-30,Active,Condition well-controlled with medication,2024-06-07 23:53:58.014098
+DIA000940,APT000883,PAT000137,PRV000262,R10.9,Unspecified abdominal pain,Secondary,Mild,2017-04-25,Active,Condition well-controlled with medication,2025-10-25 23:53:58.014098
+DIA000941,APT000828,PAT000895,PRV000829,J45.909,"Unspecified asthma, uncomplicated",Tertiary,Moderate,2023-03-29,Active,Condition well-controlled with medication,2025-10-19 23:53:58.014098
+DIA000942,APT000798,PAT000842,PRV000129,F41.9,"Anxiety disorder, unspecified",Primary,Moderate,,Active,Lifestyle modifications discussed,2025-12-28 23:53:58.014098
+DIA000943,APT000077,PAT000394,PRV000174,K58.9,Irritable bowel syndrome without diarrhea,Primary,Mild,2018-02-23,Active,Patient reports symptoms for several weeks,2025-09-06 23:53:58.014098
+DIA000944,APT000994,PAT000379,PRV000522,K21.9,Gastro-esophageal reflux disease without esophagitis,Secondary,Mild,2023-06-02,Chronic,,2024-04-22 23:53:58.014098
+DIA000945,APT000740,PAT000553,PRV000350,J45.909,"Unspecified asthma, uncomplicated",Primary,Mild,2020-02-10,Recurrent,Condition well-controlled with medication,2024-07-26 23:53:58.014098
+DIA000946,APT000920,PAT000713,PRV000888,M79.3,"Panniculitis, unspecified",Primary,Moderate,,Chronic,Patient referred to specialist,2025-03-09 23:53:58.014098
+DIA000947,APT000880,PAT000225,PRV000945,G47.00,"Insomnia, unspecified",Primary,Mild,2022-06-07,Active,Follow-up in 3 months recommended,2024-05-30 23:53:58.014098
+DIA000948,APT000190,PAT000336,PRV000073,M19.90,"Unspecified osteoarthritis, unspecified site",Primary,,2020-10-21,Active,Condition well-controlled with medication,2024-03-21 23:53:58.014098
+DIA000949,APT000318,PAT000969,PRV000266,R51,Headache,Primary,Mild,2025-12-08,Resolved,,2025-06-17 23:53:58.014098
+DIA000950,APT000203,PAT000652,PRV000094,M19.90,"Unspecified osteoarthritis, unspecified site",Primary,,2016-05-13,Chronic,Patient reports symptoms for several weeks,2024-07-26 23:53:58.014098
+DIA000951,APT000262,PAT000179,PRV000915,R51,Headache,Primary,Mild,2019-09-30,Recurrent,Patient referred to specialist,2025-07-05 23:53:58.014098
+DIA000952,APT000726,PAT000484,PRV000241,J06.9,"Acute upper respiratory infection, unspecified",Secondary,Severe,2024-09-26,Active,,2025-02-22 23:53:58.014098
+DIA000953,APT000683,PAT000246,PRV000771,E78.5,"Hyperlipidemia, unspecified",Primary,Mild,2021-03-26,Active,Lifestyle modifications discussed,2026-01-01 23:53:58.014098
+DIA000954,APT000391,PAT000550,PRV000402,F41.9,"Anxiety disorder, unspecified",Primary,Mild,2025-05-06,Resolved,Condition well-controlled with medication,2024-06-12 23:53:58.014098
+DIA000955,APT000389,PAT000210,PRV000755,K58.9,Irritable bowel syndrome without diarrhea,Primary,Severe,2022-06-25,Chronic,Patient referred to specialist,2025-05-10 23:53:58.014098
+DIA000956,APT000714,PAT000870,PRV000208,M25.561,Pain in right knee,Primary,Severe,2018-01-12,Chronic,Lifestyle modifications discussed,2025-08-19 23:53:58.014098
+DIA000957,APT000398,PAT000987,PRV000152,E78.5,"Hyperlipidemia, unspecified",Secondary,Moderate,2022-07-07,Resolved,,2024-10-19 23:53:58.014098
+DIA000958,APT000132,PAT000744,PRV000360,R10.9,Unspecified abdominal pain,Secondary,Moderate,,Recurrent,,2025-01-03 23:53:58.014098
+DIA000959,APT000849,PAT000666,PRV000903,M19.90,"Unspecified osteoarthritis, unspecified site",Secondary,Moderate,2020-02-27,Resolved,Patient referred to specialist,2025-07-05 23:53:58.014098
+DIA000960,APT000620,PAT000974,PRV000323,M54.5,Low back pain,Primary,Severe,,Recurrent,,2025-09-06 23:53:58.014098
+DIA000961,APT000114,PAT000632,PRV000541,K58.9,Irritable bowel syndrome without diarrhea,Primary,Mild,2022-08-12,Recurrent,Patient reports symptoms for several weeks,2024-04-23 23:53:58.014098
+DIA000962,APT000984,PAT000420,PRV000793,G47.00,"Insomnia, unspecified",Primary,Moderate,2019-06-02,Chronic,Patient reports symptoms for several weeks,2024-12-14 23:53:58.014098
+DIA000963,APT000207,PAT000807,PRV000442,R51,Headache,Primary,Moderate,2021-06-08,Active,,2024-05-04 23:53:58.014098
+DIA000964,APT000945,PAT000513,PRV000878,E78.5,"Hyperlipidemia, unspecified",Primary,Mild,2024-02-27,Active,Condition well-controlled with medication,2025-03-25 23:53:58.014098
+DIA000965,APT000712,PAT000560,PRV000112,G47.00,"Insomnia, unspecified",Primary,Severe,2024-02-01,Resolved,Patient reports symptoms for several weeks,2024-08-21 23:53:58.014098
+DIA000966,APT000825,PAT000332,PRV000241,R10.9,Unspecified abdominal pain,Primary,Mild,2023-08-12,Active,Condition well-controlled with medication,2024-12-06 23:53:58.014098
+DIA000967,APT000387,PAT000418,PRV000217,E66.9,"Obesity, unspecified",Secondary,Mild,2022-03-09,Chronic,Patient referred to specialist,2025-07-04 23:53:58.014098
+DIA000968,APT000997,PAT000028,PRV000753,M25.561,Pain in right knee,Primary,Moderate,,Active,Lifestyle modifications discussed,2024-02-12 23:53:58.014098
+DIA000969,APT000183,PAT000734,PRV000195,E11.9,Type 2 diabetes mellitus without complications,Secondary,Moderate,2020-03-08,Active,Lifestyle modifications discussed,2024-03-10 23:53:58.014098
+DIA000970,APT000081,PAT000949,PRV000950,J06.9,"Acute upper respiratory infection, unspecified",Primary,Mild,,Chronic,Condition well-controlled with medication,2025-09-09 23:53:58.014098
+DIA000971,APT000343,PAT000420,PRV000669,R10.9,Unspecified abdominal pain,Primary,Mild,2020-01-19,Active,Follow-up in 3 months recommended,2025-11-20 23:53:58.014098
+DIA000972,APT000233,PAT000993,PRV000219,M54.5,Low back pain,Tertiary,,2023-06-05,Active,,2024-02-02 23:53:58.014098
+DIA000973,APT000607,PAT000929,PRV000012,M54.5,Low back pain,Tertiary,Mild,,Active,,2025-10-24 23:53:58.014098
+DIA000974,APT000283,PAT000626,PRV000357,E11.9,Type 2 diabetes mellitus without complications,Primary,Moderate,2016-03-31,Resolved,Patient referred to specialist,2025-05-12 23:53:58.014098
+DIA000975,APT000978,PAT000275,PRV000438,M19.90,"Unspecified osteoarthritis, unspecified site",Primary,Moderate,2022-08-18,Active,,2026-01-02 23:53:58.014098
+DIA000976,APT000881,PAT000333,PRV000102,R51,Headache,Primary,Moderate,2022-06-19,Chronic,Lifestyle modifications discussed,2024-12-06 23:53:58.014098
+DIA000977,APT000265,PAT000774,PRV000827,G47.00,"Insomnia, unspecified",Primary,,2024-01-08,Active,Patient reports symptoms for several weeks,2025-02-19 23:53:58.014098
+DIA000978,APT000015,PAT000416,PRV000918,L70.0,Acne vulgaris,Secondary,Moderate,2016-07-28,Recurrent,Patient reports symptoms for several weeks,2025-06-28 23:53:58.014098
+DIA000979,APT000782,PAT000523,PRV000644,I25.10,Atherosclerotic heart disease of native coronary artery without angina pectoris,Tertiary,Moderate,2024-04-03,Active,Condition well-controlled with medication,2025-06-23 23:53:58.014098
+DIA000980,APT000394,PAT000645,PRV000923,R51,Headache,Secondary,Moderate,2020-10-04,Active,Lifestyle modifications discussed,2025-07-24 23:53:58.014098
+DIA000981,APT000003,PAT000869,PRV000233,J45.909,"Unspecified asthma, uncomplicated",Primary,Moderate,2020-12-13,Active,Condition well-controlled with medication,2025-05-18 23:53:58.014098
+DIA000982,APT000079,PAT000281,PRV000111,E66.9,"Obesity, unspecified",Secondary,Moderate,,Active,Follow-up in 3 months recommended,2024-05-11 23:53:58.014098
+DIA000983,APT000860,PAT000450,PRV000080,K21.9,Gastro-esophageal reflux disease without esophagitis,Primary,Severe,2019-02-12,Resolved,Patient reports symptoms for several weeks,2024-02-08 23:53:58.014098
+DIA000984,APT000970,PAT000053,PRV000127,L70.0,Acne vulgaris,Tertiary,Mild,2016-10-07,Active,,2024-12-10 23:53:58.014098
+DIA000985,APT000299,PAT000984,PRV000688,L70.0,Acne vulgaris,Secondary,Mild,2024-09-22,Active,Patient referred to specialist,2024-05-02 23:53:58.014098
+DIA000986,APT000430,PAT000622,PRV000672,F41.9,"Anxiety disorder, unspecified",Primary,Mild,2021-08-23,Resolved,,2025-11-04 23:53:58.014098
+DIA000987,APT000746,PAT000873,PRV000717,K58.9,Irritable bowel syndrome without diarrhea,Primary,Mild,,Active,,2025-10-07 23:53:58.014098
+DIA000988,APT000116,PAT000221,PRV000250,J45.909,"Unspecified asthma, uncomplicated",Primary,Mild,,Active,Patient reports symptoms for several weeks,2024-03-09 23:53:58.014098
+DIA000989,APT000713,PAT000900,PRV000505,E11.9,Type 2 diabetes mellitus without complications,Primary,Severe,,Chronic,Follow-up in 3 months recommended,2024-06-23 23:53:58.014098
+DIA000990,APT000135,PAT000083,PRV000144,M54.5,Low back pain,Secondary,Moderate,2017-04-01,Recurrent,Patient reports symptoms for several weeks,2024-12-25 23:53:58.014098
+DIA000991,APT000010,PAT000635,PRV000965,M19.90,"Unspecified osteoarthritis, unspecified site",Primary,Moderate,2020-07-08,Active,,2024-12-22 23:53:58.014098
+DIA000992,APT000352,PAT000384,PRV000212,F41.9,"Anxiety disorder, unspecified",Primary,Moderate,2025-04-14,Active,Follow-up in 3 months recommended,2025-03-05 23:53:58.014098
+DIA000993,APT000736,PAT000504,PRV000714,N39.0,"Urinary tract infection, site not specified",Primary,Severe,2019-12-23,Recurrent,Patient reports symptoms for several weeks,2024-02-17 23:53:58.014098
+DIA000994,APT000567,PAT000582,PRV000890,M79.3,"Panniculitis, unspecified",Secondary,Moderate,2019-04-02,Active,Patient reports symptoms for several weeks,2025-09-24 23:53:58.014098
+DIA000995,APT000282,PAT000682,PRV000851,F41.9,"Anxiety disorder, unspecified",Primary,Severe,2018-07-29,Recurrent,Patient referred to specialist,2025-11-01 23:53:58.014098
+DIA000996,APT000611,PAT000604,PRV000431,M79.3,"Panniculitis, unspecified",Secondary,Mild,2018-11-08,Active,,2025-02-02 23:53:58.014098
+DIA000997,APT000572,PAT000440,PRV000481,M79.3,"Panniculitis, unspecified",Secondary,,2024-03-08,Chronic,Lifestyle modifications discussed,2025-10-12 23:53:58.014098
+DIA000998,APT000289,PAT000339,PRV000735,K58.9,Irritable bowel syndrome without diarrhea,Tertiary,Moderate,2023-05-02,Active,,2024-12-17 23:53:58.014098
+DIA000999,APT000264,PAT000579,PRV000705,M19.90,"Unspecified osteoarthritis, unspecified site",Primary,Mild,,Recurrent,Patient referred to specialist,2025-03-21 23:53:58.014098
+DIA001000,APT000957,PAT000107,PRV000636,R51,Headache,Primary,Moderate,,Active,Patient reports symptoms for several weeks,2024-01-28 23:53:58.014098

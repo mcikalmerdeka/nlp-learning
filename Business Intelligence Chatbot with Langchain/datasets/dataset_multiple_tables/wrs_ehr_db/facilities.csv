@@ -1,0 +1,1001 @@
+facility_id,facility_name,facility_type,address,city,state,zip_code,phone,total_beds,is_active,created_date
+FAC000001,Community Health Clinic - 26,Specialty Center,6625 Main St,Austin,IL,85324,555-156-4197,179.0,True,2024-06-16 23:53:57.926639
+FAC000002,Urgent Care Facility - 251,Urgent Care,5003 Oak Ave,Philadelphia,FL,26697,555-697-9625,97.0,False,2025-04-21 23:53:57.926639
+FAC000003,Family Practice Center - 143,Urgent Care,9339 Oak Ave,Philadelphia,IL,76577,555-327-5553,13.0,True,2024-12-05 23:53:57.926639
+FAC000004,Community Health Clinic - 693,Specialty Center,9384 Healthcare Blvd,San Antonio,NY,23491,555-300-1369,94.0,True,2022-06-25 23:53:57.926639
+FAC000005,Community Health Clinic - 605,Hospital,8956 Medical Pkwy,Chicago,AZ,63174,555-185-9821,117.0,True,2021-02-17 23:53:57.926639
+FAC000006,Primary Care Associates - 33,Outpatient Center,6388 Oak Ave,New York,TX,24022,555-969-8298,,True,2025-07-18 23:53:57.926639
+FAC000007,Central Medical Center - 96,Clinic,1384 Wellness Dr,Philadelphia,AZ,52712,555-793-2431,184.0,True,2023-02-23 23:53:57.926639
+FAC000008,Family Practice Center - 239,Outpatient Center,5766 Main St,Houston,CA,82895,555-624-7462,207.0,True,2021-03-27 23:53:57.926639
+FAC000009,Central Medical Center - 575,Urgent Care,1700 Healthcare Blvd,Houston,PA,95124,555-299-9035,20.0,True,2021-12-26 23:53:57.926639
+FAC000010,Family Practice Center - 734,Specialty Center,3903 Main St,San Antonio,NY,19296,555-425-9381,78.0,True,2021-11-03 23:53:57.926639
+FAC000011,Primary Care Associates - 226,Urgent Care,5680 Wellness Dr,Phoenix,PA,49599,555-157-6915,109.0,True,2024-11-03 23:53:57.926639
+FAC000012,Advanced Healthcare Center - 604,Ambulatory Center,9858 Healthcare Blvd,Philadelphia,IL,79828,555-507-3423,288.0,False,2026-01-09 23:53:57.926639
+FAC000013,Urgent Care Facility - 829,Urgent Care,5447 Main St,Chicago,FL,70420,555-833-8006,76.0,True,2023-08-10 23:53:57.926639
+FAC000014,Central Medical Center - 778,Clinic,4578 Healthcare Blvd,Philadelphia,TX,62535,555-478-7326,10.0,True,2025-08-31 23:53:57.926639
+FAC000015,Regional Hospital - 715,Hospital,8138 Oak Ave,San Diego,CA,87402,555-481-1199,32.0,True,2023-04-17 23:53:57.926639
+FAC000016,Primary Care Associates - 349,Hospital,5929 Wellness Dr,San Diego,TX,64190,555-391-6651,87.0,True,2022-11-30 23:53:57.926639
+FAC000017,Urgent Care Facility - 160,Ambulatory Center,6250 Healthcare Blvd,San Diego,FL,41270,555-459-6047,295.0,True,2022-08-13 23:53:57.926639
+FAC000018,Family Practice Center - 981,Clinic,3143 Wellness Dr,Philadelphia,PA,91379,555-556-2435,53.0,True,2024-11-14 23:53:57.926639
+FAC000019,Specialty Medical Center - 105,Specialty Center,6327 Main St,Phoenix,PA,41941,555-320-8278,156.0,True,2022-01-22 23:53:57.926639
+FAC000020,Community Health Clinic - 390,Outpatient Center,4939 Oak Ave,San Diego,AZ,81820,555-859-7809,93.0,True,2025-01-16 23:53:57.926639
+FAC000021,Community Health Clinic - 368,Specialty Center,1304 Main St,Dallas,FL,30843,555-922-8249,75.0,True,2025-10-28 23:53:57.926639
+FAC000022,Specialty Medical Center - 619,Outpatient Center,4490 Oak Ave,Los Angeles,NY,73225,555-395-3683,62.0,True,2023-09-12 23:53:57.926639
+FAC000023,Urgent Care Facility - 827,Hospital,6325 Oak Ave,Chicago,AZ,60307,555-925-7944,128.0,True,2022-03-09 23:53:57.926639
+FAC000024,Central Medical Center - 748,Urgent Care,6483 Medical Pkwy,Austin,PA,18658,555-846-7786,89.0,True,2024-07-26 23:53:57.926639
+FAC000025,Advanced Healthcare Center - 550,Urgent Care,6009 Main St,Los Angeles,IL,54658,555-242-2410,97.0,True,2022-08-08 23:53:57.926639
+FAC000026,Community Health Clinic - 997,Ambulatory Center,1599 Main St,Phoenix,NY,37294,555-247-4404,43.0,True,2023-11-29 23:53:57.926639
+FAC000027,Primary Care Associates - 81,Specialty Center,5150 Healthcare Blvd,Chicago,PA,87459,555-410-8776,68.0,True,2022-07-03 23:53:57.926639
+FAC000028,Urgent Care Facility - 850,Clinic,5996 Medical Pkwy,Dallas,FL,66511,555-988-9606,196.0,True,2022-10-08 23:53:57.926639
+FAC000029,Specialty Medical Center - 592,Outpatient Center,1774 Oak Ave,Houston,AZ,67062,555-443-2083,126.0,True,2024-09-22 23:53:57.926639
+FAC000030,Family Practice Center - 722,Urgent Care,1530 Oak Ave,Phoenix,TX,84345,555-704-7156,147.0,True,2022-06-19 23:53:57.926639
+FAC000031,Community Health Clinic - 47,Ambulatory Center,7161 Healthcare Blvd,Los Angeles,NY,54852,555-190-1108,138.0,True,2024-02-01 23:53:57.926639
+FAC000032,Family Practice Center - 792,Specialty Center,9225 Wellness Dr,Los Angeles,FL,81372,555-519-5478,261.0,True,2023-04-30 23:53:57.926639
+FAC000033,Urgent Care Facility - 82,Clinic,8495 Healthcare Blvd,New York,NY,40953,555-524-3865,,True,2023-01-25 23:53:57.926639
+FAC000034,Family Practice Center - 888,Hospital,1792 Main St,Dallas,FL,32686,555-669-8571,,True,2022-05-11 23:53:57.926639
+FAC000035,Community Health Clinic - 390,Clinic,1568 Medical Pkwy,New York,IL,96849,555-827-3243,,False,2025-01-12 23:53:57.926639
+FAC000036,Urgent Care Facility - 465,Hospital,9180 Main St,Austin,IL,97766,555-304-4047,,True,2021-02-13 23:53:57.926639
+FAC000037,Specialty Medical Center - 167,Specialty Center,9880 Wellness Dr,Austin,FL,20209,555-952-7254,282.0,True,2024-05-11 23:53:57.926639
+FAC000038,Specialty Medical Center - 364,Clinic,5415 Healthcare Blvd,San Antonio,TX,85260,555-396-9037,,True,2021-04-30 23:53:57.926639
+FAC000039,Family Practice Center - 687,Ambulatory Center,302 Medical Pkwy,Austin,TX,73783,555-143-5947,,True,2024-09-28 23:53:57.926639
+FAC000040,Urgent Care Facility - 719,Specialty Center,6879 Healthcare Blvd,Houston,FL,24984,555-954-5979,50.0,True,2021-02-18 23:53:57.926639
+FAC000041,Community Health Clinic - 624,Hospital,1487 Wellness Dr,New York,NY,87616,555-605-8593,,True,2024-05-27 23:53:57.926639
+FAC000042,Regional Hospital - 547,Ambulatory Center,4077 Wellness Dr,Dallas,FL,88128,555-329-1439,155.0,True,2022-04-18 23:53:57.926639
+FAC000043,Family Practice Center - 168,Urgent Care,8637 Oak Ave,Phoenix,FL,70674,555-910-1040,98.0,True,2023-04-28 23:53:57.926639
+FAC000044,Advanced Healthcare Center - 389,Ambulatory Center,6337 Oak Ave,Dallas,CA,52647,555-257-5303,33.0,True,2023-04-18 23:53:57.926639
+FAC000045,Urgent Care Facility - 948,Urgent Care,2374 Medical Pkwy,Dallas,PA,82756,555-407-8742,121.0,True,2021-07-29 23:53:57.926639
+FAC000046,Family Practice Center - 702,Ambulatory Center,5033 Medical Pkwy,San Diego,PA,22799,555-227-5713,116.0,True,2022-07-05 23:53:57.926639
+FAC000047,Specialty Medical Center - 864,Hospital,8179 Oak Ave,Chicago,FL,68355,555-527-3938,219.0,True,2023-11-04 23:53:57.926639
+FAC000048,Central Medical Center - 235,Outpatient Center,1136 Oak Ave,Philadelphia,AZ,33091,555-603-5009,,True,2022-09-09 23:53:57.926639
+FAC000049,Central Medical Center - 825,Outpatient Center,7221 Medical Pkwy,San Antonio,NY,50374,555-129-2955,227.0,True,2024-01-15 23:53:57.926639
+FAC000050,Specialty Medical Center - 411,Urgent Care,6999 Medical Pkwy,Houston,PA,63188,555-883-5541,98.0,True,2022-12-30 23:53:57.926639
+FAC000051,Urgent Care Facility - 68,Urgent Care,8033 Main St,Austin,FL,19123,555-604-2093,38.0,False,2023-05-06 23:53:57.926639
+FAC000052,Family Practice Center - 936,Clinic,6016 Medical Pkwy,Phoenix,PA,88415,555-713-6927,32.0,True,2024-05-20 23:53:57.926639
+FAC000053,Specialty Medical Center - 218,Ambulatory Center,4140 Healthcare Blvd,Chicago,TX,24253,555-695-8872,27.0,True,2025-07-02 23:53:57.926639
+FAC000054,Advanced Healthcare Center - 406,Ambulatory Center,9828 Wellness Dr,San Diego,NY,99850,555-679-8144,96.0,True,2024-10-24 23:53:57.926639
+FAC000055,Advanced Healthcare Center - 147,Ambulatory Center,3303 Healthcare Blvd,Dallas,IL,88172,555-989-5225,272.0,True,2025-05-30 23:53:57.926639
+FAC000056,Urgent Care Facility - 143,Ambulatory Center,1852 Oak Ave,Dallas,AZ,59664,555-743-8799,290.0,True,2021-02-06 23:53:57.926639
+FAC000057,Family Practice Center - 763,Clinic,5091 Main St,Los Angeles,NY,52914,555-810-2959,140.0,True,2021-10-22 23:53:57.926639
+FAC000058,Urgent Care Facility - 765,Urgent Care,6583 Medical Pkwy,San Antonio,IL,74788,555-482-9397,102.0,True,2021-10-04 23:53:57.926639
+FAC000059,Primary Care Associates - 920,Outpatient Center,6324 Medical Pkwy,Philadelphia,AZ,94540,555-850-1287,,True,2024-06-06 23:53:57.926639
+FAC000060,Primary Care Associates - 371,Clinic,7312 Medical Pkwy,Dallas,AZ,96529,555-965-5252,35.0,True,2023-09-09 23:53:57.926639
+FAC000061,Family Practice Center - 142,Hospital,7155 Wellness Dr,New York,CA,18058,555-266-1958,133.0,True,2023-07-15 23:53:57.926639
+FAC000062,Advanced Healthcare Center - 94,Clinic,2330 Medical Pkwy,Houston,IL,21866,555-249-6237,79.0,True,2024-03-20 23:53:57.926639
+FAC000063,Central Medical Center - 882,Clinic,5353 Wellness Dr,Austin,AZ,38522,555-572-3219,,True,2024-08-27 23:53:57.926639
+FAC000064,Community Health Clinic - 157,Clinic,3390 Healthcare Blvd,Chicago,PA,28208,555-465-3675,121.0,True,2022-04-30 23:53:57.926639
+FAC000065,Regional Hospital - 812,Specialty Center,5247 Oak Ave,Dallas,CA,86122,555-154-5467,,True,2023-08-29 23:53:57.926639
+FAC000066,Primary Care Associates - 611,Hospital,6624 Medical Pkwy,Chicago,CA,93379,555-469-7873,23.0,True,2025-05-23 23:53:57.926639
+FAC000067,Community Health Clinic - 395,Urgent Care,4875 Healthcare Blvd,San Diego,NY,10024,555-751-6832,67.0,True,2025-01-20 23:53:57.926639
+FAC000068,Primary Care Associates - 611,Outpatient Center,9535 Oak Ave,Chicago,PA,29231,555-149-5749,,True,2023-06-09 23:53:57.926639
+FAC000069,Advanced Healthcare Center - 542,Outpatient Center,5439 Healthcare Blvd,Chicago,PA,96623,555-398-9677,,True,2024-04-02 23:53:57.926639
+FAC000070,Urgent Care Facility - 995,Urgent Care,4692 Healthcare Blvd,Austin,TX,29558,555-754-2258,,False,2022-05-04 23:53:57.926639
+FAC000071,Central Medical Center - 697,Specialty Center,6080 Main St,Austin,TX,69372,555-626-4175,44.0,True,2025-05-28 23:53:57.926639
+FAC000072,Community Health Clinic - 699,Outpatient Center,9338 Oak Ave,Chicago,FL,79632,555-884-4002,150.0,True,2024-02-04 23:53:57.926639
+FAC000073,Urgent Care Facility - 788,Clinic,9803 Wellness Dr,San Diego,AZ,48207,555-883-2548,,True,2022-02-18 23:53:57.926639
+FAC000074,Specialty Medical Center - 115,Outpatient Center,3047 Wellness Dr,Philadelphia,AZ,61115,555-713-3738,34.0,True,2023-10-23 23:53:57.926639
+FAC000075,Urgent Care Facility - 446,Hospital,540 Healthcare Blvd,New York,AZ,90684,555-656-6285,,True,2022-02-02 23:53:57.926639
+FAC000076,Regional Hospital - 465,Hospital,3534 Healthcare Blvd,Houston,NY,85750,555-993-6180,,True,2025-04-28 23:53:57.926639
+FAC000077,Central Medical Center - 977,Urgent Care,4873 Main St,San Diego,CA,68610,555-946-5932,88.0,True,2021-09-14 23:53:57.926639
+FAC000078,Urgent Care Facility - 996,Specialty Center,6803 Healthcare Blvd,Houston,TX,35646,555-377-6939,136.0,True,2021-02-04 23:53:57.926639
+FAC000079,Regional Hospital - 520,Ambulatory Center,2380 Medical Pkwy,Los Angeles,IL,36956,555-198-9755,,True,2023-05-01 23:53:57.926639
+FAC000080,Community Health Clinic - 892,Ambulatory Center,4065 Medical Pkwy,Phoenix,FL,99327,555-693-6761,11.0,True,2021-05-01 23:53:57.926639
+FAC000081,Urgent Care Facility - 862,Specialty Center,2625 Healthcare Blvd,Philadelphia,TX,51497,555-943-3354,86.0,True,2021-07-12 23:53:57.926639
+FAC000082,Family Practice Center - 157,Outpatient Center,6276 Main St,Houston,CA,49286,555-113-3243,28.0,True,2021-03-13 23:53:57.926639
+FAC000083,Specialty Medical Center - 781,Specialty Center,7457 Wellness Dr,New York,CA,84747,555-630-5610,39.0,True,2023-04-20 23:53:57.926639
+FAC000084,Regional Hospital - 553,Specialty Center,7951 Wellness Dr,Houston,IL,99071,555-481-8944,,True,2022-09-03 23:53:57.926639
+FAC000085,Central Medical Center - 614,Outpatient Center,6666 Wellness Dr,Dallas,NY,49917,555-521-6575,,True,2023-09-25 23:53:57.926639
+FAC000086,Specialty Medical Center - 501,Hospital,8400 Healthcare Blvd,Philadelphia,TX,66980,555-266-2678,,True,2022-03-10 23:53:57.926639
+FAC000087,Central Medical Center - 115,Clinic,9007 Main St,San Antonio,AZ,55123,555-323-3532,152.0,True,2024-09-22 23:53:57.926639
+FAC000088,Specialty Medical Center - 900,Urgent Care,5990 Wellness Dr,San Diego,PA,21703,555-615-4622,,True,2025-11-17 23:53:57.926639
+FAC000089,Urgent Care Facility - 246,Ambulatory Center,9829 Main St,San Diego,NY,86379,555-951-4087,247.0,True,2024-05-30 23:53:57.926639
+FAC000090,Central Medical Center - 247,Hospital,1891 Oak Ave,New York,AZ,11064,555-914-9612,,True,2024-07-16 23:53:57.926639
+FAC000091,Community Health Clinic - 88,Specialty Center,5916 Oak Ave,New York,TX,90149,555-966-9717,75.0,True,2023-03-13 23:53:57.926639
+FAC000092,Advanced Healthcare Center - 836,Specialty Center,825 Wellness Dr,Philadelphia,IL,76902,555-829-2867,58.0,True,2024-11-01 23:53:57.926639
+FAC000093,Community Health Clinic - 779,Ambulatory Center,6647 Medical Pkwy,Los Angeles,NY,62978,555-527-8544,,True,2021-01-19 23:53:57.926639
+FAC000094,Regional Hospital - 132,Outpatient Center,7152 Main St,Dallas,TX,26718,555-178-2909,39.0,True,2021-04-09 23:53:57.926639
+FAC000095,Advanced Healthcare Center - 970,Urgent Care,272 Main St,Phoenix,AZ,48559,555-938-3150,,True,2021-08-26 23:53:57.926639
+FAC000096,Regional Hospital - 272,Clinic,4339 Oak Ave,Phoenix,TX,18180,555-117-8856,282.0,True,2023-10-01 23:53:57.926639
+FAC000097,Primary Care Associates - 988,Outpatient Center,8466 Wellness Dr,Austin,FL,58394,555-456-6104,,True,2025-09-13 23:53:57.926639
+FAC000098,Family Practice Center - 952,Ambulatory Center,9242 Wellness Dr,Dallas,PA,81943,555-807-6940,,True,2022-11-21 23:53:57.926639
+FAC000099,Family Practice Center - 731,Outpatient Center,9524 Oak Ave,Austin,CA,16963,555-242-8240,99.0,True,2021-09-18 23:53:57.926639
+FAC000100,Urgent Care Facility - 409,Clinic,7403 Medical Pkwy,Chicago,FL,10110,555-711-9570,46.0,True,2024-03-25 23:53:57.926639
+FAC000101,Specialty Medical Center - 449,Clinic,6508 Healthcare Blvd,San Antonio,CA,83404,555-881-6604,170.0,True,2024-07-29 23:53:57.926639
+FAC000102,Advanced Healthcare Center - 124,Specialty Center,9743 Wellness Dr,San Antonio,TX,57086,555-276-5991,139.0,True,2022-04-04 23:53:57.926639
+FAC000103,Family Practice Center - 231,Outpatient Center,2569 Medical Pkwy,Philadelphia,AZ,24378,555-129-2943,41.0,True,2024-04-05 23:53:57.926639
+FAC000104,Community Health Clinic - 347,Hospital,502 Healthcare Blvd,Austin,CA,46989,555-327-3108,33.0,True,2023-09-26 23:53:57.926639
+FAC000105,Central Medical Center - 603,Hospital,1812 Medical Pkwy,Los Angeles,TX,14087,555-977-3332,299.0,True,2023-11-06 23:53:57.926639
+FAC000106,Family Practice Center - 603,Outpatient Center,6915 Main St,Dallas,TX,40833,555-804-4712,142.0,True,2021-07-04 23:53:57.926639
+FAC000107,Family Practice Center - 8,Clinic,2001 Oak Ave,Phoenix,PA,66585,555-414-3053,,True,2023-07-25 23:53:57.926639
+FAC000108,Community Health Clinic - 725,Urgent Care,5807 Medical Pkwy,San Antonio,AZ,87353,555-314-3133,,True,2023-08-29 23:53:57.926639
+FAC000109,Central Medical Center - 235,Clinic,5720 Healthcare Blvd,Houston,CA,61677,555-180-7960,,True,2023-10-22 23:53:57.926639
+FAC000110,Community Health Clinic - 928,Clinic,3489 Wellness Dr,Dallas,AZ,91948,555-807-2830,22.0,True,2024-07-31 23:53:57.926639
+FAC000111,Central Medical Center - 881,Urgent Care,8012 Medical Pkwy,San Antonio,AZ,51697,555-179-1308,64.0,True,2025-09-26 23:53:57.926639
+FAC000112,Specialty Medical Center - 73,Ambulatory Center,7901 Main St,Philadelphia,PA,60173,555-893-8934,,True,2024-07-15 23:53:57.926639
+FAC000113,Family Practice Center - 286,Clinic,7278 Healthcare Blvd,Philadelphia,AZ,63219,555-875-8065,41.0,True,2023-04-27 23:53:57.926639
+FAC000114,Advanced Healthcare Center - 220,Urgent Care,5325 Main St,San Diego,CA,60012,555-143-4217,,True,2021-12-16 23:53:57.926639
+FAC000115,Regional Hospital - 741,Outpatient Center,5019 Main St,San Diego,CA,67041,555-210-1537,110.0,True,2024-10-24 23:53:57.926639
+FAC000116,Advanced Healthcare Center - 249,Urgent Care,1985 Main St,Austin,NY,81449,555-912-9412,20.0,True,2024-02-20 23:53:57.926639
+FAC000117,Advanced Healthcare Center - 827,Hospital,5720 Main St,New York,IL,37684,555-707-1971,,True,2022-06-22 23:53:57.926639
+FAC000118,Primary Care Associates - 195,Urgent Care,2792 Oak Ave,Dallas,FL,96833,555-580-2948,20.0,True,2021-06-14 23:53:57.926639
+FAC000119,Community Health Clinic - 100,Clinic,8554 Oak Ave,Chicago,TX,32729,555-359-1709,212.0,True,2025-10-14 23:53:57.926639
+FAC000120,Primary Care Associates - 363,Ambulatory Center,9142 Oak Ave,San Diego,IL,72242,555-167-5942,21.0,True,2024-04-24 23:53:57.926639
+FAC000121,Primary Care Associates - 421,Outpatient Center,5522 Wellness Dr,Chicago,PA,28228,555-783-1168,44.0,True,2023-07-14 23:53:57.926639
+FAC000122,Advanced Healthcare Center - 885,Urgent Care,7085 Healthcare Blvd,Houston,AZ,34671,555-872-2581,50.0,True,2023-09-29 23:53:57.926639
+FAC000123,Central Medical Center - 690,Clinic,3898 Healthcare Blvd,Los Angeles,NY,82800,555-901-3028,,True,2024-10-19 23:53:57.926639
+FAC000124,Community Health Clinic - 63,Ambulatory Center,3122 Oak Ave,Dallas,NY,60409,555-716-4365,13.0,True,2022-10-31 23:53:57.926639
+FAC000125,Primary Care Associates - 746,Urgent Care,7180 Healthcare Blvd,Phoenix,PA,57223,555-701-4277,148.0,True,2021-02-17 23:53:57.926639
+FAC000126,Specialty Medical Center - 820,Outpatient Center,578 Wellness Dr,Houston,TX,64687,555-289-6759,33.0,True,2025-02-08 23:53:57.926639
+FAC000127,Community Health Clinic - 255,Outpatient Center,3332 Healthcare Blvd,Chicago,TX,30220,555-129-2487,11.0,True,2023-01-14 23:53:57.926639
+FAC000128,Family Practice Center - 195,Hospital,9802 Healthcare Blvd,Chicago,IL,47810,555-249-5544,31.0,True,2024-11-19 23:53:57.926639
+FAC000129,Advanced Healthcare Center - 144,Outpatient Center,6470 Main St,Chicago,IL,97826,555-693-6698,62.0,True,2021-09-02 23:53:57.926639
+FAC000130,Primary Care Associates - 188,Ambulatory Center,3619 Oak Ave,Philadelphia,CA,26455,555-460-3630,20.0,True,2022-07-15 23:53:57.926639
+FAC000131,Urgent Care Facility - 474,Clinic,4660 Main St,Austin,IL,27600,555-975-9202,91.0,True,2025-06-04 23:53:57.926639
+FAC000132,Family Practice Center - 896,Outpatient Center,9559 Main St,Los Angeles,IL,11520,555-899-4962,,True,2022-08-08 23:53:57.926639
+FAC000133,Community Health Clinic - 454,Outpatient Center,8896 Oak Ave,Houston,AZ,19403,555-617-2119,65.0,True,2022-08-14 23:53:57.926639
+FAC000134,Community Health Clinic - 52,Clinic,6093 Medical Pkwy,San Antonio,PA,94985,555-201-1229,95.0,True,2024-03-11 23:53:57.926639
+FAC000135,Central Medical Center - 993,Clinic,3328 Healthcare Blvd,Philadelphia,NY,12058,555-641-4555,267.0,True,2025-04-26 23:53:57.926639
+FAC000136,Community Health Clinic - 949,Ambulatory Center,1967 Medical Pkwy,Los Angeles,FL,28873,555-832-4138,,True,2022-08-26 23:53:57.926639
+FAC000137,Family Practice Center - 171,Outpatient Center,8119 Wellness Dr,San Diego,IL,73792,555-388-3814,268.0,True,2023-01-06 23:53:57.926639
+FAC000138,Primary Care Associates - 498,Ambulatory Center,5234 Wellness Dr,San Diego,CA,96235,555-872-9800,49.0,True,2025-12-06 23:53:57.926639
+FAC000139,Advanced Healthcare Center - 219,Outpatient Center,6467 Wellness Dr,San Diego,IL,67243,555-104-2616,,True,2021-12-28 23:53:57.926639
+FAC000140,Primary Care Associates - 925,Urgent Care,6531 Wellness Dr,Houston,AZ,27796,555-319-9260,141.0,False,2025-12-03 23:53:57.926639
+FAC000141,Central Medical Center - 169,Outpatient Center,1971 Medical Pkwy,Austin,FL,21097,555-971-8777,253.0,False,2021-07-17 23:53:57.926639
+FAC000142,Primary Care Associates - 3,Hospital,5866 Healthcare Blvd,Chicago,FL,27985,555-475-4033,139.0,True,2023-12-01 23:53:57.926639
+FAC000143,Primary Care Associates - 272,Hospital,2926 Medical Pkwy,San Antonio,TX,94180,555-550-2758,262.0,True,2025-07-15 23:53:57.926639
+FAC000144,Advanced Healthcare Center - 293,Hospital,9769 Main St,New York,AZ,64507,555-285-6813,40.0,True,2021-08-31 23:53:57.926639
+FAC000145,Primary Care Associates - 714,Hospital,2294 Medical Pkwy,Houston,CA,69772,555-488-7948,,True,2022-02-02 23:53:57.926639
+FAC000146,Advanced Healthcare Center - 159,Ambulatory Center,2031 Oak Ave,New York,TX,89223,555-319-9425,131.0,True,2024-03-04 23:53:57.926639
+FAC000147,Family Practice Center - 304,Outpatient Center,5103 Main St,Chicago,NY,65797,555-333-7677,42.0,True,2024-01-24 23:53:57.926639
+FAC000148,Family Practice Center - 992,Urgent Care,3099 Medical Pkwy,Austin,FL,91690,555-215-6149,24.0,True,2021-09-28 23:53:57.926639
+FAC000149,Central Medical Center - 594,Ambulatory Center,2416 Wellness Dr,Austin,CA,33566,555-226-8633,,True,2021-09-30 23:53:57.926639
+FAC000150,Central Medical Center - 766,Clinic,6464 Healthcare Blvd,Chicago,CA,69558,555-212-9515,25.0,True,2022-12-10 23:53:57.926639
+FAC000151,Specialty Medical Center - 59,Outpatient Center,9871 Oak Ave,Chicago,PA,76770,555-239-9123,227.0,True,2025-09-08 23:53:57.926639
+FAC000152,Central Medical Center - 599,Specialty Center,9517 Healthcare Blvd,Dallas,IL,65590,555-880-6918,69.0,True,2022-05-15 23:53:57.926639
+FAC000153,Advanced Healthcare Center - 515,Outpatient Center,7031 Oak Ave,New York,CA,82358,555-821-5723,,True,2025-10-07 23:53:57.926639
+FAC000154,Regional Hospital - 59,Ambulatory Center,8073 Wellness Dr,Austin,FL,68988,555-670-1665,171.0,True,2023-02-18 23:53:57.926639
+FAC000155,Community Health Clinic - 872,Hospital,2938 Wellness Dr,Chicago,PA,60425,555-184-6375,206.0,False,2024-11-10 23:53:57.926639
+FAC000156,Regional Hospital - 71,Specialty Center,2833 Healthcare Blvd,New York,FL,56570,555-605-2895,287.0,True,2024-01-05 23:53:57.926639
+FAC000157,Community Health Clinic - 692,Ambulatory Center,4832 Oak Ave,Chicago,NY,39588,555-494-5646,31.0,True,2023-01-15 23:53:57.926639
+FAC000158,Family Practice Center - 414,Outpatient Center,3165 Medical Pkwy,Phoenix,NY,34352,555-567-6111,137.0,True,2024-12-05 23:53:57.926639
+FAC000159,Community Health Clinic - 965,Urgent Care,7489 Wellness Dr,Chicago,PA,65675,555-803-8273,233.0,True,2025-02-28 23:53:57.926639
+FAC000160,Family Practice Center - 593,Ambulatory Center,978 Medical Pkwy,Dallas,NY,89242,555-331-7672,21.0,True,2021-05-05 23:53:57.926639
+FAC000161,Central Medical Center - 635,Urgent Care,257 Healthcare Blvd,San Antonio,CA,10973,555-397-8011,112.0,True,2023-01-14 23:53:57.926639
+FAC000162,Community Health Clinic - 430,Specialty Center,2336 Oak Ave,Austin,AZ,85751,555-293-2140,131.0,True,2023-10-28 23:53:57.926639
+FAC000163,Specialty Medical Center - 958,Clinic,6390 Wellness Dr,Austin,CA,75294,555-961-8793,61.0,True,2021-03-22 23:53:57.926639
+FAC000164,Urgent Care Facility - 210,Ambulatory Center,8381 Healthcare Blvd,New York,FL,41031,555-795-7020,,True,2022-01-06 23:53:57.926639
+FAC000165,Specialty Medical Center - 245,Specialty Center,6803 Healthcare Blvd,Phoenix,FL,75762,555-283-1209,89.0,True,2024-10-03 23:53:57.926639
+FAC000166,Urgent Care Facility - 406,Urgent Care,6909 Healthcare Blvd,Los Angeles,FL,45291,555-790-9055,104.0,True,2024-05-31 23:53:57.926639
+FAC000167,Regional Hospital - 688,Specialty Center,8106 Oak Ave,Houston,IL,63849,555-788-2723,,True,2021-07-19 23:53:57.926639
+FAC000168,Urgent Care Facility - 469,Hospital,1454 Wellness Dr,San Diego,NY,81587,555-505-8177,,True,2025-02-19 23:53:57.937506
+FAC000169,Specialty Medical Center - 952,Ambulatory Center,605 Oak Ave,Austin,IL,85543,555-635-2392,,True,2023-12-12 23:53:57.937506
+FAC000170,Community Health Clinic - 10,Hospital,4885 Main St,San Diego,PA,58099,555-222-3348,,True,2024-03-08 23:53:57.937506
+FAC000171,Advanced Healthcare Center - 637,Clinic,4603 Oak Ave,San Diego,FL,14385,555-504-7563,,True,2023-09-22 23:53:57.937506
+FAC000172,Community Health Clinic - 76,Specialty Center,8908 Medical Pkwy,Chicago,NY,14963,555-811-2666,,True,2024-10-31 23:53:57.937506
+FAC000173,Family Practice Center - 519,Specialty Center,2855 Healthcare Blvd,Houston,IL,84468,555-859-3764,294.0,True,2022-12-10 23:53:57.937506
+FAC000174,Urgent Care Facility - 136,Specialty Center,9367 Healthcare Blvd,San Antonio,TX,73342,555-166-6959,118.0,True,2021-12-06 23:53:57.937506
+FAC000175,Specialty Medical Center - 903,Specialty Center,9106 Wellness Dr,Austin,TX,58310,555-303-6548,218.0,True,2024-08-24 23:53:57.937506
+FAC000176,Community Health Clinic - 901,Clinic,1954 Wellness Dr,Chicago,NY,24832,555-305-7623,,True,2025-12-19 23:53:57.937506
+FAC000177,Family Practice Center - 379,Urgent Care,1971 Medical Pkwy,Austin,IL,86056,555-225-4815,,True,2025-11-03 23:53:57.937506
+FAC000178,Urgent Care Facility - 162,Outpatient Center,8998 Medical Pkwy,Chicago,CA,73115,555-958-7958,22.0,True,2021-04-20 23:53:57.937506
+FAC000179,Advanced Healthcare Center - 854,Clinic,8980 Main St,Austin,PA,20494,555-842-9177,286.0,True,2025-12-05 23:53:57.937506
+FAC000180,Urgent Care Facility - 627,Urgent Care,7331 Wellness Dr,Dallas,AZ,28623,555-385-5472,,True,2021-10-22 23:53:57.937506
+FAC000181,Central Medical Center - 684,Ambulatory Center,3680 Healthcare Blvd,Phoenix,CA,78997,555-874-7557,225.0,True,2023-02-02 23:53:57.937506
+FAC000182,Urgent Care Facility - 955,Urgent Care,1777 Oak Ave,Chicago,CA,46624,555-464-8795,47.0,True,2025-06-20 23:53:57.937506
+FAC000183,Community Health Clinic - 962,Ambulatory Center,4977 Main St,Philadelphia,AZ,70940,555-782-7626,99.0,True,2023-03-25 23:53:57.937506
+FAC000184,Regional Hospital - 271,Urgent Care,7468 Medical Pkwy,San Diego,AZ,77757,555-596-9379,211.0,True,2023-10-24 23:53:57.937506
+FAC000185,Community Health Clinic - 912,Specialty Center,5811 Main St,Austin,FL,20254,555-385-3414,,True,2021-08-09 23:53:57.937506
+FAC000186,Community Health Clinic - 761,Clinic,7293 Main St,Austin,IL,78597,555-886-8448,50.0,True,2023-04-28 23:53:57.937506
+FAC000187,Regional Hospital - 279,Urgent Care,3982 Oak Ave,Los Angeles,AZ,89963,555-210-3001,104.0,True,2025-10-21 23:53:57.937506
+FAC000188,Urgent Care Facility - 620,Outpatient Center,9732 Medical Pkwy,Houston,TX,21592,555-356-9017,108.0,True,2025-02-28 23:53:57.937506
+FAC000189,Family Practice Center - 735,Outpatient Center,7115 Oak Ave,San Antonio,AZ,42142,555-609-4781,50.0,True,2024-06-15 23:53:57.937506
+FAC000190,Specialty Medical Center - 209,Hospital,2381 Oak Ave,San Antonio,PA,71925,555-743-3205,,True,2024-05-08 23:53:57.937506
+FAC000191,Urgent Care Facility - 518,Urgent Care,3490 Main St,Chicago,CA,92662,555-130-2631,82.0,True,2025-11-27 23:53:57.937506
+FAC000192,Advanced Healthcare Center - 258,Clinic,9440 Medical Pkwy,Los Angeles,PA,96997,555-855-1865,10.0,True,2024-10-01 23:53:57.937506
+FAC000193,Central Medical Center - 95,Specialty Center,8820 Medical Pkwy,New York,PA,97650,555-950-2117,34.0,True,2022-07-02 23:53:57.937506
+FAC000194,Primary Care Associates - 850,Hospital,9878 Wellness Dr,Houston,PA,20234,555-610-1438,74.0,True,2021-09-17 23:53:57.937506
+FAC000195,Urgent Care Facility - 46,Urgent Care,2858 Medical Pkwy,Dallas,NY,99662,555-283-7269,277.0,True,2022-03-08 23:53:57.937506
+FAC000196,Central Medical Center - 342,Specialty Center,4894 Medical Pkwy,Dallas,TX,93058,555-719-6356,,True,2024-08-27 23:53:57.937506
+FAC000197,Regional Hospital - 653,Clinic,9483 Medical Pkwy,San Antonio,AZ,80673,555-256-5960,,True,2025-11-07 23:53:57.937506
+FAC000198,Urgent Care Facility - 166,Clinic,8528 Main St,Chicago,PA,85973,555-736-2578,262.0,True,2024-07-07 23:53:57.937506
+FAC000199,Advanced Healthcare Center - 565,Hospital,2321 Healthcare Blvd,Austin,AZ,50959,555-878-2253,84.0,True,2021-11-02 23:53:57.937506
+FAC000200,Primary Care Associates - 575,Hospital,1071 Medical Pkwy,Los Angeles,NY,90352,555-776-9518,35.0,True,2025-05-07 23:53:57.937506
+FAC000201,Central Medical Center - 115,Urgent Care,2178 Oak Ave,Chicago,IL,16917,555-885-9064,20.0,True,2021-06-25 23:53:57.937506
+FAC000202,Community Health Clinic - 968,Specialty Center,4190 Oak Ave,San Diego,CA,55029,555-911-8635,,True,2021-08-24 23:53:57.937506
+FAC000203,Regional Hospital - 559,Outpatient Center,5377 Oak Ave,Austin,NY,80127,555-306-5809,267.0,True,2023-12-04 23:53:57.937506
+FAC000204,Central Medical Center - 855,Specialty Center,6534 Healthcare Blvd,Austin,IL,11413,555-777-9157,145.0,True,2022-05-14 23:53:57.937506
+FAC000205,Specialty Medical Center - 597,Clinic,2429 Wellness Dr,New York,CA,71455,555-602-9270,140.0,True,2023-10-18 23:53:57.937506
+FAC000206,Regional Hospital - 441,Clinic,4502 Healthcare Blvd,Dallas,FL,69511,555-367-9887,41.0,True,2025-04-22 23:53:57.937506
+FAC000207,Regional Hospital - 43,Urgent Care,6246 Healthcare Blvd,Dallas,PA,77195,555-451-9856,122.0,True,2021-06-15 23:53:57.937506
+FAC000208,Urgent Care Facility - 374,Outpatient Center,1337 Main St,Los Angeles,AZ,71503,555-659-1289,57.0,True,2021-11-21 23:53:57.937506
+FAC000209,Central Medical Center - 921,Ambulatory Center,6700 Wellness Dr,Los Angeles,IL,85230,555-882-1517,,True,2021-02-15 23:53:57.937506
+FAC000210,Specialty Medical Center - 216,Urgent Care,4658 Medical Pkwy,San Diego,NY,53452,555-540-2951,129.0,True,2024-07-12 23:53:57.937506
+FAC000211,Family Practice Center - 683,Clinic,7549 Healthcare Blvd,Chicago,TX,65183,555-492-8374,,True,2021-03-17 23:53:57.937506
+FAC000212,Community Health Clinic - 363,Clinic,5462 Wellness Dr,Austin,PA,56257,555-422-7165,116.0,True,2025-07-26 23:53:57.937506
+FAC000213,Primary Care Associates - 998,Specialty Center,140 Main St,Dallas,NY,48616,555-553-8531,,True,2025-08-12 23:53:57.937506
+FAC000214,Regional Hospital - 948,Outpatient Center,7611 Medical Pkwy,New York,NY,47907,555-136-1538,41.0,True,2025-08-17 23:53:57.937506
+FAC000215,Family Practice Center - 886,Specialty Center,1137 Wellness Dr,San Antonio,TX,31955,555-281-5965,10.0,True,2023-03-19 23:53:57.937506
+FAC000216,Regional Hospital - 820,Specialty Center,6616 Oak Ave,Dallas,PA,14630,555-823-3689,55.0,True,2021-12-29 23:53:57.937506
+FAC000217,Regional Hospital - 903,Urgent Care,7139 Oak Ave,San Antonio,IL,88333,555-603-8056,196.0,True,2022-02-05 23:53:57.937506
+FAC000218,Primary Care Associates - 26,Specialty Center,8205 Medical Pkwy,Philadelphia,PA,49855,555-237-6119,293.0,True,2021-10-07 23:53:57.937506
+FAC000219,Regional Hospital - 755,Hospital,5389 Medical Pkwy,New York,FL,83886,555-832-7374,186.0,True,2021-12-07 23:53:57.937506
+FAC000220,Specialty Medical Center - 802,Hospital,5633 Wellness Dr,Dallas,PA,44136,555-599-2792,161.0,True,2023-09-18 23:53:57.937506
+FAC000221,Primary Care Associates - 822,Specialty Center,9568 Oak Ave,San Antonio,IL,18050,555-682-9037,35.0,True,2025-12-05 23:53:57.937506
+FAC000222,Family Practice Center - 274,Outpatient Center,9375 Healthcare Blvd,Houston,FL,92483,555-775-9837,32.0,True,2025-12-16 23:53:57.937506
+FAC000223,Regional Hospital - 807,Specialty Center,5731 Main St,San Diego,NY,72018,555-685-8697,139.0,True,2021-11-17 23:53:57.937506
+FAC000224,Community Health Clinic - 392,Clinic,852 Main St,San Antonio,NY,85778,555-587-3560,131.0,True,2021-05-21 23:53:57.937506
+FAC000225,Central Medical Center - 880,Clinic,7629 Main St,Philadelphia,IL,32161,555-618-1913,,True,2023-01-02 23:53:57.937506
+FAC000226,Advanced Healthcare Center - 228,Outpatient Center,2135 Oak Ave,Austin,FL,85085,555-500-5315,102.0,True,2022-08-26 23:53:57.937506
+FAC000227,Family Practice Center - 837,Urgent Care,7330 Healthcare Blvd,Austin,PA,16765,555-606-7189,10.0,False,2025-03-11 23:53:57.937506
+FAC000228,Advanced Healthcare Center - 359,Hospital,111 Healthcare Blvd,Los Angeles,TX,96025,555-731-6779,111.0,True,2025-07-04 23:53:57.937506
+FAC000229,Urgent Care Facility - 841,Hospital,3414 Oak Ave,San Antonio,CA,48240,555-884-5660,,True,2021-11-30 23:53:57.937506
+FAC000230,Family Practice Center - 229,Urgent Care,5045 Oak Ave,Chicago,TX,91830,555-428-2006,35.0,True,2022-09-29 23:53:57.937506
+FAC000231,Central Medical Center - 676,Specialty Center,4589 Main St,Phoenix,AZ,13578,555-128-1739,32.0,True,2021-08-06 23:53:57.937506
+FAC000232,Family Practice Center - 409,Outpatient Center,6005 Medical Pkwy,San Diego,PA,47593,555-231-7003,87.0,True,2023-11-06 23:53:57.937506
+FAC000233,Specialty Medical Center - 286,Ambulatory Center,1450 Medical Pkwy,Houston,NY,73538,555-457-1440,19.0,True,2024-12-14 23:53:57.937506
+FAC000234,Community Health Clinic - 991,Ambulatory Center,2811 Main St,Los Angeles,IL,20814,555-883-6591,122.0,True,2021-05-19 23:53:57.937506
+FAC000235,Urgent Care Facility - 360,Specialty Center,6593 Medical Pkwy,Phoenix,TX,26622,555-489-2594,,True,2022-08-24 23:53:57.937506
+FAC000236,Primary Care Associates - 696,Urgent Care,3936 Healthcare Blvd,Austin,FL,76269,555-538-6654,111.0,True,2021-03-23 23:53:57.937506
+FAC000237,Specialty Medical Center - 962,Outpatient Center,1594 Main St,Dallas,AZ,20074,555-465-7749,25.0,True,2024-04-16 23:53:57.937506
+FAC000238,Central Medical Center - 119,Hospital,117 Oak Ave,San Antonio,AZ,46418,555-459-1924,16.0,True,2021-08-22 23:53:57.937506
+FAC000239,Urgent Care Facility - 183,Hospital,7912 Main St,Phoenix,NY,43036,555-777-5001,198.0,True,2024-03-24 23:53:57.937506
+FAC000240,Urgent Care Facility - 40,Specialty Center,2274 Wellness Dr,Houston,CA,27372,555-353-4844,,True,2023-08-29 23:53:57.937506
+FAC000241,Community Health Clinic - 611,Clinic,3805 Wellness Dr,New York,CA,90713,555-763-6113,,True,2023-03-03 23:53:57.937506
+FAC000242,Primary Care Associates - 354,Urgent Care,7391 Main St,New York,AZ,46827,555-706-2391,138.0,False,2021-11-15 23:53:57.937506
+FAC000243,Specialty Medical Center - 447,Ambulatory Center,232 Medical Pkwy,Austin,TX,46073,555-804-2073,46.0,True,2025-11-29 23:53:57.937506
+FAC000244,Community Health Clinic - 395,Urgent Care,2075 Healthcare Blvd,Dallas,AZ,43679,555-989-5995,,True,2024-05-07 23:53:57.937506
+FAC000245,Family Practice Center - 261,Specialty Center,2265 Healthcare Blvd,Los Angeles,PA,11861,555-217-6531,105.0,True,2024-07-03 23:53:57.937506
+FAC000246,Central Medical Center - 726,Urgent Care,1260 Oak Ave,Dallas,NY,24621,555-273-1322,26.0,True,2023-06-21 23:53:57.937506
+FAC000247,Primary Care Associates - 2,Hospital,6376 Main St,New York,NY,89144,555-651-6343,61.0,True,2024-11-26 23:53:57.937506
+FAC000248,Family Practice Center - 373,Specialty Center,1778 Main St,San Antonio,CA,32886,555-138-8551,123.0,False,2025-06-25 23:53:57.937506
+FAC000249,Primary Care Associates - 72,Hospital,5233 Medical Pkwy,Houston,AZ,87564,555-773-7921,30.0,False,2024-07-23 23:53:57.937506
+FAC000250,Specialty Medical Center - 639,Outpatient Center,5002 Oak Ave,Philadelphia,IL,29809,555-681-9433,57.0,True,2022-05-13 23:53:57.937506
+FAC000251,Specialty Medical Center - 680,Outpatient Center,6370 Oak Ave,San Antonio,IL,96396,555-531-5368,181.0,True,2022-10-23 23:53:57.937506
+FAC000252,Community Health Clinic - 738,Clinic,2440 Main St,Philadelphia,TX,68543,555-120-8695,116.0,True,2023-05-26 23:53:57.937506
+FAC000253,Urgent Care Facility - 520,Urgent Care,8791 Wellness Dr,Los Angeles,TX,58466,555-702-1364,,True,2023-12-06 23:53:57.937506
+FAC000254,Urgent Care Facility - 683,Outpatient Center,238 Wellness Dr,Chicago,PA,32989,555-424-7188,68.0,True,2024-05-29 23:53:57.937506
+FAC000255,Primary Care Associates - 335,Urgent Care,2788 Healthcare Blvd,San Antonio,CA,44242,555-684-7394,137.0,True,2023-08-20 23:53:57.937506
+FAC000256,Primary Care Associates - 714,Hospital,5853 Oak Ave,Austin,NY,40958,555-430-2601,48.0,True,2025-07-09 23:53:57.937506
+FAC000257,Urgent Care Facility - 568,Specialty Center,2580 Healthcare Blvd,Phoenix,IL,73559,555-927-9001,48.0,True,2024-10-17 23:53:57.937506
+FAC000258,Regional Hospital - 197,Outpatient Center,7348 Oak Ave,Phoenix,PA,33699,555-202-4373,,True,2023-10-06 23:53:57.937506
+FAC000259,Primary Care Associates - 681,Specialty Center,1520 Main St,Dallas,IL,79125,555-444-9138,226.0,True,2022-11-24 23:53:57.937506
+FAC000260,Primary Care Associates - 694,Outpatient Center,2393 Main St,San Antonio,IL,14337,555-614-6563,57.0,True,2024-06-24 23:53:57.937506
+FAC000261,Regional Hospital - 631,Urgent Care,9759 Healthcare Blvd,Austin,PA,54937,555-270-5907,23.0,True,2023-05-02 23:53:57.937506
+FAC000262,Urgent Care Facility - 416,Outpatient Center,5859 Healthcare Blvd,Philadelphia,IL,21062,555-472-8143,,False,2024-06-12 23:53:57.937506
+FAC000263,Central Medical Center - 312,Ambulatory Center,5252 Oak Ave,Austin,CA,29014,555-306-9142,29.0,True,2022-02-06 23:53:57.937506
+FAC000264,Urgent Care Facility - 216,Outpatient Center,4159 Medical Pkwy,Phoenix,AZ,88059,555-750-2234,,True,2023-01-19 23:53:57.937506
+FAC000265,Primary Care Associates - 805,Hospital,1480 Oak Ave,San Antonio,IL,30204,555-960-9779,,True,2023-03-15 23:53:57.937506
+FAC000266,Specialty Medical Center - 477,Clinic,9166 Wellness Dr,Houston,FL,75004,555-319-5708,235.0,True,2024-09-02 23:53:57.937506
+FAC000267,Advanced Healthcare Center - 453,Hospital,9930 Wellness Dr,San Antonio,NY,64125,555-371-1778,,True,2023-11-24 23:53:57.937506
+FAC000268,Family Practice Center - 524,Specialty Center,4768 Main St,Dallas,PA,60222,555-404-7586,16.0,True,2025-12-11 23:53:57.937506
+FAC000269,Advanced Healthcare Center - 813,Urgent Care,5042 Oak Ave,Dallas,IL,41188,555-923-4700,108.0,True,2023-04-04 23:53:57.937506
+FAC000270,Regional Hospital - 675,Urgent Care,8582 Wellness Dr,San Diego,TX,96594,555-739-2506,,True,2021-12-17 23:53:57.937506
+FAC000271,Community Health Clinic - 291,Outpatient Center,8448 Oak Ave,Chicago,FL,67695,555-834-2552,68.0,True,2023-11-01 23:53:57.937506
+FAC000272,Specialty Medical Center - 96,Urgent Care,6518 Medical Pkwy,Philadelphia,NY,93568,555-706-6518,22.0,True,2023-12-14 23:53:57.937506
+FAC000273,Family Practice Center - 689,Clinic,994 Oak Ave,Dallas,AZ,31926,555-379-2102,33.0,True,2021-10-06 23:53:57.937506
+FAC000274,Urgent Care Facility - 231,Clinic,8208 Healthcare Blvd,Dallas,IL,37637,555-680-9700,98.0,True,2022-12-23 23:53:57.937506
+FAC000275,Family Practice Center - 151,Outpatient Center,1947 Oak Ave,San Diego,CA,85727,555-586-7997,,True,2022-01-13 23:53:57.937506
+FAC000276,Central Medical Center - 48,Outpatient Center,8285 Wellness Dr,Phoenix,CA,55229,555-314-6690,130.0,True,2025-06-08 23:53:57.937506
+FAC000277,Family Practice Center - 487,Specialty Center,1263 Wellness Dr,Phoenix,IL,17120,555-914-2256,,True,2023-07-04 23:53:57.937506
+FAC000278,Community Health Clinic - 467,Outpatient Center,297 Medical Pkwy,Austin,TX,94182,555-767-5945,54.0,True,2024-10-14 23:53:57.937506
+FAC000279,Primary Care Associates - 908,Hospital,5285 Oak Ave,Philadelphia,PA,44654,555-616-5913,112.0,True,2022-10-20 23:53:57.937506
+FAC000280,Family Practice Center - 736,Hospital,6437 Wellness Dr,San Antonio,CA,25203,555-543-9846,34.0,True,2025-11-26 23:53:57.937506
+FAC000281,Primary Care Associates - 507,Hospital,6995 Medical Pkwy,Chicago,NY,16884,555-420-4278,197.0,True,2023-10-25 23:53:57.937506
+FAC000282,Primary Care Associates - 250,Clinic,9051 Oak Ave,Los Angeles,PA,31967,555-524-7591,213.0,True,2021-09-19 23:53:57.937506
+FAC000283,Regional Hospital - 672,Ambulatory Center,7817 Main St,Houston,TX,70819,555-357-9443,10.0,True,2024-09-27 23:53:57.937506
+FAC000284,Central Medical Center - 915,Urgent Care,373 Wellness Dr,San Diego,AZ,62264,555-564-9971,112.0,True,2023-07-15 23:53:57.937506
+FAC000285,Community Health Clinic - 798,Specialty Center,1206 Main St,Chicago,PA,72420,555-284-1304,,True,2023-12-20 23:53:57.937506
+FAC000286,Primary Care Associates - 225,Outpatient Center,4395 Oak Ave,Los Angeles,AZ,49500,555-742-9457,27.0,True,2023-05-15 23:53:57.937506
+FAC000287,Regional Hospital - 824,Specialty Center,752 Main St,Houston,FL,72425,555-983-4056,,True,2022-11-19 23:53:57.937506
+FAC000288,Advanced Healthcare Center - 52,Clinic,6620 Wellness Dr,Dallas,PA,79798,555-690-9178,88.0,True,2025-06-06 23:53:57.937506
+FAC000289,Family Practice Center - 940,Outpatient Center,4793 Wellness Dr,San Antonio,PA,40626,555-318-8656,91.0,True,2022-06-09 23:53:57.937506
+FAC000290,Community Health Clinic - 468,Outpatient Center,6906 Healthcare Blvd,Philadelphia,CA,59781,555-374-9728,,True,2024-04-19 23:53:57.937506
+FAC000291,Regional Hospital - 821,Clinic,6690 Main St,Dallas,TX,99589,555-928-8106,,True,2024-03-06 23:53:57.937506
+FAC000292,Advanced Healthcare Center - 684,Urgent Care,8891 Wellness Dr,Austin,CA,61127,555-679-1981,14.0,True,2025-03-27 23:53:57.937506
+FAC000293,Specialty Medical Center - 973,Outpatient Center,2601 Medical Pkwy,New York,AZ,72205,555-634-4287,134.0,True,2021-07-02 23:53:57.937506
+FAC000294,Advanced Healthcare Center - 628,Urgent Care,1469 Medical Pkwy,Chicago,CA,44422,555-473-8577,48.0,True,2022-07-05 23:53:57.937506
+FAC000295,Primary Care Associates - 851,Clinic,1394 Wellness Dr,San Antonio,TX,29025,555-251-4938,45.0,True,2025-07-28 23:53:57.937506
+FAC000296,Advanced Healthcare Center - 919,Specialty Center,3429 Oak Ave,New York,IL,79526,555-254-5919,66.0,True,2025-07-04 23:53:57.937506
+FAC000297,Regional Hospital - 762,Outpatient Center,8888 Medical Pkwy,Los Angeles,AZ,66981,555-964-8133,243.0,True,2022-11-24 23:53:57.937506
+FAC000298,Advanced Healthcare Center - 461,Ambulatory Center,6501 Wellness Dr,Chicago,IL,11554,555-520-6220,131.0,True,2025-02-03 23:53:57.937506
+FAC000299,Urgent Care Facility - 770,Urgent Care,1183 Medical Pkwy,San Diego,TX,47852,555-980-2055,,True,2024-11-16 23:53:57.937506
+FAC000300,Family Practice Center - 861,Outpatient Center,7267 Oak Ave,Austin,AZ,68827,555-749-4335,10.0,True,2021-03-11 23:53:57.937506
+FAC000301,Urgent Care Facility - 785,Urgent Care,1048 Oak Ave,San Antonio,CA,60070,555-966-7757,,True,2023-04-18 23:53:57.937506
+FAC000302,Advanced Healthcare Center - 642,Outpatient Center,1512 Healthcare Blvd,Los Angeles,CA,98931,555-373-5702,225.0,True,2022-09-18 23:53:57.937506
+FAC000303,Family Practice Center - 282,Outpatient Center,2000 Healthcare Blvd,Los Angeles,PA,51377,555-761-3631,95.0,True,2024-08-22 23:53:57.937506
+FAC000304,Advanced Healthcare Center - 80,Outpatient Center,1001 Medical Pkwy,Phoenix,CA,79501,555-362-4868,134.0,True,2025-07-28 23:53:57.937506
+FAC000305,Urgent Care Facility - 241,Specialty Center,2977 Main St,Houston,AZ,99505,555-515-4907,136.0,True,2025-04-01 23:53:57.937506
+FAC000306,Urgent Care Facility - 344,Ambulatory Center,307 Oak Ave,Philadelphia,AZ,15376,555-216-3456,67.0,False,2023-10-13 23:53:57.937506
+FAC000307,Specialty Medical Center - 915,Outpatient Center,285 Oak Ave,Los Angeles,PA,22761,555-296-1453,95.0,True,2022-08-02 23:53:57.937506
+FAC000308,Community Health Clinic - 142,Urgent Care,8233 Medical Pkwy,Austin,FL,79637,555-351-6087,119.0,True,2021-05-05 23:53:57.937506
+FAC000309,Regional Hospital - 237,Specialty Center,8668 Wellness Dr,New York,CA,93548,555-575-8952,98.0,True,2023-05-22 23:53:57.937506
+FAC000310,Primary Care Associates - 711,Hospital,4347 Oak Ave,San Antonio,FL,56376,555-673-8145,121.0,True,2023-02-09 23:53:57.937506
+FAC000311,Regional Hospital - 724,Urgent Care,6192 Oak Ave,San Antonio,CA,66595,555-532-1606,138.0,True,2021-12-27 23:53:57.937506
+FAC000312,Family Practice Center - 66,Urgent Care,4503 Main St,Austin,IL,90017,555-306-3610,287.0,True,2021-05-02 23:53:57.937506
+FAC000313,Primary Care Associates - 418,Ambulatory Center,580 Medical Pkwy,Dallas,PA,95467,555-379-3235,139.0,True,2022-11-12 23:53:57.937506
+FAC000314,Specialty Medical Center - 556,Hospital,7134 Medical Pkwy,Phoenix,PA,45728,555-129-5233,122.0,False,2021-10-11 23:53:57.937506
+FAC000315,Advanced Healthcare Center - 426,Specialty Center,8682 Main St,Austin,AZ,53904,555-908-5551,,True,2024-09-26 23:53:57.937506
+FAC000316,Central Medical Center - 212,Outpatient Center,4408 Wellness Dr,New York,CA,45432,555-774-3883,53.0,True,2025-09-17 23:53:57.937506
+FAC000317,Primary Care Associates - 399,Urgent Care,1362 Healthcare Blvd,Chicago,TX,45007,555-759-1691,14.0,True,2021-09-27 23:53:57.937506
+FAC000318,Central Medical Center - 878,Ambulatory Center,7557 Wellness Dr,San Diego,FL,22881,555-839-8960,116.0,True,2023-04-11 23:53:57.937506
+FAC000319,Primary Care Associates - 489,Ambulatory Center,6000 Main St,San Diego,CA,43468,555-901-1326,192.0,True,2024-08-17 23:53:57.937506
+FAC000320,Central Medical Center - 966,Ambulatory Center,8285 Wellness Dr,New York,PA,95766,555-156-2375,157.0,True,2023-09-25 23:53:57.937506
+FAC000321,Specialty Medical Center - 306,Hospital,2834 Medical Pkwy,Houston,AZ,86569,555-421-5882,62.0,True,2024-04-18 23:53:57.937506
+FAC000322,Primary Care Associates - 874,Outpatient Center,2677 Medical Pkwy,Dallas,CA,61269,555-987-2041,34.0,True,2021-11-21 23:53:57.937506
+FAC000323,Primary Care Associates - 552,Specialty Center,1785 Wellness Dr,Phoenix,IL,70438,555-516-6954,286.0,True,2024-02-24 23:53:57.937506
+FAC000324,Family Practice Center - 500,Urgent Care,1989 Oak Ave,Houston,NY,98511,555-787-2479,124.0,True,2021-05-13 23:53:57.937506
+FAC000325,Family Practice Center - 280,Ambulatory Center,8436 Main St,New York,AZ,41692,555-506-3302,241.0,False,2025-03-13 23:53:57.937506
+FAC000326,Primary Care Associates - 498,Outpatient Center,821 Main St,Austin,AZ,98065,555-341-2833,62.0,True,2025-11-02 23:53:57.937506
+FAC000327,Central Medical Center - 399,Outpatient Center,4106 Main St,Dallas,PA,87165,555-684-9196,146.0,True,2024-03-28 23:53:57.937506
+FAC000328,Specialty Medical Center - 685,Clinic,7829 Medical Pkwy,Dallas,NY,35549,555-223-9551,,True,2022-03-06 23:53:57.937506
+FAC000329,Primary Care Associates - 742,Ambulatory Center,6374 Oak Ave,Houston,CA,78151,555-780-9605,132.0,True,2022-11-15 23:53:57.937506
+FAC000330,Regional Hospital - 861,Hospital,3032 Main St,Austin,IL,54224,555-357-9133,137.0,True,2022-09-07 23:53:57.937506
+FAC000331,Advanced Healthcare Center - 942,Outpatient Center,9158 Healthcare Blvd,Chicago,FL,98829,555-192-4900,196.0,True,2023-10-06 23:53:57.937506
+FAC000332,Regional Hospital - 638,Specialty Center,3778 Medical Pkwy,New York,CA,33582,555-714-3003,263.0,True,2021-02-26 23:53:57.937506
+FAC000333,Central Medical Center - 929,Clinic,4167 Healthcare Blvd,Philadelphia,PA,51060,555-891-6134,,True,2026-01-04 23:53:57.937506
+FAC000334,Primary Care Associates - 607,Outpatient Center,5341 Medical Pkwy,Houston,NY,81776,555-437-7388,212.0,True,2024-07-15 23:53:57.937506
+FAC000335,Central Medical Center - 86,Ambulatory Center,1376 Wellness Dr,New York,FL,11386,555-925-4865,173.0,True,2022-03-04 23:53:57.937506
+FAC000336,Primary Care Associates - 139,Ambulatory Center,6208 Main St,Chicago,IL,98185,555-533-4571,116.0,True,2024-11-13 23:53:57.937506
+FAC000337,Advanced Healthcare Center - 187,Outpatient Center,8325 Main St,Los Angeles,TX,11110,555-247-2750,122.0,True,2021-10-22 23:53:57.937506
+FAC000338,Central Medical Center - 267,Specialty Center,3038 Oak Ave,Phoenix,TX,18906,555-279-4507,36.0,True,2022-11-21 23:53:57.937506
+FAC000339,Primary Care Associates - 336,Clinic,8550 Main St,San Antonio,IL,11567,555-381-8200,60.0,True,2021-08-02 23:53:57.937506
+FAC000340,Family Practice Center - 466,Ambulatory Center,6668 Main St,Philadelphia,TX,63903,555-518-5166,15.0,True,2023-04-21 23:53:57.937506
+FAC000341,Specialty Medical Center - 346,Clinic,7720 Medical Pkwy,San Antonio,PA,22805,555-983-1916,,True,2022-12-25 23:53:57.937506
+FAC000342,Primary Care Associates - 285,Hospital,5190 Medical Pkwy,San Antonio,FL,78847,555-602-9740,104.0,True,2023-03-29 23:53:57.937506
+FAC000343,Primary Care Associates - 259,Outpatient Center,1515 Wellness Dr,Austin,PA,23619,555-483-2850,40.0,True,2024-04-14 23:53:57.937506
+FAC000344,Community Health Clinic - 482,Ambulatory Center,7583 Main St,Houston,PA,99849,555-424-9941,51.0,True,2022-05-21 23:53:57.937506
+FAC000345,Central Medical Center - 768,Hospital,6144 Oak Ave,Dallas,IL,68450,555-533-8780,208.0,True,2024-09-20 23:53:57.937506
+FAC000346,Central Medical Center - 975,Clinic,4877 Wellness Dr,New York,CA,56073,555-799-5036,25.0,True,2024-03-27 23:53:57.937506
+FAC000347,Specialty Medical Center - 230,Hospital,5079 Wellness Dr,Los Angeles,FL,38759,555-384-3374,107.0,True,2023-06-16 23:53:57.937506
+FAC000348,Community Health Clinic - 800,Specialty Center,4074 Healthcare Blvd,Los Angeles,CA,47132,555-471-8786,59.0,True,2022-01-25 23:53:57.937506
+FAC000349,Central Medical Center - 773,Urgent Care,6133 Wellness Dr,Dallas,NY,43016,555-832-7025,,True,2023-05-02 23:53:57.937506
+FAC000350,Central Medical Center - 973,Specialty Center,8183 Oak Ave,Phoenix,CA,35307,555-941-6049,143.0,True,2023-02-27 23:53:57.937506
+FAC000351,Family Practice Center - 205,Clinic,9054 Oak Ave,Dallas,CA,14461,555-121-1570,93.0,True,2022-12-06 23:53:57.937506
+FAC000352,Central Medical Center - 637,Specialty Center,2566 Main St,Austin,NY,13106,555-961-1895,130.0,True,2021-03-24 23:53:57.937506
+FAC000353,Regional Hospital - 245,Ambulatory Center,6818 Main St,Philadelphia,FL,91185,555-807-4926,175.0,True,2021-11-23 23:53:57.937506
+FAC000354,Regional Hospital - 485,Clinic,3917 Wellness Dr,Philadelphia,AZ,22050,555-359-7302,,True,2021-12-06 23:53:57.937506
+FAC000355,Community Health Clinic - 578,Specialty Center,5775 Main St,Phoenix,AZ,17455,555-416-6945,23.0,True,2025-08-02 23:53:57.937506
+FAC000356,Family Practice Center - 477,Outpatient Center,5588 Main St,Houston,IL,87874,555-931-2999,39.0,True,2025-06-14 23:53:57.937506
+FAC000357,Urgent Care Facility - 786,Outpatient Center,6264 Medical Pkwy,Austin,AZ,96062,555-647-4872,,True,2023-08-28 23:53:57.937506
+FAC000358,Specialty Medical Center - 172,Specialty Center,1803 Oak Ave,Houston,AZ,38419,555-978-8248,31.0,True,2022-02-13 23:53:57.937506
+FAC000359,Community Health Clinic - 797,Ambulatory Center,8780 Oak Ave,San Diego,AZ,88562,555-497-1128,94.0,True,2025-08-10 23:53:57.937506
+FAC000360,Regional Hospital - 988,Ambulatory Center,6978 Healthcare Blvd,San Antonio,CA,93634,555-502-5186,35.0,True,2023-12-08 23:53:57.937506
+FAC000361,Urgent Care Facility - 111,Hospital,1081 Oak Ave,Austin,AZ,25963,555-408-2478,37.0,True,2025-04-30 23:53:57.937506
+FAC000362,Central Medical Center - 952,Ambulatory Center,4684 Main St,New York,CA,25725,555-942-4857,,True,2021-10-18 23:53:57.937506
+FAC000363,Urgent Care Facility - 590,Clinic,819 Oak Ave,Phoenix,CA,21322,555-404-4446,112.0,True,2025-12-19 23:53:57.937506
+FAC000364,Primary Care Associates - 407,Outpatient Center,8615 Healthcare Blvd,Chicago,PA,89257,555-980-3625,,True,2025-02-18 23:53:57.937506
+FAC000365,Family Practice Center - 78,Clinic,6202 Healthcare Blvd,San Antonio,NY,27027,555-549-6196,,True,2023-02-16 23:53:57.937506
+FAC000366,Family Practice Center - 105,Outpatient Center,1491 Wellness Dr,Dallas,IL,59277,555-931-7656,21.0,True,2021-11-05 23:53:57.937506
+FAC000367,Urgent Care Facility - 871,Urgent Care,1665 Wellness Dr,Los Angeles,NY,96034,555-908-1555,134.0,False,2025-05-12 23:53:57.937506
+FAC000368,Community Health Clinic - 816,Ambulatory Center,2287 Healthcare Blvd,Dallas,PA,94922,555-380-2312,,True,2025-02-09 23:53:57.937506
+FAC000369,Central Medical Center - 356,Specialty Center,1326 Wellness Dr,Los Angeles,FL,84195,555-942-9055,95.0,True,2024-12-07 23:53:57.937506
+FAC000370,Primary Care Associates - 678,Outpatient Center,9403 Main St,Dallas,TX,34217,555-582-7765,17.0,True,2023-08-03 23:53:57.937506
+FAC000371,Specialty Medical Center - 71,Specialty Center,7226 Oak Ave,Phoenix,CA,24528,555-961-6451,207.0,True,2021-03-01 23:53:57.937506
+FAC000372,Specialty Medical Center - 13,Urgent Care,3979 Medical Pkwy,Philadelphia,AZ,34151,555-834-7920,70.0,True,2025-05-28 23:53:57.937506
+FAC000373,Primary Care Associates - 843,Clinic,4376 Medical Pkwy,Los Angeles,FL,43205,555-997-2644,40.0,True,2025-10-28 23:53:57.937506
+FAC000374,Advanced Healthcare Center - 109,Specialty Center,6538 Medical Pkwy,Dallas,AZ,48609,555-944-3627,,True,2021-01-28 23:53:57.937506
+FAC000375,Primary Care Associates - 984,Outpatient Center,5311 Healthcare Blvd,Phoenix,TX,71204,555-815-5275,,True,2023-08-31 23:53:57.937506
+FAC000376,Specialty Medical Center - 651,Urgent Care,4555 Oak Ave,Dallas,PA,96570,555-618-2087,,True,2023-04-07 23:53:57.937506
+FAC000377,Advanced Healthcare Center - 725,Outpatient Center,1323 Oak Ave,Austin,PA,19924,555-460-7895,18.0,True,2025-01-31 23:53:57.937506
+FAC000378,Regional Hospital - 446,Urgent Care,2330 Wellness Dr,Phoenix,IL,93726,555-716-9973,18.0,True,2022-07-13 23:53:57.937506
+FAC000379,Regional Hospital - 752,Ambulatory Center,1885 Oak Ave,San Diego,CA,69433,555-855-6353,273.0,True,2021-07-16 23:53:57.937506
+FAC000380,Urgent Care Facility - 631,Ambulatory Center,1831 Oak Ave,San Antonio,FL,46226,555-564-1448,37.0,True,2023-02-06 23:53:57.937506
+FAC000381,Advanced Healthcare Center - 477,Ambulatory Center,7465 Healthcare Blvd,Austin,TX,65965,555-880-1853,174.0,True,2023-04-24 23:53:57.937506
+FAC000382,Primary Care Associates - 846,Ambulatory Center,5245 Healthcare Blvd,San Diego,TX,97500,555-756-4010,,True,2025-04-04 23:53:57.937506
+FAC000383,Urgent Care Facility - 331,Ambulatory Center,2078 Wellness Dr,Houston,TX,52389,555-745-8264,129.0,True,2021-11-04 23:53:57.937506
+FAC000384,Family Practice Center - 851,Urgent Care,5970 Oak Ave,Philadelphia,CA,43729,555-910-3229,25.0,True,2021-02-20 23:53:57.937506
+FAC000385,Community Health Clinic - 286,Outpatient Center,7504 Medical Pkwy,San Diego,CA,31229,555-103-7564,,True,2022-12-22 23:53:57.937506
+FAC000386,Advanced Healthcare Center - 250,Specialty Center,7691 Medical Pkwy,San Diego,CA,19698,555-304-6006,22.0,True,2023-09-12 23:53:57.937506
+FAC000387,Advanced Healthcare Center - 584,Clinic,2064 Main St,Austin,CA,46344,555-421-2347,128.0,True,2023-10-21 23:53:57.937506
+FAC000388,Primary Care Associates - 345,Clinic,2682 Medical Pkwy,New York,NY,18177,555-213-3585,130.0,True,2025-12-28 23:53:57.937506
+FAC000389,Central Medical Center - 507,Urgent Care,9984 Main St,San Diego,TX,60174,555-355-9460,,True,2024-05-18 23:53:57.937506
+FAC000390,Specialty Medical Center - 187,Outpatient Center,3622 Medical Pkwy,Los Angeles,FL,60933,555-830-3131,85.0,True,2025-05-20 23:53:57.937506
+FAC000391,Advanced Healthcare Center - 218,Urgent Care,2530 Main St,Phoenix,NY,53601,555-967-7722,52.0,False,2023-08-08 23:53:57.937506
+FAC000392,Specialty Medical Center - 817,Clinic,4166 Medical Pkwy,Los Angeles,IL,17872,555-911-6233,,True,2024-05-23 23:53:57.937506
+FAC000393,Urgent Care Facility - 349,Urgent Care,6592 Wellness Dr,San Antonio,TX,43847,555-562-8837,89.0,True,2022-01-02 23:53:57.937506
+FAC000394,Urgent Care Facility - 902,Urgent Care,902 Medical Pkwy,Houston,CA,44690,555-994-3187,,True,2021-02-08 23:53:57.937506
+FAC000395,Urgent Care Facility - 570,Ambulatory Center,4362 Oak Ave,Houston,PA,33321,555-366-3842,13.0,True,2022-04-01 23:53:57.937506
+FAC000396,Central Medical Center - 530,Clinic,609 Healthcare Blvd,Philadelphia,PA,67747,555-803-6367,168.0,True,2024-07-09 23:53:57.937506
+FAC000397,Family Practice Center - 88,Ambulatory Center,7508 Wellness Dr,San Antonio,CA,19096,555-918-5616,,True,2023-02-10 23:53:57.937506
+FAC000398,Family Practice Center - 738,Ambulatory Center,9113 Oak Ave,Philadelphia,FL,74450,555-303-2382,90.0,True,2024-03-26 23:53:57.937506
+FAC000399,Primary Care Associates - 501,Specialty Center,1651 Healthcare Blvd,Dallas,CA,36302,555-524-7022,113.0,True,2022-08-05 23:53:57.937506
+FAC000400,Family Practice Center - 708,Urgent Care,1769 Oak Ave,Dallas,NY,89993,555-286-7447,220.0,True,2021-01-20 23:53:57.937506
+FAC000401,Advanced Healthcare Center - 662,Specialty Center,2089 Main St,New York,CA,61463,555-997-7182,62.0,True,2023-12-16 23:53:57.937506
+FAC000402,Advanced Healthcare Center - 459,Urgent Care,1110 Oak Ave,Phoenix,TX,33388,555-954-4677,193.0,True,2022-11-18 23:53:57.937506
+FAC000403,Central Medical Center - 96,Outpatient Center,2241 Oak Ave,Houston,FL,94604,555-121-1376,29.0,True,2022-05-25 23:53:57.937506
+FAC000404,Urgent Care Facility - 227,Ambulatory Center,6663 Medical Pkwy,Phoenix,AZ,74494,555-671-4747,133.0,True,2025-02-10 23:53:57.937506
+FAC000405,Primary Care Associates - 709,Urgent Care,1476 Wellness Dr,Los Angeles,TX,24212,555-191-8576,192.0,True,2025-04-01 23:53:57.937506
+FAC000406,Family Practice Center - 314,Urgent Care,9702 Medical Pkwy,San Antonio,PA,28857,555-303-5289,133.0,True,2024-05-31 23:53:57.937506
+FAC000407,Specialty Medical Center - 485,Hospital,1328 Main St,Philadelphia,IL,80861,555-818-3764,47.0,True,2023-02-09 23:53:57.937506
+FAC000408,Specialty Medical Center - 436,Outpatient Center,1156 Oak Ave,Los Angeles,FL,66525,555-150-7570,18.0,True,2022-03-15 23:53:57.937506
+FAC000409,Specialty Medical Center - 361,Ambulatory Center,7365 Oak Ave,Dallas,TX,38624,555-732-8027,125.0,True,2024-11-23 23:53:57.937506
+FAC000410,Advanced Healthcare Center - 278,Outpatient Center,1606 Medical Pkwy,Chicago,CA,90473,555-714-5262,22.0,True,2021-07-16 23:53:57.937506
+FAC000411,Urgent Care Facility - 258,Specialty Center,2107 Main St,San Diego,TX,94323,555-252-2459,258.0,True,2022-08-07 23:53:57.937506
+FAC000412,Family Practice Center - 124,Specialty Center,7652 Main St,Philadelphia,TX,23926,555-476-3787,142.0,False,2022-01-13 23:53:57.937506
+FAC000413,Family Practice Center - 324,Urgent Care,2852 Wellness Dr,Philadelphia,FL,67878,555-680-2922,44.0,False,2023-12-17 23:53:57.937506
+FAC000414,Community Health Clinic - 761,Clinic,7196 Healthcare Blvd,Houston,NY,43947,555-114-9615,207.0,True,2023-02-17 23:53:57.937506
+FAC000415,Regional Hospital - 197,Urgent Care,8228 Main St,Austin,AZ,23538,555-545-8433,,True,2022-08-26 23:53:57.937506
+FAC000416,Family Practice Center - 757,Hospital,6370 Healthcare Blvd,Phoenix,PA,14569,555-947-9096,,True,2024-08-19 23:53:57.937506
+FAC000417,Advanced Healthcare Center - 284,Urgent Care,2931 Medical Pkwy,Chicago,FL,19557,555-221-4677,14.0,True,2023-05-25 23:53:57.937506
+FAC000418,Urgent Care Facility - 103,Ambulatory Center,3617 Oak Ave,Houston,TX,19229,555-830-4328,126.0,True,2023-06-13 23:53:57.937506
+FAC000419,Family Practice Center - 304,Hospital,4605 Medical Pkwy,San Diego,PA,84887,555-295-5361,28.0,True,2024-11-10 23:53:57.937506
+FAC000420,Family Practice Center - 370,Urgent Care,7407 Oak Ave,Houston,IL,42846,555-394-9096,,True,2024-03-10 23:53:57.937506
+FAC000421,Regional Hospital - 310,Specialty Center,667 Wellness Dr,Houston,TX,68442,555-491-3133,115.0,True,2021-11-08 23:53:57.937506
+FAC000422,Central Medical Center - 726,Ambulatory Center,4126 Medical Pkwy,Houston,AZ,12459,555-541-4385,,True,2022-01-02 23:53:57.937506
+FAC000423,Regional Hospital - 281,Urgent Care,8273 Healthcare Blvd,Phoenix,PA,75234,555-714-4531,,True,2021-04-06 23:53:57.937506
+FAC000424,Central Medical Center - 998,Ambulatory Center,9122 Healthcare Blvd,Houston,AZ,29510,555-943-5636,84.0,True,2025-04-13 23:53:57.937506
+FAC000425,Central Medical Center - 567,Specialty Center,1099 Main St,Houston,AZ,95572,555-844-4102,70.0,True,2025-02-13 23:53:57.937506
+FAC000426,Urgent Care Facility - 715,Clinic,4683 Healthcare Blvd,Houston,AZ,93930,555-528-3955,,True,2023-02-07 23:53:57.937506
+FAC000427,Regional Hospital - 654,Clinic,2348 Healthcare Blvd,Houston,AZ,10113,555-518-3391,284.0,True,2022-01-12 23:53:57.937506
+FAC000428,Advanced Healthcare Center - 106,Outpatient Center,3367 Wellness Dr,Austin,PA,14959,555-129-5754,175.0,True,2021-05-23 23:53:57.937506
+FAC000429,Central Medical Center - 588,Urgent Care,4182 Wellness Dr,Philadelphia,PA,97111,555-368-4858,65.0,True,2023-05-21 23:53:57.937506
+FAC000430,Urgent Care Facility - 481,Outpatient Center,419 Healthcare Blvd,Chicago,FL,61181,555-732-8388,160.0,True,2025-12-26 23:53:57.937506
+FAC000431,Advanced Healthcare Center - 452,Ambulatory Center,5983 Healthcare Blvd,Los Angeles,NY,44922,555-354-7056,137.0,True,2024-04-05 23:53:57.937506
+FAC000432,Specialty Medical Center - 189,Urgent Care,9021 Healthcare Blvd,Los Angeles,AZ,29871,555-696-8506,84.0,True,2023-09-16 23:53:57.937506
+FAC000433,Central Medical Center - 259,Clinic,5736 Wellness Dr,Los Angeles,NY,53231,555-187-1169,23.0,True,2025-01-13 23:53:57.937506
+FAC000434,Advanced Healthcare Center - 117,Hospital,8331 Medical Pkwy,San Diego,TX,61292,555-580-3182,254.0,True,2025-03-14 23:53:57.937506
+FAC000435,Community Health Clinic - 411,Outpatient Center,6463 Medical Pkwy,Austin,TX,85319,555-992-6296,280.0,True,2023-05-28 23:53:57.937506
+FAC000436,Advanced Healthcare Center - 76,Ambulatory Center,3046 Main St,New York,FL,10485,555-809-7513,256.0,True,2025-08-31 23:53:57.937506
+FAC000437,Central Medical Center - 156,Outpatient Center,5324 Wellness Dr,Dallas,NY,77552,555-803-4476,30.0,True,2026-01-04 23:53:57.937506
+FAC000438,Regional Hospital - 831,Clinic,3688 Main St,New York,CA,74314,555-830-7283,287.0,True,2024-04-17 23:53:57.937506
+FAC000439,Urgent Care Facility - 88,Clinic,4702 Main St,San Diego,AZ,72670,555-825-7935,21.0,True,2022-02-09 23:53:57.937506
+FAC000440,Family Practice Center - 122,Hospital,7828 Wellness Dr,Philadelphia,AZ,67154,555-853-5198,133.0,True,2024-12-27 23:53:57.937506
+FAC000441,Primary Care Associates - 621,Ambulatory Center,5956 Wellness Dr,Austin,TX,62941,555-174-2561,183.0,True,2024-12-03 23:53:57.937506
+FAC000442,Family Practice Center - 795,Outpatient Center,3913 Oak Ave,Philadelphia,PA,19188,555-670-1962,,False,2022-02-24 23:53:57.937506
+FAC000443,Primary Care Associates - 462,Clinic,1740 Oak Ave,San Diego,NY,80795,555-153-6453,,True,2025-07-07 23:53:57.937506
+FAC000444,Advanced Healthcare Center - 305,Ambulatory Center,4051 Medical Pkwy,Austin,AZ,39602,555-340-8715,33.0,True,2023-01-10 23:53:57.937506
+FAC000445,Primary Care Associates - 313,Clinic,8843 Main St,Phoenix,TX,10433,555-462-1745,73.0,True,2023-06-21 23:53:57.937506
+FAC000446,Central Medical Center - 625,Hospital,3694 Wellness Dr,San Diego,AZ,60387,555-105-5155,,True,2024-03-09 23:53:57.937506
+FAC000447,Community Health Clinic - 971,Hospital,6463 Medical Pkwy,Chicago,FL,73185,555-616-7241,21.0,False,2025-07-06 23:53:57.937506
+FAC000448,Family Practice Center - 641,Specialty Center,2946 Oak Ave,Dallas,PA,25886,555-409-7466,,True,2025-09-12 23:53:57.937506
+FAC000449,Family Practice Center - 271,Urgent Care,3975 Wellness Dr,Phoenix,NY,84349,555-787-7076,74.0,True,2022-07-16 23:53:57.937506
+FAC000450,Community Health Clinic - 161,Ambulatory Center,5310 Medical Pkwy,San Antonio,CA,80163,555-235-1673,,True,2023-06-01 23:53:57.937506
+FAC000451,Family Practice Center - 178,Specialty Center,9792 Main St,Houston,IL,57044,555-694-3938,62.0,True,2022-09-16 23:53:57.937506
+FAC000452,Community Health Clinic - 161,Hospital,5861 Wellness Dr,Austin,TX,53704,555-366-3783,,True,2025-03-01 23:53:57.937506
+FAC000453,Central Medical Center - 419,Ambulatory Center,9334 Oak Ave,Chicago,TX,99369,555-615-9074,34.0,True,2025-09-01 23:53:57.937506
+FAC000454,Advanced Healthcare Center - 706,Clinic,9325 Oak Ave,New York,IL,49692,555-447-8669,12.0,True,2024-01-29 23:53:57.937506
+FAC000455,Advanced Healthcare Center - 299,Hospital,8164 Wellness Dr,Dallas,FL,62509,555-235-2468,27.0,True,2022-06-22 23:53:57.937506
+FAC000456,Central Medical Center - 238,Outpatient Center,5163 Oak Ave,San Antonio,FL,17234,555-424-9690,238.0,True,2022-11-27 23:53:57.937506
+FAC000457,Urgent Care Facility - 724,Clinic,8135 Main St,San Diego,IL,92873,555-543-3323,,True,2021-02-01 23:53:57.937506
+FAC000458,Urgent Care Facility - 720,Specialty Center,1578 Main St,Dallas,TX,94813,555-366-2914,141.0,True,2024-10-10 23:53:57.937506
+FAC000459,Advanced Healthcare Center - 73,Ambulatory Center,3911 Wellness Dr,New York,CA,21883,555-420-1723,111.0,True,2024-02-09 23:53:57.937506
+FAC000460,Family Practice Center - 947,Specialty Center,3684 Main St,Dallas,TX,57887,555-230-9179,277.0,True,2022-07-08 23:53:57.937506
+FAC000461,Urgent Care Facility - 807,Specialty Center,8725 Healthcare Blvd,Philadelphia,IL,80074,555-992-5603,50.0,True,2025-12-18 23:53:57.937506
+FAC000462,Family Practice Center - 436,Ambulatory Center,111 Medical Pkwy,San Antonio,AZ,54572,555-865-6907,239.0,True,2024-12-17 23:53:57.937506
+FAC000463,Community Health Clinic - 558,Clinic,3400 Oak Ave,Chicago,NY,20545,555-540-5635,115.0,True,2024-07-02 23:53:57.937506
+FAC000464,Family Practice Center - 664,Urgent Care,5682 Oak Ave,San Diego,PA,70245,555-997-5312,78.0,True,2024-06-12 23:53:57.937506
+FAC000465,Regional Hospital - 931,Urgent Care,5401 Main St,Los Angeles,AZ,48005,555-727-5321,137.0,False,2021-06-10 23:53:57.937506
+FAC000466,Urgent Care Facility - 847,Urgent Care,459 Oak Ave,Dallas,CA,94907,555-629-6128,,True,2021-03-05 23:53:57.937506
+FAC000467,Regional Hospital - 74,Ambulatory Center,9711 Oak Ave,San Diego,TX,36623,555-546-3703,17.0,True,2023-08-27 23:53:57.937506
+FAC000468,Central Medical Center - 170,Hospital,1917 Wellness Dr,Philadelphia,FL,33149,555-423-9049,172.0,True,2022-10-07 23:53:57.937506
+FAC000469,Urgent Care Facility - 610,Hospital,6078 Main St,New York,PA,82676,555-882-3478,14.0,True,2021-12-14 23:53:57.937506
+FAC000470,Urgent Care Facility - 450,Ambulatory Center,6220 Healthcare Blvd,New York,TX,15155,555-669-8208,60.0,False,2024-04-29 23:53:57.937506
+FAC000471,Community Health Clinic - 480,Outpatient Center,9701 Main St,Houston,NY,60353,555-154-4095,235.0,True,2023-12-25 23:53:57.937506
+FAC000472,Urgent Care Facility - 717,Clinic,5614 Medical Pkwy,San Antonio,PA,96603,555-252-1894,,False,2022-07-17 23:53:57.937506
+FAC000473,Primary Care Associates - 966,Outpatient Center,5385 Oak Ave,Austin,AZ,35035,555-335-4000,275.0,True,2021-09-28 23:53:57.937506
+FAC000474,Urgent Care Facility - 513,Ambulatory Center,2680 Healthcare Blvd,Los Angeles,NY,49173,555-136-8704,49.0,True,2023-10-13 23:53:57.937506
+FAC000475,Advanced Healthcare Center - 449,Ambulatory Center,8082 Medical Pkwy,Philadelphia,CA,61131,555-366-3679,269.0,True,2024-08-12 23:53:57.937506
+FAC000476,Community Health Clinic - 613,Hospital,2954 Wellness Dr,Philadelphia,FL,23994,555-822-8653,26.0,False,2022-11-23 23:53:57.937506
+FAC000477,Central Medical Center - 911,Clinic,5946 Oak Ave,Austin,AZ,92656,555-546-2900,149.0,True,2023-01-03 23:53:57.937506
+FAC000478,Primary Care Associates - 753,Specialty Center,9749 Oak Ave,Phoenix,PA,57089,555-606-1668,,True,2022-06-12 23:53:57.937506
+FAC000479,Specialty Medical Center - 619,Clinic,6299 Medical Pkwy,Chicago,AZ,73766,555-552-6841,,False,2022-05-06 23:53:57.937506
+FAC000480,Urgent Care Facility - 27,Hospital,4925 Oak Ave,Dallas,CA,21123,555-826-8949,123.0,True,2024-11-27 23:53:57.937506
+FAC000481,Community Health Clinic - 235,Specialty Center,3011 Main St,Phoenix,TX,92941,555-568-9077,,True,2025-08-10 23:53:57.937506
+FAC000482,Central Medical Center - 784,Specialty Center,9485 Healthcare Blvd,Houston,TX,67407,555-215-3425,,True,2022-09-20 23:53:57.937506
+FAC000483,Urgent Care Facility - 591,Clinic,9397 Main St,Phoenix,IL,34833,555-226-6727,205.0,True,2025-03-09 23:53:57.937506
+FAC000484,Central Medical Center - 782,Ambulatory Center,3083 Wellness Dr,San Diego,TX,28342,555-195-4337,,True,2025-06-19 23:53:57.937506
+FAC000485,Regional Hospital - 482,Urgent Care,5313 Wellness Dr,Austin,NY,14679,555-989-5654,,True,2021-12-11 23:53:57.937506
+FAC000486,Advanced Healthcare Center - 939,Hospital,3719 Wellness Dr,Philadelphia,CA,35309,555-284-3757,,True,2024-10-29 23:53:57.937506
+FAC000487,Urgent Care Facility - 186,Hospital,1805 Healthcare Blvd,Philadelphia,TX,13324,555-867-9335,,True,2024-06-21 23:53:57.937506
+FAC000488,Primary Care Associates - 651,Urgent Care,2404 Medical Pkwy,Chicago,AZ,87718,555-942-5469,123.0,True,2025-01-15 23:53:57.937506
+FAC000489,Advanced Healthcare Center - 993,Outpatient Center,1374 Oak Ave,San Diego,PA,41258,555-676-4479,15.0,False,2024-07-26 23:53:57.937506
+FAC000490,Community Health Clinic - 482,Outpatient Center,5782 Medical Pkwy,San Antonio,CA,74124,555-697-1067,,True,2022-11-18 23:53:57.937506
+FAC000491,Specialty Medical Center - 419,Hospital,2850 Main St,Houston,TX,60956,555-638-3958,115.0,True,2025-06-20 23:53:57.937506
+FAC000492,Specialty Medical Center - 329,Urgent Care,5600 Healthcare Blvd,San Antonio,NY,18256,555-526-2258,135.0,True,2025-05-01 23:53:57.937506
+FAC000493,Community Health Clinic - 879,Urgent Care,286 Medical Pkwy,Philadelphia,IL,80851,555-352-9161,,True,2021-07-28 23:53:57.937506
+FAC000494,Regional Hospital - 338,Specialty Center,3535 Oak Ave,Philadelphia,IL,94332,555-793-2545,25.0,True,2023-02-11 23:53:57.937506
+FAC000495,Primary Care Associates - 711,Ambulatory Center,1210 Medical Pkwy,San Antonio,PA,50334,555-436-1425,65.0,True,2022-10-01 23:53:57.937506
+FAC000496,Advanced Healthcare Center - 296,Outpatient Center,4305 Main St,Phoenix,PA,75494,555-391-2998,,True,2022-06-05 23:53:57.937506
+FAC000497,Primary Care Associates - 834,Outpatient Center,120 Main St,San Diego,PA,79984,555-503-7120,33.0,True,2021-09-30 23:53:57.937506
+FAC000498,Central Medical Center - 466,Specialty Center,6423 Healthcare Blvd,Chicago,FL,68891,555-704-2737,59.0,True,2023-11-23 23:53:57.937506
+FAC000499,Community Health Clinic - 323,Clinic,6975 Oak Ave,Austin,CA,12151,555-957-6300,68.0,False,2024-03-10 23:53:57.937506
+FAC000500,Urgent Care Facility - 332,Outpatient Center,6883 Healthcare Blvd,Chicago,PA,14855,555-257-1473,15.0,False,2022-10-25 23:53:57.937506
+FAC000501,Community Health Clinic - 994,Specialty Center,6304 Medical Pkwy,Austin,PA,54470,555-183-8540,103.0,True,2021-09-17 23:53:57.937506
+FAC000502,Primary Care Associates - 886,Urgent Care,9046 Healthcare Blvd,Houston,NY,17347,555-950-8861,135.0,True,2021-04-04 23:53:57.937506
+FAC000503,Central Medical Center - 674,Clinic,1761 Healthcare Blvd,Los Angeles,NY,54265,555-564-5412,284.0,True,2022-09-21 23:53:57.937506
+FAC000504,Advanced Healthcare Center - 424,Hospital,9570 Oak Ave,Phoenix,NY,15611,555-708-1095,38.0,True,2022-08-26 23:53:57.937506
+FAC000505,Central Medical Center - 193,Urgent Care,2764 Healthcare Blvd,Houston,PA,63150,555-437-1718,28.0,True,2024-06-27 23:53:57.937506
+FAC000506,Specialty Medical Center - 638,Clinic,1307 Main St,Dallas,TX,25491,555-771-8423,127.0,True,2021-07-07 23:53:57.937506
+FAC000507,Advanced Healthcare Center - 641,Ambulatory Center,4931 Main St,San Antonio,PA,37745,555-432-3118,,True,2021-11-28 23:53:57.937506
+FAC000508,Advanced Healthcare Center - 779,Specialty Center,5321 Medical Pkwy,San Antonio,IL,95701,555-316-1797,216.0,True,2021-02-26 23:53:57.937506
+FAC000509,Central Medical Center - 209,Ambulatory Center,1815 Main St,Houston,NY,97466,555-920-5635,114.0,True,2022-08-03 23:53:57.937506
+FAC000510,Urgent Care Facility - 563,Urgent Care,5700 Oak Ave,Chicago,AZ,78566,555-430-1909,37.0,True,2022-04-17 23:53:57.937506
+FAC000511,Regional Hospital - 950,Ambulatory Center,6251 Oak Ave,Chicago,PA,70079,555-861-2158,98.0,True,2023-05-22 23:53:57.937506
+FAC000512,Urgent Care Facility - 449,Clinic,1328 Wellness Dr,San Diego,TX,98877,555-660-7248,129.0,True,2024-11-13 23:53:57.937506
+FAC000513,Advanced Healthcare Center - 125,Hospital,1625 Medical Pkwy,New York,PA,80328,555-194-7534,35.0,True,2025-02-05 23:53:57.937506
+FAC000514,Central Medical Center - 997,Ambulatory Center,9832 Wellness Dr,Chicago,FL,29523,555-361-3916,,True,2026-01-10 23:53:57.937506
+FAC000515,Family Practice Center - 727,Urgent Care,8009 Main St,San Antonio,AZ,85936,555-345-7535,113.0,True,2021-08-25 23:53:57.937506
+FAC000516,Regional Hospital - 319,Urgent Care,7166 Oak Ave,San Diego,AZ,40537,555-191-1336,37.0,True,2024-09-28 23:53:57.937506
+FAC000517,Central Medical Center - 566,Outpatient Center,7213 Oak Ave,Chicago,CA,19441,555-972-4411,192.0,True,2024-10-29 23:53:57.937506
+FAC000518,Primary Care Associates - 96,Ambulatory Center,977 Main St,Dallas,TX,14833,555-266-7365,80.0,True,2025-07-12 23:53:57.937506
+FAC000519,Family Practice Center - 862,Clinic,5524 Oak Ave,Dallas,AZ,28558,555-898-7592,63.0,False,2021-07-15 23:53:57.937506
+FAC000520,Community Health Clinic - 473,Clinic,3212 Healthcare Blvd,Philadelphia,TX,74080,555-391-3525,293.0,True,2022-08-05 23:53:57.937506
+FAC000521,Community Health Clinic - 664,Outpatient Center,9178 Wellness Dr,San Diego,NY,95699,555-223-5891,22.0,True,2025-03-21 23:53:57.937506
+FAC000522,Regional Hospital - 511,Ambulatory Center,4446 Medical Pkwy,Phoenix,FL,12498,555-602-8083,25.0,True,2025-03-28 23:53:57.937506
+FAC000523,Urgent Care Facility - 522,Specialty Center,4972 Oak Ave,Phoenix,CA,71763,555-853-6080,46.0,False,2025-02-12 23:53:57.937506
+FAC000524,Urgent Care Facility - 426,Specialty Center,1671 Main St,Dallas,IL,91051,555-801-3151,30.0,True,2023-05-18 23:53:57.937506
+FAC000525,Advanced Healthcare Center - 484,Outpatient Center,6537 Wellness Dr,Austin,AZ,16003,555-467-2574,,True,2021-02-19 23:53:57.937506
+FAC000526,Family Practice Center - 468,Urgent Care,9105 Healthcare Blvd,New York,FL,41808,555-952-7020,,True,2026-01-15 23:53:57.937506
+FAC000527,Regional Hospital - 393,Hospital,2616 Main St,San Antonio,PA,95037,555-624-4274,32.0,True,2024-03-24 23:53:57.937506
+FAC000528,Family Practice Center - 944,Specialty Center,6011 Main St,Los Angeles,FL,27109,555-601-8298,31.0,True,2025-08-09 23:53:57.937506
+FAC000529,Regional Hospital - 885,Ambulatory Center,7105 Main St,Chicago,CA,11882,555-497-8805,42.0,True,2025-10-01 23:53:57.937506
+FAC000530,Community Health Clinic - 283,Hospital,4925 Wellness Dr,New York,CA,32577,555-374-7931,47.0,True,2025-04-10 23:53:57.937506
+FAC000531,Primary Care Associates - 349,Clinic,7969 Oak Ave,Houston,FL,92924,555-192-7922,,True,2023-03-05 23:53:57.937506
+FAC000532,Urgent Care Facility - 841,Clinic,1689 Main St,Phoenix,CA,16548,555-930-7033,130.0,False,2021-07-07 23:53:57.937506
+FAC000533,Central Medical Center - 290,Specialty Center,3490 Oak Ave,San Diego,CA,50283,555-728-4053,137.0,False,2023-07-30 23:53:57.937506
+FAC000534,Urgent Care Facility - 858,Urgent Care,4881 Main St,Los Angeles,FL,22752,555-544-7979,232.0,True,2023-08-28 23:53:57.937506
+FAC000535,Advanced Healthcare Center - 887,Clinic,7858 Main St,San Diego,PA,69793,555-195-1662,133.0,True,2022-04-25 23:53:57.937506
+FAC000536,Regional Hospital - 458,Hospital,5152 Healthcare Blvd,Philadelphia,NY,90114,555-625-6599,,True,2023-05-25 23:53:57.937506
+FAC000537,Advanced Healthcare Center - 354,Urgent Care,7815 Healthcare Blvd,Phoenix,TX,32372,555-574-4673,,True,2024-03-17 23:53:57.937506
+FAC000538,Specialty Medical Center - 566,Specialty Center,4441 Main St,Philadelphia,IL,87469,555-763-3540,25.0,True,2024-05-06 23:53:57.937506
+FAC000539,Primary Care Associates - 467,Clinic,9014 Healthcare Blvd,Philadelphia,IL,18383,555-607-9638,,True,2023-03-28 23:53:57.937506
+FAC000540,Specialty Medical Center - 891,Specialty Center,3129 Medical Pkwy,Dallas,PA,23937,555-744-9596,136.0,True,2021-10-12 23:53:57.937506
+FAC000541,Family Practice Center - 715,Urgent Care,6349 Medical Pkwy,Dallas,FL,24965,555-185-5762,,False,2025-05-20 23:53:57.937506
+FAC000542,Family Practice Center - 586,Urgent Care,3156 Healthcare Blvd,Phoenix,TX,75161,555-579-8165,108.0,True,2024-09-09 23:53:57.937506
+FAC000543,Primary Care Associates - 240,Urgent Care,831 Medical Pkwy,Philadelphia,IL,87984,555-181-8825,117.0,True,2022-11-25 23:53:57.937506
+FAC000544,Primary Care Associates - 45,Outpatient Center,7304 Healthcare Blvd,New York,PA,90691,555-407-3434,46.0,True,2023-11-02 23:53:57.937506
+FAC000545,Specialty Medical Center - 763,Ambulatory Center,4415 Oak Ave,San Antonio,CA,38910,555-230-5921,,True,2023-12-05 23:53:57.937506
+FAC000546,Advanced Healthcare Center - 723,Outpatient Center,4500 Wellness Dr,Los Angeles,NY,18271,555-961-5073,,True,2021-09-14 23:53:57.937506
+FAC000547,Primary Care Associates - 396,Hospital,1109 Oak Ave,Philadelphia,CA,36560,555-635-8007,,True,2023-11-18 23:53:57.937506
+FAC000548,Regional Hospital - 508,Urgent Care,1684 Main St,Austin,CA,65864,555-402-1781,,True,2022-01-30 23:53:57.937506
+FAC000549,Central Medical Center - 130,Ambulatory Center,5732 Wellness Dr,Houston,NY,54216,555-664-2253,129.0,True,2023-05-20 23:53:57.937506
+FAC000550,Specialty Medical Center - 891,Urgent Care,6882 Wellness Dr,Austin,AZ,98918,555-146-9411,231.0,True,2024-01-19 23:53:57.937506
+FAC000551,Community Health Clinic - 896,Ambulatory Center,3827 Wellness Dr,Austin,FL,62692,555-210-9366,,True,2024-04-17 23:53:57.937506
+FAC000552,Advanced Healthcare Center - 103,Clinic,1099 Healthcare Blvd,Dallas,IL,52498,555-535-7766,42.0,True,2021-05-04 23:53:57.937506
+FAC000553,Advanced Healthcare Center - 16,Hospital,8661 Healthcare Blvd,Chicago,NY,25833,555-196-8612,132.0,True,2023-02-11 23:53:57.937506
+FAC000554,Regional Hospital - 420,Ambulatory Center,8873 Healthcare Blvd,Phoenix,TX,99664,555-776-5151,45.0,True,2024-04-06 23:53:57.937506
+FAC000555,Regional Hospital - 77,Hospital,9483 Oak Ave,Philadelphia,TX,85493,555-463-5175,,True,2023-01-25 23:53:57.937506
+FAC000556,Advanced Healthcare Center - 801,Specialty Center,7903 Medical Pkwy,Philadelphia,FL,81550,555-699-2339,,True,2025-08-08 23:53:57.937506
+FAC000557,Urgent Care Facility - 347,Urgent Care,1393 Healthcare Blvd,Dallas,TX,28000,555-887-9248,,True,2021-02-02 23:53:57.937506
+FAC000558,Primary Care Associates - 666,Clinic,668 Wellness Dr,San Diego,AZ,52151,555-116-2866,44.0,True,2022-08-25 23:53:57.937506
+FAC000559,Community Health Clinic - 873,Specialty Center,9458 Wellness Dr,San Diego,FL,37948,555-858-8583,,True,2021-04-27 23:53:57.937506
+FAC000560,Specialty Medical Center - 873,Ambulatory Center,9463 Wellness Dr,Los Angeles,NY,15975,555-283-3985,202.0,True,2024-11-03 23:53:57.937506
+FAC000561,Primary Care Associates - 978,Outpatient Center,2515 Main St,San Antonio,AZ,87736,555-963-7438,,True,2025-02-09 23:53:57.937506
+FAC000562,Specialty Medical Center - 642,Ambulatory Center,7457 Oak Ave,Austin,TX,32734,555-146-2364,,True,2022-06-28 23:53:57.937506
+FAC000563,Advanced Healthcare Center - 894,Urgent Care,2838 Oak Ave,Phoenix,CA,53975,555-526-5876,17.0,True,2021-05-14 23:53:57.937506
+FAC000564,Central Medical Center - 633,Ambulatory Center,3257 Oak Ave,San Diego,CA,18286,555-421-8454,69.0,True,2024-06-26 23:53:57.937506
+FAC000565,Community Health Clinic - 241,Hospital,799 Healthcare Blvd,Chicago,AZ,25826,555-875-8371,50.0,True,2022-01-20 23:53:57.937506
+FAC000566,Urgent Care Facility - 233,Ambulatory Center,1383 Healthcare Blvd,Chicago,PA,45899,555-738-5342,48.0,True,2025-03-29 23:53:57.937506
+FAC000567,Community Health Clinic - 445,Urgent Care,3408 Oak Ave,Philadelphia,TX,28512,555-449-4066,105.0,True,2021-05-01 23:53:57.937506
+FAC000568,Community Health Clinic - 779,Urgent Care,9849 Medical Pkwy,San Antonio,TX,64415,555-316-4032,,True,2023-08-04 23:53:57.937506
+FAC000569,Community Health Clinic - 455,Outpatient Center,5338 Main St,Austin,TX,32026,555-180-5248,82.0,True,2022-11-25 23:53:57.937506
+FAC000570,Regional Hospital - 711,Clinic,1525 Healthcare Blvd,Austin,TX,58487,555-992-2742,117.0,True,2023-07-26 23:53:57.937506
+FAC000571,Urgent Care Facility - 926,Clinic,9215 Healthcare Blvd,San Antonio,NY,82536,555-544-9755,,True,2023-04-18 23:53:57.937506
+FAC000572,Central Medical Center - 48,Clinic,9144 Medical Pkwy,Los Angeles,AZ,31627,555-118-1095,154.0,True,2022-02-22 23:53:57.937506
+FAC000573,Specialty Medical Center - 816,Specialty Center,4625 Wellness Dr,Los Angeles,AZ,67496,555-504-2911,,True,2021-08-14 23:53:57.937506
+FAC000574,Central Medical Center - 301,Clinic,7606 Main St,Chicago,NY,41934,555-113-3813,146.0,True,2024-08-20 23:53:57.937506
+FAC000575,Specialty Medical Center - 384,Specialty Center,9726 Wellness Dr,Philadelphia,CA,86282,555-771-8817,,True,2022-03-14 23:53:57.937506
+FAC000576,Primary Care Associates - 150,Ambulatory Center,6974 Main St,Houston,AZ,15334,555-571-7637,118.0,True,2025-05-14 23:53:57.937506
+FAC000577,Family Practice Center - 544,Outpatient Center,6890 Oak Ave,Philadelphia,IL,27481,555-989-8974,,True,2022-11-30 23:53:57.937506
+FAC000578,Primary Care Associates - 580,Urgent Care,2528 Wellness Dr,Philadelphia,AZ,23102,555-410-6910,121.0,True,2023-08-08 23:53:57.937506
+FAC000579,Regional Hospital - 175,Specialty Center,9732 Wellness Dr,Phoenix,PA,92863,555-807-7471,142.0,True,2022-05-21 23:53:57.937506
+FAC000580,Regional Hospital - 81,Ambulatory Center,1741 Main St,Phoenix,AZ,90273,555-923-5958,287.0,True,2024-02-02 23:53:57.937506
+FAC000581,Primary Care Associates - 635,Outpatient Center,9319 Main St,Austin,FL,59300,555-189-3049,69.0,True,2025-01-16 23:53:57.937506
+FAC000582,Family Practice Center - 510,Specialty Center,4787 Wellness Dr,San Antonio,FL,30677,555-238-1227,,False,2025-11-25 23:53:57.937506
+FAC000583,Regional Hospital - 238,Outpatient Center,5733 Healthcare Blvd,Phoenix,CA,12048,555-295-2833,26.0,True,2021-03-09 23:53:57.937506
+FAC000584,Advanced Healthcare Center - 654,Ambulatory Center,4427 Healthcare Blvd,San Diego,NY,73827,555-935-1260,,True,2023-12-29 23:53:57.937506
+FAC000585,Urgent Care Facility - 471,Clinic,8055 Wellness Dr,Philadelphia,CA,20580,555-812-4083,50.0,True,2021-03-31 23:53:57.937506
+FAC000586,Urgent Care Facility - 683,Clinic,7850 Main St,Austin,CA,10832,555-979-1439,,True,2023-06-06 23:53:57.937506
+FAC000587,Central Medical Center - 921,Ambulatory Center,2921 Medical Pkwy,Dallas,NY,10946,555-314-8882,,True,2021-09-20 23:53:57.937506
+FAC000588,Advanced Healthcare Center - 923,Outpatient Center,6702 Oak Ave,San Diego,PA,33516,555-764-3378,94.0,True,2022-04-14 23:53:57.937506
+FAC000589,Urgent Care Facility - 694,Hospital,6681 Main St,San Antonio,IL,21683,555-765-4961,194.0,True,2024-02-07 23:53:57.937506
+FAC000590,Regional Hospital - 76,Outpatient Center,6584 Medical Pkwy,Chicago,NY,95426,555-546-9824,11.0,True,2021-12-16 23:53:57.937506
+FAC000591,Advanced Healthcare Center - 968,Specialty Center,3992 Main St,Chicago,CA,87821,555-295-2410,,True,2023-08-31 23:53:57.937506
+FAC000592,Specialty Medical Center - 602,Outpatient Center,7885 Medical Pkwy,New York,FL,47189,555-408-8592,,True,2024-11-04 23:53:57.937506
+FAC000593,Urgent Care Facility - 655,Ambulatory Center,6202 Main St,Chicago,NY,64555,555-251-8765,43.0,True,2022-08-01 23:53:57.937506
+FAC000594,Primary Care Associates - 707,Urgent Care,5635 Medical Pkwy,Houston,PA,72391,555-532-1357,209.0,True,2022-11-26 23:53:57.937506
+FAC000595,Urgent Care Facility - 468,Hospital,5194 Medical Pkwy,Phoenix,AZ,26632,555-219-3721,120.0,True,2021-02-16 23:53:57.937506
+FAC000596,Urgent Care Facility - 204,Outpatient Center,8154 Main St,Los Angeles,FL,37021,555-256-8295,197.0,True,2024-12-20 23:53:57.937506
+FAC000597,Primary Care Associates - 874,Hospital,3834 Oak Ave,Houston,AZ,28754,555-596-8724,37.0,True,2023-11-24 23:53:57.937506
+FAC000598,Advanced Healthcare Center - 110,Hospital,5023 Healthcare Blvd,Chicago,IL,93863,555-120-8364,15.0,True,2023-12-11 23:53:57.937506
+FAC000599,Family Practice Center - 391,Outpatient Center,5357 Medical Pkwy,San Antonio,IL,45513,555-699-4975,,True,2025-01-14 23:53:57.937506
+FAC000600,Specialty Medical Center - 589,Outpatient Center,6928 Wellness Dr,Los Angeles,NY,78562,555-306-5830,,True,2021-11-06 23:53:57.937506
+FAC000601,Urgent Care Facility - 717,Clinic,1562 Oak Ave,Los Angeles,NY,69037,555-683-7418,108.0,True,2025-12-25 23:53:57.937506
+FAC000602,Urgent Care Facility - 23,Outpatient Center,7337 Oak Ave,Los Angeles,NY,64005,555-152-6469,,True,2024-12-10 23:53:57.937506
+FAC000603,Primary Care Associates - 282,Outpatient Center,6771 Healthcare Blvd,San Diego,TX,41359,555-108-2682,98.0,True,2023-07-25 23:53:57.937506
+FAC000604,Central Medical Center - 580,Clinic,8562 Medical Pkwy,Dallas,CA,32878,555-745-8074,,True,2024-01-07 23:53:57.937506
+FAC000605,Central Medical Center - 933,Clinic,1020 Wellness Dr,New York,CA,90024,555-525-9121,,True,2023-02-03 23:53:57.937506
+FAC000606,Advanced Healthcare Center - 853,Urgent Care,2704 Main St,New York,PA,14931,555-854-5764,97.0,True,2024-12-12 23:53:57.937506
+FAC000607,Urgent Care Facility - 795,Outpatient Center,5197 Wellness Dr,San Antonio,IL,88154,555-137-8987,168.0,True,2026-01-04 23:53:57.937506
+FAC000608,Family Practice Center - 622,Specialty Center,6709 Oak Ave,Dallas,AZ,33593,555-509-8964,103.0,True,2022-10-03 23:53:57.937506
+FAC000609,Specialty Medical Center - 225,Hospital,8689 Wellness Dr,Los Angeles,PA,75521,555-625-8993,10.0,True,2024-04-20 23:53:57.937506
+FAC000610,Family Practice Center - 636,Ambulatory Center,574 Oak Ave,Los Angeles,PA,90222,555-337-1994,195.0,True,2024-03-14 23:53:57.937506
+FAC000611,Urgent Care Facility - 695,Clinic,3258 Oak Ave,Phoenix,PA,21537,555-640-1311,,True,2025-07-07 23:53:57.937506
+FAC000612,Regional Hospital - 644,Ambulatory Center,1044 Oak Ave,Austin,AZ,92207,555-532-6174,121.0,True,2023-12-22 23:53:57.937506
+FAC000613,Community Health Clinic - 926,Outpatient Center,641 Healthcare Blvd,Chicago,AZ,49478,555-666-2040,49.0,True,2024-08-14 23:53:57.937506
+FAC000614,Central Medical Center - 317,Specialty Center,928 Medical Pkwy,Los Angeles,FL,55593,555-374-7834,,True,2023-03-23 23:53:57.937506
+FAC000615,Advanced Healthcare Center - 35,Hospital,3362 Medical Pkwy,San Antonio,AZ,64891,555-584-2915,101.0,True,2025-12-20 23:53:57.937506
+FAC000616,Specialty Medical Center - 750,Outpatient Center,6135 Healthcare Blvd,Phoenix,CA,10599,555-606-6681,79.0,True,2022-08-22 23:53:57.937506
+FAC000617,Regional Hospital - 93,Specialty Center,8375 Healthcare Blvd,Houston,TX,83100,555-559-8147,,True,2024-07-05 23:53:57.937506
+FAC000618,Urgent Care Facility - 335,Hospital,2129 Main St,Houston,PA,40885,555-121-3643,83.0,True,2025-11-08 23:53:57.937506
+FAC000619,Primary Care Associates - 180,Specialty Center,4063 Medical Pkwy,Phoenix,AZ,35153,555-394-4149,30.0,True,2022-05-31 23:53:57.937506
+FAC000620,Family Practice Center - 136,Clinic,8108 Wellness Dr,San Diego,IL,25401,555-580-6633,105.0,True,2024-07-01 23:53:57.937506
+FAC000621,Specialty Medical Center - 544,Outpatient Center,7408 Oak Ave,Chicago,NY,79494,555-548-4802,11.0,True,2022-06-11 23:53:57.937506
+FAC000622,Urgent Care Facility - 851,Specialty Center,7875 Wellness Dr,Chicago,NY,22541,555-619-4599,98.0,True,2023-05-11 23:53:57.937506
+FAC000623,Regional Hospital - 264,Specialty Center,9133 Medical Pkwy,Dallas,FL,91123,555-701-6556,261.0,True,2023-10-23 23:53:57.937506
+FAC000624,Advanced Healthcare Center - 991,Outpatient Center,5740 Oak Ave,Chicago,IL,57435,555-716-8675,80.0,True,2025-10-18 23:53:57.937506
+FAC000625,Urgent Care Facility - 765,Hospital,4337 Main St,New York,IL,80742,555-234-5806,74.0,True,2022-02-21 23:53:57.937506
+FAC000626,Specialty Medical Center - 824,Outpatient Center,4770 Main St,New York,IL,76524,555-840-7395,34.0,True,2022-02-03 23:53:57.937506
+FAC000627,Community Health Clinic - 480,Specialty Center,6433 Main St,Philadelphia,TX,38740,555-526-6902,27.0,True,2024-08-15 23:53:57.937506
+FAC000628,Community Health Clinic - 145,Ambulatory Center,2769 Wellness Dr,Philadelphia,FL,70845,555-915-8738,50.0,True,2024-07-03 23:53:57.937506
+FAC000629,Family Practice Center - 881,Urgent Care,3611 Oak Ave,San Diego,NY,92111,555-918-3654,39.0,True,2022-07-15 23:53:57.937506
+FAC000630,Primary Care Associates - 991,Ambulatory Center,3788 Oak Ave,San Diego,FL,96419,555-736-4394,86.0,True,2025-09-20 23:53:57.937506
+FAC000631,Specialty Medical Center - 93,Hospital,4508 Healthcare Blvd,Dallas,TX,37277,555-389-2412,226.0,True,2022-11-01 23:53:57.937506
+FAC000632,Primary Care Associates - 15,Specialty Center,8509 Main St,Phoenix,FL,46231,555-783-8911,,True,2021-06-04 23:53:57.937506
+FAC000633,Urgent Care Facility - 550,Urgent Care,245 Healthcare Blvd,Dallas,AZ,16955,555-232-3839,,True,2025-11-14 23:53:57.937506
+FAC000634,Community Health Clinic - 466,Hospital,2267 Oak Ave,San Diego,NY,35391,555-304-3561,,True,2021-03-15 23:53:57.937506
+FAC000635,Specialty Medical Center - 689,Ambulatory Center,9949 Main St,Chicago,IL,24769,555-720-9063,,True,2022-01-06 23:53:57.937506
+FAC000636,Urgent Care Facility - 599,Clinic,3766 Medical Pkwy,Dallas,TX,29558,555-203-7815,20.0,True,2023-05-27 23:53:57.937506
+FAC000637,Primary Care Associates - 843,Outpatient Center,5104 Medical Pkwy,Chicago,CA,99816,555-605-5975,21.0,True,2022-08-20 23:53:57.937506
+FAC000638,Specialty Medical Center - 111,Hospital,7043 Healthcare Blvd,Austin,NY,72182,555-340-4431,,True,2022-07-01 23:53:57.937506
+FAC000639,Family Practice Center - 483,Hospital,5813 Healthcare Blvd,Austin,PA,75210,555-670-1770,49.0,True,2023-06-30 23:53:57.937506
+FAC000640,Central Medical Center - 635,Specialty Center,4228 Oak Ave,San Diego,FL,33111,555-118-6878,289.0,True,2023-04-17 23:53:57.937506
+FAC000641,Specialty Medical Center - 938,Urgent Care,7746 Medical Pkwy,Austin,IL,30940,555-367-6849,17.0,True,2025-01-25 23:53:57.937506
+FAC000642,Family Practice Center - 664,Ambulatory Center,8630 Wellness Dr,San Antonio,IL,97836,555-793-3598,52.0,True,2023-05-22 23:53:57.937506
+FAC000643,Community Health Clinic - 651,Hospital,6606 Wellness Dr,Dallas,AZ,15651,555-278-9248,96.0,True,2021-11-02 23:53:57.937506
+FAC000644,Advanced Healthcare Center - 932,Outpatient Center,1776 Main St,Dallas,TX,17081,555-132-2043,91.0,True,2021-02-19 23:53:57.937506
+FAC000645,Urgent Care Facility - 665,Hospital,8480 Medical Pkwy,Phoenix,AZ,94523,555-445-8055,143.0,True,2022-05-30 23:53:57.937506
+FAC000646,Primary Care Associates - 120,Hospital,9298 Wellness Dr,Philadelphia,CA,57735,555-216-4714,85.0,True,2021-10-31 23:53:57.937506
+FAC000647,Regional Hospital - 47,Specialty Center,4731 Medical Pkwy,San Diego,PA,47363,555-223-4671,281.0,True,2022-12-25 23:53:57.937506
+FAC000648,Central Medical Center - 312,Hospital,1871 Healthcare Blvd,Dallas,CA,37471,555-598-5224,,True,2021-07-07 23:53:57.937506
+FAC000649,Advanced Healthcare Center - 119,Urgent Care,1145 Medical Pkwy,Houston,AZ,66973,555-448-6820,149.0,True,2025-06-17 23:53:57.937506
+FAC000650,Community Health Clinic - 241,Specialty Center,4629 Medical Pkwy,Los Angeles,NY,42949,555-887-1764,275.0,True,2025-10-29 23:53:57.937506
+FAC000651,Regional Hospital - 398,Clinic,4636 Medical Pkwy,San Diego,NY,53816,555-888-5382,249.0,True,2023-12-21 23:53:57.937506
+FAC000652,Advanced Healthcare Center - 380,Clinic,4995 Oak Ave,Phoenix,AZ,90847,555-254-9444,,True,2025-11-17 23:53:57.937506
+FAC000653,Primary Care Associates - 602,Ambulatory Center,2556 Wellness Dr,Philadelphia,PA,69394,555-718-2706,208.0,True,2022-08-09 23:53:57.937506
+FAC000654,Regional Hospital - 907,Ambulatory Center,4037 Main St,San Antonio,PA,15677,555-823-1826,,True,2022-01-16 23:53:57.937506
+FAC000655,Primary Care Associates - 671,Ambulatory Center,9930 Healthcare Blvd,Phoenix,AZ,23686,555-548-8489,245.0,True,2025-03-08 23:53:57.937506
+FAC000656,Community Health Clinic - 854,Specialty Center,5336 Oak Ave,Chicago,NY,16875,555-961-2817,,True,2022-01-31 23:53:57.937506
+FAC000657,Advanced Healthcare Center - 631,Urgent Care,517 Healthcare Blvd,Phoenix,TX,80432,555-208-2669,230.0,True,2021-11-30 23:53:57.937506
+FAC000658,Primary Care Associates - 962,Specialty Center,4943 Medical Pkwy,New York,PA,33053,555-943-1687,175.0,True,2025-01-18 23:53:57.937506
+FAC000659,Urgent Care Facility - 34,Specialty Center,6957 Healthcare Blvd,New York,PA,30715,555-619-2727,53.0,True,2021-02-27 23:53:57.937506
+FAC000660,Specialty Medical Center - 223,Specialty Center,6461 Main St,Dallas,AZ,13809,555-271-2934,147.0,True,2021-04-09 23:53:57.937506
+FAC000661,Advanced Healthcare Center - 456,Specialty Center,9652 Wellness Dr,Chicago,FL,73577,555-991-4365,155.0,True,2025-04-21 23:53:57.937506
+FAC000662,Family Practice Center - 876,Hospital,3211 Medical Pkwy,Philadelphia,PA,77489,555-470-3572,299.0,False,2025-07-30 23:53:57.937506
+FAC000663,Specialty Medical Center - 102,Ambulatory Center,3743 Wellness Dr,Phoenix,IL,25212,555-845-5786,17.0,True,2023-09-09 23:53:57.937506
+FAC000664,Specialty Medical Center - 558,Ambulatory Center,7894 Medical Pkwy,San Diego,TX,19287,555-825-8233,219.0,True,2021-05-13 23:53:57.937506
+FAC000665,Specialty Medical Center - 63,Outpatient Center,8411 Medical Pkwy,Dallas,AZ,40841,555-880-9288,,True,2021-04-19 23:53:57.937506
+FAC000666,Primary Care Associates - 283,Clinic,2885 Wellness Dr,New York,FL,68303,555-610-2626,127.0,True,2025-05-16 23:53:57.937506
+FAC000667,Family Practice Center - 992,Ambulatory Center,3067 Medical Pkwy,San Diego,IL,87687,555-257-6959,16.0,True,2025-09-23 23:53:57.937506
+FAC000668,Community Health Clinic - 972,Urgent Care,1699 Healthcare Blvd,San Diego,IL,85990,555-442-3257,,True,2023-07-22 23:53:57.937506
+FAC000669,Advanced Healthcare Center - 94,Hospital,2196 Medical Pkwy,Phoenix,AZ,52725,555-225-4307,90.0,True,2022-06-20 23:53:57.937506
+FAC000670,Family Practice Center - 658,Clinic,9259 Oak Ave,New York,AZ,64927,555-549-7811,13.0,True,2022-01-21 23:53:57.937506
+FAC000671,Central Medical Center - 52,Outpatient Center,5599 Main St,San Antonio,AZ,36050,555-887-1107,27.0,True,2025-09-10 23:53:57.937506
+FAC000672,Specialty Medical Center - 250,Specialty Center,3741 Medical Pkwy,Phoenix,IL,98716,555-351-8760,253.0,True,2024-04-12 23:53:57.937506
+FAC000673,Regional Hospital - 806,Outpatient Center,3759 Medical Pkwy,Austin,CA,52688,555-449-5698,47.0,True,2025-06-30 23:53:57.937506
+FAC000674,Family Practice Center - 71,Clinic,6989 Medical Pkwy,Houston,AZ,40154,555-617-3805,28.0,True,2021-03-26 23:53:57.937506
+FAC000675,Family Practice Center - 601,Ambulatory Center,6189 Medical Pkwy,New York,AZ,24435,555-187-5358,,True,2022-12-28 23:53:57.937506
+FAC000676,Family Practice Center - 833,Clinic,9693 Medical Pkwy,Dallas,TX,52746,555-481-7799,12.0,False,2024-06-26 23:53:57.937506
+FAC000677,Family Practice Center - 337,Hospital,7698 Main St,Philadelphia,AZ,39855,555-469-5021,31.0,True,2021-04-05 23:53:57.937506
+FAC000678,Regional Hospital - 808,Hospital,7809 Main St,Houston,PA,22853,555-255-9677,206.0,True,2024-12-14 23:53:57.937506
+FAC000679,Central Medical Center - 284,Urgent Care,9661 Wellness Dr,San Antonio,PA,41079,555-531-4738,292.0,False,2022-05-15 23:53:57.937506
+FAC000680,Regional Hospital - 134,Specialty Center,1266 Healthcare Blvd,Dallas,TX,64079,555-241-8025,242.0,True,2022-08-07 23:53:57.937506
+FAC000681,Urgent Care Facility - 818,Ambulatory Center,3287 Wellness Dr,San Antonio,TX,36208,555-523-7706,,True,2021-11-27 23:53:57.937506
+FAC000682,Regional Hospital - 113,Ambulatory Center,2063 Healthcare Blvd,San Antonio,FL,59221,555-569-9456,,True,2025-12-12 23:53:57.937506
+FAC000683,Central Medical Center - 135,Outpatient Center,8780 Medical Pkwy,Houston,CA,38922,555-913-6927,17.0,True,2024-03-05 23:53:57.937506
+FAC000684,Central Medical Center - 367,Specialty Center,6868 Main St,Chicago,AZ,19637,555-130-8251,11.0,True,2021-05-07 23:53:57.937506
+FAC000685,Family Practice Center - 603,Outpatient Center,2570 Oak Ave,San Antonio,CA,71733,555-249-1162,,True,2022-04-10 23:53:57.937506
+FAC000686,Specialty Medical Center - 17,Specialty Center,3381 Medical Pkwy,San Antonio,PA,86689,555-834-9476,71.0,True,2021-04-14 23:53:57.937506
+FAC000687,Regional Hospital - 272,Clinic,6804 Wellness Dr,Houston,IL,73492,555-171-2389,33.0,True,2024-04-07 23:53:57.937506
+FAC000688,Central Medical Center - 130,Clinic,7596 Oak Ave,Phoenix,CA,17122,555-446-6157,26.0,True,2022-01-24 23:53:57.937506
+FAC000689,Primary Care Associates - 539,Specialty Center,5283 Oak Ave,Los Angeles,NY,67129,555-511-3692,119.0,True,2025-02-03 23:53:57.937506
+FAC000690,Community Health Clinic - 764,Urgent Care,1424 Healthcare Blvd,San Antonio,NY,28997,555-544-2007,,True,2022-10-02 23:53:57.937506
+FAC000691,Community Health Clinic - 488,Clinic,5549 Oak Ave,Houston,NY,38333,555-502-1607,139.0,True,2021-12-29 23:53:57.937506
+FAC000692,Advanced Healthcare Center - 797,Urgent Care,5234 Main St,Dallas,TX,89879,555-776-3473,108.0,True,2023-12-27 23:53:57.937506
+FAC000693,Specialty Medical Center - 526,Clinic,177 Healthcare Blvd,Austin,PA,69636,555-688-1947,,True,2023-02-23 23:53:57.937506
+FAC000694,Community Health Clinic - 463,Ambulatory Center,4581 Oak Ave,Phoenix,FL,33338,555-746-9516,50.0,True,2025-12-17 23:53:57.937506
+FAC000695,Family Practice Center - 969,Hospital,2862 Wellness Dr,Phoenix,NY,60768,555-402-7869,,True,2022-04-26 23:53:57.937506
+FAC000696,Central Medical Center - 745,Hospital,2695 Healthcare Blvd,Dallas,PA,58953,555-511-5986,,True,2023-10-13 23:53:57.937506
+FAC000697,Urgent Care Facility - 470,Ambulatory Center,1542 Oak Ave,Phoenix,FL,27878,555-838-6139,167.0,True,2023-09-16 23:53:57.937506
+FAC000698,Central Medical Center - 63,Specialty Center,7205 Healthcare Blvd,San Antonio,CA,69996,555-452-1129,95.0,True,2021-05-06 23:53:57.937506
+FAC000699,Advanced Healthcare Center - 868,Outpatient Center,6709 Healthcare Blvd,Houston,FL,35448,555-946-5583,23.0,True,2022-04-19 23:53:57.937506
+FAC000700,Primary Care Associates - 437,Hospital,7921 Healthcare Blvd,Los Angeles,AZ,92840,555-640-3406,41.0,True,2022-04-15 23:53:57.937506
+FAC000701,Community Health Clinic - 503,Clinic,176 Main St,Chicago,TX,57001,555-817-7618,109.0,True,2025-09-12 23:53:57.937506
+FAC000702,Advanced Healthcare Center - 76,Clinic,8845 Oak Ave,Chicago,TX,45349,555-556-4360,63.0,True,2025-09-04 23:53:57.937506
+FAC000703,Community Health Clinic - 330,Hospital,6212 Main St,Phoenix,NY,36504,555-657-8244,235.0,True,2024-12-16 23:53:57.937506
+FAC000704,Regional Hospital - 68,Hospital,5379 Wellness Dr,Los Angeles,IL,54025,555-814-6656,140.0,True,2021-06-01 23:53:57.937506
+FAC000705,Regional Hospital - 282,Outpatient Center,3222 Main St,San Diego,IL,26673,555-931-7627,63.0,True,2021-10-09 23:53:57.937506
+FAC000706,Specialty Medical Center - 391,Hospital,167 Oak Ave,Austin,AZ,14206,555-894-4232,99.0,False,2023-03-25 23:53:57.937506
+FAC000707,Urgent Care Facility - 465,Specialty Center,3807 Medical Pkwy,San Diego,FL,84536,555-408-2380,117.0,True,2025-03-19 23:53:57.937506
+FAC000708,Primary Care Associates - 102,Outpatient Center,5213 Oak Ave,Phoenix,PA,17818,555-137-9805,275.0,True,2021-12-15 23:53:57.937506
+FAC000709,Community Health Clinic - 874,Ambulatory Center,1782 Healthcare Blvd,Austin,CA,46779,555-442-7389,132.0,True,2024-07-18 23:53:57.937506
+FAC000710,Family Practice Center - 441,Ambulatory Center,8346 Wellness Dr,San Diego,NY,27891,555-842-3064,39.0,True,2025-07-28 23:53:57.937506
+FAC000711,Advanced Healthcare Center - 910,Hospital,5115 Oak Ave,Houston,PA,24563,555-632-9860,52.0,True,2025-01-27 23:53:57.937506
+FAC000712,Family Practice Center - 424,Clinic,1169 Main St,Philadelphia,CA,71018,555-390-4501,,True,2023-07-22 23:53:57.937506
+FAC000713,Specialty Medical Center - 848,Ambulatory Center,4985 Medical Pkwy,New York,PA,70106,555-195-9383,32.0,True,2025-10-16 23:53:57.937506
+FAC000714,Advanced Healthcare Center - 409,Hospital,7569 Wellness Dr,Chicago,IL,64817,555-665-6115,105.0,True,2024-06-30 23:53:57.937506
+FAC000715,Primary Care Associates - 748,Specialty Center,9870 Wellness Dr,New York,IL,32439,555-633-6582,210.0,True,2022-08-18 23:53:57.937506
+FAC000716,Community Health Clinic - 321,Specialty Center,5635 Healthcare Blvd,Dallas,FL,55033,555-875-3621,169.0,True,2024-12-05 23:53:57.937506
+FAC000717,Primary Care Associates - 321,Clinic,2292 Medical Pkwy,New York,NY,38816,555-123-1456,,True,2022-03-07 23:53:57.937506
+FAC000718,Urgent Care Facility - 384,Outpatient Center,8131 Medical Pkwy,Chicago,IL,48687,555-915-9846,74.0,False,2023-03-17 23:53:57.937506
+FAC000719,Regional Hospital - 704,Clinic,3187 Oak Ave,Los Angeles,IL,89119,555-706-5238,252.0,True,2023-09-30 23:53:57.937506
+FAC000720,Advanced Healthcare Center - 69,Hospital,6709 Main St,Phoenix,AZ,30550,555-347-5979,,True,2025-01-26 23:53:57.937506
+FAC000721,Community Health Clinic - 852,Clinic,3842 Oak Ave,Phoenix,AZ,93623,555-843-7926,137.0,True,2022-06-24 23:53:57.937506
+FAC000722,Community Health Clinic - 96,Outpatient Center,2249 Oak Ave,Chicago,IL,90154,555-617-2809,17.0,True,2021-11-08 23:53:57.937506
+FAC000723,Primary Care Associates - 99,Urgent Care,459 Wellness Dr,San Diego,FL,32273,555-849-1982,123.0,True,2021-04-27 23:53:57.937506
+FAC000724,Specialty Medical Center - 832,Clinic,8367 Oak Ave,New York,NY,85775,555-961-7110,125.0,True,2021-05-06 23:53:57.937506
+FAC000725,Regional Hospital - 570,Ambulatory Center,2117 Medical Pkwy,Houston,NY,82450,555-365-9314,,True,2026-01-09 23:53:57.937506
+FAC000726,Central Medical Center - 601,Outpatient Center,712 Healthcare Blvd,Los Angeles,PA,40107,555-462-3028,100.0,True,2024-04-18 23:53:57.937506
+FAC000727,Specialty Medical Center - 687,Urgent Care,4290 Wellness Dr,Chicago,IL,21334,555-148-3043,113.0,True,2024-07-04 23:53:57.937506
+FAC000728,Community Health Clinic - 421,Outpatient Center,896 Wellness Dr,New York,IL,63961,555-559-5881,263.0,True,2022-11-24 23:53:57.937506
+FAC000729,Specialty Medical Center - 895,Outpatient Center,885 Main St,San Diego,TX,78389,555-686-1085,48.0,True,2024-01-28 23:53:57.937506
+FAC000730,Primary Care Associates - 889,Ambulatory Center,423 Main St,Houston,PA,74122,555-564-6553,,True,2025-05-19 23:53:57.937506
+FAC000731,Central Medical Center - 992,Urgent Care,1997 Healthcare Blvd,Philadelphia,AZ,38369,555-341-9737,138.0,True,2024-02-16 23:53:57.937506
+FAC000732,Urgent Care Facility - 615,Clinic,7379 Healthcare Blvd,San Antonio,AZ,87539,555-964-4831,137.0,True,2023-06-06 23:53:57.937506
+FAC000733,Urgent Care Facility - 361,Urgent Care,2124 Wellness Dr,Phoenix,NY,72061,555-458-5902,92.0,True,2022-11-09 23:53:57.937506
+FAC000734,Community Health Clinic - 592,Clinic,4240 Healthcare Blvd,San Diego,FL,70655,555-391-3293,,True,2021-05-09 23:53:57.937506
+FAC000735,Family Practice Center - 159,Ambulatory Center,2608 Oak Ave,Philadelphia,CA,46591,555-831-7187,145.0,True,2022-02-19 23:53:57.937506
+FAC000736,Advanced Healthcare Center - 230,Outpatient Center,252 Medical Pkwy,San Diego,CA,11901,555-632-5057,14.0,True,2025-07-23 23:53:57.937506
+FAC000737,Community Health Clinic - 359,Clinic,6995 Main St,New York,IL,66113,555-207-6371,48.0,True,2022-11-13 23:53:57.937506
+FAC000738,Specialty Medical Center - 118,Specialty Center,8624 Medical Pkwy,Philadelphia,FL,42329,555-628-4154,41.0,True,2023-06-12 23:53:57.937506
+FAC000739,Urgent Care Facility - 588,Urgent Care,2347 Healthcare Blvd,Los Angeles,IL,42483,555-942-6919,245.0,True,2025-07-19 23:53:57.937506
+FAC000740,Family Practice Center - 827,Urgent Care,1818 Wellness Dr,Chicago,PA,52899,555-565-2605,117.0,True,2025-05-22 23:53:57.937506
+FAC000741,Primary Care Associates - 866,Hospital,2028 Medical Pkwy,New York,TX,66917,555-250-7974,19.0,True,2025-07-14 23:53:57.937506
+FAC000742,Central Medical Center - 624,Outpatient Center,1967 Main St,Phoenix,TX,85951,555-948-7751,,True,2025-01-07 23:53:57.937506
+FAC000743,Urgent Care Facility - 30,Outpatient Center,8254 Oak Ave,San Antonio,FL,39151,555-183-2511,189.0,True,2021-12-13 23:53:57.937506
+FAC000744,Regional Hospital - 280,Ambulatory Center,3372 Medical Pkwy,Los Angeles,NY,87564,555-163-7961,,True,2025-07-23 23:53:57.937506
+FAC000745,Urgent Care Facility - 944,Clinic,8671 Oak Ave,Dallas,PA,29525,555-233-8802,177.0,True,2024-12-31 23:53:57.937506
+FAC000746,Specialty Medical Center - 360,Ambulatory Center,5964 Healthcare Blvd,San Diego,CA,85196,555-319-8309,,True,2024-04-05 23:53:57.937506
+FAC000747,Central Medical Center - 186,Ambulatory Center,4939 Oak Ave,Chicago,TX,10665,555-179-7050,17.0,True,2022-09-23 23:53:57.937506
+FAC000748,Regional Hospital - 580,Specialty Center,745 Wellness Dr,Houston,CA,64758,555-793-9622,102.0,True,2022-07-12 23:53:57.937506
+FAC000749,Primary Care Associates - 72,Outpatient Center,8232 Oak Ave,Phoenix,PA,15796,555-512-9502,113.0,True,2025-12-05 23:53:57.937506
+FAC000750,Regional Hospital - 759,Specialty Center,7975 Medical Pkwy,San Antonio,TX,15250,555-897-7468,,True,2021-09-28 23:53:57.937506
+FAC000751,Central Medical Center - 94,Hospital,3942 Main St,New York,FL,71689,555-992-5320,33.0,True,2025-02-03 23:53:57.937506
+FAC000752,Family Practice Center - 386,Urgent Care,308 Main St,Los Angeles,AZ,76088,555-698-9172,22.0,True,2021-08-14 23:53:57.937506
+FAC000753,Primary Care Associates - 465,Ambulatory Center,1909 Wellness Dr,Houston,IL,14406,555-751-7937,,True,2025-12-25 23:53:57.937506
+FAC000754,Specialty Medical Center - 162,Ambulatory Center,8195 Oak Ave,San Antonio,TX,65797,555-550-9020,167.0,True,2024-10-27 23:53:57.937506
+FAC000755,Specialty Medical Center - 320,Specialty Center,1575 Wellness Dr,San Diego,FL,79615,555-849-7830,,True,2022-06-19 23:53:57.937506
+FAC000756,Specialty Medical Center - 796,Outpatient Center,1329 Main St,Houston,FL,61684,555-943-3668,27.0,True,2023-12-10 23:53:57.937506
+FAC000757,Community Health Clinic - 905,Urgent Care,4292 Oak Ave,New York,TX,72818,555-247-9286,279.0,True,2023-06-18 23:53:57.937506
+FAC000758,Central Medical Center - 160,Ambulatory Center,7583 Medical Pkwy,Houston,PA,22844,555-230-8942,,True,2025-08-02 23:53:57.937506
+FAC000759,Regional Hospital - 773,Specialty Center,4427 Healthcare Blvd,San Diego,NY,69302,555-828-8499,46.0,True,2021-02-14 23:53:57.937506
+FAC000760,Central Medical Center - 691,Specialty Center,920 Main St,Los Angeles,FL,74918,555-232-9408,113.0,True,2021-12-24 23:53:57.937506
+FAC000761,Community Health Clinic - 279,Clinic,2962 Main St,Dallas,AZ,41524,555-983-9669,138.0,True,2024-08-28 23:53:57.937506
+FAC000762,Advanced Healthcare Center - 678,Urgent Care,4860 Medical Pkwy,Houston,IL,20890,555-220-4483,121.0,True,2024-04-25 23:53:57.937506
+FAC000763,Primary Care Associates - 498,Specialty Center,5223 Healthcare Blvd,San Diego,AZ,83202,555-566-8755,29.0,True,2021-05-07 23:53:57.937506
+FAC000764,Advanced Healthcare Center - 425,Clinic,1998 Main St,San Antonio,PA,11628,555-133-3569,28.0,True,2022-03-23 23:53:57.937506
+FAC000765,Urgent Care Facility - 221,Outpatient Center,851 Main St,Phoenix,PA,63296,555-672-7051,23.0,True,2022-06-10 23:53:57.937506
+FAC000766,Community Health Clinic - 354,Specialty Center,2367 Oak Ave,Philadelphia,IL,38574,555-221-7694,13.0,True,2021-03-12 23:53:57.937506
+FAC000767,Primary Care Associates - 114,Clinic,5484 Medical Pkwy,Chicago,AZ,27394,555-212-2980,37.0,True,2024-12-20 23:53:57.937506
+FAC000768,Urgent Care Facility - 695,Clinic,7271 Wellness Dr,New York,AZ,56976,555-478-5744,135.0,True,2021-11-07 23:53:57.937506
+FAC000769,Advanced Healthcare Center - 540,Urgent Care,4495 Main St,Dallas,NY,48769,555-141-9565,150.0,True,2021-10-21 23:53:57.937506
+FAC000770,Urgent Care Facility - 47,Ambulatory Center,6205 Medical Pkwy,Dallas,CA,41334,555-256-2929,141.0,True,2021-11-26 23:53:57.937506
+FAC000771,Family Practice Center - 405,Clinic,3096 Main St,Los Angeles,AZ,94887,555-480-5995,22.0,True,2025-04-19 23:53:57.937506
+FAC000772,Central Medical Center - 8,Specialty Center,6666 Healthcare Blvd,Phoenix,PA,21892,555-483-5968,,True,2024-04-20 23:53:57.937506
+FAC000773,Family Practice Center - 309,Hospital,7579 Medical Pkwy,San Diego,IL,12087,555-401-8961,,True,2025-09-28 23:53:57.937506
+FAC000774,Family Practice Center - 786,Outpatient Center,6419 Healthcare Blvd,Phoenix,FL,72886,555-128-3340,125.0,True,2023-12-01 23:53:57.937506
+FAC000775,Regional Hospital - 783,Specialty Center,7009 Oak Ave,Houston,FL,97691,555-245-7910,126.0,True,2022-01-31 23:53:57.937506
+FAC000776,Urgent Care Facility - 297,Specialty Center,1952 Oak Ave,Philadelphia,IL,49955,555-149-5999,273.0,True,2024-06-07 23:53:57.937506
+FAC000777,Specialty Medical Center - 123,Outpatient Center,1060 Oak Ave,New York,NY,31207,555-390-4532,67.0,True,2025-01-16 23:53:57.937506
+FAC000778,Central Medical Center - 510,Outpatient Center,1799 Healthcare Blvd,Houston,CA,70199,555-287-9008,67.0,True,2024-06-23 23:53:57.937506
+FAC000779,Primary Care Associates - 180,Clinic,9778 Healthcare Blvd,Los Angeles,IL,84760,555-102-3004,121.0,True,2025-04-03 23:53:57.937506
+FAC000780,Regional Hospital - 390,Specialty Center,9421 Healthcare Blvd,Houston,FL,86501,555-660-6712,130.0,True,2022-11-15 23:53:57.937506
+FAC000781,Family Practice Center - 513,Clinic,3069 Wellness Dr,San Antonio,NY,13199,555-169-1732,34.0,True,2024-04-09 23:53:57.937506
+FAC000782,Specialty Medical Center - 74,Urgent Care,6321 Medical Pkwy,Philadelphia,IL,69616,555-527-8883,213.0,True,2023-09-21 23:53:57.937506
+FAC000783,Primary Care Associates - 883,Clinic,572 Oak Ave,New York,TX,70786,555-686-6074,282.0,True,2024-10-10 23:53:57.937506
+FAC000784,Central Medical Center - 447,Urgent Care,8014 Healthcare Blvd,Chicago,PA,28169,555-679-8411,,True,2021-05-11 23:53:57.937506
+FAC000785,Central Medical Center - 471,Ambulatory Center,1950 Healthcare Blvd,Phoenix,AZ,63131,555-445-7181,36.0,True,2024-12-26 23:53:57.937506
+FAC000786,Community Health Clinic - 883,Hospital,7320 Main St,Austin,FL,34241,555-586-3175,,True,2024-07-06 23:53:57.937506
+FAC000787,Specialty Medical Center - 590,Specialty Center,1137 Medical Pkwy,Los Angeles,CA,58551,555-880-3269,135.0,True,2021-02-01 23:53:57.937506
+FAC000788,Primary Care Associates - 588,Urgent Care,5248 Main St,San Antonio,AZ,92157,555-616-8551,231.0,True,2024-12-03 23:53:57.937506
+FAC000789,Primary Care Associates - 727,Hospital,8698 Wellness Dr,Houston,AZ,70856,555-879-8371,239.0,True,2025-01-18 23:53:57.937506
+FAC000790,Primary Care Associates - 297,Outpatient Center,9357 Oak Ave,New York,TX,93021,555-783-8357,146.0,True,2024-05-21 23:53:57.937506
+FAC000791,Community Health Clinic - 415,Ambulatory Center,5642 Wellness Dr,New York,CA,10178,555-252-6328,,True,2024-08-02 23:53:57.937506
+FAC000792,Central Medical Center - 990,Clinic,8670 Wellness Dr,Austin,AZ,92222,555-191-7711,43.0,True,2022-02-17 23:53:57.937506
+FAC000793,Specialty Medical Center - 176,Hospital,1660 Healthcare Blvd,San Diego,NY,19266,555-496-4814,13.0,True,2023-07-30 23:53:57.937506
+FAC000794,Advanced Healthcare Center - 852,Urgent Care,4172 Healthcare Blvd,Austin,FL,60446,555-504-6554,124.0,True,2024-07-23 23:53:57.937506
+FAC000795,Specialty Medical Center - 91,Specialty Center,5764 Healthcare Blvd,Chicago,FL,53634,555-653-1750,276.0,True,2025-07-10 23:53:57.937506
+FAC000796,Primary Care Associates - 865,Ambulatory Center,2535 Wellness Dr,Philadelphia,FL,79588,555-786-8259,13.0,True,2023-04-18 23:53:57.937506
+FAC000797,Community Health Clinic - 250,Outpatient Center,994 Main St,Los Angeles,IL,14287,555-853-5544,,True,2024-01-19 23:53:57.937506
+FAC000798,Primary Care Associates - 604,Outpatient Center,2671 Wellness Dr,Houston,PA,48874,555-761-2450,78.0,True,2022-10-18 23:53:57.937506
+FAC000799,Primary Care Associates - 537,Hospital,7788 Healthcare Blvd,Chicago,FL,65823,555-986-3713,29.0,True,2024-01-02 23:53:57.937506
+FAC000800,Community Health Clinic - 406,Hospital,2809 Main St,San Diego,IL,45361,555-824-1406,129.0,True,2024-02-01 23:53:57.937506
+FAC000801,Urgent Care Facility - 764,Clinic,8155 Medical Pkwy,Los Angeles,PA,90281,555-685-6060,58.0,True,2021-09-17 23:53:57.937506
+FAC000802,Specialty Medical Center - 227,Outpatient Center,4046 Medical Pkwy,Austin,NY,81098,555-674-3028,48.0,True,2022-06-11 23:53:57.937506
+FAC000803,Specialty Medical Center - 798,Ambulatory Center,4657 Main St,Philadelphia,IL,85396,555-759-2395,,True,2023-02-09 23:53:57.937506
+FAC000804,Regional Hospital - 79,Ambulatory Center,8405 Oak Ave,New York,TX,37151,555-297-9877,,True,2023-07-10 23:53:57.937506
+FAC000805,Community Health Clinic - 544,Outpatient Center,9119 Healthcare Blvd,New York,NY,99740,555-690-1866,,True,2021-05-23 23:53:57.937506
+FAC000806,Family Practice Center - 928,Clinic,6707 Oak Ave,Philadelphia,TX,20611,555-683-9548,160.0,True,2022-07-03 23:53:57.937506
+FAC000807,Specialty Medical Center - 360,Specialty Center,1391 Healthcare Blvd,Chicago,CA,91324,555-293-8796,49.0,True,2022-03-10 23:53:57.937506
+FAC000808,Regional Hospital - 242,Clinic,7377 Wellness Dr,Dallas,IL,54000,555-614-1305,37.0,True,2021-05-18 23:53:57.937506
+FAC000809,Community Health Clinic - 150,Urgent Care,7441 Main St,Los Angeles,TX,17184,555-223-9713,68.0,True,2025-01-31 23:53:57.937506
+FAC000810,Urgent Care Facility - 203,Urgent Care,8266 Healthcare Blvd,Chicago,FL,77467,555-284-1310,115.0,True,2025-11-01 23:53:57.937506
+FAC000811,Regional Hospital - 617,Hospital,5278 Main St,San Diego,IL,98428,555-381-4371,174.0,False,2021-05-12 23:53:57.937506
+FAC000812,Regional Hospital - 779,Clinic,8248 Main St,Houston,CA,57708,555-351-8278,226.0,True,2022-10-05 23:53:57.937506
+FAC000813,Community Health Clinic - 182,Clinic,1781 Healthcare Blvd,Philadelphia,AZ,16758,555-186-9741,27.0,True,2023-11-18 23:53:57.937506
+FAC000814,Advanced Healthcare Center - 476,Ambulatory Center,6855 Main St,Dallas,IL,24544,555-721-6249,103.0,True,2025-03-03 23:53:57.937506
+FAC000815,Advanced Healthcare Center - 698,Hospital,9228 Wellness Dr,Philadelphia,CA,60194,555-511-1737,11.0,True,2023-01-10 23:53:57.937506
+FAC000816,Specialty Medical Center - 885,Ambulatory Center,102 Main St,San Diego,NY,57918,555-603-1381,102.0,True,2022-11-08 23:53:57.937506
+FAC000817,Specialty Medical Center - 155,Specialty Center,9999 Wellness Dr,Houston,IL,70994,555-448-8160,,True,2024-11-10 23:53:57.937506
+FAC000818,Advanced Healthcare Center - 70,Clinic,5090 Wellness Dr,New York,FL,91151,555-284-7798,,True,2022-02-07 23:53:57.937506
+FAC000819,Advanced Healthcare Center - 453,Ambulatory Center,9313 Oak Ave,San Antonio,NY,15357,555-124-9649,85.0,True,2023-08-11 23:53:57.937506
+FAC000820,Urgent Care Facility - 816,Outpatient Center,7574 Medical Pkwy,Philadelphia,FL,57916,555-424-7258,114.0,True,2024-02-05 23:53:57.937506
+FAC000821,Urgent Care Facility - 606,Ambulatory Center,6053 Main St,Chicago,CA,58029,555-363-2491,,True,2022-06-02 23:53:57.937506
+FAC000822,Central Medical Center - 361,Clinic,3752 Healthcare Blvd,Phoenix,NY,32972,555-217-2627,58.0,True,2021-06-30 23:53:57.937506
+FAC000823,Community Health Clinic - 318,Specialty Center,5539 Wellness Dr,New York,TX,94957,555-654-3755,284.0,True,2022-03-21 23:53:57.937506
+FAC000824,Advanced Healthcare Center - 463,Clinic,9929 Healthcare Blvd,San Diego,AZ,83241,555-392-3359,135.0,True,2021-07-30 23:53:57.937506
+FAC000825,Central Medical Center - 59,Outpatient Center,6052 Healthcare Blvd,San Diego,NY,18782,555-287-5187,,True,2024-06-03 23:53:57.937506
+FAC000826,Specialty Medical Center - 852,Urgent Care,1968 Main St,Dallas,FL,83499,555-886-2468,110.0,True,2024-11-17 23:53:57.937506
+FAC000827,Urgent Care Facility - 79,Urgent Care,3733 Main St,Phoenix,TX,36832,555-257-6026,229.0,True,2024-02-15 23:53:57.937506
+FAC000828,Community Health Clinic - 630,Specialty Center,5692 Medical Pkwy,Dallas,AZ,28141,555-517-3772,182.0,True,2022-02-13 23:53:57.937506
+FAC000829,Primary Care Associates - 474,Specialty Center,4883 Wellness Dr,San Diego,CA,53899,555-160-6329,47.0,True,2023-03-21 23:53:57.937506
+FAC000830,Central Medical Center - 461,Outpatient Center,8652 Medical Pkwy,Houston,CA,41278,555-285-1445,53.0,True,2022-12-13 23:53:57.937506
+FAC000831,Family Practice Center - 330,Ambulatory Center,1841 Main St,Austin,IL,80730,555-830-1958,24.0,True,2021-05-22 23:53:57.937506
+FAC000832,Advanced Healthcare Center - 514,Urgent Care,2789 Healthcare Blvd,Chicago,TX,24884,555-405-7388,221.0,True,2021-11-16 23:53:57.937506
+FAC000833,Regional Hospital - 981,Urgent Care,2401 Healthcare Blvd,Dallas,PA,95070,555-201-6243,148.0,True,2021-08-03 23:53:57.937506
+FAC000834,Central Medical Center - 462,Urgent Care,1852 Medical Pkwy,Philadelphia,FL,72717,555-245-7763,,True,2024-07-14 23:53:57.937506
+FAC000835,Community Health Clinic - 831,Urgent Care,3309 Oak Ave,Philadelphia,AZ,86037,555-431-5225,115.0,True,2025-07-14 23:53:57.937506
+FAC000836,Specialty Medical Center - 732,Outpatient Center,2078 Healthcare Blvd,San Diego,IL,37498,555-484-2981,17.0,True,2023-03-01 23:53:57.937506
+FAC000837,Community Health Clinic - 517,Specialty Center,3632 Healthcare Blvd,Phoenix,FL,39548,555-153-4318,38.0,True,2021-09-15 23:53:57.937506
+FAC000838,Regional Hospital - 41,Specialty Center,3222 Medical Pkwy,Austin,IL,52003,555-345-4874,,True,2024-11-10 23:53:57.937506
+FAC000839,Family Practice Center - 725,Hospital,1865 Healthcare Blvd,Dallas,CA,56230,555-604-9333,67.0,True,2024-08-05 23:53:57.937506
+FAC000840,Advanced Healthcare Center - 450,Ambulatory Center,861 Wellness Dr,Chicago,FL,45043,555-870-9264,,True,2024-10-26 23:53:57.937506
+FAC000841,Regional Hospital - 373,Specialty Center,2118 Healthcare Blvd,Los Angeles,FL,76003,555-494-2885,78.0,True,2023-06-03 23:53:57.937506
+FAC000842,Specialty Medical Center - 940,Urgent Care,7593 Wellness Dr,Dallas,NY,99158,555-375-1993,37.0,True,2024-07-30 23:53:57.937506
+FAC000843,Urgent Care Facility - 397,Clinic,8360 Oak Ave,Chicago,FL,65434,555-425-8615,47.0,True,2025-11-12 23:53:57.937506
+FAC000844,Primary Care Associates - 794,Urgent Care,8272 Main St,San Diego,AZ,46325,555-666-7669,23.0,False,2025-05-24 23:53:57.937506
+FAC000845,Specialty Medical Center - 696,Urgent Care,8789 Main St,Phoenix,PA,17138,555-167-8932,33.0,True,2023-02-22 23:53:57.937506
+FAC000846,Central Medical Center - 809,Specialty Center,9164 Healthcare Blvd,Phoenix,CA,18305,555-129-7676,,True,2022-05-08 23:53:57.937506
+FAC000847,Specialty Medical Center - 68,Hospital,9686 Healthcare Blvd,Dallas,CA,58865,555-748-4829,,True,2022-07-03 23:53:57.937506
+FAC000848,Specialty Medical Center - 97,Outpatient Center,8428 Oak Ave,Philadelphia,PA,55249,555-119-5409,95.0,False,2024-12-30 23:53:57.937506
+FAC000849,Primary Care Associates - 291,Clinic,9579 Oak Ave,San Diego,NY,69298,555-667-2663,,True,2023-05-18 23:53:57.937506
+FAC000850,Urgent Care Facility - 742,Ambulatory Center,2203 Main St,New York,TX,73730,555-352-3057,122.0,True,2025-04-04 23:53:57.937506
+FAC000851,Regional Hospital - 342,Clinic,6447 Wellness Dr,Dallas,TX,75726,555-411-7664,43.0,True,2023-06-04 23:53:57.937506
+FAC000852,Community Health Clinic - 597,Hospital,5373 Wellness Dr,San Antonio,PA,79033,555-556-2374,113.0,True,2022-10-02 23:53:57.937506
+FAC000853,Regional Hospital - 939,Urgent Care,6402 Healthcare Blvd,Chicago,FL,26083,555-966-9199,174.0,True,2024-03-25 23:53:57.937506
+FAC000854,Specialty Medical Center - 318,Outpatient Center,4167 Medical Pkwy,New York,AZ,71625,555-308-3332,34.0,True,2023-12-15 23:53:57.937506
+FAC000855,Primary Care Associates - 133,Outpatient Center,6618 Medical Pkwy,Austin,NY,79717,555-482-9854,86.0,True,2022-11-18 23:53:57.937506
+FAC000856,Community Health Clinic - 318,Outpatient Center,4919 Healthcare Blvd,Philadelphia,NY,98907,555-272-5016,228.0,True,2023-12-04 23:53:57.937506
+FAC000857,Primary Care Associates - 659,Ambulatory Center,2285 Oak Ave,Austin,IL,79842,555-650-7942,35.0,True,2022-05-08 23:53:57.937506
+FAC000858,Specialty Medical Center - 833,Specialty Center,6862 Wellness Dr,Houston,NY,48307,555-668-8401,47.0,True,2022-09-28 23:53:57.937506
+FAC000859,Regional Hospital - 687,Urgent Care,8493 Medical Pkwy,Philadelphia,PA,69241,555-142-1016,207.0,True,2025-11-07 23:53:57.937506
+FAC000860,Community Health Clinic - 662,Clinic,9075 Medical Pkwy,Los Angeles,FL,91389,555-932-8612,22.0,True,2024-03-26 23:53:57.937506
+FAC000861,Primary Care Associates - 521,Clinic,9169 Oak Ave,Dallas,AZ,58253,555-949-5739,240.0,True,2022-02-09 23:53:57.937506
+FAC000862,Specialty Medical Center - 19,Urgent Care,3391 Oak Ave,San Antonio,FL,98251,555-768-3742,13.0,True,2025-06-15 23:53:57.937506
+FAC000863,Specialty Medical Center - 317,Clinic,4860 Medical Pkwy,Houston,NY,18601,555-100-1985,46.0,True,2022-07-06 23:53:57.937506
+FAC000864,Regional Hospital - 974,Specialty Center,2273 Oak Ave,Dallas,IL,34687,555-593-5477,32.0,True,2024-01-12 23:53:57.937506
+FAC000865,Family Practice Center - 350,Outpatient Center,8355 Wellness Dr,San Diego,TX,70014,555-712-5110,133.0,True,2021-03-02 23:53:57.937506
+FAC000866,Advanced Healthcare Center - 197,Clinic,5381 Main St,Dallas,NY,21443,555-959-7228,,True,2025-12-30 23:53:57.937506
+FAC000867,Family Practice Center - 141,Specialty Center,5871 Wellness Dr,Chicago,NY,20508,555-459-4485,266.0,True,2025-02-24 23:53:57.937506
+FAC000868,Regional Hospital - 80,Outpatient Center,7970 Wellness Dr,Austin,AZ,61207,555-699-9361,111.0,True,2023-09-05 23:53:57.937506
+FAC000869,Urgent Care Facility - 865,Ambulatory Center,9449 Healthcare Blvd,Phoenix,FL,33437,555-388-1745,57.0,True,2023-05-18 23:53:57.937506
+FAC000870,Community Health Clinic - 520,Ambulatory Center,8847 Medical Pkwy,Philadelphia,PA,47797,555-265-9750,44.0,True,2024-03-01 23:53:57.937506
+FAC000871,Central Medical Center - 678,Urgent Care,7020 Main St,San Antonio,PA,20085,555-676-2145,,True,2024-02-26 23:53:57.937506
+FAC000872,Specialty Medical Center - 898,Urgent Care,8664 Main St,Philadelphia,IL,24334,555-407-2469,,True,2022-05-30 23:53:57.937506
+FAC000873,Regional Hospital - 612,Specialty Center,514 Healthcare Blvd,Los Angeles,NY,31596,555-504-3014,37.0,True,2025-06-24 23:53:57.937506
+FAC000874,Primary Care Associates - 158,Ambulatory Center,2481 Main St,Los Angeles,AZ,46168,555-950-3288,257.0,True,2024-12-28 23:53:57.937506
+FAC000875,Regional Hospital - 186,Ambulatory Center,1027 Oak Ave,Dallas,FL,24683,555-842-5578,,True,2024-01-13 23:53:57.937506
+FAC000876,Regional Hospital - 739,Ambulatory Center,4474 Oak Ave,Los Angeles,IL,29392,555-999-8077,13.0,True,2024-04-28 23:53:57.937506
+FAC000877,Advanced Healthcare Center - 45,Specialty Center,4795 Medical Pkwy,New York,PA,75054,555-315-9270,,True,2025-02-16 23:53:57.937506
+FAC000878,Primary Care Associates - 374,Specialty Center,2499 Main St,Chicago,CA,29726,555-921-6215,44.0,True,2023-06-04 23:53:57.937506
+FAC000879,Family Practice Center - 993,Clinic,4935 Oak Ave,Chicago,IL,36772,555-798-6613,25.0,True,2022-12-23 23:53:57.937506
+FAC000880,Advanced Healthcare Center - 626,Ambulatory Center,8966 Main St,New York,CA,78247,555-750-5282,146.0,True,2024-12-30 23:53:57.937506
+FAC000881,Urgent Care Facility - 771,Urgent Care,5976 Healthcare Blvd,Houston,CA,92218,555-870-8417,90.0,True,2021-10-28 23:53:57.937506
+FAC000882,Advanced Healthcare Center - 240,Clinic,1779 Wellness Dr,Los Angeles,IL,12974,555-379-5029,,True,2025-12-02 23:53:57.937506
+FAC000883,Family Practice Center - 317,Clinic,9305 Oak Ave,San Diego,IL,48426,555-778-6269,40.0,True,2023-07-31 23:53:57.937506
+FAC000884,Advanced Healthcare Center - 926,Ambulatory Center,9295 Healthcare Blvd,Houston,AZ,64596,555-449-4450,82.0,True,2021-07-03 23:53:57.937506
+FAC000885,Family Practice Center - 377,Outpatient Center,3992 Wellness Dr,Los Angeles,IL,99443,555-570-6381,288.0,True,2022-08-02 23:53:57.937506
+FAC000886,Advanced Healthcare Center - 473,Specialty Center,4812 Main St,New York,FL,80966,555-116-3190,282.0,True,2023-06-26 23:53:57.937506
+FAC000887,Urgent Care Facility - 797,Clinic,6351 Healthcare Blvd,Austin,TX,27305,555-761-1033,241.0,True,2022-09-18 23:53:57.937506
+FAC000888,Primary Care Associates - 515,Outpatient Center,6925 Medical Pkwy,San Antonio,PA,72115,555-723-8807,168.0,True,2022-10-24 23:53:57.937506
+FAC000889,Primary Care Associates - 990,Ambulatory Center,9146 Main St,San Diego,NY,55442,555-104-1156,44.0,True,2022-02-23 23:53:57.937506
+FAC000890,Regional Hospital - 837,Hospital,312 Medical Pkwy,Dallas,IL,65067,555-788-3843,,True,2023-08-09 23:53:57.937506
+FAC000891,Family Practice Center - 821,Outpatient Center,3427 Wellness Dr,Austin,CA,68177,555-523-9011,60.0,True,2021-12-11 23:53:57.937506
+FAC000892,Regional Hospital - 894,Hospital,7359 Oak Ave,Austin,CA,94500,555-880-7435,79.0,True,2023-10-21 23:53:57.937506
+FAC000893,Urgent Care Facility - 54,Hospital,6125 Wellness Dr,Phoenix,IL,12815,555-651-2329,97.0,True,2023-05-22 23:53:57.937506
+FAC000894,Advanced Healthcare Center - 896,Ambulatory Center,9055 Wellness Dr,New York,NY,48209,555-906-2270,,True,2021-05-13 23:53:57.937506
+FAC000895,Specialty Medical Center - 568,Hospital,3318 Oak Ave,Philadelphia,NY,34780,555-651-1507,,True,2024-09-04 23:53:57.937506
+FAC000896,Community Health Clinic - 729,Hospital,4919 Healthcare Blvd,Houston,AZ,18250,555-952-8293,,True,2024-08-16 23:53:57.937506
+FAC000897,Community Health Clinic - 292,Specialty Center,3006 Main St,Austin,AZ,12888,555-788-3022,115.0,True,2021-12-26 23:53:57.937506
+FAC000898,Community Health Clinic - 782,Clinic,3163 Oak Ave,Los Angeles,AZ,40451,555-461-7166,49.0,True,2023-12-13 23:53:57.937506
+FAC000899,Regional Hospital - 280,Ambulatory Center,8518 Main St,New York,NY,78107,555-947-6864,34.0,True,2022-09-03 23:53:57.937506
+FAC000900,Advanced Healthcare Center - 928,Clinic,6280 Main St,Houston,CA,94498,555-496-3903,76.0,True,2024-02-24 23:53:57.937506
+FAC000901,Regional Hospital - 851,Hospital,7120 Medical Pkwy,San Diego,AZ,54024,555-959-1138,113.0,True,2023-05-03 23:53:57.937506
+FAC000902,Primary Care Associates - 94,Ambulatory Center,9219 Medical Pkwy,Los Angeles,IL,63961,555-227-8580,295.0,True,2022-03-28 23:53:57.937506
+FAC000903,Family Practice Center - 837,Clinic,2231 Oak Ave,San Diego,AZ,85851,555-479-4161,293.0,True,2023-10-17 23:53:57.937506
+FAC000904,Advanced Healthcare Center - 906,Hospital,9668 Medical Pkwy,New York,IL,54930,555-555-1153,146.0,True,2024-05-11 23:53:57.937506
+FAC000905,Specialty Medical Center - 953,Clinic,192 Medical Pkwy,Philadelphia,IL,95951,555-326-1324,,True,2025-10-25 23:53:57.937506
+FAC000906,Central Medical Center - 425,Outpatient Center,7740 Oak Ave,Dallas,CA,94679,555-876-5606,37.0,True,2021-02-14 23:53:57.937506
+FAC000907,Central Medical Center - 406,Specialty Center,754 Oak Ave,San Antonio,PA,52769,555-796-6862,199.0,True,2024-09-23 23:53:57.937506
+FAC000908,Specialty Medical Center - 242,Urgent Care,5385 Wellness Dr,Philadelphia,FL,73720,555-296-2474,208.0,True,2021-10-06 23:53:57.937506
+FAC000909,Primary Care Associates - 84,Hospital,933 Wellness Dr,New York,IL,87772,555-935-5967,98.0,True,2023-03-14 23:53:57.937506
+FAC000910,Specialty Medical Center - 230,Outpatient Center,5034 Healthcare Blvd,Austin,AZ,97274,555-927-4623,171.0,True,2025-06-09 23:53:57.937506
+FAC000911,Central Medical Center - 327,Ambulatory Center,9482 Wellness Dr,Phoenix,CA,79489,555-339-9090,297.0,True,2023-09-06 23:53:57.937506
+FAC000912,Community Health Clinic - 860,Ambulatory Center,5966 Main St,Dallas,CA,81888,555-471-1602,31.0,True,2023-08-27 23:53:57.937506
+FAC000913,Specialty Medical Center - 811,Outpatient Center,5307 Wellness Dr,New York,NY,68360,555-387-9074,192.0,True,2021-09-13 23:53:57.937506
+FAC000914,Regional Hospital - 141,Specialty Center,3703 Oak Ave,Los Angeles,IL,70031,555-820-4425,26.0,True,2024-07-13 23:53:57.937506
+FAC000915,Central Medical Center - 294,Ambulatory Center,8629 Main St,Phoenix,AZ,49856,555-107-4212,245.0,True,2022-10-21 23:53:57.937506
+FAC000916,Advanced Healthcare Center - 713,Specialty Center,8376 Oak Ave,Los Angeles,IL,84350,555-940-7489,,True,2023-10-18 23:53:57.937506
+FAC000917,Regional Hospital - 778,Hospital,6914 Wellness Dr,Houston,AZ,27295,555-213-5544,,True,2022-09-19 23:53:57.937506
+FAC000918,Advanced Healthcare Center - 460,Hospital,8898 Healthcare Blvd,Dallas,TX,50172,555-682-9197,95.0,True,2025-11-18 23:53:57.937506
+FAC000919,Central Medical Center - 928,Outpatient Center,1606 Medical Pkwy,Los Angeles,NY,32509,555-605-3793,36.0,True,2025-02-14 23:53:57.937506
+FAC000920,Community Health Clinic - 20,Outpatient Center,3724 Oak Ave,Los Angeles,CA,44079,555-665-4174,241.0,True,2023-03-04 23:53:57.937506
+FAC000921,Urgent Care Facility - 221,Specialty Center,5537 Medical Pkwy,Houston,NY,39724,555-775-3875,146.0,True,2025-02-09 23:53:57.937506
+FAC000922,Regional Hospital - 562,Hospital,6011 Medical Pkwy,Dallas,TX,73470,555-166-3101,83.0,True,2024-05-10 23:53:57.937506
+FAC000923,Primary Care Associates - 114,Hospital,3679 Wellness Dr,San Antonio,PA,58745,555-863-2065,130.0,True,2021-01-26 23:53:57.937506
+FAC000924,Urgent Care Facility - 244,Outpatient Center,8791 Healthcare Blvd,Houston,NY,47767,555-230-5253,133.0,True,2022-09-11 23:53:57.937506
+FAC000925,Urgent Care Facility - 125,Ambulatory Center,9296 Main St,Houston,NY,16202,555-683-4734,133.0,True,2022-02-17 23:53:57.937506
+FAC000926,Central Medical Center - 245,Urgent Care,1979 Medical Pkwy,Dallas,TX,29443,555-635-5494,248.0,True,2023-02-07 23:53:57.937506
+FAC000927,Primary Care Associates - 655,Outpatient Center,7401 Oak Ave,Houston,NY,56284,555-296-1378,120.0,True,2024-12-05 23:53:57.937506
+FAC000928,Advanced Healthcare Center - 65,Urgent Care,4094 Main St,Austin,NY,47274,555-809-9731,166.0,True,2022-11-09 23:53:57.937506
+FAC000929,Community Health Clinic - 857,Hospital,5358 Healthcare Blvd,Chicago,TX,69759,555-729-5143,11.0,True,2021-10-29 23:53:57.937506
+FAC000930,Advanced Healthcare Center - 612,Outpatient Center,1957 Healthcare Blvd,Dallas,TX,31805,555-797-8437,48.0,True,2025-04-05 23:53:57.937506
+FAC000931,Central Medical Center - 648,Ambulatory Center,4303 Wellness Dr,Dallas,CA,91085,555-102-7997,14.0,True,2025-04-24 23:53:57.937506
+FAC000932,Family Practice Center - 736,Ambulatory Center,4733 Main St,San Antonio,PA,31075,555-756-1849,59.0,True,2022-04-28 23:53:57.937506
+FAC000933,Regional Hospital - 299,Specialty Center,8568 Medical Pkwy,Los Angeles,AZ,80165,555-974-6292,,False,2024-03-04 23:53:57.937506
+FAC000934,Primary Care Associates - 2,Clinic,8526 Wellness Dr,Austin,AZ,47387,555-542-7666,209.0,True,2021-08-15 23:53:57.937506
+FAC000935,Specialty Medical Center - 247,Hospital,7400 Healthcare Blvd,Philadelphia,PA,33891,555-380-2994,183.0,True,2025-09-27 23:53:57.937506
+FAC000936,Primary Care Associates - 192,Hospital,818 Medical Pkwy,San Diego,FL,32984,555-796-9491,266.0,True,2025-07-14 23:53:57.937506
+FAC000937,Community Health Clinic - 537,Outpatient Center,3254 Medical Pkwy,San Antonio,PA,97340,555-577-9119,40.0,True,2024-04-22 23:53:57.937506
+FAC000938,Specialty Medical Center - 70,Clinic,8519 Main St,Los Angeles,PA,30117,555-470-9474,111.0,True,2021-08-06 23:53:57.937506
+FAC000939,Central Medical Center - 400,Clinic,1672 Oak Ave,Chicago,TX,31135,555-877-1712,19.0,True,2021-09-30 23:53:57.937506
+FAC000940,Advanced Healthcare Center - 45,Clinic,8914 Wellness Dr,Chicago,AZ,41182,555-838-4678,180.0,True,2025-04-01 23:53:57.937506
+FAC000941,Primary Care Associates - 383,Outpatient Center,220 Main St,Dallas,IL,25324,555-148-5553,23.0,True,2021-07-19 23:53:57.937506
+FAC000942,Urgent Care Facility - 766,Outpatient Center,3553 Oak Ave,San Antonio,IL,15393,555-530-9723,19.0,True,2024-02-07 23:53:57.937506
+FAC000943,Central Medical Center - 366,Urgent Care,7050 Main St,Dallas,IL,51500,555-559-6181,,True,2023-06-21 23:53:57.937506
+FAC000944,Community Health Clinic - 354,Urgent Care,3468 Wellness Dr,Philadelphia,FL,85304,555-105-7420,44.0,True,2023-10-28 23:53:57.937506
+FAC000945,Family Practice Center - 751,Urgent Care,7230 Main St,Chicago,CA,26577,555-299-6483,,True,2025-02-11 23:53:57.937506
+FAC000946,Community Health Clinic - 791,Specialty Center,2619 Main St,Dallas,PA,67788,555-183-1415,149.0,True,2023-06-17 23:53:57.937506
+FAC000947,Specialty Medical Center - 137,Hospital,7623 Medical Pkwy,Austin,FL,44132,555-855-4696,162.0,True,2026-01-14 23:53:57.937506
+FAC000948,Central Medical Center - 361,Urgent Care,720 Main St,San Diego,PA,58453,555-806-7943,24.0,True,2022-05-08 23:53:57.937506
+FAC000949,Specialty Medical Center - 834,Specialty Center,1300 Main St,Philadelphia,FL,34182,555-176-5095,,True,2025-03-19 23:53:57.937506
+FAC000950,Regional Hospital - 851,Specialty Center,3016 Medical Pkwy,Philadelphia,AZ,36890,555-301-3694,33.0,True,2024-12-01 23:53:57.937506
+FAC000951,Advanced Healthcare Center - 713,Outpatient Center,9243 Main St,Dallas,NY,83726,555-437-6092,133.0,True,2021-02-02 23:53:57.937506
+FAC000952,Advanced Healthcare Center - 647,Clinic,9520 Oak Ave,Philadelphia,FL,14546,555-164-2584,150.0,True,2025-01-28 23:53:57.937506
+FAC000953,Regional Hospital - 831,Ambulatory Center,4337 Healthcare Blvd,Philadelphia,FL,97235,555-128-8863,66.0,True,2024-05-08 23:53:57.937506
+FAC000954,Regional Hospital - 65,Clinic,6457 Healthcare Blvd,San Antonio,TX,51542,555-542-1393,136.0,True,2024-04-26 23:53:57.937506
+FAC000955,Advanced Healthcare Center - 38,Urgent Care,6726 Healthcare Blvd,San Antonio,AZ,55068,555-706-6477,173.0,True,2025-08-04 23:53:57.937506
+FAC000956,Urgent Care Facility - 207,Ambulatory Center,5283 Main St,Philadelphia,CA,29391,555-960-5102,,True,2025-01-02 23:53:57.937506
+FAC000957,Central Medical Center - 811,Hospital,6481 Main St,Austin,NY,58878,555-353-2766,,True,2024-09-19 23:53:57.937506
+FAC000958,Family Practice Center - 908,Ambulatory Center,8862 Main St,Houston,FL,68776,555-584-4905,148.0,True,2021-03-26 23:53:57.937506
+FAC000959,Central Medical Center - 324,Ambulatory Center,1136 Wellness Dr,Austin,FL,80761,555-448-1891,39.0,True,2024-11-25 23:53:57.937506
+FAC000960,Urgent Care Facility - 528,Hospital,845 Main St,Dallas,PA,31311,555-941-6465,,True,2023-08-05 23:53:57.937506
+FAC000961,Primary Care Associates - 835,Hospital,5960 Wellness Dr,Houston,TX,79945,555-632-4878,,True,2025-07-15 23:53:57.937506
+FAC000962,Advanced Healthcare Center - 260,Specialty Center,1838 Medical Pkwy,San Antonio,NY,49526,555-174-8184,11.0,True,2021-12-24 23:53:57.937506
+FAC000963,Central Medical Center - 772,Specialty Center,5037 Wellness Dr,Dallas,TX,25923,555-882-2567,,True,2024-09-01 23:53:57.937506
+FAC000964,Family Practice Center - 293,Specialty Center,1517 Medical Pkwy,Phoenix,IL,13266,555-740-8314,,True,2025-03-06 23:53:57.937506
+FAC000965,Specialty Medical Center - 883,Outpatient Center,7270 Healthcare Blvd,Philadelphia,PA,63026,555-692-3045,282.0,True,2022-03-15 23:53:57.937506
+FAC000966,Central Medical Center - 887,Specialty Center,6573 Main St,San Diego,PA,75459,555-187-1994,17.0,True,2022-12-05 23:53:57.937506
+FAC000967,Specialty Medical Center - 280,Hospital,7865 Oak Ave,San Diego,PA,29055,555-134-7183,289.0,True,2021-04-20 23:53:57.937506
+FAC000968,Community Health Clinic - 819,Ambulatory Center,8840 Oak Ave,San Antonio,FL,70036,555-420-2065,,True,2021-09-10 23:53:57.937506
+FAC000969,Specialty Medical Center - 448,Hospital,2334 Healthcare Blvd,New York,TX,51971,555-901-3089,,True,2023-12-11 23:53:57.937506
+FAC000970,Primary Care Associates - 762,Ambulatory Center,9041 Medical Pkwy,New York,TX,30454,555-163-8240,18.0,True,2026-01-05 23:53:57.937506
+FAC000971,Advanced Healthcare Center - 917,Clinic,2460 Medical Pkwy,Phoenix,CA,10562,555-156-5939,251.0,True,2023-05-14 23:53:57.937506
+FAC000972,Primary Care Associates - 348,Hospital,6213 Main St,Austin,CA,81584,555-725-8075,,True,2025-02-23 23:53:57.937506
+FAC000973,Regional Hospital - 509,Specialty Center,9168 Wellness Dr,New York,CA,76507,555-167-2668,284.0,True,2024-02-10 23:53:57.937506
+FAC000974,Advanced Healthcare Center - 377,Specialty Center,2416 Main St,Dallas,FL,53421,555-793-1914,,True,2025-06-25 23:53:57.937506
+FAC000975,Urgent Care Facility - 821,Ambulatory Center,784 Main St,Chicago,AZ,94835,555-672-1855,,True,2023-05-27 23:53:57.937506
+FAC000976,Community Health Clinic - 745,Urgent Care,9483 Wellness Dr,Phoenix,IL,48739,555-401-7249,198.0,True,2022-12-16 23:53:57.937506
+FAC000977,Primary Care Associates - 81,Outpatient Center,6556 Wellness Dr,New York,IL,72116,555-511-2570,68.0,True,2022-03-11 23:53:57.937506
+FAC000978,Primary Care Associates - 617,Hospital,9070 Main St,Phoenix,TX,47988,555-732-7735,171.0,True,2023-10-31 23:53:57.937506
+FAC000979,Regional Hospital - 559,Outpatient Center,5092 Oak Ave,Houston,CA,85199,555-338-1173,94.0,True,2022-02-14 23:53:57.937506
+FAC000980,Urgent Care Facility - 329,Hospital,5733 Oak Ave,Houston,PA,97410,555-564-7290,,True,2024-11-06 23:53:57.937506
+FAC000981,Community Health Clinic - 82,Clinic,6860 Wellness Dr,Philadelphia,PA,29278,555-575-8014,143.0,True,2023-05-24 23:53:57.937506
+FAC000982,Specialty Medical Center - 677,Clinic,2433 Oak Ave,New York,IL,84086,555-735-2659,26.0,True,2022-04-18 23:53:57.937506
+FAC000983,Urgent Care Facility - 314,Ambulatory Center,3114 Oak Ave,Phoenix,FL,67947,555-447-1425,135.0,True,2023-12-07 23:53:57.937506
+FAC000984,Advanced Healthcare Center - 618,Outpatient Center,4240 Oak Ave,Dallas,FL,54392,555-564-9474,76.0,True,2021-05-19 23:53:57.937506
+FAC000985,Primary Care Associates - 171,Specialty Center,1977 Oak Ave,Dallas,IL,24721,555-436-4153,126.0,True,2023-06-11 23:53:57.937506
+FAC000986,Advanced Healthcare Center - 360,Urgent Care,9394 Main St,Dallas,TX,72781,555-210-2682,106.0,True,2022-01-30 23:53:57.937506
+FAC000987,Advanced Healthcare Center - 44,Hospital,9092 Healthcare Blvd,Austin,TX,15253,555-112-2106,,True,2024-09-05 23:53:57.937506
+FAC000988,Specialty Medical Center - 630,Hospital,9105 Main St,Austin,NY,28274,555-707-4172,,True,2021-10-06 23:53:57.937506
+FAC000989,Primary Care Associates - 282,Ambulatory Center,4862 Main St,Chicago,NY,98867,555-686-3064,28.0,True,2025-07-03 23:53:57.937506
+FAC000990,Central Medical Center - 77,Urgent Care,4207 Main St,Los Angeles,TX,82215,555-752-9337,226.0,True,2023-11-14 23:53:57.937506
+FAC000991,Primary Care Associates - 373,Outpatient Center,3334 Wellness Dr,New York,NY,25319,555-362-6822,15.0,True,2025-04-27 23:53:57.937506
+FAC000992,Regional Hospital - 976,Outpatient Center,8082 Medical Pkwy,San Diego,IL,50380,555-531-8887,60.0,True,2024-04-04 23:53:57.937506
+FAC000993,Central Medical Center - 147,Ambulatory Center,5951 Oak Ave,Philadelphia,TX,13250,555-842-8284,140.0,True,2021-10-06 23:53:57.937506
+FAC000994,Advanced Healthcare Center - 36,Hospital,3942 Main St,Chicago,TX,62642,555-290-4983,27.0,True,2025-04-17 23:53:57.937506
+FAC000995,Regional Hospital - 69,Clinic,4771 Wellness Dr,Chicago,FL,90939,555-240-1722,30.0,True,2023-10-20 23:53:57.937506
+FAC000996,Family Practice Center - 798,Urgent Care,1243 Oak Ave,Phoenix,CA,38883,555-161-3091,43.0,True,2021-09-15 23:53:57.937506
+FAC000997,Specialty Medical Center - 371,Hospital,5306 Healthcare Blvd,Philadelphia,IL,68454,555-419-8140,130.0,True,2024-03-17 23:53:57.937506
+FAC000998,Primary Care Associates - 973,Clinic,7483 Medical Pkwy,Austin,FL,56844,555-625-6861,125.0,True,2024-06-15 23:53:57.937506
+FAC000999,Central Medical Center - 620,Outpatient Center,5108 Wellness Dr,Houston,IL,22121,555-418-9866,83.0,False,2021-06-12 23:53:57.937506
+FAC001000,Regional Hospital - 696,Clinic,2596 Wellness Dr,Houston,AZ,52777,555-894-3385,,True,2022-04-05 23:53:57.937506

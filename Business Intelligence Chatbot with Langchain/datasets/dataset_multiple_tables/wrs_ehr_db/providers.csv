@@ -1,0 +1,1001 @@
+provider_id,npi,first_name,last_name,specialty,sub_specialty,degree,license_number,license_state,facility_id,phone,email,is_accepting_patients,is_active,hire_date,created_date
+PRV000001,1000000001,Lisa,Nelson,Cardiology,Critical Care,MD,LIC525866,NY,FAC000317,555-793-5277,dr.walker79@wrshealthproviders.com,True,True,2010-10-17,2025-08-24 23:53:57.981590
+PRV000002,1000000002,James,Green,Emergency Medicine,,MD,LIC698400,IL,FAC000532,555-115-1001,dr.nelson32@wrshealthproviders.com,True,True,2022-10-10,2025-09-12 23:53:57.981590
+PRV000003,1000000003,Laura,Thompson,Pediatrics,,NP,LIC753231,FL,FAC000264,555-525-2267,dr.robinson60@wrshealthproviders.com,False,True,2012-03-02,2021-03-24 23:53:57.981590
+PRV000004,1000000004,Jennifer,King,Cardiology,Sports Medicine,MD,LIC814888,NY,FAC000006,555-313-9588,dr.king22@wrshealthproviders.com,True,True,2014-03-12,2023-01-01 23:53:57.981590
+PRV000005,1000000005,Lisa,Baker,Ophthalmology,Interventional,NP,LIC138941,NY,FAC001000,555-490-6482,dr.king20@wrshealthproviders.com,True,True,2023-03-27,2025-09-09 23:53:57.981590
+PRV000006,1000000006,Sarah,Baker,Ophthalmology,Sports Medicine,MD,LIC782431,NY,FAC000051,555-376-7985,dr.hall19@wrshealthproviders.com,False,True,2004-08-29,2021-10-05 23:53:57.981590
+PRV000007,1000000007,William,Scott,Obstetrics and Gynecology,Geriatrics,DO,LIC503100,IL,FAC000014,555-512-1868,dr.allen31@wrshealthproviders.com,True,True,2012-11-25,2023-08-31 23:53:57.981590
+PRV000008,1000000008,Thomas,Baker,Ophthalmology,Geriatrics,NP,LIC425235,CA,FAC000042,555-275-6129,dr.allen90@wrshealthproviders.com,True,True,2010-05-28,2022-11-03 23:53:57.981590
+PRV000009,1000000009,Jennifer,Nelson,Family Medicine,Pain Management,MD,LIC736466,PA,FAC000911,555-975-2392,dr.clark13@wrshealthproviders.com,True,True,2011-01-18,2021-11-26 23:53:57.981590
+PRV000010,1000000010,James,Martinez,Orthopedics,Interventional,MD,LIC927990,IL,FAC000301,555-377-5088,dr.walker73@wrshealthproviders.com,True,True,2008-03-31,2025-02-01 23:53:57.981590
+PRV000011,1000000011,William,Clark,Pediatrics,Interventional,MD,LIC422699,NY,FAC000039,555-449-9888,dr.wright95@wrshealthproviders.com,False,True,2009-12-16,2025-02-09 23:53:57.981590
+PRV000012,1000000012,Robert,Clark,Dermatology,Geriatrics,DO,LIC754117,CA,FAC000024,555-839-1678,dr.nelson74@wrshealthproviders.com,False,True,2025-01-13,2024-11-22 23:53:57.981590
+PRV000013,1000000013,Michael,Thompson,Obstetrics and Gynecology,Pain Management,MD,LIC353751,IL,FAC000300,555-954-5534,dr.green42@wrshealthproviders.com,False,True,2022-05-03,2021-02-22 23:53:57.981590
+PRV000014,1000000014,John,Hall,Ophthalmology,Sports Medicine,DO,LIC448162,PA,FAC000731,555-948-8716,dr.green22@wrshealthproviders.com,True,True,2023-07-13,2022-01-27 23:53:57.981590
+PRV000015,1000000015,Michael,Thompson,General Surgery,Pain Management,MD,LIC558327,FL,FAC000423,555-185-2050,dr.anderson63@wrshealthproviders.com,True,True,2020-12-27,2022-09-25 23:53:57.981590
+PRV000016,1000000016,David,Clark,Ophthalmology,Sports Medicine,MD,LIC780656,AZ,FAC000261,555-949-1506,dr.walker29@wrshealthproviders.com,True,True,2023-09-30,2023-06-03 23:53:57.981590
+PRV000017,1000000017,James,Baker,Neurology,,MD,LIC465202,IL,FAC000870,555-905-1533,dr.wright3@wrshealthproviders.com,True,True,2008-01-23,2023-12-02 23:53:57.981590
+PRV000018,1000000018,Richard,King,Orthopedics,,MD,LIC875004,IL,FAC000368,555-410-6553,dr.anderson54@wrshealthproviders.com,True,True,2020-08-26,2022-05-30 23:53:57.981590
+PRV000019,1000000019,Michelle,Baker,Cardiology,Sports Medicine,MD,LIC829821,IL,FAC000258,555-153-2358,dr.allen89@wrshealthproviders.com,True,True,2008-01-23,2023-11-06 23:53:57.981590
+PRV000020,1000000020,Lisa,Allen,Orthopedics,Sports Medicine,NP,LIC993701,TX,FAC000639,555-423-4971,dr.king99@wrshealthproviders.com,True,True,2016-02-17,2025-02-07 23:53:57.981590
+PRV000021,1000000021,Laura,Thompson,Radiology,Geriatrics,DO,LIC781025,TX,FAC000474,555-171-2843,dr.king93@wrshealthproviders.com,True,True,2014-02-03,2025-05-29 23:53:57.981590
+PRV000022,1000000022,Richard,Wright,Psychiatry,Sports Medicine,MD,LIC964438,CA,FAC000395,555-685-6373,dr.thompson40@wrshealthproviders.com,False,True,2004-08-22,2023-12-27 23:53:57.981590
+PRV000023,1000000023,Jennifer,Lewis,Anesthesiology,Pain Management,PA,LIC630798,NY,FAC000542,555-725-7659,dr.lewis79@wrshealthproviders.com,False,False,2021-01-05,2024-07-13 23:53:57.981590
+PRV000024,1000000024,Michelle,Hall,Dermatology,,DO,LIC142698,PA,FAC000811,555-159-3475,dr.young6@wrshealthproviders.com,True,True,2011-05-10,2025-08-27 23:53:57.981590
+PRV000025,1000000025,Robert,Anderson,Internal Medicine,Pain Management,PA,LIC810668,CA,FAC000217,555-593-7655,dr.nelson87@wrshealthproviders.com,True,True,2009-10-08,2024-02-02 23:53:57.981590
+PRV000026,1000000026,Sarah,Walker,General Surgery,,MD,LIC336206,TX,FAC000303,555-714-4121,dr.lewis67@wrshealthproviders.com,True,True,2010-06-28,2021-04-08 23:53:57.981590
+PRV000027,1000000027,Michael,Green,Neurology,Geriatrics,MD,LIC926813,NY,FAC000750,555-918-5489,dr.scott24@wrshealthproviders.com,False,True,2023-06-07,2022-02-18 23:53:57.981590
+PRV000028,1000000028,James,Anderson,Neurology,Sports Medicine,MD,LIC787252,PA,FAC000991,555-915-9100,dr.wright95@wrshealthproviders.com,True,False,2008-07-24,2025-08-30 23:53:57.981590
+PRV000029,1000000029,Nancy,Scott,Oncology,,DO,LIC512867,TX,FAC000549,555-596-8160,dr.wright67@wrshealthproviders.com,True,True,2016-03-10,2022-10-19 23:53:57.981590
+PRV000030,1000000030,John,Baker,Pediatrics,Geriatrics,MD,LIC321423,FL,FAC000830,555-527-1814,dr.baker96@wrshealthproviders.com,True,True,2011-03-06,2022-11-23 23:53:57.981590
+PRV000031,1000000031,Nancy,Nelson,Dermatology,Pain Management,MD,LIC689742,PA,FAC000452,555-967-6363,dr.lewis74@wrshealthproviders.com,True,True,2006-12-24,2025-09-16 23:53:57.981590
+PRV000032,1000000032,Nancy,Nelson,Anesthesiology,Sports Medicine,MD,LIC328101,IL,FAC000360,555-362-9231,dr.walker94@wrshealthproviders.com,True,True,2010-11-29,2023-07-18 23:53:57.981590
+PRV000033,1000000033,Richard,Robinson,Family Medicine,Interventional,MD,LIC523047,NY,FAC000175,555-962-6444,dr.baker3@wrshealthproviders.com,True,True,2019-05-19,2026-01-10 23:53:57.981590
+PRV000034,1000000034,Emily,Lewis,Orthopedics,,DO,LIC407108,AZ,FAC000370,555-485-3452,dr.green97@wrshealthproviders.com,True,True,2004-03-27,2021-05-04 23:53:57.981590
+PRV000035,1000000035,John,Allen,Family Medicine,Sports Medicine,MD,LIC610906,NY,FAC000417,555-424-8736,dr.lewis81@wrshealthproviders.com,True,True,2022-03-27,2021-09-04 23:53:57.981590
+PRV000036,1000000036,Richard,Nelson,Emergency Medicine,,MD,LIC246910,PA,FAC000020,555-458-1134,dr.wright65@wrshealthproviders.com,True,True,2005-01-04,2022-03-27 23:53:57.981590
+PRV000037,1000000037,Nancy,Lewis,Emergency Medicine,,DO,LIC272745,TX,FAC000289,555-957-5478,dr.baker93@wrshealthproviders.com,True,True,2015-04-28,2025-05-01 23:53:57.981590
+PRV000038,1000000038,Lisa,Scott,Pediatrics,,PA,LIC419187,TX,FAC000917,555-273-3940,dr.walker49@wrshealthproviders.com,False,True,2023-03-12,2023-06-30 23:53:57.981590
+PRV000039,1000000039,Thomas,King,Neurology,Pain Management,DO,LIC480444,AZ,FAC000565,555-417-7565,dr.anderson68@wrshealthproviders.com,True,True,2010-09-21,2021-12-05 23:53:57.981590
+PRV000040,1000000040,Michelle,King,Ophthalmology,Critical Care,PA,LIC441004,IL,FAC000595,555-985-5275,dr.thompson48@wrshealthproviders.com,False,True,2007-08-17,2025-04-16 23:53:57.981590
+PRV000041,1000000041,Emily,Baker,Radiology,,DO,LIC908678,IL,FAC000620,555-875-1932,dr.wright69@wrshealthproviders.com,True,True,2016-03-31,2022-07-26 23:53:57.981590
+PRV000042,1000000042,David,Martinez,Ophthalmology,Sports Medicine,MD,LIC634760,IL,FAC000146,555-496-5316,dr.clark87@wrshealthproviders.com,True,True,2015-09-26,2022-04-28 23:53:57.981590
+PRV000043,1000000043,Michael,Walker,Radiology,Critical Care,MD,LIC879931,PA,FAC000881,555-778-9195,dr.clark54@wrshealthproviders.com,True,True,2010-03-11,2025-02-08 23:53:57.981590
+PRV000044,1000000044,Laura,Scott,Endocrinology,Pain Management,DO,LIC202004,NY,FAC000289,555-524-2796,dr.clark97@wrshealthproviders.com,True,True,2015-08-14,2021-05-18 23:53:57.981590
+PRV000045,1000000045,Sarah,Young,Cardiology,Geriatrics,DO,LIC608049,AZ,FAC000406,555-899-9061,dr.walker91@wrshealthproviders.com,True,True,2018-11-20,2021-06-08 23:53:57.982591
+PRV000046,1000000046,Richard,Green,Ophthalmology,Geriatrics,DO,LIC140245,IL,FAC000436,555-445-5224,dr.martinez53@wrshealthproviders.com,True,True,2014-03-15,2022-02-23 23:53:57.982591
+PRV000047,1000000047,William,Nelson,Anesthesiology,Geriatrics,MD,LIC649430,TX,FAC000138,555-208-9490,dr.baker48@wrshealthproviders.com,True,True,2023-07-24,2022-09-16 23:53:57.982591
+PRV000048,1000000048,John,Allen,Radiology,Critical Care,MD,LIC864988,PA,FAC000324,555-263-9169,dr.anderson9@wrshealthproviders.com,True,True,2024-05-22,2024-04-24 23:53:57.982591
+PRV000049,1000000049,Nancy,Wright,Endocrinology,,MD,LIC331663,FL,FAC000455,555-895-9175,dr.martinez48@wrshealthproviders.com,False,True,2014-01-31,2021-04-13 23:53:57.982591
+PRV000050,1000000050,Michael,Robinson,Cardiology,Sports Medicine,MD,LIC347162,NY,FAC000433,555-211-2897,dr.walker18@wrshealthproviders.com,False,True,2009-06-21,2021-06-08 23:53:57.982591
+PRV000051,1000000051,James,Young,Psychiatry,,MD,LIC466454,CA,FAC000062,555-407-2591,dr.baker96@wrshealthproviders.com,True,True,2012-03-10,2025-03-05 23:53:57.982591
+PRV000052,1000000052,Thomas,King,Family Medicine,Pain Management,NP,LIC167760,IL,FAC000086,555-491-1909,dr.anderson28@wrshealthproviders.com,False,True,2020-02-11,2022-04-30 23:53:57.982591
+PRV000053,1000000053,Michael,Hall,Obstetrics and Gynecology,,MD,LIC920351,NY,FAC000990,555-477-1345,dr.young99@wrshealthproviders.com,True,True,2017-04-09,2022-11-28 23:53:57.982591
+PRV000054,1000000054,Karen,Baker,Radiology,Critical Care,MD,LIC900249,NY,FAC000198,555-177-9179,dr.robinson37@wrshealthproviders.com,True,True,2020-12-10,2023-10-01 23:53:57.982591
+PRV000055,1000000055,John,Wright,Internal Medicine,,MD,LIC910331,PA,FAC000544,555-787-6411,dr.baker62@wrshealthproviders.com,False,True,2015-02-10,2024-10-29 23:53:57.982591
+PRV000056,1000000056,Emily,Lewis,Obstetrics and Gynecology,Interventional,DO,LIC411203,FL,FAC000041,555-462-9029,dr.king97@wrshealthproviders.com,True,True,2017-05-20,2024-03-06 23:53:57.982591
+PRV000057,1000000057,Emily,Wright,Emergency Medicine,,MD,LIC774048,NY,FAC000714,555-143-3791,dr.scott90@wrshealthproviders.com,True,True,2015-08-14,2023-01-10 23:53:57.982591
+PRV000058,1000000058,Jennifer,Baker,Anesthesiology,Interventional,MD,LIC800325,TX,FAC000482,555-511-9059,dr.green28@wrshealthproviders.com,True,True,2016-10-27,2021-09-24 23:53:57.982591
+PRV000059,1000000059,William,Young,Obstetrics and Gynecology,,MD,LIC292914,TX,FAC000617,555-855-9985,dr.nelson12@wrshealthproviders.com,False,True,2022-01-05,2021-04-07 23:53:57.982591
+PRV000060,1000000060,John,Young,Cardiology,,MD,LIC373295,NY,FAC000340,555-490-6342,dr.hall57@wrshealthproviders.com,False,True,2009-04-28,2024-09-16 23:53:57.982591
+PRV000061,1000000061,David,Clark,Anesthesiology,Sports Medicine,PA,LIC385366,TX,FAC000757,555-147-5303,dr.nelson2@wrshealthproviders.com,True,True,2009-03-08,2024-04-28 23:53:57.982591
+PRV000062,1000000062,Robert,King,Neurology,Sports Medicine,PA,LIC778327,NY,FAC000082,555-377-5746,dr.anderson89@wrshealthproviders.com,True,True,2024-06-26,2022-10-08 23:53:57.982591
+PRV000063,1000000063,Michael,Clark,Radiology,,MD,LIC766948,TX,FAC000092,555-193-5898,dr.king32@wrshealthproviders.com,True,True,2012-11-06,2025-02-06 23:53:57.982591
+PRV000064,1000000064,Nancy,Green,Internal Medicine,Sports Medicine,MD,LIC921483,NY,FAC000520,555-385-3251,dr.lewis70@wrshealthproviders.com,True,True,2019-06-26,2022-02-05 23:53:57.982591
+PRV000065,1000000065,Sarah,Thompson,Anesthesiology,,DO,LIC742330,CA,FAC000115,555-739-5269,dr.martinez23@wrshealthproviders.com,True,True,2022-08-29,2021-02-04 23:53:57.982591
+PRV000066,1000000066,John,Robinson,Orthopedics,Interventional,MD,LIC761307,PA,FAC000175,555-884-3374,dr.clark84@wrshealthproviders.com,True,True,2009-09-09,2023-11-08 23:53:57.982591
+PRV000067,1000000067,James,Wright,Oncology,Interventional,MD,LIC970110,NY,FAC000684,555-866-7625,dr.hall85@wrshealthproviders.com,True,True,2004-11-01,2024-12-01 23:53:57.982591
+PRV000068,1000000068,Sarah,Robinson,Psychiatry,,MD,LIC844691,NY,FAC000914,555-605-1307,dr.scott43@wrshealthproviders.com,True,True,2004-12-20,2022-11-27 23:53:57.982591
+PRV000069,1000000069,Jennifer,Robinson,Orthopedics,Pain Management,PA,LIC526740,NY,FAC000110,555-642-9827,dr.baker89@wrshealthproviders.com,True,True,2007-12-16,2022-10-10 23:53:57.982591
+PRV000070,1000000070,Laura,Robinson,Orthopedics,,MD,LIC520874,PA,FAC000812,555-162-6677,dr.wright25@wrshealthproviders.com,True,True,2008-03-13,2021-09-19 23:53:57.982591
+PRV000071,1000000071,Jennifer,King,Emergency Medicine,Geriatrics,MD,LIC836465,CA,FAC000834,555-968-1714,dr.nelson98@wrshealthproviders.com,False,True,2020-09-20,2022-06-21 23:53:57.982591
+PRV000072,1000000072,Nancy,Green,Family Medicine,Pain Management,DO,LIC359821,TX,FAC000394,555-166-6380,dr.scott35@wrshealthproviders.com,True,True,2024-10-15,2021-06-11 23:53:57.982591
+PRV000073,1000000073,Lisa,Nelson,Endocrinology,Critical Care,MD,LIC803797,CA,FAC000362,555-938-3029,dr.young43@wrshealthproviders.com,True,True,2010-06-08,2023-01-04 23:53:57.982591
+PRV000074,1000000074,David,Hall,Orthopedics,Pain Management,MD,LIC736976,AZ,FAC000182,555-332-8180,dr.robinson21@wrshealthproviders.com,True,True,2024-12-05,2023-04-23 23:53:57.982591
+PRV000075,1000000075,Emily,Hall,Neurology,Pain Management,PA,LIC136928,CA,FAC000698,555-785-9385,dr.king50@wrshealthproviders.com,True,True,2023-05-11,2022-06-05 23:53:57.982591
+PRV000076,1000000076,Jennifer,Wright,Endocrinology,Critical Care,MD,LIC907837,FL,FAC000674,555-773-7800,dr.clark22@wrshealthproviders.com,True,True,2008-07-11,2022-05-15 23:53:57.982591
+PRV000077,1000000077,Sarah,Martinez,Anesthesiology,Geriatrics,DO,LIC142600,NY,FAC000382,555-889-3896,dr.clark2@wrshealthproviders.com,True,True,2016-05-19,2024-07-13 23:53:57.982591
+PRV000078,1000000078,Richard,King,Neurology,Sports Medicine,MD,LIC865073,PA,FAC000062,555-520-9353,dr.walker36@wrshealthproviders.com,True,True,2023-04-02,2022-08-03 23:53:57.982591
+PRV000079,1000000079,Michael,Baker,Cardiology,,MD,LIC136559,AZ,FAC000571,555-358-8278,dr.green33@wrshealthproviders.com,True,True,2010-10-16,2024-03-23 23:53:57.982591
+PRV000080,1000000080,James,Green,Dermatology,Sports Medicine,MD,LIC372472,PA,FAC000692,555-144-5805,dr.allen17@wrshealthproviders.com,True,True,2005-08-17,2024-01-27 23:53:57.982591
+PRV000081,1000000081,Michelle,Young,Ophthalmology,Pain Management,MD,LIC474305,FL,FAC000121,555-246-5174,dr.scott16@wrshealthproviders.com,True,True,2013-04-10,2022-08-17 23:53:57.982591
+PRV000082,1000000082,David,Green,Cardiology,Sports Medicine,MD,LIC322003,PA,FAC000377,555-164-7733,dr.walker67@wrshealthproviders.com,False,True,2020-01-31,2025-07-18 23:53:57.982591
+PRV000083,1000000083,Karen,Nelson,Psychiatry,Pain Management,NP,LIC720440,NY,FAC000580,555-843-9272,dr.thompson58@wrshealthproviders.com,True,True,2021-01-15,2025-09-29 23:53:57.982591
+PRV000084,1000000084,Sarah,Thompson,Radiology,,MD,LIC844546,TX,FAC000338,555-219-5830,dr.martinez72@wrshealthproviders.com,True,True,2023-01-05,2022-08-16 23:53:57.982591
+PRV000085,1000000085,Thomas,Wright,Radiology,Sports Medicine,MD,LIC675430,CA,FAC000617,555-253-1091,dr.scott6@wrshealthproviders.com,True,True,2017-08-19,2025-04-02 23:53:57.982591
+PRV000086,1000000086,Richard,Thompson,Endocrinology,Interventional,MD,LIC119061,NY,FAC000024,555-555-7261,dr.green73@wrshealthproviders.com,True,True,2021-06-29,2021-09-19 23:53:57.982591
+PRV000087,1000000087,Richard,Green,Neurology,Interventional,DO,LIC386497,CA,FAC000316,555-775-9830,dr.walker78@wrshealthproviders.com,True,True,2012-04-15,2021-09-14 23:53:57.982591
+PRV000088,1000000088,Thomas,Anderson,Oncology,Pain Management,MD,LIC835550,IL,FAC000247,555-180-8194,dr.allen44@wrshealthproviders.com,True,True,2023-12-31,2021-11-09 23:53:57.982591
+PRV000089,1000000089,James,Walker,Anesthesiology,,MD,LIC859455,TX,FAC000112,555-769-1173,dr.martinez5@wrshealthproviders.com,True,True,2023-09-18,2024-10-02 23:53:57.982591
+PRV000090,1000000090,Jennifer,Walker,Cardiology,Interventional,MD,LIC676860,AZ,FAC000347,555-145-8031,dr.scott85@wrshealthproviders.com,True,True,2006-03-23,2024-09-11 23:53:57.982591
+PRV000091,1000000091,Sarah,Martinez,Family Medicine,,MD,LIC897551,TX,FAC000963,555-647-2274,dr.walker67@wrshealthproviders.com,True,True,2014-01-02,2024-01-10 23:53:57.982591
+PRV000092,1000000092,Sarah,Hall,Oncology,Geriatrics,MD,LIC670145,IL,FAC000023,555-371-4603,dr.clark79@wrshealthproviders.com,True,True,2018-06-04,2024-01-03 23:53:57.982591
+PRV000093,1000000093,Michael,Allen,Psychiatry,Critical Care,NP,LIC937846,FL,FAC000450,555-536-6897,dr.clark10@wrshealthproviders.com,True,True,2023-06-27,2021-04-12 23:53:57.982591
+PRV000094,1000000094,Michelle,Green,Emergency Medicine,,MD,LIC872426,TX,FAC000889,555-690-8739,dr.scott19@wrshealthproviders.com,True,True,2006-12-09,2023-02-06 23:53:57.982591
+PRV000095,1000000095,Michael,King,Obstetrics and Gynecology,Geriatrics,MD,LIC537380,IL,FAC000859,555-257-4696,dr.scott2@wrshealthproviders.com,True,True,2008-06-26,2023-03-20 23:53:57.982591
+PRV000096,1000000096,James,Thompson,Internal Medicine,Critical Care,MD,LIC619899,NY,FAC000952,555-710-8659,dr.young89@wrshealthproviders.com,True,True,2016-06-13,2024-02-02 23:53:57.982591
+PRV000097,1000000097,James,Lewis,Emergency Medicine,Interventional,NP,LIC762664,NY,FAC000871,555-500-7735,dr.lewis63@wrshealthproviders.com,True,True,2005-05-23,2023-06-28 23:53:57.982591
+PRV000098,1000000098,David,Nelson,Radiology,Interventional,MD,LIC273766,NY,FAC000073,555-854-2716,dr.wright90@wrshealthproviders.com,False,True,2016-07-30,2021-04-20 23:53:57.982591
+PRV000099,1000000099,James,King,Neurology,Sports Medicine,MD,LIC983078,AZ,FAC000795,555-799-1776,dr.nelson14@wrshealthproviders.com,True,True,2009-02-02,2025-03-17 23:53:57.982591
+PRV000100,1000000100,Richard,Green,Neurology,Interventional,MD,LIC431536,NY,FAC000510,555-420-5121,dr.thompson32@wrshealthproviders.com,False,True,2009-06-10,2023-02-25 23:53:57.982591
+PRV000101,1000000101,John,Thompson,Orthopedics,Pain Management,MD,LIC209565,PA,FAC000263,555-224-8520,dr.green84@wrshealthproviders.com,True,True,2019-01-15,2022-05-26 23:53:57.982591
+PRV000102,1000000102,Laura,Hall,Endocrinology,Geriatrics,MD,LIC416241,FL,FAC000073,555-902-2368,dr.walker82@wrshealthproviders.com,True,True,2020-04-26,2024-10-20 23:53:57.982591
+PRV000103,1000000103,Lisa,Young,Radiology,Critical Care,MD,LIC110743,FL,FAC000648,555-430-1618,dr.anderson47@wrshealthproviders.com,True,False,2024-03-14,2024-07-27 23:53:57.982591
+PRV000104,1000000104,Laura,Wright,Cardiology,Sports Medicine,MD,LIC820817,PA,FAC000444,555-129-9098,dr.scott77@wrshealthproviders.com,False,True,2012-09-17,2023-10-19 23:53:57.982591
+PRV000105,1000000105,Jennifer,Scott,Dermatology,Sports Medicine,MD,LIC703301,PA,FAC000701,555-542-1227,dr.king84@wrshealthproviders.com,True,True,2016-07-28,2022-05-15 23:53:57.982591
+PRV000106,1000000106,Lisa,Walker,Family Medicine,Pain Management,MD,LIC494767,IL,FAC000282,555-182-8490,dr.green23@wrshealthproviders.com,True,True,2024-07-02,2024-10-31 23:53:57.982591
+PRV000107,1000000107,Nancy,Hall,Ophthalmology,,MD,LIC214808,IL,FAC000493,555-456-2816,dr.king81@wrshealthproviders.com,True,True,2007-01-15,2022-05-30 23:53:57.982591
+PRV000108,1000000108,Michael,Walker,Anesthesiology,Interventional,MD,LIC874625,FL,FAC000973,555-827-9796,dr.thompson88@wrshealthproviders.com,True,True,2018-05-22,2023-02-24 23:53:57.982591
+PRV000109,1000000109,Karen,Clark,Radiology,,DO,LIC558783,CA,FAC000824,555-106-1089,dr.scott79@wrshealthproviders.com,True,True,2021-09-19,2021-06-19 23:53:57.982591
+PRV000110,1000000110,Karen,Hall,Anesthesiology,Critical Care,PA,LIC153403,FL,FAC000496,555-559-8753,dr.young10@wrshealthproviders.com,False,True,2012-07-27,2022-08-17 23:53:57.982591
+PRV000111,1000000111,Jennifer,Young,Psychiatry,Critical Care,PA,LIC692056,TX,FAC000878,555-666-5102,dr.clark28@wrshealthproviders.com,False,True,2005-10-25,2025-06-30 23:53:57.982591
+PRV000112,1000000112,William,Wright,Dermatology,Critical Care,NP,LIC707701,PA,FAC000785,555-283-9305,dr.king22@wrshealthproviders.com,True,True,2010-03-02,2021-01-24 23:53:57.982591
+PRV000113,1000000113,James,Clark,Radiology,Interventional,DO,LIC626345,NY,FAC000994,555-390-7024,dr.anderson87@wrshealthproviders.com,False,True,2019-10-09,2023-08-09 23:53:57.982591
+PRV000114,1000000114,Thomas,Allen,Ophthalmology,Interventional,DO,LIC569570,PA,FAC000740,555-471-8480,dr.scott98@wrshealthproviders.com,True,True,2022-11-19,2025-08-01 23:53:57.982591
+PRV000115,1000000115,William,King,Orthopedics,Pain Management,MD,LIC320994,FL,FAC000678,555-547-2681,dr.anderson68@wrshealthproviders.com,True,True,2016-02-15,2022-04-29 23:53:57.982591
+PRV000116,1000000116,Laura,Baker,General Surgery,Geriatrics,DO,LIC177087,TX,FAC000397,555-642-8010,dr.martinez12@wrshealthproviders.com,True,True,2014-01-14,2022-09-05 23:53:57.982591
+PRV000117,1000000117,Nancy,Thompson,Ophthalmology,,MD,LIC621998,AZ,FAC000900,555-594-8900,dr.anderson59@wrshealthproviders.com,True,True,2021-11-24,2025-11-22 23:53:57.982591
+PRV000118,1000000118,Robert,King,Dermatology,Geriatrics,MD,LIC964692,FL,FAC000194,555-918-1749,dr.robinson37@wrshealthproviders.com,False,True,2020-04-14,2024-01-29 23:53:57.982591
+PRV000119,1000000119,Laura,Martinez,Orthopedics,Interventional,DO,LIC114587,CA,FAC000839,555-543-8010,dr.lewis27@wrshealthproviders.com,True,True,2022-02-11,2024-03-29 23:53:57.982591
+PRV000120,1000000120,Jennifer,King,Emergency Medicine,,MD,LIC718645,FL,FAC000789,555-599-3150,dr.scott4@wrshealthproviders.com,True,True,2005-12-14,2022-12-06 23:53:57.982591
+PRV000121,1000000121,Lisa,King,Ophthalmology,Sports Medicine,MD,LIC625425,IL,FAC000854,555-804-2512,dr.hall53@wrshealthproviders.com,True,True,2018-04-20,2023-04-22 23:53:57.982591
+PRV000122,1000000122,John,Nelson,Emergency Medicine,Critical Care,PA,LIC221326,NY,FAC000835,555-718-3610,dr.anderson65@wrshealthproviders.com,True,True,2016-06-23,2023-12-29 23:53:57.982591
+PRV000123,1000000123,William,Clark,Pediatrics,Pain Management,MD,LIC517333,NY,FAC000104,555-917-3897,dr.king72@wrshealthproviders.com,True,True,2006-04-12,2024-11-16 23:53:57.982591
+PRV000124,1000000124,William,Scott,Dermatology,,MD,LIC526021,TX,FAC000641,555-666-4810,dr.young34@wrshealthproviders.com,False,True,2008-06-17,2025-12-09 23:53:57.982591
+PRV000125,1000000125,Laura,Walker,Endocrinology,,PA,LIC659209,FL,FAC000041,555-406-2922,dr.allen27@wrshealthproviders.com,False,True,2019-05-23,2022-02-16 23:53:57.982591
+PRV000126,1000000126,Laura,Anderson,Oncology,Pain Management,DO,LIC688199,IL,FAC000708,555-365-4363,dr.nelson18@wrshealthproviders.com,True,True,2018-09-30,2022-06-22 23:53:57.982591
+PRV000127,1000000127,Laura,Walker,Emergency Medicine,Pain Management,MD,LIC207633,CA,FAC000986,555-110-3474,dr.robinson26@wrshealthproviders.com,True,True,2014-05-30,2025-03-15 23:53:57.982591
+PRV000128,1000000128,Robert,Lewis,Neurology,,MD,LIC333704,IL,FAC000915,555-213-6937,dr.lewis56@wrshealthproviders.com,True,True,2022-06-14,2022-10-01 23:53:57.982591
+PRV000129,1000000129,Richard,Allen,Cardiology,Sports Medicine,MD,LIC118683,FL,FAC000235,555-262-8413,dr.nelson64@wrshealthproviders.com,True,True,2024-03-10,2023-09-30 23:53:57.982591
+PRV000130,1000000130,Thomas,Clark,Psychiatry,Interventional,NP,LIC340986,PA,FAC000796,555-280-6956,dr.green28@wrshealthproviders.com,True,True,2016-07-03,2025-07-23 23:53:57.982591
+PRV000131,1000000131,Nancy,Baker,Radiology,Sports Medicine,MD,LIC999605,CA,FAC000843,555-737-8950,dr.hall10@wrshealthproviders.com,True,True,2023-12-18,2024-07-08 23:53:57.982591
+PRV000132,1000000132,John,Martinez,Oncology,Sports Medicine,MD,LIC757149,IL,FAC000161,555-647-4638,dr.martinez88@wrshealthproviders.com,True,True,2007-04-24,2022-01-03 23:53:57.982591
+PRV000133,1000000133,Laura,Scott,Endocrinology,Pain Management,MD,LIC672075,PA,FAC000718,555-300-7927,dr.thompson39@wrshealthproviders.com,True,True,2016-03-21,2022-10-05 23:53:57.982591
+PRV000134,1000000134,Michelle,Robinson,Internal Medicine,Pain Management,MD,LIC408341,PA,FAC000254,555-948-8599,dr.hall66@wrshealthproviders.com,True,True,2023-09-02,2022-09-02 23:53:57.982591
+PRV000135,1000000135,Emily,Scott,Dermatology,Critical Care,PA,LIC498173,FL,FAC000125,555-387-1891,dr.young90@wrshealthproviders.com,True,True,2015-05-26,2022-04-16 23:53:57.982591
+PRV000136,1000000136,Sarah,Lewis,Orthopedics,Interventional,MD,LIC732016,NY,FAC000598,555-636-2675,dr.hall6@wrshealthproviders.com,True,True,2014-11-10,2021-10-16 23:53:57.982591
+PRV000137,1000000137,Karen,Scott,Family Medicine,,DO,LIC213856,FL,FAC000470,555-274-1736,dr.nelson73@wrshealthproviders.com,True,True,2010-08-09,2025-09-21 23:53:57.982591
+PRV000138,1000000138,Robert,Baker,Pediatrics,Geriatrics,MD,LIC812364,NY,FAC000412,555-453-5384,dr.nelson43@wrshealthproviders.com,False,True,2019-09-25,2021-08-13 23:53:57.982591
+PRV000139,1000000139,James,Allen,General Surgery,Pain Management,DO,LIC289407,IL,FAC000484,555-927-5695,dr.scott66@wrshealthproviders.com,True,True,2014-01-09,2021-02-18 23:53:57.982591
+PRV000140,1000000140,Emily,Nelson,Endocrinology,Critical Care,PA,LIC676209,TX,FAC000060,555-804-8623,dr.allen23@wrshealthproviders.com,False,True,2004-09-06,2022-04-01 23:53:57.982591
+PRV000141,1000000141,William,Green,Pediatrics,Geriatrics,MD,LIC200590,IL,FAC000167,555-743-7407,dr.robinson72@wrshealthproviders.com,True,True,2014-11-18,2021-03-25 23:53:57.982591
+PRV000142,1000000142,John,Lewis,Family Medicine,Interventional,MD,LIC482556,IL,FAC000371,555-705-9739,dr.robinson72@wrshealthproviders.com,True,True,2013-03-12,2021-06-03 23:53:57.982591
+PRV000143,1000000143,James,Walker,Ophthalmology,Interventional,MD,LIC157303,PA,FAC000315,555-981-9839,dr.thompson9@wrshealthproviders.com,True,True,2013-02-13,2022-08-16 23:53:57.982591
+PRV000144,1000000144,Lisa,Nelson,Orthopedics,,DO,LIC206061,TX,FAC000987,555-129-2484,dr.nelson36@wrshealthproviders.com,False,True,2005-03-08,2024-05-16 23:53:57.982591
+PRV000145,1000000145,Sarah,Anderson,Obstetrics and Gynecology,,MD,LIC499530,TX,FAC000385,555-280-3706,dr.baker22@wrshealthproviders.com,True,True,2011-03-04,2025-09-05 23:53:57.982591
+PRV000146,1000000146,Lisa,Walker,Radiology,Pain Management,NP,LIC364642,CA,FAC000103,555-450-7635,dr.martinez92@wrshealthproviders.com,True,True,2021-05-10,2023-08-22 23:53:57.982591
+PRV000147,1000000147,William,Wright,Family Medicine,Interventional,DO,LIC441327,IL,FAC000424,555-916-3114,dr.hall14@wrshealthproviders.com,True,True,2023-06-03,2023-06-02 23:53:57.982591
+PRV000148,1000000148,Nancy,Allen,Orthopedics,Geriatrics,NP,LIC373792,FL,FAC000523,555-162-9718,dr.robinson21@wrshealthproviders.com,True,True,2019-04-24,2022-11-13 23:53:57.982591
+PRV000149,1000000149,John,Nelson,Anesthesiology,,DO,LIC528714,AZ,FAC000261,555-321-7798,dr.scott46@wrshealthproviders.com,True,True,2022-04-21,2024-03-15 23:53:57.982591
+PRV000150,1000000150,David,Baker,Obstetrics and Gynecology,,MD,LIC503759,CA,FAC000943,555-198-1238,dr.baker40@wrshealthproviders.com,False,True,2012-11-09,2022-07-11 23:53:57.982591
+PRV000151,1000000151,Karen,Lewis,Neurology,Interventional,MD,LIC260919,CA,FAC000300,555-980-9842,dr.scott1@wrshealthproviders.com,True,True,2022-05-27,2022-05-08 23:53:57.982591
+PRV000152,1000000152,Nancy,Green,General Surgery,Interventional,MD,LIC487650,CA,FAC000285,555-139-3436,dr.walker8@wrshealthproviders.com,True,True,2024-02-29,2025-02-28 23:53:57.982591
+PRV000153,1000000153,Richard,Robinson,Emergency Medicine,,PA,LIC560526,FL,FAC000389,555-466-9042,dr.clark88@wrshealthproviders.com,True,False,2023-09-13,2022-05-21 23:53:57.982591
+PRV000154,1000000154,Nancy,Walker,Radiology,Geriatrics,DO,LIC342886,NY,FAC000608,555-943-1630,dr.walker14@wrshealthproviders.com,True,True,2014-09-30,2025-10-21 23:53:57.982591
+PRV000155,1000000155,John,Robinson,Psychiatry,Sports Medicine,DO,LIC217128,PA,FAC000430,555-911-2144,dr.clark10@wrshealthproviders.com,True,True,2021-06-08,2024-12-28 23:53:57.982591
+PRV000156,1000000156,Nancy,Clark,Neurology,Interventional,MD,LIC262306,TX,FAC000290,555-970-7609,dr.nelson68@wrshealthproviders.com,True,True,2006-12-17,2023-06-10 23:53:57.982591
+PRV000157,1000000157,Robert,Lewis,Cardiology,Critical Care,MD,LIC466142,IL,FAC000375,555-995-3759,dr.robinson58@wrshealthproviders.com,True,True,2011-05-29,2022-09-13 23:53:57.982591
+PRV000158,1000000158,Karen,Allen,Obstetrics and Gynecology,,DO,LIC329675,CA,FAC000780,555-834-1774,dr.anderson40@wrshealthproviders.com,True,True,2024-06-22,2021-08-31 23:53:57.982591
+PRV000159,1000000159,Michelle,Martinez,Emergency Medicine,,MD,LIC542188,PA,FAC000972,555-852-7524,dr.lewis91@wrshealthproviders.com,True,True,2013-09-30,2023-03-12 23:53:57.982591
+PRV000160,1000000160,Thomas,Lewis,Pediatrics,Critical Care,MD,LIC213251,NY,FAC000660,555-835-4947,dr.hall18@wrshealthproviders.com,False,True,2010-03-24,2022-08-05 23:53:57.982591
+PRV000161,1000000161,Richard,Hall,Family Medicine,Critical Care,DO,LIC233411,FL,FAC000518,555-568-2020,dr.nelson41@wrshealthproviders.com,True,True,2019-04-11,2022-03-20 23:53:57.982591
+PRV000162,1000000162,John,Clark,Psychiatry,Interventional,MD,LIC562815,NY,FAC000622,555-331-7089,dr.martinez11@wrshealthproviders.com,True,True,2014-06-26,2021-12-11 23:53:57.982591
+PRV000163,1000000163,Laura,Anderson,Dermatology,Critical Care,MD,LIC521983,TX,FAC000925,555-445-6762,dr.king79@wrshealthproviders.com,True,True,2011-02-15,2022-03-05 23:53:57.982591
+PRV000164,1000000164,William,Scott,Emergency Medicine,Geriatrics,MD,LIC722333,AZ,FAC000778,555-737-2730,dr.lewis4@wrshealthproviders.com,True,True,2006-11-17,2025-07-03 23:53:57.982591
+PRV000165,1000000165,Michael,Lewis,Cardiology,Pain Management,MD,LIC624894,IL,FAC000185,555-425-3019,dr.green28@wrshealthproviders.com,True,True,2006-05-23,2024-07-02 23:53:57.982591
+PRV000166,1000000166,Jennifer,Wright,Ophthalmology,Geriatrics,PA,LIC574405,TX,FAC000258,555-500-8178,dr.anderson34@wrshealthproviders.com,True,True,2013-02-02,2024-03-14 23:53:57.982591
+PRV000167,1000000167,Michael,Hall,Ophthalmology,Sports Medicine,MD,LIC513833,NY,FAC000700,555-487-2259,dr.robinson49@wrshealthproviders.com,True,True,2008-11-23,2021-04-09 23:53:57.982591
+PRV000168,1000000168,Sarah,Allen,General Surgery,Interventional,MD,LIC280580,CA,FAC000316,555-546-7772,dr.wright17@wrshealthproviders.com,False,True,2024-01-02,2024-07-25 23:53:57.982591
+PRV000169,1000000169,Michael,Robinson,Internal Medicine,Geriatrics,MD,LIC907693,AZ,FAC000087,555-255-7649,dr.baker22@wrshealthproviders.com,True,True,2008-10-02,2023-01-03 23:53:57.982591
+PRV000170,1000000170,Michelle,Wright,Ophthalmology,Interventional,DO,LIC269659,FL,FAC000965,555-996-6688,dr.scott12@wrshealthproviders.com,True,True,2022-09-12,2025-08-03 23:53:57.982591
+PRV000171,1000000171,David,Allen,Ophthalmology,Sports Medicine,MD,LIC924843,AZ,FAC000681,555-654-7497,dr.robinson2@wrshealthproviders.com,True,True,2010-05-07,2021-07-02 23:53:57.982591
+PRV000172,1000000172,Richard,King,Endocrinology,,MD,LIC892635,FL,FAC000556,555-994-4159,dr.wright29@wrshealthproviders.com,True,True,2022-11-30,2025-08-23 23:53:57.982591
+PRV000173,1000000173,Jennifer,Wright,Neurology,Geriatrics,MD,LIC712371,IL,FAC000234,555-495-1890,dr.robinson6@wrshealthproviders.com,True,True,2014-10-25,2022-11-21 23:53:57.982591
+PRV000174,1000000174,David,Allen,Endocrinology,Critical Care,MD,LIC471883,NY,FAC000190,555-235-6894,dr.anderson9@wrshealthproviders.com,False,True,2023-09-05,2022-08-03 23:53:57.982591
+PRV000175,1000000175,Richard,Martinez,Endocrinology,,MD,LIC622370,PA,FAC000521,555-349-7155,dr.baker78@wrshealthproviders.com,True,True,2008-07-25,2025-05-13 23:53:57.982591
+PRV000176,1000000176,Michelle,Lewis,Orthopedics,,NP,LIC930241,PA,FAC000917,555-625-8998,dr.lewis97@wrshealthproviders.com,True,True,2017-04-24,2023-05-22 23:53:57.982591
+PRV000177,1000000177,Michelle,King,Internal Medicine,Critical Care,NP,LIC881824,IL,FAC000792,555-292-3364,dr.king9@wrshealthproviders.com,True,False,2007-11-01,2022-07-13 23:53:57.982591
+PRV000178,1000000178,Emily,Hall,Cardiology,,MD,LIC769909,AZ,FAC000069,555-928-1993,dr.hall51@wrshealthproviders.com,True,True,2016-04-13,2025-02-18 23:53:57.982591
+PRV000179,1000000179,John,Martinez,Pediatrics,Geriatrics,MD,LIC712746,CA,FAC000888,555-733-3427,dr.lewis20@wrshealthproviders.com,True,True,2018-12-16,2023-03-01 23:53:57.982591
+PRV000180,1000000180,David,Allen,Internal Medicine,Geriatrics,PA,LIC424093,CA,FAC000091,555-282-6344,dr.walker70@wrshealthproviders.com,True,True,2014-08-14,2024-06-22 23:53:57.982591
+PRV000181,1000000181,James,Anderson,Obstetrics and Gynecology,Geriatrics,MD,LIC612001,IL,FAC000877,555-994-5520,dr.anderson10@wrshealthproviders.com,True,True,2010-09-28,2024-02-25 23:53:57.982591
+PRV000182,1000000182,Karen,Thompson,Family Medicine,Pain Management,NP,LIC393703,PA,FAC000819,555-468-1753,dr.walker85@wrshealthproviders.com,True,True,2005-07-14,2021-08-26 23:53:57.982591
+PRV000183,1000000183,Michelle,Hall,Emergency Medicine,Pain Management,MD,LIC481534,TX,FAC000815,555-924-1321,dr.baker5@wrshealthproviders.com,True,True,2009-11-02,2023-02-24 23:53:57.982591
+PRV000184,1000000184,Sarah,Wright,Neurology,Geriatrics,PA,LIC138928,TX,FAC000248,555-496-5394,dr.lewis4@wrshealthproviders.com,False,True,2015-06-08,2024-05-09 23:53:57.982591
+PRV000185,1000000185,Karen,Scott,Emergency Medicine,Interventional,DO,LIC682350,IL,FAC000885,555-118-8195,dr.martinez77@wrshealthproviders.com,True,True,2008-06-11,2023-01-14 23:53:57.982591
+PRV000186,1000000186,Lisa,Hall,General Surgery,Pain Management,PA,LIC162838,CA,FAC000455,555-672-8587,dr.young1@wrshealthproviders.com,False,True,2017-08-15,2021-11-25 23:53:57.982591
+PRV000187,1000000187,William,Anderson,Dermatology,Interventional,DO,LIC761515,NY,FAC000648,555-939-4347,dr.martinez97@wrshealthproviders.com,True,True,2012-12-12,2023-05-01 23:53:57.982591
+PRV000188,1000000188,Richard,Walker,Anesthesiology,Critical Care,MD,LIC691469,FL,FAC000131,555-942-9159,dr.allen50@wrshealthproviders.com,True,True,2010-12-02,2024-07-11 23:53:57.982591
+PRV000189,1000000189,Karen,Lewis,Family Medicine,Pain Management,PA,LIC779018,FL,FAC000279,555-199-9778,dr.scott11@wrshealthproviders.com,True,True,2016-09-26,2022-10-02 23:53:57.982591
+PRV000190,1000000190,Lisa,Clark,Pediatrics,,MD,LIC630172,TX,FAC000965,555-304-5710,dr.hall52@wrshealthproviders.com,True,True,2014-11-07,2024-08-06 23:53:57.982591
+PRV000191,1000000191,William,Green,General Surgery,,MD,LIC746861,IL,FAC000764,555-220-1916,dr.thompson60@wrshealthproviders.com,True,True,2008-01-31,2025-10-20 23:53:57.982591
+PRV000192,1000000192,Jennifer,Nelson,Endocrinology,,DO,LIC921710,TX,FAC000700,555-152-1073,dr.nelson19@wrshealthproviders.com,True,True,2016-11-12,2021-04-28 23:53:57.982591
+PRV000193,1000000193,James,Walker,Endocrinology,Critical Care,DO,LIC573277,IL,FAC000698,555-547-7381,dr.nelson21@wrshealthproviders.com,True,True,2014-12-15,2025-10-17 23:53:57.982591
+PRV000194,1000000194,Lisa,King,Radiology,,PA,LIC225549,IL,FAC000286,555-430-9845,dr.thompson81@wrshealthproviders.com,False,True,2011-10-03,2022-10-23 23:53:57.982591
+PRV000195,1000000195,Laura,Young,Emergency Medicine,Pain Management,MD,LIC588895,CA,FAC000786,555-399-9442,dr.young47@wrshealthproviders.com,True,True,2024-07-26,2021-03-03 23:53:57.982591
+PRV000196,1000000196,Thomas,Anderson,Psychiatry,Sports Medicine,DO,LIC342787,FL,FAC000505,555-394-4946,dr.thompson90@wrshealthproviders.com,True,True,2005-03-01,2025-01-24 23:53:57.982591
+PRV000197,1000000197,William,Young,Obstetrics and Gynecology,Interventional,DO,LIC783701,CA,FAC000956,555-972-4791,dr.anderson56@wrshealthproviders.com,True,True,2019-12-29,2023-09-07 23:53:57.982591
+PRV000198,1000000198,Sarah,Baker,Orthopedics,Sports Medicine,MD,LIC331180,NY,FAC000730,555-127-1095,dr.walker89@wrshealthproviders.com,False,True,2006-12-23,2025-01-04 23:53:57.982591
+PRV000199,1000000199,Thomas,Scott,Orthopedics,Geriatrics,MD,LIC193901,TX,FAC000610,555-383-8054,dr.wright30@wrshealthproviders.com,True,True,2008-08-21,2022-12-11 23:53:57.982591
+PRV000200,1000000200,Nancy,Wright,Oncology,Pain Management,MD,LIC895286,FL,FAC000837,555-163-4688,dr.hall27@wrshealthproviders.com,True,True,2020-01-01,2021-09-01 23:53:57.982591
+PRV000201,1000000201,Karen,Baker,Psychiatry,,MD,LIC453214,FL,FAC000728,555-818-6131,dr.wright4@wrshealthproviders.com,True,True,2016-02-09,2023-02-22 23:53:57.982591
+PRV000202,1000000202,William,Robinson,Emergency Medicine,Sports Medicine,PA,LIC911604,IL,FAC000161,555-956-7784,dr.robinson52@wrshealthproviders.com,True,True,2010-12-13,2023-10-24 23:53:57.982591
+PRV000203,1000000203,Thomas,Green,Orthopedics,Interventional,DO,LIC620131,AZ,FAC000800,555-101-9743,dr.lewis54@wrshealthproviders.com,False,True,2014-09-14,2024-02-06 23:53:57.982591
+PRV000204,1000000204,Lisa,Green,Orthopedics,,DO,LIC198616,FL,FAC000593,555-723-9134,dr.clark42@wrshealthproviders.com,True,True,2005-07-08,2021-12-02 23:53:57.982591
+PRV000205,1000000205,Laura,Clark,Neurology,Interventional,PA,LIC544912,IL,FAC000469,555-139-7288,dr.martinez5@wrshealthproviders.com,True,True,2008-09-17,2023-01-05 23:53:57.982591
+PRV000206,1000000206,James,Martinez,Orthopedics,Critical Care,MD,LIC138611,NY,FAC000767,555-382-5013,dr.young74@wrshealthproviders.com,False,True,2017-11-11,2021-05-01 23:53:57.982591
+PRV000207,1000000207,Karen,Walker,Radiology,Critical Care,NP,LIC391236,TX,FAC000735,555-581-7110,dr.allen49@wrshealthproviders.com,True,True,2010-11-04,2025-12-01 23:53:57.982591
+PRV000208,1000000208,David,Clark,Endocrinology,Critical Care,MD,LIC280868,NY,FAC000333,555-738-1087,dr.robinson63@wrshealthproviders.com,True,True,2011-11-01,2021-01-28 23:53:57.982591
+PRV000209,1000000209,William,Wright,Endocrinology,Interventional,NP,LIC501242,FL,FAC000589,555-391-5630,dr.hall5@wrshealthproviders.com,True,True,2008-03-20,2023-04-11 23:53:57.982591
+PRV000210,1000000210,Michael,Thompson,General Surgery,Interventional,MD,LIC967149,IL,FAC000095,555-578-1834,dr.wright86@wrshealthproviders.com,True,True,2008-09-19,2022-05-11 23:53:57.982591
+PRV000211,1000000211,Jennifer,Green,Dermatology,Interventional,PA,LIC186492,PA,FAC000735,555-750-6159,dr.martinez94@wrshealthproviders.com,True,True,2004-05-19,2025-01-01 23:53:57.982591
+PRV000212,1000000212,Jennifer,Lewis,General Surgery,Critical Care,MD,LIC377931,FL,FAC000880,555-865-4974,dr.king13@wrshealthproviders.com,True,True,2018-10-11,2025-12-03 23:53:57.982591
+PRV000213,1000000213,William,Green,General Surgery,Critical Care,MD,LIC974802,IL,FAC000273,555-159-5305,dr.walker29@wrshealthproviders.com,True,True,2007-10-25,2021-05-25 23:53:57.982591
+PRV000214,1000000214,Michelle,King,Neurology,Sports Medicine,DO,LIC907400,NY,FAC000938,555-581-1241,dr.clark4@wrshealthproviders.com,True,True,2014-01-27,2025-09-23 23:53:57.982591
+PRV000215,1000000215,Nancy,Scott,Radiology,Pain Management,MD,LIC364738,NY,FAC000855,555-229-9004,dr.scott57@wrshealthproviders.com,True,True,2004-02-24,2022-12-01 23:53:57.982591
+PRV000216,1000000216,Thomas,Young,General Surgery,,DO,LIC569549,PA,FAC000307,555-770-9679,dr.walker8@wrshealthproviders.com,False,True,2011-07-08,2022-06-19 23:53:57.982591
+PRV000217,1000000217,Sarah,Walker,Oncology,Interventional,MD,LIC191816,CA,FAC000995,555-690-1386,dr.clark38@wrshealthproviders.com,True,True,2023-03-08,2022-05-01 23:53:57.982591
+PRV000218,1000000218,Michael,Young,Internal Medicine,Critical Care,DO,LIC537667,TX,FAC000543,555-263-8462,dr.anderson62@wrshealthproviders.com,True,True,2006-05-09,2025-11-30 23:53:57.982591
+PRV000219,1000000219,Laura,Baker,Dermatology,Pain Management,MD,LIC449142,PA,FAC000932,555-535-5307,dr.young12@wrshealthproviders.com,True,True,2024-07-31,2024-01-18 23:53:57.982591
+PRV000220,1000000220,William,Scott,Cardiology,Sports Medicine,MD,LIC138683,NY,FAC000943,555-477-2860,dr.walker44@wrshealthproviders.com,True,True,2006-09-10,2023-06-25 23:53:57.982591
+PRV000221,1000000221,Jennifer,Thompson,Radiology,Geriatrics,MD,LIC989364,CA,FAC000590,555-292-1071,dr.green54@wrshealthproviders.com,True,True,2011-12-20,2021-07-18 23:53:57.982591
+PRV000222,1000000222,Jennifer,Lewis,Dermatology,Pain Management,MD,LIC377777,PA,FAC000314,555-802-1782,dr.king31@wrshealthproviders.com,True,True,2007-12-24,2025-12-04 23:53:57.982591
+PRV000223,1000000223,Laura,Walker,Pediatrics,,MD,LIC375243,PA,FAC000021,555-428-1818,dr.hall73@wrshealthproviders.com,True,True,2011-03-09,2025-08-04 23:53:57.982591
+PRV000224,1000000224,Jennifer,Anderson,Cardiology,,MD,LIC903273,IL,FAC000911,555-974-2937,dr.thompson29@wrshealthproviders.com,True,True,2008-12-25,2022-11-05 23:53:57.982591
+PRV000225,1000000225,James,Lewis,Obstetrics and Gynecology,Critical Care,MD,LIC209879,PA,FAC000006,555-738-9936,dr.scott29@wrshealthproviders.com,True,True,2011-03-02,2023-04-02 23:53:57.982591
+PRV000226,1000000226,Nancy,Wright,Obstetrics and Gynecology,,MD,LIC487951,TX,FAC000589,555-435-9043,dr.wright62@wrshealthproviders.com,True,False,2011-12-13,2024-06-10 23:53:57.982591
+PRV000227,1000000227,William,Baker,Ophthalmology,Geriatrics,MD,LIC294358,PA,FAC000677,555-436-5895,dr.allen26@wrshealthproviders.com,True,True,2006-03-29,2021-03-13 23:53:57.982591
+PRV000228,1000000228,Jennifer,Lewis,Internal Medicine,Pain Management,NP,LIC551034,FL,FAC000317,555-593-4436,dr.hall78@wrshealthproviders.com,False,True,2011-01-04,2024-11-11 23:53:57.982591
+PRV000229,1000000229,Robert,Young,Emergency Medicine,Critical Care,MD,LIC373925,CA,FAC000394,555-655-9322,dr.robinson76@wrshealthproviders.com,True,True,2020-03-02,2021-10-07 23:53:57.982591
+PRV000230,1000000230,Richard,Scott,Anesthesiology,Sports Medicine,MD,LIC397721,PA,FAC000348,555-893-1003,dr.king65@wrshealthproviders.com,True,True,2008-05-25,2022-05-10 23:53:57.982591
+PRV000231,1000000231,Laura,Baker,Psychiatry,,DO,LIC461760,NY,FAC000872,555-654-5632,dr.anderson90@wrshealthproviders.com,True,True,2006-07-20,2022-04-26 23:53:57.982591
+PRV000232,1000000232,James,Walker,Emergency Medicine,Critical Care,MD,LIC815325,FL,FAC000779,555-284-8941,dr.anderson4@wrshealthproviders.com,False,True,2014-03-18,2024-03-27 23:53:57.982591
+PRV000233,1000000233,Sarah,Scott,Anesthesiology,Geriatrics,DO,LIC791638,PA,FAC000885,555-414-1399,dr.young14@wrshealthproviders.com,True,True,2013-03-05,2023-07-16 23:53:57.982591
+PRV000234,1000000234,David,Walker,Endocrinology,,MD,LIC624524,NY,FAC000558,555-491-3620,dr.scott19@wrshealthproviders.com,True,True,2018-09-17,2024-03-28 23:53:57.982591
+PRV000235,1000000235,Sarah,Martinez,Obstetrics and Gynecology,Interventional,MD,LIC875795,TX,FAC000262,555-622-3696,dr.scott63@wrshealthproviders.com,True,True,2012-12-07,2022-03-13 23:53:57.982591
+PRV000236,1000000236,Lisa,Scott,Dermatology,Geriatrics,MD,LIC763614,AZ,FAC000919,555-613-6333,dr.wright6@wrshealthproviders.com,False,True,2008-12-24,2025-03-21 23:53:57.982591
+PRV000237,1000000237,William,Walker,Family Medicine,Interventional,DO,LIC250401,AZ,FAC000415,555-902-1043,dr.martinez92@wrshealthproviders.com,True,True,2005-11-29,2022-05-10 23:53:57.982591
+PRV000238,1000000238,James,Hall,Obstetrics and Gynecology,,DO,LIC728721,FL,FAC000241,555-555-3683,dr.young56@wrshealthproviders.com,True,True,2016-01-10,2022-08-01 23:53:57.982591
+PRV000239,1000000239,Sarah,Anderson,General Surgery,,MD,LIC930002,PA,FAC000904,555-452-6156,dr.hall83@wrshealthproviders.com,False,True,2017-12-28,2025-04-27 23:53:57.982591
+PRV000240,1000000240,Thomas,Young,Oncology,Geriatrics,MD,LIC534202,NY,FAC000994,555-329-4011,dr.robinson35@wrshealthproviders.com,False,True,2021-05-28,2024-03-10 23:53:57.982591
+PRV000241,1000000241,John,Scott,Emergency Medicine,Pain Management,PA,LIC874415,PA,FAC000815,555-113-7069,dr.scott47@wrshealthproviders.com,False,True,2020-03-04,2024-02-11 23:53:57.982591
+PRV000242,1000000242,Sarah,Thompson,Radiology,Geriatrics,MD,LIC725023,TX,FAC000594,555-810-3294,dr.anderson3@wrshealthproviders.com,True,True,2007-10-03,2021-06-13 23:53:57.982591
+PRV000243,1000000243,James,Robinson,Obstetrics and Gynecology,,MD,LIC399689,AZ,FAC000159,555-649-6910,dr.hall74@wrshealthproviders.com,True,True,2024-01-30,2022-02-17 23:53:57.982591
+PRV000244,1000000244,Michael,Nelson,General Surgery,Critical Care,PA,LIC863783,TX,FAC000660,555-174-6236,dr.allen99@wrshealthproviders.com,True,True,2012-12-23,2021-10-13 23:53:57.982591
+PRV000245,1000000245,William,Lewis,Endocrinology,Geriatrics,DO,LIC487040,AZ,FAC000767,555-962-7058,dr.wright47@wrshealthproviders.com,True,True,2024-12-11,2023-12-12 23:53:57.982591
+PRV000246,1000000246,Michael,Scott,Internal Medicine,,MD,LIC369433,FL,FAC000297,555-157-2918,dr.young50@wrshealthproviders.com,True,True,2018-07-25,2021-02-22 23:53:57.982591
+PRV000247,1000000247,David,Clark,Anesthesiology,Sports Medicine,DO,LIC190503,PA,FAC000574,555-293-6398,dr.young83@wrshealthproviders.com,True,True,2017-12-17,2022-06-22 23:53:57.982591
+PRV000248,1000000248,Michelle,Anderson,Emergency Medicine,Interventional,NP,LIC791913,PA,FAC000760,555-260-5143,dr.lewis8@wrshealthproviders.com,True,True,2006-03-21,2023-09-05 23:53:57.982591
+PRV000249,1000000249,David,Hall,Dermatology,Critical Care,MD,LIC805866,IL,FAC000864,555-579-2320,dr.robinson65@wrshealthproviders.com,True,True,2020-03-30,2023-03-28 23:53:57.982591
+PRV000250,1000000250,Nancy,Walker,Oncology,,MD,LIC980048,TX,FAC000820,555-194-8171,dr.robinson98@wrshealthproviders.com,True,True,2020-09-14,2025-11-26 23:53:57.982591
+PRV000251,1000000251,William,Scott,Emergency Medicine,Geriatrics,MD,LIC701208,PA,FAC000516,555-666-9358,dr.anderson18@wrshealthproviders.com,True,True,2019-02-10,2022-02-07 23:53:57.982591
+PRV000252,1000000252,Laura,Young,Orthopedics,Interventional,PA,LIC936933,TX,FAC000507,555-585-6661,dr.walker22@wrshealthproviders.com,True,True,2005-05-17,2022-03-09 23:53:57.982591
+PRV000253,1000000253,William,Thompson,Internal Medicine,Geriatrics,DO,LIC220065,NY,FAC000574,555-113-6921,dr.anderson13@wrshealthproviders.com,True,True,2020-04-16,2022-12-22 23:53:57.982591
+PRV000254,1000000254,Lisa,Young,Orthopedics,Critical Care,MD,LIC975795,NY,FAC000019,555-225-4412,dr.scott45@wrshealthproviders.com,True,True,2024-06-27,2024-07-15 23:53:57.982591
+PRV000255,1000000255,William,Nelson,Oncology,Sports Medicine,NP,LIC329842,AZ,FAC000660,555-986-2972,dr.robinson77@wrshealthproviders.com,True,True,2019-02-17,2023-08-30 23:53:57.982591
+PRV000256,1000000256,Michael,Young,Obstetrics and Gynecology,Pain Management,MD,LIC865768,FL,FAC000981,555-998-9693,dr.anderson52@wrshealthproviders.com,True,True,2011-04-28,2021-06-15 23:53:57.982591
+PRV000257,1000000257,Robert,Martinez,Ophthalmology,,MD,LIC957526,FL,FAC000489,555-750-5378,dr.anderson77@wrshealthproviders.com,True,True,2006-09-14,2022-09-05 23:53:57.982591
+PRV000258,1000000258,Laura,Martinez,Pediatrics,Critical Care,MD,LIC585393,AZ,FAC000770,555-189-9403,dr.robinson63@wrshealthproviders.com,True,True,2012-10-30,2021-12-15 23:53:57.982591
+PRV000259,1000000259,Richard,Green,Ophthalmology,Geriatrics,MD,LIC684795,CA,FAC000250,555-125-6879,dr.wright5@wrshealthproviders.com,False,True,2021-02-20,2025-12-19 23:53:57.982591
+PRV000260,1000000260,Lisa,Hall,Endocrinology,Geriatrics,NP,LIC146700,NY,FAC000490,555-866-2516,dr.baker44@wrshealthproviders.com,True,True,2024-06-17,2026-01-13 23:53:57.982591
+PRV000261,1000000261,William,Allen,Obstetrics and Gynecology,Interventional,MD,LIC366642,IL,FAC000407,555-941-5743,dr.robinson96@wrshealthproviders.com,True,True,2007-05-20,2025-06-17 23:53:57.982591
+PRV000262,1000000262,Jennifer,Hall,Ophthalmology,,NP,LIC723836,NY,FAC000683,555-204-3083,dr.lewis50@wrshealthproviders.com,False,True,2014-08-30,2024-02-20 23:53:57.982591
+PRV000263,1000000263,Michelle,Thompson,General Surgery,Geriatrics,MD,LIC630560,PA,FAC000654,555-122-1053,dr.baker61@wrshealthproviders.com,True,True,2006-01-04,2022-02-23 23:53:57.982591
+PRV000264,1000000264,Nancy,Hall,General Surgery,Geriatrics,MD,LIC608670,PA,FAC000690,555-604-5231,dr.wright3@wrshealthproviders.com,False,True,2024-04-27,2022-05-19 23:53:57.982591
+PRV000265,1000000265,Michael,Robinson,Pediatrics,Pain Management,PA,LIC968735,IL,FAC000825,555-747-1683,dr.allen52@wrshealthproviders.com,False,True,2024-12-30,2022-11-21 23:53:57.982591
+PRV000266,1000000266,Michelle,Thompson,Ophthalmology,Geriatrics,MD,LIC549389,PA,FAC000489,555-381-7122,dr.robinson51@wrshealthproviders.com,True,True,2024-07-08,2025-06-02 23:53:57.982591
+PRV000267,1000000267,David,Robinson,Psychiatry,Pain Management,MD,LIC241596,FL,FAC000429,555-169-6426,dr.lewis85@wrshealthproviders.com,False,True,2021-08-05,2025-04-29 23:53:57.982591
+PRV000268,1000000268,Nancy,Scott,Ophthalmology,Interventional,MD,LIC121934,IL,FAC000823,555-538-4487,dr.clark87@wrshealthproviders.com,True,True,2016-03-28,2021-08-31 23:53:57.982591
+PRV000269,1000000269,Jennifer,Green,Pediatrics,,NP,LIC732228,PA,FAC000261,555-321-3523,dr.young26@wrshealthproviders.com,True,True,2007-10-17,2024-11-09 23:53:57.982591
+PRV000270,1000000270,John,Hall,Emergency Medicine,,MD,LIC298548,IL,FAC000875,555-584-7671,dr.green45@wrshealthproviders.com,True,True,2014-07-15,2023-11-29 23:53:57.982591
+PRV000271,1000000271,James,Scott,Oncology,Pain Management,MD,LIC949959,TX,FAC000586,555-816-3382,dr.green69@wrshealthproviders.com,True,True,2017-03-16,2021-03-27 23:53:57.982591
+PRV000272,1000000272,Sarah,Green,Obstetrics and Gynecology,,MD,LIC674180,IL,FAC000482,555-903-7269,dr.nelson22@wrshealthproviders.com,False,False,2017-06-22,2025-03-09 23:53:57.982591
+PRV000273,1000000273,Karen,Lewis,Oncology,Sports Medicine,MD,LIC947222,FL,FAC000948,555-675-5345,dr.anderson19@wrshealthproviders.com,True,True,2019-03-04,2024-07-05 23:53:57.982591
+PRV000274,1000000274,David,Clark,Orthopedics,Critical Care,DO,LIC301675,TX,FAC000211,555-558-4704,dr.anderson33@wrshealthproviders.com,True,True,2015-01-10,2022-02-04 23:53:57.982591
+PRV000275,1000000275,John,Allen,Pediatrics,Pain Management,MD,LIC565823,CA,FAC000464,555-623-8626,dr.nelson11@wrshealthproviders.com,True,True,2017-04-04,2024-12-28 23:53:57.982591
+PRV000276,1000000276,Richard,Wright,Cardiology,Critical Care,MD,LIC358505,CA,FAC000544,555-957-4327,dr.anderson30@wrshealthproviders.com,True,True,2020-07-04,2024-05-25 23:53:57.982591
+PRV000277,1000000277,Lisa,King,Oncology,Geriatrics,MD,LIC723094,IL,FAC000047,555-143-3471,dr.scott87@wrshealthproviders.com,True,True,2006-10-28,2022-07-24 23:53:57.982591
+PRV000278,1000000278,Robert,Young,General Surgery,Geriatrics,MD,LIC511227,PA,FAC000330,555-790-7056,dr.king30@wrshealthproviders.com,True,True,2009-02-22,2022-06-03 23:53:57.982591
+PRV000279,1000000279,James,Martinez,Dermatology,Interventional,PA,LIC441062,CA,FAC000255,555-282-4336,dr.young63@wrshealthproviders.com,False,True,2007-08-24,2022-03-18 23:53:57.982591
+PRV000280,1000000280,Nancy,Young,Emergency Medicine,Geriatrics,MD,LIC871691,IL,FAC000281,555-717-1793,dr.scott97@wrshealthproviders.com,True,True,2011-03-25,2024-06-10 23:53:57.982591
+PRV000281,1000000281,Michael,Anderson,Oncology,Sports Medicine,PA,LIC272785,PA,FAC000878,555-484-1839,dr.young12@wrshealthproviders.com,False,True,2015-04-23,2021-08-22 23:53:57.982591
+PRV000282,1000000282,Michael,King,Internal Medicine,,MD,LIC427636,FL,FAC000152,555-475-7762,dr.allen38@wrshealthproviders.com,True,True,2006-12-28,2023-05-01 23:53:57.982591
+PRV000283,1000000283,Laura,Baker,Pediatrics,Sports Medicine,MD,LIC282052,PA,FAC000360,555-303-7741,dr.clark93@wrshealthproviders.com,True,True,2018-07-12,2022-03-28 23:53:57.982591
+PRV000284,1000000284,Laura,Scott,Neurology,Interventional,NP,LIC956426,FL,FAC000115,555-930-1743,dr.nelson15@wrshealthproviders.com,True,True,2007-05-01,2025-10-31 23:53:57.982591
+PRV000285,1000000285,Robert,Clark,General Surgery,Critical Care,MD,LIC598306,AZ,FAC000577,555-549-2326,dr.baker38@wrshealthproviders.com,True,True,2009-02-02,2026-01-06 23:53:57.982591
+PRV000286,1000000286,Thomas,Lewis,Psychiatry,Critical Care,DO,LIC802669,TX,FAC000103,555-252-5942,dr.king28@wrshealthproviders.com,True,True,2023-01-15,2025-04-13 23:53:57.982591
+PRV000287,1000000287,David,Wright,Endocrinology,,PA,LIC537146,CA,FAC000876,555-949-3016,dr.martinez38@wrshealthproviders.com,False,True,2015-07-12,2024-02-09 23:53:57.982591
+PRV000288,1000000288,Jennifer,Martinez,Endocrinology,Critical Care,MD,LIC102548,TX,FAC000551,555-308-8818,dr.wright75@wrshealthproviders.com,True,True,2020-04-25,2025-05-23 23:53:57.982591
+PRV000289,1000000289,Richard,Robinson,Ophthalmology,Geriatrics,MD,LIC839281,FL,FAC000466,555-310-5867,dr.wright46@wrshealthproviders.com,False,True,2013-03-07,2022-11-01 23:53:57.982591
+PRV000290,1000000290,Karen,Anderson,Orthopedics,,DO,LIC940588,AZ,FAC000126,555-730-2418,dr.anderson72@wrshealthproviders.com,True,True,2021-12-01,2022-02-27 23:53:57.982591
+PRV000291,1000000291,Robert,Young,Anesthesiology,Critical Care,MD,LIC609442,TX,FAC000434,555-240-6127,dr.thompson7@wrshealthproviders.com,True,True,2017-05-21,2025-10-26 23:53:57.982591
+PRV000292,1000000292,Robert,Green,Psychiatry,Interventional,MD,LIC394983,NY,FAC000130,555-648-2138,dr.clark81@wrshealthproviders.com,True,True,2023-03-28,2023-11-02 23:53:57.982591
+PRV000293,1000000293,Sarah,Martinez,Anesthesiology,Critical Care,MD,LIC791950,NY,FAC000868,555-681-4634,dr.anderson55@wrshealthproviders.com,False,True,2022-09-17,2022-05-24 23:53:57.982591
+PRV000294,1000000294,Michelle,Thompson,Radiology,,MD,LIC808704,PA,FAC000552,555-540-7379,dr.wright40@wrshealthproviders.com,True,True,2014-06-24,2023-07-12 23:53:57.982591
+PRV000295,1000000295,Emily,Scott,Obstetrics and Gynecology,Geriatrics,DO,LIC226946,TX,FAC000586,555-692-5704,dr.nelson26@wrshealthproviders.com,False,True,2005-11-23,2025-04-06 23:53:57.982591
+PRV000296,1000000296,Michael,Green,Endocrinology,Sports Medicine,MD,LIC426099,AZ,FAC000458,555-990-4107,dr.king55@wrshealthproviders.com,False,False,2006-09-08,2024-04-24 23:53:57.982591
+PRV000297,1000000297,Laura,Thompson,General Surgery,Interventional,MD,LIC557764,FL,FAC000314,555-541-5873,dr.allen18@wrshealthproviders.com,True,True,2021-11-18,2022-02-23 23:53:57.982591
+PRV000298,1000000298,Michael,Thompson,Pediatrics,Sports Medicine,DO,LIC374233,IL,FAC000453,555-312-8004,dr.baker89@wrshealthproviders.com,True,True,2006-08-25,2024-07-13 23:53:57.982591
+PRV000299,1000000299,Richard,Lewis,Endocrinology,Geriatrics,MD,LIC985897,CA,FAC000446,555-458-4194,dr.clark76@wrshealthproviders.com,True,True,2010-10-23,2021-08-30 23:53:57.982591
+PRV000300,1000000300,Sarah,Scott,Orthopedics,Critical Care,MD,LIC899958,FL,FAC000827,555-186-6017,dr.allen27@wrshealthproviders.com,True,True,2020-07-04,2023-08-29 23:53:57.982591
+PRV000301,1000000301,Lisa,Anderson,Orthopedics,Interventional,DO,LIC383388,IL,FAC000469,555-856-6162,dr.green81@wrshealthproviders.com,True,True,2023-11-12,2025-10-04 23:53:57.982591
+PRV000302,1000000302,Robert,Young,Family Medicine,,MD,LIC103567,FL,FAC000443,555-809-5586,dr.martinez5@wrshealthproviders.com,True,True,2020-09-23,2022-07-23 23:53:57.982591
+PRV000303,1000000303,Lisa,Green,Internal Medicine,,DO,LIC935460,CA,FAC000436,555-481-7892,dr.anderson73@wrshealthproviders.com,True,True,2006-02-22,2024-01-10 23:53:57.982591
+PRV000304,1000000304,Sarah,Anderson,Cardiology,Critical Care,NP,LIC278632,NY,FAC000711,555-665-2922,dr.lewis34@wrshealthproviders.com,True,True,2006-11-24,2021-07-04 23:53:57.982591
+PRV000305,1000000305,Karen,Robinson,Family Medicine,,MD,LIC556477,PA,FAC000974,555-476-1519,dr.king8@wrshealthproviders.com,True,True,2017-03-21,2023-05-23 23:53:57.982591
+PRV000306,1000000306,Michelle,Baker,Family Medicine,Interventional,MD,LIC827492,FL,FAC000410,555-872-9897,dr.robinson34@wrshealthproviders.com,True,True,2013-09-04,2022-03-06 23:53:57.982591
+PRV000307,1000000307,Michelle,Allen,Cardiology,Critical Care,MD,LIC229996,FL,FAC000772,555-697-6236,dr.green86@wrshealthproviders.com,True,True,2021-05-15,2023-04-29 23:53:57.982591
+PRV000308,1000000308,Michael,King,Neurology,Pain Management,MD,LIC299580,PA,FAC000059,555-211-5809,dr.young57@wrshealthproviders.com,True,True,2023-01-12,2025-02-23 23:53:57.982591
+PRV000309,1000000309,Michelle,Walker,Dermatology,,NP,LIC469417,TX,FAC000709,555-490-4812,dr.thompson20@wrshealthproviders.com,True,True,2014-05-26,2021-05-06 23:53:57.982591
+PRV000310,1000000310,Lisa,Robinson,Ophthalmology,,NP,LIC300573,FL,FAC000626,555-908-2766,dr.walker54@wrshealthproviders.com,False,True,2007-01-26,2024-06-06 23:53:57.982591
+PRV000311,1000000311,Nancy,Scott,Ophthalmology,Sports Medicine,MD,LIC396133,FL,FAC000084,555-646-8335,dr.anderson57@wrshealthproviders.com,True,False,2021-02-11,2023-01-21 23:53:57.982591
+PRV000312,1000000312,Nancy,Clark,Internal Medicine,,DO,LIC262447,IL,FAC000603,555-732-8846,dr.young15@wrshealthproviders.com,True,True,2016-05-03,2023-05-10 23:53:57.982591
+PRV000313,1000000313,Sarah,Young,Anesthesiology,Interventional,PA,LIC441363,NY,FAC000124,555-998-7731,dr.nelson8@wrshealthproviders.com,True,True,2019-12-30,2023-04-29 23:53:57.982591
+PRV000314,1000000314,Jennifer,Allen,Dermatology,,PA,LIC470379,IL,FAC000616,555-899-4739,dr.green2@wrshealthproviders.com,True,True,2009-09-05,2024-06-03 23:53:57.982591
+PRV000315,1000000315,John,Martinez,Oncology,,MD,LIC458074,NY,FAC000195,555-345-1759,dr.lewis23@wrshealthproviders.com,True,True,2019-06-24,2023-06-22 23:53:57.982591
+PRV000316,1000000316,Robert,Anderson,Pediatrics,Sports Medicine,MD,LIC504107,FL,FAC000916,555-231-4251,dr.wright22@wrshealthproviders.com,False,False,2005-08-19,2023-11-16 23:53:57.982591
+PRV000317,1000000317,Michael,Green,Oncology,,MD,LIC190506,AZ,FAC000374,555-108-5607,dr.king42@wrshealthproviders.com,True,True,2024-05-22,2024-09-05 23:53:57.982591
+PRV000318,1000000318,Lisa,Scott,Endocrinology,Interventional,PA,LIC684042,CA,FAC000168,555-259-4443,dr.walker85@wrshealthproviders.com,True,True,2012-11-03,2025-09-26 23:53:57.982591
+PRV000319,1000000319,Laura,Nelson,Oncology,Geriatrics,MD,LIC307048,TX,FAC000390,555-346-4637,dr.martinez25@wrshealthproviders.com,True,True,2007-11-07,2022-03-12 23:53:57.982591
+PRV000320,1000000320,Sarah,Young,Oncology,Critical Care,MD,LIC250343,NY,FAC000859,555-808-9489,dr.allen96@wrshealthproviders.com,True,True,2004-09-14,2023-01-23 23:53:57.982591
+PRV000321,1000000321,Jennifer,King,Cardiology,Critical Care,MD,LIC956954,NY,FAC000260,555-637-4920,dr.martinez58@wrshealthproviders.com,True,True,2023-11-10,2024-11-06 23:53:57.982591
+PRV000322,1000000322,Michael,Nelson,Neurology,,MD,LIC551141,PA,FAC000130,555-206-7333,dr.green24@wrshealthproviders.com,True,True,2007-06-28,2024-03-04 23:53:57.982591
+PRV000323,1000000323,Sarah,Hall,Internal Medicine,Pain Management,MD,LIC854840,NY,FAC000351,555-104-3378,dr.lewis70@wrshealthproviders.com,True,True,2008-04-02,2023-07-30 23:53:57.982591
+PRV000324,1000000324,Lisa,Clark,Anesthesiology,Critical Care,PA,LIC259840,AZ,FAC000591,555-432-1443,dr.anderson74@wrshealthproviders.com,True,True,2004-06-15,2025-04-20 23:53:57.982591
+PRV000325,1000000325,Nancy,Martinez,General Surgery,,MD,LIC971494,IL,FAC000674,555-725-3515,dr.wright39@wrshealthproviders.com,True,True,2019-04-03,2022-04-16 23:53:57.982591
+PRV000326,1000000326,Laura,Green,Cardiology,,MD,LIC192573,AZ,FAC000665,555-607-1264,dr.martinez63@wrshealthproviders.com,True,True,2012-08-19,2023-01-13 23:53:57.982591
+PRV000327,1000000327,Nancy,Wright,Family Medicine,Interventional,MD,LIC317916,TX,FAC000626,555-364-1094,dr.wright35@wrshealthproviders.com,False,True,2006-02-20,2022-08-29 23:53:57.982591
+PRV000328,1000000328,Laura,Thompson,Family Medicine,,MD,LIC659271,AZ,FAC000216,555-124-6084,dr.thompson13@wrshealthproviders.com,True,True,2006-10-18,2025-11-16 23:53:57.982591
+PRV000329,1000000329,Thomas,Lewis,Family Medicine,Interventional,MD,LIC368258,AZ,FAC000116,555-351-9950,dr.scott32@wrshealthproviders.com,True,True,2010-10-02,2022-07-30 23:53:57.982591
+PRV000330,1000000330,Thomas,Allen,Neurology,,MD,LIC228850,PA,FAC000460,555-545-7218,dr.baker79@wrshealthproviders.com,True,True,2010-09-28,2025-07-06 23:53:57.982591
+PRV000331,1000000331,Thomas,Clark,Radiology,Sports Medicine,MD,LIC821347,TX,FAC000446,555-539-9439,dr.thompson45@wrshealthproviders.com,True,True,2024-10-02,2021-03-24 23:53:57.982591
+PRV000332,1000000332,Lisa,Walker,Endocrinology,Interventional,MD,LIC477576,IL,FAC000886,555-410-8656,dr.allen71@wrshealthproviders.com,True,True,2013-01-15,2021-08-23 23:53:57.982591
+PRV000333,1000000333,Nancy,Walker,Dermatology,Geriatrics,MD,LIC461420,PA,FAC000594,555-141-9186,dr.lewis71@wrshealthproviders.com,True,True,2005-02-08,2022-04-05 23:53:57.982591
+PRV000334,1000000334,William,Wright,Neurology,Pain Management,MD,LIC175910,NY,FAC000509,555-767-3503,dr.robinson58@wrshealthproviders.com,True,True,2009-07-16,2025-09-21 23:53:57.982591
+PRV000335,1000000335,Thomas,Allen,Dermatology,Geriatrics,PA,LIC983389,PA,FAC000866,555-498-1701,dr.walker79@wrshealthproviders.com,True,True,2013-06-25,2025-11-01 23:53:57.982591
+PRV000336,1000000336,Richard,Allen,Dermatology,Interventional,PA,LIC109325,AZ,FAC000951,555-855-3624,dr.walker28@wrshealthproviders.com,True,True,2009-01-16,2022-01-10 23:53:57.982591
+PRV000337,1000000337,Michelle,Anderson,Endocrinology,Critical Care,MD,LIC703601,IL,FAC000868,555-575-6152,dr.scott80@wrshealthproviders.com,True,True,2015-06-02,2022-03-03 23:53:57.982591
+PRV000338,1000000338,Karen,Baker,Obstetrics and Gynecology,,MD,LIC799414,CA,FAC000016,555-588-9294,dr.robinson4@wrshealthproviders.com,True,True,2005-04-18,2021-05-23 23:53:57.982591
+PRV000339,1000000339,Karen,Martinez,Anesthesiology,Geriatrics,PA,LIC468650,AZ,FAC000544,555-720-7856,dr.lewis75@wrshealthproviders.com,True,True,2009-06-19,2023-09-13 23:53:57.982591
+PRV000340,1000000340,Michelle,Martinez,Ophthalmology,Sports Medicine,MD,LIC386439,NY,FAC000813,555-536-4318,dr.green84@wrshealthproviders.com,True,True,2023-04-10,2024-08-22 23:53:57.982591
+PRV000341,1000000341,William,Anderson,Radiology,Geriatrics,NP,LIC238961,IL,FAC000364,555-523-9248,dr.wright56@wrshealthproviders.com,True,True,2022-08-21,2024-07-18 23:53:57.982591
+PRV000342,1000000342,Sarah,Baker,Orthopedics,Interventional,PA,LIC758956,PA,FAC000431,555-129-6847,dr.robinson18@wrshealthproviders.com,True,True,2021-04-25,2022-06-13 23:53:57.982591
+PRV000343,1000000343,Robert,Lewis,Obstetrics and Gynecology,,MD,LIC479613,FL,FAC000771,555-310-8954,dr.thompson49@wrshealthproviders.com,True,True,2007-09-26,2023-06-18 23:53:57.982591
+PRV000344,1000000344,James,Wright,Psychiatry,,MD,LIC910267,PA,FAC000878,555-298-9682,dr.young50@wrshealthproviders.com,False,True,2016-10-21,2024-04-26 23:53:57.982591
+PRV000345,1000000345,Emily,Anderson,Internal Medicine,Critical Care,PA,LIC248229,IL,FAC000459,555-159-9615,dr.allen93@wrshealthproviders.com,True,True,2013-10-13,2022-07-10 23:53:57.982591
+PRV000346,1000000346,William,Lewis,Radiology,Geriatrics,MD,LIC604619,NY,FAC000327,555-250-4297,dr.green62@wrshealthproviders.com,True,True,2024-07-31,2021-09-21 23:53:57.982591
+PRV000347,1000000347,James,Hall,Cardiology,,MD,LIC455748,AZ,FAC000589,555-294-1707,dr.scott34@wrshealthproviders.com,True,True,2018-04-05,2022-04-04 23:53:57.982591
+PRV000348,1000000348,Robert,Anderson,General Surgery,Critical Care,MD,LIC106950,IL,FAC000120,555-677-8543,dr.baker72@wrshealthproviders.com,False,True,2018-03-20,2025-08-04 23:53:57.982591
+PRV000349,1000000349,Karen,Wright,Cardiology,,MD,LIC485656,TX,FAC000027,555-130-2529,dr.wright49@wrshealthproviders.com,True,True,2009-04-19,2023-03-18 23:53:57.982591
+PRV000350,1000000350,Emily,Anderson,General Surgery,Pain Management,DO,LIC521488,AZ,FAC000644,555-723-9880,dr.lewis43@wrshealthproviders.com,True,True,2005-04-25,2025-12-17 23:53:57.982591
+PRV000351,1000000351,Emily,Green,Orthopedics,,DO,LIC667455,CA,FAC000384,555-273-5826,dr.thompson72@wrshealthproviders.com,True,True,2019-11-07,2021-06-11 23:53:57.982591
+PRV000352,1000000352,Sarah,Green,Oncology,Critical Care,PA,LIC627767,AZ,FAC000867,555-575-9191,dr.allen46@wrshealthproviders.com,True,True,2023-09-12,2024-07-24 23:53:57.982591
+PRV000353,1000000353,David,Baker,Pediatrics,Geriatrics,MD,LIC769633,NY,FAC000669,555-151-8646,dr.thompson96@wrshealthproviders.com,True,True,2016-02-15,2021-01-20 23:53:57.982591
+PRV000354,1000000354,Richard,Robinson,Dermatology,,MD,LIC164758,AZ,FAC000447,555-470-2626,dr.martinez84@wrshealthproviders.com,True,True,2017-11-25,2021-09-12 23:53:57.982591
+PRV000355,1000000355,Robert,Allen,Psychiatry,Critical Care,MD,LIC635354,IL,FAC000752,555-636-7490,dr.young32@wrshealthproviders.com,False,True,2009-10-05,2025-04-15 23:53:57.982591
+PRV000356,1000000356,William,King,Neurology,Pain Management,MD,LIC387173,TX,FAC000806,555-241-2709,dr.clark46@wrshealthproviders.com,False,True,2006-06-15,2025-10-14 23:53:57.982591
+PRV000357,1000000357,Karen,Hall,Psychiatry,Sports Medicine,MD,LIC778670,PA,FAC000218,555-103-9306,dr.baker2@wrshealthproviders.com,True,False,2007-07-30,2022-03-29 23:53:57.982591
+PRV000358,1000000358,Robert,Hall,Emergency Medicine,Pain Management,PA,LIC651122,CA,FAC000816,555-776-7783,dr.lewis66@wrshealthproviders.com,True,True,2014-08-18,2025-03-06 23:53:57.982591
+PRV000359,1000000359,Lisa,Walker,Oncology,Critical Care,NP,LIC280274,TX,FAC000913,555-959-4082,dr.green16@wrshealthproviders.com,False,True,2004-05-09,2025-02-28 23:53:57.982591
+PRV000360,1000000360,Sarah,Robinson,Emergency Medicine,Sports Medicine,MD,LIC830987,TX,FAC000752,555-513-8543,dr.anderson19@wrshealthproviders.com,True,True,2014-03-13,2024-12-13 23:53:57.982591
+PRV000361,1000000361,David,Nelson,Ophthalmology,Interventional,DO,LIC113887,AZ,FAC000606,555-640-3848,dr.wright81@wrshealthproviders.com,True,True,2022-03-14,2025-12-15 23:53:57.982591
+PRV000362,1000000362,Robert,Martinez,General Surgery,Pain Management,MD,LIC559907,NY,FAC000668,555-617-2114,dr.king98@wrshealthproviders.com,True,True,2022-12-19,2024-04-08 23:53:57.982591
+PRV000363,1000000363,Lisa,Allen,Radiology,,MD,LIC263949,TX,FAC000688,555-533-9920,dr.robinson33@wrshealthproviders.com,True,True,2022-10-21,2021-08-30 23:53:57.982591
+PRV000364,1000000364,Robert,Baker,General Surgery,Critical Care,DO,LIC593683,CA,FAC000845,555-687-7344,dr.hall68@wrshealthproviders.com,True,True,2022-01-19,2021-03-05 23:53:57.982591
+PRV000365,1000000365,Michael,King,Endocrinology,Sports Medicine,MD,LIC175309,PA,FAC000426,555-111-1225,dr.clark42@wrshealthproviders.com,True,True,2015-01-22,2022-11-18 23:53:57.982591
+PRV000366,1000000366,Robert,Wright,Endocrinology,Pain Management,PA,LIC258646,AZ,FAC000497,555-487-7536,dr.king19@wrshealthproviders.com,True,True,2022-08-24,2023-05-15 23:53:57.982591
+PRV000367,1000000367,Karen,Allen,General Surgery,Interventional,DO,LIC510298,AZ,FAC000048,555-974-9260,dr.anderson32@wrshealthproviders.com,True,True,2009-04-17,2021-02-17 23:53:57.982591
+PRV000368,1000000368,Michael,Martinez,Psychiatry,Geriatrics,MD,LIC297286,PA,FAC000678,555-797-9578,dr.lewis87@wrshealthproviders.com,True,True,2015-12-20,2024-02-10 23:53:57.982591
+PRV000369,1000000369,Michelle,Lewis,Neurology,Sports Medicine,DO,LIC315505,CA,FAC000311,555-164-3615,dr.green44@wrshealthproviders.com,True,True,2013-06-17,2023-06-25 23:53:57.982591
+PRV000370,1000000370,William,Lewis,Orthopedics,Sports Medicine,MD,LIC421758,IL,FAC000877,555-598-1769,dr.robinson69@wrshealthproviders.com,False,True,2022-09-04,2024-08-23 23:53:57.982591
+PRV000371,1000000371,William,Young,Anesthesiology,Sports Medicine,MD,LIC134203,NY,FAC000285,555-419-3677,dr.robinson73@wrshealthproviders.com,True,True,2025-01-10,2024-11-02 23:53:57.982591
+PRV000372,1000000372,John,Lewis,Oncology,Geriatrics,MD,LIC825893,TX,FAC000804,555-478-3815,dr.thompson45@wrshealthproviders.com,True,True,2012-05-19,2021-09-07 23:53:57.982591
+PRV000373,1000000373,Thomas,Lewis,Endocrinology,Interventional,MD,LIC796211,PA,FAC000457,555-657-5362,dr.lewis68@wrshealthproviders.com,False,True,2013-02-20,2021-05-30 23:53:57.982591
+PRV000374,1000000374,John,Anderson,Oncology,Geriatrics,DO,LIC293284,NY,FAC000489,555-486-6284,dr.walker78@wrshealthproviders.com,False,True,2004-11-10,2023-08-13 23:53:57.982591
+PRV000375,1000000375,David,Lewis,Internal Medicine,Critical Care,MD,LIC788468,NY,FAC000990,555-615-1380,dr.thompson44@wrshealthproviders.com,True,True,2022-12-02,2022-12-05 23:53:57.982591
+PRV000376,1000000376,Richard,Martinez,Psychiatry,Critical Care,DO,LIC748337,AZ,FAC000493,555-532-9944,dr.walker2@wrshealthproviders.com,True,True,2005-12-16,2021-09-12 23:53:57.982591
+PRV000377,1000000377,James,Wright,Pediatrics,Geriatrics,MD,LIC322184,IL,FAC000939,555-894-2230,dr.green63@wrshealthproviders.com,True,True,2010-04-03,2022-05-20 23:53:57.982591
+PRV000378,1000000378,John,Lewis,Family Medicine,,MD,LIC612452,FL,FAC000845,555-793-8366,dr.hall2@wrshealthproviders.com,False,True,2005-06-26,2021-10-31 23:53:57.982591
+PRV000379,1000000379,Nancy,Thompson,Obstetrics and Gynecology,Interventional,NP,LIC655218,IL,FAC000114,555-711-3198,dr.hall7@wrshealthproviders.com,False,True,2014-11-12,2024-12-28 23:53:57.982591
+PRV000380,1000000380,David,Wright,General Surgery,Critical Care,MD,LIC210436,NY,FAC000279,555-260-5677,dr.hall72@wrshealthproviders.com,False,True,2015-09-22,2023-03-26 23:53:57.982591
+PRV000381,1000000381,Nancy,Clark,Pediatrics,Interventional,MD,LIC868924,FL,FAC000035,555-203-8476,dr.young3@wrshealthproviders.com,True,True,2004-11-07,2021-04-13 23:53:57.982591
+PRV000382,1000000382,John,Robinson,Neurology,Interventional,MD,LIC921051,PA,FAC000364,555-719-8255,dr.robinson95@wrshealthproviders.com,True,True,2015-06-05,2023-05-08 23:53:57.982591
+PRV000383,1000000383,Richard,Baker,Family Medicine,Critical Care,MD,LIC360288,PA,FAC000825,555-108-4554,dr.green82@wrshealthproviders.com,True,False,2019-10-27,2023-12-03 23:53:57.982591
+PRV000384,1000000384,Thomas,Scott,Endocrinology,Critical Care,MD,LIC258802,PA,FAC000462,555-226-1676,dr.nelson60@wrshealthproviders.com,True,True,2004-07-27,2024-02-11 23:53:57.982591
+PRV000385,1000000385,Michelle,Anderson,Endocrinology,,DO,LIC526465,PA,FAC000867,555-670-2020,dr.scott76@wrshealthproviders.com,True,True,2016-10-20,2023-07-10 23:53:57.982591
+PRV000386,1000000386,Emily,Robinson,Pediatrics,Critical Care,MD,LIC592686,FL,FAC000868,555-643-4475,dr.clark90@wrshealthproviders.com,True,True,2022-02-27,2024-01-09 23:53:57.982591
+PRV000387,1000000387,William,Lewis,Dermatology,,MD,LIC266049,FL,FAC000480,555-370-1071,dr.martinez75@wrshealthproviders.com,True,True,2023-02-18,2021-12-17 23:53:57.982591
+PRV000388,1000000388,Emily,Green,Family Medicine,Interventional,PA,LIC573224,TX,FAC000968,555-732-9946,dr.robinson95@wrshealthproviders.com,True,False,2017-07-23,2024-01-15 23:53:57.982591
+PRV000389,1000000389,Michelle,Green,Ophthalmology,Interventional,MD,LIC359478,CA,FAC000948,555-970-6664,dr.anderson43@wrshealthproviders.com,True,True,2021-08-18,2024-02-05 23:53:57.982591
+PRV000390,1000000390,Michelle,Lewis,Pediatrics,Interventional,NP,LIC355687,PA,FAC000057,555-842-5234,dr.anderson63@wrshealthproviders.com,True,True,2004-02-21,2025-04-06 23:53:57.982591
+PRV000391,1000000391,Laura,King,Internal Medicine,Sports Medicine,MD,LIC262163,TX,FAC000139,555-363-9695,dr.robinson75@wrshealthproviders.com,True,True,2015-08-31,2024-03-07 23:53:57.982591
+PRV000392,1000000392,Nancy,Thompson,Endocrinology,Critical Care,MD,LIC529314,AZ,FAC000993,555-566-1729,dr.baker5@wrshealthproviders.com,True,True,2014-03-11,2023-03-10 23:53:57.982591
+PRV000393,1000000393,Jennifer,King,Neurology,Pain Management,NP,LIC231464,PA,FAC000374,555-939-5451,dr.wright63@wrshealthproviders.com,True,True,2020-07-07,2023-09-21 23:53:57.982591
+PRV000394,1000000394,Emily,Thompson,Anesthesiology,Interventional,MD,LIC570627,AZ,FAC000975,555-646-5041,dr.young98@wrshealthproviders.com,True,True,2006-06-22,2022-12-01 23:53:57.982591
+PRV000395,1000000395,Nancy,Nelson,Anesthesiology,,DO,LIC568877,NY,FAC000768,555-297-5177,dr.young45@wrshealthproviders.com,False,True,2010-05-22,2024-03-23 23:53:57.982591
+PRV000396,1000000396,Michelle,Hall,Ophthalmology,,MD,LIC856024,AZ,FAC000019,555-526-6215,dr.allen4@wrshealthproviders.com,True,True,2014-12-01,2023-11-21 23:53:57.982591
+PRV000397,1000000397,Lisa,Clark,Endocrinology,Sports Medicine,MD,LIC550410,AZ,FAC000714,555-652-7179,dr.green76@wrshealthproviders.com,True,True,2022-06-23,2021-02-15 23:53:57.982591
+PRV000398,1000000398,James,Allen,Neurology,Interventional,MD,LIC560289,PA,FAC000088,555-808-8501,dr.robinson40@wrshealthproviders.com,True,True,2023-06-01,2023-01-04 23:53:57.982591
+PRV000399,1000000399,David,Martinez,Endocrinology,Sports Medicine,MD,LIC405576,PA,FAC000369,555-853-3219,dr.hall66@wrshealthproviders.com,True,True,2024-10-06,2024-01-09 23:53:57.982591
+PRV000400,1000000400,Thomas,Hall,Orthopedics,Interventional,NP,LIC555519,PA,FAC000378,555-496-1981,dr.baker56@wrshealthproviders.com,False,True,2014-11-28,2025-11-26 23:53:57.982591
+PRV000401,1000000401,Thomas,Young,Pediatrics,Interventional,MD,LIC744252,NY,FAC000986,555-287-2637,dr.nelson27@wrshealthproviders.com,True,True,2007-11-22,2021-12-23 23:53:57.982591
+PRV000402,1000000402,Lisa,Hall,General Surgery,Critical Care,PA,LIC452052,TX,FAC000289,555-321-2150,dr.young32@wrshealthproviders.com,False,True,2024-11-24,2023-08-27 23:53:57.982591
+PRV000403,1000000403,Sarah,Thompson,Cardiology,Sports Medicine,PA,LIC631218,AZ,FAC000263,555-786-9263,dr.robinson99@wrshealthproviders.com,True,True,2016-03-09,2021-10-08 23:53:57.982591
+PRV000404,1000000404,Jennifer,Hall,Dermatology,Geriatrics,MD,LIC932037,FL,FAC000633,555-804-1484,dr.king96@wrshealthproviders.com,False,True,2013-01-24,2023-11-20 23:53:57.982591
+PRV000405,1000000405,Michelle,Lewis,Obstetrics and Gynecology,,MD,LIC633408,CA,FAC000289,555-532-7922,dr.wright53@wrshealthproviders.com,True,True,2015-11-03,2024-07-17 23:53:57.982591
+PRV000406,1000000406,Sarah,Wright,Emergency Medicine,Pain Management,NP,LIC229626,NY,FAC000037,555-865-7799,dr.nelson55@wrshealthproviders.com,False,True,2013-04-01,2023-03-27 23:53:57.982591
+PRV000407,1000000407,Nancy,Thompson,Radiology,,PA,LIC708838,FL,FAC000656,555-404-1919,dr.king77@wrshealthproviders.com,True,True,2010-08-01,2023-05-15 23:53:57.982591
+PRV000408,1000000408,William,Lewis,Anesthesiology,Interventional,MD,LIC765383,NY,FAC000851,555-427-8807,dr.baker80@wrshealthproviders.com,True,False,2015-05-01,2023-02-05 23:53:57.982591
+PRV000409,1000000409,Laura,Nelson,Ophthalmology,Geriatrics,MD,LIC985547,CA,FAC000804,555-750-5975,dr.lewis73@wrshealthproviders.com,True,True,2018-11-24,2025-02-06 23:53:57.982591
+PRV000410,1000000410,Jennifer,Allen,Emergency Medicine,Critical Care,MD,LIC407124,PA,FAC000636,555-327-1398,dr.scott24@wrshealthproviders.com,False,True,2015-08-24,2022-05-09 23:53:57.982591
+PRV000411,1000000411,Karen,Scott,Internal Medicine,Interventional,DO,LIC899346,FL,FAC000709,555-643-9170,dr.green30@wrshealthproviders.com,True,True,2008-06-27,2023-10-18 23:53:57.982591
+PRV000412,1000000412,Jennifer,Clark,Psychiatry,Interventional,MD,LIC503495,NY,FAC000638,555-842-1141,dr.lewis92@wrshealthproviders.com,True,True,2006-05-25,2024-04-21 23:53:57.982591
+PRV000413,1000000413,Sarah,Hall,Orthopedics,Pain Management,DO,LIC663534,TX,FAC000900,555-962-4467,dr.nelson28@wrshealthproviders.com,False,True,2018-02-26,2021-02-19 23:53:57.982591
+PRV000414,1000000414,Jennifer,Hall,Radiology,Pain Management,MD,LIC568030,AZ,FAC000552,555-555-9585,dr.lewis34@wrshealthproviders.com,True,True,2022-10-13,2023-03-08 23:53:57.982591
+PRV000415,1000000415,Lisa,Young,Psychiatry,Geriatrics,MD,LIC771261,IL,FAC000329,555-277-6479,dr.hall63@wrshealthproviders.com,True,True,2018-07-10,2023-05-23 23:53:57.982591
+PRV000416,1000000416,Karen,Young,Anesthesiology,Critical Care,MD,LIC840695,AZ,FAC000470,555-822-4951,dr.thompson25@wrshealthproviders.com,True,True,2014-06-11,2025-06-01 23:53:57.982591
+PRV000417,1000000417,Robert,Thompson,Radiology,Geriatrics,MD,LIC580042,CA,FAC000832,555-549-2751,dr.martinez74@wrshealthproviders.com,True,True,2005-03-01,2024-10-13 23:53:57.982591
+PRV000418,1000000418,Thomas,Hall,Orthopedics,Interventional,MD,LIC889119,AZ,FAC000332,555-229-7852,dr.thompson42@wrshealthproviders.com,False,True,2019-10-09,2025-10-15 23:53:57.982591
+PRV000419,1000000419,Thomas,Nelson,Radiology,Geriatrics,MD,LIC408514,CA,FAC000136,555-852-9616,dr.green52@wrshealthproviders.com,True,True,2017-03-13,2025-10-02 23:53:57.982591
+PRV000420,1000000420,Emily,Scott,Oncology,Sports Medicine,MD,LIC711917,FL,FAC000380,555-640-9134,dr.king88@wrshealthproviders.com,True,True,2005-06-04,2025-09-27 23:53:57.982591
+PRV000421,1000000421,Jennifer,Wright,General Surgery,Interventional,MD,LIC819318,FL,FAC000399,555-123-5707,dr.robinson34@wrshealthproviders.com,False,True,2011-06-08,2025-01-21 23:53:57.982591
+PRV000422,1000000422,Karen,Allen,Anesthesiology,,MD,LIC258385,CA,FAC000646,555-182-6466,dr.martinez88@wrshealthproviders.com,True,True,2006-03-17,2024-02-12 23:53:57.982591
+PRV000423,1000000423,Jennifer,Walker,Endocrinology,Critical Care,PA,LIC703117,CA,FAC000222,555-905-6243,dr.hall40@wrshealthproviders.com,True,True,2018-01-27,2024-01-25 23:53:57.982591
+PRV000424,1000000424,James,Allen,Psychiatry,,MD,LIC403592,CA,FAC000503,555-598-9855,dr.walker3@wrshealthproviders.com,True,True,2015-06-15,2024-07-30 23:53:57.982591
+PRV000425,1000000425,Michael,Clark,Oncology,Geriatrics,MD,LIC381528,NY,FAC000265,555-751-2612,dr.baker51@wrshealthproviders.com,True,True,2012-09-22,2023-10-09 23:53:57.982591
+PRV000426,1000000426,Michelle,Wright,Family Medicine,Geriatrics,MD,LIC736587,CA,FAC000973,555-340-8202,dr.hall20@wrshealthproviders.com,True,True,2012-04-11,2022-06-13 23:53:57.982591
+PRV000427,1000000427,Karen,Anderson,Endocrinology,Sports Medicine,PA,LIC740234,IL,FAC000929,555-305-2275,dr.baker50@wrshealthproviders.com,False,True,2017-07-08,2024-07-22 23:53:57.982591
+PRV000428,1000000428,Michael,Walker,Pediatrics,Interventional,MD,LIC303300,TX,FAC000274,555-390-3737,dr.martinez83@wrshealthproviders.com,True,True,2020-10-01,2024-02-18 23:53:57.982591
+PRV000429,1000000429,Richard,Hall,Internal Medicine,Sports Medicine,DO,LIC925612,TX,FAC000957,555-222-8831,dr.green5@wrshealthproviders.com,True,True,2010-10-14,2021-04-14 23:53:57.982591
+PRV000430,1000000430,William,Anderson,Endocrinology,,DO,LIC176466,TX,FAC000765,555-784-6541,dr.wright93@wrshealthproviders.com,True,True,2014-07-31,2024-08-23 23:53:57.982591
+PRV000431,1000000431,Michael,Green,Dermatology,Pain Management,DO,LIC311030,CA,FAC000563,555-497-3253,dr.martinez75@wrshealthproviders.com,True,True,2018-07-02,2024-09-14 23:53:57.982591
+PRV000432,1000000432,James,Allen,Emergency Medicine,Critical Care,MD,LIC537341,IL,FAC000276,555-376-8872,dr.robinson61@wrshealthproviders.com,False,True,2020-11-17,2024-06-09 23:53:57.982591
+PRV000433,1000000433,William,Robinson,Obstetrics and Gynecology,Critical Care,DO,LIC612736,NY,FAC000366,555-708-5514,dr.anderson21@wrshealthproviders.com,False,True,2017-05-10,2023-07-20 23:53:57.982591
+PRV000434,1000000434,Richard,Young,General Surgery,,MD,LIC463413,FL,FAC000345,555-839-5129,dr.allen24@wrshealthproviders.com,True,True,2021-03-06,2022-07-22 23:53:57.982591
+PRV000435,1000000435,Michelle,Green,Anesthesiology,Interventional,MD,LIC768159,PA,FAC000751,555-352-4217,dr.hall55@wrshealthproviders.com,True,True,2017-12-03,2023-03-09 23:53:57.982591
+PRV000436,1000000436,Michelle,Hall,Neurology,Sports Medicine,DO,LIC618945,PA,FAC000345,555-955-2822,dr.hall57@wrshealthproviders.com,True,True,2014-09-28,2024-01-31 23:53:57.982591
+PRV000437,1000000437,Nancy,Clark,Ophthalmology,Geriatrics,MD,LIC264608,FL,FAC000727,555-608-9923,dr.allen94@wrshealthproviders.com,True,True,2015-01-30,2025-04-11 23:53:57.982591
+PRV000438,1000000438,James,Thompson,Pediatrics,,NP,LIC969535,CA,FAC000686,555-262-8365,dr.walker60@wrshealthproviders.com,True,True,2004-04-16,2022-10-05 23:53:57.982591
+PRV000439,1000000439,William,King,Dermatology,,MD,LIC863032,AZ,FAC000671,555-331-1639,dr.hall69@wrshealthproviders.com,True,True,2016-07-11,2024-07-21 23:53:57.982591
+PRV000440,1000000440,David,Anderson,Anesthesiology,Sports Medicine,NP,LIC886710,FL,FAC000485,555-460-8824,dr.thompson9@wrshealthproviders.com,True,True,2012-12-20,2022-06-24 23:53:57.982591
+PRV000441,1000000441,Lisa,King,Pediatrics,,MD,LIC522876,IL,FAC000400,555-518-8122,dr.walker10@wrshealthproviders.com,True,True,2011-12-21,2022-07-12 23:53:57.982591
+PRV000442,1000000442,John,Thompson,Neurology,,MD,LIC528730,FL,FAC000965,555-238-1524,dr.allen25@wrshealthproviders.com,True,True,2006-04-29,2023-03-11 23:53:57.982591
+PRV000443,1000000443,John,Allen,Psychiatry,Sports Medicine,MD,LIC629146,TX,FAC000854,555-640-6061,dr.young10@wrshealthproviders.com,True,True,2012-04-08,2024-06-08 23:53:57.982591
+PRV000444,1000000444,James,Nelson,Anesthesiology,Geriatrics,PA,LIC373294,NY,FAC000963,555-944-1229,dr.walker45@wrshealthproviders.com,True,True,2010-09-09,2024-06-05 23:53:57.982591
+PRV000445,1000000445,Michael,Robinson,Emergency Medicine,Geriatrics,MD,LIC843772,TX,FAC000771,555-551-9533,dr.nelson92@wrshealthproviders.com,True,True,2009-06-18,2023-06-28 23:53:57.982591
+PRV000446,1000000446,Karen,King,Cardiology,,MD,LIC954572,CA,FAC000690,555-380-7569,dr.robinson56@wrshealthproviders.com,True,True,2014-01-10,2026-01-03 23:53:57.982591
+PRV000447,1000000447,Jennifer,Anderson,Anesthesiology,Sports Medicine,MD,LIC732855,PA,FAC000420,555-359-1222,dr.clark53@wrshealthproviders.com,False,True,2008-12-14,2024-06-07 23:53:57.982591
+PRV000448,1000000448,Michelle,King,Dermatology,,DO,LIC104799,TX,FAC000216,555-882-2883,dr.robinson9@wrshealthproviders.com,True,True,2014-03-24,2021-06-15 23:53:57.982591
+PRV000449,1000000449,David,Robinson,General Surgery,Geriatrics,MD,LIC820104,PA,FAC000248,555-440-8245,dr.robinson95@wrshealthproviders.com,True,True,2006-11-07,2025-05-18 23:53:57.982591
+PRV000450,1000000450,Richard,Clark,Oncology,,MD,LIC446380,NY,FAC000848,555-559-5821,dr.young60@wrshealthproviders.com,True,True,2008-02-24,2022-03-06 23:53:57.982591
+PRV000451,1000000451,Laura,Walker,Anesthesiology,Geriatrics,MD,LIC341077,IL,FAC000347,555-516-7327,dr.scott22@wrshealthproviders.com,False,True,2020-02-01,2022-02-14 23:53:57.982591
+PRV000452,1000000452,Karen,Baker,Obstetrics and Gynecology,Critical Care,MD,LIC523978,NY,FAC000707,555-242-2914,dr.anderson57@wrshealthproviders.com,False,True,2009-10-13,2024-04-18 23:53:57.982591
+PRV000453,1000000453,William,Nelson,Neurology,,MD,LIC780667,CA,FAC000279,555-714-8959,dr.walker33@wrshealthproviders.com,True,True,2006-06-09,2023-12-16 23:53:57.982591
+PRV000454,1000000454,James,Lewis,Emergency Medicine,,MD,LIC543224,IL,FAC000995,555-623-6187,dr.baker69@wrshealthproviders.com,True,True,2012-03-15,2025-11-04 23:53:57.982591
+PRV000455,1000000455,Laura,Robinson,Internal Medicine,,DO,LIC560471,FL,FAC000189,555-962-8003,dr.nelson97@wrshealthproviders.com,False,True,2016-08-28,2024-03-13 23:53:57.982591
+PRV000456,1000000456,John,Thompson,Oncology,Interventional,MD,LIC777555,CA,FAC000004,555-451-3051,dr.hall94@wrshealthproviders.com,True,False,2023-01-23,2022-04-22 23:53:57.982591
+PRV000457,1000000457,Michael,Thompson,Pediatrics,Pain Management,MD,LIC625751,TX,FAC000726,555-423-6629,dr.wright40@wrshealthproviders.com,True,True,2016-05-05,2021-11-11 23:53:57.982591
+PRV000458,1000000458,Laura,Nelson,Oncology,Interventional,MD,LIC319401,PA,FAC000927,555-779-5926,dr.robinson36@wrshealthproviders.com,True,True,2010-12-29,2023-11-18 23:53:57.982591
+PRV000459,1000000459,Laura,Allen,Anesthesiology,Geriatrics,PA,LIC900332,PA,FAC000342,555-253-5310,dr.king45@wrshealthproviders.com,True,True,2004-11-06,2024-11-07 23:53:57.982591
+PRV000460,1000000460,Karen,Young,Anesthesiology,Critical Care,PA,LIC295795,TX,FAC000028,555-442-7912,dr.green40@wrshealthproviders.com,True,True,2016-05-23,2021-10-01 23:53:57.982591
+PRV000461,1000000461,Sarah,Allen,Psychiatry,Geriatrics,NP,LIC133290,CA,FAC000579,555-511-8445,dr.baker25@wrshealthproviders.com,True,True,2024-04-13,2024-12-10 23:53:57.982591
+PRV000462,1000000462,Emily,Nelson,Family Medicine,Critical Care,MD,LIC300686,CA,FAC000921,555-278-3927,dr.martinez84@wrshealthproviders.com,True,True,2020-01-04,2023-05-04 23:53:57.982591
+PRV000463,1000000463,Michelle,Hall,Internal Medicine,,MD,LIC179316,CA,FAC000350,555-686-1898,dr.robinson51@wrshealthproviders.com,False,True,2008-10-12,2025-10-25 23:53:57.982591
+PRV000464,1000000464,Richard,Robinson,Anesthesiology,Interventional,MD,LIC516109,IL,FAC000975,555-574-3654,dr.king76@wrshealthproviders.com,True,True,2021-06-07,2023-08-24 23:53:57.982591
+PRV000465,1000000465,Thomas,Martinez,Psychiatry,Pain Management,MD,LIC229438,PA,FAC000221,555-238-7881,dr.lewis52@wrshealthproviders.com,False,True,2010-01-23,2022-08-29 23:53:57.982591
+PRV000466,1000000466,Sarah,Nelson,Anesthesiology,Geriatrics,MD,LIC847807,TX,FAC000800,555-583-5445,dr.scott30@wrshealthproviders.com,True,True,2010-06-13,2024-03-01 23:53:57.982591
+PRV000467,1000000467,Lisa,Robinson,Orthopedics,Interventional,DO,LIC845790,CA,FAC000011,555-144-8101,dr.nelson82@wrshealthproviders.com,True,True,2019-06-16,2022-05-28 23:53:57.982591
+PRV000468,1000000468,Nancy,Nelson,Cardiology,Sports Medicine,NP,LIC914781,PA,FAC000703,555-782-1384,dr.anderson2@wrshealthproviders.com,True,True,2010-04-27,2025-06-13 23:53:57.982591
+PRV000469,1000000469,Laura,Allen,Internal Medicine,,NP,LIC316418,TX,FAC000461,555-201-6151,dr.allen29@wrshealthproviders.com,False,True,2014-04-09,2021-04-05 23:53:57.982591
+PRV000470,1000000470,David,Anderson,Radiology,,MD,LIC212515,FL,FAC000165,555-892-5256,dr.walker6@wrshealthproviders.com,True,True,2008-06-16,2025-09-03 23:53:57.982591
+PRV000471,1000000471,William,Anderson,Pediatrics,,DO,LIC607157,IL,FAC000482,555-206-4730,dr.robinson39@wrshealthproviders.com,True,True,2006-06-17,2023-02-10 23:53:57.982591
+PRV000472,1000000472,Sarah,Walker,Anesthesiology,,MD,LIC572052,CA,FAC000951,555-629-3681,dr.wright61@wrshealthproviders.com,False,True,2024-05-15,2025-06-16 23:53:57.982591
+PRV000473,1000000473,David,Allen,Neurology,Sports Medicine,MD,LIC725866,FL,FAC000752,555-548-4823,dr.robinson52@wrshealthproviders.com,True,True,2022-10-22,2022-09-24 23:53:57.982591
+PRV000474,1000000474,John,Wright,Internal Medicine,Geriatrics,DO,LIC115533,NY,FAC000482,555-670-7670,dr.wright56@wrshealthproviders.com,False,True,2019-02-06,2023-11-01 23:53:57.982591
+PRV000475,1000000475,Sarah,Scott,General Surgery,Pain Management,MD,LIC458134,PA,FAC000134,555-787-9807,dr.anderson67@wrshealthproviders.com,True,True,2009-11-16,2022-05-29 23:53:57.982591
+PRV000476,1000000476,Michelle,Allen,General Surgery,Critical Care,MD,LIC355145,IL,FAC000541,555-638-4582,dr.thompson87@wrshealthproviders.com,False,True,2008-10-17,2025-05-13 23:53:57.982591
+PRV000477,1000000477,Michael,Scott,Internal Medicine,Geriatrics,MD,LIC417096,PA,FAC000641,555-342-3211,dr.allen9@wrshealthproviders.com,True,True,2024-08-30,2024-12-06 23:53:57.982591
+PRV000478,1000000478,Thomas,King,Obstetrics and Gynecology,Geriatrics,DO,LIC143233,CA,FAC000724,555-922-4324,dr.thompson97@wrshealthproviders.com,True,True,2005-04-07,2023-01-16 23:53:57.982591
+PRV000479,1000000479,Laura,Nelson,Cardiology,Critical Care,DO,LIC317445,NY,FAC000713,555-954-9788,dr.clark37@wrshealthproviders.com,True,True,2011-04-02,2022-06-05 23:53:57.982591
+PRV000480,1000000480,Sarah,Walker,Pediatrics,Critical Care,MD,LIC681517,AZ,FAC000794,555-782-9597,dr.young52@wrshealthproviders.com,True,True,2017-02-16,2023-07-28 23:53:57.982591
+PRV000481,1000000481,Laura,Nelson,Psychiatry,Sports Medicine,NP,LIC813648,IL,FAC000147,555-499-3258,dr.lewis72@wrshealthproviders.com,True,True,2009-01-24,2021-03-30 23:53:57.982591
+PRV000482,1000000482,Lisa,Young,Radiology,Critical Care,MD,LIC659951,CA,FAC000487,555-258-6867,dr.lewis56@wrshealthproviders.com,True,True,2010-07-19,2021-02-19 23:53:57.982591
+PRV000483,1000000483,James,Allen,Psychiatry,Critical Care,MD,LIC332373,NY,FAC000399,555-762-5143,dr.martinez60@wrshealthproviders.com,True,True,2023-08-29,2024-01-01 23:53:57.982591
+PRV000484,1000000484,Nancy,Scott,Endocrinology,Critical Care,DO,LIC298612,TX,FAC000586,555-533-9208,dr.walker34@wrshealthproviders.com,True,True,2009-10-26,2022-05-15 23:53:57.982591
+PRV000485,1000000485,Sarah,Scott,Emergency Medicine,Sports Medicine,DO,LIC309406,AZ,FAC000335,555-857-7902,dr.scott5@wrshealthproviders.com,True,True,2015-03-07,2022-08-01 23:53:57.982591
+PRV000486,1000000486,Lisa,Scott,Ophthalmology,,PA,LIC206754,CA,FAC000689,555-291-7754,dr.baker28@wrshealthproviders.com,True,True,2007-03-11,2024-02-02 23:53:57.982591
+PRV000487,1000000487,Emily,Anderson,Radiology,Interventional,MD,LIC785962,TX,FAC000520,555-541-2423,dr.green26@wrshealthproviders.com,False,True,2010-07-22,2024-03-19 23:53:57.982591
+PRV000488,1000000488,Nancy,Baker,Dermatology,Geriatrics,DO,LIC434388,IL,FAC000902,555-161-4713,dr.martinez34@wrshealthproviders.com,True,False,2006-11-11,2022-11-18 23:53:57.982591
+PRV000489,1000000489,Emily,Clark,Endocrinology,,DO,LIC934130,NY,FAC000570,555-469-7577,dr.walker89@wrshealthproviders.com,True,True,2023-04-29,2024-06-22 23:53:57.982591
+PRV000490,1000000490,Lisa,Hall,Dermatology,Critical Care,PA,LIC797037,IL,FAC000510,555-481-9146,dr.martinez67@wrshealthproviders.com,True,True,2017-03-03,2025-02-15 23:53:57.982591
+PRV000491,1000000491,Michelle,Scott,Oncology,Sports Medicine,MD,LIC863455,PA,FAC000062,555-375-1848,dr.martinez25@wrshealthproviders.com,True,True,2010-08-07,2025-01-16 23:53:57.982591
+PRV000492,1000000492,John,Scott,Anesthesiology,Pain Management,DO,LIC200491,AZ,FAC000970,555-672-6114,dr.baker18@wrshealthproviders.com,True,True,2007-10-30,2022-10-26 23:53:57.982591
+PRV000493,1000000493,Laura,Thompson,General Surgery,Critical Care,MD,LIC636966,TX,FAC000735,555-305-9038,dr.clark76@wrshealthproviders.com,True,True,2022-11-09,2023-02-06 23:53:57.982591
+PRV000494,1000000494,David,Young,General Surgery,,MD,LIC116487,NY,FAC000569,555-767-2297,dr.walker67@wrshealthproviders.com,True,True,2011-02-12,2025-06-18 23:53:57.982591
+PRV000495,1000000495,Michael,Nelson,Endocrinology,,MD,LIC210520,AZ,FAC000596,555-822-6003,dr.anderson40@wrshealthproviders.com,False,True,2011-05-14,2022-04-24 23:53:57.982591
+PRV000496,1000000496,Richard,Allen,Internal Medicine,Pain Management,MD,LIC517346,PA,FAC000280,555-952-3636,dr.king1@wrshealthproviders.com,True,True,2016-07-10,2024-12-20 23:53:57.982591
+PRV000497,1000000497,James,Robinson,Oncology,Critical Care,MD,LIC522381,AZ,FAC000862,555-520-3386,dr.hall1@wrshealthproviders.com,True,True,2008-09-15,2024-08-29 23:53:57.982591
+PRV000498,1000000498,Karen,Clark,Radiology,Interventional,NP,LIC393126,IL,FAC000961,555-592-4798,dr.hall36@wrshealthproviders.com,True,True,2010-01-28,2021-01-30 23:53:57.982591
+PRV000499,1000000499,Laura,Anderson,Obstetrics and Gynecology,Sports Medicine,MD,LIC666808,CA,FAC000885,555-741-6990,dr.robinson84@wrshealthproviders.com,True,True,2010-11-21,2022-05-30 23:53:57.982591
+PRV000500,1000000500,William,Robinson,Internal Medicine,Geriatrics,DO,LIC957530,IL,FAC000162,555-104-7533,dr.martinez52@wrshealthproviders.com,True,True,2008-07-04,2025-03-11 23:53:57.982591
+PRV000501,1000000501,Jennifer,Anderson,Endocrinology,Critical Care,MD,LIC111881,NY,FAC000754,555-132-1856,dr.young63@wrshealthproviders.com,True,True,2020-01-21,2024-06-03 23:53:57.982591
+PRV000502,1000000502,Laura,Walker,Pediatrics,Critical Care,MD,LIC265171,FL,FAC000903,555-847-2264,dr.green33@wrshealthproviders.com,True,True,2021-11-20,2025-08-12 23:53:57.982591
+PRV000503,1000000503,Karen,Green,Dermatology,Sports Medicine,MD,LIC361652,PA,FAC000661,555-252-8011,dr.lewis93@wrshealthproviders.com,True,True,2020-01-12,2022-08-03 23:53:57.982591
+PRV000504,1000000504,Michelle,Walker,Anesthesiology,Interventional,MD,LIC543940,IL,FAC000437,555-522-5675,dr.nelson26@wrshealthproviders.com,True,True,2023-09-30,2022-04-19 23:53:57.982591
+PRV000505,1000000505,Jennifer,Clark,Cardiology,Critical Care,MD,LIC241738,AZ,FAC000837,555-975-7395,dr.green72@wrshealthproviders.com,True,True,2010-06-16,2022-08-06 23:53:57.982591
+PRV000506,1000000506,Robert,Wright,Oncology,Sports Medicine,MD,LIC663867,CA,FAC000413,555-751-1595,dr.robinson27@wrshealthproviders.com,False,True,2018-02-28,2023-06-18 23:53:57.982591
+PRV000507,1000000507,David,Clark,Obstetrics and Gynecology,,MD,LIC161154,PA,FAC000024,555-699-8109,dr.hall94@wrshealthproviders.com,True,True,2014-02-09,2021-04-17 23:53:57.982591
+PRV000508,1000000508,Richard,Young,Dermatology,Interventional,MD,LIC225025,FL,FAC000241,555-177-5665,dr.nelson84@wrshealthproviders.com,False,True,2004-08-13,2021-01-18 23:53:57.982591
+PRV000509,1000000509,Laura,Anderson,Endocrinology,Critical Care,MD,LIC725991,FL,FAC000420,555-719-1594,dr.clark90@wrshealthproviders.com,False,True,2014-01-10,2023-06-14 23:53:57.982591
+PRV000510,1000000510,William,Young,Family Medicine,,MD,LIC332869,IL,FAC000948,555-680-2369,dr.lewis82@wrshealthproviders.com,True,True,2021-08-29,2022-01-04 23:53:57.982591
+PRV000511,1000000511,Michael,Walker,Internal Medicine,Sports Medicine,MD,LIC625056,CA,FAC000434,555-106-1769,dr.nelson90@wrshealthproviders.com,True,True,2017-06-29,2025-07-21 23:53:57.982591
+PRV000512,1000000512,Karen,Hall,Orthopedics,Critical Care,PA,LIC654178,FL,FAC000831,555-711-2742,dr.robinson72@wrshealthproviders.com,True,False,2008-12-12,2025-08-03 23:53:57.982591
+PRV000513,1000000513,Sarah,Wright,Emergency Medicine,Interventional,NP,LIC977185,PA,FAC000625,555-540-7426,dr.martinez47@wrshealthproviders.com,False,True,2011-10-16,2023-02-16 23:53:57.982591
+PRV000514,1000000514,Nancy,Robinson,Psychiatry,Pain Management,DO,LIC826792,FL,FAC000554,555-464-6293,dr.wright27@wrshealthproviders.com,True,True,2015-08-29,2026-01-04 23:53:57.982591
+PRV000515,1000000515,Richard,Scott,Cardiology,Critical Care,MD,LIC873432,NY,FAC000032,555-416-6567,dr.lewis47@wrshealthproviders.com,True,True,2023-05-11,2021-03-20 23:53:57.982591
+PRV000516,1000000516,Michael,Anderson,Psychiatry,Geriatrics,DO,LIC744456,FL,FAC000807,555-418-5073,dr.hall5@wrshealthproviders.com,True,True,2009-04-20,2025-06-08 23:53:57.982591
+PRV000517,1000000517,Karen,Clark,Orthopedics,Critical Care,NP,LIC775755,FL,FAC000652,555-139-1895,dr.lewis12@wrshealthproviders.com,False,True,2022-12-29,2022-01-15 23:53:57.982591
+PRV000518,1000000518,Karen,Scott,Anesthesiology,,DO,LIC483112,AZ,FAC000192,555-198-8775,dr.walker51@wrshealthproviders.com,True,True,2016-12-09,2022-02-25 23:53:57.982591
+PRV000519,1000000519,Thomas,King,Psychiatry,Sports Medicine,MD,LIC303368,IL,FAC000797,555-631-5403,dr.nelson9@wrshealthproviders.com,False,True,2010-09-21,2023-12-05 23:53:57.982591
+PRV000520,1000000520,Emily,Nelson,Endocrinology,Interventional,DO,LIC175458,IL,FAC000476,555-974-7555,dr.green7@wrshealthproviders.com,True,True,2010-08-21,2023-07-26 23:53:57.982591
+PRV000521,1000000521,William,Baker,Neurology,,NP,LIC215708,PA,FAC000446,555-233-9043,dr.hall32@wrshealthproviders.com,True,True,2011-05-25,2022-02-18 23:53:57.982591
+PRV000522,1000000522,Karen,Wright,Ophthalmology,Critical Care,MD,LIC470788,FL,FAC000698,555-844-5884,dr.young10@wrshealthproviders.com,True,True,2009-03-25,2021-08-24 23:53:57.982591
+PRV000523,1000000523,Nancy,Clark,Family Medicine,,DO,LIC389439,PA,FAC000897,555-982-3560,dr.nelson98@wrshealthproviders.com,True,True,2017-04-26,2023-06-17 23:53:57.982591
+PRV000524,1000000524,Nancy,Green,Dermatology,Critical Care,MD,LIC912534,PA,FAC000314,555-923-1069,dr.baker52@wrshealthproviders.com,True,True,2009-08-23,2024-05-22 23:53:57.982591
+PRV000525,1000000525,Michael,Green,Pediatrics,,MD,LIC800606,AZ,FAC000271,555-762-6157,dr.anderson20@wrshealthproviders.com,True,True,2009-09-08,2021-06-15 23:53:57.982591
+PRV000526,1000000526,Nancy,Young,Emergency Medicine,Geriatrics,MD,LIC352674,TX,FAC000554,555-285-3138,dr.nelson40@wrshealthproviders.com,False,True,2010-12-09,2024-12-15 23:53:57.982591
+PRV000527,1000000527,Nancy,Thompson,Ophthalmology,,DO,LIC690733,TX,FAC000177,555-448-9297,dr.anderson61@wrshealthproviders.com,True,True,2005-10-16,2023-12-01 23:53:57.982591
+PRV000528,1000000528,Michelle,Walker,Obstetrics and Gynecology,,MD,LIC607536,AZ,FAC000657,555-568-4235,dr.lewis53@wrshealthproviders.com,False,True,2019-11-21,2025-10-02 23:53:57.982591
+PRV000529,1000000529,Sarah,Robinson,Pediatrics,Critical Care,MD,LIC670611,FL,FAC000927,555-157-9176,dr.allen68@wrshealthproviders.com,True,True,2019-11-19,2021-05-22 23:53:57.982591
+PRV000530,1000000530,Lisa,Green,Radiology,Sports Medicine,MD,LIC198825,PA,FAC000789,555-892-4248,dr.martinez1@wrshealthproviders.com,False,True,2007-01-02,2024-07-24 23:53:57.982591
+PRV000531,1000000531,Nancy,Walker,Endocrinology,Sports Medicine,MD,LIC476941,AZ,FAC000615,555-261-2785,dr.king89@wrshealthproviders.com,True,True,2007-08-08,2022-12-25 23:53:57.982591
+PRV000532,1000000532,Lisa,Scott,Endocrinology,Sports Medicine,MD,LIC608231,CA,FAC000986,555-521-7501,dr.anderson32@wrshealthproviders.com,False,True,2013-09-19,2022-07-18 23:53:57.982591
+PRV000533,1000000533,Richard,Nelson,Pediatrics,Sports Medicine,DO,LIC358023,TX,FAC000844,555-482-7551,dr.martinez54@wrshealthproviders.com,False,True,2007-09-11,2026-01-10 23:53:57.982591
+PRV000534,1000000534,James,Martinez,Orthopedics,Geriatrics,DO,LIC372724,IL,FAC000824,555-683-2736,dr.nelson69@wrshealthproviders.com,True,True,2018-07-07,2021-03-09 23:53:57.982591
+PRV000535,1000000535,Nancy,Baker,Pediatrics,Critical Care,MD,LIC948423,PA,FAC000293,555-146-8330,dr.martinez23@wrshealthproviders.com,True,True,2022-12-28,2022-09-19 23:53:57.982591
+PRV000536,1000000536,John,King,Neurology,Critical Care,MD,LIC190792,FL,FAC000202,555-160-9719,dr.hall57@wrshealthproviders.com,True,True,2016-03-21,2023-02-16 23:53:57.982591
+PRV000537,1000000537,William,Clark,Dermatology,Geriatrics,MD,LIC432944,CA,FAC000709,555-795-7619,dr.hall78@wrshealthproviders.com,True,True,2022-03-24,2024-03-07 23:53:57.982591
+PRV000538,1000000538,Karen,Allen,Radiology,Pain Management,NP,LIC707966,TX,FAC000370,555-869-2076,dr.king82@wrshealthproviders.com,False,True,2004-04-27,2022-08-28 23:53:57.982591
+PRV000539,1000000539,William,Martinez,Pediatrics,Interventional,MD,LIC942496,CA,FAC000048,555-985-2932,dr.hall97@wrshealthproviders.com,True,True,2008-01-27,2025-03-04 23:53:57.982591
+PRV000540,1000000540,Emily,Hall,Radiology,Interventional,MD,LIC188562,TX,FAC000058,555-933-9104,dr.thompson72@wrshealthproviders.com,True,True,2009-09-19,2023-08-01 23:53:57.982591
+PRV000541,1000000541,Nancy,King,Ophthalmology,Sports Medicine,MD,LIC122532,AZ,FAC000984,555-195-4496,dr.clark24@wrshealthproviders.com,True,True,2006-09-26,2025-06-26 23:53:57.982591
+PRV000542,1000000542,Emily,Hall,Pediatrics,Critical Care,DO,LIC806478,IL,FAC000494,555-785-5142,dr.baker83@wrshealthproviders.com,False,True,2012-01-17,2024-08-05 23:53:57.982591
+PRV000543,1000000543,Michael,Nelson,Endocrinology,Sports Medicine,NP,LIC495921,TX,FAC000618,555-100-3405,dr.robinson36@wrshealthproviders.com,False,True,2009-09-18,2024-10-15 23:53:57.982591
+PRV000544,1000000544,Lisa,Scott,Ophthalmology,Sports Medicine,NP,LIC912541,CA,FAC000851,555-466-1549,dr.green74@wrshealthproviders.com,True,False,2004-08-31,2022-03-16 23:53:57.982591
+PRV000545,1000000545,Robert,Allen,Radiology,Geriatrics,DO,LIC547015,CA,FAC000408,555-122-7670,dr.wright32@wrshealthproviders.com,True,True,2004-10-28,2023-09-17 23:53:57.982591
+PRV000546,1000000546,William,Lewis,Oncology,,MD,LIC112910,AZ,FAC000822,555-376-3885,dr.king32@wrshealthproviders.com,True,True,2007-09-05,2022-10-29 23:53:57.982591
+PRV000547,1000000547,Nancy,Hall,Dermatology,Interventional,MD,LIC624401,PA,FAC000106,555-251-8510,dr.green76@wrshealthproviders.com,True,True,2024-08-28,2021-09-22 23:53:57.982591
+PRV000548,1000000548,Robert,Hall,Orthopedics,Pain Management,MD,LIC540652,PA,FAC000443,555-530-5214,dr.clark32@wrshealthproviders.com,True,True,2015-04-21,2024-07-09 23:53:57.982591
+PRV000549,1000000549,Jennifer,Anderson,Emergency Medicine,Pain Management,MD,LIC987128,NY,FAC000364,555-351-6080,dr.lewis6@wrshealthproviders.com,True,True,2020-11-21,2023-05-28 23:53:57.982591
+PRV000550,1000000550,David,Walker,Radiology,,MD,LIC292256,TX,FAC000230,555-952-6023,dr.baker22@wrshealthproviders.com,True,True,2012-10-06,2024-08-16 23:53:57.982591
+PRV000551,1000000551,James,Wright,Radiology,,MD,LIC347128,PA,FAC000490,555-881-7781,dr.young66@wrshealthproviders.com,True,True,2008-07-22,2022-08-27 23:53:57.982591
+PRV000552,1000000552,Karen,Hall,Orthopedics,Interventional,MD,LIC850491,FL,FAC000508,555-446-3296,dr.green13@wrshealthproviders.com,True,True,2007-11-29,2024-11-21 23:53:57.982591
+PRV000553,1000000553,Michael,Wright,Oncology,Sports Medicine,PA,LIC498517,NY,FAC000892,555-541-6834,dr.martinez44@wrshealthproviders.com,True,True,2013-08-19,2022-06-23 23:53:57.982591
+PRV000554,1000000554,David,Clark,Endocrinology,,DO,LIC470374,CA,FAC000800,555-162-6240,dr.green87@wrshealthproviders.com,True,True,2023-02-03,2024-04-29 23:53:57.982591
+PRV000555,1000000555,Karen,Scott,Family Medicine,Critical Care,NP,LIC162499,AZ,FAC000479,555-297-5660,dr.lewis30@wrshealthproviders.com,True,True,2017-11-06,2021-09-10 23:53:57.982591
+PRV000556,1000000556,Richard,Thompson,Ophthalmology,Critical Care,DO,LIC403776,CA,FAC000698,555-611-9033,dr.thompson89@wrshealthproviders.com,True,True,2008-11-26,2023-05-09 23:53:57.982591
+PRV000557,1000000557,Richard,Wright,Psychiatry,Pain Management,MD,LIC516471,NY,FAC000539,555-788-5315,dr.scott64@wrshealthproviders.com,True,True,2009-06-11,2023-11-08 23:53:57.982591
+PRV000558,1000000558,Michael,Walker,Family Medicine,Pain Management,DO,LIC139713,CA,FAC000263,555-181-2338,dr.anderson9@wrshealthproviders.com,True,True,2008-09-09,2022-02-18 23:53:57.982591
+PRV000559,1000000559,David,Lewis,Orthopedics,,MD,LIC248004,IL,FAC000143,555-521-1243,dr.allen50@wrshealthproviders.com,True,True,2015-11-18,2023-02-22 23:53:57.982591
+PRV000560,1000000560,Michael,Baker,Orthopedics,,DO,LIC530333,NY,FAC000285,555-260-9328,dr.nelson5@wrshealthproviders.com,False,True,2016-02-16,2023-01-19 23:53:57.982591
+PRV000561,1000000561,David,Hall,Dermatology,,MD,LIC784742,NY,FAC000503,555-482-6773,dr.martinez36@wrshealthproviders.com,True,True,2023-11-05,2022-10-11 23:53:57.982591
+PRV000562,1000000562,Nancy,Young,Emergency Medicine,Sports Medicine,PA,LIC283070,PA,FAC000109,555-296-9806,dr.martinez20@wrshealthproviders.com,True,True,2010-03-16,2024-11-07 23:53:57.982591
+PRV000563,1000000563,Thomas,Anderson,Emergency Medicine,,MD,LIC949073,PA,FAC000431,555-838-9167,dr.anderson33@wrshealthproviders.com,True,True,2006-06-20,2022-01-12 23:53:57.982591
+PRV000564,1000000564,Michelle,Martinez,Radiology,Interventional,MD,LIC250524,NY,FAC000295,555-451-6884,dr.young57@wrshealthproviders.com,True,True,2007-04-17,2023-03-17 23:53:57.982591
+PRV000565,1000000565,Richard,Martinez,Orthopedics,Sports Medicine,PA,LIC426043,CA,FAC000578,555-713-9086,dr.robinson21@wrshealthproviders.com,True,True,2004-08-31,2023-09-13 23:53:57.982591
+PRV000566,1000000566,Laura,Allen,General Surgery,,MD,LIC618475,PA,FAC000067,555-424-4068,dr.thompson72@wrshealthproviders.com,True,True,2020-09-18,2025-08-02 23:53:57.982591
+PRV000567,1000000567,Michelle,Nelson,Endocrinology,Sports Medicine,DO,LIC679018,CA,FAC000601,555-160-5265,dr.walker97@wrshealthproviders.com,True,True,2024-06-12,2023-11-07 23:53:57.982591
+PRV000568,1000000568,Laura,Young,Cardiology,Sports Medicine,DO,LIC770142,NY,FAC000115,555-841-2142,dr.green17@wrshealthproviders.com,True,True,2004-03-08,2022-07-01 23:53:57.982591
+PRV000569,1000000569,Nancy,Baker,Radiology,Interventional,NP,LIC734519,NY,FAC000399,555-789-6640,dr.young71@wrshealthproviders.com,True,True,2012-02-18,2021-11-27 23:53:57.982591
+PRV000570,1000000570,Robert,King,Psychiatry,,PA,LIC238231,NY,FAC000198,555-430-3681,dr.baker40@wrshealthproviders.com,True,True,2013-01-16,2025-07-14 23:53:57.982591
+PRV000571,1000000571,Michael,Allen,Radiology,Critical Care,PA,LIC251631,TX,FAC000968,555-908-9673,dr.king52@wrshealthproviders.com,True,True,2023-09-29,2022-02-11 23:53:57.982591
+PRV000572,1000000572,Nancy,Nelson,Ophthalmology,Pain Management,MD,LIC453255,IL,FAC000697,555-855-3698,dr.lewis28@wrshealthproviders.com,True,True,2017-03-01,2023-02-02 23:53:57.982591
+PRV000573,1000000573,Lisa,Walker,Obstetrics and Gynecology,Sports Medicine,NP,LIC209854,CA,FAC000439,555-881-4742,dr.baker70@wrshealthproviders.com,True,True,2023-03-02,2022-04-24 23:53:57.982591
+PRV000574,1000000574,Sarah,Baker,Endocrinology,,DO,LIC769335,IL,FAC000596,555-150-2621,dr.green90@wrshealthproviders.com,False,True,2010-09-19,2023-05-07 23:53:57.982591
+PRV000575,1000000575,Karen,Baker,Dermatology,,DO,LIC919798,FL,FAC000342,555-508-5485,dr.martinez62@wrshealthproviders.com,True,True,2013-05-03,2021-07-12 23:53:57.982591
+PRV000576,1000000576,Jennifer,Thompson,Ophthalmology,Geriatrics,MD,LIC676991,PA,FAC000023,555-846-4784,dr.hall17@wrshealthproviders.com,True,True,2020-03-18,2023-06-20 23:53:57.982591
+PRV000577,1000000577,Laura,Allen,Obstetrics and Gynecology,Geriatrics,DO,LIC830134,NY,FAC000876,555-120-5032,dr.baker59@wrshealthproviders.com,False,True,2019-02-23,2023-11-23 23:53:57.982591
+PRV000578,1000000578,Sarah,Thompson,Endocrinology,Sports Medicine,PA,LIC253529,CA,FAC000857,555-742-3193,dr.green4@wrshealthproviders.com,True,True,2004-02-29,2024-04-27 23:53:57.982591
+PRV000579,1000000579,James,Green,Neurology,,PA,LIC546967,FL,FAC000704,555-717-9110,dr.green98@wrshealthproviders.com,True,True,2020-07-23,2021-12-18 23:53:57.982591
+PRV000580,1000000580,Robert,Baker,Ophthalmology,Pain Management,MD,LIC772371,IL,FAC000483,555-568-5575,dr.walker79@wrshealthproviders.com,True,True,2018-11-24,2024-04-08 23:53:57.982591
+PRV000581,1000000581,Richard,Martinez,Neurology,,MD,LIC204122,TX,FAC000823,555-401-5706,dr.king82@wrshealthproviders.com,False,True,2006-10-01,2023-02-08 23:53:57.982591
+PRV000582,1000000582,Jennifer,Young,Radiology,Geriatrics,MD,LIC930550,AZ,FAC000178,555-332-4733,dr.martinez91@wrshealthproviders.com,False,True,2012-04-26,2022-04-06 23:53:57.982591
+PRV000583,1000000583,Jennifer,Wright,Oncology,,NP,LIC914061,IL,FAC000352,555-894-3383,dr.hall53@wrshealthproviders.com,True,True,2020-06-14,2025-09-23 23:53:57.982591
+PRV000584,1000000584,Karen,Scott,Internal Medicine,,DO,LIC356601,AZ,FAC000622,555-707-6064,dr.thompson55@wrshealthproviders.com,True,True,2015-11-28,2023-01-06 23:53:57.982591
+PRV000585,1000000585,Michael,King,General Surgery,Pain Management,MD,LIC453737,FL,FAC000181,555-453-8480,dr.wright99@wrshealthproviders.com,True,True,2019-06-12,2024-05-26 23:53:57.982591
+PRV000586,1000000586,Nancy,Nelson,Orthopedics,,MD,LIC145206,FL,FAC000353,555-637-8021,dr.nelson38@wrshealthproviders.com,True,True,2017-10-30,2024-12-24 23:53:57.982591
+PRV000587,1000000587,James,Baker,Emergency Medicine,Geriatrics,MD,LIC536009,FL,FAC000037,555-610-5626,dr.martinez90@wrshealthproviders.com,True,True,2015-04-15,2025-08-02 23:53:57.982591
+PRV000588,1000000588,David,Hall,Cardiology,Interventional,MD,LIC231462,IL,FAC000102,555-999-1881,dr.green76@wrshealthproviders.com,True,True,2013-03-20,2021-08-13 23:53:57.982591
+PRV000589,1000000589,Lisa,Scott,Family Medicine,Pain Management,PA,LIC168220,PA,FAC000398,555-402-8740,dr.allen83@wrshealthproviders.com,True,True,2023-09-03,2022-07-29 23:53:57.982591
+PRV000590,1000000590,John,Robinson,Cardiology,,DO,LIC163276,PA,FAC000621,555-565-3121,dr.hall54@wrshealthproviders.com,True,True,2009-07-07,2023-09-20 23:53:57.982591
+PRV000591,1000000591,Emily,Thompson,Radiology,Critical Care,MD,LIC655080,NY,FAC000076,555-368-7444,dr.scott91@wrshealthproviders.com,True,True,2013-05-01,2022-06-26 23:53:57.982591
+PRV000592,1000000592,David,Walker,Internal Medicine,Sports Medicine,MD,LIC403133,CA,FAC000358,555-836-5488,dr.hall87@wrshealthproviders.com,True,True,2013-11-10,2024-04-04 23:53:57.982591
+PRV000593,1000000593,Laura,Allen,Internal Medicine,Critical Care,MD,LIC134776,CA,FAC000438,555-735-8877,dr.hall61@wrshealthproviders.com,True,True,2015-02-10,2025-02-17 23:53:57.982591
+PRV000594,1000000594,Michelle,Anderson,Endocrinology,Geriatrics,PA,LIC181145,CA,FAC000628,555-253-9354,dr.wright54@wrshealthproviders.com,False,True,2011-03-29,2021-12-21 23:53:57.982591
+PRV000595,1000000595,Richard,King,Oncology,Geriatrics,MD,LIC438772,FL,FAC000488,555-316-5846,dr.martinez65@wrshealthproviders.com,True,True,2010-12-09,2025-08-31 23:53:57.982591
+PRV000596,1000000596,John,Nelson,Anesthesiology,Pain Management,MD,LIC603387,PA,FAC000543,555-205-1166,dr.allen46@wrshealthproviders.com,True,False,2004-06-06,2022-02-24 23:53:57.982591
+PRV000597,1000000597,Emily,Walker,Obstetrics and Gynecology,,MD,LIC985367,CA,FAC000064,555-519-8383,dr.hall44@wrshealthproviders.com,True,True,2008-01-23,2023-07-15 23:53:57.982591
+PRV000598,1000000598,Laura,Scott,Radiology,Sports Medicine,DO,LIC743353,CA,FAC000492,555-742-2220,dr.nelson58@wrshealthproviders.com,True,True,2004-05-21,2021-05-07 23:53:57.982591
+PRV000599,1000000599,Richard,Robinson,Family Medicine,Geriatrics,DO,LIC710202,CA,FAC000640,555-122-1527,dr.nelson92@wrshealthproviders.com,False,False,2019-06-19,2022-11-17 23:53:57.982591
+PRV000600,1000000600,Robert,Thompson,Oncology,Sports Medicine,DO,LIC620533,FL,FAC000522,555-710-8246,dr.nelson68@wrshealthproviders.com,True,True,2018-09-01,2021-11-30 23:53:57.982591
+PRV000601,1000000601,Emily,Anderson,Cardiology,Sports Medicine,MD,LIC783263,CA,FAC000146,555-672-5777,dr.wright73@wrshealthproviders.com,True,True,2014-02-12,2025-11-02 23:53:57.982591
+PRV000602,1000000602,Michael,Young,Family Medicine,,MD,LIC118519,NY,FAC000214,555-398-3846,dr.clark89@wrshealthproviders.com,True,True,2021-10-17,2022-06-14 23:53:57.982591
+PRV000603,1000000603,Nancy,Robinson,Oncology,,MD,LIC513855,AZ,FAC000055,555-728-9320,dr.allen44@wrshealthproviders.com,True,True,2018-06-08,2021-08-15 23:53:57.982591
+PRV000604,1000000604,Lisa,Nelson,Family Medicine,Geriatrics,DO,LIC242551,TX,FAC000490,555-269-5057,dr.hall53@wrshealthproviders.com,False,True,2004-10-23,2025-11-20 23:53:57.982591
+PRV000605,1000000605,Thomas,King,Cardiology,,MD,LIC843541,FL,FAC000686,555-167-7213,dr.martinez69@wrshealthproviders.com,True,True,2009-04-26,2021-03-22 23:53:57.982591
+PRV000606,1000000606,John,Green,Family Medicine,,MD,LIC745008,CA,FAC000048,555-751-5254,dr.walker57@wrshealthproviders.com,True,True,2019-03-15,2024-03-29 23:53:57.982591
+PRV000607,1000000607,Karen,Allen,Ophthalmology,,NP,LIC648880,AZ,FAC000022,555-234-2984,dr.young40@wrshealthproviders.com,True,True,2022-12-08,2024-12-15 23:53:57.982591
+PRV000608,1000000608,Karen,Walker,Endocrinology,Sports Medicine,NP,LIC167418,FL,FAC000537,555-231-9237,dr.lewis25@wrshealthproviders.com,True,True,2009-04-05,2022-04-28 23:53:57.982591
+PRV000609,1000000609,Lisa,Thompson,Endocrinology,,MD,LIC138975,IL,FAC000065,555-229-7941,dr.scott5@wrshealthproviders.com,False,True,2015-07-12,2025-09-05 23:53:57.982591
+PRV000610,1000000610,Richard,Nelson,Neurology,Geriatrics,MD,LIC691744,PA,FAC000202,555-464-9289,dr.young17@wrshealthproviders.com,True,True,2014-08-23,2025-04-16 23:53:57.982591
+PRV000611,1000000611,John,Lewis,Neurology,Geriatrics,MD,LIC741504,FL,FAC000221,555-457-8697,dr.allen35@wrshealthproviders.com,False,True,2016-05-08,2023-09-09 23:53:57.982591
+PRV000612,1000000612,Nancy,Robinson,Endocrinology,Interventional,DO,LIC600814,FL,FAC000773,555-893-1824,dr.king1@wrshealthproviders.com,True,True,2021-10-23,2025-12-06 23:53:57.982591
+PRV000613,1000000613,David,Baker,Ophthalmology,Critical Care,NP,LIC773780,TX,FAC000871,555-987-3948,dr.lewis45@wrshealthproviders.com,True,True,2022-12-06,2023-12-19 23:53:57.982591
+PRV000614,1000000614,Jennifer,Baker,Pediatrics,Interventional,MD,LIC471005,NY,FAC000768,555-391-9449,dr.scott64@wrshealthproviders.com,True,True,2007-02-01,2024-04-03 23:53:57.982591
+PRV000615,1000000615,Robert,Martinez,Psychiatry,Sports Medicine,MD,LIC292870,FL,FAC000316,555-706-2170,dr.thompson20@wrshealthproviders.com,True,True,2013-01-02,2022-02-18 23:53:57.982591
+PRV000616,1000000616,John,Green,General Surgery,Geriatrics,NP,LIC543182,FL,FAC000845,555-101-6609,dr.robinson62@wrshealthproviders.com,True,True,2014-01-14,2021-04-19 23:53:57.982591
+PRV000617,1000000617,Nancy,Robinson,Ophthalmology,,NP,LIC656767,FL,FAC000755,555-758-6959,dr.lewis80@wrshealthproviders.com,True,True,2008-05-01,2023-04-18 23:53:57.982591
+PRV000618,1000000618,Robert,Scott,Anesthesiology,,MD,LIC514879,PA,FAC000594,555-580-2451,dr.king76@wrshealthproviders.com,True,True,2018-07-15,2024-05-13 23:53:57.982591
+PRV000619,1000000619,Karen,King,Psychiatry,Geriatrics,MD,LIC538723,AZ,FAC000019,555-470-9663,dr.martinez51@wrshealthproviders.com,True,False,2019-08-19,2025-09-10 23:53:57.982591
+PRV000620,1000000620,Nancy,Baker,Anesthesiology,,MD,LIC492344,IL,FAC000145,555-861-5276,dr.robinson93@wrshealthproviders.com,True,True,2024-08-01,2025-04-04 23:53:57.982591
+PRV000621,1000000621,Laura,Lewis,Obstetrics and Gynecology,,MD,LIC152027,CA,FAC000214,555-334-5333,dr.anderson30@wrshealthproviders.com,True,True,2011-03-15,2022-07-09 23:53:57.982591
+PRV000622,1000000622,Robert,Hall,Anesthesiology,,PA,LIC659309,AZ,FAC000970,555-794-6746,dr.baker93@wrshealthproviders.com,True,True,2015-12-01,2021-07-23 23:53:57.982591
+PRV000623,1000000623,Karen,Green,Oncology,Interventional,NP,LIC324839,FL,FAC000790,555-487-6738,dr.green27@wrshealthproviders.com,True,True,2018-08-18,2023-01-23 23:53:57.982591
+PRV000624,1000000624,Laura,Hall,Emergency Medicine,Pain Management,DO,LIC539088,FL,FAC000492,555-219-3414,dr.lewis76@wrshealthproviders.com,True,True,2013-11-01,2021-10-27 23:53:57.982591
+PRV000625,1000000625,Thomas,Young,Emergency Medicine,,MD,LIC679175,NY,FAC000307,555-889-4652,dr.young1@wrshealthproviders.com,False,True,2018-04-14,2024-05-07 23:53:57.982591
+PRV000626,1000000626,Karen,Martinez,Emergency Medicine,Pain Management,NP,LIC197457,CA,FAC000238,555-393-4351,dr.hall66@wrshealthproviders.com,True,True,2022-02-13,2024-02-27 23:53:57.982591
+PRV000627,1000000627,Richard,Robinson,Obstetrics and Gynecology,Geriatrics,MD,LIC899854,TX,FAC000183,555-371-5509,dr.anderson39@wrshealthproviders.com,False,True,2011-07-12,2022-07-23 23:53:57.982591
+PRV000628,1000000628,Michelle,Thompson,General Surgery,Critical Care,MD,LIC510342,NY,FAC000852,555-157-8657,dr.walker63@wrshealthproviders.com,True,True,2010-09-07,2023-12-25 23:53:57.982591
+PRV000629,1000000629,Jennifer,Allen,General Surgery,Pain Management,MD,LIC684217,AZ,FAC000443,555-808-1439,dr.allen12@wrshealthproviders.com,True,True,2020-07-15,2023-01-10 23:53:57.982591
+PRV000630,1000000630,Michelle,King,Neurology,Critical Care,MD,LIC948847,IL,FAC000588,555-626-1329,dr.lewis56@wrshealthproviders.com,True,True,2021-11-26,2021-10-07 23:53:57.982591
+PRV000631,1000000631,Michael,Baker,Ophthalmology,Interventional,DO,LIC806338,AZ,FAC000882,555-524-4546,dr.anderson66@wrshealthproviders.com,True,True,2016-04-12,2023-07-26 23:53:57.982591
+PRV000632,1000000632,John,Green,Emergency Medicine,Geriatrics,MD,LIC271923,TX,FAC000734,555-172-4921,dr.scott41@wrshealthproviders.com,True,True,2013-03-13,2023-09-01 23:53:57.982591
+PRV000633,1000000633,Michelle,Baker,Psychiatry,,MD,LIC219234,AZ,FAC000180,555-705-6386,dr.king16@wrshealthproviders.com,True,True,2019-09-30,2022-10-30 23:53:57.982591
+PRV000634,1000000634,John,Robinson,Endocrinology,,MD,LIC405041,CA,FAC000777,555-724-5791,dr.anderson68@wrshealthproviders.com,True,False,2008-09-08,2024-03-29 23:53:57.982591
+PRV000635,1000000635,Sarah,Clark,Orthopedics,Interventional,MD,LIC144011,TX,FAC000799,555-344-6286,dr.green14@wrshealthproviders.com,True,True,2018-04-11,2023-12-11 23:53:57.982591
+PRV000636,1000000636,Robert,Scott,Orthopedics,,MD,LIC564020,AZ,FAC000286,555-560-9845,dr.baker1@wrshealthproviders.com,True,True,2013-04-29,2022-11-15 23:53:57.982591
+PRV000637,1000000637,Jennifer,King,Ophthalmology,Geriatrics,MD,LIC337015,CA,FAC000639,555-867-5415,dr.nelson93@wrshealthproviders.com,False,True,2014-03-19,2021-02-27 23:53:57.982591
+PRV000638,1000000638,Laura,Nelson,Dermatology,Pain Management,NP,LIC593925,NY,FAC000289,555-977-6343,dr.walker80@wrshealthproviders.com,True,True,2024-07-02,2021-05-01 23:53:57.982591
+PRV000639,1000000639,Robert,Lewis,Cardiology,,MD,LIC305483,CA,FAC000101,555-734-1336,dr.walker87@wrshealthproviders.com,True,True,2011-07-01,2025-07-07 23:53:57.982591
+PRV000640,1000000640,John,Martinez,Pediatrics,,MD,LIC156535,NY,FAC000566,555-860-8742,dr.martinez31@wrshealthproviders.com,True,True,2008-11-30,2022-06-14 23:53:57.982591
+PRV000641,1000000641,Robert,Clark,Radiology,,MD,LIC650978,TX,FAC000004,555-314-3023,dr.clark80@wrshealthproviders.com,True,True,2010-09-23,2025-01-31 23:53:57.982591
+PRV000642,1000000642,David,Robinson,Family Medicine,Geriatrics,NP,LIC819222,FL,FAC000093,555-259-9569,dr.young5@wrshealthproviders.com,True,True,2021-03-07,2023-09-17 23:53:57.982591
+PRV000643,1000000643,Michelle,Lewis,Dermatology,,MD,LIC575400,PA,FAC000714,555-267-2201,dr.lewis87@wrshealthproviders.com,True,True,2011-12-15,2023-02-24 23:53:57.982591
+PRV000644,1000000644,Jennifer,Nelson,Psychiatry,Interventional,MD,LIC186777,AZ,FAC000389,555-752-2650,dr.nelson47@wrshealthproviders.com,False,True,2006-01-05,2025-07-14 23:53:57.982591
+PRV000645,1000000645,Thomas,Wright,Endocrinology,,MD,LIC394202,CA,FAC000689,555-913-2169,dr.young24@wrshealthproviders.com,True,True,2017-07-08,2024-10-07 23:53:57.982591
+PRV000646,1000000646,Michelle,Lewis,Obstetrics and Gynecology,,MD,LIC891075,CA,FAC000592,555-286-7446,dr.wright6@wrshealthproviders.com,True,True,2022-09-16,2025-11-05 23:53:57.982591
+PRV000647,1000000647,Richard,Allen,Psychiatry,Pain Management,MD,LIC307285,TX,FAC000655,555-415-3493,dr.martinez52@wrshealthproviders.com,False,True,2015-08-12,2023-04-06 23:53:57.982591
+PRV000648,1000000648,Robert,Martinez,Endocrinology,Sports Medicine,DO,LIC706668,PA,FAC000361,555-196-9370,dr.wright58@wrshealthproviders.com,False,True,2009-12-21,2023-02-19 23:53:57.982591
+PRV000649,1000000649,William,Scott,Emergency Medicine,,DO,LIC118759,NY,FAC000930,555-180-6232,dr.wright47@wrshealthproviders.com,True,True,2021-04-05,2024-09-07 23:53:57.982591
+PRV000650,1000000650,David,Anderson,Obstetrics and Gynecology,Sports Medicine,MD,LIC304483,AZ,FAC000626,555-362-5302,dr.king61@wrshealthproviders.com,False,True,2012-06-25,2023-07-07 23:53:57.982591
+PRV000651,1000000651,Lisa,Young,Oncology,Interventional,DO,LIC749195,NY,FAC000628,555-886-9122,dr.young67@wrshealthproviders.com,True,True,2009-02-17,2021-03-07 23:53:57.982591
+PRV000652,1000000652,William,Robinson,Internal Medicine,,DO,LIC110498,AZ,FAC000121,555-666-9277,dr.scott28@wrshealthproviders.com,False,True,2011-10-31,2024-11-12 23:53:57.982591
+PRV000653,1000000653,Nancy,Wright,Oncology,Critical Care,MD,LIC732052,FL,FAC000121,555-697-4562,dr.clark72@wrshealthproviders.com,True,True,2024-02-20,2025-06-06 23:53:57.982591
+PRV000654,1000000654,Michael,King,Dermatology,,MD,LIC262585,AZ,FAC000661,555-885-8608,dr.martinez2@wrshealthproviders.com,True,True,2012-07-25,2021-08-29 23:53:57.982591
+PRV000655,1000000655,Emily,Wright,Cardiology,Geriatrics,MD,LIC127437,CA,FAC000711,555-750-8466,dr.nelson86@wrshealthproviders.com,True,True,2018-01-16,2023-02-15 23:53:57.982591
+PRV000656,1000000656,David,Walker,Obstetrics and Gynecology,Sports Medicine,MD,LIC154577,TX,FAC000179,555-153-8988,dr.anderson44@wrshealthproviders.com,True,True,2017-03-25,2022-02-22 23:53:57.982591
+PRV000657,1000000657,John,Baker,Family Medicine,,DO,LIC457867,NY,FAC000587,555-159-7060,dr.scott8@wrshealthproviders.com,True,True,2019-02-08,2022-03-05 23:53:57.982591
+PRV000658,1000000658,Lisa,Hall,Oncology,Critical Care,NP,LIC986590,IL,FAC000868,555-976-1463,dr.king41@wrshealthproviders.com,True,True,2013-03-30,2024-09-07 23:53:57.982591
+PRV000659,1000000659,John,Thompson,Family Medicine,Sports Medicine,PA,LIC928870,NY,FAC000308,555-554-1411,dr.nelson27@wrshealthproviders.com,True,True,2007-05-03,2024-02-02 23:53:57.982591
+PRV000660,1000000660,Nancy,Allen,Neurology,,DO,LIC874825,AZ,FAC000431,555-736-7078,dr.young15@wrshealthproviders.com,True,True,2021-08-01,2022-10-13 23:53:57.982591
+PRV000661,1000000661,William,Walker,Endocrinology,Critical Care,MD,LIC797263,CA,FAC000923,555-760-1327,dr.thompson74@wrshealthproviders.com,True,True,2016-07-29,2024-04-27 23:53:57.982591
+PRV000662,1000000662,Nancy,Baker,Orthopedics,Pain Management,MD,LIC510152,NY,FAC000270,555-753-7589,dr.scott1@wrshealthproviders.com,True,True,2021-11-28,2025-06-06 23:53:57.982591
+PRV000663,1000000663,David,Green,Ophthalmology,Critical Care,NP,LIC285684,TX,FAC000041,555-233-7305,dr.anderson96@wrshealthproviders.com,True,True,2015-03-22,2025-01-30 23:53:57.982591
+PRV000664,1000000664,Michael,Walker,Family Medicine,,MD,LIC517127,FL,FAC000254,555-784-4560,dr.green49@wrshealthproviders.com,True,True,2014-05-09,2021-11-29 23:53:57.982591
+PRV000665,1000000665,William,Robinson,Endocrinology,,DO,LIC934762,AZ,FAC000070,555-289-8270,dr.robinson53@wrshealthproviders.com,False,True,2004-09-23,2024-09-19 23:53:57.982591
+PRV000666,1000000666,Robert,King,Ophthalmology,,DO,LIC141484,IL,FAC000110,555-514-3937,dr.martinez85@wrshealthproviders.com,True,True,2020-06-06,2021-10-02 23:53:57.982591
+PRV000667,1000000667,Michael,Wright,Dermatology,Interventional,DO,LIC605807,IL,FAC000556,555-361-4312,dr.king25@wrshealthproviders.com,True,True,2020-01-15,2021-11-15 23:53:57.982591
+PRV000668,1000000668,Emily,Scott,Pediatrics,,NP,LIC107625,PA,FAC000160,555-233-8002,dr.martinez57@wrshealthproviders.com,True,True,2022-10-03,2024-07-29 23:53:57.982591
+PRV000669,1000000669,Emily,Nelson,Neurology,Pain Management,MD,LIC763215,AZ,FAC000567,555-442-8422,dr.scott52@wrshealthproviders.com,True,True,2005-09-21,2024-03-15 23:53:57.982591
+PRV000670,1000000670,Jennifer,Anderson,Radiology,Pain Management,DO,LIC285882,AZ,FAC000474,555-256-1054,dr.anderson89@wrshealthproviders.com,True,True,2004-04-22,2022-10-10 23:53:57.982591
+PRV000671,1000000671,Michael,Nelson,Endocrinology,Geriatrics,NP,LIC783641,AZ,FAC000614,555-887-9126,dr.lewis38@wrshealthproviders.com,True,True,2020-11-05,2022-01-08 23:53:57.982591
+PRV000672,1000000672,Thomas,Robinson,General Surgery,,MD,LIC398367,FL,FAC000928,555-720-9606,dr.young89@wrshealthproviders.com,False,True,2017-06-22,2025-01-27 23:53:57.982591
+PRV000673,1000000673,Laura,Green,Emergency Medicine,,DO,LIC616358,FL,FAC000097,555-153-5183,dr.wright49@wrshealthproviders.com,True,True,2013-05-10,2024-11-28 23:53:57.982591
+PRV000674,1000000674,John,Allen,Ophthalmology,Interventional,MD,LIC399280,FL,FAC000270,555-856-9045,dr.baker90@wrshealthproviders.com,True,True,2022-11-21,2025-01-19 23:53:57.982591
+PRV000675,1000000675,Robert,Allen,Anesthesiology,Geriatrics,PA,LIC638617,CA,FAC000446,555-141-8885,dr.martinez66@wrshealthproviders.com,True,True,2022-02-11,2021-06-30 23:53:57.982591
+PRV000676,1000000676,Richard,Robinson,Family Medicine,,MD,LIC965415,AZ,FAC000937,555-625-4958,dr.martinez38@wrshealthproviders.com,False,True,2010-01-04,2023-12-20 23:53:57.982591
+PRV000677,1000000677,Nancy,Allen,Oncology,Interventional,MD,LIC442219,NY,FAC000366,555-551-9472,dr.walker30@wrshealthproviders.com,True,True,2007-10-23,2022-02-26 23:53:57.982591
+PRV000678,1000000678,Richard,Young,Cardiology,,MD,LIC785010,CA,FAC000605,555-610-9104,dr.scott80@wrshealthproviders.com,True,False,2006-03-05,2023-02-23 23:53:57.982591
+PRV000679,1000000679,Richard,Anderson,Pediatrics,Pain Management,DO,LIC570688,TX,FAC000358,555-779-6387,dr.baker43@wrshealthproviders.com,True,True,2012-06-23,2025-09-23 23:53:57.982591
+PRV000680,1000000680,Lisa,Anderson,General Surgery,Pain Management,MD,LIC753998,PA,FAC000099,555-266-4126,dr.baker43@wrshealthproviders.com,True,True,2004-08-07,2021-11-03 23:53:57.982591
+PRV000681,1000000681,Richard,Thompson,Obstetrics and Gynecology,Sports Medicine,MD,LIC648862,IL,FAC000085,555-735-8121,dr.wright34@wrshealthproviders.com,True,True,2014-08-14,2025-01-10 23:53:57.982591
+PRV000682,1000000682,Michelle,Allen,Endocrinology,Sports Medicine,MD,LIC851060,PA,FAC000670,555-955-4197,dr.scott3@wrshealthproviders.com,True,True,2016-03-22,2024-06-03 23:53:57.982591
+PRV000683,1000000683,Laura,Thompson,Emergency Medicine,,PA,LIC660213,TX,FAC000149,555-498-2783,dr.scott72@wrshealthproviders.com,False,True,2016-01-08,2024-02-04 23:53:57.982591
+PRV000684,1000000684,Jennifer,Baker,Anesthesiology,Sports Medicine,MD,LIC984071,PA,FAC000029,555-930-9506,dr.walker35@wrshealthproviders.com,True,True,2020-01-17,2024-04-02 23:53:57.982591
+PRV000685,1000000685,Michael,Wright,Ophthalmology,,MD,LIC655378,FL,FAC000830,555-407-6930,dr.lewis54@wrshealthproviders.com,True,True,2019-01-30,2021-05-08 23:53:57.982591
+PRV000686,1000000686,Lisa,Green,Radiology,Geriatrics,DO,LIC745969,CA,FAC000194,555-383-5386,dr.anderson48@wrshealthproviders.com,True,True,2024-11-20,2023-03-29 23:53:57.982591
+PRV000687,1000000687,Jennifer,Thompson,Psychiatry,Interventional,MD,LIC280128,AZ,FAC000847,555-210-9934,dr.walker31@wrshealthproviders.com,True,True,2019-04-20,2025-08-10 23:53:57.982591
+PRV000688,1000000688,Nancy,Clark,General Surgery,Interventional,PA,LIC166176,NY,FAC000237,555-789-4678,dr.lewis81@wrshealthproviders.com,True,True,2007-02-28,2025-06-21 23:53:57.982591
+PRV000689,1000000689,William,Hall,Radiology,Critical Care,MD,LIC342259,NY,FAC000577,555-619-6936,dr.young78@wrshealthproviders.com,True,True,2022-09-15,2021-09-30 23:53:57.982591
+PRV000690,1000000690,James,Robinson,General Surgery,,DO,LIC276410,CA,FAC000834,555-563-3516,dr.green76@wrshealthproviders.com,True,True,2011-01-28,2023-11-23 23:53:57.982591
+PRV000691,1000000691,William,Thompson,Obstetrics and Gynecology,Geriatrics,MD,LIC584280,FL,FAC000928,555-639-3712,dr.scott49@wrshealthproviders.com,True,True,2015-02-15,2025-01-14 23:53:57.982591
+PRV000692,1000000692,John,Green,Radiology,Geriatrics,MD,LIC339507,CA,FAC000768,555-509-3405,dr.thompson70@wrshealthproviders.com,True,True,2005-08-06,2021-06-30 23:53:57.982591
+PRV000693,1000000693,Robert,Young,Radiology,Geriatrics,DO,LIC658837,TX,FAC000061,555-860-1292,dr.robinson66@wrshealthproviders.com,True,True,2008-05-25,2022-02-13 23:53:57.982591
+PRV000694,1000000694,Robert,Thompson,General Surgery,Critical Care,MD,LIC222897,NY,FAC000377,555-203-7871,dr.baker97@wrshealthproviders.com,False,True,2019-05-22,2023-06-08 23:53:57.982591
+PRV000695,1000000695,Laura,Baker,Cardiology,Geriatrics,DO,LIC446213,PA,FAC000618,555-922-6765,dr.king67@wrshealthproviders.com,True,True,2019-03-09,2024-07-12 23:53:57.982591
+PRV000696,1000000696,Sarah,Nelson,Emergency Medicine,,MD,LIC282569,IL,FAC000975,555-207-6172,dr.thompson37@wrshealthproviders.com,True,True,2004-05-30,2021-09-19 23:53:57.982591
+PRV000697,1000000697,Jennifer,Lewis,Cardiology,Critical Care,MD,LIC260092,AZ,FAC000395,555-717-6138,dr.robinson38@wrshealthproviders.com,True,True,2014-07-23,2024-11-16 23:53:57.982591
+PRV000698,1000000698,James,Green,Neurology,Critical Care,MD,LIC725008,IL,FAC000443,555-269-8891,dr.anderson25@wrshealthproviders.com,True,True,2015-07-04,2024-03-05 23:53:57.982591
+PRV000699,1000000699,John,Lewis,Neurology,Interventional,PA,LIC922786,TX,FAC000697,555-390-8312,dr.green29@wrshealthproviders.com,False,True,2017-05-24,2025-06-19 23:53:57.982591
+PRV000700,1000000700,Lisa,Lewis,Neurology,,MD,LIC966311,CA,FAC000444,555-972-9902,dr.young68@wrshealthproviders.com,True,True,2009-01-03,2021-08-25 23:53:57.982591
+PRV000701,1000000701,Laura,King,Anesthesiology,Sports Medicine,MD,LIC317278,IL,FAC000662,555-951-9095,dr.baker34@wrshealthproviders.com,True,False,2020-12-17,2024-06-15 23:53:57.982591
+PRV000702,1000000702,Karen,Young,Pediatrics,Interventional,MD,LIC281320,FL,FAC000594,555-201-6916,dr.king14@wrshealthproviders.com,True,True,2005-12-26,2022-09-11 23:53:57.982591
+PRV000703,1000000703,Robert,Clark,Ophthalmology,Pain Management,MD,LIC241750,IL,FAC000260,555-758-6431,dr.clark96@wrshealthproviders.com,True,True,2007-10-18,2025-05-03 23:53:57.982591
+PRV000704,1000000704,Karen,Baker,Emergency Medicine,Critical Care,MD,LIC702823,IL,FAC000158,555-852-4668,dr.scott16@wrshealthproviders.com,True,True,2022-02-24,2023-02-27 23:53:57.982591
+PRV000705,1000000705,Robert,Walker,Oncology,Geriatrics,PA,LIC575543,IL,FAC000223,555-297-4355,dr.hall58@wrshealthproviders.com,True,True,2018-03-29,2021-06-08 23:53:57.982591
+PRV000706,1000000706,Emily,Allen,Dermatology,Geriatrics,MD,LIC803197,NY,FAC000588,555-172-8306,dr.thompson22@wrshealthproviders.com,False,True,2016-01-20,2023-09-25 23:53:57.982591
+PRV000707,1000000707,Robert,Allen,Oncology,,NP,LIC811984,TX,FAC000971,555-687-4730,dr.lewis84@wrshealthproviders.com,False,True,2006-02-05,2024-11-30 23:53:57.982591
+PRV000708,1000000708,David,Nelson,Endocrinology,Sports Medicine,MD,LIC283137,FL,FAC000950,555-172-4492,dr.walker3@wrshealthproviders.com,True,True,2011-05-06,2025-04-16 23:53:57.982591
+PRV000709,1000000709,James,Clark,Neurology,,DO,LIC908299,TX,FAC000298,555-756-5894,dr.young38@wrshealthproviders.com,True,True,2016-01-19,2023-04-06 23:53:57.982591
+PRV000710,1000000710,William,Wright,Endocrinology,Pain Management,PA,LIC443905,NY,FAC000847,555-936-9111,dr.walker9@wrshealthproviders.com,False,True,2013-06-21,2022-02-10 23:53:57.982591
+PRV000711,1000000711,David,Robinson,Endocrinology,Geriatrics,MD,LIC368353,NY,FAC000194,555-437-7273,dr.lewis11@wrshealthproviders.com,True,True,2007-02-21,2025-09-25 23:53:57.982591
+PRV000712,1000000712,Thomas,Nelson,Endocrinology,Critical Care,PA,LIC138978,IL,FAC000572,555-165-7930,dr.walker36@wrshealthproviders.com,True,True,2017-08-14,2025-03-06 23:53:57.982591
+PRV000713,1000000713,William,Walker,Neurology,Sports Medicine,MD,LIC217580,CA,FAC000692,555-867-2552,dr.king43@wrshealthproviders.com,True,True,2007-12-11,2024-11-21 23:53:57.982591
+PRV000714,1000000714,Nancy,Green,Emergency Medicine,,PA,LIC411128,IL,FAC000213,555-979-8615,dr.baker78@wrshealthproviders.com,False,True,2022-06-21,2025-06-25 23:53:57.982591
+PRV000715,1000000715,Thomas,Green,General Surgery,Critical Care,DO,LIC721447,IL,FAC000739,555-488-6910,dr.anderson6@wrshealthproviders.com,False,True,2015-10-20,2023-06-09 23:53:57.982591
+PRV000716,1000000716,Emily,King,Dermatology,Geriatrics,MD,LIC803349,PA,FAC000494,555-745-1828,dr.nelson24@wrshealthproviders.com,True,False,2011-10-02,2024-08-08 23:53:57.982591
+PRV000717,1000000717,William,Allen,Pediatrics,Critical Care,MD,LIC994950,AZ,FAC000366,555-245-2844,dr.king52@wrshealthproviders.com,True,True,2021-01-19,2022-06-27 23:53:57.982591
+PRV000718,1000000718,Sarah,Baker,Orthopedics,,MD,LIC808807,AZ,FAC000902,555-921-1334,dr.scott97@wrshealthproviders.com,True,True,2023-07-21,2025-11-08 23:53:57.982591
+PRV000719,1000000719,Lisa,Wright,Emergency Medicine,Geriatrics,MD,LIC360908,CA,FAC000883,555-921-1334,dr.nelson17@wrshealthproviders.com,True,True,2014-05-10,2025-04-25 23:53:57.982591
+PRV000720,1000000720,Sarah,Baker,Neurology,,MD,LIC677416,FL,FAC000693,555-904-1710,dr.hall8@wrshealthproviders.com,True,False,2016-09-24,2023-02-06 23:53:57.982591
+PRV000721,1000000721,Karen,Hall,General Surgery,Geriatrics,MD,LIC817157,CA,FAC000764,555-275-9170,dr.scott83@wrshealthproviders.com,True,True,2023-06-05,2021-11-15 23:53:57.982591
+PRV000722,1000000722,Richard,Nelson,General Surgery,Interventional,MD,LIC986840,IL,FAC000907,555-641-7949,dr.walker54@wrshealthproviders.com,True,True,2014-09-12,2025-08-16 23:53:57.982591
+PRV000723,1000000723,Thomas,Martinez,Radiology,Sports Medicine,DO,LIC410105,AZ,FAC000294,555-415-6845,dr.wright58@wrshealthproviders.com,False,True,2022-09-15,2025-10-16 23:53:57.982591
+PRV000724,1000000724,Sarah,Thompson,Anesthesiology,Geriatrics,MD,LIC613071,PA,FAC000908,555-936-9549,dr.walker57@wrshealthproviders.com,True,True,2019-06-30,2023-11-29 23:53:57.982591
+PRV000725,1000000725,Thomas,King,Pediatrics,Sports Medicine,MD,LIC908300,NY,FAC000163,555-786-8603,dr.martinez83@wrshealthproviders.com,True,True,2016-09-17,2026-01-10 23:53:57.982591
+PRV000726,1000000726,Michael,Walker,Pediatrics,Interventional,DO,LIC485695,PA,FAC000543,555-157-1081,dr.wright14@wrshealthproviders.com,True,True,2009-08-15,2021-08-30 23:53:57.982591
+PRV000727,1000000727,David,Clark,Endocrinology,,MD,LIC405807,NY,FAC000513,555-459-2976,dr.thompson37@wrshealthproviders.com,True,True,2010-04-23,2022-07-03 23:53:57.982591
+PRV000728,1000000728,Richard,Wright,Oncology,,MD,LIC346126,FL,FAC000308,555-751-3051,dr.robinson31@wrshealthproviders.com,True,True,2021-10-28,2021-04-04 23:53:57.982591
+PRV000729,1000000729,William,Thompson,Radiology,,MD,LIC772015,AZ,FAC000395,555-433-4724,dr.scott63@wrshealthproviders.com,False,True,2010-12-09,2023-04-29 23:53:57.982591
+PRV000730,1000000730,David,Green,Endocrinology,Sports Medicine,PA,LIC189461,NY,FAC000249,555-625-1875,dr.baker62@wrshealthproviders.com,False,True,2012-08-19,2023-11-13 23:53:57.982591
+PRV000731,1000000731,Michelle,Nelson,Emergency Medicine,Interventional,NP,LIC630432,PA,FAC000486,555-995-7910,dr.scott63@wrshealthproviders.com,True,True,2018-05-20,2024-09-27 23:53:57.982591
+PRV000732,1000000732,Michelle,Baker,Orthopedics,Interventional,MD,LIC663090,AZ,FAC000737,555-297-2565,dr.wright75@wrshealthproviders.com,True,True,2017-09-11,2021-05-21 23:53:57.982591
+PRV000733,1000000733,Michael,Robinson,Dermatology,,DO,LIC521337,FL,FAC000491,555-728-1045,dr.walker96@wrshealthproviders.com,False,True,2019-03-15,2024-05-18 23:53:57.982591
+PRV000734,1000000734,Karen,King,Internal Medicine,,MD,LIC925660,CA,FAC000248,555-438-4535,dr.clark93@wrshealthproviders.com,True,True,2010-08-21,2024-07-04 23:53:57.982591
+PRV000735,1000000735,Jennifer,Walker,Family Medicine,Geriatrics,DO,LIC426407,AZ,FAC000314,555-607-7276,dr.clark35@wrshealthproviders.com,True,True,2014-11-09,2024-11-16 23:53:57.982591
+PRV000736,1000000736,Lisa,Scott,Internal Medicine,Interventional,DO,LIC478543,PA,FAC000643,555-712-4411,dr.scott62@wrshealthproviders.com,True,True,2024-05-23,2024-11-16 23:53:57.982591
+PRV000737,1000000737,Jennifer,Anderson,Oncology,Critical Care,DO,LIC729307,PA,FAC000564,555-274-8662,dr.walker60@wrshealthproviders.com,False,True,2009-01-30,2024-06-21 23:53:57.982591
+PRV000738,1000000738,John,Robinson,Family Medicine,Geriatrics,MD,LIC381296,CA,FAC000646,555-748-3748,dr.martinez76@wrshealthproviders.com,True,True,2011-01-01,2022-03-25 23:53:57.982591
+PRV000739,1000000739,Michael,Nelson,Oncology,Geriatrics,MD,LIC576600,AZ,FAC000797,555-825-9158,dr.green61@wrshealthproviders.com,True,True,2006-05-04,2023-09-18 23:53:57.982591
+PRV000740,1000000740,William,Young,Obstetrics and Gynecology,Pain Management,MD,LIC672604,IL,FAC000333,555-393-7304,dr.king43@wrshealthproviders.com,False,True,2017-09-16,2026-01-11 23:53:57.982591
+PRV000741,1000000741,Emily,Hall,Radiology,,NP,LIC154643,NY,FAC000055,555-893-4068,dr.baker75@wrshealthproviders.com,True,True,2024-11-19,2025-01-09 23:53:57.982591
+PRV000742,1000000742,James,Anderson,Cardiology,Interventional,MD,LIC160220,FL,FAC000753,555-283-7475,dr.robinson17@wrshealthproviders.com,True,True,2011-01-05,2022-05-26 23:53:57.982591
+PRV000743,1000000743,Thomas,Allen,General Surgery,Interventional,NP,LIC598652,CA,FAC000250,555-627-8794,dr.anderson78@wrshealthproviders.com,True,True,2024-07-12,2021-01-26 23:53:57.982591
+PRV000744,1000000744,Thomas,Thompson,Emergency Medicine,,PA,LIC953531,PA,FAC000010,555-424-4185,dr.young43@wrshealthproviders.com,False,True,2017-02-04,2021-11-07 23:53:57.982591
+PRV000745,1000000745,Laura,Lewis,Anesthesiology,Sports Medicine,MD,LIC759736,AZ,FAC000836,555-190-2256,dr.allen86@wrshealthproviders.com,True,True,2006-12-23,2023-12-09 23:53:57.982591
+PRV000746,1000000746,Nancy,Wright,Oncology,Interventional,DO,LIC971529,IL,FAC000749,555-864-6700,dr.anderson21@wrshealthproviders.com,False,True,2005-03-16,2024-11-15 23:53:57.982591
+PRV000747,1000000747,James,Scott,Radiology,Sports Medicine,DO,LIC970493,TX,FAC000184,555-267-5262,dr.allen39@wrshealthproviders.com,True,True,2015-03-09,2024-08-30 23:53:57.982591
+PRV000748,1000000748,Michael,Thompson,Obstetrics and Gynecology,Interventional,PA,LIC701871,TX,FAC000896,555-877-4381,dr.walker72@wrshealthproviders.com,True,True,2019-03-21,2021-12-24 23:53:57.982591
+PRV000749,1000000749,Lisa,Thompson,Internal Medicine,Geriatrics,PA,LIC282137,AZ,FAC000460,555-651-9060,dr.clark49@wrshealthproviders.com,False,True,2009-09-23,2023-12-27 23:53:57.982591
+PRV000750,1000000750,Richard,Young,Oncology,,DO,LIC872219,AZ,FAC000487,555-237-1430,dr.baker52@wrshealthproviders.com,True,True,2017-08-02,2023-10-23 23:53:57.982591
+PRV000751,1000000751,Michael,Robinson,Pediatrics,Geriatrics,MD,LIC382692,FL,FAC000810,555-555-6327,dr.allen16@wrshealthproviders.com,True,True,2009-02-20,2024-06-26 23:53:57.982591
+PRV000752,1000000752,Nancy,Walker,Emergency Medicine,Geriatrics,DO,LIC890124,CA,FAC000140,555-556-4159,dr.hall87@wrshealthproviders.com,True,True,2013-03-27,2025-08-17 23:53:57.982591
+PRV000753,1000000753,Karen,Robinson,Neurology,Pain Management,MD,LIC549318,IL,FAC000701,555-850-2589,dr.scott50@wrshealthproviders.com,True,True,2024-01-26,2022-01-22 23:53:57.982591
+PRV000754,1000000754,Thomas,Green,Obstetrics and Gynecology,Critical Care,DO,LIC327210,AZ,FAC000812,555-417-5911,dr.nelson35@wrshealthproviders.com,True,True,2014-03-05,2023-10-12 23:53:57.982591
+PRV000755,1000000755,Nancy,Scott,Dermatology,,PA,LIC519203,TX,FAC000082,555-357-5385,dr.green65@wrshealthproviders.com,True,True,2015-09-19,2022-06-18 23:53:57.982591
+PRV000756,1000000756,Karen,Nelson,Obstetrics and Gynecology,,MD,LIC531060,PA,FAC000465,555-928-2884,dr.scott78@wrshealthproviders.com,True,True,2015-08-21,2025-01-13 23:53:57.982591
+PRV000757,1000000757,David,Baker,Ophthalmology,Interventional,DO,LIC727733,IL,FAC000590,555-707-7153,dr.anderson67@wrshealthproviders.com,False,True,2018-01-14,2022-09-20 23:53:57.982591
+PRV000758,1000000758,Jennifer,Wright,Orthopedics,,MD,LIC976438,CA,FAC000210,555-775-5426,dr.nelson67@wrshealthproviders.com,True,True,2013-01-19,2021-07-12 23:53:57.982591
+PRV000759,1000000759,David,Clark,Endocrinology,Critical Care,MD,LIC648657,TX,FAC000834,555-423-7297,dr.green30@wrshealthproviders.com,False,True,2014-09-26,2022-12-22 23:53:57.982591
+PRV000760,1000000760,Richard,Nelson,Cardiology,,MD,LIC353946,NY,FAC000077,555-280-5304,dr.martinez39@wrshealthproviders.com,True,True,2013-06-08,2022-04-27 23:53:57.982591
+PRV000761,1000000761,Emily,Anderson,Orthopedics,Critical Care,DO,LIC601262,IL,FAC000411,555-785-4317,dr.robinson70@wrshealthproviders.com,True,True,2018-05-11,2023-04-07 23:53:57.982591
+PRV000762,1000000762,William,Baker,Psychiatry,,PA,LIC983184,TX,FAC000163,555-666-5553,dr.hall42@wrshealthproviders.com,True,True,2022-06-19,2025-10-30 23:53:57.982591
+PRV000763,1000000763,James,Robinson,Emergency Medicine,,PA,LIC467406,FL,FAC000367,555-106-3311,dr.thompson96@wrshealthproviders.com,True,True,2019-12-24,2021-06-28 23:53:57.982591
+PRV000764,1000000764,John,Clark,Emergency Medicine,Sports Medicine,MD,LIC476937,IL,FAC000048,555-885-9079,dr.young79@wrshealthproviders.com,True,True,2012-10-22,2025-01-30 23:53:57.982591
+PRV000765,1000000765,David,Baker,Internal Medicine,Critical Care,NP,LIC769542,NY,FAC000972,555-557-2219,dr.thompson88@wrshealthproviders.com,True,True,2010-02-05,2024-03-09 23:53:57.982591
+PRV000766,1000000766,Michelle,Baker,Ophthalmology,,DO,LIC781120,IL,FAC000862,555-964-6812,dr.young38@wrshealthproviders.com,False,True,2019-06-12,2025-03-13 23:53:57.982591
+PRV000767,1000000767,James,Robinson,Oncology,,MD,LIC483259,FL,FAC000338,555-561-4744,dr.allen60@wrshealthproviders.com,False,True,2022-05-18,2025-07-06 23:53:57.982591
+PRV000768,1000000768,Michelle,Baker,Emergency Medicine,Interventional,MD,LIC779816,FL,FAC000361,555-781-7783,dr.allen24@wrshealthproviders.com,True,True,2021-01-13,2024-01-09 23:53:57.982591
+PRV000769,1000000769,Robert,Green,Psychiatry,,MD,LIC117897,CA,FAC000203,555-640-6429,dr.baker7@wrshealthproviders.com,False,True,2014-10-25,2021-12-31 23:53:57.982591
+PRV000770,1000000770,James,Walker,Radiology,Geriatrics,PA,LIC393750,CA,FAC000162,555-105-8285,dr.baker18@wrshealthproviders.com,True,True,2015-04-10,2021-12-29 23:53:57.982591
+PRV000771,1000000771,William,King,Psychiatry,Interventional,DO,LIC971974,PA,FAC000435,555-160-6250,dr.wright39@wrshealthproviders.com,True,True,2024-01-02,2021-02-17 23:53:57.982591
+PRV000772,1000000772,Thomas,Anderson,Radiology,Geriatrics,DO,LIC452512,NY,FAC000455,555-790-2799,dr.allen44@wrshealthproviders.com,False,True,2013-12-07,2025-07-19 23:53:57.982591
+PRV000773,1000000773,Laura,Green,Endocrinology,Sports Medicine,MD,LIC670587,TX,FAC000633,555-654-3556,dr.clark62@wrshealthproviders.com,True,True,2013-01-10,2024-07-14 23:53:57.982591
+PRV000774,1000000774,Nancy,Young,Oncology,,DO,LIC355861,FL,FAC000621,555-457-2452,dr.green9@wrshealthproviders.com,True,True,2007-09-16,2022-03-29 23:53:57.982591
+PRV000775,1000000775,Richard,Lewis,Family Medicine,Geriatrics,MD,LIC665877,NY,FAC000150,555-761-2942,dr.thompson78@wrshealthproviders.com,True,True,2019-10-11,2022-06-15 23:53:57.982591
+PRV000776,1000000776,Michael,Baker,Anesthesiology,,MD,LIC616777,TX,FAC000285,555-909-1500,dr.king33@wrshealthproviders.com,True,True,2020-08-21,2021-12-18 23:53:57.982591
+PRV000777,1000000777,Lisa,Lewis,Dermatology,Interventional,DO,LIC478399,TX,FAC000883,555-296-2468,dr.baker84@wrshealthproviders.com,True,True,2017-03-11,2024-10-06 23:53:57.982591
+PRV000778,1000000778,Nancy,Anderson,Dermatology,Geriatrics,MD,LIC140571,TX,FAC000863,555-768-9704,dr.lewis71@wrshealthproviders.com,True,True,2011-06-10,2024-01-28 23:53:57.982591
+PRV000779,1000000779,William,Young,Cardiology,Sports Medicine,NP,LIC114272,PA,FAC000671,555-544-8420,dr.nelson36@wrshealthproviders.com,False,True,2018-08-17,2021-04-02 23:53:57.982591
+PRV000780,1000000780,William,Walker,Anesthesiology,Sports Medicine,MD,LIC877711,TX,FAC000649,555-233-1310,dr.thompson59@wrshealthproviders.com,True,True,2012-12-01,2021-02-24 23:53:57.982591
+PRV000781,1000000781,John,Robinson,Family Medicine,Interventional,DO,LIC624079,NY,FAC000313,555-588-6818,dr.king12@wrshealthproviders.com,True,True,2021-02-01,2025-07-04 23:53:57.982591
+PRV000782,1000000782,Sarah,Nelson,Endocrinology,Sports Medicine,MD,LIC883996,PA,FAC000692,555-692-2727,dr.hall79@wrshealthproviders.com,True,True,2010-10-03,2023-05-19 23:53:57.982591
+PRV000783,1000000783,Michael,Green,Endocrinology,Critical Care,MD,LIC587350,PA,FAC000793,555-380-5551,dr.robinson33@wrshealthproviders.com,True,True,2004-06-21,2025-04-23 23:53:57.982591
+PRV000784,1000000784,Karen,Baker,Oncology,Sports Medicine,MD,LIC132871,PA,FAC000720,555-948-7115,dr.scott1@wrshealthproviders.com,True,True,2005-06-13,2022-05-26 23:53:57.982591
+PRV000785,1000000785,Karen,Scott,Endocrinology,Geriatrics,MD,LIC747047,TX,FAC000524,555-524-8039,dr.hall58@wrshealthproviders.com,True,True,2007-07-10,2024-12-06 23:53:57.982591
+PRV000786,1000000786,Richard,Clark,Orthopedics,Geriatrics,PA,LIC709282,CA,FAC000252,555-179-7687,dr.lewis72@wrshealthproviders.com,False,True,2022-03-09,2022-04-17 23:53:57.982591
+PRV000787,1000000787,Thomas,Lewis,Endocrinology,,MD,LIC156845,FL,FAC000708,555-925-7593,dr.anderson30@wrshealthproviders.com,False,True,2004-05-29,2023-11-27 23:53:57.982591
+PRV000788,1000000788,Robert,Baker,Psychiatry,,NP,LIC867291,CA,FAC000478,555-845-8522,dr.king53@wrshealthproviders.com,False,True,2019-04-20,2023-03-13 23:53:57.982591
+PRV000789,1000000789,David,Thompson,General Surgery,Critical Care,PA,LIC297431,NY,FAC000148,555-802-7167,dr.robinson87@wrshealthproviders.com,False,True,2016-12-01,2023-12-28 23:53:57.982591
+PRV000790,1000000790,Robert,Clark,Ophthalmology,Geriatrics,MD,LIC221183,NY,FAC000405,555-915-1156,dr.anderson72@wrshealthproviders.com,True,True,2022-03-15,2025-10-18 23:53:57.982591
+PRV000791,1000000791,Karen,Wright,Emergency Medicine,Interventional,MD,LIC565358,AZ,FAC000978,555-194-6454,dr.wright69@wrshealthproviders.com,False,True,2018-08-11,2024-07-25 23:53:57.982591
+PRV000792,1000000792,Robert,Young,Internal Medicine,,DO,LIC927896,FL,FAC000572,555-155-5428,dr.nelson62@wrshealthproviders.com,True,True,2006-07-08,2021-12-12 23:53:57.982591
+PRV000793,1000000793,Richard,Hall,Endocrinology,Interventional,PA,LIC251844,NY,FAC000736,555-340-5458,dr.baker1@wrshealthproviders.com,True,True,2007-01-09,2021-11-13 23:53:57.982591
+PRV000794,1000000794,John,Martinez,General Surgery,Sports Medicine,PA,LIC199604,PA,FAC000473,555-101-2329,dr.nelson46@wrshealthproviders.com,True,True,2008-01-26,2021-08-03 23:53:57.982591
+PRV000795,1000000795,Emily,Scott,Emergency Medicine,Sports Medicine,MD,LIC760759,TX,FAC000781,555-101-4037,dr.anderson14@wrshealthproviders.com,True,True,2012-11-28,2022-05-07 23:53:57.982591
+PRV000796,1000000796,Michelle,Hall,Emergency Medicine,Geriatrics,DO,LIC181582,PA,FAC000725,555-501-7095,dr.walker74@wrshealthproviders.com,True,True,2013-01-02,2024-04-17 23:53:57.982591
+PRV000797,1000000797,Michael,Martinez,Ophthalmology,Sports Medicine,MD,LIC932149,NY,FAC000500,555-450-8431,dr.walker77@wrshealthproviders.com,False,True,2022-05-20,2023-01-14 23:53:57.982591
+PRV000798,1000000798,David,King,Anesthesiology,,PA,LIC338049,NY,FAC000604,555-487-5982,dr.lewis42@wrshealthproviders.com,True,True,2016-05-14,2024-01-02 23:53:57.982591
+PRV000799,1000000799,Thomas,Young,Ophthalmology,Interventional,PA,LIC903088,AZ,FAC000907,555-572-7064,dr.scott58@wrshealthproviders.com,True,True,2005-06-22,2025-02-02 23:53:57.982591
+PRV000800,1000000800,John,Green,Family Medicine,Pain Management,MD,LIC480181,IL,FAC000247,555-529-7468,dr.nelson89@wrshealthproviders.com,True,True,2024-09-12,2023-11-12 23:53:57.982591
+PRV000801,1000000801,Nancy,Allen,Endocrinology,Interventional,MD,LIC716101,IL,FAC000752,555-471-8503,dr.young99@wrshealthproviders.com,True,True,2010-03-02,2025-10-02 23:53:57.982591
+PRV000802,1000000802,Richard,Nelson,Endocrinology,Interventional,MD,LIC840937,PA,FAC000523,555-297-3281,dr.scott32@wrshealthproviders.com,True,True,2020-10-21,2022-06-28 23:53:57.982591
+PRV000803,1000000803,Emily,Clark,Oncology,,MD,LIC624627,CA,FAC000901,555-702-8808,dr.martinez98@wrshealthproviders.com,True,False,2005-04-23,2021-02-01 23:53:57.982591
+PRV000804,1000000804,William,King,Oncology,Sports Medicine,NP,LIC102479,NY,FAC000682,555-591-5929,dr.nelson62@wrshealthproviders.com,True,True,2016-11-13,2021-10-30 23:53:57.982591
+PRV000805,1000000805,Lisa,Green,Family Medicine,,MD,LIC396487,AZ,FAC000540,555-185-1961,dr.martinez67@wrshealthproviders.com,True,True,2006-12-12,2025-03-31 23:53:57.982591
+PRV000806,1000000806,Nancy,Thompson,Internal Medicine,Critical Care,MD,LIC302318,CA,FAC000584,555-445-1044,dr.scott24@wrshealthproviders.com,True,True,2019-06-23,2021-06-07 23:53:57.982591
+PRV000807,1000000807,Sarah,Young,Obstetrics and Gynecology,Interventional,MD,LIC319653,TX,FAC000853,555-543-9513,dr.green53@wrshealthproviders.com,True,True,2018-02-09,2021-12-28 23:53:57.982591
+PRV000808,1000000808,Laura,Scott,Neurology,,PA,LIC347963,CA,FAC000275,555-432-1344,dr.baker95@wrshealthproviders.com,True,True,2022-08-17,2024-08-30 23:53:57.982591
+PRV000809,1000000809,Sarah,Baker,Radiology,Sports Medicine,DO,LIC215334,PA,FAC000882,555-911-3488,dr.green9@wrshealthproviders.com,True,True,2014-02-12,2024-03-03 23:53:57.982591
+PRV000810,1000000810,Thomas,Lewis,Internal Medicine,,MD,LIC945346,NY,FAC000609,555-347-4992,dr.scott30@wrshealthproviders.com,True,True,2015-07-16,2024-06-06 23:53:57.982591
+PRV000811,1000000811,David,Thompson,General Surgery,Sports Medicine,MD,LIC894152,FL,FAC000082,555-155-5865,dr.hall98@wrshealthproviders.com,True,True,2009-05-05,2022-05-15 23:53:57.982591
+PRV000812,1000000812,John,Walker,Orthopedics,,PA,LIC492963,CA,FAC000821,555-993-7983,dr.scott27@wrshealthproviders.com,True,True,2006-06-08,2023-05-28 23:53:57.982591
+PRV000813,1000000813,David,Green,Anesthesiology,Interventional,NP,LIC806037,IL,FAC000176,555-879-4044,dr.robinson31@wrshealthproviders.com,True,True,2017-02-17,2025-03-07 23:53:57.982591
+PRV000814,1000000814,John,Anderson,Dermatology,Critical Care,MD,LIC541047,PA,FAC000876,555-220-6089,dr.anderson26@wrshealthproviders.com,True,True,2018-01-22,2021-02-14 23:53:57.982591
+PRV000815,1000000815,Lisa,Scott,Family Medicine,,MD,LIC708893,NY,FAC000540,555-819-8950,dr.clark96@wrshealthproviders.com,True,True,2015-11-28,2025-02-04 23:53:57.982591
+PRV000816,1000000816,Robert,Robinson,Pediatrics,,MD,LIC540951,CA,FAC000991,555-751-1383,dr.green17@wrshealthproviders.com,True,True,2022-08-27,2024-08-08 23:53:57.982591
+PRV000817,1000000817,Emily,King,Family Medicine,,MD,LIC377497,TX,FAC000447,555-984-7851,dr.young88@wrshealthproviders.com,True,True,2006-12-08,2025-11-04 23:53:57.982591
+PRV000818,1000000818,Michael,Wright,General Surgery,,MD,LIC119279,TX,FAC000454,555-957-2600,dr.green39@wrshealthproviders.com,False,True,2019-03-03,2024-04-01 23:53:57.982591
+PRV000819,1000000819,Jennifer,Thompson,Emergency Medicine,,PA,LIC221143,AZ,FAC000170,555-957-7147,dr.anderson79@wrshealthproviders.com,False,True,2022-10-31,2021-12-24 23:53:57.982591
+PRV000820,1000000820,John,Lewis,Dermatology,Sports Medicine,MD,LIC151129,NY,FAC000519,555-953-6479,dr.allen52@wrshealthproviders.com,True,True,2022-09-24,2024-01-09 23:53:57.982591
+PRV000821,1000000821,Nancy,Scott,Orthopedics,Sports Medicine,NP,LIC187447,TX,FAC000500,555-325-8583,dr.scott47@wrshealthproviders.com,True,True,2010-08-02,2021-07-16 23:53:57.982591
+PRV000822,1000000822,Richard,Martinez,Anesthesiology,Sports Medicine,MD,LIC427556,NY,FAC000492,555-325-1207,dr.allen73@wrshealthproviders.com,True,True,2007-11-15,2021-06-25 23:53:57.982591
+PRV000823,1000000823,Laura,Hall,Radiology,Geriatrics,DO,LIC525413,FL,FAC000264,555-429-4339,dr.nelson58@wrshealthproviders.com,False,True,2012-01-25,2024-09-17 23:53:57.982591
+PRV000824,1000000824,Nancy,Allen,Orthopedics,Geriatrics,DO,LIC132499,CA,FAC000510,555-894-5855,dr.anderson41@wrshealthproviders.com,False,True,2010-05-03,2025-10-14 23:53:57.982591
+PRV000825,1000000825,Lisa,Anderson,General Surgery,Critical Care,MD,LIC195037,TX,FAC000808,555-268-9899,dr.hall51@wrshealthproviders.com,True,True,2022-08-06,2021-10-04 23:53:57.982591
+PRV000826,1000000826,Thomas,Nelson,Dermatology,Sports Medicine,MD,LIC748110,AZ,FAC000552,555-710-1001,dr.young35@wrshealthproviders.com,False,True,2024-04-24,2023-10-08 23:53:57.982591
+PRV000827,1000000827,Jennifer,Hall,Radiology,Pain Management,DO,LIC810072,PA,FAC000393,555-602-9653,dr.hall33@wrshealthproviders.com,True,True,2010-05-17,2025-08-11 23:53:57.982591
+PRV000828,1000000828,John,Martinez,Obstetrics and Gynecology,Sports Medicine,MD,LIC309606,PA,FAC000942,555-171-7846,dr.king37@wrshealthproviders.com,True,True,2022-10-22,2025-05-23 23:53:57.982591
+PRV000829,1000000829,Robert,Clark,Anesthesiology,Geriatrics,MD,LIC318943,CA,FAC000632,555-252-4316,dr.robinson17@wrshealthproviders.com,True,True,2018-06-23,2024-10-10 23:53:57.982591
+PRV000830,1000000830,Thomas,Clark,Emergency Medicine,Critical Care,MD,LIC442754,NY,FAC000086,555-163-7190,dr.robinson84@wrshealthproviders.com,True,True,2009-12-09,2022-08-09 23:53:57.982591
+PRV000831,1000000831,Lisa,Thompson,Family Medicine,,PA,LIC294607,TX,FAC000054,555-214-6760,dr.baker49@wrshealthproviders.com,False,True,2007-08-24,2025-12-12 23:53:57.982591
+PRV000832,1000000832,Michelle,Green,Oncology,,MD,LIC107481,NY,FAC000302,555-988-1920,dr.lewis7@wrshealthproviders.com,True,True,2014-09-03,2026-01-07 23:53:57.982591
+PRV000833,1000000833,James,Scott,Obstetrics and Gynecology,Pain Management,NP,LIC990458,FL,FAC000019,555-590-2827,dr.thompson10@wrshealthproviders.com,True,True,2005-08-29,2024-07-19 23:53:57.982591
+PRV000834,1000000834,Lisa,Baker,Pediatrics,Sports Medicine,MD,LIC555898,AZ,FAC000454,555-979-1827,dr.lewis68@wrshealthproviders.com,False,True,2020-01-22,2023-12-29 23:53:57.982591
+PRV000835,1000000835,Richard,Green,Radiology,Critical Care,DO,LIC274463,AZ,FAC000389,555-542-7522,dr.hall33@wrshealthproviders.com,False,True,2012-04-20,2022-05-13 23:53:57.982591
+PRV000836,1000000836,Karen,Scott,Ophthalmology,Interventional,MD,LIC282608,CA,FAC000722,555-224-7509,dr.lewis69@wrshealthproviders.com,True,True,2010-09-02,2023-01-24 23:53:57.982591
+PRV000837,1000000837,Nancy,King,Endocrinology,Geriatrics,NP,LIC948772,NY,FAC000893,555-718-1894,dr.anderson4@wrshealthproviders.com,True,True,2010-03-26,2022-08-27 23:53:57.982591
+PRV000838,1000000838,Laura,Young,Cardiology,Geriatrics,MD,LIC501832,NY,FAC000878,555-325-8101,dr.lewis3@wrshealthproviders.com,True,True,2009-10-13,2025-04-14 23:53:57.982591
+PRV000839,1000000839,John,Anderson,Pediatrics,Interventional,DO,LIC157208,IL,FAC000804,555-967-8530,dr.wright32@wrshealthproviders.com,True,True,2005-02-26,2023-05-22 23:53:57.982591
+PRV000840,1000000840,Thomas,King,General Surgery,Sports Medicine,DO,LIC819926,IL,FAC000170,555-159-6433,dr.scott42@wrshealthproviders.com,False,True,2023-04-06,2024-01-01 23:53:57.982591
+PRV000841,1000000841,Emily,Hall,General Surgery,,MD,LIC694591,AZ,FAC000612,555-690-1960,dr.anderson37@wrshealthproviders.com,False,True,2010-12-06,2021-04-20 23:53:57.982591
+PRV000842,1000000842,John,Lewis,Oncology,,MD,LIC317125,CA,FAC000387,555-375-2940,dr.wright52@wrshealthproviders.com,True,True,2021-03-31,2022-06-26 23:53:57.982591
+PRV000843,1000000843,Karen,Allen,Psychiatry,Geriatrics,MD,LIC181014,NY,FAC000887,555-222-8538,dr.green80@wrshealthproviders.com,True,True,2006-06-20,2025-02-11 23:53:57.982591
+PRV000844,1000000844,Richard,Lewis,General Surgery,Interventional,MD,LIC506573,TX,FAC000636,555-772-8688,dr.green77@wrshealthproviders.com,True,True,2012-02-08,2024-12-09 23:53:57.982591
+PRV000845,1000000845,William,Robinson,Dermatology,Sports Medicine,NP,LIC879344,CA,FAC000981,555-553-8057,dr.thompson5@wrshealthproviders.com,False,True,2013-09-08,2024-07-16 23:53:57.982591
+PRV000846,1000000846,Laura,Green,Neurology,Geriatrics,MD,LIC389750,FL,FAC000814,555-790-4321,dr.martinez77@wrshealthproviders.com,True,True,2006-09-01,2025-10-02 23:53:57.982591
+PRV000847,1000000847,Michelle,Allen,Oncology,,MD,LIC236789,NY,FAC000391,555-206-5670,dr.lewis28@wrshealthproviders.com,True,True,2010-06-01,2023-03-15 23:53:57.982591
+PRV000848,1000000848,Robert,Hall,Pediatrics,Interventional,DO,LIC897476,TX,FAC000322,555-522-8260,dr.walker12@wrshealthproviders.com,True,True,2019-10-08,2023-04-14 23:53:57.982591
+PRV000849,1000000849,Nancy,King,General Surgery,,MD,LIC505095,CA,FAC000188,555-133-7344,dr.king18@wrshealthproviders.com,True,True,2006-12-28,2025-11-03 23:53:57.982591
+PRV000850,1000000850,Laura,Hall,Internal Medicine,Interventional,MD,LIC517970,FL,FAC000855,555-789-1797,dr.young2@wrshealthproviders.com,True,True,2018-01-06,2021-10-28 23:53:57.982591
+PRV000851,1000000851,Laura,Lewis,Obstetrics and Gynecology,,MD,LIC978580,IL,FAC000768,555-662-8556,dr.allen16@wrshealthproviders.com,True,True,2013-05-21,2023-12-11 23:53:57.982591
+PRV000852,1000000852,Sarah,Green,Family Medicine,Geriatrics,PA,LIC337728,TX,FAC000289,555-377-7884,dr.king82@wrshealthproviders.com,False,True,2019-06-06,2023-09-11 23:53:57.982591
+PRV000853,1000000853,William,Martinez,Endocrinology,,NP,LIC342328,PA,FAC000103,555-947-2134,dr.baker42@wrshealthproviders.com,False,True,2018-09-23,2022-11-21 23:53:57.982591
+PRV000854,1000000854,James,Baker,Oncology,Geriatrics,NP,LIC222653,IL,FAC000762,555-983-3436,dr.allen89@wrshealthproviders.com,True,True,2012-06-26,2021-08-02 23:53:57.982591
+PRV000855,1000000855,Richard,Anderson,Oncology,Pain Management,MD,LIC497557,CA,FAC000325,555-253-9376,dr.clark60@wrshealthproviders.com,True,True,2004-12-19,2022-04-25 23:53:57.982591
+PRV000856,1000000856,Thomas,Wright,Psychiatry,Sports Medicine,DO,LIC199080,IL,FAC000498,555-324-1301,dr.green67@wrshealthproviders.com,True,True,2009-02-13,2024-10-11 23:53:57.982591
+PRV000857,1000000857,Robert,Martinez,Family Medicine,Interventional,MD,LIC407059,TX,FAC000226,555-625-9029,dr.green12@wrshealthproviders.com,True,True,2024-11-10,2024-10-24 23:53:57.982591
+PRV000858,1000000858,Lisa,Hall,Radiology,,MD,LIC155034,AZ,FAC000077,555-654-9471,dr.lewis62@wrshealthproviders.com,True,True,2009-12-03,2024-03-02 23:53:57.982591
+PRV000859,1000000859,Michael,Thompson,Psychiatry,,MD,LIC676438,IL,FAC000682,555-418-8685,dr.baker94@wrshealthproviders.com,False,True,2022-10-28,2023-12-28 23:53:57.982591
+PRV000860,1000000860,Richard,King,Anesthesiology,,MD,LIC263749,TX,FAC000527,555-563-9833,dr.walker31@wrshealthproviders.com,True,True,2022-01-09,2024-01-14 23:53:57.982591
+PRV000861,1000000861,James,Baker,Oncology,Pain Management,MD,LIC299545,CA,FAC000052,555-620-9269,dr.hall31@wrshealthproviders.com,True,True,2014-10-04,2023-10-16 23:53:57.982591
+PRV000862,1000000862,John,Hall,Endocrinology,,MD,LIC210523,CA,FAC000145,555-256-5193,dr.king56@wrshealthproviders.com,False,True,2014-05-25,2024-09-11 23:53:57.982591
+PRV000863,1000000863,William,Lewis,Orthopedics,Interventional,MD,LIC108180,IL,FAC000019,555-896-4551,dr.young20@wrshealthproviders.com,False,True,2023-05-26,2023-03-10 23:53:57.982591
+PRV000864,1000000864,James,Robinson,Ophthalmology,Geriatrics,MD,LIC166906,FL,FAC000293,555-566-6705,dr.anderson12@wrshealthproviders.com,True,True,2022-01-03,2023-12-18 23:53:57.982591
+PRV000865,1000000865,Nancy,Hall,Psychiatry,Geriatrics,DO,LIC598449,IL,FAC000021,555-736-7607,dr.allen33@wrshealthproviders.com,True,True,2005-02-27,2022-09-25 23:53:57.982591
+PRV000866,1000000866,Laura,Scott,Radiology,Pain Management,MD,LIC189878,NY,FAC000271,555-643-7417,dr.king58@wrshealthproviders.com,True,False,2015-02-14,2022-12-06 23:53:57.982591
+PRV000867,1000000867,Lisa,Baker,Internal Medicine,Geriatrics,DO,LIC824668,FL,FAC000080,555-650-8058,dr.scott49@wrshealthproviders.com,True,True,2014-01-22,2025-09-08 23:53:57.982591
+PRV000868,1000000868,Sarah,Scott,General Surgery,Interventional,MD,LIC570682,TX,FAC000722,555-281-8323,dr.martinez54@wrshealthproviders.com,True,True,2009-05-28,2023-02-04 23:53:57.982591
+PRV000869,1000000869,Karen,Young,Family Medicine,Critical Care,NP,LIC226957,IL,FAC000918,555-359-9228,dr.lewis74@wrshealthproviders.com,True,True,2022-09-08,2021-09-21 23:53:57.982591
+PRV000870,1000000870,Nancy,Wright,Radiology,,MD,LIC731311,FL,FAC000009,555-291-4839,dr.wright7@wrshealthproviders.com,False,True,2004-07-14,2025-03-06 23:53:57.982591
+PRV000871,1000000871,Emily,King,Pediatrics,Geriatrics,MD,LIC932517,CA,FAC000472,555-112-1585,dr.green37@wrshealthproviders.com,True,True,2017-10-30,2022-12-03 23:53:57.982591
+PRV000872,1000000872,Sarah,Wright,Psychiatry,Interventional,MD,LIC710357,AZ,FAC000826,555-683-8213,dr.martinez2@wrshealthproviders.com,True,True,2016-05-28,2024-07-31 23:53:57.982591
+PRV000873,1000000873,Jennifer,Clark,Internal Medicine,Sports Medicine,DO,LIC409438,PA,FAC000105,555-166-6315,dr.walker10@wrshealthproviders.com,True,True,2010-07-13,2021-02-02 23:53:57.982591
+PRV000874,1000000874,William,Green,Ophthalmology,Sports Medicine,NP,LIC431806,AZ,FAC000581,555-363-8997,dr.young9@wrshealthproviders.com,True,True,2013-10-15,2024-11-12 23:53:57.982591
+PRV000875,1000000875,Robert,Robinson,Ophthalmology,Sports Medicine,MD,LIC587703,NY,FAC000071,555-933-6455,dr.nelson32@wrshealthproviders.com,False,True,2017-06-18,2022-08-10 23:53:57.982591
+PRV000876,1000000876,Emily,King,General Surgery,Pain Management,MD,LIC874343,IL,FAC000138,555-704-6815,dr.lewis82@wrshealthproviders.com,True,True,2020-09-05,2022-11-18 23:53:57.982591
+PRV000877,1000000877,David,Robinson,Dermatology,Pain Management,NP,LIC362195,PA,FAC000610,555-116-2894,dr.green48@wrshealthproviders.com,True,True,2006-06-26,2021-09-05 23:53:57.982591
+PRV000878,1000000878,Jennifer,Anderson,Pediatrics,Pain Management,DO,LIC148445,CA,FAC000795,555-931-4185,dr.clark28@wrshealthproviders.com,True,True,2006-05-06,2023-08-01 23:53:57.982591
+PRV000879,1000000879,Nancy,Baker,Orthopedics,Geriatrics,MD,LIC450695,TX,FAC000824,555-972-4540,dr.allen82@wrshealthproviders.com,True,True,2011-07-21,2024-05-17 23:53:57.982591
+PRV000880,1000000880,Nancy,Anderson,Cardiology,,MD,LIC899444,FL,FAC000287,555-493-8410,dr.green48@wrshealthproviders.com,True,True,2024-12-11,2023-01-26 23:53:57.982591
+PRV000881,1000000881,David,Wright,Oncology,Sports Medicine,MD,LIC215484,TX,FAC000256,555-978-3480,dr.wright37@wrshealthproviders.com,True,True,2006-05-12,2021-08-11 23:53:57.982591
+PRV000882,1000000882,William,Wright,Anesthesiology,Critical Care,DO,LIC733049,AZ,FAC000806,555-844-2439,dr.green96@wrshealthproviders.com,True,True,2011-10-19,2023-11-10 23:53:57.982591
+PRV000883,1000000883,James,Nelson,Emergency Medicine,,MD,LIC798223,PA,FAC000705,555-167-6366,dr.martinez17@wrshealthproviders.com,True,True,2022-11-21,2022-10-16 23:53:57.982591
+PRV000884,1000000884,Laura,Anderson,General Surgery,Sports Medicine,PA,LIC767774,NY,FAC000255,555-491-8308,dr.thompson29@wrshealthproviders.com,True,True,2009-10-08,2022-11-25 23:53:57.982591
+PRV000885,1000000885,Sarah,Wright,Family Medicine,Interventional,MD,LIC700474,CA,FAC000468,555-883-9550,dr.allen95@wrshealthproviders.com,False,True,2014-12-07,2025-10-21 23:53:57.982591
+PRV000886,1000000886,Sarah,Lewis,Dermatology,,MD,LIC479562,NY,FAC000058,555-167-5538,dr.green59@wrshealthproviders.com,False,True,2018-09-22,2025-10-18 23:53:57.982591
+PRV000887,1000000887,William,Wright,Endocrinology,Geriatrics,MD,LIC130242,FL,FAC000949,555-118-9776,dr.lewis56@wrshealthproviders.com,True,True,2018-12-16,2021-02-20 23:53:57.982591
+PRV000888,1000000888,Sarah,Thompson,Oncology,Pain Management,PA,LIC680994,TX,FAC000185,555-263-9760,dr.allen39@wrshealthproviders.com,True,True,2014-02-10,2024-02-08 23:53:57.982591
+PRV000889,1000000889,Michelle,Scott,Emergency Medicine,Interventional,NP,LIC177178,CA,FAC000433,555-286-5813,dr.thompson10@wrshealthproviders.com,True,True,2012-04-06,2022-01-09 23:53:57.982591
+PRV000890,1000000890,John,Nelson,General Surgery,Pain Management,MD,LIC727066,PA,FAC000374,555-870-7647,dr.lewis91@wrshealthproviders.com,True,True,2004-08-19,2024-01-10 23:53:57.982591
+PRV000891,1000000891,Michael,Allen,Orthopedics,Geriatrics,DO,LIC844228,PA,FAC000449,555-415-2950,dr.robinson39@wrshealthproviders.com,True,True,2019-05-21,2023-04-21 23:53:57.982591
+PRV000892,1000000892,Michelle,Young,Cardiology,Interventional,MD,LIC112178,NY,FAC000542,555-756-4931,dr.walker43@wrshealthproviders.com,False,True,2024-09-24,2022-01-19 23:53:57.982591
+PRV000893,1000000893,Richard,Martinez,Obstetrics and Gynecology,Pain Management,MD,LIC105955,AZ,FAC000946,555-560-2306,dr.walker44@wrshealthproviders.com,False,True,2004-08-02,2024-11-14 23:53:57.982591
+PRV000894,1000000894,Emily,Clark,Dermatology,Sports Medicine,MD,LIC982382,IL,FAC000103,555-530-6342,dr.allen24@wrshealthproviders.com,True,True,2013-03-30,2021-05-31 23:53:57.982591
+PRV000895,1000000895,William,Walker,Obstetrics and Gynecology,Geriatrics,MD,LIC970366,TX,FAC000299,555-157-5563,dr.king81@wrshealthproviders.com,True,True,2024-12-31,2021-03-14 23:53:57.982591
+PRV000896,1000000896,Thomas,King,Pediatrics,Interventional,MD,LIC893861,AZ,FAC000636,555-786-3747,dr.green17@wrshealthproviders.com,False,True,2010-04-23,2021-04-29 23:53:57.982591
+PRV000897,1000000897,John,Green,Emergency Medicine,Interventional,PA,LIC953410,FL,FAC000406,555-779-4549,dr.green96@wrshealthproviders.com,False,True,2020-09-24,2024-11-27 23:53:57.982591
+PRV000898,1000000898,Sarah,Lewis,Endocrinology,Sports Medicine,MD,LIC448876,PA,FAC000228,555-776-2733,dr.anderson64@wrshealthproviders.com,True,True,2024-05-26,2023-02-06 23:53:57.982591
+PRV000899,1000000899,John,King,Cardiology,Interventional,PA,LIC533134,AZ,FAC000820,555-482-7689,dr.martinez98@wrshealthproviders.com,True,True,2007-04-03,2026-01-09 23:53:57.982591
+PRV000900,1000000900,Michael,Scott,Endocrinology,,MD,LIC908822,NY,FAC000367,555-754-4863,dr.hall65@wrshealthproviders.com,True,True,2007-01-21,2023-06-17 23:53:57.982591
+PRV000901,1000000901,Sarah,Clark,Emergency Medicine,Interventional,DO,LIC562396,FL,FAC000326,555-580-9825,dr.young92@wrshealthproviders.com,True,True,2005-05-09,2022-07-18 23:53:57.982591
+PRV000902,1000000902,Sarah,Scott,Family Medicine,Critical Care,MD,LIC936684,CA,FAC000031,555-187-4648,dr.baker43@wrshealthproviders.com,True,True,2008-01-28,2021-12-03 23:53:57.982591
+PRV000903,1000000903,Thomas,Hall,Ophthalmology,Interventional,MD,LIC947872,IL,FAC000081,555-220-2027,dr.martinez32@wrshealthproviders.com,True,True,2012-12-24,2025-05-03 23:53:57.982591
+PRV000904,1000000904,Robert,King,Psychiatry,Geriatrics,MD,LIC344056,PA,FAC000597,555-473-2740,dr.allen6@wrshealthproviders.com,True,True,2011-09-12,2023-10-07 23:53:57.982591
+PRV000905,1000000905,William,Green,Internal Medicine,,MD,LIC768663,PA,FAC000215,555-624-2221,dr.baker87@wrshealthproviders.com,True,True,2008-08-04,2022-07-06 23:53:57.982591
+PRV000906,1000000906,James,Anderson,Radiology,Sports Medicine,DO,LIC475506,IL,FAC000379,555-826-4953,dr.allen80@wrshealthproviders.com,True,False,2021-06-16,2023-11-12 23:53:57.982591
+PRV000907,1000000907,Richard,Thompson,Psychiatry,,MD,LIC264938,NY,FAC000215,555-490-1383,dr.martinez65@wrshealthproviders.com,True,True,2021-04-23,2026-01-14 23:53:57.982591
+PRV000908,1000000908,Thomas,Scott,Internal Medicine,Sports Medicine,DO,LIC941554,AZ,FAC000925,555-126-5518,dr.king3@wrshealthproviders.com,False,True,2012-05-06,2022-10-20 23:53:57.982591
+PRV000909,1000000909,Lisa,Lewis,Ophthalmology,,MD,LIC537461,NY,FAC000065,555-550-1789,dr.wright90@wrshealthproviders.com,False,True,2010-10-19,2022-04-07 23:53:57.982591
+PRV000910,1000000910,Michelle,King,Neurology,Critical Care,MD,LIC336800,AZ,FAC000678,555-411-8081,dr.clark86@wrshealthproviders.com,True,True,2024-01-16,2024-06-03 23:53:57.982591
+PRV000911,1000000911,Laura,Wright,Psychiatry,,MD,LIC482522,AZ,FAC000082,555-851-6001,dr.allen7@wrshealthproviders.com,True,True,2005-09-15,2025-12-26 23:53:57.982591
+PRV000912,1000000912,Michelle,Martinez,Ophthalmology,Critical Care,PA,LIC727154,FL,FAC000032,555-388-5288,dr.wright86@wrshealthproviders.com,False,True,2016-01-08,2024-05-03 23:53:57.982591
+PRV000913,1000000913,Lisa,Wright,Cardiology,Critical Care,DO,LIC487008,FL,FAC000904,555-161-6687,dr.king99@wrshealthproviders.com,True,True,2019-03-08,2024-08-18 23:53:57.982591
+PRV000914,1000000914,Richard,Martinez,Ophthalmology,Sports Medicine,MD,LIC191255,FL,FAC000117,555-798-9951,dr.allen54@wrshealthproviders.com,True,True,2006-06-22,2023-06-27 23:53:57.982591
+PRV000915,1000000915,Lisa,Nelson,General Surgery,Sports Medicine,MD,LIC594762,FL,FAC000737,555-166-6383,dr.wright10@wrshealthproviders.com,True,True,2022-11-15,2021-01-30 23:53:57.982591
+PRV000916,1000000916,Sarah,Baker,Dermatology,,MD,LIC938624,TX,FAC000332,555-200-4649,dr.clark8@wrshealthproviders.com,True,True,2011-06-23,2023-12-19 23:53:57.982591
+PRV000917,1000000917,James,Wright,Psychiatry,Geriatrics,PA,LIC553192,AZ,FAC000524,555-731-5177,dr.scott79@wrshealthproviders.com,True,True,2011-03-11,2025-11-23 23:53:57.982591
+PRV000918,1000000918,Emily,Martinez,Anesthesiology,Geriatrics,DO,LIC350222,FL,FAC000310,555-259-9102,dr.anderson85@wrshealthproviders.com,False,True,2007-11-30,2025-06-19 23:53:57.982591
+PRV000919,1000000919,Robert,Walker,Ophthalmology,,MD,LIC479071,FL,FAC000379,555-673-2525,dr.green14@wrshealthproviders.com,True,True,2016-04-26,2023-06-29 23:53:57.982591
+PRV000920,1000000920,Emily,Nelson,Oncology,Geriatrics,MD,LIC290965,PA,FAC000406,555-986-2190,dr.robinson80@wrshealthproviders.com,True,True,2017-09-27,2021-07-07 23:53:57.982591
+PRV000921,1000000921,William,Allen,Ophthalmology,,MD,LIC376544,IL,FAC000454,555-737-3630,dr.wright99@wrshealthproviders.com,False,True,2012-07-30,2024-04-11 23:53:57.982591
+PRV000922,1000000922,Richard,King,Internal Medicine,,PA,LIC214742,IL,FAC000864,555-544-9763,dr.baker28@wrshealthproviders.com,True,True,2008-04-01,2025-12-15 23:53:57.982591
+PRV000923,1000000923,Laura,Walker,Anesthesiology,Critical Care,MD,LIC351457,IL,FAC000231,555-710-1890,dr.baker20@wrshealthproviders.com,True,True,2018-06-02,2024-03-04 23:53:57.982591
+PRV000924,1000000924,Michael,Martinez,Endocrinology,,DO,LIC783839,TX,FAC000978,555-121-9200,dr.king31@wrshealthproviders.com,True,True,2024-04-22,2023-09-24 23:53:57.982591
+PRV000925,1000000925,Lisa,Lewis,Endocrinology,Interventional,MD,LIC129497,IL,FAC000897,555-964-7978,dr.anderson30@wrshealthproviders.com,True,True,2021-07-30,2022-03-26 23:53:57.982591
+PRV000926,1000000926,David,Baker,Radiology,Sports Medicine,DO,LIC257362,PA,FAC000094,555-794-1818,dr.robinson41@wrshealthproviders.com,True,True,2009-06-20,2021-05-04 23:53:57.982591
+PRV000927,1000000927,Emily,Walker,Radiology,Critical Care,DO,LIC838749,TX,FAC000833,555-755-7926,dr.allen49@wrshealthproviders.com,True,True,2012-05-16,2023-11-05 23:53:57.982591
+PRV000928,1000000928,Robert,Allen,Radiology,Sports Medicine,DO,LIC294741,PA,FAC000225,555-946-9562,dr.young30@wrshealthproviders.com,True,True,2019-07-20,2024-02-05 23:53:57.982591
+PRV000929,1000000929,John,Allen,General Surgery,,DO,LIC945452,PA,FAC000489,555-174-5775,dr.allen35@wrshealthproviders.com,True,True,2014-08-17,2021-08-28 23:53:57.982591
+PRV000930,1000000930,Karen,King,Emergency Medicine,,NP,LIC652868,PA,FAC000059,555-415-2322,dr.clark71@wrshealthproviders.com,True,True,2015-08-10,2024-03-25 23:53:57.982591
+PRV000931,1000000931,Michelle,Anderson,Oncology,Geriatrics,MD,LIC921436,AZ,FAC000712,555-539-7990,dr.anderson89@wrshealthproviders.com,True,True,2019-05-26,2023-02-24 23:53:57.982591
+PRV000932,1000000932,David,Martinez,Obstetrics and Gynecology,Geriatrics,MD,LIC893872,FL,FAC000048,555-991-7369,dr.king33@wrshealthproviders.com,True,True,2017-10-28,2022-09-14 23:53:57.982591
+PRV000933,1000000933,James,Nelson,Cardiology,,MD,LIC494655,NY,FAC000742,555-198-2684,dr.anderson8@wrshealthproviders.com,True,True,2022-03-15,2021-10-01 23:53:57.982591
+PRV000934,1000000934,Jennifer,Green,Family Medicine,Geriatrics,PA,LIC602201,FL,FAC000715,555-588-8644,dr.lewis94@wrshealthproviders.com,True,True,2006-08-15,2022-08-11 23:53:57.982591
+PRV000935,1000000935,Karen,Lewis,Oncology,Critical Care,MD,LIC202566,PA,FAC000734,555-801-3492,dr.walker14@wrshealthproviders.com,False,True,2015-09-19,2022-06-27 23:53:57.982591
+PRV000936,1000000936,Michael,Robinson,General Surgery,Geriatrics,DO,LIC156961,TX,FAC000068,555-955-5559,dr.wright7@wrshealthproviders.com,True,True,2010-09-10,2021-11-06 23:53:57.982591
+PRV000937,1000000937,Emily,Walker,Endocrinology,,DO,LIC516129,IL,FAC000681,555-267-1032,dr.nelson72@wrshealthproviders.com,True,True,2017-11-21,2025-10-28 23:53:57.982591
+PRV000938,1000000938,Michael,Allen,Orthopedics,Critical Care,MD,LIC534334,IL,FAC000710,555-519-8680,dr.nelson32@wrshealthproviders.com,True,True,2012-08-05,2022-06-03 23:53:57.982591
+PRV000939,1000000939,Sarah,Green,Radiology,,MD,LIC442395,CA,FAC000473,555-151-1488,dr.anderson44@wrshealthproviders.com,True,True,2014-11-22,2023-10-24 23:53:57.982591
+PRV000940,1000000940,Robert,Martinez,Family Medicine,,MD,LIC878558,NY,FAC000282,555-450-9501,dr.walker75@wrshealthproviders.com,True,True,2022-02-21,2024-03-25 23:53:57.982591
+PRV000941,1000000941,Karen,Scott,Obstetrics and Gynecology,Geriatrics,MD,LIC543999,IL,FAC000581,555-861-6646,dr.anderson5@wrshealthproviders.com,False,True,2013-04-11,2023-01-16 23:53:57.982591
+PRV000942,1000000942,Michelle,Allen,Internal Medicine,Geriatrics,MD,LIC122756,IL,FAC000196,555-667-3516,dr.hall98@wrshealthproviders.com,False,True,2024-09-22,2023-10-26 23:53:57.982591
+PRV000943,1000000943,John,Scott,Dermatology,,MD,LIC276718,NY,FAC000095,555-386-1190,dr.allen82@wrshealthproviders.com,True,True,2004-03-19,2021-03-06 23:53:57.982591
+PRV000944,1000000944,Michelle,Martinez,Oncology,Geriatrics,NP,LIC409175,PA,FAC000927,555-361-8858,dr.walker24@wrshealthproviders.com,True,True,2021-04-06,2022-09-24 23:53:57.982591
+PRV000945,1000000945,Jennifer,King,Pediatrics,,PA,LIC709347,IL,FAC000974,555-596-6280,dr.lewis50@wrshealthproviders.com,True,True,2019-09-16,2023-04-04 23:53:57.982591
+PRV000946,1000000946,Michelle,Clark,Family Medicine,,MD,LIC275751,NY,FAC000462,555-818-8932,dr.clark4@wrshealthproviders.com,True,True,2012-09-15,2021-03-10 23:53:57.982591
+PRV000947,1000000947,Michael,Green,Oncology,Pain Management,MD,LIC302657,IL,FAC000369,555-280-5667,dr.king88@wrshealthproviders.com,True,True,2005-05-04,2021-08-13 23:53:57.982591
+PRV000948,1000000948,Jennifer,King,Oncology,,MD,LIC484127,PA,FAC000425,555-106-1548,dr.wright99@wrshealthproviders.com,True,True,2016-05-31,2021-11-04 23:53:57.982591
+PRV000949,1000000949,William,Hall,General Surgery,,DO,LIC567404,PA,FAC000975,555-336-1962,dr.wright91@wrshealthproviders.com,False,True,2017-11-11,2022-01-19 23:53:57.982591
+PRV000950,1000000950,Thomas,Clark,Orthopedics,,NP,LIC561688,IL,FAC000029,555-302-2368,dr.wright93@wrshealthproviders.com,True,True,2015-08-19,2022-01-17 23:53:57.982591
+PRV000951,1000000951,Sarah,Clark,Psychiatry,Geriatrics,MD,LIC565352,TX,FAC000822,555-474-2056,dr.scott19@wrshealthproviders.com,True,False,2021-01-16,2025-04-18 23:53:57.982591
+PRV000952,1000000952,Lisa,Clark,Oncology,Interventional,MD,LIC401516,TX,FAC000512,555-864-9518,dr.young78@wrshealthproviders.com,True,True,2015-10-05,2025-02-14 23:53:57.982591
+PRV000953,1000000953,David,Allen,Endocrinology,Geriatrics,DO,LIC185095,FL,FAC000239,555-985-7776,dr.nelson48@wrshealthproviders.com,True,True,2024-01-24,2024-11-28 23:53:57.982591
+PRV000954,1000000954,Lisa,Baker,Obstetrics and Gynecology,Pain Management,DO,LIC796561,IL,FAC000007,555-194-8328,dr.scott45@wrshealthproviders.com,True,True,2024-09-29,2025-02-03 23:53:57.982591
+PRV000955,1000000955,Thomas,Thompson,Radiology,Critical Care,MD,LIC415636,NY,FAC000190,555-455-8130,dr.baker70@wrshealthproviders.com,False,True,2012-08-11,2024-06-02 23:53:57.982591
+PRV000956,1000000956,Nancy,Robinson,Endocrinology,,DO,LIC708149,AZ,FAC000967,555-282-3495,dr.hall30@wrshealthproviders.com,True,True,2024-11-11,2025-01-08 23:53:57.982591
+PRV000957,1000000957,Thomas,Anderson,Orthopedics,Geriatrics,MD,LIC145974,FL,FAC000107,555-802-6080,dr.hall78@wrshealthproviders.com,True,True,2016-11-09,2025-10-21 23:53:57.982591
+PRV000958,1000000958,Richard,Robinson,Internal Medicine,Pain Management,MD,LIC485045,CA,FAC000723,555-725-5976,dr.young27@wrshealthproviders.com,True,True,2012-01-17,2024-08-17 23:53:57.982591
+PRV000959,1000000959,Nancy,Allen,Family Medicine,Sports Medicine,DO,LIC593689,NY,FAC000956,555-748-8671,dr.martinez4@wrshealthproviders.com,True,True,2012-11-06,2024-09-11 23:53:57.982591
+PRV000960,1000000960,Sarah,Robinson,Orthopedics,,NP,LIC189600,NY,FAC000718,555-529-5324,dr.wright11@wrshealthproviders.com,False,True,2024-06-20,2025-12-09 23:53:57.982591
+PRV000961,1000000961,Richard,Lewis,Obstetrics and Gynecology,Critical Care,MD,LIC622584,PA,FAC000871,555-760-2647,dr.wright98@wrshealthproviders.com,True,True,2010-01-14,2025-09-12 23:53:57.982591
+PRV000962,1000000962,Jennifer,Baker,Cardiology,Sports Medicine,PA,LIC453507,TX,FAC000999,555-724-5431,dr.baker71@wrshealthproviders.com,True,True,2005-07-23,2023-10-21 23:53:57.982591
+PRV000963,1000000963,William,Martinez,Family Medicine,Sports Medicine,MD,LIC300952,PA,FAC000456,555-703-6672,dr.baker68@wrshealthproviders.com,False,True,2022-05-08,2024-09-13 23:53:57.982591
+PRV000964,1000000964,Michael,Allen,Obstetrics and Gynecology,,DO,LIC258501,TX,FAC000219,555-984-9291,dr.lewis68@wrshealthproviders.com,True,True,2005-09-09,2022-03-04 23:53:57.982591
+PRV000965,1000000965,Robert,Thompson,Pediatrics,Critical Care,MD,LIC234747,FL,FAC000465,555-316-3967,dr.anderson87@wrshealthproviders.com,True,True,2013-04-03,2025-09-06 23:53:57.982591
+PRV000966,1000000966,Michelle,Allen,Radiology,Sports Medicine,NP,LIC848006,IL,FAC000219,555-471-2233,dr.king62@wrshealthproviders.com,True,True,2007-10-24,2022-10-28 23:53:57.982591
+PRV000967,1000000967,John,Hall,Internal Medicine,,PA,LIC620083,AZ,FAC000242,555-713-1620,dr.lewis93@wrshealthproviders.com,False,True,2012-09-02,2025-06-14 23:53:57.982591
+PRV000968,1000000968,Robert,Baker,General Surgery,,MD,LIC815411,PA,FAC000854,555-184-1164,dr.hall78@wrshealthproviders.com,True,True,2013-07-29,2021-03-06 23:53:57.982591
+PRV000969,1000000969,Laura,Young,Obstetrics and Gynecology,,PA,LIC754358,AZ,FAC000610,555-239-7611,dr.baker67@wrshealthproviders.com,True,True,2024-09-28,2025-10-31 23:53:57.982591
+PRV000970,1000000970,Robert,Robinson,Emergency Medicine,Geriatrics,NP,LIC748163,PA,FAC000493,555-337-4477,dr.walker2@wrshealthproviders.com,True,True,2024-11-21,2021-05-29 23:53:57.982591
+PRV000971,1000000971,Thomas,Clark,Cardiology,Critical Care,DO,LIC988185,CA,FAC000831,555-368-3193,dr.martinez72@wrshealthproviders.com,True,False,2009-05-14,2023-08-20 23:53:57.982591
+PRV000972,1000000972,Michelle,Scott,Anesthesiology,,MD,LIC976539,NY,FAC000649,555-248-8259,dr.green47@wrshealthproviders.com,True,True,2019-07-01,2021-04-05 23:53:57.982591
+PRV000973,1000000973,Michelle,Robinson,Anesthesiology,Critical Care,NP,LIC617159,NY,FAC000675,555-869-8967,dr.young52@wrshealthproviders.com,True,True,2025-01-16,2022-11-18 23:53:57.982591
+PRV000974,1000000974,Robert,Nelson,Family Medicine,,NP,LIC827814,NY,FAC000046,555-814-8757,dr.anderson58@wrshealthproviders.com,True,True,2025-01-13,2023-05-30 23:53:57.982591
+PRV000975,1000000975,John,Hall,Cardiology,Sports Medicine,MD,LIC930870,CA,FAC000086,555-156-9708,dr.young44@wrshealthproviders.com,True,True,2017-08-05,2021-05-05 23:53:57.982591
+PRV000976,1000000976,Emily,Anderson,Ophthalmology,Geriatrics,PA,LIC810609,IL,FAC000862,555-435-6012,dr.green21@wrshealthproviders.com,True,True,2004-03-27,2021-04-19 23:53:57.982591
+PRV000977,1000000977,Robert,Anderson,Cardiology,Interventional,MD,LIC905761,FL,FAC000907,555-970-3710,dr.king87@wrshealthproviders.com,True,True,2020-09-01,2025-06-23 23:53:57.982591
+PRV000978,1000000978,Nancy,Anderson,Pediatrics,Sports Medicine,MD,LIC464774,PA,FAC000896,555-532-9292,dr.scott82@wrshealthproviders.com,False,True,2014-10-25,2021-11-24 23:53:57.982591
+PRV000979,1000000979,Lisa,King,Oncology,Interventional,MD,LIC271142,NY,FAC000006,555-276-4846,dr.baker1@wrshealthproviders.com,True,True,2012-12-23,2021-04-15 23:53:57.982591
+PRV000980,1000000980,Jennifer,Anderson,Radiology,Interventional,MD,LIC512892,IL,FAC000101,555-731-6904,dr.walker21@wrshealthproviders.com,True,True,2021-08-06,2024-08-29 23:53:57.982591
+PRV000981,1000000981,Robert,King,Anesthesiology,,DO,LIC227949,FL,FAC000677,555-859-7074,dr.baker13@wrshealthproviders.com,True,True,2012-10-17,2023-11-26 23:53:57.982591
+PRV000982,1000000982,Thomas,Thompson,Ophthalmology,Sports Medicine,MD,LIC431254,NY,FAC000903,555-370-4252,dr.baker46@wrshealthproviders.com,True,True,2016-02-19,2021-10-14 23:53:57.982591
+PRV000983,1000000983,John,Robinson,Pediatrics,Pain Management,PA,LIC652519,IL,FAC000967,555-810-5558,dr.baker43@wrshealthproviders.com,False,True,2005-08-21,2024-09-07 23:53:57.982591
+PRV000984,1000000984,Jennifer,Allen,Emergency Medicine,,MD,LIC587157,PA,FAC000297,555-362-9818,dr.thompson75@wrshealthproviders.com,False,True,2013-04-18,2024-02-19 23:53:57.982591
+PRV000985,1000000985,Richard,Anderson,Obstetrics and Gynecology,Critical Care,MD,LIC648026,PA,FAC000580,555-906-3979,dr.thompson86@wrshealthproviders.com,False,True,2008-07-14,2022-09-22 23:53:57.982591
+PRV000986,1000000986,Richard,Walker,Family Medicine,Sports Medicine,MD,LIC754779,AZ,FAC000176,555-193-4949,dr.clark5@wrshealthproviders.com,True,True,2014-04-20,2025-08-08 23:53:57.982591
+PRV000987,1000000987,Lisa,Walker,Neurology,,MD,LIC837296,NY,FAC000424,555-635-1068,dr.nelson44@wrshealthproviders.com,True,True,2010-12-04,2021-10-08 23:53:57.982591
+PRV000988,1000000988,Jennifer,Young,General Surgery,Pain Management,PA,LIC984953,TX,FAC000161,555-220-2977,dr.clark6@wrshealthproviders.com,True,True,2021-06-14,2022-04-11 23:53:57.982591
+PRV000989,1000000989,John,Anderson,Radiology,,DO,LIC649566,PA,FAC000079,555-420-6552,dr.allen52@wrshealthproviders.com,True,True,2007-06-02,2021-07-28 23:53:57.982591
+PRV000990,1000000990,Laura,King,Internal Medicine,,NP,LIC723667,TX,FAC000847,555-588-7642,dr.thompson60@wrshealthproviders.com,True,True,2008-10-17,2021-07-16 23:53:57.982591
+PRV000991,1000000991,Emily,Thompson,Internal Medicine,,MD,LIC946424,NY,FAC000819,555-716-5529,dr.young27@wrshealthproviders.com,False,True,2010-05-04,2025-07-13 23:53:57.982591
+PRV000992,1000000992,Karen,Robinson,Internal Medicine,Critical Care,MD,LIC848895,AZ,FAC000565,555-897-2632,dr.anderson81@wrshealthproviders.com,True,True,2006-01-18,2021-04-21 23:53:57.982591
+PRV000993,1000000993,Michelle,Thompson,Obstetrics and Gynecology,Geriatrics,MD,LIC220949,NY,FAC000632,555-788-7072,dr.scott34@wrshealthproviders.com,True,True,2010-12-24,2024-05-09 23:53:57.982591
+PRV000994,1000000994,Michael,King,Oncology,Pain Management,MD,LIC520525,FL,FAC000874,555-990-2681,dr.allen62@wrshealthproviders.com,True,True,2021-07-30,2022-01-05 23:53:57.982591
+PRV000995,1000000995,William,Scott,Obstetrics and Gynecology,Interventional,MD,LIC955293,IL,FAC000162,555-315-9940,dr.nelson25@wrshealthproviders.com,False,True,2023-11-25,2025-03-20 23:53:57.982591
+PRV000996,1000000996,Emily,Hall,Internal Medicine,,DO,LIC864093,FL,FAC000942,555-881-6939,dr.lewis6@wrshealthproviders.com,True,True,2004-09-02,2021-05-15 23:53:57.982591
+PRV000997,1000000997,Lisa,King,Orthopedics,Interventional,MD,LIC680741,FL,FAC000886,555-477-5070,dr.clark39@wrshealthproviders.com,True,True,2008-02-04,2025-10-06 23:53:57.982591
+PRV000998,1000000998,Lisa,Green,Orthopedics,Geriatrics,DO,LIC361383,IL,FAC000164,555-260-4355,dr.allen35@wrshealthproviders.com,False,True,2020-10-08,2021-05-09 23:53:57.982591
+PRV000999,1000000999,Emily,Thompson,Endocrinology,,MD,LIC203424,TX,FAC000973,555-581-6924,dr.anderson88@wrshealthproviders.com,True,True,2024-10-26,2025-03-06 23:53:57.982591
+PRV001000,1000001000,Michael,Lewis,Family Medicine,Critical Care,MD,LIC600538,IL,FAC000744,555-114-9261,dr.nelson31@wrshealthproviders.com,True,True,2014-11-09,2022-12-21 23:53:57.982591
