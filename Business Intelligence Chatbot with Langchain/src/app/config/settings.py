@@ -21,10 +21,8 @@ DB_NAME_WRS = os.getenv("DB_NAME_3")     # For WRS EHR database
 
 # Model Configuration
 MODEL_OPTIONS = {
-    "GPT-4o": "gpt-4o",
-    "GPT-4.1": "gpt-4.1",
-    "Claude 3.7 Sonnet": "claude-3-7-sonnet-20250219",
-    "Claude Sonnet 4": "claude-sonnet-4-20250514"
+    "GPT-4.1 mini": "gpt-4.1-mini",
+    "Claude Haiku 4.5": "claude-haiku-4-5-20251001"
 }
 
 # Embedding Model

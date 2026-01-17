@@ -15,31 +15,17 @@ def initialize_language_model(model_choice: str):
     Returns:
         Initialized language model instance
     """
-    if model_choice == "GPT-4o":
+    if model_choice == "GPT-4.1 mini":
         return ChatOpenAI(
             api_key=OPENAI_API_KEY,
-            model="gpt-4o",
+            model="gpt-4.1-mini",
             temperature=0,
             max_tokens=4000
         )
-    elif model_choice == "GPT-4.1":
-        return ChatOpenAI(
-            api_key=OPENAI_API_KEY,
-            model="gpt-4.1",
-            temperature=0,
-            max_tokens=4000
-        )
-    elif model_choice == "Claude Sonnet 4":
+    else:  # Claude Haiku 4.5
         return ChatAnthropic(
             api_key=ANTHROPIC_API_KEY,
-            model="claude-sonnet-4-20250514",
-            temperature=0,
-            max_tokens=4000
-        )
-    else:  # Claude 3.7 Sonnet
-        return ChatAnthropic(
-            api_key=ANTHROPIC_API_KEY,
-            model="claude-3-7-sonnet-20250219",
+            model="claude-haiku-4-5-20251001",
             temperature=0,
             max_tokens=4000
         )
