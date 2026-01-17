@@ -10,7 +10,7 @@ import streamlit as st
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
 from config import (
-    DB_HOST, DB_PORT, DB_USER, DB_PASSWORD, DB_NAME_MULTI,
+    DB_HOST, DB_PORT, DB_USER, DB_PASSWORD, DB_NAME_WRS,
     MODEL_OPTIONS, SHOW_DEBUG_INFO
 )
 from config.prompts import SQL_GENERATION_SYSTEM_PROMPT, RESPONSE_GENERATION_SYSTEM_PROMPT
@@ -51,7 +51,7 @@ with st.sidebar:
     st.text_input("Port", value=DB_PORT, key="Port")
     st.text_input("User", value=DB_USER, key="User")
     st.text_input("Password", type="password", value=DB_PASSWORD, key="Password")
-    st.text_input("Database", value=DB_NAME_MULTI, key="Database")
+    st.text_input("Database", value=DB_NAME_WRS, key="Database")
     
     if st.button("Test Connection"):
         with st.spinner("Testing database connection..."):

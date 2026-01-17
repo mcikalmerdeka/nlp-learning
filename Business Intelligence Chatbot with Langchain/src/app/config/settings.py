@@ -16,7 +16,8 @@ DB_PORT = "5432"
 DB_USER = os.getenv("DB_USER")
 DB_PASSWORD = os.getenv("DB_PASSWORD")
 DB_NAME_SINGLE = os.getenv("DB_NAME_1")  # For single table approach
-DB_NAME_MULTI = os.getenv("DB_NAME_2")   # For multiple tables approach
+DB_NAME_OLIST = os.getenv("DB_NAME_2")   # For Olist e-commerce database
+DB_NAME_WRS = os.getenv("DB_NAME_3")     # For WRS EHR database
 
 # Model Configuration
 MODEL_OPTIONS = {
@@ -32,10 +33,8 @@ EMBEDDING_MODEL = "text-embedding-3-large"
 # Vector Store Configuration
 FAISS_INDEX_PATH = os.path.join(os.path.dirname(os.path.dirname(__file__)), "faiss_index_store")
 
-# Schema Paths
-SCHEMA_PATH_SINGLE = r"E:\NLP Learning\NLP-Learning\Business Intelligence Chatbot with Langchain\datasets\dataset_single_table"
-SCHEMA_PATH_MULTI = r"E:\NLP Learning\NLP-Learning\Business Intelligence Chatbot with Langchain\datasets\dataset_multiple_tables\database_schema_description.doc"
-SCHEMA_URL_MULTI = "https://raw.githubusercontent.com/mcikalmerdeka/NLP-Learning/main/Business%20Intelligence%20Chatbot%20with%20Langchain/datasets/dataset_multiple_tables/database_schema_description.doc"
+# Schema Paths (using relative paths from project root)
+SCHEMA_PATH_MULTI = "datasets/dataset_multiple_tables/wrs_ehr_db/ehr_database_docs.md"
 
 # App Configuration
 SHOW_DEBUG_INFO = True  # Show SQL queries and results for debugging

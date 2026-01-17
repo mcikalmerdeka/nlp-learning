@@ -6,31 +6,18 @@ from typing import List
 from langchain_openai import OpenAIEmbeddings
 from langchain_community.vectorstores import FAISS
 from langchain_core.documents import Document
-from config import EMBEDDING_MODEL, FAISS_INDEX_PATH, SCHEMA_PATH_MULTI, SCHEMA_URL_MULTI
+from config import EMBEDDING_MODEL, FAISS_INDEX_PATH, SCHEMA_PATH_MULTI
 
 
-def load_schema_description(use_url: bool = True) -> str:
+def load_schema_description() -> str:
     """
-    Load database schema description
-    
-    Args:
-        use_url: Whether to try loading from URL first
+    Load database schema description from local file
         
     Returns:
         Schema description text
     """
-    if use_url:
-        try:
-            import requests
-            response = requests.get(SCHEMA_URL_MULTI)
-            response.raise_for_status()
-            return response.text
-        except Exception as e:
-            st.warning(f"Could not fetch schema from URL: {e}. Falling back to local file.")
-    
-    # Fallback to local file
     try:
-        with open(SCHEMA_PATH_MULTI, "r") as file:
+        with open(SCHEMA_PATH_MULTI, "r", encoding="utf-8") as file:
             return file.read()
     except Exception as e:
         st.error(f"Error reading schema file: {e}")
