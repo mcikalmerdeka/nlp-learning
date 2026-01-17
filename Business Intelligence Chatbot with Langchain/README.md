@@ -2,7 +2,7 @@
 
 ![Project Header](https://raw.githubusercontent.com/mcikalmerdeka/NLP-Learning/refs/heads/main/Business%20Intelligence%20Chatbot%20with%20Langchain/assets/Project%20Header.jpg)
 
-This repo is for using LLMs to chat with your SQL database. Inspired by this [Gemini Chatbot repo](https://github.com/ardyadipta/gemini_chatbot_sql). Instead of using MySQL I used PostgreSQL and instead of using Google Gemini model series, I experimented using OpenAI (GPT-4.1 and GPT-4o) and Anthropic (Claude 3.7 Sonnet and Claude Sonnet 4) models which I am more familiar with and `also later` wanted to try experiment with local models usage such as Deepseek-r1:1.5b and Qwen3:1.7b that is installed in my PC.
+This repo is for using LLMs to chat with your SQL database. Inspired by this [Gemini Chatbot repo](https://github.com/ardyadipta/gemini_chatbot_sql). Instead of using MySQL I used PostgreSQL and instead of using Google Gemini model series, I experimented using OpenAI (GPT-4.1 mini) and Anthropic (Claude Haiku 4.5) models which are cost-effective for production use.
 
 ## 🎯 Objective and Project Origin
 
@@ -42,10 +42,12 @@ Business Intelligence Chatbot with Langchain/
 │       ├── utils/                     # Utility scripts
 │       │   ├── __init__.py
 │       │   ├── database_setup_single_table.py
-│       │   └── database_setup_multiple_tables.py
+│       │   ├── database_setup_multiple_tables_olist.py
+│       │   └── database_setup_multiple_tables_wrs.py
 │       │
-│       ├── db/                        # Database-related utilities
-│       │   └── __init__.py
+│       ├── faiss_index_store/         # Vector embeddings storage
+│       │   ├── index.faiss
+│       │   └── index.pkl
 │       │
 │       ├── app_single_basic.py        # Single table - Basic approach
 │       ├── app_single_rag.py          # Single table - With RAG
@@ -54,10 +56,20 @@ Business Intelligence Chatbot with Langchain/
 │
 ├── datasets/
 │   ├── dataset_single_table/          # Sales data CSV
-│   └── dataset_multiple_tables/       # Olist e-commerce datasets
+│   └── dataset_multiple_tables/
+│       ├── olist_db/                  # E-commerce datasets
+│       │   ├── *.csv (9 tables)
+│       │   ├── database_schema_description.doc
+│       │   └── rag_test_questions.md
+│       └── wrs_ehr_db/                # Healthcare EHR datasets
+│           ├── *.csv (9 tables)
+│           ├── ehr_database_docs.md
+│           └── rag_test_questions.md
 │
+├── assets/                            # Project images and diagrams
 ├── pyproject.toml
 ├── requirements.txt
+├── uv.lock
 ├── .env
 └── README.md
 ```
@@ -67,21 +79,27 @@ Business Intelligence Chatbot with Langchain/
 **Single Table Approach** - Sales data analysis:
 
 - `app_single_basic.py`: Simple approach with full schema loaded
-- `app_single_rag.py`: RAG-enhanced (note: minimal benefit for single table)
+- `app_single_rag.py`: RAG-enhanced (minimal benefit for single table)
 
-**Multiple Tables Approach** - E-commerce (Olist) data analysis:
+**Multiple Tables Approach** - E-commerce & Healthcare data analysis:
 
 - `app_multi_basic.py`: Full schema loaded approach
-- `app_multi_rag.py`: RAG-enhanced for better context retrieval
+- `app_multi_rag.py`: RAG-enhanced for better context retrieval (recommended)
+
+Two database options available:
+- **Olist DB**: Brazilian e-commerce dataset with 9 tables
+- **WRS EHR DB**: Healthcare electronic health records with 9 tables
 
 ## 🚀 Features
 
 - **Natural Language to SQL Conversion**: Convert plain English queries into SQL statements
 - **RAG-Enhanced Architecture**: Uses retrieval-augmented generation to improve contextual understanding of database schema
-- **Multi-Table Support**: Analyze data across multiple related tables (Olist e-commerce dataset)
-- **Single Table Analysis**: Simpler analysis for sales data scenarios
+- **Multi-Database Support**: 
+  - Olist e-commerce dataset (9 tables)
+  - WRS EHR healthcare dataset (9 tables)
+  - Single table sales analysis
 - **Streamlit UI**: User-friendly interface for interacting with the database
-- **Multiple LLM Support**: Compatible with OpenAI (GPT-4o, GPT-4.1), Anthropic (Claude 3.7 Sonnet, Claude Sonnet 4), and potential support for local models
+- **Multiple LLM Support**: GPT-4.1 mini and Claude Haiku 4.5 (cost-effective models)
 - **Detailed Response Generation**: Formats query results into natural, conversational responses
 - **Conversational Memory**: Maintains chat history to support follow-up questions and contextual conversations
 - **Clear Chat Functionality**: Easily reset conversations with a "Clear Chat History" button in the sidebar
@@ -165,10 +183,16 @@ Business Intelligence Chatbot with Langchain/
    python src/app/utils/database_setup_single_table.py
    ```
 
-   For multiple tables approach:
+   For multiple tables approach (Olist e-commerce):
 
    ```
-   python src/app/utils/database_setup_multiple_tables.py
+   python src/app/utils/database_setup_multiple_tables_olist.py
+   ```
+
+   For multiple tables approach (WRS EHR healthcare):
+
+   ```
+   python src/app/utils/database_setup_multiple_tables_wrs.py
    ```
 
 ## 💻 Usage
@@ -220,9 +244,9 @@ Example queries for sales data:
 
 2. Access the application at `http://localhost:8501`
 3. Configure your database connection in the sidebar
-4. Start asking questions in natural language about the Olist e-commerce data!
+4. Start asking questions in natural language!
 
-Example queries for Olist e-commerce data:
+**Example queries for Olist e-commerce data:**
 
 - "What is the average monthly active user count for each year?"
 - "Show me the number of customers who made more than one purchase (repeat orders) for each year!"
@@ -230,6 +254,14 @@ Example queries for Olist e-commerce data:
 - "Displays detailed information on the amount of usage for each type of payment for each year!"
 - "Which one showed the most significant increase?" (follow-up question)
 - "Break down those results by customer location" (contextual follow-up)
+
+**Example queries for WRS EHR healthcare data:**
+
+- "How many patients were diagnosed with diabetes in 2024?"
+- "What are the most common diagnoses across all facilities?"
+- "Show me the average lab result values by diagnosis type"
+- "Which providers have the highest patient appointment counts?"
+- "What insurance plans are most frequently used?"
 
 ## ⚙️ How It Works
 
@@ -312,12 +344,13 @@ sequenceDiagram
 ## 🔮 Future Improvements
 
 - Support for more complex database schemas and relationships
-- Integration with additional LLM providers and local models (Deepseek-r1:1.5b and Qwen3:1.7b)
+- Integration with local models (Deepseek, Qwen, Llama)
 - Advanced data visualization of query results
 - Fine-tuning models for improved SQL generation accuracy
-- Support for database operations beyond querying (e.g., inserts, updates)
-- Enhanced conversation memory management for longer discussions
+- Support for database operations beyond querying (inserts, updates)
+- Enhanced conversation memory management
 - User authentication and personalized query history
+- Query result caching for improved performance
 
 ## 📧 Contact
 
@@ -325,7 +358,7 @@ For questions or feedback, please contact: mcikalmerdeka@gmail.com
 
 ## Project Screenshots
 
-In this demo I used the multi-table approach using RAG implementation. The screenshots showcase how the Business Intelligence Chatbot interacts with a complex database schema using natural language processing and SQL generation capabilities.
+In this demo I used the multi-table approach with RAG implementation on the WRS EHR healthcare database. The screenshots showcase how the Business Intelligence Chatbot interacts with a complex database schema using natural language processing and SQL generation capabilities.
 
 ### Database Connect, Initial Question, and Context Retrieval
 
