@@ -1,0 +1,12 @@
+# Python
+__pycache__/
+
+# Deepeval
+.pytest_cache/
+.deepeval/
+
+# Virtual Environment
+.venv/
+
+# Credentials
+.env
