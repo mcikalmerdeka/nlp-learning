@@ -1,9 +1,14 @@
 from deepeval import assert_test, evaluate
 from deepeval.test_case import LLMTestCase, LLMTestCaseParams, ConversationalTestCase, Turn
 from deepeval.metrics import GEval, ConversationalGEval, AnswerRelevancyMetric, FaithfulnessMetric
+from deepeval.dataset import EvaluationDataset, Golden
 
+from textwrap import dedent
 from dotenv import load_dotenv
 load_dotenv()
+
+# Define model evaluator
+model = "gpt-4.1-mini"
 
 # # Normal GEval Test
 # def test_correctness():
@@ -14,7 +19,7 @@ load_dotenv()
 #         criteria="Determine if the 'actual output' is correct based on the 'expected output'.",
 #         evaluation_params=[LLMTestCaseParams.ACTUAL_OUTPUT, LLMTestCaseParams.EXPECTED_OUTPUT],
 #         threshold=0.5,
-#         model="gpt-4.1-mini"
+#         model=model
 #     )
 
 #     # Define the test cases
@@ -55,7 +60,7 @@ load_dotenv()
 #     professionalism_metric = ConversationalGEval(
 #         name="Professionalism",
 #         criteria="Determine whether the assistant answers the user's question in a professional and appropriate manner.",
-#         model="gpt-4.1-mini",
+#         model=model,
 #         threshold=0.5
 #     )
 
@@ -90,7 +95,7 @@ load_dotenv()
 #     answer_relevance_metric = AnswerRelevancyMetric(
 #         threshold=0.5,
 #         include_reason=True,
-#         model="gpt-4.1-mini"
+#         model=model
 #     )
 
 #     # Define the test cases
@@ -112,34 +117,83 @@ load_dotenv()
 #     # Evaluate the test cases
 #     evaluate(test_cases=[test_case_1, test_case_2], metrics=[answer_relevance_metric])
 
-# Faithfulness Test
-def test_faithfulness():
+# # Faithfulness Test
+# def test_faithfulness():
 
-    # Define the faithfulness metric
-    faithfulness_metric = FaithfulnessMetric(
+#     # Define the faithfulness metric
+#     faithfulness_metric = FaithfulnessMetric(
+#         threshold=0.5,
+#         include_reason=True,
+#         model=model
+#     )
+
+#     # Define the test cases
+#     ## Several notes:
+#     ## The usage of faithfulness metric is actually whether the llm answer is faithful to the retrieval context or not, and not whether the llm answer is correct or not.
+#     ## So in here you will see that the first one will actually fail the test, while the second one will pass even though the llm answer is wrong but it is faithful to the retrieval context.
+
+#     ## Case 1: The assistant's answer is faithful to the user's question.
+#     test_case_1 = LLMTestCase(
+#         input="What is the capital of France?",
+#         actual_output="Paris",
+#         retrieval_context=["The capital of France is Madrid."]
+#     )
+
+#     ## Case 2: The assistant's answer is not faithful to the user's question.
+#     test_case_2 = LLMTestCase(
+#         input="What is the capital of Indonesia?",
+#         actual_output="Bali",
+#         retrieval_context=["The capital of Indonesia is Jakarta."]
+#     )
+
+#     # Evaluate the test cases
+#     evaluate(test_cases=[test_case_1, test_case_2], metrics=[faithfulness_metric])
+
+# Testing Dataset and Golden with GEval
+def test_dataset_and_golden_with_geval():
+    # Define the correctness metric
+    correctness_metric = GEval(
+        name="Correctness",
+        criteria=dedent("""Determine if the 'actual output' is correct based on the 'expected output'
+        It has to be correct in it's essence. Ignore format issues"""),
+        evaluation_params=[LLMTestCaseParams.ACTUAL_OUTPUT, LLMTestCaseParams.EXPECTED_OUTPUT],
         threshold=0.5,
-        include_reason=True,
-        model="gpt-4.1-mini"
+        model=model
     )
 
-    # Define the test cases
-    ## Several notes:
-    ## The usage of faithfulness metric is actually whether the llm answer is faithful to the retrieval context or not, and not whether the llm answer is correct or not.
-    ## So in here you will see that the first one will actually fail the test, while the second one will pass even though the llm answer is wrong but it is faithful to the retrieval context.
+    # Define the golden (basically the ground truth)
+    goldens = [
+        Golden(input="What is the capital of France?", expected_output="Paris"),
+        Golden(input="What is 12 * 3?", expected_output="36"),
+    ]
 
-    ## Case 1: The assistant's answer is faithful to the user's question.
-    test_case_1 = LLMTestCase(
-        input="What is the capital of France?",
-        actual_output="Paris",
-        retrieval_context=["The capital of France is Madrid."]
-    )
+    # Define the dataset based on the golden
+    dataset = EvaluationDataset(goldens=goldens)
 
-    ## Case 2: The assistant's answer is not faithful to the user's question.
-    test_case_2 = LLMTestCase(
-        input="What is the capital of Indonesia?",
-        actual_output="Bali",
-        retrieval_context=["The capital of Indonesia is Jakarta."]
-    )
+    # Define simulation of the llm answer
+    def simulate_llm_answer(prompt: str):
+        return {
+            "What is the capital of France?": "The capital of France is Paris.",
+            "What is 12 * 3?": "The result is thirty six.",
+        }[prompt]
 
+    # Create the test cases based on the dataset
+    for golden in dataset.goldens:
+        dataset.add_test_case(
+            LLMTestCase(
+                input=golden.input,
+                actual_output=simulate_llm_answer(golden.input),
+                expected_output=golden.expected_output,
+            )
+        )
+    
     # Evaluate the test cases
-    evaluate(test_cases=[test_case_1, test_case_2], metrics=[faithfulness_metric])
+    evaluate(test_cases=dataset.test_cases, metrics=[correctness_metric])
+
+
+
+
+
+
+
+
