@@ -25,15 +25,18 @@ VOICE_CONFIG = {
     }
 }
 
+# LLM Model configurations
+LLM_MODELS = {
+    "Qwen3 1.7B": "qwen3:1.7b",
+    "Llama 3.2 Latest": "llama3.2:latest"
+}
+
 # Assistant template
 assistant_template = """
 You are a helpful, conversational assistant. Keep replies short and clear.
 User: {input}
 Assistant:
 """
-
-# Load LLM model
-model = ChatOllama(model="llama3.2:latest")
 
 @st.cache_resource
 # Load Speech-to-Text model
@@ -57,11 +60,17 @@ def save_recording(audio_bytes, output_path):
         audio_file.write(audio_bytes)
 
 # Generate response function
-def generate_response(text):
-    prompt = ChatPromptTemplate.from_template(assistant_template)
-    chain = prompt | model
-    response = chain.invoke({"input": text})
-    return response.content
+def generate_response(text, model_name):
+    try:
+        model = ChatOllama(model=model_name)
+        prompt = ChatPromptTemplate.from_template(assistant_template)
+        chain = prompt | model
+        response = chain.invoke({"input": text})
+        return response.content
+    except Exception as e:
+        if "ConnectError" in str(type(e).__name__):
+            raise ConnectionError("Ollama is not running. Start it with: ollama serve")
+        raise
 
 # Synthesize audio function
 def synthesize_audio(text, output_path, voice_language):
@@ -88,12 +97,12 @@ with st.expander("ℹ️ About this Agent"):
     ### How it works:
     1. **Record** your voice using the microphone button below
     2. **Send** your recording - it will be transcribed using Whisper
-    3. **AI responds** using Llama 3.2 running locally via Ollama
+    3. **AI responds** using Qwen3-1.7b running locally via Ollama
     4. **Listen** to the AI's response synthesized with Piper TTS
     
     ### Technology Stack:
     - **Speech-to-Text**: Faster Whisper (base model)
-    - **LLM**: Llama 3.2 (Ollama)
+    - **LLM**: Qwen3-1.7b (Ollama)
     - **Text-to-Speech**: Piper TTS (en_US-lessac-medium)
     
     All processing happens locally on your machine! 🔒
@@ -105,6 +114,14 @@ st.divider()
 with st.sidebar:
     st.header("⚙️ Settings")
 
+    # LLM model selection
+    selected_llm = st.selectbox(
+        "🤖 LLM Model",
+        options=list(LLM_MODELS.keys()),
+        index=0
+    )
+    llm_model_name = LLM_MODELS[selected_llm]
+
     # Voice language selection
     voice_language = st.selectbox(
         "🗣️ Voice Language",
@@ -114,8 +131,9 @@ with st.sidebar:
     st.divider()
     st.markdown("### 📊 Session Info")
     st.metric("Messages", len(st.session_state.get("messages", [])))
+    st.markdown(f"**LLM Model:** {selected_llm}")
     st.markdown(f"**Selected Voice:** {voice_language}")
-    st.markdown(f"**Model:** {VOICE_CONFIG[voice_language]['model']}")
+    st.markdown(f"**TTS Model:** {VOICE_CONFIG[voice_language]['model']}")
 
 # Initialize session state for chat history
 if "messages" not in st.session_state:
@@ -175,8 +193,12 @@ if send_button:
             st.markdown(transcription)
         
         # Generate AI response
-        with st.spinner("💻 Generating response..."):
-            response = generate_response(transcription)
+        try:
+            with st.spinner("💻 Generating response..."):
+                response = generate_response(transcription, llm_model_name)
+        except ConnectionError as e:
+            st.error(f"❌ {str(e)}")
+            st.stop()
         
         # Synthesize audio
         with st.spinner("🔊 Synthesizing audio..."):
