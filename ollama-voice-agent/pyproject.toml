@@ -5,6 +5,7 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
+    "do-i-have-the-vram>=0.1.0",
     "faster-whisper>=1.2.1",
     "langchain-core>=1.2.7",
     "langchain-ollama>=1.0.1",
