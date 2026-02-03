@@ -1,9 +1,0 @@
-python-dotenv
-langchain
-langchain-community
-langchain-core
-langchain-openai
-langchain-anthropic
-chromadb
-openai
-reportlab>=4.0.0
