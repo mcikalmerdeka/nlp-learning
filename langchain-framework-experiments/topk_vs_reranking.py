@@ -5,7 +5,7 @@ Using ChromaDB and LangChain
 
 import os
 import shutil
-from langchain_community.vectorstores import Chroma
+from langchain_chroma import Chroma
 from langchain_openai import OpenAIEmbeddings
 from langchain_core.documents import Document
 from langchain_classic.retrievers import ContextualCompressionRetriever
