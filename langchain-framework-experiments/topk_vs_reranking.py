@@ -12,6 +12,11 @@ from langchain_classic.retrievers import ContextualCompressionRetriever
 from langchain_cohere import CohereRerank
 
 from dotenv import load_dotenv
+from pydantic import BaseModel, Field
+from langchain_core.prompts import PromptTemplate
+from langchain_openai import ChatOpenAI
+from typing import List
+
 load_dotenv()
 
 # Internal company documents - NOT general knowledge
@@ -70,6 +75,40 @@ else:
         collection_name="rerank_demo_collection",
         persist_directory=persist_dir
     )
+
+# LLM-based Reranking Setup
+class RatingScore(BaseModel):
+    relevance_score: float = Field(..., description="The relevance score of a document to a query.")
+
+def rerank_documents_llm(query: str, docs: List[Document], top_n: int = 4) -> List[tuple]:
+    """
+    LLM-based reranking using gpt-4.1-mini.
+    Returns list of (document, score) tuples sorted by relevance.
+    """
+    prompt_template = PromptTemplate(
+        input_variables=["query", "doc"],
+        template="""On a scale of 1-10, rate the relevance of the following document to the query. 
+        Consider the specific context and intent of the query, not just keyword matches.
+        Query: {query}
+        Document: {doc}
+        Relevance Score:"""
+    )
+    
+    llm = ChatOpenAI(temperature=0, model_name="gpt-4.1-mini", max_tokens=100)
+    llm_chain = prompt_template | llm.with_structured_output(RatingScore)
+    
+    scored_docs = []
+    for doc in docs:
+        input_data = {"query": query, "doc": doc.page_content}
+        try:
+            score = llm_chain.invoke(input_data).relevance_score
+            score = float(score)
+        except Exception:
+            score = 5.0  # Default score if parsing fails
+        scored_docs.append((doc, score))
+    
+    reranked = sorted(scored_docs, key=lambda x: x[1], reverse=True)
+    return reranked[:top_n]
 
 query = "What are the benefits and compensation changes for employees in Q3 2024?"
 
@@ -187,7 +226,33 @@ except Exception as e:
     print("To use: Set COHERE_API_KEY environment variable and install langchain-cohere")
 
 print("\n" + "=" * 80)
-print("COMPARISON OF ALL THREE CASES")
+print("CASE 4: LLM-BASED RE-RANKING (gpt-4.1-mini)")
+print("=" * 80)
+
+print("\nNote: This uses GPT-4.1-mini to evaluate document relevance.")
+print("It considers semantic meaning and context, not just keywords.\n")
+
+# Step 1: Get candidates using the same approach as Case 2 and 3
+llm_candidates = vectorstore.similarity_search(query, k=6)
+
+print(f"Step 1: Initial retrieval (top-6 candidates):")
+for i, doc in enumerate(llm_candidates, 1):
+    print(f"  {i}. [{doc.metadata.get('category', 'unknown')}] {doc.page_content[:50]}...")
+
+# Step 2: Re-rank using LLM
+try:
+    llm_reranked = rerank_documents_llm(query, llm_candidates, top_n=4)
+    
+    print(f"\nStep 2: Re-ranked results (top-4 after LLM re-ranking):\n")
+    for i, (doc, score) in enumerate(llm_reranked, 1):
+        print(f"{i}. [score: {score:.1f}] [{doc.metadata.get('category', 'unknown')}] {doc.page_content}")
+        
+except Exception as e:
+    print(f"Note: LLM re-ranking failed - {str(e)}")
+    print("Ensure OPENAI_API_KEY is set and you have access to gpt-4.1-mini")
+
+print("\n" + "=" * 80)
+print("COMPARISON OF ALL FOUR CASES")
 print("=" * 80)
 
 print("\nCase 1 - Top-k only:")
@@ -204,6 +269,13 @@ try:
         print(f"  {i}. [{doc.metadata.get('category', 'unknown')}] {doc.page_content[:50]}...")
 except NameError:
     print("  (Results not available - Cohere API not configured)")
+
+print("\nCase 4 - With LLM re-ranking (gpt-4.1-mini):")
+try:
+    for i, (doc, score) in enumerate(llm_reranked, 1):
+        print(f"  {i}. [{doc.metadata.get('category', 'unknown')}] {doc.page_content[:50]}...")
+except NameError:
+    print("  (Results not available - LLM re-ranking failed)")
 
 print("\n" + "=" * 80)
 print("KEY DIFFERENCES SUMMARY")
@@ -232,10 +304,19 @@ Case 3 - Cohere Re-ranking (Production):
   - Best for production RAG systems
   - Higher latency due to API call
   
+Case 4 - LLM Re-ranking (gpt-4.1-mini):
+  - Uses large language model to evaluate relevance
+  - Considers semantic meaning and context
+  - Can understand nuanced relationships
+  - More flexible than rule-based approaches
+  - Higher cost and latency than dedicated rerankers
+  - Best when you need interpretable relevance scores
+  
 When to use what:
   - Case 1 (Top-k alone): Speed matters, good enough accuracy
   - Case 2 (Custom re-ranking): Need custom domain logic, no external API
   - Case 3 (Cohere re-ranking): Production systems, best accuracy, API available
+  - Case 4 (LLM re-ranking): Need semantic understanding, have LLM budget
   - Combined approach: Standard RAG pattern (retrieve many, re-rank to best)
 """
 
