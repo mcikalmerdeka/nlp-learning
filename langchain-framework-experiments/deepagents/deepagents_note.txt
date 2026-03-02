@@ -1,0 +1,59 @@
+Source: https://chat.langchain.com/?ref=blog.langchain.com&ajs_aid=0d86fa3e-51f6-473c-b1d3-aa4c3a0ec76a&ajs_uid=106d67b4-3936-445d-a008-61b496989d04&_gl=1*1c8vocv*_gcl_au*MTEwNDU2NjE5MS4xNzU3NjU0OTky*_ga*MTI2NDQzNTU4NS4xNzUxMzExOTQ5*_ga_47WX3HKKY2*czE3NjIzOTgyMTMkbzEzJGcxJHQxNzYyMzk4MzcyJGo2MCRsMCRoMA..&threadId=722648d2-fdf7-411d-89a6-ddcff5dab057
+
+Question:
+Is using deepagents is most of the time better for creating an agentic system compared to just baseline langchain only? dont put langgraph here since i know it is more recommended for deterministic tasks and more control over the entire flow. I am talking about like an agent with maybe 3-4 tools only 
+
+Answer:
+**No, Deep Agents is not most of the time better than a baseline LangChain agent (`create_agent`) for simple agentic systems with just 3-4 tools.**
+
+Deep Agents adds specialized middleware for **planning** (`write_todos` tool), **filesystem** operations (`ls`, `read_file`, etc.), and **subagents**—features designed for complex, multi-step tasks that require decomposition, large context management, or delegation. These introduce extra overhead (more LLM calls, state management, potential loops) that's unnecessary for basic tool-using agents.
+
+Baseline LangChain agents via `create_agent` handle tool calling in a ReAct loop efficiently for straightforward cases:
+
+```python
+from langchain.agents import create_agent
+from langchain_core.tools import tool
+
+@tool
+def tool1(query: str) -> str:
+    """Your first tool."""
+    ...
+
+@tool  
+def tool2(param: str) -> str:
+    """Your second tool."""
+    ...
+
+agent = create_agent(
+    model="gpt-4o-mini",  # Or any model
+    tools=[tool1, tool2, tool3, tool4],
+    system_prompt="You are a helpful assistant with access to these tools."
+)
+```
+
+This runs a simple reason-act-observe loop without built-in planning or subagents, keeping costs and latency low.
+
+## When Deep Agents Wins
+
+Use `create_deep_agent` if your 3-4 tools involve:
+
+- Variable-length outputs (e.g., search/RAG) needing filesystem offloading
+- Multi-part tasks benefiting from todo lists
+- Need for subagents despite few top-level tools
+
+```python
+from deepagents import create_deep_agent
+
+deep_agent = create_deep_agent(
+    model="claude-sonnet-4-5-20250929",
+    tools=[your_tool1, your_tool2]  # Gets planning/filesystem/subagents auto-added
+)
+```
+
+Official docs explicitly state: "For simpler use cases, consider using LangChain's `create_agent`."
+
+**Relevant docs:**
+- [Deep Agents Overview (Python)](https://docs.langchain.com/oss/python/deepagents/overview)
+- [Deep Agents Overview (JS)](https://docs.langchain.com/oss/javascript/deepagents/overview)
+- [LangChain Agents (Python)](https://docs.langchain.com/oss/python/langchain/agents)
+- [LangChain Agents (JS)](https://docs.langchain.com/oss/javascript/langchain/agents)
