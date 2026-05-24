@@ -1,0 +1,15 @@
+[project]
+name = "multi-layer-knowledge-base"
+version = "0.1.0"
+description = "Multi-Department Knowledge Base Demo with metadata-filtering access control"
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = [
+    "gradio",
+    "langchain",
+    "langchain-core",
+    "langchain-openai",
+    "langchain-qdrant",
+    "qdrant-client",
+    "python-dotenv",
+]
