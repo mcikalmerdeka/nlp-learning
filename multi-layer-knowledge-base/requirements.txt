@@ -1,7 +1,0 @@
-gradio
-langchain
-langchain-core
-langchain-openai
-langchain-qdrant
-qdrant-client
-python-dotenv
