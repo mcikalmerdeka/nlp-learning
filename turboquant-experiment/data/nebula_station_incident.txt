@@ -1,0 +1,57 @@
+NEBULA STATION INCIDENT REPORT
+
+Incident designation: NEB-2147-Theta
+Location: Nebula Station, orbital research platform above Kepler-442b
+Date of incident: 14 March 2147
+Reporting officer: Dr. Elara Voss, station commander
+
+SUMMARY
+
+At 03:17 station time, the external sensor array on Nebula Station registered an
+anomalous energy signature approximately 12 kilometers off the port-side docking
+ring. The signature did not match any known stellar phenomenon, spacecraft
+emission profile, or debris reflection catalogued in the Interstellar Transit
+Authority database. The signal pulsed at irregular intervals, fluctuating
+between 7.3 and 11.6 terahertz, and maintained a stable position relative to the
+station for forty-three minutes before disappearing.
+
+During the event, the station's primary reactor experienced a transient voltage
+oscillation that caused a brief outage in sectors C through F. Backup systems
+engaged without incident, and no crew injuries were reported. However, the
+outage coincided with a temporary loss of communication with the surface colony
+on Kepler-442b, which lasted eleven minutes and has not yet been fully
+explained.
+
+WITNESS STATEMENTS
+
+Engineer Marcus Reid, who was performing routine maintenance in the port-side
+observation module, reported seeing a "shimmering distortion" in the space
+outside the viewport. Reid described the object as roughly spherical, faintly
+luminous, and estimated its diameter at approximately 200 meters. He noted
+that the object appeared to bend the starfield behind it, as though light were
+passing through a lens.
+
+Dr. Yuki Tanaka, the station's astrophysicist, stated that the energy signature
+resembled no natural black-body radiation she had ever observed. The spectrum
+showed discrete emission lines at wavelengths inconsistent with any known
+element or ionized gas. Tanaka hypothesized that the object may have been
+interacting with local spacetime in a way that produced measurable gravitational
+lensing.
+
+AFTERMATH
+
+Following the disappearance of the signal, a survey drone was dispatched to the
+last known coordinates. The drone returned no physical evidence, no residual
+radiation, and no detectable gravitational perturbation. The incident remains
+classified as unexplained. The Interstellar Transit Authority has opened a
+preliminary inquiry, and the crew has been instructed to avoid public
+speculation.
+
+Commander Voss has requested that all sensor logs and personal recordings from
+the incident window be sealed and transmitted to the Deep Space Research Council
+headquarters on Titan. The station's reactor control system has been placed
+under enhanced monitoring until the root cause of the voltage oscillation is
+determined.
+
+Dr. Elara Voss
+Nebula Station, 15 March 2147

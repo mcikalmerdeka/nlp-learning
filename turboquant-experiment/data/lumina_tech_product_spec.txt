@@ -1,0 +1,69 @@
+LUMINA TECHNOLOGIES — PROJECT FIREWHEEL INTERNAL SPECIFICATION
+
+Document version: 0.9
+Classification: INTERNAL — Engineering and Product Only
+Last updated: 3 February 2027
+Owner: Priya Nanduri, Director of Hardware Engineering
+
+1. PROJECT OVERVIEW
+
+Project Firewheel is the next-generation edge inference accelerator designed
+for deployment in retail, manufacturing, and medical imaging environments.
+Unlike the current Polaris line, which relies on a centralized PCIe form factor,
+Firewheel is packaged as a ruggedized module that can operate in temperatures
+from -20°C to 70°C and tolerate humidity up to 95 percent non-condensing.
+
+The target price point is $2,400 per module at volume, with a gross margin
+target of 52 percent. The first engineering validation units are scheduled for
+May 2027, and production ramp is planned for November 2027.
+
+2. ARCHITECTURE
+
+Firewheel is built around a custom tensor processing unit codenamed "Ignite."
+Ignite delivers 64 tera-operations per second at INT8 precision and 16
+top-operations per second at FP16. The chip includes a dedicated neural-network
+compiler cache that reduces model load latency by approximately 40 percent
+compared to Polaris.
+
+Memory is provided by four LPDDR5X channels, giving a total bandwidth of 128
+gigabytes per second. The module includes 32 gigabytes of onboard storage for
+model weights and firmware. A hardware secure enclave handles cryptographic key
+provisioning and attestation.
+
+3. INTERFACES
+
+The primary host interface is a dual-lane 10-gigabit Ethernet port. A secondary
+USB-C port is reserved for diagnostics and firmware updates. The module does not
+support PCIe natively; customers requiring PCIe integration must use the
+separate Firewheel Bridge adapter, which is tracked as a parallel project.
+
+4. POWER AND THERMAL
+
+Typical power consumption under full load is 45 watts. A passive thermal solution
+is sufficient for rack-mounted deployments, but fanless industrial deployments
+require the optional heatsink kit, part number FW-HSK-01.
+
+5. SOFTWARE STACK
+
+The runtime is based on Lumina's Inferno SDK 3.0. Supported frameworks include
+ONNX Runtime, TensorFlow Lite, and PyTorch Mobile. The compiler performs
+operator fusion, memory planning, and quantization-aware calibration.
+
+6. OPEN ISSUES
+
+The hardware team is still evaluating whether to include native support for the
+proposed Transformer-X2 instruction set. The decision is blocking the final RTL
+freeze and must be resolved by 15 March 2027.
+
+The diagnostics team has reported intermittent firmware initialization failures
+at cold temperatures. A root-cause analysis is underway, and the firmware lead
+estimates a fix by 28 February 2027.
+
+7. APPROVALS
+
+This specification is pending sign-off from the hardware, software, and
+manufacturing teams before release to procurement.
+
+Priya Nanduri
+Director of Hardware Engineering
+Lumina Technologies

@@ -1,0 +1,61 @@
+EVERGREEN CORPORATION — Q3 2026 STRATEGIC REVIEW
+CONFIDENTIAL — INTERNAL USE ONLY
+
+Prepared by: Strategic Planning Office
+Date: 12 October 2026
+Distribution: Executive Committee, Regional Directors
+
+EXECUTIVE SUMMARY
+
+The third quarter of 2026 delivered mixed results against the company's
+five-year growth plan. Revenue grew 8.4 percent year-over-year, but this fell
+short of the 12 percent target established in the January board meeting. The
+shortfall was concentrated in the Asia-Pacific region, where the launch of the
+Solara product line was delayed by regulatory review and supply-chain
+constraints in the Vietnam manufacturing hub.
+
+Profit margins improved by 1.2 percentage points due to the cost reduction
+initiative launched in Q1. The initiative, internally codenamed "Project
+Thrift," consolidated vendor contracts and reduced logistics overhead by 14
+percent. However, several department heads have raised concerns that the cuts
+have strained the quality assurance team, which reported a 22 percent increase
+in post-launch defect tickets during the quarter.
+
+KEY INITIATIVES
+
+Project Thrift: The procurement team renegotiated contracts with seventeen
+critical suppliers. The largest savings came from the packaging division, where
+a switch to regional suppliers reduced per-unit costs by 9 percent. The
+initiative is on track to exceed its annual savings target of 47 million
+dollars.
+
+Solara Launch: The Solara line was originally scheduled for a July release in
+the Asia-Pacific region. Regulatory approval is now expected in mid-November,
+and the company has shifted the global launch window to Q1 2027. Marketing has
+been asked to revise the campaign timeline and preserve the pre-order pipeline.
+
+Riverstone Acquisition: The acquisition of Riverstone Analytics closed on 22
+August. Integration is progressing, but the migration of customer data to the
+Evergreen data lake has been slower than planned. The Chief Information Officer
+has flagged a three-week delay in the unified analytics dashboard.
+
+RISKS AND CONCERNS
+
+The quality assurance team has requested three additional headcount to manage
+the increased defect volume. The Chief Operating Officer has deferred the
+request until Q4 pending a review of whether the ticket increase is a temporary
+anomaly or a structural problem.
+
+Competitive pressure in the European market intensified after competitor
+AuroraTech introduced a comparable product at a 15 percent price discount.
+Evergreen's market research team is conducting a rapid pricing study to
+determine whether to match the discount or emphasize the premium feature set.
+
+NEXT STEPS
+
+The executive committee will meet on 28 October to finalize the Q4 budget
+reallocation and approve the revised Solara launch plan. Regional directors are
+asked to submit updated forecasts by 22 October.
+
+Strategic Planning Office
+Evergreen Corporation
