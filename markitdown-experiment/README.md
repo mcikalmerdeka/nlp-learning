@@ -95,8 +95,10 @@ OCR_PROMPT = (
 | Setup | dotenv, client, effort wrapper, 3 converters, `OCR_PROMPT`, helpers (`convert_and_show`) | — |
 | **Doc** | plain docx conversion; plugin cell behind `RUN_DOC_PLUGIN_OCR = False` | 0 (current file has no images) |
 | **Image** | plain (metadata-only → near-empty without exiftool) then LLM transcription of `sample_text.jpg`, `sample_image_1.png`, `page_2.png` | 3 calls |
-| **PDFs** | all six PDFs through the text-layer converter; close look at `long_table_pdf.pdf` | 0 |
-| **Scanned PDF** | PyMuPDF renders each page at 150 DPI → direct vision calls (`vision_to_markdown`) → stitched document | 8 calls |
+| **PDFs** | every PDF in `data/pdfs/` through the text-layer converter; close look at `long_table_pdf.pdf` | 0 |
+| PDFs × `md_llm` probe | proves the built-in LLM route ignores PDFs: output identical to plain, zero calls despite 12–30 embedded images | 0 |
+| **Scanned PDF** | PyMuPDF renders each page at 150 DPI → direct vision calls (`vision_to_markdown`) → stitched per PDF; loops 3 targets (11 + 7 + 9 pages) | ~27 calls |
+| Scanned-PDF alt | same rendered page via `md_llm` only — shows the `# Description:` wrapping vs. verbatim transcripts | 1 call |
 | PDF plugin | `md_ocr` on the slide-export PDF (**runs by default**) | ~14 calls |
 | **PPT** | plain deck conversion; optional `RUN_PPTX_LLM = False` alt-text cell | 0 / opt-in |
 | PPT plugin | deck OCR behind `RUN_PPTX_PLUGIN_OCR = False` | ~30 calls (opt-in) |
@@ -114,14 +116,15 @@ Full outputs are written to `out/*.md`; page renders land in `out/scan_pages/`. 
 | `images/sample_image_1..4.png` | document-like pages (header/table/figure/checklist) | — |
 | `images/page_2/6/9.png` | scanned pages of a Japanese engineering document | — |
 | `images/long_table_image.jpg` | dense table image | — |
-| `pdfs/sustainable_urban_mobility_trends_2025.pdf` | Gamma slide export, most image-heavy (pseudo-scanned target) | 14 |
+| `pdfs/sustainable_urban_mobility_trends_2025.pdf` | Gamma slide export, most image-heavy (OCR-plugin PDF target) | 14 |
 | `pdfs/docling_technical_report.pdf` | figures + dense text | 30 |
+| `pdfs/perkembangan_transportasi_agustus_2026.pdf` | Indonesian monthly transport report | 12 |
 | `pdfs/FinancialStatement-2025-III-BBRI.pdf` | 34-page financial statement | 0 |
 | `pdfs/long_table_pdf.pdf`, `pdfs/pdf_with_tables_example.pdf` | table extraction targets | 0 |
 | `powerpoints/sustainable_urban_mobility_trends_2025.pptx` | 8 slides, repeated media (deduped by the plugin) | 30 |
 | `spreadsheets/example_table.xlsx` | 21,071 chars plain | 0 |
 
-> All demo PDFs have an extractable text layer (checked with pdfminer and PyMuPDF) — none is truly scanned, so the scanned-PDF pipeline is demoed on the image-heavy slide export. The same code path works for real scans unchanged.
+> All demo PDFs have an extractable text layer (checked with pdfminer and PyMuPDF) — none is truly scanned, so the scanned pipeline loops three chosen targets even where text exists, doubling as a quality comparison. The same code path works for real scans unchanged.
 
 ## What we verified (October 2026)
 
@@ -129,10 +132,11 @@ Full outputs are written to `out/*.md`; page renders land in `out/scan_pages/`. 
 |---|---|
 | Plain conversions (docx / pptx / xlsx / pdf) | ✅ 9,108 / 4,228 / 21,071 / 3,389 chars |
 | Plain image conversion without exiftool | ✅ 0 chars (metadata-only limit — hence the LLM route) |
-| Page rendering (`pymupdf`, 150 DPI) | ✅ 8 pages |
+| Page rendering (`pymupdf`, 150 DPI) | ✅ 27 pages across 3 PDFs; `md_llm` alt-cell shows `# Description:` wrapping |
 | `gpt-6-luna` accepts `reasoning_effort="none"` | ✅ (via `extra_body`) |
 | Direct vision transcription | ✅ exact text recovered from `sample_text.jpg` |
 | markitdown LLM path (wrapped client) | ✅ output under a `# Description:` heading |
+| `md_llm` applied directly to PDFs | ✅ byte-identical to plain (0/12/30 embedded images) — built-in LLM hooks are image/pptx-only |
 | Plugin discovery / registration | ✅ `ocr → markitdown_ocr`; 4 `*WithOCR` converters ahead of built-ins |
 | Plugin fallback (0-image docx/xlsx) | ✅ identical to plain output, zero calls |
 
@@ -148,7 +152,7 @@ Full outputs are written to `out/*.md`; page renders land in `out/scan_pages/`. 
 
 ## Cost guide
 
-A full top-to-bottom run spends ≈ **25 vision calls** (3 image + 8 scanned pages + 14 PDF-plugin). The doc/xlsx/pptx plugin cells stay behind flags — flip them when you drop in image-bearing file versions. Previews are intentionally short; the full markdown is always saved to `out/`.
+A full top-to-bottom run spends ≈ **45 vision calls** (3 image + 1 scanned-alt + 27 scanned pages + 14 PDF-plugin). The doc/xlsx/pptx plugin cells stay behind flags — flip them when you drop in image-bearing file versions. Previews are intentionally short; the full markdown is always saved to `out/`.
 
 ## References
 
