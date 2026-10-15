@@ -53,7 +53,7 @@ Then open `notebook.ipynb` and select the `.venv` kernel (ipykernel is included 
 | `openai` | SDK for the vision calls |
 | `python-dotenv` | loads `OPENAI_API_KEY` from `.env` |
 | `pymupdf` | renders scanned-PDF pages to PNG |
-| `docx2pdf` + `pywin32` | DOCX → PDF via Word COM; `pptx_to_pdf()` reuses pywin32 for PowerPoint COM (LibreOffice fallbacks) |
+| `docx2pdf` + `pywin32` | DOCX → PDF via Word COM; `pptx_to_pdf()` / `xlsx_to_pdf()` reuse pywin32 for PowerPoint and Excel COM (LibreOffice fallbacks) |
 | `ipykernel` (dev) | notebook kernel for the `.venv` |
 
 ## The three converters
@@ -108,6 +108,8 @@ OCR_PROMPT = (
 | PPTX pages → LLM | slide renders via the scanned flow → `out/scanned_pptx_*.md` | ~4 calls (sales deck) |
 | PPT plugin | deck OCR behind `RUN_PPTX_PLUGIN_OCR` (currently set True) | ~30 calls |
 | **Excel** | plain xlsx → pipe tables + raw view; plugin cell flag (2 images in the added `ecommerce_sales.xlsx`) | 0 / ~2 plugin |
+| XLSX → PDF export | `xlsx_to_pdf()` auto-detect: Excel COM → LibreOffice Calc | 0 |
+| XLSX pages → LLM | rendered sheet pages via the scanned flow → `out/scanned_xlsx_*.md` | ~2 calls |
 | Recap | auto-built table (source / converter kind / markdown chars) from `SUMMARY` | — |
 
 Full outputs are written to `out/*.md`; page renders land in `out/scan_pages/`. Cells show a truncated preview and note how many more characters live on disk.
@@ -130,7 +132,7 @@ Full outputs are written to `out/*.md`; page renders land in `out/scan_pages/`. 
 | `powerpoints/sustainable_urban_mobility_trends_2025.pptx` | 8 slides, repeated media (deduped by the plugin) | 30 |
 | `powerpoints/june_2024_sales_report.pptx` | poster-like sales deck (4 slides, thin native text) | 4 |
 | `spreadsheets/example_table.xlsx` | 21,071 chars plain | 0 |
-| `spreadsheets/ecommerce_sales.xlsx` | workbook with embedded images added for plugin tests | 2 |
+| `spreadsheets/ecommerce_sales.xlsx` | sales workbook: 1 sheet, 2 images, no charts (2 printed pages when exported) | 2 |
 
 > All demo PDFs have an extractable text layer (checked with pdfminer and PyMuPDF) — none is truly scanned, so the scanned pipeline loops three chosen targets even where text exists, doubling as a quality comparison. The same code path works for real scans unchanged.
 
@@ -149,6 +151,7 @@ Full outputs are written to `out/*.md`; page renders land in `out/scan_pages/`. 
 | Plugin fallback (0-image docx/xlsx) | ✅ identical to plain output, zero calls |
 | DOCX → PDF export (auto-detect helper) | ✅ MS Word COM path: 1.0 MB PDF, 7 pages in ~4s |
 | PPTX → PDF export (auto-detect helper) | ✅ PowerPoint COM path: 471 KB PDF, 4 slides; slide-1 OCR sample = 166 chars, faithful |
+| XLSX → PDF export (auto-detect helper) | ✅ MS Excel COM path: 267 KB PDF, 2 printed pages; page-1 OCR sample = clean pipe-tables |
 
 ## Output formats to expect
 
@@ -162,7 +165,7 @@ Full outputs are written to `out/*.md`; page renders land in `out/scan_pages/`. 
 
 ## Cost guide
 
-With the flags as currently set in the notebook, a full top-to-bottom run spends ≈ **~200 vision calls**: 3 image + 1 scanned-alt + 27 scanned pages + 14 PDF-plugin + 7 DOCX pages + 4 PPTX pages, plus flagged/on-by-default plugin cells (85 DOCX + 30 PPTX + 2 XLSX) and the flipped-True `md_llm` pptx description cell (~26 picture refs). Flip the plugin flags and `RUN_PPTX_LLM` back to `False` for the lean ≈56-call run. Previews are intentionally short; the full markdown is always saved to `out/`.
+With the flags as currently set in the notebook, a full top-to-bottom run spends ≈ **~200 vision calls**: 3 image + 1 scanned-alt + 27 scanned pages + 14 PDF-plugin + 7 DOCX pages + 4 PPTX pages + 2 XLSX pages, plus flagged/on-by-default plugin cells (85 DOCX + 30 PPTX + 2 XLSX) and the flipped-True `md_llm` pptx description cell (~26 picture refs). Flip the plugin flags and `RUN_PPTX_LLM` back to `False` for the lean ≈58-call run. Previews are intentionally short; the full markdown is always saved to `out/`.
 
 ## References
 
