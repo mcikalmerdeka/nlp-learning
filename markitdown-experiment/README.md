@@ -53,6 +53,7 @@ Then open `notebook.ipynb` and select the `.venv` kernel (ipykernel is included 
 | `openai` | SDK for the vision calls |
 | `python-dotenv` | loads `OPENAI_API_KEY` from `.env` |
 | `pymupdf` | renders scanned-PDF pages to PNG |
+| `docx2pdf` + `pywin32` | DOCX → PDF via Word COM; `pptx_to_pdf()` reuses pywin32 for PowerPoint COM (LibreOffice fallbacks) |
 | `ipykernel` (dev) | notebook kernel for the `.venv` |
 
 ## The three converters
@@ -93,16 +94,20 @@ OCR_PROMPT = (
 | Section | What it does | API cost |
 |---|---|---|
 | Setup | dotenv, client, effort wrapper, 3 converters, `OCR_PROMPT`, helpers (`convert_and_show`) | — |
-| **Doc** | plain docx conversion; plugin cell behind `RUN_DOC_PLUGIN_OCR = False` | 0 (current file has no images) |
+| **Doc** | plain docx conversion; plugin OCR cell (85 unique images in the BPS report) | 0 plain / ~85 plugin |
+| DOCX → PDF export | `docx_to_pdf()` auto-detect: MS Word COM → LibreOffice headless | 0 |
+| DOCX pages → LLM | rendered pages via the scanned flow, stitched one document | ~7 calls |
 | **Image** | plain (metadata-only → near-empty without exiftool) then LLM transcription of `sample_text.jpg`, `sample_image_1.png`, `page_2.png` | 3 calls |
 | **PDFs** | every PDF in `data/pdfs/` through the text-layer converter; close look at `long_table_pdf.pdf` | 0 |
 | PDFs × `md_llm` probe | proves the built-in LLM route ignores PDFs: output identical to plain, zero calls despite 12–30 embedded images | 0 |
 | **Scanned PDF** | PyMuPDF renders each page at 150 DPI → direct vision calls (`vision_to_markdown`) → stitched per PDF; loops 3 targets (11 + 7 + 9 pages) | ~27 calls |
 | Scanned-PDF alt | same rendered page via `md_llm` only — shows the `# Description:` wrapping vs. verbatim transcripts | 1 call |
 | PDF plugin | `md_ocr` on the slide-export PDF (**runs by default**) | ~14 calls |
-| **PPT** | plain deck conversion; optional `RUN_PPTX_LLM = False` alt-text cell | 0 / opt-in |
-| PPT plugin | deck OCR behind `RUN_PPTX_PLUGIN_OCR = False` | ~30 calls (opt-in) |
-| **Excel** | plain xlsx → pipe tables + raw view; plugin cell behind `RUN_XLSX_PLUGIN_OCR = False` | 0 (no images yet) |
+| **PPT** | plain deck conversion; `cell-15` currently flipped True — `md_llm` describes each of the mobility deck's ~26 picture refs (~26 calls) | 0 / ~26 |
+| PPTX → PDF export | `pptx_to_pdf()` auto-detect: PowerPoint COM → LibreOffice headless | 0 |
+| PPTX pages → LLM | slide renders via the scanned flow → `out/scanned_pptx_*.md` | ~4 calls (sales deck) |
+| PPT plugin | deck OCR behind `RUN_PPTX_PLUGIN_OCR` (currently set True) | ~30 calls |
+| **Excel** | plain xlsx → pipe tables + raw view; plugin cell flag (2 images in the added `ecommerce_sales.xlsx`) | 0 / ~2 plugin |
 | Recap | auto-built table (source / converter kind / markdown chars) from `SUMMARY` | — |
 
 Full outputs are written to `out/*.md`; page renders land in `out/scan_pages/`. Cells show a truncated preview and note how many more characters live on disk.
@@ -112,6 +117,7 @@ Full outputs are written to `out/*.md`; page renders land in `out/scan_pages/`. 
 | File | Notes | Unique embedded images |
 |---|---|---|
 | `doc/multi_agent_workflows_ai_article.docx` | 9,108 chars plain | 0 |
+| `doc/perkembangan_transportasi_agustus_2026.docx` | BPS transport report (PDF twin exists in `data/pdfs/`) | 85 |
 | `images/sample_text.jpg` | typed-text image ("The quick brown fox…") | — |
 | `images/sample_image_1..4.png` | document-like pages (header/table/figure/checklist) | — |
 | `images/page_2/6/9.png` | scanned pages of a Japanese engineering document | — |
@@ -122,7 +128,9 @@ Full outputs are written to `out/*.md`; page renders land in `out/scan_pages/`. 
 | `pdfs/FinancialStatement-2025-III-BBRI.pdf` | 34-page financial statement | 0 |
 | `pdfs/long_table_pdf.pdf`, `pdfs/pdf_with_tables_example.pdf` | table extraction targets | 0 |
 | `powerpoints/sustainable_urban_mobility_trends_2025.pptx` | 8 slides, repeated media (deduped by the plugin) | 30 |
+| `powerpoints/june_2024_sales_report.pptx` | poster-like sales deck (4 slides, thin native text) | 4 |
 | `spreadsheets/example_table.xlsx` | 21,071 chars plain | 0 |
+| `spreadsheets/ecommerce_sales.xlsx` | workbook with embedded images added for plugin tests | 2 |
 
 > All demo PDFs have an extractable text layer (checked with pdfminer and PyMuPDF) — none is truly scanned, so the scanned pipeline loops three chosen targets even where text exists, doubling as a quality comparison. The same code path works for real scans unchanged.
 
@@ -139,6 +147,8 @@ Full outputs are written to `out/*.md`; page renders land in `out/scan_pages/`. 
 | `md_llm` applied directly to PDFs | ✅ byte-identical to plain (0/12/30 embedded images) — built-in LLM hooks are image/pptx-only |
 | Plugin discovery / registration | ✅ `ocr → markitdown_ocr`; 4 `*WithOCR` converters ahead of built-ins |
 | Plugin fallback (0-image docx/xlsx) | ✅ identical to plain output, zero calls |
+| DOCX → PDF export (auto-detect helper) | ✅ MS Word COM path: 1.0 MB PDF, 7 pages in ~4s |
+| PPTX → PDF export (auto-detect helper) | ✅ PowerPoint COM path: 471 KB PDF, 4 slides; slide-1 OCR sample = 166 chars, faithful |
 
 ## Output formats to expect
 
@@ -152,7 +162,7 @@ Full outputs are written to `out/*.md`; page renders land in `out/scan_pages/`. 
 
 ## Cost guide
 
-A full top-to-bottom run spends ≈ **45 vision calls** (3 image + 1 scanned-alt + 27 scanned pages + 14 PDF-plugin). The doc/xlsx/pptx plugin cells stay behind flags — flip them when you drop in image-bearing file versions. Previews are intentionally short; the full markdown is always saved to `out/`.
+With the flags as currently set in the notebook, a full top-to-bottom run spends ≈ **~200 vision calls**: 3 image + 1 scanned-alt + 27 scanned pages + 14 PDF-plugin + 7 DOCX pages + 4 PPTX pages, plus flagged/on-by-default plugin cells (85 DOCX + 30 PPTX + 2 XLSX) and the flipped-True `md_llm` pptx description cell (~26 picture refs). Flip the plugin flags and `RUN_PPTX_LLM` back to `False` for the lean ≈56-call run. Previews are intentionally short; the full markdown is always saved to `out/`.
 
 ## References
 
