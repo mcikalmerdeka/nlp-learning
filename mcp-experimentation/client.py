@@ -152,8 +152,12 @@ async def main() -> None:
             c.text for c in contents if isinstance(c, TextResourceContents)
         )
         print(stats_text)
+        # Parse the COUNT, don't substring-match it: 'Total notes: 20' contains
+        # 'Total notes: 2', which would false-fail the check from the 18th run on.
+        count_line = stats_text.splitlines()[0]  # "Total notes: 3"
+        count = int(count_line.rsplit(" ", 1)[1])
         # 2 seeded + the one this run created
-        check("stats count >= 3", "Total notes: 2" not in stats_text)
+        check("stats count >= 3", count >= 3)
 
     # ------------------------------------------------------------- leave
     # The `async with` block ending here closed the child process.

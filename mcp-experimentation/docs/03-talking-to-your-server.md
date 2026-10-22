@@ -110,8 +110,12 @@ Missing resources (and unknown tools/methods) fail the *whole request* with a
 JSON-RPC error — the host application's problem to handle, not something a
 model could retry smarter. `code`, `message`, `data` arrive intact.
 
-**3. Bad arguments never reach the server** — the SDK validates against the
-tool's schema client-side and returns an `is_error` result before calling.
+**3. Bad arguments never reach *your handler*** — the **server** validates the
+arguments against the tool's input schema before the function runs, and
+answers with an `is_error=True` result carrying the pydantic validation
+message. Your handler code never executes for a malformed call, so you never
+write that validation yourself (the SDK logs it server-side:
+`Tool 'add_note' rejected arguments: ['title']`).
 
 So: **always check `is_error` before trusting a result**, and treat a raised
 `MCPError` as "the request itself was invalid" rather than "the tool failed".

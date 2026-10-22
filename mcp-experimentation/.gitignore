@@ -1,2 +1,10 @@
-.venv/data/
+# Python
+.venv/
 __pycache__/
+*.pyc
+
+# Local build outputs
+dist/
+
+# The demo database (created + seeded on first run; real user data)
+data/
