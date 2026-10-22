@@ -222,3 +222,39 @@ def test_stats_resource(fresh_db):
     contents = _run(body)
     text = "".join(c.text for c in contents if isinstance(c, TextResourceContents))
     assert "Total notes:" in text
+
+
+# ---------------------------------------------------------------------------
+# Prompts — reusable message templates the USER invokes by name
+# ---------------------------------------------------------------------------
+
+def test_prompt_render_is_a_user_message(fresh_db):
+    """A prompt renders to `messages` the host sends straight to the model."""
+
+    async def body():
+        db.add_note("zeta study", "content about zeta", ["zeta"])
+        async with Client(mcp) as client:
+            result = await client.get_prompt("summarize_notes", {"query": "zeta"})
+        return result
+
+    result = _run(body)
+    first = result.messages[0]
+    assert first.role == "user"
+    text = "".join(
+        c.text for c in [first.content] if isinstance(c, TextContent)
+    )
+    assert "zeta" in text
+
+
+def test_prompt_embeds_matching_notes(fresh_db):
+    """The template is a *function*: it may pull real data from the store."""
+
+    async def body():
+        db.add_note("zeta study", "content about zeta", ["zeta"])
+        async with Client(mcp) as client:
+            result = await client.get_prompt("summarize_notes", {"query": "zeta"})
+        return result
+
+    result = _run(body)
+    text = "".join(c.text for c in [result.messages[0].content] if isinstance(c, TextContent))
+    assert "#1" in text or "#3" in text  # a bullet line for the matching note

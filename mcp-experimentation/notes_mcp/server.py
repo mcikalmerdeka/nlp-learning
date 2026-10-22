@@ -216,6 +216,36 @@ def stats_text() -> str:
 
 
 # ---------------------------------------------------------------------------
+# Prompts — reusable templates the USER invokes by name (like a slash command)
+# ---------------------------------------------------------------------------
+# The third controller: the model picks tools, the application attaches
+# resources, but the *user* picks prompts (a UI shows them as menu entries /
+# slash commands). A prompt handler is a message factory: given arguments it
+# returns the message text that a host sends to the model. Because it is a
+# plain function, it may touch the same data layer — here it pulls the
+# matching notes from SQLite and embeds them, giving the model ground truth
+# it could never have produced from training data.
+
+@mcp.prompt()
+def summarize_notes(query: str) -> str:
+    """Build a "summarize my notes" request with the matching notes attached."""
+    rows = db.search_notes(query, limit=5)
+    if not rows:
+        return (
+            f"I have no notes matching '{query}'. "
+            "Say so, and suggest what to store under this topic."
+        )
+    bullets = "\n".join(
+        f"- #{row['id']} {row['title']}: {row['content']}" for row in rows
+    )
+    return (
+        f"Summarize the current state of my notes about '{query}'. "
+        "Base your summary ONLY on the notes below — do not add anything from "
+        "your own knowledge:\n\n" + bullets
+    )
+
+
+# ---------------------------------------------------------------------------
 # Entry point — what the console script (and therefore MCP hosts) runs
 # ---------------------------------------------------------------------------
 
