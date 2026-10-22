@@ -1,0 +1,36 @@
+[project]
+name = "mcp-experimentation"
+version = "0.1.0"
+description = "MCP learning scaffold: a notes server (official SDK v2) + stdio Python client"
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = [
+    "mcp[cli]>=2.3.0",
+]
+
+# The `notes-server` command below is the exact executable an MCP client
+# (our client.py demo, or later OpenCode) launches as a child process and
+# speaks JSON-RPC to over stdin/stdout. Exposing the server as a console
+# script — instead of a bare file path — is what makes the server
+# launchable from anywhere without the launcher knowing our directory
+# layout.
+[project.scripts]
+notes-server = "notes_mcp.server:main"
+
+# Declaring a build system turns this uv project into a real installable
+# package: `uv sync`/`uv run` install it into the venv (editable by
+# default), which is WHY `uv run notes-server` resolves at all.
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+# Hatchling needs to be told where the importable package lives — without
+# this it would try to auto-detect and may pick up the wrong directory
+# (client.py and tests/ live next to notes_mcp/, not inside it).
+[tool.hatch.build.targets.wheel]
+packages = ["notes_mcp"]
+
+[dependency-groups]
+dev = [
+    "pytest>=9.1.1",
+]
