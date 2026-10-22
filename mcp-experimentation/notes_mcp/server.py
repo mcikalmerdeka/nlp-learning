@@ -40,7 +40,7 @@ from pydantic import BaseModel, Field
 # pre-2026 tutorials you will find online say `from mcp.server.fastmcp import
 # FastMCP`, which is the legacy v1 spelling of exactly this class):
 from mcp.server import MCPServer
-from mcp.server.mcpserver.exceptions import ToolError
+from mcp.server.mcpserver.exceptions import ToolError, ResourceNotFoundError
 
 from notes_mcp import db
 
@@ -176,6 +176,43 @@ def delete_note(
     if not db.delete_note(note_id):
         raise ToolError(f"Note {note_id} not found")
     return f"Deleted note {note_id}."
+
+
+# ---------------------------------------------------------------------------
+# Resources — data the APPLICATION decides to load into its model's context
+# ---------------------------------------------------------------------------
+# The same decorator family, a different controller: tools are chosen by the
+# model mid-conversation; resources are attached by the host application (an
+# IDE opening a file, or a UI showing a note). Resources are read-only data
+# addressed by URI, and hey have NO `is_error` half-state: a read either
+# returns contents or fails the whole request at the protocol level.
+#
+# `note://{id}` is a resource TEMPLATE: the `{id}` in the URI is bound to the
+# function parameter, so "note://42" reads note 42 — but the URI being
+# well-formed says nothing about the note existing. Only this function can
+# answer that, with ResourceNotFoundError, which the SDK upgrades to the
+# spec's -32602 (with the URI in `data`) — the shape clients raise as
+# MCPError. That is deliberately different from a tool's ToolError: an
+# application attaching a resource cannot "retry smarter" the way a model
+# can, so there is no model-readable half-result to return.
+
+@mcp.resource("note://{id}")
+def read_note(id: int) -> str:
+    """The full text of one note, addressed by id."""
+    row = db.get_note(id)
+    if row is None:
+        raise ResourceNotFoundError(f"Note {id} not found")
+    return _format_note(_note_from_row(row))
+
+
+@mcp.resource("notes://stats")
+def stats_text() -> str:
+    """Live aggregate of the notes store: count and most recent update."""
+    stats = db.stats()
+    return (
+        f"Total notes: {stats['count']}\n"
+        f"Last updated: {stats['last_updated'] or 'never'}"
+    )
 
 
 # ---------------------------------------------------------------------------

@@ -14,8 +14,8 @@ touch the demo database in ``data/``.
 
 import anyio
 import pytest
-from mcp import Client
-from mcp.types import TextContent
+from mcp import Client, MCPError
+from mcp.types import TextContent, TextResourceContents
 
 from notes_mcp import db
 from notes_mcp.server import mcp
@@ -35,6 +35,19 @@ def _run(coro_fn):
     disconnect at exit), so returning from inside it is the natural shape.
     """
     return anyio.run(coro_fn)
+
+
+def _unwrap(exc: BaseException) -> BaseException:
+    """Peel away single-member ExceptionGroup wrappers.
+
+    anyio runs code inside TaskGroups; when one task raises, the group
+    re-raises it wrapped in an ExceptionGroup (even for a single error).
+    Real transports unwrap this before the host sees it, so the test
+    reflects the observable MCPError, not the concurrency artifact.
+    """
+    while isinstance(exc, BaseExceptionGroup) and len(exc.exceptions) == 1:
+        exc = exc.exceptions[0]
+    return exc
 
 
 def _text(result) -> str:
@@ -145,3 +158,67 @@ def test_update_roundtrip_through_tool(fresh_db):
     assert result.is_error is False
     assert result.structured_content["content"] == "New body"
     assert result.structured_content["title"] == "Old title"  # untouched field
+
+
+# ---------------------------------------------------------------------------
+# Resources — data the APPLICATION (host) decides to load, unlike tools
+# ---------------------------------------------------------------------------
+
+def test_list_resources_vs_templates(fresh_db):
+    """`notes://stats` is concrete (list_resources); `note://{id}` is a template
+    (list_resource_templates) — two different lists in the protocol."""
+
+    async def body():
+        async with Client(mcp) as client:
+            listed = await client.list_resources()
+            templates = await client.list_resource_templates()
+        return (
+            [str(r.uri) for r in listed.resources],
+            [t.uri_template for t in templates.resource_templates],
+        )
+
+    concrete, templates = _run(body)
+    assert "notes://stats" in concrete
+    assert "note://{id}" in templates
+
+
+def test_read_note_resource_returns_formatted_text(fresh_db):
+    async def body():
+        added = db.add_note("Read me", "Resource body text", ["r"])
+        async with Client(mcp) as client:
+            result = await client.read_resource(f"note://{added}")
+        return result.contents
+
+    contents = _run(body)
+    text = "".join(
+        c.text for c in contents if isinstance(c, TextResourceContents)
+    )
+    assert "Read me" in text
+    assert "Resource body text" in text
+
+
+def test_read_missing_note_resource_raises_protocol_error(fresh_db):
+    """Resource reads have no `is_error` half-state: a missing id fails the
+    whole request with the JSON-RPC -32602 the spec assigns, and the client
+    raises MCPError — a DIFFERENT error shape from tool errors (see docs/03)."""
+
+    async def body():
+        async with Client(mcp) as client:
+            await client.read_resource("note://424242")
+
+    with pytest.raises(BaseException) as info:
+        _run(body)
+    error = _unwrap(info.value)
+    assert isinstance(error, MCPError)
+    assert "not found" in str(error)
+
+
+def test_stats_resource(fresh_db):
+    async def body():
+        async with Client(mcp) as client:
+            result = await client.read_resource("notes://stats")
+        return result.contents
+
+    contents = _run(body)
+    text = "".join(c.text for c in contents if isinstance(c, TextResourceContents))
+    assert "Total notes:" in text
