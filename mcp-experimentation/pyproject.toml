@@ -30,6 +30,14 @@ build-backend = "hatchling.build"
 [tool.hatch.build.targets.wheel]
 packages = ["notes_mcp"]
 
+# Editable (PEP 660) installs must be importable from ANY working directory —
+# an MCP host launches `notes-server` from *its own* cwd, so the install has
+# to carry the project root on sys.path. Without this, hatchling's editable
+# wheel records nothing and the child process dies with
+# "ModuleNotFoundError: No module named 'notes_mcp'" (this bit us: see
+# docs/02-building-the-server.md, packaging section).
+dev-mode-dirs = ["."]
+
 [dependency-groups]
 dev = [
     "pytest>=9.1.1",
