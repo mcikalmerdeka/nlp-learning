@@ -146,6 +146,41 @@ Deny/allow per tool by the normalized name without disconnecting:
 | Notes seem to "reset" | A cwd-relative DB path got repointed — our default anchors to the project; check you did not set `NOTES_DB_PATH` somewhere else |
 | JSON config errors | Windows backslashes must be `\\` in JSON — forward slashes avoid the whole class of bugs |
 
+## Verified on this machine (2026-10-25, OpenCode v2.1.2)
+
+What we actually ran to connect this project — the config above is not
+hypothetical, it is the exact `opencode.jsonc` in this directory, and it
+works. Two things we learned live:
+
+**1. `opencode mcp add` (v2.1.2) can't pass command flags through `--`.**
+
+```sh
+opencode mcp add notes -- uv --directory "E:/..." run notes-server
+# ERROR Unrecognized flag: --directory in command opencode mcp add
+```
+
+The v2 flag parser rejects arguments like `--directory` even after the `--`
+pass-through marker (same error class as the reported `--port` issues
+anomalyco/opencode#49085, #50530, #51512). The workaround is the hand-written
+config above — which is the documented-by-hand shape anyway. If your command
+needs no flags (`npx -y some-server`), `opencode mcp add` still works fine.
+
+**2. Project-level MCP configs ARE detected in V2** (an old V1 issue, #4054,
+claimed otherwise) — proven by the connection coming up purely from this
+directory's `opencode.jsonc`. OpenCode merges configs walking from the
+filesystem root down to the current directory, so this server is visible
+whenever OpenCode runs inside this project (use `--global` / the global
+config to have it everywhere).
+
+What the connection looked like from the agent's side (Code Mode, the
+default): the server's tools appeared as `tools.notes.add_note(...)`,
+`tools.notes.search_notes(...)` etc. (the `<server>.<tool>` grouping
+predicted above), and the server's `instructions` were injected into the
+agent's context inside `<mcp_instructions>` — the live agent then read the
+real database rows and wrote a note through the server, with the structured
+`Note` object coming back as typed JSON. The exact behaviors this doc
+predicted all verified: naming, instructions injection, real-data reads.
+
 ## What you have now, end to end
 
 A server you built with the official SDK v2 → tested in-process with the

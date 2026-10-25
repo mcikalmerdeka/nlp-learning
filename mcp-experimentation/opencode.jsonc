@@ -1,0 +1,32 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  // Project-local OpenCode config: registers this repo's notes MCP server
+  // as a stdio server that OpenCode launches itself (type: "local").
+  //
+  // Why the absolute uv path: OpenCode's service process may resolve PATH
+  // differently from your shell, and this machine has TWO uv installs
+  // (hermes-managed and Python311). Pinning the one `where.exe uv` lists
+  // first removes the guesswork.
+  //
+  // Why `--directory`: makes the launch independent of which directory
+  // OpenCode happens to run in (the DB location is anchored to the package,
+  // so every launch reads/writes the SAME data/notes.db).
+  //
+  // Note: backslashes are escaped in JSON — or use forward slashes instead.
+  // (`opencode mcp add` in v2.1.2 currently can't pass flags like
+  // `--directory` through `--`, hence this hand-written config.)
+  "mcp": {
+    "servers": {
+      "notes": {
+        "type": "local",
+        "command": [
+          "C:\\Users\\Cikal Merdeka\\AppData\\Local\\hermes\\bin\\uv.exe",
+          "--directory",
+          "E:\\NLP Learning\\mcp-experimentation",
+          "run",
+          "notes-server"
+        ]
+      }
+    }
+  }
+}
