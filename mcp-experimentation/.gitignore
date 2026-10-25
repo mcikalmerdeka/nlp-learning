@@ -8,3 +8,6 @@ dist/
 
 # The demo database (created + seeded on first run; real user data)
 data/
+
+# Superpowers docs
+docs/superpowers/
